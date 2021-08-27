@@ -1,0 +1,30 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+body {
+    background: #181A1B;
+    color: #E8E6E3;
+
+    /* #1B1D1E - Github & Footer */
+}
+
+footer .container {
+    background: #181A1B;
+}
+
+.topGithub {
+    background: #181A1B;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
