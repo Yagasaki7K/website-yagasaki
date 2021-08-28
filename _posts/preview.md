@@ -1,19 +1,34 @@
 ---
-title: 'Preview Mode for Static Generation'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/preview/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+title: 'Primeiramente deixe-me apresentar, eu sou Anderson ...'
+excerpt: 'Primeiramente deixa eu me apresentar, eu sou Anderson Marlon e incrementei o alter-ego Yagasaki na minha vida, além de ser um nome bem raro no Japão, fica mais fácil encontrar meu material na web, uma forma de identificador, apelido ...'
+coverImage: '/assets/blog/covers/apresenta.jpeg'
+date: '2020-01-04'
 author:
-  name: Joe Haddad
-  picture: '/assets/blog/authors/joe.jpeg'
+  name: Anderson Marlon
+  picture: '/assets/blog/authors/yagasaki.jpeg'
 ogImage:
-  url: '/assets/blog/preview/cover.jpg'
+  url: '/assets/blog/covers/apresenta.jpeg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Primeiramente deixa eu me apresentar, eu sou Anderson Marlon e incrementei o alter-ego Yagasaki na minha vida, além de ser um nome bem raro no Japão, fica mais fácil encontrar meu material na web, uma forma de identificador, apelido, o que quiser chamar. Por que Japão? Porque adoro animes, drift e a cultura em si, isso inclui ninjas, samurais e a cultura aesthetic.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
 
-## Lorem Ipsum
+Bom, como isso tudo surgiu? Em 2005 tive autorização de mexer no meu primeiro computador, não lembro das configurações, mas lembro dele ser um Windows 96 e eu tinha apenas oito anos de idade na época; Ali começou o meu amor pela tecnologia, pelo hardware e software. Mas foi lá em 2012 que a coisa saiu de apenas jogar para começar a desenvolver, eu ainda estava no Ensino Médio e vários cursos foi apresentado na sala por um palestrante, bom, eu nasci sobre uma doutrina de que tudo aquilo ou era enganação ou era um curso bem caro, mas decidi arriscar e me inscrevi para fazer Web Design e Design Gráfico pela MEC Poli, um curso com duração de dezoito meses e felizmente, não era tão caro, o meu comprometimento foi além e dali em diante, minha paixão aumentou ainda mais.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+
+Depois que eu terminei o curso comecei a desenvolver meu primeiro blog, chamava-se Uchihanime, ah velhos tempos, mas ele foi deletado com o tempo, eu achava o design dele muito ruim e não era de ficar acumulando experiências pela rede, eis então que senti falta e decidi melhorar em tudo e criei o Onigiri Hardcore, o objetivo dos dois blogs era espalhar conhecimentos de jogos, atualizações, séries e cinema, o Onigiri Hardcore durou bastante tempo e hoje conta com o Design e outros itens do projeto salvos no meu Behance (meu portfólio de Design Gráfico), já que o projeto foi descontinuado.
+
+
+Fui acumulando experiências e com a vida surgiu muitas oportunidades, uma delas, em Julho de 2013, foi ser Operador da Sala de Informática no Ensino Médio, eu basicamente era o Tio do Computador que ajudava as crianças do Ensino Fundamental, isso contava com reparos e administração de redes também.
+
+
+Em 2016 entrei para o Exército e fui responsável pela manutenção de rede, som e rádios da Companhia de Comando da 11ª Brigada de Infantaria Leve em Campinas, depois deram a oportunidade de eu desenvolver um novo brasão para a Companhia usando como base documentações do Exército e alguns traços da Base Administrativa já existente, assim como também pude desenvolver o painel de instruções para segurança do armamento — ainda presente até nos dias de hoje sobre a caixa de disparo da Companhia do Exército.
+
+
+Fiquei cerca de dois anos em experiência autônoma melhorando em Design Gráfico como em Desenvolvedor Front-End, tive oportunidades e concluí vários cursos na área, sendo eles: Ilustração e Design Gráfico para Web pela Bradesco (Maio de 2017), Web Design: Construção de Website com PHP, HTML, CSS e Javascript pela Udemy (Janeiro de 2019), Programação Web para Divulgação Científica pelo Professor Diego Mariano (Janeiro de 2019), Programação para Internet com HTML5 e CSS3, Lógica de Programação Essencial, Introdução ao GitHub e comandos essenciais para trabalhar em equipe e Introdução ao Git e Controles de Versões pela Digital Innovation One Inc. (Fevereiro de 2020) e vai se acumulando até os dias de hoje. Além também de ter participado da 11ª Edição da Semana Omnistack da Rocketseat onde tiver a chance de aprender sobre NodeJS, ReactJS e React Native. Todas essas experiências e certificações estão disponíveis no meu Linkedin.
+
+
+E atualmente estou a desenvolver vários projetos com uma organização, da qual eu fundei, chamada Kalify, lá, sou responsável por desenvolver o Web Essentials, um website com listas de programas essenciais para o computador, principalmente após uma formatação, assim ao invés de ficar pulando de site em site na busca desses programas, você encontrar tudo em um único lugar — com Dark Mode incluso. Outros projetos você poderá encontrar no site do Kalify ou no meu GitHub.
+
+
+Esse sou eu, tem muitas outras coisas que foram desenvolvidas, foram evoluindo e você pode ir acompanhando tudo isso através das minhas redes sociais.
