@@ -6,14 +6,14 @@ export const NavMenu = () => {
         <NavMenuDetails>
                 <Link href="#">
                     <a>
-                        <img src="/assets/favicon.png"/>
+                        <img src="/assets/logo.png"/>
                     </a>
                 </Link>
 
                 <ul>
                     <Link href="#">
                         <a>
-                            <li>Inicio</li>
+                            <li>Início</li>
                         </a>
                     </Link>
                     <Link href="#">
@@ -37,8 +37,6 @@ export const NavMenu = () => {
                         </a>
                     </Link>
                 </ul>
-
-                
         </NavMenuDetails>
     )
 }

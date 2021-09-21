@@ -1,19 +1,26 @@
 import styled from 'styled-components'
 
 export const NavMenuDetails = styled.div `
-    background: #B59D7C;
+    background: #1B1C1D;
     width: 100%;
     height: 75px;
-    padding-right: 2rem;
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 
     li {
         display: inline;
         margin-right: 75px;
         font-weight: bold;
+    }
+
+    a {
+        color: #999999;
     }
 
     a img {
@@ -23,8 +30,8 @@ export const NavMenuDetails = styled.div `
     }
 
     a:hover {
-        transition: 2s;
-        color: #d3d2d2;
+        transition: 1.5s;
+        color: #BE9D7B;
     }
 `
 

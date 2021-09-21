@@ -1,5 +1,8 @@
 import NavMenu from '../components/NavMenu'
 import IndexDetails from '../components/IndexDetails'
+import HiAnderson from '../components/HiAnderson'
+import IntroduceMe from '../components/IntroduceMe'
+import Features from '../components/Features'
 
 export const Index = () => {
     return(
@@ -9,6 +12,9 @@ export const Index = () => {
             </head>
             <IndexDetails>
                 <NavMenu/>
+                <HiAnderson/>
+                <IntroduceMe/>
+                <Features/>
             </IndexDetails>
         </>
     )
