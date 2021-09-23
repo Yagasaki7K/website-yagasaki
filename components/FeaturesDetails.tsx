@@ -5,10 +5,38 @@ const FeaturesDetails = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     grid-area: firstArea, secondArea, thirdArea, fourthArea;
+
+    @media (max-width: 1366px) {
+
+        .firstArea {
+            margin-left: 100px;
+        }
+        .fourthArea {
+            display: none;
+        }
+    }
+    
+    height: 250px;
     width: 100%;
-    height: 225px;
-    background-image: url('/assets/home-bg.jpg');
-    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 60px;
+    background: rgb(178, 155, 122,0.8);
+
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url('../assets/home-bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
 
     div {
         padding: 3.5rem;
@@ -28,18 +56,6 @@ const FeaturesDetails = styled.div`
         p {
             font-size: 0.9rem;
         }
-    }
-
-    ::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgb(178, 155, 122,0.9);
-        z-index: -1;
-        filter: blur(20px)
     }
 `
     

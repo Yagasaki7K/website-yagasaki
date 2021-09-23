@@ -7,6 +7,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@deadcoder0904/react-typical": "^0.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@types/styled-components": "^5.1.13",
     "classnames": "2.3.1",

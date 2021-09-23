@@ -9,6 +9,33 @@ export const HiAndersonDetails = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    .homeBackground {
+        width: 100%;
+        height: 900px;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url('../assets/home-bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    }
     
     .container {
         margin-left: 20%;
@@ -122,6 +149,15 @@ export const HiAndersonDetails = styled.div`
 
         100% {
             opacity: 1;
+        }
+    }
+
+    @media (max-width: 1370px) {
+        height: 400px;
+
+        .hero {
+            padding-top: 20px;
+            margin-top: -100px;
         }
     }
 `

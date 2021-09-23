@@ -21,11 +21,12 @@ export const IntroduceMe = () => {
 
                     <p>
                         Classificado em <a href="https://www.linkedin.com/feed/update/urn:li:activity:6746850035104833536/" target="_blank">3º Lugar no Hackathon </a>
-                        da Ambev organizado pela 
-                        Shawee {`->`} Cervejaria Flexível e Sustentável
+                        da AMBEV
+                        (Cervejaria Flexível e Sustentável) organizado pela Shawee em 2020.
                     </p>
 
-                    <button>Currículo (PDF)</button> | <button>Projetos | Github</button>
+                    <a className="button" href="" target="_blank">Currículo (PDF)</a> | 
+                    <a className="button" href="https://github.com/Yagasaki7K" target="_blank">Projetos | Github</a>
                 </div>
             </div>
         </IntroduceMeDetails>

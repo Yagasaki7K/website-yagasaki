@@ -1,14 +1,12 @@
 import HiAndersonDetails from './HiAndersonDetails';
-import { Parallax } from 'react-parallax';
-import Typical from 'react-typical';
+import { ReactTypical } from '@deadcoder0904/react-typical'
 
 export const HiAnderson = () => {
     return (
         <HiAndersonDetails>
-            <Parallax bgImage="/assets/home-bg.jpg" bgImageAlt="Anderson Marlon" 
-            className="homeBackground" strength={600}>
+            <div className="homeBackground">
                 <div className="container">
-                    <h1>Eu sou <Typical
+                    <h1>Eu sou <ReactTypical
                         steps={[
                         'Anderson Marlon 👨🏽‍💻', 3000,
                         'Yagasaki 🔰', 3000,
@@ -19,7 +17,7 @@ export const HiAnderson = () => {
                         'Gamer 🎮', 3000,
                     ]}
                         loop={Infinity}
-                        wrapper="p"
+                        wrapper="div"
                     /></h1>
                     <h2>Dev Front-End & Design Gráfico</h2>
 
@@ -41,7 +39,7 @@ export const HiAnderson = () => {
                     </a>
                 </div>
                 </div>
-            </Parallax>
+            </div>
         </HiAndersonDetails>
     )
 }

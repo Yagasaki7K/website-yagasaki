@@ -7,9 +7,7 @@ const Intro = () => {
                 Yagasaki/blog
             </h1>
             <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-                Analista de Desenvolvimento de Sistemas na&nbsp;
-                <Link href="https://cenariocapital.com.br">
-                    <a target="_blank">Cenário Capital</a></Link>.
+                Desenvolvedor Front-End com React / NextJS
             </h4>
         </section>
     )
