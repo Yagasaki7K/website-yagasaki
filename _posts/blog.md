@@ -1,13 +1,13 @@
 ---
 title: 'Minha experiência com o desenvolvimento desse blog'
-excerpt: 'Primeiramente deixa eu me apresentar, eu sou Anderson Marlon e incrementei o alter-ego Yagasaki na minha vida, além de ser um nome bem raro no Japão, fica mais fácil encontrar meu material na web, uma forma de identificador, apelido ...'
-coverImage: '/assets/blog/covers/apresenta.jpeg'
+excerpt: 'Vou contar a minha experiência que tive ao desenvolver esse blog e isso vai contar até mesmo quando eu tive o contato pela primeira vez com o NextJS. ...'
+coverImage: '/assets/blog/covers/blog.jpeg'
 date: '2020-08-28'
 author:
   name: Anderson Marlon
-  picture: '/assets/blog/authors/yagasaki.jpeg'
+  picture: 'https://github.com/Yagasaki7K.png'
 ogImage:
-  url: '/assets/blog/covers/apresenta.jpeg'
+  url: '/assets/blog/covers/blog.jpeg'
 
 ---
 

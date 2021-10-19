@@ -5,7 +5,7 @@ coverImage: '/assets/blog/covers/apresenta.jpeg'
 date: '2020-01-04'
 author:
   name: Anderson Marlon
-  picture: '/assets/blog/authors/yagasaki.jpeg'
+  picture: 'https://github.com/Yagasaki7K.png'
 ogImage:
   url: '/assets/blog/covers/apresenta.jpeg'
 ---

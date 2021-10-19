@@ -5,9 +5,9 @@ coverImage: '/assets/blog/covers/disneyplus.jpg'
 date: '2021-10-19'
 author:
   name: Anderson Marlon
-  picture: '/assets/blog/authors/yagasaki.jpeg'
+  picture: 'https://github.com/Yagasaki7K.png'
 ogImage:
-  url: '/assets/blog/covers/apresenta.jpeg'
+  url: '/assets/blog/covers/disneyplus.jpeg'
 ---
 
 Não fique assustado se não entendeu nada, como é a primeira publicação referente a uma parte mais prática do meu mundo de programação, vou explicar detalhe por detalhe, então se essa é a sua primeira vez, fique tranquilo e seja bem-vindo.
