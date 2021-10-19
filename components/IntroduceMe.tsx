@@ -25,8 +25,7 @@ export const IntroduceMe = () => {
                         (Cervejaria Flexível e Sustentável) organizado pela Shawee em 2020.
                     </p>
 
-                    <a className="button" href="" target="_blank">Currículo (PDF)</a> | 
-                    <a className="button" href="https://github.com/Yagasaki7K" target="_blank">Projetos | Github</a>
+                    <a className="button" href="" target="_blank">Currículo (PDF)</a> | <a className="button" href="https://github.com/Yagasaki7K" target="_blank">Projetos | Github</a>
                 </div>
             </div>
         </IntroduceMeDetails>
