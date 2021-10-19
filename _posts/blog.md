@@ -1,13 +1,13 @@
 ---
 title: 'Minha experiência com o desenvolvimento desse blog'
 excerpt: 'Vou contar a minha experiência que tive ao desenvolver esse blog e isso vai contar até mesmo quando eu tive o contato pela primeira vez com o NextJS. ...'
-coverImage: '/assets/blog/covers/blog.jpeg'
+coverImage: '/assets/blog/covers/blog.jpg'
 date: '2020-08-28'
 author:
   name: Anderson Marlon
   picture: 'https://github.com/Yagasaki7K.png'
 ogImage:
-  url: '/assets/blog/covers/blog.jpeg'
+  url: '/assets/blog/covers/blog.jpg'
 
 ---
 
