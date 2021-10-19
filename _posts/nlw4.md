@@ -1,13 +1,13 @@
 ---
 title: 'O que eu aprendi nessa semana da NextLevelWeek #4?'
 excerpt: 'E mais uma vez a Rocketseat vem se impressionando com projetos incríveis e ideias que não só agregam a comunidade que está desenvolvendo, como pode ser um pontapé inicial para algo ainda maior, inclusive já tive várias ideias que podem começar a crescer e criar vida no futuro.'
-coverImage: '/assets/blog/covers/marketingtalks.jpg'
+coverImage: '/assets/blog/covers/nlw4.jpg'
 date: '2020-02-26'
 author:
   name: Anderson Marlon
   picture: 'https://github.com/Yagasaki7K.png'
 ogImage:
-  url: '/assets/blog/covers/marketingtalks.jpg'
+  url: '/assets/blog/covers/nlw4.jpg'
 
 ---
 

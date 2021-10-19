@@ -1,5 +1,5 @@
 ---
-title: 'Aplicativo que cria clone virtual do usuário faz sucesso no Brasil'
+title: 'Marketing Talks #CPS01 foi marcado por clima informal e conteúdo direto ao ponto'
 excerpt: 'Nesta terça-feira, 30 de julho, aconteceu a primeira edição do “Marketing Talks”, promovido pela La Torre Marketing. “Ficamos muito felizes com o engajamento do público, é muito importante que o setor se reúna para rever alguns paradigmas e pensar no futuro”, diz Thiago la Torre, idealizador do evento.'
 coverImage: '/assets/blog/covers/marketingtalks.jpg'
 date: '2019-07-31'
