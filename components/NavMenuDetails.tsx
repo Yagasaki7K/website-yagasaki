@@ -33,6 +33,27 @@ export const NavMenuDetails = styled.div `
         transition: 1.5s;
         color: #BE9D7B;
     }
+
+    @media (max-width: 1366px) {
+        padding-left: 1rem;
+    }
+
+    @media (max-width: 1024px) and (min-width: 820px) {
+        display: initial;
+        padding-left: 15rem;
+
+        li {
+            margin-right: 60px;
+        }
+
+        a img {
+            display: none;
+        }
+    }
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 `
 
 export default NavMenuDetails

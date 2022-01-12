@@ -11,7 +11,7 @@ export const Index = () => {
     return(
         <>
             <head>
-                <title>Anderson Marlon // Dev & Design</title>
+                <title>Anderson Marlon // Dev {"&"} Design</title>
             </head>
             <IndexDetails>
                 <NavMenu/>

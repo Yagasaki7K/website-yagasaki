@@ -16,17 +16,17 @@ export const NavMenu = () => {
                             <li>Início</li>
                         </a>
                     </Link>
-                    <Link href="#">
+                    <Link href="#introduce">
                         <a>
                             <li>Sobre Mim</li>
                         </a>
                     </Link>
-                    <Link href="#">
+                    <Link href="#portfolio">
                         <a>
                             <li>Portfólio</li>
                         </a>
                     </Link>
-                    <Link href="#">
+                    <Link href="#contact">
                         <a>
                             <li>Contato</li>
                         </a>

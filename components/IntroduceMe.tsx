@@ -3,10 +3,10 @@ import IntroduceMeDetails from "./IntroduceMeDetails"
 export const IntroduceMe = () => {
     return(
         <IntroduceMeDetails>
-            <div className="introduce-me">
+            <div className="introduce-me" id="introduce">
                 <img src="/assets/me.jpg"/>
                 <div className="resize">
-                    <h1 id="introduce">Anderson "Yagasaki" Marlon</h1>
+                    <h1>Anderson "Yagasaki" Marlon</h1>
                     <p>
                         Nascido e residente da cidade de Campinas, interior de São <br/>
                         Paulo, <a href="https://yagasaki7k.github.io/website-happybirthday/" target="_blank">24 anos</a>, 

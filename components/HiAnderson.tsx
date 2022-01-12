@@ -8,18 +8,18 @@ export const HiAnderson = () => {
                 <div className="container">
                     <h1>Eu sou <ReactTypical
                         steps={[
-                        'Anderson Marlon 👨🏽‍💻', 3000,
-                        'Yagasaki 🔰', 3000,
-                        'Desenvolvedor 🔮', 3000,
-                        'Front-end 💻', 3000,
-                        'Vencedor Hackathon 🥉', 3000,
-                        'Sonserina 🧙🏽', 3000,
-                        'Gamer 🎮', 3000,
+                        'Anderson Marlon 👨🏽‍💻', 4000,
+                        'Yagasaki 🔰', 4000,
+                        'Desenvolvedor 🔮', 4000,
+                        'Front-end 💻', 4000,
+                        'Vencedor Hackathon 🥉', 4000,
+                        'Sonserina 🧙🏽', 4000,
+                        'Gamer 🎮', 4000,
                     ]}
                         loop={Infinity}
                         wrapper="div"
                     /></h1>
-                    <h2>Dev Front-End & Design Gráfico</h2>
+                    <h2>Dev Front-End {"&"} Design Gráfico</h2>
 
                     <div className="socialMedia">
                         <a href="https://www.linkedin.com/in/andersonmarlon/" target="_blank"><i className="fab fa-linkedin"></i></a>

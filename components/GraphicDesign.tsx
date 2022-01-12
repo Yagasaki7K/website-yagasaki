@@ -3,7 +3,7 @@ import GraphicDesignDetails from '../components/GraphicDesignDetails'
 export const GraphicDesign = () => {
     return (
         <GraphicDesignDetails>
-            <h2>Portfólio Gráfico</h2>
+            <h2 id="portfolio">Portfólio Gráfico</h2>
 
             <div className="content">
                 <a href="https://www.behance.net/gallery/76744855/Ravenclaw-eSports-v2" target="_blank"><img src="/assets/1.jpg" className="1"/></a>

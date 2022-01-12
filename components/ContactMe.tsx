@@ -4,7 +4,7 @@ export const ContactMe = () => {
 
     return(
         <ContactMeDetails>
-            <div className="leftContent">
+            <div className="leftContent" id="contact">
                 <a href="/">
                     <img src="/assets/logo.png"/>
                 </a>
@@ -28,7 +28,7 @@ export const ContactMe = () => {
 
                     <div className="contentCopyright">
                         <p className="copyright">COPYRIGHTS © 2021 — <a href="https://github.com/Yagasaki7K" target="_blank">
-                            ANDERSON MARLON // DEV & DESIGN</a> — ALL RIGHTS RESERVED.
+                            ANDERSON MARLON // DEV {"&"} DESIGN</a> — ALL RIGHTS RESERVED.
                         </p>
 
                         <p className="copyright2">This site is built and hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>. 

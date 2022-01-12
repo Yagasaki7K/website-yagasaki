@@ -6,7 +6,7 @@ export const BlogHome = () => {
         <h2 className="title">Blog</h2>
          <div className="content">
                 <div className="blog-content">
-                <a href="https://www.behance.net/gallery/76744855/Ravenclaw-eSports-v2" target="_blank"><img src="/assets/blog-post-1.jpg" className="1"/>
+                <a href="/blog/posts/replika"><img src="/assets/blog-post-1.jpg" className="1"/>
                 <h2>Aplicativo que cria clone virtual do usuário faz sucesso no Brasil</h2></a>
                 <p>E se você pudesse criar um clone virtual seu?
                 Parece ficção científica, mas não é. Essa
@@ -18,7 +18,7 @@ export const BlogHome = () => {
                 </div>
                 
                 <div className="blog-content">
-                <a href="https://www.behance.net/gallery/76744855/Ravenclaw-eSports-v2" target="_blank"><img src="/assets/blog-post-2.jpg" className="1"/>
+                <a href="/blog/posts/marketing-talks"><img src="/assets/blog-post-2.jpg" className="1"/>
                 <h2>Marketing Talks #CPS01 foi marcado por clima informal e conteúdo direto ao ponto</h2></a>
                 <p>Nesta terça-feira, 30 de julho, aconteceu a
                 primeira edição do “Marketing Talks”, promovido
@@ -30,7 +30,7 @@ export const BlogHome = () => {
                 </div>
 
                 <div className="blog-content">
-                <a href="/blog/posts/apresenta" target="_blank"><img src="/assets/blog-post-3.jpg" className="1"/>
+                <a href="/blog/posts/apresenta"><img src="/assets/blog-post-3.jpg" className="1"/>
                 <h2>Primeiramente deixe-me apresentar, eu sou Anderson</h2></a>
                 <p>Primeiramente deixa eu me apresentar, eu sou Anderson Marlon 
                 e incrementei o alter-ego Yagasaki na minha vida, além de 

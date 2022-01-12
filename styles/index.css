@@ -2,6 +2,10 @@
 
 /* Write your own custom base styles here */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #181A1B;
     color: #E8E6E3;

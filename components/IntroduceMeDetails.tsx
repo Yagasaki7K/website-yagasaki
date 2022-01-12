@@ -56,7 +56,7 @@ const IntroduceMeDetails = styled.div`
     }
 
     @media screen and (max-width: 1366px) {
-        padding: 2rem 0 7rem 17rem;
+        padding: 2rem 0 7rem 7rem;
 
         img {
             margin-top: 20rem;
@@ -71,6 +71,17 @@ const IntroduceMeDetails = styled.div`
 
         h1 {
             padding-top: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 2rem 0 7rem 2rem;
+
+        .resize {
+            margin-left: 350px;
+            p {
+                width: 90%;
+            }
         }
     }
 `
