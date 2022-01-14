@@ -13,6 +13,10 @@ body {
     /* #1B1D1E - Github & Footer */
 }
 
+a {
+    color: #7159c1;
+}
+
 footer .container {
     background: #181A1B;
 }
