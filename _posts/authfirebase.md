@@ -15,8 +15,8 @@ Hoje tive a triste tarefa - porém difícil para muitos e quase nunca praticado 
 
 Mas, aonde eu quero chegar? Quero ensinar a VOCÊ como fazer uma autenticação com Google usando a própria documentação da empresa e NextJS ou ReactJS como framework dessa aplicação, além de seguir como um guia para mim para aplicações futuras, irá servir de ensino para muitas pessoas que estão começando agora e querem uma coisa bonita na aplicação. Vamos aos tópicos:
 
-<a href="configuration">- Configuração</a>
-<a href="installing">- nstalação</a>
+<a href="configuration">- Configuração</a></br>
+<a href="installing">- Instalação</a></br>
 <a href="#voila">- Voilà!</a>
 
 <h2 id="configuration">Configuração</h2>
@@ -38,7 +38,7 @@ Não esqueça de importar no `head` da página esses dois scripts, vou explicand
 <h2 id="installing">Instalação</h2>
 Criaremos o nosso escopo acima do `return`, já que é uma função javascript e seguindo a documentação, teremos algo como:
 
-```JS
+<code>
 function handleCredentialResponse(response) {
           console.log("Encoded JWT ID token: " + response.credential);
         }
@@ -53,12 +53,12 @@ function handleCredentialResponse(response) {
           );
           google.accounts.id.prompt();
         }
-```
+</code>
 
 Como nossa aplicação está em React/Nextjs, nós não usaremos `window.onload`, já que o React/NextJS não aceita bem a particularidade window.
 Então, vamos chamar essas funções dentro de um useEffect - não esqueça de importar.
 
-```JS
+<code>
 function handleCredentialResponse(response) {
     if (response.type === 'success') {
         console.log('Login realizado com sucesso');
@@ -82,7 +82,7 @@ function ActionLoginGoogle() => {
 useEffect(() => {
     ActionLoginGoogle;
 }, handleCredentialResponse, [])
-```
+</code>
 
 Colocamos as duas funções para o lado de fora e simplesmente chamamos ela para ser executada, o que permite que quando o usuário 
 acessar a aplicação, ela será executada uma vez, até a interação do usuário.
@@ -112,28 +112,28 @@ o lugar adequado da resposta da aplicação, geralmente para uma outra página.
 O que eu acabei fazendo dentro do escopo do `handleCredentialResponse`, eu primeiramente decodifiquei a resposta usando o JWT Decode 
 (uma biblioteca que você deve instalar no Head ou através do NPM/Yarn, mas nesse artigo deixei no head) 
 
-```JS
+<code>
 function handleCredentialResponse(response) {
-        const data = jwt_decode(response.credential)
-        if (data != null) {
-            localStorage.setItem('user', JSON.stringify(data))
-            window.location.href('/home')
-        } else {
-            console.log('Login falhou');
-            alert('Login falhou, tente novamente!');
-            window.location.reload()
-        }
+    const data = jwt_decode(response.credential)
+    if (data != null) {
+        localStorage.setItem('user', JSON.stringify(data))
+        window.location.href('/home')
+    } else {
+        console.log('Login falhou');
+        alert('Login falhou, tente novamente!');
+        window.location.reload()
     }
-```
+}
+</code>
 
-`const data = jwt_decode(response.credential)` nesse caso, eu peguei as informações do usuário que é um objeto. Verifiquei se o objeto não estava vazio
+<code>const data = jwt_decode(response.credential)</code> nesse caso, eu peguei as informações do usuário que é um objeto. Verifiquei se o objeto não estava vazio
 e em seguida eu guardei essas informações em um localStore do usuário e redirecionei ele para uma outra janela, existem várias outras maneiras de se armazenar
-essas informações, inclusive usando um `useState` e depois você redireciona ele para uma página de acesso que faz essa verificação do usuário e caso for negativo,
+essas informações, inclusive usando um <code>useState</code> e depois você redireciona ele para uma página de acesso que faz essa verificação do usuário e caso for negativo,
 devolve ele para a página inicial para fazer o login.
 
 Um exemplo usando useState é:
 
-```JS
+<code>
 const [username, setUsername] = useState(null)
 
 function handleCredentialResponse(response) {
@@ -150,7 +150,7 @@ function handleCredentialResponse(response) {
             }
         }
     }
-```
+</code>
 
 Caso você queira informações mais detalhadas de cada função, chamada e etc da configuração, aplicação e desenvolvimento dessa aplicação, você pode estar
 conferindo através do vídeo (no final desse artigo), existe um tutorial da Jake da Rocketseat explicando detalhe por detalhe em 40 minutos ensinando desde o começo, configuração da aplicação, instalação, configuração do callback, configuração do OneTap Login e muito mais.

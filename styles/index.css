@@ -17,6 +17,11 @@ a {
     color: #7159c1;
 }
 
+code {
+    background: #7159c1;
+    color: #ffffff;
+}
+
 footer .container {
     background: #181A1B;
 }
