@@ -15,8 +15,8 @@ Hoje tive a triste tarefa - porém difícil para muitos e quase nunca praticado 
 
 Mas, aonde eu quero chegar? Quero ensinar a VOCÊ como fazer uma autenticação com Google usando a própria documentação da empresa e NextJS ou ReactJS como framework dessa aplicação, além de seguir como um guia para mim para aplicações futuras, irá servir de ensino para muitas pessoas que estão começando agora e querem uma coisa bonita na aplicação. Vamos aos tópicos:
 
-<a href="configuration">- Configuração</a></br>
-<a href="installing">- Instalação</a></br>
+<a href="#configuration">- Configuração</a></br>
+<a href="#installing">- Instalação</a></br>
 <a href="#voila">- Voilà!</a>
 
 <h2 id="configuration">Configuração</h2>
