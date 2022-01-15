@@ -1,5 +1,5 @@
 ---
-title: 'Você conhece a Aperture Laboratories'
+title: 'Você conhece a Aperture Laboratories?'
 excerpt: 'Certo dia durante a comunidade da Rocketseat, um colega — Fukubi — perguntou se havia uma comunidade onde abordava vários projetos Open Sources para ele participar e aumentar a reputação na comunidade ...'
 coverImage: '/assets/blog/covers/aperture.jpg'
 date: '2020-01-18'

@@ -1,5 +1,5 @@
 ---
-title: '3º Lugar no Hackathon, Hackeando a cervejaria do Futuro pela Ambev em parceria com a Shawee'
+title: '3º Lugar no Hackathon pela Ambev em parceria com a Shawee'
 excerpt: 'Nos dias 11, 12 e 13 de dezembro, participei do meu primeiro hackathon como Desenvolvedor Web, o Hackeando a Cervejaria do Futuro. O Hackathon, organizado pela Ambev em parceria com a Shawee.'
 coverImage: '/assets/blog/covers/hackathon.jpg'
 date: '2020-01-04'
