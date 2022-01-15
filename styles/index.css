@@ -18,8 +18,21 @@ a {
 }
 
 code {
-    background: #7159c1;
-    color: #ffffff;
+    background: #2B213A;
+    color: #F97D61;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    align-items: center;
+}
+
+small {
+    background: #2B213A;
+    color: #F97D61;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 footer .container {
