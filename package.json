@@ -7,7 +7,6 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@deadcoder0904/react-typical": "^0.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@types/styled-components": "^5.1.13",
     "classnames": "2.3.1",
@@ -16,12 +15,9 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-parallax": "^3.3.0",
-    "react-typical": "^0.1.3",
     "remark": "13.0.0",
     "remark-html": "13.0.1",
-    "styled-components": "^5.3.1",
-    "typescript": "^4.2.4"
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
