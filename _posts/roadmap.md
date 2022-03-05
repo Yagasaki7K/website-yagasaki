@@ -1,5 +1,5 @@
 ---
-title: 'Front, Back, Full, o que é e para onde ir?'
+title: 'Front-end, Back-end, Fullstack, o que é e para onde ir?'
 excerpt: 'Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?'
 coverImage: '/assets/blog/covers/roadmap.jpg'
 date: '2022-03-05'
