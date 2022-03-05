@@ -2,7 +2,7 @@
 title: 'Front, Back, Full, o que é e para onde ir?'
 excerpt: 'Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?'
 coverImage: '/assets/blog/covers/roadmap.jpg'
-date: '2021-03-05'
+date: '2022-03-05'
 author:
   name: Anderson Marlon
   picture: 'https://github.com/Yagasaki7K.png'
