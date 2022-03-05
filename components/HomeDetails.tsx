@@ -47,13 +47,6 @@ const HomeDetails = styled.div`
 
     @media screen and (min-width: 968px) {
         :root {
-            --big-font-size:;
-            --h1-font-size:;
-            --h2-font-size:;
-            --h3-font-size:;
-            --normal-font-size:;
-            --small-font-size:
-            --smaller-font-size:;
         }
     }
 
