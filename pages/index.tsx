@@ -1,4 +1,6 @@
-import HomeDetails from '../components/HomeDetails'
+import HomeDetails from '../components/custom/HomeDetails'
+import HeaderMain from '../components/custom/HeaderMain'
+import MainContent from '../components/custom/MainContent'
 
 export const Index = () => {
     return(
@@ -13,10 +15,13 @@ export const Index = () => {
                 <meta name="author" content="Anderson Marlon"/>
                 <meta name="robots" content="index, follow"/>
                 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1"/>
+
+                <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
             </head>
 
             <HomeDetails>
-
+                <HeaderMain/>
+                <MainContent/>
             </HomeDetails>
         </>
     )

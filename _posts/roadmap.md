@@ -1,6 +1,6 @@
 ---
 title: 'Front-end, Back-end, Fullstack, o que é e para onde ir?'
-excerpt: 'Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?'
+excerpt: 'Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir? É uma questão simples, mas para quem está começando vejo que tem muita dificuldade em olhar aonde quer ir e o que fazer.'
 coverImage: '/assets/blog/covers/roadmap.jpg'
 date: '2022-03-05'
 author:
