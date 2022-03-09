@@ -1,29 +1,35 @@
 const HeaderMain = () => {
 
-    const navMenu = document.getElementById('nav-menu');
-    const navToggle = document.getElementById('nav-toggle');
-    const navClose = document.getElementById('nav-close');
-
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu');
-        })
-    }
-
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.remove('show-menu');
-        })
-    }
-
-    const navLink = document.querySelectorAll('.nav__link');
-
-    function linkAction() {
+    if (typeof window !== 'undefined') {
         const navMenu = document.getElementById('nav-menu');
-        navMenu.classList.remove('show-menu');
-    }
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
 
-    navLink.forEach(n => n.addEventListener('click', linkAction));
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            })
+        }
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            })
+        }
+
+        const navLink = document.querySelectorAll('.nav__link');
+
+        function linkAction() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.remove('show-menu');
+        }
+
+        navLink.forEach(n => n.addEventListener('click', linkAction));
+      } else {
+        console.log('You are on the server')
+      }
+
+    
     return(
         <>
             <header className="header" id="header">
