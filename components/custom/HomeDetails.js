@@ -5,7 +5,7 @@ const HomeDetails = styled.div`
     
     :root {
         --header-height: 3rem;
-        --hue-color: 250;
+        --hue-color: 230; /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
 
         --first-color: hsl(var(--hue-color), 69%, 61%);
         --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -273,7 +273,7 @@ const HomeDetails = styled.div`
     }
 
     .home__scroll {
-        /* display: none; */
+        display: none;
     }
 
     .home__scroll-button {
@@ -296,6 +296,31 @@ const HomeDetails = styled.div`
         margin-right: var(--mb-0-25);
     }
 
+    //
+
+    .button {
+        display: inline-block;
+        background: var(--first-color);
+        color: #fff;
+        padding: 1rem;
+        border-radius: .5rem;
+        font-weight: var(--font-medium);
+    }
+
+    .button:hover {
+        background: var(--first-color-alt);
+    }
+
+    .button__icon {
+        font-size: 1.25rem;
+        margin-left: var(--mb-0-5);
+        transition: .3s;
+    }
+
+    .button--flex {
+        display: inline-flex;
+        align-items: center;
+    }
 `
 
 export default HomeDetails
