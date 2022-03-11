@@ -27,6 +27,8 @@ const Skills = () => {
 
                 <div className="skills__container container grid">
                     <div>
+
+                        {/* Skill */}
                         <div className="skills__content skills__open">
                             <div className="skills__header">
                                 <i className="uil uil-brackets-curly skills__icon"></i>
@@ -87,7 +89,6 @@ const Skills = () => {
                         </div>
 
                         {/* Skill 2 */}
-
                         <div className="skills__content skills__close">
                             <div className="skills__header">
                                 <i className="uil server-alt skills__icon"></i>
@@ -137,7 +138,6 @@ const Skills = () => {
                         </div>
 
                         {/* Skill 3 */}
-
                         <div className="skills__content skills__close">
                             <div className="skills__header">
                                 <i className="uil uil-palette skills__icon"></i>

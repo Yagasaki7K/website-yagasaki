@@ -3,6 +3,8 @@ import HeaderMain from '../components/custom/HeaderMain'
 import MainContent from '../components/custom/MainContent'
 import About from '../components/custom/About'
 import Skills from '../components/custom/Skills'
+import Qualification from '../components/custom/Qualification'
+import Services from '../components/custom/Services'
 
 export const Index = () => {
     return(
@@ -26,6 +28,8 @@ export const Index = () => {
                 <MainContent/>
                 <About/>
                 <Skills/>
+                <Qualification/>
+                <Services/>
             </HomeDetails>
         </>
     )
