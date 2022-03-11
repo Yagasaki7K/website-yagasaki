@@ -1,49 +1,8 @@
+import { COLOR } from './ConstantColors'
 import styled from 'styled-components'
 
 const HomeDetails = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-    :root {
-        --header-height: 3rem;
-        --hue-color: 230; /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
-
-        --first-color: hsl(var(--hue-color), 69%, 61%);
-        --first-color-second: hsl(var(--hue-color), 69%, 61%);
-        --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-        --first-color-lighter: hsl(var(--hue-color), 57%, 53%);
-        --title-color: hsl(var(--hue-color), 8%, 15%);
-        --text-color: hsl(var(--hue-color), 8%, 45%);
-        --text-color-light: hsl(var(--hue-color), 8%, 65%);
-        --input-color: hsl(var(--hue-color), 70%, 96%);
-        --body-color: hsl(var(--hue-color), 60%, 99%);
-        --container-color: #fff;
-
-        --body-font: 'Poppins', sans-serif;
-
-        --big-font-size: 2rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1.125rem;
-        --normal-font-size: .938rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
-
-        --font-medium: 500;
-        --font-semi-bold: 600;
-
-        --mb-0-25: .25rem;
-        --mb-0-5: .5rem;
-        --mb-0-75: .75rem;
-        --mb-1: 1rem;
-        --mb-1-5: 1.5rem;
-        --mb-2: 2rem;
-        --mb-2-5: 2.5rem;
-        --mb-3: 3rem;
-
-        --z-tooltip: 10;
-        --z-fixed: 100;
-        --z-modal: 1000;
-    }
 
     @media screen and (min-width: 968px) {
         :root {
@@ -74,7 +33,7 @@ const HomeDetails = styled.div`
         font-family: var(--body-font);
         font-size: var(--normal-font-size);
         background: var(--body-color);
-        color: var(--text-color);
+        color: ${COLOR.textColor};
     }
 
     h1, h2, h3, h4 {
@@ -135,7 +94,7 @@ const HomeDetails = styled.div`
         left: 0;
         z-index: var(--z-fixed);
         background: var(--first-color);
-        /* color: var(--text-color);
+        /* color: ${props => props.COLOR.textColor};
         padding: var(--mb-0-5) var(--mb-0-25);
         box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25); */
     }
@@ -149,7 +108,7 @@ const HomeDetails = styled.div`
     }
 
     .nav__logo, .nav__toggle {
-        color: var(--text-color);
+        color: ${props => props.COLOR.textColor};
         font-weight: var(--font-medium);
     }
 
@@ -263,7 +222,7 @@ const HomeDetails = styled.div`
 
     .home__subtitle {
         font-size: var(--h3-font-size);
-        color: var(--text-color);
+        color: ${props => props.COLOR.textColor};
         font-weight: var(--font-medium);
         margin-bottom: var(--mb-0-75); 
     }
@@ -291,7 +250,7 @@ const HomeDetails = styled.div`
 
     .home__scroll-name {
         font-size: var(--small-font-size);
-        color: var(--text-color);
+        color: ${props => props.COLOR.textColor};
         font-weight: var(--font-medium);
         margin-right: var(--mb-0-25);
     }
@@ -320,6 +279,46 @@ const HomeDetails = styled.div`
     .button--flex {
         display: inline-flex;
         align-items: center;
+    }
+
+    //
+
+    .about__img {
+        width: 200px;
+        border-radius: .5rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .about__description {
+        text-align: center;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .about__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .about__info-title {
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--title-color);
+    }
+
+    .about__info-name {
+        font-size: var(--small-font-size);
+    }
+
+    .about__info-title, .about__info-name {
+        display: block;
+        text-align: center;
+    }
+
+    .about__buttons {
+        display: flex;
+        justify-content: center;
     }
 `
 

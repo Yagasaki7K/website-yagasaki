@@ -29,7 +29,6 @@ const HeaderMain = () => {
         console.log('You are on the server')
       }
 
-    
     return(
         <>
             <header className="header" id="header">
