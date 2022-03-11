@@ -2,6 +2,7 @@ import HomeDetails from '../components/custom/HomeDetails'
 import HeaderMain from '../components/custom/HeaderMain'
 import MainContent from '../components/custom/MainContent'
 import About from '../components/custom/About'
+import Skills from '../components/custom/Skills'
 
 export const Index = () => {
     return(
@@ -24,6 +25,7 @@ export const Index = () => {
                 <HeaderMain/>
                 <MainContent/>
                 <About/>
+                <Skills/>
             </HomeDetails>
         </>
     )

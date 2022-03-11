@@ -320,6 +320,126 @@ const HomeDetails = styled.div`
         display: flex;
         justify-content: center;
     }
+
+    //
+
+    .skills__container {
+        row-gap: 0;
+    }
+
+    .skills__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--mb-2-5);
+        cursor: pointer;
+    }
+
+    .skills__icon, .skills__arrow {
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+
+    .skills__icon {
+        margin-right: var(--mb-0-75);
+    }
+
+    .skills__title {
+        font-size: var(--h3-font-size);
+    }
+
+    .skills__subtitle {
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+    }
+
+    .skills__arrow {
+        margin-left: auto;
+        transition: .4s;
+    }
+
+    .skills__list {
+        row-gap: 1.5rem;
+        padding-left: 2.7rem;
+    }
+
+    .skills_titles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--mb-0-5);
+    }
+
+    .skills__name {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    .skills__bar, .skills_percentage {
+        height: 5px;
+        border-radius: .25rem;
+    }
+
+    .skills_bar {
+        background: var(--first-color-lighter);
+    }
+
+    .skills_percentage {
+        display: block;
+        background: var(--first-color);
+    }
+
+    .skills__html {
+        width: 98%;
+    }
+
+    .skills__css {
+        width: 90%;
+    }
+
+    .skills__js {
+        width: 76%;
+    }
+
+    .skills__react {
+        width: 68%;
+    }
+
+    .skills__node {
+        width: 42%;
+    }
+
+    .skills__firebase {
+        width: 49%;
+    }
+
+    .skills__php {
+        width: 41%;
+    }
+
+    .skills__photoshop {
+        width: 72%;
+    }
+
+    .skills__figma {
+        width: 57%;
+    }
+
+    .skills__xd {
+        width: 42%;
+    }
+
+    .skills__close .skill__list {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .skills__open .skill_list {
+        height: max-content;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .skills__open .skills__arrow {
+        transform: rotate(-180deg);
+    }
 `
 
 export default HomeDetails
