@@ -6,6 +6,9 @@ import Skills from '../components/custom/Skills'
 import Qualification from '../components/custom/Qualification'
 import Services from '../components/custom/Services'
 import Portfolio from '../components/custom/Portfolio'
+import ProjectMind from '../components/custom/ProjectMind'
+import Testimonial from '../components/custom/Testimonial'
+import Contact from '../components/custom/Contact'
 
 export const Index = () => {
     return(
@@ -21,7 +24,11 @@ export const Index = () => {
                 <meta name="robots" content="index, follow"/>
                 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1"/>
 
+                {/* Unicons */}
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+
+                {/* Swiper CSS */}
+                <link rel="stylesheet" href="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.css"/>
             </head>
 
             <HomeDetails>
@@ -32,6 +39,9 @@ export const Index = () => {
                 <Qualification/>
                 <Services/>
                 <Portfolio/>
+                <ProjectMind/>
+                <Testimonial/>
+                <Contact/>
             </HomeDetails>
         </>
     )
