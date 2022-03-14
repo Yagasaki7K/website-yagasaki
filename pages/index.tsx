@@ -5,6 +5,7 @@ import About from '../components/custom/About'
 import Skills from '../components/custom/Skills'
 import Qualification from '../components/custom/Qualification'
 import Services from '../components/custom/Services'
+import Portfolio from '../components/custom/Portfolio'
 
 export const Index = () => {
     return(
@@ -30,6 +31,7 @@ export const Index = () => {
                 <Skills/>
                 <Qualification/>
                 <Services/>
+                <Portfolio/>
             </HomeDetails>
         </>
     )
