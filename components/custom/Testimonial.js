@@ -1,21 +1,25 @@
+import { useEffect } from "react";
+
 const Testimonial = () => {
 
-    let swiperTestimonial = new Swiper('.testimonial__container', {
-        loop: true,
-        grabCursor: true,
-        spaceBetween: 48,
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true,
-        },
-        breakpoints: {
-            568: {
-                slidesPerView: 2,
+    useEffect(() => {
+        let swiperTestimonial = new Swiper('.testimonial__container', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 48,
+    
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                568: {
+                    slidesPerView: 2,
+                }
             }
-        }
-    })
+        })
+    }, []);
 
     return (
         <>
@@ -24,7 +28,7 @@ const Testimonial = () => {
                 <span className="section__subtitle">My client saying</span>
 
                 <div className="testimonial__container container swiper-container">
-                    <div class="swiper-wrapper">
+                    <div className="swiper-wrapper">
                         {/* Testimonial 1 */}
                         <div className="testimonial__content swiper-slide">
                             <div className="testimonial__data">

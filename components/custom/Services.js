@@ -1,26 +1,30 @@
+import { useEffect } from "react";
+
 const Services = () => {
 
-    const modalViews = document.querySelectorAll('modal-views');
-    const modalBtns = document.querySelectorAll('.services__button');
-    const modalCloses = document.querySelectorAll('.services__modal-close');
+    useEffect(() => {
+        const modalViews = document.querySelectorAll('modal-views');
+        const modalBtns = document.querySelectorAll('.services__button');
+        const modalCloses = document.querySelectorAll('.services__modal-close');
 
-    let modal = function(modalClick) {
-        modalViews[modalClick].classList.add('active-modal')
-    }
+        let modal = function(modalClick) {
+            modalViews[modalClick].classList.add('active-modal')
+        }
 
-    modalBtns.forEach((modalBtn, index) => {
-        modalBtn.addEventListener('click', () => {
-            modal(index);
-        })
-    })
-
-    modalCloses.forEach((modalClose, index) => {
-        modalClose.addEventListener('click', () => {
-            modalViews.forEach((modalview) => {
-                modalview.classList.remove('active-modal');
+        modalBtns.forEach((modalBtn, index) => {
+            modalBtn.addEventListener('click', () => {
+                modal(index);
             })
         })
-    })
+
+        modalCloses.forEach((modalClose, index) => {
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalview) => {
+                    modalview.classList.remove('active-modal');
+                })
+            })
+        })
+    }, []);
 
     return(
         <>

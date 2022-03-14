@@ -1,4 +1,3 @@
-import HomeDetails from '../components/custom/HomeDetails'
 import HeaderMain from '../components/custom/HeaderMain'
 import MainContent from '../components/custom/MainContent'
 import About from '../components/custom/About'
@@ -9,6 +8,7 @@ import Portfolio from '../components/custom/Portfolio'
 import ProjectMind from '../components/custom/ProjectMind'
 import Testimonial from '../components/custom/Testimonial'
 import Contact from '../components/custom/Contact'
+import Footer from '../components/custom/Footer'
 
 export const Index = () => {
     return(
@@ -29,20 +29,22 @@ export const Index = () => {
 
                 {/* Swiper CSS */}
                 <link rel="stylesheet" href="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.css"/>
+
+                {/* Custom CSS */}
+                <link rel="stylesheet" href="/styles/custom.css"/>
             </head>
 
-            <HomeDetails>
-                <HeaderMain/>
-                <MainContent/>
-                <About/>
-                <Skills/>
-                <Qualification/>
-                <Services/>
-                <Portfolio/>
-                <ProjectMind/>
-                <Testimonial/>
-                <Contact/>
-            </HomeDetails>
+            <HeaderMain/>
+            <MainContent/>
+            <About/>
+            <Skills/>
+            <Qualification/>
+            <Services/>
+            <Portfolio/>
+            <ProjectMind/>
+            <Testimonial/>
+            <Contact/>
+            <Footer/>
         </>
     )
 }
