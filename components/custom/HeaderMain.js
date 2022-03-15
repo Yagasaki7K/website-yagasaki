@@ -1,6 +1,8 @@
+import { useEffect } from "react";
+
 const HeaderMain = () => {
 
-    if (typeof window !== 'undefined') {
+    useEffect(() => {
         const navMenu = document.getElementById('nav-menu');
         const navToggle = document.getElementById('nav-toggle');
         const navClose = document.getElementById('nav-close');
@@ -25,11 +27,8 @@ const HeaderMain = () => {
         }
 
         navLink.forEach(n => n.addEventListener('click', linkAction));
-        } else {
-        console.log('You are on the server')
 
         // Dark Mode Functionality
-
         const themeButton = document.getElementById('theme-button');
         const darkTheme = 'dark-theme';
         const iconLight = 'uil-sun'
@@ -53,7 +52,7 @@ const HeaderMain = () => {
             localStorage.setItem('selected-theme', getCurrentTheme())
             localStorage.setItem('selected-icon', getCurrentIcon())
         })
-      }
+    }, [])
 
     return(
         <>
