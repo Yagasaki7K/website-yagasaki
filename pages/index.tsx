@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import HeaderMain from '../components/custom/HeaderMain'
 import MainContent from '../components/custom/MainContent'
 import About from '../components/custom/About'
-import Skills from '../components/custom/Skills'
 import Qualification from '../components/custom/Qualification'
 import Services from '../components/custom/Services'
 import Portfolio from '../components/custom/Portfolio'
@@ -60,17 +59,14 @@ export const Index = () => {
                 {/* Unicons */}
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 
-                {/* Swiper CSS */}
-                <link rel="stylesheet" href="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.css"/>
-
                 {/* Custom CSS */}
                 <link rel="stylesheet" href="../../../styles/custom.css"/>
+                
             </head>
 
             <HeaderMain/>
             <MainContent/>
             <About/>
-            <Skills/>
             <Qualification/>
             <Services/>
             <Portfolio/>

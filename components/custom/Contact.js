@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <>
             <section className="contact section" id="contact">
-                <h2 className="section__ttile">Contact Me</h2>
+                <h2 className="section__title">Contact Me</h2>
                 <span className="section__subtitle">Get in touch</span>
 
                 <div className="contact__container container grid">
@@ -18,7 +18,6 @@ const Contact = () => {
 
                         <div className="contact__information">
                             <i className="uil uil-envelope contact__icon"></i>
-
                             <div>
                                 <h3 className="contact__title">E-mail</h3>
                                 <span className="contact__subtitle">anderson18.marlon@gmail.com</span>
@@ -26,8 +25,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__information">
-                            <i className="uil uil-map-maker contact__icon"></i>
-
+                            <i className="uil uil-map-marker contact__icon"></i>
                             <div>
                                 <h3 className="contact__title">Location</h3>
                                 <span className="contact__subtitle">Brazil, Campinas - São Paulo</span>
@@ -55,7 +53,7 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <a href="#" className="button button--flex">
+                                <a href="mailto:anderson18.marlon@gmail.com" className="button button--flex">
                                     Send Message <i className="uil uil-message button__icon"></i>
                                 </a>
                             </div>
