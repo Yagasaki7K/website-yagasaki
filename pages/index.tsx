@@ -58,9 +58,6 @@ export const Index = () => {
 
                 {/* Unicons */}
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-
-                {/* Custom CSS */}
-                <link rel="stylesheet" href="../../../styles/custom.css"/>
                 
             </head>
 
