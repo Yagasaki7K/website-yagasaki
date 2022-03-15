@@ -33,7 +33,7 @@ const Testimonial = () => {
                         <div className="testimonial__content swiper-slide">
                             <div className="testimonial__data">
                                 <div className="testimonial__header">
-                                    <img src="/assets/img/testimonial1.jpg" alt="" className="testimonial__img" />
+                                    <img src="/assets/testimonial1.jpg" alt="" className="testimonial__img" />
 
                                     <div>
                                         <h3 className="testimonial__name">Sara Smith</h3>
@@ -60,7 +60,7 @@ const Testimonial = () => {
                         <div className="testimonial__content swiper-slide">
                             <div className="testimonial__data">
                                 <div className="testimonial__header">
-                                    <img src="/assets/img/testimonial2.jpg" alt="" className="testimonial__img" />
+                                    <img src="/assets/testimonial2.jpg" alt="" className="testimonial__img" />
 
                                     <div>
                                         <h3 className="testimonial__name">Sara Smith</h3>
@@ -87,7 +87,7 @@ const Testimonial = () => {
                         <div className="testimonial__content swiper-slide">
                             <div className="testimonial__data">
                                 <div className="testimonial__header">
-                                    <img src="/assets/img/testimonial3.jpg" alt="" className="testimonial__img" />
+                                    <img src="/assets/testimonial3.jpg" alt="" className="testimonial__img" />
 
                                     <div>
                                         <h3 className="testimonial__name">Sara Smith</h3>

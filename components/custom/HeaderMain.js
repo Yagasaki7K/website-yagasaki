@@ -25,8 +25,34 @@ const HeaderMain = () => {
         }
 
         navLink.forEach(n => n.addEventListener('click', linkAction));
-      } else {
+        } else {
         console.log('You are on the server')
+
+        // Dark Mode Functionality
+
+        const themeButton = document.getElementById('theme-button');
+        const darkTheme = 'dark-theme';
+        const iconLight = 'uil-sun'
+        const iconDark = 'uil-moon'
+
+        const selectedTheme = localStorage.getItem('selected-theme')
+        const selectedIcon = localStorage.getItem('selected-icon')
+
+        const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+        const getCurrentIcon = () => themeButton.classList.contains(iconLight) ? iconDark : iconLight
+
+        if (selectedTheme) {
+            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+            themeButton.body.classList[selectedIcon === iconDark ? 'add' : 'remove'](iconLight)
+        }
+
+        themeButton.addEventListener('click', () => {
+            document.body.classList.toggle(darkTheme)
+            themeButton.classList.toggle(iconLight)
+
+            localStorage.setItem('selected-theme', getCurrentTheme())
+            localStorage.setItem('selected-icon', getCurrentIcon())
+        })
       }
 
     return(
@@ -72,6 +98,9 @@ const HeaderMain = () => {
                     </div>
 
                     <div className="nav__btns">
+                        {/* Dark Mode */}
+                        <i className="uil uil-moon change-theme" id="theme-button"></i>
+
                         <div className="nav__togle" id="nav-toggle">
                             <i className="uil uil-apps"></i>
                         </div>

@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import HeaderMain from '../components/custom/HeaderMain'
 import MainContent from '../components/custom/MainContent'
 import About from '../components/custom/About'
@@ -9,8 +11,39 @@ import ProjectMind from '../components/custom/ProjectMind'
 import Testimonial from '../components/custom/Testimonial'
 import Contact from '../components/custom/Contact'
 import Footer from '../components/custom/Footer'
+import ScrollTop from '../components/custom/ScrollTop'
 
 export const Index = () => {
+
+    useEffect(() => {
+        const scrollY = window.pageYOffset
+        
+        function scrollHeader() {
+            const navigation = document.getElementById('header')
+
+            if (scrollY >= 200) {
+                navigation!.classList.add('scroll-header'); 
+            } else {
+                navigation!.classList.remove('scroll-header');
+            } 
+
+            window.addEventListener('scroll', scrollHeader)
+        }
+
+        function scrollUp() {
+            const scrollUpTop = document.getElementById('scroll-up')
+
+            if (scrollY >= 560) {
+                scrollUpTop!.classList.add('scroll-up'); 
+            } else {
+                scrollUpTop!.classList.remove('scroll-up');
+            }
+
+            window.addEventListener('scroll', scrollUp)
+        }
+
+    }, [])
+
     return(
         <>
             <head>
@@ -31,7 +64,7 @@ export const Index = () => {
                 <link rel="stylesheet" href="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.css"/>
 
                 {/* Custom CSS */}
-                <link rel="stylesheet" href="/styles/custom.css"/>
+                <link rel="stylesheet" href="../../../styles/custom.css"/>
             </head>
 
             <HeaderMain/>
@@ -45,6 +78,7 @@ export const Index = () => {
             <Testimonial/>
             <Contact/>
             <Footer/>
+            <ScrollTop/>
         </>
     )
 }

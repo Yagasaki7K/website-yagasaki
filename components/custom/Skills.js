@@ -3,8 +3,9 @@ import { useEffect } from "react";
 const Skills = () => {
 
     useEffect(() => {
-        const skillsContent = document.getElementById('skills__content');
+        const skillsContent = document.querySelectorAll('skills__content');
         const skillsHeader = document.querySelectorAll('.skills__header');
+        let index = 0;
 
         function toggleSkills() {
             let itemClass = this.parentNode.className

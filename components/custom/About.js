@@ -6,7 +6,7 @@ const About = () => {
                 <span className="section__subtitle">My introduction</span>  
 
                 <div className="about__container container grid">
-                    <img src="/assets/about.jpg" alt="About" className="about__img" />    
+                    <img src="https://github.com/Yagasaki7K.png" alt="About" className="about__img" />    
 
                     <div className="about__data">
                         <p className="about__description">
@@ -33,7 +33,7 @@ const About = () => {
                         </div>
 
                         <div className="about__buttons">
-                            <a download="" href="/assets/pdf/AndersonENUS.pdf" className="button button--flex">
+                            <a download="" href="/docs/AndersonENUS.pdf" className="button button--flex">
                                 Download CV<i className="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>

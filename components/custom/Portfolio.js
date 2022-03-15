@@ -29,7 +29,7 @@ const Portfolio = () => {
                     <div className="swiper-wrapper">
                         {/* Portfolio 1 */}
                         <div className="portfolio__content grid swiper-slide">
-                            <img src="/assets/img/portfolio1.jpg" alt="Portfolio" className="portfolio__img" />
+                            <img src="/assets/portfolio1.jpg" alt="Portfolio" className="portfolio__img" />
 
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title">Modern Website</h3>
@@ -45,7 +45,7 @@ const Portfolio = () => {
 
                         {/* Portfolio 2 */}
                         <div className="portfolio__content grid swiper-slide">
-                            <img src="/assets/img/portfolio1.jpg" alt="Portfolio" className="portfolio__img" />
+                            <img src="/assets/portfolio1.jpg" alt="Portfolio" className="portfolio__img" />
 
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title">Modern Website</h3>
@@ -61,7 +61,7 @@ const Portfolio = () => {
 
                         {/* Portfolio 3 */}
                         <div className="portfolio__content grid swiper-slide">
-                            <img src="/assets/img/portfolio1.jpg" alt="Portfolio" className="portfolio__img" />
+                            <img src="/assets/portfolio1.jpg" alt="Portfolio" className="portfolio__img" />
 
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title">Modern Website</h3>

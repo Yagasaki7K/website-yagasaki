@@ -12,7 +12,7 @@ const ProjectMind = () => {
                             </a>
                         </div>
 
-                        <img src="assets/img/project.png" alt="Project with me" className="project__img"/>
+                        <img src="/assets/project.png" alt="Project with me" className="project__img"/>
                     </div>
                 </div>
             </section>
