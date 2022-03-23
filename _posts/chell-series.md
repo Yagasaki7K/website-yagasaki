@@ -1,5 +1,5 @@
 ---
-title: 'O que é a Chell Series da Aperture Laboratories'
+title: 'O que é a Chell Series da Aperture Laboratories?'
 excerpt: 'O tempo passou, nos tornamos uma comunidade que mais ajuda em resolver problemas, auxiliar, dar dicas e guiar os desenvolvedores recém-chegados ao caminho correto. Dado essa nossa nova apresentação e abordagem que andamos tendo pela própria comunidade, nós resolvemos criar o Chell Series.'
 coverImage: '/assets/blog/covers/chell.jpg'
 date: '2022-03-23'
