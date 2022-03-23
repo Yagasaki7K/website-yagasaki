@@ -57,6 +57,8 @@ O mundo de desenvolvimento é grande e nem sempre você conseguirá resolver tud
 
 O outro lugar é a minha, a nossa, comunidade de desenvolvedores no Brasil, conhecida como Aperture Laboratories, é um lugar incrível, cheio de informações, pessoas para te ajudar, dicas, cursos compartilhados pela comunidade, vagas compartilhadas por uma equipe de desenvolvimento e pessoas do RH e muito evento que acontece em várias vezes no mês e anunciamos tudo lá.
 
+Atualização | Introdução ao Desenvolvimento Web: [O que é a Chell Series da Aperture Laboratories](https://yagasaki.vercel.app/blog/posts/chell-series)
+
 Ficou interessado em entrar em ambos? Só clicar nos links abaixo e eu te vejo lá!
 
 Não deixe de seguir @KalifyInc e @Yagasaki7K no Twitter para receber várias novidades e dicas!
