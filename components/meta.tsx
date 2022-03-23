@@ -33,7 +33,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Eu sou Anderson "Yagasaki" Marlon, desenvolvedor, Analista de Desenvolvimento de Sistemas na Cenário Capital, CEO da Aperture Laboratories e Drift King do meu bairro`}
+        content={`Eu sou Anderson "Yagasaki" Marlon, Desenvolvedor Front-end com React/NextJS e Graduado em CC50 pela Harvard. Este é meu blog!`}
       />
       <meta property="og:image" content="/assets/authors/yagasaki.jpeg" />
     </Head>
