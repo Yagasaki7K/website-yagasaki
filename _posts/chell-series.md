@@ -29,9 +29,16 @@ A origem do nome vem de Chell, a protagonista silenciosa da série de videogames
 Fico interessado em como contribuir com o nosso desenvolvimento? É simples e qualquer um pode ajudar, principalmente se você domina de um assunto em específico que será muito bom para a evolução do pessoal. Inicialmente você deve criar um repositório NO SEU PRÓPRIO GITHUB, usar [ESSE MODELO DE README](https://github.com/ApertureLaboratory/4chell/blob/main/.github/example/README.md), depois você deve ir em [nosso repositório lá no Github](https://github.com/ApertureLaboratory/4chell)
 
 1. Realizar um Fork do projeto
-2. Crie um branch com a nova feature (`git checkout -b feature/nome-do-artigo`)
-3. Realize o Commit (`git commit -m 'Adicionado novo item na enciclopédia'`)
-4. Realize o Push no Branch (`git push origin feature/nome-do-artigo`)
+
+2. Crie um branch com a nova feature 
+`git checkout -b feature/nome-do-artigo`
+
+3. Realize o Commit 
+`git commit -m 'Adicionado novo item na enciclopédia'`
+
+4. Realize o Push no Branch 
+`git push origin feature/nome-do-artigo`
+
 5. Abrir um Pull Request
 
 E pronto, nossa equipe estará monitorando o repositório e qualquer nova informação estaremos analisando e verificando se os novos artigos/tutoriais estão de acordo para seguir e auxiliar ainda mais a comunidade, depois de analisado ele será aprovado e seu nome estará como contribuidor do nosso projeto!
