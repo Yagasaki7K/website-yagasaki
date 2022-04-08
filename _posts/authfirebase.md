@@ -26,7 +26,9 @@ Os links são esses:
 - [https://developers.google.com/](https://developers.google.com/)
 - [https://firebase.google.com/](https://firebase.google.com/)
 
-Depois de ter feito sua aplicação web e mencionado que ela será usada em uma aplicação web, vamos pegar a credencial dela (ID do Cliente) na página da aplicação, algo como: <small>707708825727-3pqn2rfcl6n1konc9rq3ssp184b44o68.apps.googleusercontent.com</small> em [Google Cloud Plataform: Credentials](https://console.cloud.google.com/apis/credentials)
+Depois de ter feito sua aplicação web e mencionado que ela será usada em uma aplicação web, vamos pegar a credencial dela (ID do Cliente) na página da aplicação, algo como: </br>
+<small>707708825727-3pqn2rfcl6n1konc9rq3ssp184b44o68.apps.googleusercontent.com</small>
+no [Google Cloud Plataform: Credentials](https://console.cloud.google.com/apis/credentials)
 
 Não esqueça de importar no <small>head</small> da página esses dois scripts, vou explicando cada um no seu tempo.
 
@@ -56,7 +58,7 @@ function handleCredentialResponse(response) {
 
     const ActionLoginGoogle = () => {
         google.accounts.id.initialize({
-            client_id: "843679913436-v4ob24vtnbv0ojjdcmpt5o22l7fko6a6.apps.googleusercontent.com",
+            client_id: "843679913436-v4ob24vtnbv.apps.googleusercontent.com",
             callback: handleCredentialResponse
         });
         google.accounts.id.renderButton(
