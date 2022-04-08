@@ -26,9 +26,9 @@ Os links são esses:
 - [https://developers.google.com/](https://developers.google.com/)
 - [https://firebase.google.com/](https://firebase.google.com/)
 
-Depois de ter feito sua aplicação web e mencionado que ela será usada em uma aplicação web, vamos pegar a credencial dela (ID do Cliente) na página da aplicação, algo como: ```707708825727-3pqn2rfcl6n1konc9rq3ssp184b44o68.apps.googleusercontent.com``` em [Google Cloud Plataform: Credentials](https://console.cloud.google.com/apis/credentials)
+Depois de ter feito sua aplicação web e mencionado que ela será usada em uma aplicação web, vamos pegar a credencial dela (ID do Cliente) na página da aplicação, algo como: `707708825727-3pqn2rfcl6n1konc9rq3ssp184b44o68.apps.googleusercontent.com` em [Google Cloud Plataform: Credentials](https://console.cloud.google.com/apis/credentials)
 
-Não esqueça de importar no ```head``` da página esses dois scripts, vou explicando cada um no seu tempo.
+Não esqueça de importar no `head` da página esses dois scripts, vou explicando cada um no seu tempo.
 
 ```html
 <script src="https://accounts.google.com/gsi/client" async defer></script>
@@ -36,7 +36,7 @@ Não esqueça de importar no ```head``` da página esses dois scripts, vou expli
 ```
 
 ## Instalação
-Criaremos o nosso escopo acima do ```return```, já que é uma função javascript e seguindo a documentação, teremos algo como:
+Criaremos o nosso escopo acima do `return`, já que é uma função javascript e seguindo a documentação, teremos algo como:
 
 ```javascript
 function handleCredentialResponse(response) {
@@ -80,24 +80,24 @@ function handleCredentialResponse(response) {
     }, handleCredentialResponse, [])
 ```
 
-Como nossa aplicação está em React/Nextjs, nós não usaremos ```window.onload```, já que o React/NextJS não aceita bem a particularidade window. Então, vamos chamar essas funções dentro de um useEffect - não esqueça de importar.
+Como nossa aplicação está em React/Nextjs, nós não usaremos `window.onload`, já que o React/NextJS não aceita bem a particularidade window. Então, vamos chamar essas funções dentro de um useEffect - não esqueça de importar.
 
 Colocamos as duas funções para o lado de fora e simplesmente chamamos ela para ser executada, o que permite que quando o usuário acessar a aplicação, ela será executada uma vez, até a interação do usuário.
 
 Agora, vamos a explicação de cada parte do código.
 
-Inicialmente temos a função ```handleCredentialResponse```, que recebe como parâmetro o response, que é o que o Google retorna depois da autenticação ter sido executada com sucesso.
+Inicialmente temos a função `handleCredentialResponse`, que recebe como parâmetro o response, que é o que o Google retorna depois da autenticação ter sido executada com sucesso.
 
-Temos o ```ActionLoginGoogle``` que é a função que será executada quando o usuário acessar a aplicação e dentro dela acontece duas coisas.
+Temos o `ActionLoginGoogle` que é a função que será executada quando o usuário acessar a aplicação e dentro dela acontece duas coisas.
 Uma é o initialize, que é responsável de verificar o ID da sua aplicação, fazer a comunicação e retornar o response para o callback.
 
-E temos o ```renderButton``` que nada mais é que a parte visual do esquema do Google, um simples botão de login.
+E temos o `renderButton` que nada mais é que a parte visual do esquema do Google, um simples botão de login.
 
 Temos também o id.prompt, mas não vamos usar ele e muito menos remover ele, já que é uma configuração de OneTap Login e que é necessário uma chave SSL para rodar.
 
-Criaremos um ```<button id="ActionLoginGoogle" onClick={ActionLoginGoogle}></button>```, ele será o cara que vai renderizar o layout disponibilizado pelo Google, lembre-se que ele tem que estar na parte HTML da aplicação, se for na mesma página que está sendo feita a configuração e tudo mais, ele ficará dentro do ```return()```.
+Criaremos um `<button id="ActionLoginGoogle" onClick={ActionLoginGoogle}></button>`, ele será o cara que vai renderizar o layout disponibilizado pelo Google, lembre-se que ele tem que estar na parte HTML da aplicação, se for na mesma página que está sendo feita a configuração e tudo mais, ele ficará dentro do `return()`.
 
-Dentro dele temos o id ```google.accounts.id.renderButton``` que é a parte visual do botão, que é o que o Google disponibiliza para o usuário e o onClick que é a função que será executada quando o usuário clicar no botão.
+Dentro dele temos o id `google.accounts.id.renderButton` que é a parte visual do botão, que é o que o Google disponibiliza para o usuário e o onClick que é a função que será executada quando o usuário clicar no botão.
 
 Depois disso, chamamos um a um no useEffect e voilà!
 
@@ -105,9 +105,9 @@ Depois disso, chamamos um a um no useEffect e voilà!
 
 A aplicação já está rodando, funcionando e tudo dentro dos conformes, você só precisará utilizar a parte de callback para redirecionar o usuário para o lugar adequado da resposta da aplicação, geralmente para uma outra página. 
 
-O que eu acabei fazendo dentro do escopo do ```handleCredentialResponse```, eu primeiramente decodifiquei a resposta usando o JWT Decode (uma biblioteca que você deve instalar no Head ou através do NPM/Yarn, mas nesse artigo deixei no head) 
+O que eu acabei fazendo dentro do escopo do `handleCredentialResponse`, eu primeiramente decodifiquei a resposta usando o JWT Decode (uma biblioteca que você deve instalar no Head ou através do NPM/Yarn, mas nesse artigo deixei no head) 
 
-Na linha do ```const data = jwt_decode(response.credential)``` nesse caso, eu peguei as informações do usuário que é um objeto. Verifiquei se o objeto não estava vazio e em seguida eu guardei essas informações em um localStore do usuário e redirecionei ele para uma outra janela, existem várias outras maneiras de se armazenar essas informações, inclusive usando um ```useState``` e depois você redireciona ele para uma página de acesso que faz essa verificação do usuário e caso for negativo, devolve ele para a página inicial para fazer o login.
+Na linha do `const data = jwt_decode(response.credential)` nesse caso, eu peguei as informações do usuário que é um objeto. Verifiquei se o objeto não estava vazio e em seguida eu guardei essas informações em um localStore do usuário e redirecionei ele para uma outra janela, existem várias outras maneiras de se armazenar essas informações, inclusive usando um `useState` e depois você redireciona ele para uma página de acesso que faz essa verificação do usuário e caso for negativo, devolve ele para a página inicial para fazer o login.
 
 Caso você queira informações mais detalhadas de cada função, chamada e etc da configuração, aplicação e desenvolvimento dessa aplicação, você pode estar conferindo através do vídeo (no final desse artigo), existe um tutorial da Jake da Rocketseat explicando detalhe por detalhe em 40 minutos ensinando desde o começo, configuração da aplicação, instalação, configuração do callback, configuração do OneTap Login e muito mais.
 
