@@ -1,47 +1,8 @@
-import { useEffect } from 'react'
-
-import HeaderMain from '../components/custom/HeaderMain'
-import MainContent from '../components/custom/MainContent'
-import About from '../components/custom/About'
-import Qualification from '../components/custom/Qualification'
-import Services from '../components/custom/Services'
-import Portfolio from '../components/custom/Portfolio'
-import ProjectMind from '../components/custom/ProjectMind'
-import Testimonial from '../components/custom/Testimonial'
-import Contact from '../components/custom/Contact'
+import HomeDetails from '../components/custom/HomeDetails'
+import Container from '../components/custom/Container'
 import Footer from '../components/custom/Footer'
-import ScrollTop from '../components/custom/ScrollTop'
 
 export const Index = () => {
-
-    useEffect(() => {
-        const scrollY = window.pageYOffset
-        
-        function scrollHeader() {
-            const navigation = document.getElementById('header')
-
-            if (scrollY >= 200) {
-                navigation!.classList.add('scroll-header'); 
-            } else {
-                navigation!.classList.remove('scroll-header');
-            } 
-
-            window.addEventListener('scroll', scrollHeader)
-        }
-
-        function scrollUp() {
-            const scrollUpTop = document.getElementById('scroll-up')
-
-            if (scrollY >= 560) {
-                scrollUpTop!.classList.add('scroll-up'); 
-            } else {
-                scrollUpTop!.classList.remove('scroll-up');
-            }
-
-            window.addEventListener('scroll', scrollUp)
-        }
-
-    }, [])
 
     return(
         <>
@@ -58,20 +19,19 @@ export const Index = () => {
 
                 {/* Unicons */}
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"/>
+                <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900" rel="stylesheet"/> 
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                 
             </head>
 
-            <HeaderMain/>
-            <MainContent/>
-            <About/>
-            <Qualification/>
-            <Services/>
-            <Portfolio/>
-            <ProjectMind/>
-            <Testimonial/>
-            <Contact/>
-            <Footer/>
-            <ScrollTop/>
+            <HomeDetails>
+                <Container/>
+                <Footer/>
+            </HomeDetails>
         </>
     )
 }
