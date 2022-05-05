@@ -18,8 +18,8 @@ const HomeDetails = styled.div`
         height: 256px;
         width: 256px;
         margin-right: 15px;
-
     }
+
     @media screen and (max-width: 700px) {
         display: block;
         padding-top: 200px;
@@ -35,7 +35,22 @@ const HomeDetails = styled.div`
         margin: 0px;
         position: relative;
         z-index: 1;
-}
+    }
+
+    h2:hover span {
+        display: none;
+    }
+
+    h2:hover:before {
+        content: "🎉 葛城 矢ヶ崎 🎉";
+    }
+
+    h4:hover span {
+        display: none;
+    }
+
+    h4:hover:before {
+        content: "フロントエンドの開発者";
     }
 
     h4 {

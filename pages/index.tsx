@@ -31,8 +31,8 @@ export const Index = () => {
                     <img src="/assets/avatar.jpg" alt="s"/>
                 </div>
                 <div>
-                    <h2>Anderson Marlon</h2>
-                    <h4>Front-end Developer</h4>
+                    <h2><span>Anderson Marlon</span></h2>
+                    <h4><span>Front-end Developer</span></h4>
                     <p>Age: {new Date().getFullYear() - 1997} years</p>
                     <p>Email: <a href="mailto:anderson18.marlon@gmail.com" className="hover-underline-animation">anderson18.marlon@gmail.com</a></p>
                     <p>Location: Campinas - SP</p>
