@@ -1,6 +1,4 @@
 import HomeDetails from '../components/custom/HomeDetails'
-import Container from '../components/custom/Container'
-import Footer from '../components/custom/Footer'
 
 export const Index = () => {
 
@@ -29,8 +27,22 @@ export const Index = () => {
             </head>
 
             <HomeDetails>
-                <Container/>
-                <Footer/>
+                <div>
+                    <img src="/assets/avatar.jpg" alt="s"/>
+                </div>
+                <div>
+                    <h2>Anderson Marlon</h2>
+                    <h4>Front-end Developer</h4>
+                    <p>Age: {new Date().getFullYear() - 1997} years</p>
+                    <p>Email: <a href="mailto:anderson18.marlon@gmail.com" className="hover-underline-animation">anderson18.marlon@gmail.com</a></p>
+                    <p>Location: Campinas - SP</p>
+                    <p>Phone: <a href="tel:+5519 9 9801-8174" className="hover-underline-animation">(19) 9 9801-8174</a></p>
+                    <p><a href="/blog" className="hover-underline-animation">Blog in Portuguese</a> | <a href="/pdf/AndersonENUS.pdf" className="hover-underline-animation">Skillset</a></p>
+                    <a href="https://github.com/Yagasaki7K" target="_blank"><i className="uil uil-github"></i></a>
+                    <a href="https://twitter.com/Yagasaki7K" target="_blank"><i className="uil uil-twitter"></i></a>
+                    <a href="https://instagram.com/Yagasaki.dev" target="_blank"><i className="uil uil-instagram"></i></a>
+                    <a href="https://linkedin.com/in/andersonmarlon" target="_blank"><i className="uil uil-linkedin"></i></a>
+                </div>
             </HomeDetails>
         </>
     )
