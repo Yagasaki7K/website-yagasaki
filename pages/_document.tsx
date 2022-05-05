@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
                 <script src="https://yagasaki7k.github.io/custom-scripts/font-awesome.js"></script>
 
                 </head>
-                <body style={{background: '#745ee1'}}>
+                <body>
                     <Main />
                     <NextScript />
                 </body>
