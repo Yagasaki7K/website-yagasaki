@@ -28,7 +28,7 @@ export const Index = () => {
 
             <HomeDetails>
                 <div>
-                    <img src="/assets/avatar.jpg" alt="s"/>
+                    <img src="/assets/avatar.jpg" alt="Avatar"/>
                 </div>
                 <div>
                     <h2><span>Anderson Marlon</span></h2>
