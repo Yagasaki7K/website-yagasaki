@@ -22,8 +22,8 @@ const HomeDetails = styled.div`
 
     @media screen and (max-width: 700px) {
         display: block;
-        padding-top: 200px;
-        padding-left: 1.5rem;
+        padding-top: 6rem;
+        padding-left: 3rem;
     }
 
     h2 {
@@ -42,7 +42,7 @@ const HomeDetails = styled.div`
     }
 
     h2:hover:before {
-        content: "🎉 葛城 矢ヶ崎 🎉";
+        content: "✨ 葛城 矢ヶ崎 ✨";
     }
 
     h4:hover span {
@@ -70,12 +70,12 @@ const HomeDetails = styled.div`
     }
 
     i {
-        color: #e01673;
+        color: #a8abfc;
         font-size: 24px;
         margin-right: 10px;
 
         :hover {
-            color: #961f56;
+            color: #5857a8;
             transition: 1s;
         }
     }
@@ -83,7 +83,7 @@ const HomeDetails = styled.div`
     .hover-underline-animation {
         display: inline-block;
         position: relative;
-        color: #e01673;
+        color: #a8abfc;
     }
 
     .hover-underline-animation:after {
@@ -94,7 +94,7 @@ const HomeDetails = styled.div`
         height: 1px;
         bottom: 0;
         left: 0;
-        background: #e01673;
+        background: #a8abfc;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
