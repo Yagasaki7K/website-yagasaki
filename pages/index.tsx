@@ -28,7 +28,9 @@ export const Index = () => {
 
             <HomeDetails>
                 <div>
-                    <img src="/assets/avatar.jpg" alt="Avatar"/>
+                    <a href="https://github.com/Yagasaki7K" target="_blank">
+                        <img src="/assets/avatar.jpg" alt="Avatar"/>
+                    </a>
                 </div>
                 <div>
                     <h2><span>Anderson Marlon</span></h2>

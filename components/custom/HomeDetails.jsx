@@ -17,7 +17,14 @@ const HomeDetails = styled.div`
         border-radius: 25%;
         height: 256px;
         width: 256px;
-        margin-right: 15px;
+        margin-right: 25px;
+        cursor: pointer;
+
+        :hover {
+            -webkit-transition: all 3s;
+            transition: all 3s;
+            content: url("https://github.com/Yagasaki7k.png");
+        }
     }
 
     @media screen and (max-width: 700px) {
@@ -35,22 +42,6 @@ const HomeDetails = styled.div`
         margin: 0px;
         position: relative;
         z-index: 1;
-    }
-
-    h2:hover span {
-        display: none;
-    }
-
-    h2:hover:before {
-        content: "✨ 葛城 矢ヶ崎 ✨";
-    }
-
-    h4:hover span {
-        display: none;
-    }
-
-    h4:hover:before {
-        content: "フロントエンドの開発者";
     }
 
     h4 {
