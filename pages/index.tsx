@@ -29,7 +29,7 @@ export const Index = () => {
             <HomeDetails>
                 <div>
                     <a href="https://github.com/Yagasaki7K" target="_blank">
-                        <img src="/assets/avatar.jpg" alt="Avatar"/>
+                        <img src="https://github.com/Yagasaki7K.png" alt="Avatar"/>
                     </a>
                 </div>
                 <div>

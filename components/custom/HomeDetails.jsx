@@ -20,11 +20,11 @@ const HomeDetails = styled.div`
         margin-right: 25px;
         cursor: pointer;
 
-        :hover {
+        /* :hover {
             -webkit-transition: all 3s;
             transition: all 3s;
             content: url("https://github.com/Yagasaki7k.png");
-        }
+        } */
     }
 
     @media screen and (max-width: 700px) {
