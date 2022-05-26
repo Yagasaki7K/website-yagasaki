@@ -61,12 +61,12 @@ const HomeDetails = styled.div`
     }
 
     i {
-        color: #a8abfc;
+        color: #1fb7ce;
         font-size: 24px;
         margin-right: 10px;
 
         :hover {
-            color: #5857a8;
+            color: #188596;
             transition: 1s;
         }
     }
@@ -74,7 +74,7 @@ const HomeDetails = styled.div`
     .hover-underline-animation {
         display: inline-block;
         position: relative;
-        color: #a8abfc;
+        color: #1fb7ce;
     }
 
     .hover-underline-animation:after {
@@ -85,7 +85,7 @@ const HomeDetails = styled.div`
         height: 1px;
         bottom: 0;
         left: 0;
-        background: #a8abfc;
+        background: #1fb7ce;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
