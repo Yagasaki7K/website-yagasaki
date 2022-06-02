@@ -31,7 +31,7 @@ function App() {
                     <a href="https://github.com/Yagasaki7K" target="_blank">
                         <i class="uil uil-github"></i><p>GitHub</p> <i class="uil uil-external-link-alt"></i>
                     </a>
-                    
+
                 </footer>
             </div>
 
@@ -44,7 +44,7 @@ function App() {
                     <h3>NextJS/Typescript</h3>
                     <h2>Yagasaki7K/website-essentials</h2>
                     <p>
-                        List of softwares essentials for your computer. 
+                        List of softwares essentials for your computer.
                     </p>
                     <div className="star">
                         <i class="uil uil-star"></i>
@@ -66,13 +66,13 @@ function App() {
                     </div>
                 </div>
                 </a>
-                
+
                 <a href="https://github.com/ApertureLaboratory/bot-discord" target="_blank">
                 <div className="boxGithub">
                     <h3>Node/Discordjs</h3>
                     <h2>ApertureLaboratory/bot-discord</h2>
                     <p>
-                    GLaDOS (Genetic Lifeform and Disk Operating System) is an artificial intelligence created by Aperture Science.  
+                    GLaDOS (Genetic Lifeform and Disk Operating System) is an artificial intelligence created by Aperture Science.
                     </p>
                     <div className="star">
                         <i class="uil uil-star"></i>
@@ -131,7 +131,7 @@ function App() {
                                 <p>Founder and CTO at @KalifyInc 🇧🇷 🇺🇸 | Majority Investor at @smokehokaah</p>
                                 <p>フロントエンド開発者</p>
                             </blockquote>
-                        </div>        
+                        </div>
                     </div>
                 </a>
                 <a href="https://twitter.com/sseraphini" target="_blank">
@@ -142,7 +142,7 @@ function App() {
                                 <h3>@Sseraphini</h3>
                                 <p>Abstraction Engineer http://patreon.com/sibelius I Bet on People and Startups #Bitcoin #Pix http://woovi.com http://sibelius.substack.com</p>
                             </blockquote>
-                        </div>        
+                        </div>
                     </div>
                 </a>
 
@@ -154,7 +154,7 @@ function App() {
                                 <h3>@WonderWanny</h3>
                                 <p>Community Manager, SQL Developer, DBA {'&'} Content Creator. Nerd, sarcastic, hyperactive, obsessed with Flamingos 🦩 and Wonder Woman. From Brazil. 🇧🇷</p>
                             </blockquote>
-                        </div>        
+                        </div>
                     </div>
                 </a>
 
@@ -166,7 +166,7 @@ function App() {
                                 <h3>@pamtsx</h3>
                                 <p>Frontend Developer 👩🏻‍💻🌐📱 || Amante de Astronomia 🔭 || Science 🧬 || Living and learning 🔥 | | Student at @Rocketseat.</p>
                             </blockquote>
-                        </div>        
+                        </div>
                     </div>
                 </a>
 
