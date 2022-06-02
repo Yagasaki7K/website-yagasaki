@@ -83,6 +83,18 @@ function App() {
 
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
+                <a href="https://yagasaki.notion.site/Jhenny-s-Book-Uma-homenagem-em-app-4ec410e98bb949e582d97665ae2d07c8" target="_blank">
+                <div className="boxGithub">
+                    <h2>Jhenny’s Book - Uma homenagem em app</h2>
+                    <p>
+                    O ano era mais ou menos 2018, 2019. Eu tinha uma amiga com câncer terminal, ela gostava muito de animes e desenhos japoneses, fissurada em jogar e passar horas e horas jogando, sequer eu vi o rosto dela alguma vez, meu primo ...
+                    </p>
+                    <div className="star">
+                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
+                    </div>
+                </div>
+                </a>
+
                 <a href="https://yagasaki.notion.site/Conhe-a-sobre-Developer-Relations-DevRel-63bafcb9230a4580811d577deebb3eea" target="_blank">
                 <div className="boxGithub">
                     <h2>Conheça sobre Developer Relations (#DevRel)</h2>
@@ -98,6 +110,18 @@ function App() {
                 <a href="https://yagasaki.notion.site/Fazendo-autentica-o-no-Google-Firebase-com-React-NextJS-221a992d244741c18226ca8ba2f31cce" target="_blank">
                 <div className="boxGithub">
                     <h2>Fazendo autenticação no Google Firebase com React/NextJS</h2>
+                    <p>
+                    Hoje tive a triste tarefa - porém difícil para muitos e quase nunca praticado por mim -, de fazer uma autenticação do Google. O intuíto da vez era para meu projeto com a Kalify Inc, o AlôGarapa, mas vou ...
+                    </p>
+                    <div className="star">
+                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="https://yagasaki.notion.site/Fazendo-autentica-o-no-Google-Firebase-com-React-NextJS-221a992d244741c18226ca8ba2f31cce" target="_blank">
+                <div className="boxGithub">
+                    <h2>O que é a Chell Series da Aperture Laboratories?</h2>
                     <p>
                     Hoje tive a triste tarefa - porém difícil para muitos e quase nunca praticado por mim -, de fazer uma autenticação do Google. O intuíto da vez era para meu projeto com a Kalify Inc, o AlôGarapa, mas vou ...
                     </p>
