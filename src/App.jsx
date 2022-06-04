@@ -140,8 +140,8 @@ function App() {
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@Yagasaki7K</h3>
-                                <p>Founder and CTO at @KalifyInc 🇧🇷 🇺🇸 | Majority Investor at @smokehokaah</p>
-                                <p>フロントエンド開発者</p>
+                                <p>Front-end Software Developer</p>
+                                <p>フロントエンドソフトウェア開発者</p>
                             </blockquote>
                         </div>
                     </div>
