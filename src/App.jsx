@@ -6,19 +6,19 @@ function App() {
         <ContentDetails>
             <div className="LeftContent">
                 <h2>Anderson Marlon</h2>
-                <h4>Front-end Developer using React/NextJS</h4>
+                <h4>Front-end Software Developer</h4>
 
                 <div className="ContentText">
                     <p>
-                    I build solutions from Internet at <a href="https://kalify.netlify.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.netlify.app/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="https://yagasaki.notion.site/yagasaki/57c81f367a104390a084e3c4d3e2f4d5?v=441cd72b4d9f411880b15f6677c76962" target="_blank">blog</a>.
+                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="https://yagasaki.notion.site/yagasaki/57c81f367a104390a084e3c4d3e2f4d5?v=441cd72b4d9f411880b15f6677c76962" target="_blank">blog</a>.
                     </p>
                     <p>フロントエンド開発者</p>
 
                     <div className="summary">
                         <h4>Summary</h4>
-                        <a href="#github"><p>EVA <b>01</b> | Projects</p> <hr/> </a>
-                        <a href="#blog"><p>EVA <b>02</b> | Articles</p> <hr/> </a>
-                        <a href="#twitter"><p>EVA <b>03</b> | Twitter</p> <hr/> </a>
+                        <a href="#github"><p>EVA <b>00</b> | Projects</p> <hr/> </a>
+                        <a href="#blog"><p>EVA <b>01</b> | Articles</p> <hr/> </a>
+                        <a href="#twitter"><p>EVA <b>02</b> | References</p> <hr/> </a>
                     </div>
                 </div>
 
@@ -119,18 +119,6 @@ function App() {
                 </div>
                 </a>
 
-                <a href="https://yagasaki.notion.site/Front-end-Back-end-Fullstack-o-que-e-para-onde-ir-867d87bece3941a1a60acac60843bbd7" target="_blank">
-                <div className="boxGithub">
-                    <h2>Front-end, Back-end, Fullstack, o que é e para onde ir?</h2>
-                    <p>
-                    Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?É uma questão simples, mas para quem está começando vejo que tem muita dificuldade em olhar aonde quer ir e o que fazer...
-                    </p>
-                    <div className="star">
-                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
-                    </div>
-                </div>
-                </a>
-
                 {/* Twitter Feed */}
                 <h1 id="twitter">References</h1>
 
@@ -140,8 +128,9 @@ function App() {
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@Yagasaki7K</h3>
-                                <p>Front-end Software Developer</p>
                                 <p>フロントエンドソフトウェア開発者</p>
+                                <p>25y ⟡ Front-end Software Developer</p>
+                                <p>BR • US • JP (coming soon)</p>
                             </blockquote>
                         </div>
                     </div>
