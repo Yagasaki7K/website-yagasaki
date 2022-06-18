@@ -48,7 +48,7 @@ function App() {
                     </p>
                     <div className="star">
                         <i class="uil uil-star"></i>
-                        <p className="starnumber"> 5</p>
+                        <p className="starnumber"> 6</p>
                     </div>
                 </div>
                 </a>
