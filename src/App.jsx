@@ -83,6 +83,18 @@ function App() {
 
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
+                <a href="https://yagasaki.notion.site/Rebuild-4chell-da-Aperture-Laboratories-f8b643989d9a4df2b309e265629cfbf9" target="_blank">
+                <div className="boxGithub">
+                    <h2>Rebuild: 4chell da Aperture Laboratories</h2>
+                    <p>
+                    O tempo passou, eu refleti, pensei muito em como melhorar o 4chell e decidi acabar com ele, de uma vez por todas. E foi o que eu fiz. Destruí a versão que eu achei que daria certo e montei de uma maneira diferente.  ...
+                    </p>
+                    <div className="star">
+                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
+                    </div>
+                </div>
+                </a>
+
                 <a href="https://yagasaki.notion.site/Jhenny-s-Book-Uma-homenagem-em-app-4ec410e98bb949e582d97665ae2d07c8" target="_blank">
                 <div className="boxGithub">
                     <h2>Jhenny’s Book - Uma homenagem em app</h2>
@@ -100,18 +112,6 @@ function App() {
                     <h2>Conheça sobre Developer Relations (#DevRel)</h2>
                     <p>
                     Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github - e uma das membras da Aperture Laboratories - pude ter uma noção e uma visão geral do que era ...
-                    </p>
-                    <div className="star">
-                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
-                    </div>
-                </div>
-                </a>
-
-                <a href="https://yagasaki.notion.site/Fazendo-autentica-o-no-Google-Firebase-com-React-NextJS-221a992d244741c18226ca8ba2f31cce" target="_blank">
-                <div className="boxGithub">
-                    <h2>Fazendo autenticação no Google Firebase com React/NextJS</h2>
-                    <p>
-                    Hoje tive a triste tarefa - porém difícil para muitos e quase nunca praticado por mim -, de fazer uma autenticação do Google. O intuíto da vez era para meu projeto com a Kalify Inc, o AlôGarapa, mas vou ...
                     </p>
                     <div className="star">
                         <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
