@@ -62,7 +62,21 @@ function App() {
                     </p>
                     <div className="star">
                         <i class="uil uil-star"></i>
-                        <p className="starnumber"> 0</p>
+                        <p className="starnumber"> 1</p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="https://github.com/Yagasaki7K/website-newsletterchamps" target="_blank">
+                <div className="boxGithub">
+                    <h3>Javascript</h3>
+                    <h2>Yagasaki7K/website-newsletterchamps</h2>
+                    <p>
+                    A page on website to display a Newsletter from Filipe Deschamps
+                    </p>
+                    <div className="star">
+                        <i class="uil uil-star"></i>
+                        <p className="starnumber"> 1</p>
                     </div>
                 </div>
                 </a>
@@ -70,9 +84,9 @@ function App() {
                 <a href="https://github.com/ApertureLaboratory/bot-discord" target="_blank">
                 <div className="boxGithub">
                     <h3>Node/Discordjs</h3>
-                    <h2>ApertureLaboratory/bot-discord</h2>
+                    <h2>Yagasaki7K/bot-discord-lofi</h2>
                     <p>
-                    GLaDOS (Genetic Lifeform and Disk Operating System) is an artificial intelligence created by Aperture Science.
+                    Discord bot in Aperture Laboratories for LoFi Music Radio
                     </p>
                     <div className="star">
                         <i class="uil uil-star"></i>
