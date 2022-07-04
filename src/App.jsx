@@ -10,7 +10,7 @@ function App() {
 
                 <div className="ContentText">
                     <p>
-                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="https://yagasaki.notion.site/yagasaki/57c81f367a104390a084e3c4d3e2f4d5?v=441cd72b4d9f411880b15f6677c76962" target="_blank">blog</a>.
+                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="https://yagasaki.notion.site/yagasaki/57c81f367a104390a084e3c4d3e2f4d5?v=441cd72b4d9f411880b15f6677c76962" target="_blank">blog</a> and my <a href="/curriculum">curriculum</a>.
                     </p>
                     <p>フロントエンド開発者</p>
 
@@ -25,11 +25,15 @@ function App() {
                 <footer>
                     <img src="https://github.com/Yagasaki7k.png" alt="Anderson Marlon" />
                     <a href="https://twitter.com/Yagasaki7K" target="_blank">
-                        <i class="uil uil-twitter"></i><p>Twitter</p> <i class="uil uil-external-link-alt"></i>
+                        <i className="uil uil-twitter"></i>
+                        <p>Twitter</p> 
+                        <i className="uil uil-external-link-alt"></i>
                     </a>
 
                     <a href="https://github.com/Yagasaki7K" target="_blank">
-                        <i class="uil uil-github"></i><p>GitHub</p> <i class="uil uil-external-link-alt"></i>
+                        <i className="uil uil-github"></i>
+                        <p>GitHub</p> 
+                        <i className="uil uil-external-link-alt"></i>
                     </a>
 
                 </footer>
@@ -47,7 +51,7 @@ function App() {
                         List of softwares essentials for your computer.
                     </p>
                     <div className="star">
-                        <i class="uil uil-star"></i>
+                        <i className="uil uil-star"></i>
                         <p className="starnumber"> 6</p>
                     </div>
                 </div>
@@ -61,7 +65,7 @@ function App() {
                         App to help you rescue, inform and donate your pets with love! 🐶💜🐱
                     </p>
                     <div className="star">
-                        <i class="uil uil-star"></i>
+                        <i className="uil uil-star"></i>
                         <p className="starnumber"> 1</p>
                     </div>
                 </div>
@@ -75,7 +79,7 @@ function App() {
                     A page on website to display a Newsletter from Filipe Deschamps
                     </p>
                     <div className="star">
-                        <i class="uil uil-star"></i>
+                        <i className="uil uil-star"></i>
                         <p className="starnumber"> 1</p>
                     </div>
                 </div>
@@ -89,7 +93,7 @@ function App() {
                     Discord bot in Aperture Laboratories for LoFi Music Radio
                     </p>
                     <div className="star">
-                        <i class="uil uil-star"></i>
+                        <i className="uil uil-star"></i>
                         <p className="starnumber"> 0</p>
                     </div>
                 </div>
@@ -104,7 +108,7 @@ function App() {
                     O tempo passou, eu refleti, pensei muito em como melhorar o 4chell e decidi acabar com ele, de uma vez por todas. E foi o que eu fiz. Destruí a versão que eu achei que daria certo e montei de uma maneira diferente.  ...
                     </p>
                     <div className="star">
-                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
+                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
                     </div>
                 </div>
                 </a>
@@ -116,7 +120,7 @@ function App() {
                     O ano era mais ou menos 2018, 2019. Eu tinha uma amiga com câncer terminal, ela gostava muito de animes e desenhos japoneses, fissurada em jogar e passar horas e horas jogando, sequer eu vi ...
                     </p>
                     <div className="star">
-                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
+                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
                     </div>
                 </div>
                 </a>
@@ -128,7 +132,7 @@ function App() {
                     Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github - e uma das membras da Aperture Laboratories - pude ter uma noção e uma visão geral do que era ...
                     </p>
                     <div className="star">
-                        <p>Acessar a matéria <i class="uil uil-external-link-alt"></i></p>
+                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
                     </div>
                 </div>
                 </a>
