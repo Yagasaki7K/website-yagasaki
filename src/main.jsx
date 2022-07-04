@@ -13,7 +13,7 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/curriculum" element={<Curriculum />} />
+                <Route path="/curriculum" element={<Curriculum />} exact />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
