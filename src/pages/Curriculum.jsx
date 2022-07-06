@@ -65,7 +65,7 @@ function Curriculum() {
 
                 <div className="content">
                     <hr />
-                    <strong>JUNIOR MARKETING ASSIST / DEVELOPMENT FRONT END </strong> <br/>
+                    <strong>JUNIOR MARKETING ASSISTANT / DEVELOPMENT FRONT END </strong> <br/>
                     at Marry Perry Paris
                     <p>July 2020 – October 2020</p>
 
@@ -104,15 +104,18 @@ function Curriculum() {
                         <li>Password generator for users with encryption</li>
                         <li>UI creation following Figma wireframe</li>
                         <li>Creating BOTs for Discord</li>
+                        <li>Encyclopedia for Beginner Developers (4chell)</li>
                         <li>Developer community management / Aperture Laboratories</li>
                         <li>Creating events and helping the community</li>
-                        <li>Creation and leadership in open-source projects</li>
+                        <li>Development of the first consumer page of the Filipe Deschamps Newsletter</li>
 
                         <li>Project available on <a href="https://kalifyinc.vercel.app/" target="_blank">https://kalifyinc.vercel.app/</a></li>
 
                         <li>Project available on <a href="https://findyourpet.vercel.app/" target="_blank">https://findyourpet.vercel.app/</a></li>
 
                         <li>Project available on <a href="https://aperturelabs.vercel.app/" target="_blank">https://aperturelabs.vercel.app/</a></li>
+
+                        <li>Project available on <a href="https://newsletterchamps.vercel.app/" target="_blank">https://newsletterchamps.vercel.app/</a></li>
 
                         <li>Project available on <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
                     </ul>
