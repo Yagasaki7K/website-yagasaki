@@ -59,7 +59,7 @@ function Curriculum() {
                         <li>Scrum / Kabam during development and project completion</li>
                         <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
                         <li>DevOps in system installation, building and caching</li>
-                        <li>Project available on <a href="">https://credits.com.br/</a></li>
+                        <li>Project available on <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
                     </ul>
                 </div>
 
@@ -94,7 +94,32 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
-                    <h1 className="title">Service Provision</h1>
+                    <h1 className="title">Service Provision {`&`} Personal Projects</h1>
+                    <strong>Founder {`&`} CTO</strong> <br/> at Kalify Inc
+                    <p>February 2018 — Until Today</p>
+
+                    <ul>
+                        <li>New features and homepage development with React, NextJS and Vite</li>
+                        <li>Database building with Firebase and Sanity.io</li>
+                        <li>Password generator for users with encryption</li>
+                        <li>UI creation following Figma wireframe</li>
+                        <li>Creating BOTs for Discord</li>
+                        <li>Developer community management / Aperture Laboratories</li>
+                        <li>Creating events and helping the community</li>
+                        <li>Creation and leadership in open-source projects</li>
+
+                        <li>Project available on <a href="https://kalifyinc.vercel.app/" target="_blank">https://kalifyinc.vercel.app/</a></li>
+
+                        <li>Project available on <a href="https://findyourpet.vercel.app/" target="_blank">https://findyourpet.vercel.app/</a></li>
+
+                        <li>Project available on <a href="https://aperturelabs.vercel.app/" target="_blank">https://aperturelabs.vercel.app/</a></li>
+
+                        <li>Project available on <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                    <hr/>
                     <strong>DEVELOPER FRONT-END</strong> <br/> at 2BeBot
                     <p>May 2021 — Until Today</p>
 
@@ -128,6 +153,7 @@ function Curriculum() {
                         <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
                         <li>DevOps in system installation, building and caching</li>
                     </ul>
+                    <hr/>
                 </div>
 
                 <div className="content">
