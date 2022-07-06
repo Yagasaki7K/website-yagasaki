@@ -94,6 +94,43 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
+                    <h1 className="title">Service Provision</h1>
+                    <strong>DEVELOPER FRONT-END</strong> <br/> at 2BeBot
+                    <p>May 2021 — Until Today</p>
+
+                    <ul>
+                        <li>New features and portal development</li>
+                        <li>Feature change and UX improvement</li>
+                        <li>Search bar and filter data coming from API</li>
+                        <li>HTML to PDF Conversion</li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                    <hr/>
+                    <strong>DEVELOPER FRONT-END</strong> <br/> at ABREF
+                    <p>April 2020 — March 2020</p>
+
+                    <ul>
+                        <li>New features and homepage development</li>
+                        <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
+                        <li>DevOps in system installation, building and caching</li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                <hr />
+                    <strong>DEVELOPER FRONT-END</strong> <br/> at YouConnectStart
+                    <p>April 2020 — March 2020</p>
+
+                    <ul>
+                        <li>New features and homepage development</li>
+                        <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
+                        <li>DevOps in system installation, building and caching</li>
+                    </ul>
+                </div>
+
+                <div className="content">
                     <h1 className="title">Certificates</h1>
                     <p>
                         <strong>Workshop Figma </strong>
