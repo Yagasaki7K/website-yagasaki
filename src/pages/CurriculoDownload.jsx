@@ -7,7 +7,7 @@ function Curriculum() {
             <div className="Download">
                 {/* Github Projects */}
                 <div className="content">
-                <h1 className="title">Anderson Marlon // 葛城 矢ヶ崎</h1>
+                <h1 className="title">Anderson Marlon</h1>
                     <i>Desenvolvedor de Sistemas Front-end</i>
 
                     <p>Desenvolvedor com experiências em Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL (em desenvolvimento) e Docker</p>
