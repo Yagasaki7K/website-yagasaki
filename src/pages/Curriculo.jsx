@@ -46,7 +46,7 @@ function Curriculum() {
 
                     <a href="/curriculum" className="curriculum">Click here to see English Resume</a>
                     <br/><br/>
-                    <a href="/curriculum-download" className="curriculum">Clique para ver a versão em .pdf deste documento</a>
+                    <a href="/curriculo-download" className="curriculum">Clique para ver a versão em .pdf deste documento</a>
                 </div>
 
                 <div className="content">
