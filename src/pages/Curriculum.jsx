@@ -44,9 +44,9 @@ function Curriculum() {
                 <h1 className="title">Personal Affirmation</h1>
                     <p className="description">Experienced Software Development Analyst and Front-end Developer building scalable systems and applications in the Financial Technology (Fintech), Affiliate System, Brewery, Healthcare, Journalism, Sustainability, Sales/Entrepreneurship, Podcasts and Sports Electronic.</p>
 
-                    <a href="/curriculo" className="curriculum">Clique aqui e veja o currículo em Português</a>
+                    <a href="/curriculo" className="curriculum">Click here to see Portuguese Resume</a>
                     <br/><br/>
-                    <a href="/curriculum-download" className="curriculum">Click to view the .pdf version of this document</a>
+                    <a href="/src/docs/AndersonMarlonENUS.pdf" className="curriculum" target="_blank">Curriculum's Download (PDF)</a>
                 </div>
 
                 <div className="content">
