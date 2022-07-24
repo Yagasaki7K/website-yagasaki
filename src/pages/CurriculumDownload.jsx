@@ -4,49 +4,16 @@ function Curriculum() {
 
     return (
         <CurriculumDetails>
-            <div className="LeftContent">
-                <a href="/"><img className="firstImage" src="https://github.com/Yagasaki7k.png" /></a>
-
-                <div className="ContentText">
-                    <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>
-                    <ul>
-                        <li>Front-end Software Developer</li>
-                    </ul>
+            <div className="Download">
+                {/* Github Projects */}
+                <div className="content">
+                <h1 className="title">Anderson Marlon // 葛城 矢ヶ崎</h1>
+                    <i>Front-end Software Developer</i>
 
                     <p>Developer with experiences in Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL (in development) and Docker</p>
-                </div>
-
-                <footer>
-                    <a href="https://twitter.com/Yagasaki7K" target="_blank">
-                        <i className="uil uil-twitter"></i>
-                        <p>Twitter</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </a>
-
-                    <a href="https://github.com/Yagasaki7K" target="_blank">
-                        <i className="uil uil-github"></i>
-                        <p>GitHub</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/andersonmarlon/" target="_blank">
-                        <i className="uil uil-linkedin"></i>
-                        <p>Linkedin</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </a>
-
-                </footer>
-            </div>
-
-            <div className="RightContent">
-                {/* Github Projects */}
                 <div className="content">
                 <h1 className="title">Personal Affirmation</h1>
                     <p className="description">Experienced Software Development Analyst and Front-end Developer building scalable systems and applications in the Financial Technology (Fintech), Affiliate System, Brewery, Healthcare, Journalism, Sustainability, Sales/Entrepreneurship, Podcasts and Sports Electronic.</p>
-
-                    <a href="/curriculo" className="curriculum">Clique aqui e veja o currículo em Português</a>
-                    <br/><br/>
-                    <a href="/curriculum-download" className="curriculum">Click to view the .pdf version of this document</a>
                 </div>
 
                 <div className="content">
@@ -66,6 +33,8 @@ function Curriculum() {
                         <li>DevOps in system installation, building and caching</li>
                         <li>Project available on <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
                     </ul>
+                    
+                    <hr />
                 </div>
 
                 <div className="content">
@@ -87,6 +56,8 @@ function Curriculum() {
                         <li>Affiliate platform development using Laravel and MySQL</li>
                         <li>Development of the improved version of the platform using NodeJS and React</li>
                     </ul>
+
+                    <hr />
                 </div>
 
                 <div className="content">
@@ -130,6 +101,8 @@ function Curriculum() {
 
                         <li>Project available on <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
                     </ul>
+                    
+                    <hr />
                 </div>
 
                 <div className="content">
@@ -143,6 +116,7 @@ function Curriculum() {
                         <li>Search bar and filter data coming from API</li>
                         <li>HTML to PDF Conversion</li>
                     </ul>
+                    <hr />
                 </div>
 
                 <div className="content">
@@ -155,6 +129,7 @@ function Curriculum() {
                         <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
                         <li>DevOps in system installation, building and caching</li>
                     </ul>
+                    <hr />
                 </div>
 
                 <div className="content">
@@ -256,10 +231,10 @@ function Curriculum() {
                         <strong>Web Design and Graphic Design </strong>
                         by MacPoli Cursos - December 2014
                     </p>
-    
                 </div>
             </div>
-        </CurriculumDetails>
+        </div>
+    </CurriculumDetails>
     )
 }
 

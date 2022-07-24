@@ -266,6 +266,121 @@ const CurriculumDetails = styled.div`
             text-decoration: none;
         }
     }
+
+    .Download {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+
+        @media screen and (max-width: 1366px) {
+            margin-left: 42rem;
+            margin-top: -20px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin-left: -28rem;
+            margin-top: 45rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-left: -28rem;
+            margin-top: 45rem;
+        }
+
+        @media screen and (max-width: 414px) {
+            margin-left: -24rem;
+            margin-top: 45rem;
+        }
+
+        @media screen and (max-width: 375px) {
+            margin-left: -24rem;
+            margin-top: 44rem;
+        }
+
+        @media screen and (max-width: 320px) {
+            margin-left: -17rem;
+            margin-top: 43rem;
+        }
+
+        .title {
+            text-transform: uppercase;
+            margin-left: 0px;
+            text-decoration: underline;
+        }
+
+        .content {
+            @media screen and (max-width: 1366px) {
+                width: 40rem;
+            }
+
+            @media screen and (max-width: 1024px) {
+                width: 40rem;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 30rem;
+            }
+
+            @media screen and (max-width: 414px) {
+                width: 23rem;
+            }
+
+            @media screen and (max-width: 375px) {
+                width: 21rem;
+            }
+
+            @media screen and (max-width: 320px) {
+                width: 18rem;
+            }
+
+            width: 50rem;
+            margin-top: -2rem;
+
+            .description {
+                line-height: 20px;
+            }
+
+            .curriculum {
+                text-decoration: underline;
+            }
+
+            hr {
+                margin: 30px 0px;
+                width: 30%;
+            }
+
+            p {
+                line-height: 20px;
+            }
+            
+            ul {
+                margin-top: 20px;
+
+                li {
+                    margin-left: -20px;
+                    
+                    a {
+                        color: #7159c1;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 `
 
 export default CurriculumDetails
