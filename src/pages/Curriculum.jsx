@@ -11,7 +11,6 @@ function Curriculum() {
                     <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>
                     <ul>
                         <li>Front-end Software Developer</li>
-                        <li>Systems Development Analyst</li>
                     </ul>
 
                     <p>Developer with experiences in Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL (in development) and Docker</p>
@@ -43,7 +42,9 @@ function Curriculum() {
                 {/* Github Projects */}
                 <div className="content">
                 <h1 className="title">Personal Affirmation</h1>
-                    <p className="description">Experienced Software Development Analyst and Front-end Developer with experience building scalable systems and applications in the Financial Technology (Fintech), Affiliate System, Brewery, Healthcare, Journalism, Sustainability, Sales/Entrepreneurship, Podcasts and Sports Electronic.</p>
+                    <p className="description">Experienced Software Development Analyst and Front-end Developer building scalable systems and applications in the Financial Technology (Fintech), Affiliate System, Brewery, Healthcare, Journalism, Sustainability, Sales/Entrepreneurship, Podcasts and Sports Electronic.</p>
+
+                    <a href="/curriculo" className="curriculum">Clique aqui e veja o currículo em Português</a>
                 </div>
 
                 <div className="content">
@@ -51,6 +52,8 @@ function Curriculum() {
                     <strong>SYSTEMS DEVELOPMENT ANALYST</strong> <br/> at Cenário Capital
                     <p>April 2021 — September 2021</p>
                     <i>Letter of Recommendation by Alexandre Carvalho Rezende (CEO) can be requested</i>
+
+                    <p>Cenário Capital https://cenariocapital.com.br/ is a Brazilian company Founded in 2008 with expertise in digital marketing and analytical focus on different types of digital business. We help Brazilians make the best decisions, with information and digital solutions, through its various brands of the group!</p>
 
                     <ul>
                         <li>New features and homepage development</li>
@@ -68,6 +71,12 @@ function Curriculum() {
                     <strong>JUNIOR MARKETING ASSISTANT / DEVELOPMENT FRONT END </strong> <br/>
                     at Marry Perry Paris
                     <p>July 2020 – October 2020</p>
+
+                    <p>
+                    I was responsible for the development of several landing pages for the company, including the main website, how to use each product website and several other segments for customer communication.
+
+                    I was assigned as a Junior Developer during the creation of a system that lasted only two months until the end of the contract, the project would be an affiliate platform for the company that was later discontinued, using MVC Architecture, MySQL and NodeJS – later the project was changed to Laravel
+                    </p>
 
                     <ul>
                         <li>Sales landing page development</li>
@@ -96,7 +105,7 @@ function Curriculum() {
                 <div className="content">
                     <h1 className="title">Service Provision {`&`} Personal Projects</h1>
                     <strong>Founder {`&`} CTO</strong> <br/> at Kalify Inc
-                    <p>February 2018 — Until Today</p>
+                    <p>August 2013 — Until Today</p>
 
                     <ul>
                         <li>New features and homepage development with React, NextJS and Vite</li>
@@ -123,8 +132,8 @@ function Curriculum() {
 
                 <div className="content">
                     <hr/>
-                    <strong>DEVELOPER FRONT-END</strong> <br/> at 2BeBot
-                    <p>May 2021 — Until Today</p>
+                    <strong>DEVELOPER FRONT-END</strong> <br/> at 2BEBOT
+                    <p>May 2022 — Until Today</p>
 
                     <ul>
                         <li>New features and portal development</li>
@@ -137,7 +146,7 @@ function Curriculum() {
                 <div className="content">
                     <hr/>
                     <strong>DEVELOPER FRONT-END</strong> <br/> at ABREF
-                    <p>April 2020 — March 2020</p>
+                    <p>March 2020 — May 2020</p>
 
                     <ul>
                         <li>New features and homepage development</li>
@@ -149,7 +158,7 @@ function Curriculum() {
                 <div className="content">
                 <hr />
                     <strong>DEVELOPER FRONT-END</strong> <br/> at YouConnectStart
-                    <p>April 2020 — March 2020</p>
+                    <p>March 2020 — May 2020</p>
 
                     <ul>
                         <li>New features and homepage development</li>
@@ -175,11 +184,11 @@ function Curriculum() {
                     </p>
                     <p>
                         <strong>Participation, Agile Days </strong>
-                        by Institute of Management and Information Technology - November 2021
+                        by Instituto de Gestão e Tecnologia da Informação (IGTI) - November 2021
                     </p>
                     <p>
                         <strong>Participation, Masterclass Github Actions </strong>
-                        by Azure in Practice - January 2021
+                        by Azure na Prática - January 2021
                     </p>
                     <p>
                         <strong>Participation, Hackathon </strong>

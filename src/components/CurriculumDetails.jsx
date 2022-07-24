@@ -228,6 +228,10 @@ const CurriculumDetails = styled.div`
                 line-height: 20px;
             }
 
+            .curriculum {
+                text-decoration: underline;
+            }
+
             hr {
                 margin: 30px 0px;
                 width: 30%;
