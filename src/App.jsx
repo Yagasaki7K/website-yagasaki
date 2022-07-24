@@ -183,7 +183,7 @@ function App() {
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@pamtsx</h3>
-                                <p>Frontend Developer 👩🏻‍💻🌐📱 || Amante de Astronomia 🔭 || Science 🧬 || Living and learning 🔥 | | Student at @Rocketseat.</p>
+                                <p>Frontend Developer 👩🏻‍💻🌐📱 || Amante de Astronomia 🔭 || Science 🧬</p>
                             </blockquote>
                         </div>
                     </div>
