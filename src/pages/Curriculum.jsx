@@ -173,6 +173,10 @@ function Curriculum() {
                 <div className="content">
                     <h1 className="title">Certificates</h1>
                     <p>
+                        <strong>Modern Web with Javascript + Projects (JS/Typescript/React/Node/ESNext) </strong>
+                        by COD3R - August 2022
+                    </p>
+                    <p>
                         <strong>Workshop Figma </strong>
                         by Design Culture - April 2022
                     </p>
