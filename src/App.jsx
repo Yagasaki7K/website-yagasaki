@@ -85,20 +85,6 @@ function App() {
                 </div>
                 </a>
 
-                <a href="https://github.com/ApertureLaboratory/bot-discord" target="_blank">
-                <div className="boxGithub">
-                    <h3>Node/Discordjs</h3>
-                    <h2>Yagasaki7K/bot-discord-lofi</h2>
-                    <p>
-                    Discord bot in Aperture Laboratories for LoFi Music Radio
-                    </p>
-                    <div className="star">
-                        <i className="uil uil-star"></i>
-                        <p className="starnumber"> 0</p>
-                    </div>
-                </div>
-                </a>
-
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
                 <a href="https://yagasaki.notion.site/Rebuild-4chell-da-Aperture-Laboratories-f8b643989d9a4df2b309e265629cfbf9" target="_blank">
