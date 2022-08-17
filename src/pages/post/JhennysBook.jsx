@@ -45,7 +45,7 @@ const Post = () => {
 
                     <p>Eu aceitei a proposta, mas não dei prosseguimento, somente ano retrasado fiz alguns esboços, não tinha muito conhecimento técnico e criei o Jhenny’s Book, inicialmente seria apenas um avaliador de livros.</p>
 
-                    <center><img src="/src/images/jhennysbook.png" width="80%" alt="Jhennys Book"/></center>
+                    <center><img src="https://github.com/Yagasaki7K/website-yagasaki/blob/main/src/images/JhennysBook.png?raw=true" width="80%" alt="Jhennys Book"/></center>
 
                     <p>Atualmente em 2022, meu primo veio tocar em seu nome novamente, Jhenny, sinto falta dela, ao mesmo tempo surgiu uma avalanche de ideias e bom, desenvolvi o que eu havia prometido para ela, não é um site de sinopse e avaliação de livros, mas achei uma ideia melhor baseado na inicial, um site para fazer download de livros e alcançar quem não tem oportunidade de ter acesso a esse conteúdo. Espero que ela tenha sorrido, aonde quer que esteja.</p>
 
