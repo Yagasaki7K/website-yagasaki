@@ -32,7 +32,7 @@ const Blog = () => {
                 <a href="/blog/minha-experiencia-com-o-desenvolvimento-do-blog-com-nextjs">
                     <div className="home">
                         <h3>28 de Agosto de 2020</h3>
-                        <h2>Como conseguir experiência sendo Júnior/Iniciante</h2>
+                        <h2>Minha experiência com o desenvolvimento do blog com NextJS</h2>
                         <p>Vou contar a minha experiência que tive ao desenvolver esse blog - o blog passado - e isso vai contar até mesmo quando eu tive o contato ...</p>
                     </div>
                 </a>
