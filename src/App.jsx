@@ -10,7 +10,7 @@ function App() {
 
                 <div className="ContentText">
                     <p>
-                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="https://yagasaki.notion.site/yagasaki/57c81f367a104390a084e3c4d3e2f4d5?v=441cd72b4d9f411880b15f6677c76962" target="_blank">blog</a> and my <a href="/curriculum">curriculum</a>.
+                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="/blog">blog</a> and my <a href="/curriculum">curriculum</a>.
                     </p>
                     <p>フロントエンド開発者</p>
 
@@ -87,19 +87,8 @@ function App() {
 
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
-                <a href="https://yagasaki.notion.site/Rebuild-4chell-da-Aperture-Laboratories-f8b643989d9a4df2b309e265629cfbf9" target="_blank">
-                <div className="boxGithub">
-                    <h2>Rebuild: 4chell da Aperture Laboratories</h2>
-                    <p>
-                    O tempo passou, eu refleti, pensei muito em como melhorar o 4chell e decidi acabar com ele, de uma vez por todas. E foi o que eu fiz. Destruí a versão que eu achei que daria certo e montei de uma maneira diferente.  ...
-                    </p>
-                    <div className="star">
-                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                    </div>
-                </div>
-                </a>
 
-                <a href="https://yagasaki.notion.site/Jhenny-s-Book-Uma-homenagem-em-app-4ec410e98bb949e582d97665ae2d07c8" target="_blank">
+                <a href="/blog/jhennys-book-uma-homenagem-em-app">
                 <div className="boxGithub">
                     <h2>Jhenny’s Book - Uma homenagem em app</h2>
                     <p>
@@ -111,11 +100,23 @@ function App() {
                 </div>
                 </a>
 
-                <a href="https://yagasaki.notion.site/Conhe-a-sobre-Developer-Relations-DevRel-63bafcb9230a4580811d577deebb3eea" target="_blank">
+                <a href="blog/conheca-sobre-developer-relations">
                 <div className="boxGithub">
                     <h2>Conheça sobre Developer Relations (#DevRel)</h2>
                     <p>
                     Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github - e uma das membras da Aperture Laboratories - pude ter uma noção e uma visão geral do que era ...
+                    </p>
+                    <div className="star">
+                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                    </div>
+                </div>
+                </a>
+
+                <a href="blog/front-end-back-end-full-stack-o-que-e-e-para-onde-ir">
+                <div className="boxGithub">
+                    <h2>Front-end, Back-end, Fullstack, o que é e para onde ir?</h2>
+                    <p>
+                    Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir? É uma questão simples, mas para quem está começando vejo que tem muita dificuldade em olhar aonde quer ir e o que fazer ...
                     </p>
                     <div className="star">
                         <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>

@@ -180,6 +180,12 @@ const ContentDetails = styled.div`
             padding: 20px 80px 20px 40px;
             margin-bottom: 10px;
 
+            :hover {
+                transition: 1s;
+                transform: scale(1.05);
+                background: #2f2f2f;
+            }
+
             h3 {
                 text-transform: uppercase;
                 font-size: 10px;
@@ -217,12 +223,6 @@ const ContentDetails = styled.div`
                     font-weight: 600;
                     color: #949495;
                 }
-            }
-
-            :hover {
-                z-index: 2;
-                transition: 1s;
-                background: #2f2f2f;
             }
         }
 
