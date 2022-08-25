@@ -171,11 +171,23 @@ const BlogDetails = styled.div`
             color: #727272;
         }
 
+        li {
+            margin-bottom: 1rem;
+        }
+
+        quote {
+            color: #dd2d3d;
+            
+            b {
+                font-style: italic;
+            }
+        }
+
         code {
             background: #282a36;
             padding: 5px;
             border-radius: 5px;
-            color: #7883f0;
+            color: #dd2d3d;
         }
 
         a {

@@ -20,6 +20,7 @@ import ExperienciaNextJS from './pages/post/ExperienciaNextJS'
 import FrontBackFull from './pages/post/FrontBackFull'
 import DevRel from './pages/post/DevRel'
 import JhennysBook from './pages/post/JhennysBook'
+import HabitosDesenvolvedores from './pages/post/HabitosDesenvolvedores'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -52,6 +53,8 @@ root.render(
                 element={<DevRel/>} exact /> 
                 <Route path="/blog/jhennys-book-uma-homenagem-em-app"
                 element={<JhennysBook/>} exact /> 
+                <Route path="/blog/habitos-desenvolvedores-produtivos"
+                element={<HabitosDesenvolvedores/>} exact /> 
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

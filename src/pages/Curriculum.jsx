@@ -135,7 +135,7 @@ function Curriculum() {
                 <div className="content">
                     <hr/>
                     <strong>DEVELOPER FRONT-END</strong> <br/> at 2BEBOT
-                    <p>May 2022 — Until Today</p>
+                    <p>May 2022 — August 2022</p>
 
                     <ul>
                         <li>New features and portal development</li>

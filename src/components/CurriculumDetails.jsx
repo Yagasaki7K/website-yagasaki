@@ -248,7 +248,7 @@ const CurriculumDetails = styled.div`
                     margin-left: -20px;
                     
                     a {
-                        color: #7159c1;
+                        color: #dd2d3d;
                     }
                 }
             }
@@ -363,7 +363,7 @@ const CurriculumDetails = styled.div`
                     margin-left: -20px;
                     
                     a {
-                        color: #7159c1;
+                        color: #dd2d3d;
                     }
                 }
             }

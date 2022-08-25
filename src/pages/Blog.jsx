@@ -8,6 +8,13 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
+                <a href="/blog/habitos-desenvolvedores-produtivos">
+                    <div className="home">
+                        <h3>24 de Agosto de 2022</h3>
+                        <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
+                        <p>O livro foi escrito por Zeno Rocha e foi resumido pelo Felipe Suri. Eu estava navegando na internet quando me deparei com esse livro ...</p>
+                    </div>
+                </a>
                 <a href="/blog/jhennys-book-uma-homenagem-em-app">
                     <div className="home">
                         <h3>02 de Junho de 2022</h3>
