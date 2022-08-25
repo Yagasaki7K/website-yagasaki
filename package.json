@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "yagasaki": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
     "react": "^18.2.0",
