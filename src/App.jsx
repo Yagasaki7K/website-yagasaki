@@ -10,7 +10,7 @@ function App() {
 
                 <div className="ContentText">
                     <p>
-                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/nyTRNSV" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="/blog">blog</a> and my <a href="/curriculum">curriculum</a>.
+                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/jhSepmE7nN" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="/blog">blog</a> and my <a href="/curriculum">curriculum</a>.
                     </p>
                     <p>フロントエンド開発者</p>
 

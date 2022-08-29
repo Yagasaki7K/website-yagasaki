@@ -51,7 +51,7 @@ const Post = () => {
 
                     <p>Você pode acessar e conferir o conteúdo em: <a href="https://jhennysbook.vercel.app/" target="_blank">https://jhennysbook.vercel.app/</a></p>
 
-                    <p>Se você quiser que algum título seja adicionado, entre em nosso Discord e solicite: <a href="https://discord.gg/CFhzRE6ztp" target="_blank">https://discord.gg/CFhzRE6ztp</a></p>
+                    <p>Se você quiser que algum título seja adicionado, entre em nosso Discord e solicite: <a href="https://discord.gg/jhSepmE7nN" target="_blank">https://discord.gg/jhSepmE7nN</a></p>
 
                     <p>Novas features serão lançadas futuramente, além de sistema de busca, filtro e toda a organização necessária para tornar o ambiente melhor, moderno e que faça pessoas se conectarem e terem acesso com mais facilidade a livros</p>
 

@@ -64,7 +64,7 @@ const Post = () => {
 
                     <p>Então estude, se esforce, crie seu público e leia, temos a recomendação do livro <a href="https://learn.samjulien.com/getting-started-in-developer-relations" target="_blank">Getting Started in Developer Relations</a> de Sam Julien (em inglês) como uma leitura para começar a se aventurar nessa área e conhecer mais a fundo.</p>
 
-                    <p>E um exemplo disso, sou eu mesmo, sendo Fundador e CEO da <a href="https://discord.gg/tYUtK84acb" target="_blank">Aperture Laboratories</a>, uma comunidade brasileira de desenvolvimento onde através do Discord e do Twitter faço perguntas, cativo o pessoal, e sempre deixo o ambiente mais amigável para aprender e ensinar outros desenvolvedores.</p>
+                    <p>E um exemplo disso, sou eu mesmo, sendo Fundador e CEO da <a href="https://discord.gg/jhSepmE7nN" target="_blank">Aperture Laboratories</a>, uma comunidade brasileira de desenvolvimento onde através do Discord e do Twitter faço perguntas, cativo o pessoal, e sempre deixo o ambiente mais amigável para aprender e ensinar outros desenvolvedores.</p>
                 </div>
             </BlogDetails>
             <FooterBlog/>

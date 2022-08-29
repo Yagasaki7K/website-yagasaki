@@ -85,7 +85,7 @@ const Post = () => {
 
                     <p>Ficou interessado em entrar? Só clicar nos links abaixo e eu te vejo lá! Não deixe de seguir @KalifyInc e @Yagasaki7K no Twitter para receber várias novidades e dicas!</p>
 
-                    <a href="https://discord.gg/tYUtK84acb" target="_blank">Discord da Comunidade</a>
+                    <a href="https://discord.gg/jhSepmE7nN" target="_blank">Discord da Comunidade</a>
                 </div>
             </BlogDetails>
             <FooterBlog/>
