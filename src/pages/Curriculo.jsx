@@ -45,8 +45,8 @@ function Curriculum() {
                     <p className="description">Analista de Desenvolvimento de Software e Desenvolvedor Front-end com experiência na construção de sistemas e aplicações escaláveis nas indústrias de Tecnologia Financeira (Fintech), Sistema de Afiliados, Cervejaria, Saúde, Jornalismo, Sustentabilidade, Vendas / Empreendedorismo, Podcasts e Cenário de Esporte Eletrônico.</p>
 
                     <a href="/curriculum" className="curriculum">Click here to see English Resume</a>
-                    <br/><br/>
-                    <a href="/src/docs/AndersonMarlonPTBR.pdf" className="curriculum" target="_blank">Download do Currículo (PDF)</a>
+                    {/* <br/><br/>
+                    <a href="/src/docs/AndersonMarlonPTBR.pdf" className="curriculum" target="_blank">Download do Currículo (PDF)</a> */}
                 </div>
 
                 <div className="content">
