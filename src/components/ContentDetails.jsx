@@ -161,8 +161,6 @@ const ContentDetails = styled.div`
             display: none;
         }
 
-        
-
         h1 {
             text-transform: uppercase;
             font-size: 20px;
