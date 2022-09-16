@@ -176,7 +176,7 @@ const BlogDetails = styled.div`
         }
 
         quote {
-            color: #ecb8c4;
+            color: #c9f7fd;
             
             b {
                 font-style: italic;
@@ -187,7 +187,7 @@ const BlogDetails = styled.div`
             background: #282a36;
             padding: 5px;
             border-radius: 5px;
-            color: #ecb8c4;
+            color: #c9f7fd;
         }
 
         a {
