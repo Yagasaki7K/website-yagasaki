@@ -88,6 +88,18 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <a href="/blog/habitos-desenvolvedores-produtivos">
+                <div className="boxGithub">
+                    <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
+                    <p>
+                    Eu estava navegando na internet quando me deparei com esse livro. 14 Hábitos de Desenvolvedores Altamente Produtivos, escrito pelo Zeno Rocha, não cheguei a fazer a aquisição dele ...
+                    </p>
+                    <div className="star">
+                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                    </div>
+                </div>
+                </a>
+
                 <a href="/blog/jhennys-book-uma-homenagem-em-app">
                 <div className="boxGithub">
                     <h2>Jhenny’s Book - Uma homenagem em app</h2>
@@ -105,18 +117,6 @@ function App() {
                     <h2>Conheça sobre Developer Relations (#DevRel)</h2>
                     <p>
                     Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github - e uma das membras da Aperture Laboratories - pude ter uma noção e uma visão geral do que era ...
-                    </p>
-                    <div className="star">
-                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                    </div>
-                </div>
-                </a>
-
-                <a href="blog/front-end-back-end-full-stack-o-que-e-e-para-onde-ir">
-                <div className="boxGithub">
-                    <h2>Front-end, Back-end, Fullstack, o que é e para onde ir?</h2>
-                    <p>
-                    Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir? É uma questão simples, mas para quem está começando vejo que tem muita dificuldade em olhar aonde quer ir e o que fazer ...
                     </p>
                     <div className="star">
                         <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
