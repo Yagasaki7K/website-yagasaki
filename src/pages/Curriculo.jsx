@@ -64,7 +64,7 @@ function Curriculum() {
                         <li>Desenvolvimento de notificação de push usando Javascript via Google Developers</li>
                         <li>Scrum / Kabam durante o desenvolvimento e a finalização do projeto</li>
                         <li>Instalação e reparo no Google Analytics / Facebook Ads nos monitoramentos da equipe de marketing</li>
-                        <li>DevOps na instalação, building e cache do sistema.</li>
+                        <li>DevOps na instalação, building e cache do sistema (DigitalOcean).</li>
                         <li>Projeto disponível em <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
                     </ul>
                 </div>
@@ -116,8 +116,8 @@ function Curriculum() {
                         <li>Gerador de senhas para usuários com criptografia</li>
                         <li>Criação de interface do usuário seguindo o wireframe do Figma</li>
                         <li>Criando BOTs para Discord</li>
-                        <li>Enciclopédia para desenvolvedores iniciantes (4chell)</li>
-                        <li>Gerenciamento da comunidade de desenvolvedores / Aperture Laboratories</li>
+                        <li><s>Enciclopédia para desenvolvedores iniciantes (4chell)</s></li>
+                        <li>Gerenciamento da comunidade de desenvolvedores / Kalify Community</li>
                         <li>Criando eventos e ajudando a comunidade</li>
                         <li>Desenvolvimento da primeira página de consumo da Newsletter Filipe Deschamps</li>
 
@@ -125,11 +125,21 @@ function Curriculum() {
 
                         <li>Projeto disponível em <a href="https://findyourpet.vercel.app/" target="_blank">https://findyourpet.vercel.app/</a></li>
 
-                        <li>Projeto disponível em <a href="https://aperturelabs.vercel.app/" target="_blank">https://aperturelabs.vercel.app/</a></li>
-
                         <li>Projeto disponível em <a href="https://newsletterchamps.vercel.app/" target="_blank">https://newsletterchamps.vercel.app/</a></li>
 
                         <li>Projeto disponível em <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                    <hr/>
+                    <strong>DESENVOLVEDOR FRONT-END</strong> <br/> na Eccaplan
+                    <p>Setembro 2022 — Atualmente</p>
+
+                    <ul>
+                        <li>Novos recursos e desenvolvimento de portal/dashboard</li>
+                        <li>Mudança de recurso e melhoria de UX</li>
+                        <li>Barra de pesquisa e filtro de dados provenientes da API</li>
                     </ul>
                 </div>
 

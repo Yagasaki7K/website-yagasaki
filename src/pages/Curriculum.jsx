@@ -63,7 +63,7 @@ function Curriculum() {
                         <li>Push notification development using Javascript via Google Developers</li>
                         <li>Scrum / Kabam during development and project completion</li>
                         <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
-                        <li>DevOps in system installation, building and caching</li>
+                        <li>DevOps in system installation, building and caching (DigitalOcean)</li>
                         <li>Project available on <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
                     </ul>
                 </div>
@@ -115,8 +115,8 @@ function Curriculum() {
                         <li>Password generator for users with encryption</li>
                         <li>UI creation following Figma wireframe</li>
                         <li>Creating BOTs for Discord</li>
-                        <li>Encyclopedia for Beginner Developers (4chell)</li>
-                        <li>Developer community management / Aperture Laboratories</li>
+                        <li><s>Encyclopedia for Beginner Developers (4chell)</s></li>
+                        <li>Developer community management / Kalify Community</li>
                         <li>Creating events and helping the community</li>
                         <li>Development of the first consumer page of the Filipe Deschamps Newsletter</li>
 
@@ -124,11 +124,21 @@ function Curriculum() {
 
                         <li>Project available on <a href="https://findyourpet.vercel.app/" target="_blank">https://findyourpet.vercel.app/</a></li>
 
-                        <li>Project available on <a href="https://aperturelabs.vercel.app/" target="_blank">https://aperturelabs.vercel.app/</a></li>
-
                         <li>Project available on <a href="https://newsletterchamps.vercel.app/" target="_blank">https://newsletterchamps.vercel.app/</a></li>
 
                         <li>Project available on <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                    <hr/>
+                    <strong>DEVELOPER FRONT-END</strong> <br/> at Eccaplan
+                    <p>September 2022 — Until Today</p>
+
+                    <ul>
+                        <li>New features and portal development</li>
+                        <li>Feature change and UX improvement</li>
+                        <li>Search bar and filter data coming from API</li>
                     </ul>
                 </div>
 

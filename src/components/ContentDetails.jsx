@@ -174,14 +174,14 @@ const ContentDetails = styled.div`
         }
 
         .boxGithub {
-            background: #202022;
+            background: #1d1e26;
             padding: 20px 80px 20px 40px;
             margin-bottom: 10px;
 
             :hover {
                 transition: 1s;
                 transform: scale(1.05);
-                background: #2f2f2f;
+                filter: brightness(1.2);
             }
 
             h3 {
@@ -225,7 +225,7 @@ const ContentDetails = styled.div`
         }
 
         .boxTwitter {
-            background: #202022;
+            background: #1d1e26;
             padding: 20px 20px 10px 0px;
             margin-bottom: 10px;
 
@@ -242,7 +242,8 @@ const ContentDetails = styled.div`
             :hover {
                 z-index: 2;
                 transition: 1s;
-                background: #2f2f2f;
+                transform: scale(1.05);
+                filter: brightness(1.2);
             }
 
             .twitterContent {

@@ -5,9 +5,9 @@ const BlogDetails = styled.div`
     overflow-x: hidden;
     
     nav {
-        background: #151515;
+        background: #15171b;
+        filter: brightness(1.2);
         margin-top: -1rem;
-        box-shadow: 1px 2px 15px 1px #2f2f2f;
 
         ul {
             display: flex;
@@ -54,7 +54,7 @@ const BlogDetails = styled.div`
         color: #fff;
 
         .home {
-            background: #202022;
+            background: #1d1e26;
             padding: 40px 80px 15px 40px;
             margin-left: 46rem;
 
@@ -83,7 +83,7 @@ const BlogDetails = styled.div`
             :hover {
                 transition: 1s;
                 transform: scale(1.05);
-                background: #2f2f2f;
+                filter: brightness(1.2);
             }
 
             h3 {
@@ -176,7 +176,7 @@ const BlogDetails = styled.div`
         }
 
         quote {
-            color: #c9f7fd;
+            color: #ff80bf;
             
             b {
                 font-style: italic;
@@ -187,7 +187,7 @@ const BlogDetails = styled.div`
             background: #282a36;
             padding: 5px;
             border-radius: 5px;
-            color: #c9f7fd;
+            color: #ff80bf;
         }
 
         a {

@@ -31,7 +31,7 @@ function Curriculum() {
                         <li>Desenvolvimento de notificação de push usando Javascript via Google Developers</li>
                         <li>Scrum / Kabam durante o desenvolvimento e a finalização do projeto</li>
                         <li>Instalação e reparo no Google Analytics / Facebook Ads nos monitoramentos da equipe de marketing</li>
-                        <li>DevOps na instalação, building e cache do sistema.</li>
+                        <li>DevOps na instalação, building e cache do sistema (DigitalOcean).</li>
                         <li>Projeto disponível em <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
                     </ul>
                     <hr />

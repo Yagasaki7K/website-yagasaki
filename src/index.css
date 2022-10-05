@@ -11,7 +11,7 @@ body {
     font-family: Inter,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #151515;
+    background: #15171b;
 }
 
 body::-webkit-scrollbar {
@@ -19,11 +19,11 @@ body::-webkit-scrollbar {
 }
   
 body::-webkit-scrollbar-track {
-    background: #181a1b;        /* color of the tracking area */
+    background: #1d1e26;        /* color of the tracking area */
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: #c9f7fd;    /* color of the scroll thumb */
+    background-color: #ff80bf;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #181a1b;  /* creates padding around scroll thumb */
+    border: 3px solid #1d1e26;  /* creates padding around scroll thumb */
 }

@@ -30,7 +30,7 @@ function Curriculum() {
                         <li>Push notification development using Javascript via Google Developers</li>
                         <li>Scrum / Kabam during development and project completion</li>
                         <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
-                        <li>DevOps in system installation, building and caching</li>
+                        <li>DevOps in system installation, building and caching (DigitalOcean)</li>
                         <li>Project available on <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
                     </ul>
                     
