@@ -8,6 +8,13 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
+                <a href="/blog/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                    <div className="home">
+                        <h3>07 de Outubro de 2022</h3>
+                        <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
+                        <p>Essa semana me deparei com um problema, era um problema simples, enviar uma requisição para um endpoint (POST) para enviar ...</p>
+                    </div>
+                </a>
                 <a href="/blog/habitos-desenvolvedores-produtivos">
                     <div className="home">
                         <h3>24 de Agosto de 2022</h3>

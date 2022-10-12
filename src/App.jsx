@@ -88,6 +88,18 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <a href="/blog/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <div className="boxGithub">
+                    <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
+                    <p>
+                    Essa semana me deparei com um problema, era um problema simples, enviar uma requisição para um endpoint (POST) para enviar o nome do usuário e o e-mail dele ...
+                    </p>
+                    <div className="star">
+                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                    </div>
+                </div>
+                </a>
+
                 <a href="/blog/habitos-desenvolvedores-produtivos">
                 <div className="boxGithub">
                     <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
@@ -105,18 +117,6 @@ function App() {
                     <h2>Jhenny’s Book - Uma homenagem em app</h2>
                     <p>
                     O ano era mais ou menos 2018, 2019. Eu tinha uma amiga com câncer terminal, ela gostava muito de animes e desenhos japoneses, fissurada em jogar e passar horas e horas jogando, sequer eu vi ...
-                    </p>
-                    <div className="star">
-                        <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                    </div>
-                </div>
-                </a>
-
-                <a href="blog/conheca-sobre-developer-relations">
-                <div className="boxGithub">
-                    <h2>Conheça sobre Developer Relations (#DevRel)</h2>
-                    <p>
-                    Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github - e uma das membras da Aperture Laboratories - pude ter uma noção e uma visão geral do que era ...
                     </p>
                     <div className="star">
                         <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>

@@ -21,6 +21,7 @@ import FrontBackFull from './pages/post/FrontBackFull'
 import DevRel from './pages/post/DevRel'
 import JhennysBook from './pages/post/JhennysBook'
 import HabitosDesenvolvedores from './pages/post/HabitosDesenvolvedores'
+import EnviandoUmEmail from './pages/post/EnviandoUmEmail'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -55,6 +56,8 @@ root.render(
                 element={<JhennysBook/>} exact /> 
                 <Route path="/blog/habitos-desenvolvedores-produtivos"
                 element={<HabitosDesenvolvedores/>} exact /> 
+                <Route path="/blog/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch"
+                element={<EnviandoUmEmail/>} exact /> 
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
