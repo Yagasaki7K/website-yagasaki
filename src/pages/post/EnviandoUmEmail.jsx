@@ -3,22 +3,15 @@ import HeaderBlog from '../../components/HeaderBlog'
 import FooterBlog from '../../components/FooterBlog'
 import Helmet from 'react-helmet'
 
-export async function getServerSideProps() {
-    const Image = 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
+const Image = 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
 
-    const Title = 'Enviando um e-mail usando NextJS ou ReactJS com Fetch'
-    const Description = `“Um desafio seguido de muita quebra de cabeça e depois, o alivio. Obrigado The Programmer's Hangout!”`
-    return {
-        props: {
-            Image, Title, Description
-        }
-    }
-}
+const Title = 'Enviando um e-mail usando NextJS ou ReactJS com Fetch'
+const Description = `“Um desafio seguido de muita quebra de cabeça e depois, o alivio. Obrigado The Programmer's Hangout!”`
 
 const FirstCode = `<form action="" onSubmit={(e) => e.preventDefault()}> { ... conteúdo ... } </form>`
 const SecondCode = `{(e) => e.preventDefault()}`
 
-const Post = (Image, Title, Description) => {
+const Post = () => {
     return (
         <>
             <BlogDetails>
