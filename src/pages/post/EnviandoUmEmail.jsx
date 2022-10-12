@@ -53,7 +53,7 @@ const Post = () => {
                     <p>Abaixo, foi o código utilizado para enviar uma requisição, caso queira reaproveitar, é só substituir o <code>API_URL</code> pela URL do servidor que você deseja enviar:</p>
 
                     <p>
-                    Corpo do formulário:
+                    Corpo do formulário: <br/>
                     <code>
                         {FirstCode}
                     </code>
@@ -64,7 +64,7 @@ const Post = () => {
                     </p>
                     
                     <div className="center">
-                        <img src="../src/images/fetch.png" alt="Código 1"/>
+                        <img src="src/images/fetch.png" alt="Código 1"/>
                     </div>
                     
                     <p>
@@ -76,7 +76,7 @@ const Post = () => {
                     </p>
 
                     <div className="center">
-                        <img src="../src/images/fetch2.png" alt="Código 2" />
+                        <img src="src/images/fetch2.png" alt="Código 2" />
                     </div>
 
                     <p>
