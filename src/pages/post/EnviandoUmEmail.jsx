@@ -64,7 +64,7 @@ const Post = () => {
                     </p>
                     
                     <div className="center">
-                        <img src="../../images/fetch.png" alt="Código 1"/>
+                        <img src="/src/images/fetch.png" alt="Código 1"/>
                     </div>
                     
                     <p>
@@ -76,7 +76,7 @@ const Post = () => {
                     </p>
 
                     <div className="center">
-                        <img src="../../images/fetch2.png" alt="Código 2" />
+                        <img src="/src/images/fetch2.png" alt="Código 2" />
                     </div>
 
                     <p>
