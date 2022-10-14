@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 
 import fetchImage from '../../images/fetch.png'
 import fetchImage2 from '../../images/fetch2.png'
+import Metatags from '../../components/Metatags'
 
 const Image = 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
 
@@ -17,27 +18,28 @@ const SecondCode = `{(e) => e.preventDefault()}`
 const Post = () => {
     return (
         <>
+            <Metatags Image={Image} Description={Description} Title={Title}/>
             <BlogDetails>
                 <HeaderBlog />
 
                 <Helmet>
                     <title>{Title}</title>
-                    <meta name="title" content={Title}/>
-                    <meta name="description" content={Description}/>
-                    <meta property="og:title" content={Title}/>
-                    <meta property="og:description" content={Description}/>
-                    <meta property="og:image" content={Image}/>
+                    <meta name="title" content={Title} />
+                    <meta name="description" content={Description} />
+                    <meta property="og:title" content={Title} />
+                    <meta property="og:description" content={Description} />
+                    <meta property="og:image" content={Image} />
 
-                    <meta property="twitter:title" content={Title}/>
-                    <meta property="twitter:description" content={Description}/>
-                    <meta property="twitter:image" content={Image}/>
+                    <meta property="twitter:title" content={Title} />
+                    <meta property="twitter:description" content={Description} />
+                    <meta property="twitter:image" content={Image} />
                 </Helmet>
 
-                <img src={Image} className="header-post"/>
+                <img src={Image} className="header-post" />
 
                 <div className="post">
                     <p className="date">07 de Outubro de 2022 | Imagem: Unsplash |&nbsp;
-                    <a href="/">Anderson "Yagasaki" Marlon</a></p>
+                        <a href="/">Anderson "Yagasaki" Marlon</a></p>
                     <h1>{Title}</h1>
                     <i>{Description}</i>
 
@@ -56,20 +58,20 @@ const Post = () => {
                     <p>Abaixo, foi o código utilizado para enviar uma requisição, caso queira reaproveitar, é só substituir o <code>API_URL</code> pela URL do servidor que você deseja enviar:</p>
 
                     <p>
-                    Corpo do formulário: <br/>
-                    <code>
-                        {FirstCode}
-                    </code>
+                        Corpo do formulário: <br />
+                        <code>
+                            {FirstCode}
+                        </code>
                     </p>
 
                     <p>
-                    Corpo da requisição:
+                        Corpo da requisição:
                     </p>
-                    
+
                     <div className="center">
-                        <img src={fetchImage} alt="Código 1"/>
+                        <img src={fetchImage} alt="Código 1" />
                     </div>
-                    
+
                     <p>
                         Vale lembrar que os <code>alert</code> são apenas para informar o usuário do que aconteceu. Simplesmente pegar o dado e redirecionar ele sem avisar, faria com que ele ficasse em duvida se a mensagem foi enviada mesmo ou não.
                     </p>
@@ -87,7 +89,7 @@ const Post = () => {
                     </p>
                 </div>
             </BlogDetails>
-            <FooterBlog/>
+            <FooterBlog />
         </>
     )
 }
