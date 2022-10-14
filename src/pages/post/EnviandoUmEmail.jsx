@@ -3,6 +3,9 @@ import HeaderBlog from '../../components/HeaderBlog'
 import FooterBlog from '../../components/FooterBlog'
 import Helmet from 'react-helmet'
 
+import fetchImage from '../../images/fetch.png'
+import fetchImage2 from '../../images/fetch2.png'
+
 const Image = 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
 
 const Title = 'Enviando um e-mail usando NextJS ou ReactJS com Fetch'
@@ -64,7 +67,7 @@ const Post = () => {
                     </p>
                     
                     <div className="center">
-                        <img src="/src/images/fetch.png" alt="Código 1"/>
+                        <img src={fetchImage} alt="Código 1"/>
                     </div>
                     
                     <p>
@@ -76,7 +79,7 @@ const Post = () => {
                     </p>
 
                     <div className="center">
-                        <img src="/src/images/fetch2.png" alt="Código 2" />
+                        <img src={fetchImage2} alt="Código 2" />
                     </div>
 
                     <p>
