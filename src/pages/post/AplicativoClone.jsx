@@ -16,9 +16,9 @@ const Post = () => {
 
                 <Helmet>
                     <meta name="author" content='Anderson "Yagasaki" Marlon'/>
-                    <meta name="description" content={{Description}}/>
-                    <meta property="og:title" content={{Title}}/>
-                    <meta property="og:description" content={{Description}}/>
+                    <meta name="description" content={Description}/>
+                    <meta property="og:title" content={Title}/>
+                    <meta property="og:description" content={Description}/>
                     <meta property="og:site_name" content="Anderson Marlon // Blog"/>
                     <meta property="og:url" content="https://yagasaki.vercel.app/"/>
                     <meta property="og:image" content="https://github.com/Yagasaki7K.png"/>
@@ -26,10 +26,10 @@ const Post = () => {
                     <meta property="og:image:width" content="1200" />
                     <meta property="og:image:height" content="627" />
                     <meta name="twitter:card" content="summary"/>
-                    <meta name="twitter:site" content={{Title}}/>
+                    <meta name="twitter:site" content={Title}/>
                     <meta name="twitter:creator" content='Anderson "Yagasaki" Marlon'/>
-                    <meta name="twitter:title" content={{Title}}/>
-                    <meta name="twitter:description" content={{Description}}/>
+                    <meta name="twitter:title" content={Title}/>
+                    <meta name="twitter:description" content={Description}/>
                     <meta name="twitter:image:src" content="https://github.com/Yagasaki7K.png"/>
                 </Helmet>
 
