@@ -4,6 +4,7 @@ import FooterBlog from '../../components/FooterBlog'
 import Helmet from 'react-helmet'
 
 const Image = 'https://images.unsplash.com/photo-1514575110897-1253ff7b2ccb?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy'
+const Icon = '/src/images/yagasaki7k.jpg'
 
 const Title = 'Aplicativo que cria clone virtual do usuário faz sucesso no Brasil'
 const Description = '“Chatbot aprende tudo sobre a pessoa e torna-se uma espécie de “consciência” ou melhor amigo”'
@@ -21,7 +22,7 @@ const Post = () => {
                     <meta property="og:description" content={Description}/>
                     <meta property="og:site_name" content="Anderson Marlon // Blog"/>
                     <meta property="og:url" content="https://yagasaki.vercel.app/"/>
-                    <meta property="og:image" content="https://github.com/Yagasaki7K.png"/>
+                    <meta property="og:image" content={Icon}/>
                     <meta property="og:type" content="Website"/>
                     <meta property="og:image:width" content="1200" />
                     <meta property="og:image:height" content="627" />
@@ -30,7 +31,7 @@ const Post = () => {
                     <meta name="twitter:creator" content='Anderson "Yagasaki" Marlon'/>
                     <meta name="twitter:title" content={Title}/>
                     <meta name="twitter:description" content={Description}/>
-                    <meta name="twitter:image:src" content="https://github.com/Yagasaki7K.png"/>
+                    <meta name="twitter:image:src" content={Icon}/>
                 </Helmet>
 
                 <img src={Image} className="header-post"/>
