@@ -17,21 +17,21 @@ const Post = () => {
 
                 <Helmet>
                     <meta name="author" content='Anderson "Yagasaki" Marlon'/>
-                    <meta name="description" content={Description}/>
-                    <meta property="og:title" content={Title}/>
-                    <meta property="og:description" content={Description}/>
+                    <meta name="description" content="“Chatbot aprende tudo sobre a pessoa e torna-se uma espécie de “consciência” ou melhor amigo”"/>
+                    <meta property="og:title" content="Aplicativo que cria clone virtual do usuário faz sucesso no Brasil"/>
+                    <meta property="og:description" content="“Chatbot aprende tudo sobre a pessoa e torna-se uma espécie de “consciência” ou melhor amigo”"/>
                     <meta property="og:site_name" content="Anderson Marlon // Blog"/>
                     <meta property="og:url" content="https://yagasaki.vercel.app/"/>
-                    <meta property="og:image" content={Icon}/>
+                    <meta property="og:image" content="/src/images/yagasaki7k.jpg"/>
                     <meta property="og:type" content="Website"/>
                     <meta property="og:image:width" content="1200" />
                     <meta property="og:image:height" content="627" />
                     <meta name="twitter:card" content="summary"/>
-                    <meta name="twitter:site" content={Title}/>
+                    <meta name="twitter:site" content="Aplicativo que cria clone virtual do usuário faz sucesso no Brasil"/>
                     <meta name="twitter:creator" content='Anderson "Yagasaki" Marlon'/>
-                    <meta name="twitter:title" content={Title}/>
-                    <meta name="twitter:description" content={Description}/>
-                    <meta name="twitter:image:src" content={Icon}/>
+                    <meta name="twitter:title" content="Aplicativo que cria clone virtual do usuário faz sucesso no Brasil"/>
+                    <meta name="twitter:description" content="“Chatbot aprende tudo sobre a pessoa e torna-se uma espécie de “consciência” ou melhor amigo”"/>
+                    <meta name="twitter:image:src" content="/src/images/yagasaki7k.jpg"/>
                 </Helmet>
 
                 <img src={Image} className="header-post"/>
