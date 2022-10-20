@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
-}
+    "extends": [
+      "next/core-web-vitals"
+    ],
+    "rules": {
+      // I suggest you add those two rules:
+      "@next/next/no-img-element": "off"
+    }
+  }

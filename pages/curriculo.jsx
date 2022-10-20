@@ -1,4 +1,5 @@
-import CurriculumDetails from '../components/CurriculumDetails'
+import Link from 'next/link'
+import CurriculumDetails from '/src/components/CurriculumDetails'
 
 function Curriculum() {
 
@@ -10,48 +11,54 @@ function Curriculum() {
                 <div className="ContentText">
                     <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>
                     <ul>
-                        <li>Desenvolvedor de Sistemas Front-end</li>
+                        <li>Software Developer @ Stone / Eccaplan / Kalify Inc</li>
                     </ul>
 
-                    <p>Desenvolvedor com experiências em Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL (em desenvolvimento) e Docker</p>
+                    <p>Desenvolvedor com experiências em Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL & Docker</p>
                 </div>
 
                 <footer>
-                    <a href="https://twitter.com/Yagasaki7K" target="_blank">
+                    <Link href="https://twitter.com/Yagasaki7K"><a target="_blank" rel="noreferrer">
                         <i className="uil uil-twitter"></i>
                         <p>Twitter</p>
                         <i className="uil uil-external-link-alt"></i>
-                    </a>
+                    </a></Link>
 
-                    <a href="https://github.com/Yagasaki7K" target="_blank">
+                    <Link href="https://github.com/Yagasaki7K"><a target="_blank" rel="noreferrer">
                         <i className="uil uil-github"></i>
                         <p>GitHub</p>
                         <i className="uil uil-external-link-alt"></i>
-                    </a>
+                    </a></Link>
 
-                    <a href="https://www.linkedin.com/in/andersonmarlon/" target="_blank">
+                    <Link href="https://www.linkedin.com/in/andersonmarlon/"><a target="_blank" rel="noreferrer">
                         <i className="uil uil-linkedin"></i>
                         <p>Linkedin</p>
                         <i className="uil uil-external-link-alt"></i>
-                    </a>
-
+                    </a></Link>
                 </footer>
             </div>
 
             <div className="RightContent">
                 {/* Github Projects */}
                 <div className="content">
-                <h1 className="title">Afirmação Pessoal</h1>
+                    <h1 className="title">Afirmação Pessoal</h1>
                     <p className="description">Analista de Desenvolvimento de Software e Desenvolvedor Front-end com experiência na construção de sistemas e aplicações escaláveis nas indústrias de Tecnologia Financeira (Fintech), Sistema de Afiliados, Cervejaria, Saúde, Jornalismo, Sustentabilidade, Vendas / Empreendedorismo, Podcasts e Cenário de Esporte Eletrônico.</p>
 
-                    <a href="/curriculum" className="curriculum">Click here to see English Resume</a>
+                    <Link href="/curriculum"><a className="curriculum">Click here to see English Resume</a></Link>
                     {/* <br/><br/>
                     <a href="/src/docs/AndersonMarlonPTBR.pdf" className="curriculum" target="_blank">Download do Currículo (PDF)</a> */}
                 </div>
 
                 <div className="content">
-                <h1 className="title">Experiências Profissionais</h1>
-                    <strong>ANALISTA DE DESENVOLVIMENTO DE SISTEMAS</strong> <br/> na Cenário Capital
+                    <h1 className="title">Experiências Profissionais</h1>
+                    <strong>DESENVOLVEDOR DE SOFTWARE</strong> <br /> na Linx/Stone Pagamentos S.A.
+                    <p>Outubro 2022 — Atualmente</p>
+
+                    <p>Trabalhando em I.A. e aplicativos de comércio eletrônico. Usando: React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX, Storybook, Figma, ChakraUI, CI/CD, Testes Unitários e de integração, Nuvem AWS, e Postgress</p>
+                </div>
+
+                <div className="content">
+                    <strong>ANALISTA DE DESENVOLVIMENTO DE SISTEMAS</strong> <br /> na Cenário Capital
                     <p>Abril 2021 — Setembro 2021</p>
                     <i>Carta de Recomendação por Alexandre Carvalho Rezende (CEO) pode ser requisitada</i>
 
@@ -65,19 +72,19 @@ function Curriculum() {
                         <li>Scrum / Kabam durante o desenvolvimento e a finalização do projeto</li>
                         <li>Instalação e reparo no Google Analytics / Facebook Ads nos monitoramentos da equipe de marketing</li>
                         <li>DevOps na instalação, building e cache do sistema (DigitalOcean).</li>
-                        <li>Projeto disponível em <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
+                        <li>Projeto disponível em <Link href="https://credits.com.br/"><a target="_blank" rel="noreferrer">https://credits.com.br/</a></Link></li>
                     </ul>
                 </div>
 
                 <div className="content">
                     <hr />
-                    <strong>ASSISTENTE DE MARKETING JÚNIOR / DESENVOLVEDOR FRONT-END </strong> <br/>
+                    <strong>ASSISTENTE DE MARKETING JÚNIOR / DESENVOLVEDOR FRONT-END </strong> <br />
                     na Marry Perry Paris
                     <p>Julho 2020 – Outubro 2020</p>
 
                     <p>
                         Fui responsável pelo desenvolvimento de várias landing pages para a empresa, incluindo o site principal, site de modo de uso de cada produto e vários outros seguimentos para a comunicação com o cliente.
-                        
+
                         Fui designado como Desenvolvedor Junior durante a criação de um sistema que durou apenas dois meses até o término do contrato, o projeto seria uma plataforma de afiliados para a empresa que foi descontinuado posteriormente, usando Arquitetura MVC, MySQL e NodeJS – posteriormente o projeto foi alterado para Laravel
                     </p>
 
@@ -92,8 +99,8 @@ function Curriculum() {
 
                 <div className="content">
                     <hr />
-                    <strong>DESENVOLVIMENTO FRONT-END</strong> <br/>
-                    at Shawee no Hackathon AMBEV - Flexible and Sustainable Brewery 
+                    <strong>DESENVOLVIMENTO FRONT-END</strong> <br />
+                    at Shawee no Hackathon AMBEV - Flexible and Sustainable Brewery
                     <p>Dezembro 2020</p>
 
                     <ul>
@@ -107,7 +114,7 @@ function Curriculum() {
 
                 <div className="content">
                     <h1 className="title">Prestação de Serviços {`&`} Projetos Pessoais</h1>
-                    <strong>FUNDADOR {`&`} CTO</strong> <br/> da Kalify Inc
+                    <strong>FUNDADOR {`&`} CTO</strong> <br /> da Kalify Inc
                     <p>Agosto de 2013 — Atualmente</p>
 
                     <ul>
@@ -121,31 +128,32 @@ function Curriculum() {
                         <li>Criando eventos e ajudando a comunidade</li>
                         <li>Desenvolvimento da primeira página de consumo da Newsletter Filipe Deschamps</li>
 
-                        <li>Projeto disponível em <a href="https://kalifyinc.vercel.app/" target="_blank">https://kalifyinc.vercel.app/</a></li>
+                        <li>Projeto disponível em <Link href="https://kalifyinc.vercel.app/"><a target="_blank" rel="noreferrer">https://kalifyinc.vercel.app/</a></Link></li>
 
-                        <li>Projeto disponível em <a href="https://findyourpet.vercel.app/" target="_blank">https://findyourpet.vercel.app/</a></li>
+                        <li>Projeto disponível em <Link href="https://findyourpet.vercel.app/"><a target="_blank" rel="noreferrer">https://findyourpet.vercel.app/</a></Link></li>
 
-                        <li>Projeto disponível em <a href="https://newsletterchamps.vercel.app/" target="_blank">https://newsletterchamps.vercel.app/</a></li>
+                        <li>Projeto disponível em <Link href="https://newsletterchamps.vercel.app/"><a target="_blank" rel="noreferrer">https://newsletterchamps.vercel.app/</a></Link></li>
 
-                        <li>Projeto disponível em <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
+                        <li>Projeto disponível em <Link href="https://webessentials.com.br/"><a target="_blank" rel="noreferrer">https://webessentials.com.br/</a></Link></li>
                     </ul>
                 </div>
 
                 <div className="content">
-                    <hr/>
-                    <strong>DESENVOLVEDOR FRONT-END</strong> <br/> na Eccaplan
+                    <hr />
+                    <strong>DESENVOLVEDOR FRONT-END</strong> <br /> na Eccaplan
                     <p>Setembro 2022 — Atualmente</p>
 
                     <ul>
-                        <li>Novos recursos e desenvolvimento de portal/dashboard</li>
-                        <li>Mudança de recurso e melhoria de UX</li>
+                        <li>Criação de recursos e desenvolvimento de portal/dashboard/landing pages</li>
+                        <li>Mudança de recursos e melhoria de UX/UI</li>
                         <li>Barra de pesquisa e filtro de dados provenientes da API</li>
+                        <li>Construção da blockchain e tradecenter da Eccaplan (Carbon Fair)</li>
                     </ul>
                 </div>
 
                 <div className="content">
-                    <hr/>
-                    <strong>DESENVOLVEDOR FRONT-END</strong> <br/> na 2BEBOT
+                    <hr />
+                    <strong>DESENVOLVEDOR FRONT-END</strong> <br /> na 2BEBOT
                     <p>Maio 2022 — Agosto 2022</p>
 
                     <ul>
@@ -157,8 +165,8 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
-                    <hr/>
-                    <strong>DESENVOLVEDOR FRONT-END</strong> <br/> na ABREF
+                    <hr />
+                    <strong>DESENVOLVEDOR FRONT-END</strong> <br /> na ABREF
                     <p>Março 2020 — Maio 2020</p>
 
                     <ul>
@@ -169,8 +177,8 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
-                <hr />
-                    <strong>DESENVOLVEDOR FRONT-END</strong> <br/> na YouConnectStart
+                    <hr />
+                    <strong>DESENVOLVEDOR FRONT-END</strong> <br /> na YouConnectStart
                     <p>Março 2020 — Maio 2020</p>
 
                     <ul>
@@ -179,7 +187,7 @@ function Curriculum() {
                         <li>Instalação e reparo em Google Analytics/Facebook Ads no acompanhamento da equipe de marketing</li>
                         <li>DevOps na instalação, construção e armazenamento do sistema</li>
                     </ul>
-                    <hr/>
+                    <hr />
                 </div>
 
                 <div className="content">
@@ -272,7 +280,6 @@ function Curriculum() {
                         <strong>Web Design e Design Gráfico </strong>
                         pela MacPoli Cursos - Dezembro 2014
                     </p>
-    
                 </div>
             </div>
         </CurriculumDetails>

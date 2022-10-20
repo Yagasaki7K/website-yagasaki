@@ -6,7 +6,7 @@ const FooterBlog = () => {
         <BlogDetails>
             <footer>
                 <hr />
-                <p>© 2014 - {new Date().getFullYear()} Anderson Marlon  | Front-end Software Developer</p>
+                <p>© 2014 - {new Date().getFullYear()} Anderson Marlon  | Software Developer @ Stone / Eccaplan</p>
             </footer>
         </BlogDetails>
     )

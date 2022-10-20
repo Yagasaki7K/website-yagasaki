@@ -1,4 +1,5 @@
-import CurriculumDetails from '../components/CurriculumDetails'
+import Link from 'next/link'
+import CurriculumDetails from '/src/components/CurriculumDetails'
 
 function Curriculum() {
 
@@ -7,46 +8,51 @@ function Curriculum() {
             <div className="Download">
                 {/* Github Projects */}
                 <div className="content">
-                <h1 className="title">Anderson Marlon</h1>
-                    <i>Front-end Software Developer</i>
-
-                    <p>Developer with experiences in Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL (in development) and Docker</p>
-                <div className="content">
-                <h1 className="title">Personal Affirmation</h1>
+                    <h1 className="title">Personal Affirmation</h1>
                     <p className="description">Experienced Software Development Analyst and Front-end Developer building scalable systems and applications in the Financial Technology (Fintech), Affiliate System, Brewery, Healthcare, Journalism, Sustainability, Sales/Entrepreneurship, Podcasts and Sports Electronic.</p>
+
+                    <Link href="/curriculo"><a className="curriculum">Click here to see Portuguese Resume</a></Link>
+                    {/* <br/><br/>
+                    <a href="/src/docs/AndersonMarlonENUS.pdf" className="curriculum" target="_blank">Curriculum's Download (PDF)</a> */}
                 </div>
 
                 <div className="content">
-                <h1 className="title">Profissional Experiences</h1>
-                    <strong>SYSTEMS DEVELOPMENT ANALYST</strong> <br/> at Cenário Capital
+                    <h1 className="title">Professional Experiences</h1>
+                    <strong>SOFTWARE DEVELOPER</strong> <br /> at Linx/Stone Pagamentos S.A.
+                    <p>October 2022 — Currently</p>
+
+                    <p>Working in A.I. and e-commerce applications. Using: React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX, Storybook, Figma, ChakraUI, CI/CD, Unit and Integration Tests, AWS Cloud, and Postgress</p>
+                </div>
+
+                <div className="content">
+                    <strong>SYSTEMS DEVELOPMENT ANALYST</strong> <br /> at Cenário Capital
                     <p>April 2021 — September 2021</p>
                     <i>Letter of Recommendation by Alexandre Carvalho Rezende (CEO) can be requested</i>
 
-                    <p>Cenário Capital https://cenariocapital.com.br/ is a Brazilian company Founded in 2008 with expertise in digital marketing and analytical focus on different types of digital business. We help Brazilians make the best decisions, with information and digital solutions, through its various brands of the group!</p>
+                    <p>Cenário Capital https://cenariocapital.com.br/ is a Brazilian company Founded in 2008 with expertise in digital marketing and analytical focus on different types of digital business. We help Brazilians to make the best decisions, with information and digital solutions, through their various brands of the group!</p>
 
                     <ul>
+                        <li>Responsible for the website development and e-mails marketing of the project.</li>
                         <li>New features and homepage development</li>
-                        <li>Development of the analysis questionnaire system for the customer using NextJS and Typescript</li>
+                        <li>Development of customer review questionnaire system using NextJS and Typescript</li>
                         <li>Push notification development using Javascript via Google Developers</li>
                         <li>Scrum / Kabam during development and project completion</li>
-                        <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
-                        <li>DevOps in system installation, building and caching (DigitalOcean)</li>
-                        <li>Project available on <a href="https://credits.com.br/" target="_blank">https://credits.com.br/</a></li>
+                        <li>Installation and repair of Google Analytics / Facebook Ads in marketing team monitoring</li>
+                        <li>DevOps in system installation, building and caching (DigitalOcean).</li>
+                        <li>Project available at <Link href="https://credits.com.br/"><a target="_blank" rel="noreferrer">https://credits.com.br/</a></Link></li>
                     </ul>
-                    
-                    <hr />
                 </div>
 
                 <div className="content">
                     <hr />
-                    <strong>JUNIOR MARKETING ASSISTANT / DEVELOPMENT FRONT END </strong> <br/>
+                    <strong>JUNIOR MARKETING ASSISTANT / DEVELOPMENT FRONT END </strong> <br />
                     at Marry Perry Paris
                     <p>July 2020 – October 2020</p>
 
                     <p>
-                    I was responsible for the development of several landing pages for the company, including the main website, how to use each product website and several other segments for customer communication.
+                        I was responsible for the development of several landing pages for the company, including the main website, how to use each product website and several other segments for customer communication.
 
-                    I was assigned as a Junior Developer during the creation of a system that lasted only two months until the end of the contract, the project would be an affiliate platform for the company that was later discontinued, using MVC Architecture, MySQL and NodeJS – later the project was changed to Laravel
+                        I was assigned as a Junior Developer during the creation of a system that lasted only two months until the end of the contract, the project would be an affiliate platform for the company that was later discontinued, using MVC Architecture, MySQL and NodeJS – later the project was changed to Laravel
                     </p>
 
                     <ul>
@@ -56,14 +62,12 @@ function Curriculum() {
                         <li>Affiliate platform development using Laravel and MySQL</li>
                         <li>Development of the improved version of the platform using NodeJS and React</li>
                     </ul>
-
-                    <hr />
                 </div>
 
                 <div className="content">
                     <hr />
-                    <strong>DEVELOPMENT FRONT END</strong> <br/>
-                    at Shawee no Hackathon AMBEV - Flexible and Sustainable Brewery 
+                    <strong>DEVELOPMENT FRONT END</strong> <br />
+                    at Shawee no Hackathon AMBEV - Flexible and Sustainable Brewery
                     <p>December 2020</p>
 
                     <ul>
@@ -77,7 +81,7 @@ function Curriculum() {
 
                 <div className="content">
                     <h1 className="title">Service Provision {`&`} Personal Projects</h1>
-                    <strong>Founder {`&`} CTO</strong> <br/> at Kalify Inc
+                    <strong>Founder {`&`} CTO</strong> <br /> at Kalify Inc
                     <p>August 2013 — Until Today</p>
 
                     <ul>
@@ -86,29 +90,38 @@ function Curriculum() {
                         <li>Password generator for users with encryption</li>
                         <li>UI creation following Figma wireframe</li>
                         <li>Creating BOTs for Discord</li>
-                        <li>Encyclopedia for Beginner Developers (4chell)</li>
-                        <li>Developer community management / Aperture Laboratories</li>
+                        <li><s>Encyclopedia for Beginner Developers (4chell)</s></li>
+                        <li>Developer community management / Kalify Community</li>
                         <li>Creating events and helping the community</li>
                         <li>Development of the first consumer page of the Filipe Deschamps Newsletter</li>
 
-                        <li>Project available on <a href="https://kalifyinc.vercel.app/" target="_blank">https://kalifyinc.vercel.app/</a></li>
+                        <li>Project available on <Link href="https://kalifyinc.vercel.app/"><a target="_blank" rel="noreferrer">https://kalifyinc.vercel.app/</a></Link></li>
 
-                        <li>Project available on <a href="https://findyourpet.vercel.app/" target="_blank">https://findyourpet.vercel.app/</a></li>
+                        <li>Project available on <a href="https://findyourpet.vercel.app/" target="_blank" rel="noreferrer">https://findyourpet.vercel.app/</a></li>
 
-                        <li>Project available on <a href="https://aperturelabs.vercel.app/" target="_blank">https://aperturelabs.vercel.app/</a></li>
+                        <li>Project available on <a href="https://newsletterchamps.vercel.app/" target="_blank" rel="noreferrer">https://newsletterchamps.vercel.app/</a></li>
 
-                        <li>Project available on <a href="https://newsletterchamps.vercel.app/" target="_blank">https://newsletterchamps.vercel.app/</a></li>
-
-                        <li>Project available on <a href="https://webessentials.com.br/" target="_blank">https://webessentials.com.br/</a></li>
+                        <li>Project available on <a href="https://webessentials.com.br/" target="_blank" rel="noreferrer">https://webessentials.com.br/</a></li>
                     </ul>
-                    
-                    <hr />
                 </div>
 
                 <div className="content">
-                    <hr/>
-                    <strong>DEVELOPER FRONT-END</strong> <br/> at 2BEBOT
-                    <p>May 2022 — Until Today</p>
+                    <hr />
+                    <strong>DEVELOPER FRONT-END</strong> <br /> at Eccaplan
+                    <p>September 2022 — Until Today</p>
+
+                    <ul>
+                        <li>Resource creation and development of portal/dashboard/landing pages</li>
+                        <li>Feature change and UX/UI improvement</li>
+                        <li>Search bar and filter data coming from the API</li>
+                        <li>Building Eccaplan's blockchain and tradecenter (Carbon Fair)</li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                    <hr />
+                    <strong>DEVELOPER FRONT-END</strong> <br /> at 2BEBOT
+                    <p>May 2022 — August 2022</p>
 
                     <ul>
                         <li>New features and portal development</li>
@@ -116,12 +129,23 @@ function Curriculum() {
                         <li>Search bar and filter data coming from API</li>
                         <li>HTML to PDF Conversion</li>
                     </ul>
-                    <hr />
                 </div>
 
                 <div className="content">
-                    <hr/>
-                    <strong>DEVELOPER FRONT-END</strong> <br/> at ABREF
+                    <hr />
+                    <strong>DEVELOPER FRONT-END</strong> <br /> at ABREF
+                    <p>March 2020 — May 2020</p>
+
+                    <ul>
+                        <li>New features and homepage development</li>
+                        <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
+                        <li>DevOps in system installation, building and caching</li>
+                    </ul>
+                </div>
+
+                <div className="content">
+                    <hr />
+                    <strong>DEVELOPER FRONT-END</strong> <br /> at YouConnectStart
                     <p>March 2020 — May 2020</p>
 
                     <ul>
@@ -130,23 +154,14 @@ function Curriculum() {
                         <li>DevOps in system installation, building and caching</li>
                     </ul>
                     <hr />
-                </div>
-
-                <div className="content">
-                <hr />
-                    <strong>DEVELOPER FRONT-END</strong> <br/> at YouConnectStart
-                    <p>March 2020 — May 2020</p>
-
-                    <ul>
-                        <li>New features and homepage development</li>
-                        <li>Installation and repair in Google Analytics / Facebook Ads in the monitoring of the marketing team</li>
-                        <li>DevOps in system installation, building and caching</li>
-                    </ul>
-                    <hr/>
                 </div>
 
                 <div className="content">
                     <h1 className="title">Certificates</h1>
+                    <p>
+                        <strong>Modern Web with Javascript + Projects (JS/Typescript/React/Node/ESNext) </strong>
+                        by COD3R - August 2022
+                    </p>
                     <p>
                         <strong>Workshop Figma </strong>
                         by Design Culture - April 2022
@@ -233,8 +248,7 @@ function Curriculum() {
                     </p>
                 </div>
             </div>
-        </div>
-    </CurriculumDetails>
+        </CurriculumDetails>
     )
 }
 
