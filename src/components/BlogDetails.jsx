@@ -56,10 +56,10 @@ const BlogDetails = styled.div`
         .home {
             background: #1d1e26;
             padding: 40px 80px 15px 40px;
-            margin-left: 46rem;
+            margin-left: 42rem;
 
             @media (max-width: 1366px) {
-                margin-left: 28rem;
+                margin-left: 25rem;
             }
             @media (max-width: 1024px) {
                 margin-left: 18rem;
