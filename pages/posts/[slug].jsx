@@ -66,7 +66,7 @@ const Post = ({ data }) => {
                                     <meta name="twitter:image:src" content="/images/yagasaki7k.jpg" />
                                 </Head>
 
-                                <img src={post.header} className="header-post" />
+                                <img src={post.header} className="header-post" alt={post.title}/>
 
                                 <div className="post">
                                     <p className="date">{post.date} | Imagem: Unsplash |&nbsp;
@@ -81,11 +81,11 @@ const Post = ({ data }) => {
                                     }
 
                                     {
-                                        post.image1 ? <img src="https://latorremarketing.com.br/news/wp-content/uploads/2019/08/La-Torre-Marketing-Talks-12-2-1024x684.jpg"/> : null
+                                        post.image1 ? <img src={post.image1} alt="Primeira Imagem"/> : null
                                     }
 
                                     {
-                                        post.image2 ? <img src="https://latorremarketing.com.br/news/wp-content/uploads/2019/08/La-Torre-Marketing-Talks-10-1-1024x684.jpg"/> : null
+                                        post.image2 ? <img src={post.image2} alt="Segunda Imagem"/> : null
                                     }
 
                                     {

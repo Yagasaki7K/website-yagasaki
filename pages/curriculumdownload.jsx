@@ -114,7 +114,7 @@ function Curriculum() {
                         <li>Resource creation and development of portal/dashboard/landing pages</li>
                         <li>Feature change and UX/UI improvement</li>
                         <li>Search bar and filter data coming from the API</li>
-                        <li>Building Eccaplan's blockchain and tradecenter (Carbon Fair)</li>
+                        <li>Building Eccaplan&apos;s blockchain and tradecenter (Carbon Fair)</li>
                     </ul>
                 </div>
 

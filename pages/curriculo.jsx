@@ -6,7 +6,9 @@ function Curriculum() {
     return (
         <CurriculumDetails>
             <div className="LeftContent">
-                <a href="/"><img className="firstImage" src="https://github.com/Yagasaki7k.png" /></a>
+                <Link href="/">
+                    <a><img className="firstImage" src="https://github.com/Yagasaki7k.png" alt="Yagasaki7K"/></a>
+                </Link>
 
                 <div className="ContentText">
                     <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>

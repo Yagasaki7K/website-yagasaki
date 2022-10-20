@@ -6,7 +6,9 @@ function Curriculum() {
     return (
         <CurriculumDetails>
             <div className="LeftContent">
-                <a href="/"><img className="firstImage" src="https://github.com/Yagasaki7k.png" /></a>
+                <Link href="/">
+                    <a><img className="firstImage" src="https://github.com/Yagasaki7k.png" alt="Yagasaki7K"/></a>
+                </Link>
 
                 <div className="ContentText">
                     <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>
@@ -153,7 +155,7 @@ function Curriculum() {
                         <li>Resource creation and development of portal/dashboard/landing pages</li>
                         <li>Feature change and UX/UI improvement</li>
                         <li>Search bar and filter data coming from the API</li>
-                        <li>Building Eccaplan's blockchain and tradecenter (Carbon Fair)</li>
+                        <li>Building Eccaplan&apos;s blockchain and tradecenter (Carbon Fair)</li>
                     </ul>
                 </div>
 

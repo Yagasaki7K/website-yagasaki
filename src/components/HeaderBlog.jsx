@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BlogDetails from "./BlogDetails"
 
 const HeaderBlog = () => {
@@ -5,11 +6,11 @@ const HeaderBlog = () => {
         <BlogDetails>
             <nav>
                 <ul>
-                    <a href="/"><li>Portfólio</li></a>
-                    <a href="/blog"><li>Blog</li></a>
-                    <a href="/blog"><img src="https://github.com/Yagasaki7K.png" alt="Yagasaki7K" /></a>
-                    <a href="https://github.com/Yagasaki7K" target="_blank"><li>Github</li></a>
-                    <a href="https://discord.gg/jhSepmE7nN" target="_blank"><li>Discord</li></a>
+                    <Link href="/"><a><li>Portfólio</li></a></Link>
+                    <Link href="/blog"><a><li>Blog</li></a></Link>
+                    <Link href="/blog"><a><img src="https://github.com/Yagasaki7K.png" alt="Yagasaki7K" /></a></Link>
+                    <Link href="https://github.com/Yagasaki7K"><a target="_blank" rel="noreferrer"><li>Github</li></a></Link>
+                    <Link href="https://discord.gg/jhSepmE7nN"><a target="_blank" rel="noreferrer"><li>Discord</li></a></Link>
                 </ul>
             </nav>
         </BlogDetails>

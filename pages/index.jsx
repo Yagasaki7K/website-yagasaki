@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ContentDetails from '/src/components/ContentDetails'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
                 <div className="ContentText">
                     <p>
-                    I build solutions from Internet at <a href="https://kalify.vercel.app/" target="_blank">Kalify</a> building projects like <a href="https://discord.gg/jhSepmE7nN" target="_blank">Aperture Laboratories</a> and <a href="https://webessentials.com.br/" target="_blank">Web Essentials</a> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <a href="/blog">blog</a> and my <a href="/curriculum">curriculum</a>.
+                    I build solutions from Internet at <Link href="https://kalify.vercel.app/"><a target="_blank" rel="noreferrer">Kalify</a></Link> building projects like <Link href="https://discord.gg/jhSepmE7nN"><a target="_blank" rel="noreferrer">Aperture Laboratories</a></Link> and <Link href="https://webessentials.com.br/"><a target="_blank" rel="noreferrer">Web Essentials</a></Link> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <Link href="/blog"><a>blog</a></Link> and my <Link href="/curriculum"><a>curriculum</a></Link>.
                     </p>
                     <p>フロントエンド開発者</p>
 
@@ -24,17 +25,21 @@ function App() {
 
                 <footer>
                     <img src="https://github.com/Yagasaki7k.png" alt="Anderson Marlon" />
-                    <a href="https://twitter.com/Yagasaki7K" target="_blank">
-                        <i className="uil uil-twitter"></i>
-                        <p>Twitter</p> 
-                        <i className="uil uil-external-link-alt"></i>
-                    </a>
+                    <Link href="https://twitter.com/Yagasaki7K">
+                        <a target="_blank" rel="noreferrer">
+                            <i className="uil uil-twitter"></i>
+                            <p>Twitter</p> 
+                            <i className="uil uil-external-link-alt"></i>
+                        </a>
+                    </Link>
 
-                    <a href="https://github.com/Yagasaki7K" target="_blank">
+                    <Link href="https://github.com/Yagasaki7K">
+                    <a target="_blank" rel="noreferrer">
                         <i className="uil uil-github"></i>
                         <p>GitHub</p> 
                         <i className="uil uil-external-link-alt"></i>
                     </a>
+                    </Link>
 
                 </footer>
             </div>
@@ -43,52 +48,59 @@ function App() {
                 {/* Github Projects */}
                 <h1 id="github">Github Projects</h1>
 
-                <a href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
-                <div className="boxGithub">
-                    <h3>NextJS/Typescript</h3>
-                    <h2>Yagasaki7K/website-essentials</h2>
-                    <p>
-                        List of softwares essentials for your computer.
-                    </p>
-                    <div className="star">
-                        <i className="uil uil-star"></i>
-                        <p className="starnumber"> 7</p>
-                    </div>
-                </div>
-                </a>
+                <Link href="https://github.com/Yagasaki7K/website-essentials">
+                    <a target="_blank" rel="noreferrer">
+                        <div className="boxGithub">
+                            <h3>NextJS/Typescript</h3>
+                            <h2>Yagasaki7K/website-essentials</h2>
+                            <p>
+                                List of softwares essentials for your computer.
+                            </p>
+                            <div className="star">
+                                <i className="uil uil-star"></i>
+                                <p className="starnumber"> 7</p>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
 
-                <a href="https://github.com/Yagasaki7K/website-findyourpet" target="_blank">
-                <div className="boxGithub">
-                    <h3>React/Styled Components</h3>
-                    <h2>Yagasaki7K/website-findyourpet</h2>
-                    <p>
-                        App to help you rescue, inform and donate your pets with love! 🐶💜🐱
-                    </p>
-                    <div className="star">
-                        <i className="uil uil-star"></i>
-                        <p className="starnumber"> 3</p>
-                    </div>
-                </div>
-                </a>
+                <Link href="https://github.com/Yagasaki7K/website-findyourpet" target="_blank">
+                    <a rel="noreferrer">
+                        <div className="boxGithub">
+                            <h3>React/Styled Components</h3>
+                            <h2>Yagasaki7K/website-findyourpet</h2>
+                            <p>
+                                App to help you rescue, inform and donate your pets with love! 🐶💜🐱
+                            </p>
+                            <div className="star">
+                                <i className="uil uil-star"></i>
+                                <p className="starnumber"> 3</p>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
 
-                <a href="https://github.com/Yagasaki7K/website-newsletterchamps" target="_blank">
-                <div className="boxGithub">
-                    <h3>Javascript</h3>
-                    <h2>Yagasaki7K/website-newsletterchamps</h2>
-                    <p>
-                    A page on website to display a Newsletter from Filipe Deschamps
-                    </p>
-                    <div className="star">
-                        <i className="uil uil-star"></i>
-                        <p className="starnumber"> 1</p>
-                    </div>
-                </div>
-                </a>
+                <Link href="https://github.com/Yagasaki7K/website-newsletterchamps">
+                    <a target="_blank" rel="noreferrer">
+                        <div className="boxGithub">
+                            <h3>Javascript</h3>
+                            <h2>Yagasaki7K/website-newsletterchamps</h2>
+                            <p>
+                            A page on website to display a Newsletter from Filipe Deschamps
+                            </p>
+                            <div className="star">
+                                <i className="uil uil-star"></i>
+                                <p className="starnumber"> 1</p>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
 
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
-                <a href="/blog/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <Link href="/blog/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <a>
                 <div className="boxGithub">
                     <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
                     <p>
@@ -99,8 +111,10 @@ function App() {
                     </div>
                 </div>
                 </a>
+                </Link>
 
-                <a href="/blog/habitos-desenvolvedores-produtivos">
+                <Link href="/blog/habitos-desenvolvedores-produtivos">
+                <a>
                 <div className="boxGithub">
                     <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
                     <p>
@@ -111,8 +125,10 @@ function App() {
                     </div>
                 </div>
                 </a>
+                </Link>
 
-                <a href="/blog/jhennys-book-uma-homenagem-em-app">
+                <Link href="/blog/jhennys-book-uma-homenagem-em-app">
+                <a>
                 <div className="boxGithub">
                     <h2>Jhenny’s Book - Uma homenagem em app</h2>
                     <p>
@@ -123,13 +139,16 @@ function App() {
                     </div>
                 </div>
                 </a>
+                </Link>
 
                 {/* Twitter Feed */}
                 <h1 id="twitter">References</h1>
 
-                <a href="https://twitter.com/Yagasaki7K" target="_blank">
+                <Link href="https://twitter.com/Yagasaki7K">
+                <a target="_blank" rel="noreferrer">
                     <div className="boxTwitter">
-                        <div className="twitterImage"><img src="https://github.com/Yagasaki7K.png"/></div>
+                        <div className="twitterImage">
+                            <img src="https://github.com/Yagasaki7K.png" alt="Twitter"/></div>
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@Yagasaki7K</h3>
@@ -140,9 +159,13 @@ function App() {
                         </div>
                     </div>
                 </a>
-                <a href="https://twitter.com/sseraphini" target="_blank">
+                </Link>
+
+                <Link href="https://twitter.com/sseraphini">
+                <a target="_blank" rel="noreferrer">
                     <div className="boxTwitter">
-                        <div className="twitterImage"><img src="https://github.com/sibelius.png"/></div>
+                        <div className="twitterImage">
+                            <img src="https://github.com/sibelius.png" alt="Twitter"/></div>
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@Sseraphini</h3>
@@ -151,10 +174,13 @@ function App() {
                         </div>
                     </div>
                 </a>
+                </Link>
 
-                <a href="https://twitter.com/WonderWanny" target="_blank">
+                <Link href="https://twitter.com/WonderWanny">
+                <a target="_blank" rel="noreferrer">
                     <div className="boxTwitter">
-                        <div className="twitterImage"><img src="https://github.com/WonderWanny.png"/></div>
+                        <div className="twitterImage">
+                            <img src="https://github.com/WonderWanny.png" alt="Twitter"/></div>
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@WonderWanny</h3>
@@ -163,10 +189,13 @@ function App() {
                         </div>
                     </div>
                 </a>
+                </Link>
 
-                <a href="https://twitter.com/pamtsx" target="_blank">
+                <Link href="https://twitter.com/pamtsx">
+                <a target="_blank" rel="noreferrer">
                     <div className="boxTwitter">
-                        <div className="twitterImage"><img src="https://github.com/pamellafernandes.png"/></div>
+                        <div className="twitterImage">
+                            <img src="https://github.com/pamellafernandes.png" alt="Twitter"/></div>
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@pamtsx</h3>
@@ -175,7 +204,7 @@ function App() {
                         </div>
                     </div>
                 </a>
-
+                </Link>
             </div>
         </ContentDetails>
     )

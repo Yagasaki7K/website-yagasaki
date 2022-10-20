@@ -10,8 +10,8 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
-                <Link>
-                    <a href="/posts/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <Link href="/posts/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                    <a>
                         <div className="home">
                             <h3>07 de Outubro de 2022</h3>
                             <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
