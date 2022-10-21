@@ -78,15 +78,15 @@ const Post = ({ data }) => {
                                         post.fonte ? <p>Fonte: <Link href={post.fontelink}><a target="_blank" rel="noreferrer">{post.fonte}</a></Link></p> : null
                                     }
 
-                                    {
-                                        post.image1 ? <img src={post.image1} alt="Primeira Imagem"/> : null
-                                    }
-
-                                    {
-                                        post.image2 ? <img src={post.image2} alt="Segunda Imagem"/> : null
-                                    }
-
                                     <div className="center">
+                                        {
+                                            post.image1 ? <img src={post.image1} alt="Primeira Imagem"/> : null
+                                        }
+
+                                        {
+                                            post.image2 ? <img src={post.image2} alt="Segunda Imagem"/> : null
+                                        }
+
                                         {
                                             post.ytid ? <iframe width="650" height="580" src={'https://www.youtube.com/embed/' + post?.ytid} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null
                                         }
