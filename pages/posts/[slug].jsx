@@ -6,12 +6,6 @@ import FooterBlog from '/src/components/FooterBlog'
 import Head from 'next/head'
 import Link from 'next/link'
 
-const Image = 'https://images.unsplash.com/photo-1514575110897-1253ff7b2ccb?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy'
-const Icon = '/src/images/yagasaki7k.jpg'
-
-const Title = 'Aplicativo que cria clone virtual do usuário faz sucesso no Brasil'
-const Description = '“Chatbot aprende tudo sobre a pessoa e torna-se uma espécie de “consciência” ou melhor amigo”'
-
 export async function getStaticProps() {
     const DataAPI = await fetch('https://yagasakiblogs.up.railway.app/blog/posts')
     const data = await DataAPI.json()
@@ -39,6 +33,8 @@ const Post = ({ data }) => {
     const router = useRouter()
     const { slug } = router.query
 
+    const thumbnail = '/images/yagasaki7k.jpg'
+
     return (
         <>
             <BlogDetails>
@@ -54,7 +50,7 @@ const Post = ({ data }) => {
                                     <meta property="og:description" content={post.description} />
                                     <meta property="og:site_name" content="Anderson Marlon // Software Developer" />
                                     <meta property="og:url" content="https://yagasaki.vercel.app/" />
-                                    <meta property="og:image" content="/images/yagasaki7k.jpg" />
+                                    <meta property="og:image" content={thumbnail} />
                                     <meta property="og:type" content="Website" />
                                     <meta property="og:image:width" content="1200" />
                                     <meta property="og:image:height" content="627" />
@@ -63,16 +59,18 @@ const Post = ({ data }) => {
                                     <meta name="twitter:creator" content='Anderson "Yagasaki" Marlon' />
                                     <meta name="twitter:title" content={post.title} />
                                     <meta name="twitter:description" content={post.description} />
-                                    <meta name="twitter:image:src" content="/images/yagasaki7k.jpg" />
+                                    <meta name="twitter:image:src" content={thumbnail} />
                                 </Head>
 
                                 <img src={post.header} className="header-post" alt={post.title}/>
 
                                 <div className="post">
                                     <p className="date">{post.date} | Imagem: Unsplash |&nbsp;
-                                        <Link href="/"><a>{post.author}</a></Link></p>
-                                    <h1>{Title}</h1>
-                                    <i>{Description}</i>
+                                        <Link href="/"><a>{post.author}</a></Link>
+                                    </p>
+
+                                    <h1>{post.title}</h1>
+                                    <i>{post.description}</i>
 
                                     <p style={{whiteSpace: "pre-wrap"}}>{post.post}</p>
 
@@ -88,9 +86,11 @@ const Post = ({ data }) => {
                                         post.image2 ? <img src={post.image2} alt="Segunda Imagem"/> : null
                                     }
 
-                                    {
-                                        post.ytid ? <iframe width="550" height="480" src={'https://www.youtube.com/embed/' + post?.ytid} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null
-                                    }
+                                    <div className="center">
+                                        {
+                                            post.ytid ? <iframe width="650" height="580" src={'https://www.youtube.com/embed/' + post?.ytid} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         ) : null

@@ -30,16 +30,6 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/jhennys-book-uma-homenagem-em-app">
-                    <a>
-                        <div className="home">
-                            <h3>02 de Junho de 2022</h3>
-                            <h2>Jhenny’s Book - Uma homenagem em app</h2>
-                            <p>O ano era mais ou menos 2018, 2019. Eu tinha uma amiga com câncer terminal, ela gostava muito de animes e desenhos japoneses ...</p>
-                        </div>
-                    </a>
-                </Link>
-
                 <Link href="/posts/conheca-sobre-developer-relations">
                     <a>
                         <div className="home">
