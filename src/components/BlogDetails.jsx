@@ -200,6 +200,10 @@ const BlogDetails = styled.div`
             align-items: center;
             text-align: center;
             flex-direction: column;
+
+            img {
+                margin-bottom: 1rem;
+            }
         }
     }
 
@@ -209,6 +213,7 @@ const BlogDetails = styled.div`
         align-items: center;
         text-align: center;
         flex-direction: column;
+
         hr {
             width: 15%;
         }
