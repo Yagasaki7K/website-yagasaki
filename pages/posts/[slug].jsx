@@ -54,7 +54,7 @@ const Post = ({ data }) => {
                                     <meta property="og:description" content={post.description} />
                                     <meta property="og:site_name" content="Anderson Marlon // Software Developer" />
                                     <meta property="og:url" content="https://yagasaki.vercel.app/" />
-                                    <meta property="og:image" content={thumbnail} />
+                                    <meta property="og:image" content={post.header} />
                                     <meta property="og:type" content="Website" />
                                     <meta property="og:image:width" content="1200" />
                                     <meta property="og:image:height" content="627" />
@@ -63,7 +63,7 @@ const Post = ({ data }) => {
                                     <meta name="twitter:creator" content='Anderson "Yagasaki" Marlon' />
                                     <meta name="twitter:title" content={post.title} />
                                     <meta name="twitter:description" content={post.description} />
-                                    <meta name="twitter:image:src" content={thumbnail} />
+                                    <meta name="twitter:image:src" content={post.header} />
                                 </Head>
 
                                 <img src={post.header} className="header-post" alt={post.title}/>
