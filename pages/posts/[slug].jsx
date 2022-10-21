@@ -44,6 +44,7 @@ const Post = ({ data }) => {
                         post.slug === slug ? (
                             <div key={index}>
                                 <Head>
+                                    <title>{post.title}</title>
                                     <meta name="author" content='Anderson "Yagasaki" Marlon' />
                                     <meta name="description" content={post.description} />
                                     <meta property="og:title" content={post.title} />

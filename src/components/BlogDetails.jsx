@@ -199,6 +199,7 @@ const BlogDetails = styled.div`
             justify-content: center;
             align-items: center;
             text-align: center;
+            flex-direction: column;
         }
     }
 
