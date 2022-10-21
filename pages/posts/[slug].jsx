@@ -29,14 +29,12 @@ export async function getStaticPaths() {
     }
 }
 
-// Test using Localhost || Hidde getStaticPaths and getStaticProps
-// import posts from '../server/index.json'
+// Test using Localhost || Hidde getStaticPaths and getStaticProps and props inside on Post
+// import data from '../../server/index.json'
 
-const Post = ({ data }) => {
+const Post = ({data}) => {
     const router = useRouter()
     const { slug } = router.query
-
-    const thumbnail = '/images/yagasaki7k.jpg'
 
     return (
         <>
