@@ -29,6 +29,9 @@ export async function getStaticPaths() {
     }
 }
 
+// Test using Localhost || Hidde getStaticPaths and getStaticProps
+// import posts from '../server/index.json'
+
 const Post = ({ data }) => {
     const router = useRouter()
     const { slug } = router.query
