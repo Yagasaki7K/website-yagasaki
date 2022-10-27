@@ -130,9 +130,9 @@ function App() {
                 <Link href="/posts/jhennys-book-uma-homenagem-em-app">
                 <a>
                 <div className="boxGithub">
-                    <h2>Jhenny’s Book - Uma homenagem em app</h2>
+                    <h2>Conheça sobre Developer Relations (#DevRel)</h2>
                     <p>
-                    O ano era mais ou menos 2018, 2019. Eu tinha uma amiga com câncer terminal, ela gostava muito de animes e desenhos japoneses, fissurada em jogar e passar horas e horas jogando, sequer eu vi ...
+                    Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github pude ter uma noção e uma visão geral do que era um assunto um tanto como complexo e perdido para mim ...
                     </p>
                     <div className="star">
                         <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
