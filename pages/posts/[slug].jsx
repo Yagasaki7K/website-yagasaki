@@ -7,7 +7,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 export async function getStaticProps() {
-    const DataAPI = await fetch('https://yagasakiblogs.up.railway.app/blog/posts')
+    const DataAPI = await fetch('https://raw.githubusercontent.com/Yagasaki7K/website-yagasaki/main/server/index.json')
     const data = await DataAPI.json()
     return {
         props: {
@@ -17,7 +17,7 @@ export async function getStaticProps() {
 }
 
 export async function getStaticPaths() {
-    const request = await fetch('https://yagasakiblogs.up.railway.app/blog/posts')
+    const request = await fetch('https://raw.githubusercontent.com/Yagasaki7K/website-yagasaki/main/server/index.json')
     const posts = await request.json()
     const paths = posts.map(client => ({
         params: { slug: client.slug.toString() },
