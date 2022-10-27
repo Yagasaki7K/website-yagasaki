@@ -99,7 +99,7 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
-                <Link href="/blog/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <Link href="/posts/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
                 <a>
                 <div className="boxGithub">
                     <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
@@ -113,7 +113,7 @@ function App() {
                 </a>
                 </Link>
 
-                <Link href="/blog/habitos-desenvolvedores-produtivos">
+                <Link href="/posts/habitos-desenvolvedores-produtivos">
                 <a>
                 <div className="boxGithub">
                     <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
@@ -127,7 +127,7 @@ function App() {
                 </a>
                 </Link>
 
-                <Link href="/blog/jhennys-book-uma-homenagem-em-app">
+                <Link href="/posts/jhennys-book-uma-homenagem-em-app">
                 <a>
                 <div className="boxGithub">
                     <h2>Jhenny’s Book - Uma homenagem em app</h2>
