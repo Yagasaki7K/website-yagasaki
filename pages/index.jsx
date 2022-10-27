@@ -11,7 +11,7 @@ function App() {
 
                 <div className="ContentText">
                     <p>
-                    I build solutions from Internet at <Link href="https://kalify.vercel.app/"><a target="_blank" rel="noreferrer">Kalify</a></Link> building projects like <Link href="https://discord.gg/jhSepmE7nN"><a target="_blank" rel="noreferrer">Aperture Laboratories</a></Link> and <Link href="https://webessentials.com.br/"><a target="_blank" rel="noreferrer">Web Essentials</a></Link> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <Link href="/blog"><a>blog</a></Link> and my <Link href="/curriculum"><a>curriculum</a></Link>.
+                    I build solutions from Internet at <Link href="https://kalify.vercel.app/"><a target="_blank" rel="noreferrer">Kalify</a></Link> building projects like <Link href="https://discord.gg/jhSepmE7nN"><a target="_blank" rel="noreferrer">Kalify Community</a></Link> and <Link href="https://webessentials.com.br/"><a target="_blank" rel="noreferrer">Web Essentials</a></Link> using Javascript and love for web development. I also share what I learn and my experiences in the web on my <Link href="/blog"><a>blog</a></Link> and my <Link href="/curriculum"><a>curriculum</a></Link>.
                     </p>
                     <p>フロントエンド開発者</p>
 
