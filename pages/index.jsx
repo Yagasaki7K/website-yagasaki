@@ -152,9 +152,9 @@ function App() {
                         <div className="twitterContent">
                             <blockquote>
                                 <h3>@Yagasaki7K</h3>
-                                <p>フロントエンドソフトウェア開発者</p>
-                                <p>25y ⟡ Front-end Software Developer</p>
-                                <p>BR • US • JP (CS) • FR (CS) | 葛城, 3号機</p>
+                                <p>Software Developer @ Stone / Eccaplan / Kalify Inc</p>
+                                <p>JS | ReactJS | NextJS | NestJS | NodeJS | Firebase </p>
+                                <p>Taekwondo Fighter @ Campinas Fighters</p>
                             </blockquote>
                         </div>
                     </div>
