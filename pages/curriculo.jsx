@@ -7,13 +7,13 @@ function Curriculum() {
         <CurriculumDetails>
             <div className="LeftContent">
                 <Link href="/">
-                    <a><img className="firstImage" src="https://github.com/Yagasaki7k.png" alt="Yagasaki7K"/></a>
+                    <a><img className="firstImage" src="https://github.com/Yagasaki7k.png" alt="Yagasaki7K" /></a>
                 </Link>
 
                 <div className="ContentText">
                     <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>
                     <ul>
-                        <li>Software Developer @ Stone / Eccaplan / Kalify Inc</li>
+                        <li>Software Developer @ S/E/K</li>
                     </ul>
 
                     <p>Desenvolvedor com experiências em Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL & Docker</p>
