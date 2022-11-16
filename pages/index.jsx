@@ -99,7 +99,7 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
-                <Link href="/posts/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <Link href="https://medium.com/@yagasaki7k/enviando-um-e-mail-usando-nextjs-ou-reactjs-com-fetch-1715f09d98eb" target="_blank">
                     <a>
                         <div className="boxGithub">
                             <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
@@ -113,7 +113,7 @@ function App() {
                     </a>
                 </Link>
 
-                <Link href="/posts/habitos-desenvolvedores-produtivos">
+                <Link href="https://medium.com/@yagasaki7k/14-h%C3%A1bitos-de-desenvolvedores-altamente-produtivos-fff40618f763" target="_blank">
                     <a>
                         <div className="boxGithub">
                             <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
@@ -127,7 +127,7 @@ function App() {
                     </a>
                 </Link>
 
-                <Link href="/posts/jhennys-book-uma-homenagem-em-app">
+                <Link href="https://medium.com/@yagasaki7k/conhe%C3%A7a-sobre-developer-relations-devrel-6641347df01b" target="_blank">
                     <a>
                         <div className="boxGithub">
                             <h2>Conheça sobre Developer Relations (#DevRel)</h2>

@@ -10,7 +10,7 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
-                <Link href="/posts/enviando-um-email-usando-nextjs-ou-reactjs-com-fetch">
+                <Link href="https://medium.com/@yagasaki7k/enviando-um-e-mail-usando-nextjs-ou-reactjs-com-fetch-1715f09d98eb" target="_blank">
                     <a>
                         <div className="home">
                             <h3>07 de Outubro de 2022</h3>
@@ -20,7 +20,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/habitos-desenvolvedores-produtivos">
+                <Link href="https://medium.com/@yagasaki7k/14-h%C3%A1bitos-de-desenvolvedores-altamente-produtivos-fff40618f763" target="_blank">
                     <a>
                         <div className="home">
                             <h3>24 de Agosto de 2022</h3>
@@ -30,7 +30,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/conheca-sobre-developer-relations">
+                <Link href="https://medium.com/@yagasaki7k/conhe%C3%A7a-sobre-developer-relations-devrel-6641347df01b" target="_blank">
                     <a>
                         <div className="home">
                             <h3>18 de Abril de 2022</h3>
@@ -40,7 +40,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/front-end-back-end-full-stack-o-que-e-e-para-onde-ir">
+                <Link href="https://medium.com/@yagasaki7k/front-end-back-end-fullstack-o-que-%C3%A9-e-para-onde-ir-b8b27bced711" target="_blank">
                     <a>
                         <div className="home">
                             <h3>05 de Março de 2022</h3>
@@ -50,7 +50,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/minha-experiencia-com-o-desenvolvimento-do-blog-com-nextjs">
+                <Link href="https://medium.com/@yagasaki7k/minha-experi%C3%AAncia-com-o-desenvolvimento-do-blog-com-nextjs-9473cf92f783" target="_blank">
                     <a>
                         <div className="home">
                             <h3>28 de Agosto de 2020</h3>
@@ -60,7 +60,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/como-conseguir-experiencia-sendo-junior-iniciante">
+                <Link href="https://medium.com/@yagasaki7k/como-conseguir-experi%C3%AAncia-sendo-j%C3%BAnior-iniciante-bcb0cce4bbac" target="_blank">
                     <a>
                         <div className="home">
                             <h3>11 de Janeiro de 2020</h3>
@@ -70,7 +70,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/primeiramente-deixe-me-apresentar-eu-sou-anderson">
+                <Link href="https://medium.com/@yagasaki7k/primeiramente-deixe-me-apresentar-eu-sou-anderson-3f448a5b8707" target="_blank">
                     <a>
                         <div className="home">
                             <h3>04 de Janeiro de 2020</h3>
@@ -80,7 +80,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/3-lugar-no-hackathon-pela-ambev-em-parceria-com-a-shawee">
+                <Link href="https://medium.com/@yagasaki7k/3%C2%BA-lugar-no-hackathon-pela-ambev-em-parceria-com-a-shawee-48a937f9c913" target="_blank">
                     <a>
                         <div className="home">
                             <h3>31 de Julho de 2019</h3>
@@ -90,7 +90,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/marketing-talks-cps01-foi-marcado-por-clima-informal-e-conteudo-direto-ao-ponto">
+                <Link href="https://medium.com/@yagasaki7k/marketing-talks-cps01-foi-marcado-por-clima-informal-e-conte%C3%BAdo-direto-ao-ponto-4be8adcafab4" target="_blank">
                     <a>
                         <div className="home">
                             <h3>31 de Julho de 2019</h3>
@@ -100,7 +100,7 @@ const Blog = () => {
                     </a>
                 </Link>
 
-                <Link href="/posts/aplicativo-que-cria-clone-virtual-do-usuario-faz-sucesso-no-brasil">
+                <Link href="https://medium.com/@yagasaki7k/aplicativo-que-cria-clone-virtual-do-usu%C3%A1rio-faz-sucesso-no-brasil-91b34c9ea3d6" target="_blank">
                     <a>
                         <div className="home">
                             <h3>17 de Agosto de 2017</h3>
