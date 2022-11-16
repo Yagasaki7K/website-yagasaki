@@ -13,7 +13,7 @@ function Curriculum() {
                 <div className="ContentText">
                     <h4>Anderson Marlon // 葛城 矢ヶ崎</h4>
                     <ul>
-                        <li>Software Developer @ S/E/K</li>
+                        <li>Software Developer @ Stone/Linx & Kalify Inc</li>
                     </ul>
 
                     <p>Developer with experiences in Javascript, React, NextJS, Typescript, Styled Components, SASS, Firebase, Sanity.io, GraphQL & Docker</p>
@@ -149,7 +149,7 @@ function Curriculum() {
                 <div className="content">
                     <hr />
                     <strong>DEVELOPER FRONT-END</strong> <br /> at Eccaplan
-                    <p>September 2022 — Until Today</p>
+                    <p>September 2022 — November 2022</p>
 
                     <ul>
                         <li>Resource creation and development of portal/dashboard/landing pages</li>

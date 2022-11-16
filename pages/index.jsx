@@ -7,7 +7,7 @@ function App() {
         <ContentDetails>
             <div className="LeftContent">
                 <h2>Anderson Marlon</h2>
-                <h4>Software Developer @ S/E/K</h4>
+                <h4>Software Developer @ Stone/Linx & Kalify Inc</h4>
 
                 <div className="ContentText">
                     <p>
