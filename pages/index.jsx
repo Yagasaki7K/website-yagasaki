@@ -99,6 +99,20 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="https://medium.com/@yagasaki7k/github-desktop-vs-wsl-774809289376" target="_blank">
+                    <a>
+                        <div className="boxGithub">
+                            <h2>Github Desktop vs WSL</h2>
+                            <p>
+                                Quando se trata de ter dois ambientes, os problemas são maiores, mas é melhor do que ter um problema maior do que eles que possa tomar muito de seu tempo ...
+                            </p>
+                            <div className="star">
+                                <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/enviando-um-e-mail-usando-nextjs-ou-reactjs-com-fetch-1715f09d98eb" target="_blank">
                     <a>
                         <div className="boxGithub">
@@ -119,20 +133,6 @@ function App() {
                             <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
                             <p>
                                 Eu estava navegando na internet quando me deparei com esse livro. 14 Hábitos de Desenvolvedores Altamente Produtivos, escrito pelo Zeno Rocha, não cheguei a fazer a aquisição dele ...
-                            </p>
-                            <div className="star">
-                                <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                            </div>
-                        </div>
-                    </a>
-                </Link>
-
-                <Link href="https://medium.com/@yagasaki7k/conhe%C3%A7a-sobre-developer-relations-devrel-6641347df01b" target="_blank">
-                    <a>
-                        <div className="boxGithub">
-                            <h2>Conheça sobre Developer Relations (#DevRel)</h2>
-                            <p>
-                                Graças a uma live na Twitch pelo @NandoSangenetto em entrevista com a @Pachicodes, atual DevRel da Github pude ter uma noção e uma visão geral do que era um assunto um tanto como complexo e perdido para mim ...
                             </p>
                             <div className="star">
                                 <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>

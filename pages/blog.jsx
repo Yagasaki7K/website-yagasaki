@@ -10,6 +10,16 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
+                <Link href="https://medium.com/@yagasaki7k/github-desktop-vs-wsl-774809289376" target="_blank">
+                    <a>
+                        <div className="home">
+                            <h3>18 de Novembro de 2022</h3>
+                            <h2>Github Desktop vs WSL</h2>
+                            <p>Quando se trata de ter dois ambientes, os problemas são maiores, mas é melhor do que ter um problema maior do que eles que ...</p>
+                        </div>
+                    </a>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/enviando-um-e-mail-usando-nextjs-ou-reactjs-com-fetch-1715f09d98eb" target="_blank">
                     <a>
                         <div className="home">
