@@ -7,7 +7,7 @@ function App() {
         <ContentDetails>
             <div className="LeftContent">
                 <h2>Anderson Marlon</h2>
-                <h4>Software Developer @ Stone/Linx & Kalify Inc</h4>
+                <h4>Software Developer @ Stone & Kalify Inc</h4>
 
                 <div className="ContentText">
                     <p>
@@ -74,7 +74,7 @@ function App() {
                             </p>
                             <div className="star">
                                 <i className="uil uil-star"></i>
-                                <p className="starnumber"> 3</p>
+                                <p className="starnumber"> 4</p>
                             </div>
                         </div>
                     </a>
@@ -90,7 +90,7 @@ function App() {
                             </p>
                             <div className="star">
                                 <i className="uil uil-star"></i>
-                                <p className="starnumber"> 1</p>
+                                <p className="starnumber"> 2</p>
                             </div>
                         </div>
                     </a>
@@ -152,8 +152,8 @@ function App() {
                             <div className="twitterContent">
                                 <blockquote>
                                     <h3>@Yagasaki7K</h3>
-                                    <p>Software Developer @ Stone / Eccaplan / Kalify Inc</p>
-                                    <p>JS | ReactJS | NextJS | NestJS | NodeJS | Firebase </p>
+                                    <p>Software Developer @ Stone / Kalify Inc</p>
+                                    <p>&nbsp;</p>
                                     <p>Taekwondo Fighter @ Campinas Fighters</p>
                                 </blockquote>
                             </div>
