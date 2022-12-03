@@ -99,6 +99,20 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="https://medium.com/@yagasaki7k/ilustra%C3%A7%C3%A3o-vs-intelig%C3%AAncia-artificial-85f77cbe527" target="_blank">
+                    <a>
+                        <div className="boxGithub">
+                            <h2>Ilustração vs Inteligência Artificial</h2>
+                            <p>
+                                Estava navegando no Twitter e vi, não uma, não duas, mas várias reclamações de artistas sobre “pessoas que pagaram para ter imagens geradas pela inteligência ...
+                            </p>
+                            <div className="star">
+                                <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/github-desktop-vs-wsl-774809289376" target="_blank">
                     <a>
                         <div className="boxGithub">
@@ -119,20 +133,6 @@ function App() {
                             <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
                             <p>
                                 Essa semana me deparei com um problema, era um problema simples, enviar uma requisição para um endpoint (POST) para enviar o nome do usuário e o e-mail dele ...
-                            </p>
-                            <div className="star">
-                                <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                            </div>
-                        </div>
-                    </a>
-                </Link>
-
-                <Link href="https://medium.com/@yagasaki7k/14-h%C3%A1bitos-de-desenvolvedores-altamente-produtivos-fff40618f763" target="_blank">
-                    <a>
-                        <div className="boxGithub">
-                            <h2>14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
-                            <p>
-                                Eu estava navegando na internet quando me deparei com esse livro. 14 Hábitos de Desenvolvedores Altamente Produtivos, escrito pelo Zeno Rocha, não cheguei a fazer a aquisição dele ...
                             </p>
                             <div className="star">
                                 <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>

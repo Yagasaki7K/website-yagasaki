@@ -10,6 +10,16 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
+                <Link href="https://medium.com/@yagasaki7k/ilustra%C3%A7%C3%A3o-vs-intelig%C3%AAncia-artificial-85f77cbe527" target="_blank">
+                    <a>
+                        <div className="home">
+                            <h3>02 de Dezembro de 2022</h3>
+                            <h2>Ilustração vs Inteligência Artificial</h2>
+                            <p>Estava navegando no Twitter e vi, não uma, não duas, mas várias reclamações de artistas sobre “pessoas que pagaram para ter ...</p>
+                        </div>
+                    </a>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/github-desktop-vs-wsl-774809289376" target="_blank">
                     <a>
                         <div className="home">
