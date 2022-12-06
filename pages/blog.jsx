@@ -10,6 +10,16 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
+                <Link href="https://medium.com/@yagasaki7k/react-email-de-zeno-rocha-666fd27ed5ce" target="_blank">
+                    <a>
+                        <div className="home">
+                            <h3>06 de Dezembro de 2022</h3>
+                            <h2>React Email de Zeno Rocha</h2>
+                            <p>Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver. Ou até mesmo sair das ...</p>
+                        </div>
+                    </a>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/ilustra%C3%A7%C3%A3o-vs-intelig%C3%AAncia-artificial-85f77cbe527" target="_blank">
                     <a>
                         <div className="home">

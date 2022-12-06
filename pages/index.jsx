@@ -99,6 +99,20 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="https://medium.com/@yagasaki7k/react-email-de-zeno-rocha-666fd27ed5ce" target="_blank">
+                    <a>
+                        <div className="boxGithub">
+                            <h2>React Email de Zeno Rocha</h2>
+                            <p>
+                                Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver. Ou até mesmo sair das ...
+                            </p>
+                            <div className="star">
+                                <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/ilustra%C3%A7%C3%A3o-vs-intelig%C3%AAncia-artificial-85f77cbe527" target="_blank">
                     <a>
                         <div className="boxGithub">
@@ -119,20 +133,6 @@ function App() {
                             <h2>Github Desktop vs WSL</h2>
                             <p>
                                 Quando se trata de ter dois ambientes, os problemas são maiores, mas é melhor do que ter um problema maior do que eles que possa tomar muito de seu tempo ...
-                            </p>
-                            <div className="star">
-                                <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                            </div>
-                        </div>
-                    </a>
-                </Link>
-
-                <Link href="https://medium.com/@yagasaki7k/enviando-um-e-mail-usando-nextjs-ou-reactjs-com-fetch-1715f09d98eb" target="_blank">
-                    <a>
-                        <div className="boxGithub">
-                            <h2>Enviando um e-mail usando NextJS ou ReactJS com Fetch</h2>
-                            <p>
-                                Essa semana me deparei com um problema, era um problema simples, enviar uma requisição para um endpoint (POST) para enviar o nome do usuário e o e-mail dele ...
                             </p>
                             <div className="star">
                                 <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
