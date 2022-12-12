@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 // Test using Localhost || Hidde getStaticPaths and getStaticProps and props inside on Post
 // import data from '../../server/index.json'
 
-const Post = ({data}) => {
+const Post = ({ data }) => {
     const router = useRouter()
     const { slug } = router.query
 
@@ -64,29 +64,29 @@ const Post = ({data}) => {
                                     <meta name="twitter:image:src" content={post.header} />
                                 </Head>
 
-                                <img src={post.header} className="header-post" alt={post.title}/>
+                                <img src={post.header} className="header-post" alt={post.title} />
 
                                 <div className="post">
                                     <p className="date">{post.date} | Imagem: Unsplash |&nbsp;
-                                        <Link href="/"><a>{post.author}</a></Link>
+                                        <Link href="/">{post.author}</Link>
                                     </p>
 
                                     <h1>{post.title}</h1>
                                     <i>{post.description}</i>
 
-                                    <p style={{whiteSpace: "pre-wrap"}}>{post.post}</p>
+                                    <p style={{ whiteSpace: "pre-wrap" }}>{post.post}</p>
 
                                     {
-                                        post.fonte ? <p>Fonte: <Link href={post.fontelink}><a target="_blank" rel="noreferrer">{post.fonte}</a></Link></p> : null
+                                        post.fonte ? <p>Fonte: <Link href={post.fontelink} target="_blank" rel="noreferrer">{post.fonte}</Link></p> : null
                                     }
 
                                     <div className="center">
                                         {
-                                            post.image1 ? <img src={post.image1} alt="Primeira Imagem"/> : null
+                                            post.image1 ? <img src={post.image1} alt="Primeira Imagem" /> : null
                                         }
 
                                         {
-                                            post.image2 ? <img src={post.image2} alt="Segunda Imagem"/> : null
+                                            post.image2 ? <img src={post.image2} alt="Segunda Imagem" /> : null
                                         }
 
                                         {

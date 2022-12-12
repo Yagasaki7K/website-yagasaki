@@ -7,7 +7,7 @@ function Curriculum() {
         <CurriculumDetails>
             <div className="LeftContent">
                 <Link href="/">
-                    <a><img className="firstImage" src="https://github.com/Yagasaki7k.png" alt="Yagasaki7K" /></a>
+                    <img className="firstImage" src="https://github.com/Yagasaki7k.png" alt="Yagasaki7K" />
                 </Link>
 
                 <div className="ContentText">
@@ -20,28 +20,22 @@ function Curriculum() {
                 </div>
 
                 <footer>
-                    <Link href="https://twitter.com/Yagasaki7K">
-                        <a target="_blank" rel="noreferrer">
-                            <i className="uil uil-twitter"></i>
-                            <p>Twitter</p>
-                            <i className="uil uil-external-link-alt"></i>
-                        </a>
+                    <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer">
+                        <i className="uil uil-twitter"></i>
+                        <p>Twitter</p>
+                        <i className="uil uil-external-link-alt"></i>
                     </Link>
 
-                    <Link href="https://github.com/Yagasaki7K">
-                        <a target="_blank" rel="noreferrer">
-                            <i className="uil uil-github"></i>
-                            <p>GitHub</p>
-                            <i className="uil uil-external-link-alt"></i>
-                        </a>
+                    <Link href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer">
+                        <i className="uil uil-github"></i>
+                        <p>GitHub</p>
+                        <i className="uil uil-external-link-alt"></i>
                     </Link>
 
-                    <Link href="https://www.linkedin.com/in/andersonmarlon/">
-                        <a target="_blank" rel="noreferrer">
-                            <i className="uil uil-linkedin"></i>
-                            <p>Linkedin</p>
-                            <i className="uil uil-external-link-alt"></i>
-                        </a>
+                    <Link href="https://www.linkedin.com/in/andersonmarlon/" target="_blank" rel="noreferrer">
+                        <i className="uil uil-linkedin"></i>
+                        <p>Linkedin</p>
+                        <i className="uil uil-external-link-alt"></i>
                     </Link>
                 </footer>
             </div>
@@ -52,9 +46,7 @@ function Curriculum() {
                     <h1 className="title">Personal Affirmation</h1>
                     <p className="description">Experienced Software Development Analyst and Front-end Developer building scalable systems and applications in the Financial Technology (Fintech), Affiliate System, Brewery, Healthcare, Journalism, Sustainability, Sales/Entrepreneurship, Podcasts and Sports Electronic.</p>
 
-                    <Link href="/curriculo"><a className="curriculum">Click here to see Portuguese Resume</a></Link>
-                    {/* <br/><br/>
-                    <a href="/src/docs/AndersonMarlonENUS.pdf" className="curriculum" target="_blank">Curriculum's Download (PDF)</a> */}
+                    <Link href="/curriculo" className="curriculum">Click here to see Portuguese Resume</Link>
                 </div>
 
                 <div className="content">
@@ -66,6 +58,7 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
+                    <hr />
                     <strong>SYSTEMS DEVELOPMENT ANALYST</strong> <br /> at Cenário Capital
                     <p>April 2021 — September 2021</p>
                     <i>Letter of Recommendation by Alexandre Carvalho Rezende (CEO) can be requested</i>
@@ -80,7 +73,7 @@ function Curriculum() {
                         <li>Scrum / Kabam during development and project completion</li>
                         <li>Installation and repair of Google Analytics / Facebook Ads in marketing team monitoring</li>
                         <li>DevOps in system installation, building and caching (DigitalOcean).</li>
-                        <li>Project available at <Link href="https://credits.com.br/"><a target="_blank" rel="noreferrer">https://credits.com.br/</a></Link></li>
+                        <li>Project available at <Link href="https://credits.com.br/" target="_blank" rel="noreferrer">https://credits.com.br/</Link></li>
                     </ul>
                 </div>
 
@@ -136,13 +129,13 @@ function Curriculum() {
                         <li>Creating events and helping the community</li>
                         <li>Development of the first consumer page of the Filipe Deschamps Newsletter</li>
 
-                        <li>Project available on <Link href="https://kalifyinc.vercel.app/"><a target="_blank" rel="noreferrer">https://kalifyinc.vercel.app/</a></Link></li>
+                        <li>Project available on <Link href="https://kalifyinc.vercel.app/" target="_blank" rel="noreferrer">https://kalifyinc.vercel.app/</Link></li>
 
-                        <li>Project available on <a href="https://findyourpet.vercel.app/" target="_blank" rel="noreferrer">https://findyourpet.vercel.app/</a></li>
+                        <li>Project available on <Link href="https://findyourpet.vercel.app/" target="_blank" rel="noreferrer">https://findyourpet.vercel.app/</Link></li>
 
-                        <li>Project available on <a href="https://newsletterchamps.vercel.app/" target="_blank" rel="noreferrer">https://newsletterchamps.vercel.app/</a></li>
+                        <li>Project available on <Link href="https://newsletterchamps.vercel.app/" target="_blank" rel="noreferrer">https://newsletterchamps.vercel.app/</Link></li>
 
-                        <li>Project available on <a href="https://webessentials.com.br/" target="_blank" rel="noreferrer">https://webessentials.com.br/</a></li>
+                        <li>Project available on <Link href="https://webessentials.com.br/" target="_blank" rel="noreferrer">https://webessentials.com.br/</Link></li>
                     </ul>
                 </div>
 
