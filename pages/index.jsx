@@ -89,6 +89,18 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="https://medium.com/@yagasaki7k/teste-unit%C3%A1rios-como-usar-para-iniciantes-e421916f4077" target="_blank">
+                    <div className="boxGithub">
+                        <h2>Testes Unitários: Como e quando usar para iniciantes</h2>
+                        <p>
+                            Me considero desenvolvedor fazem oito anos ~ desde essa publicação ~ e somente agora entendi como e para quê serve teste unitário ...
+                        </p>
+                        <div className="star">
+                            <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                        </div>
+                    </div>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/react-email-de-zeno-rocha-666fd27ed5ce" target="_blank">
                     <div className="boxGithub">
                         <h2>React Email de Zeno Rocha</h2>
@@ -106,18 +118,6 @@ function App() {
                         <h2>Ilustração vs Inteligência Artificial</h2>
                         <p>
                             Estava navegando no Twitter e vi, não uma, não duas, mas várias reclamações de artistas sobre “pessoas que pagaram para ter imagens geradas pela inteligência ...
-                        </p>
-                        <div className="star">
-                            <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="https://medium.com/@yagasaki7k/github-desktop-vs-wsl-774809289376" target="_blank">
-                    <div className="boxGithub">
-                        <h2>Github Desktop vs WSL</h2>
-                        <p>
-                            Quando se trata de ter dois ambientes, os problemas são maiores, mas é melhor do que ter um problema maior do que eles que possa tomar muito de seu tempo ...
                         </p>
                         <div className="star">
                             <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
