@@ -10,6 +10,14 @@ const Blog = () => {
             <BlogDetails>
                 <HeaderBlog />
 
+                <Link href="https://medium.com/@yagasaki7k/dark-mode-localstorage-schema-button-default-ou-local-time-53a3fa38641b" target="_blank">
+                    <div className="home">
+                        <h3>16 de Dezembro de 2022</h3>
+                        <h2>Dark Mode: LocalStorage, Schema, Button Default ou Local Time?</h2>
+                        <p>O Dark Mode vem sendo requisitado por muitas pessoas, isso até mesmo por mim, ninguém aguenta aquele holofote na sua cara às duas da manhã ...</p>
+                    </div>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/teste-unit%C3%A1rios-como-usar-para-iniciantes-e421916f4077" target="_blank">
                     <div className="home">
                         <h3>13 de Dezembro de 2022</h3>

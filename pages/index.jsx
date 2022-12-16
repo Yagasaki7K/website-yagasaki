@@ -89,6 +89,18 @@ function App() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="https://medium.com/@yagasaki7k/dark-mode-localstorage-schema-button-default-ou-local-time-53a3fa38641b" target="_blank">
+                    <div className="boxGithub">
+                        <h2>Dark Mode: LocalStorage, Schema, Button Default ou Local Time?</h2>
+                        <p>
+                            O Dark Mode vem sendo requisitado por muitas pessoas, isso até mesmo por mim, ninguém aguenta aquele holofote na sua cara às duas da manhã ...
+                        </p>
+                        <div className="star">
+                            <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
+                        </div>
+                    </div>
+                </Link>
+
                 <Link href="https://medium.com/@yagasaki7k/teste-unit%C3%A1rios-como-usar-para-iniciantes-e421916f4077" target="_blank">
                     <div className="boxGithub">
                         <h2>Testes Unitários: Como e quando usar para iniciantes</h2>
@@ -106,18 +118,6 @@ function App() {
                         <h2>React Email de Zeno Rocha</h2>
                         <p>
                             Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver. Ou até mesmo sair das ...
-                        </p>
-                        <div className="star">
-                            <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="https://medium.com/@yagasaki7k/ilustra%C3%A7%C3%A3o-vs-intelig%C3%AAncia-artificial-85f77cbe527" target="_blank">
-                    <div className="boxGithub">
-                        <h2>Ilustração vs Inteligência Artificial</h2>
-                        <p>
-                            Estava navegando no Twitter e vi, não uma, não duas, mas várias reclamações de artistas sobre “pessoas que pagaram para ter imagens geradas pela inteligência ...
                         </p>
                         <div className="star">
                             <p>Acessar a matéria <i className="uil uil-external-link-alt"></i></p>
