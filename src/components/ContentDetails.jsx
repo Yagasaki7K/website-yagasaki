@@ -19,6 +19,8 @@ const ContentDetails = styled.div`
         h2 {
             font-size: 64px;
             color: #fff;
+            margin-top: 1.5rem;
+            margin-bottom: 3rem;
         }
 
         h4 {
@@ -51,7 +53,6 @@ const ContentDetails = styled.div`
 
                 h4 {
                     margin-top: 20px;
-                    margin-bottom: -10px;
                 }
 
                 a {
@@ -124,14 +125,13 @@ const ContentDetails = styled.div`
                 color: #fff;
                 text-decoration: none;
                 font-size: 14px;
+                margin-top: 0.5rem;
 
                 i {
-                    margin-top: 12px;
+                    margin-top: -2px;
                     margin-left: 10px;
                     margin-right: 10px;
                     font-size: 18px;
-                    
-
                 }
 
                 .uil-external-link-alt {
@@ -196,6 +196,7 @@ const ContentDetails = styled.div`
                 font-size: 24px;
                 font-weight: 600;
                 width: 500px;
+                margin-top: 1rem;
             }
 
             p {
@@ -247,11 +248,12 @@ const ContentDetails = styled.div`
             }
 
             .twitterContent {
-                width: 300px;
+                width: 400px;
 
                 blockquote {
                     margin-top: -100px;
                     margin-left: 130px;
+                    border: none;
 
                     h3 {
                         margin-top: -0px;
