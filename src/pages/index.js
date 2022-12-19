@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
-import ContentDetails from "../components/ContentDetails";
+import style from "../css/content.scss";
 
 export default function Home() {
     return (
-        <ContentDetails>
+        <div className={style}>
             <Head>
                 <link
                     href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -34,58 +34,41 @@ export default function Home() {
 
                 <div className="ContentText">
                     <p>
-                        I build solutions from Internet at{" "}
-                        <Link
-                            href="https://kalify.vercel.app/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Kalify
-                        </Link>{" "}
-                        building projects like{" "}
-                        <Link
-                            href="https://discord.gg/jhSepmE7nN"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Kalify Community
-                        </Link>{" "}
-                        and{" "}
-                        <Link
-                            href="https://webessentials.com.br/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Web Essentials
-                        </Link>{" "}
-                        using Javascript and love for web development. I also
-                        share what I learn and my experiences in the web on my{" "}
-                        <Link href="/blog">blog</Link> and my{" "}
-                        <Link href="/curriculum">curriculum</Link>.
+                        I build solutions from Internet at Kalify building
+                        projects like Kalify Community and Web Essentials using
+                        Javascript and love for web development. I also share
+                        what I learn and my experiences in the web on my blog
+                        and my curriculum.
                     </p>
                     <p>フロントエンド開発者</p>
+                </div>
 
-                    <div className="summary">
-                        <h4>Summary</h4>
-                        <Link href="#github">
-                            <p>
-                                EVA <b>00</b> | Projects
-                            </p>{" "}
-                            <hr />{" "}
-                        </Link>
-                        <Link href="#blog">
-                            <p>
-                                EVA <b>01</b> | Articles
-                            </p>{" "}
-                            <hr />{" "}
-                        </Link>
-                        <Link href="#twitter">
-                            <p>
-                                EVA <b>02</b> | References
-                            </p>{" "}
-                            <hr />{" "}
-                        </Link>
-                    </div>
+                <div className="summary">
+                    <h4>Summary</h4>
+                    <a href="#github">
+                        <p>
+                            EVA <b>00</b> | Projects
+                        </p>
+                        <hr />
+                    </a>
+                    <a href="#blog">
+                        <p>
+                            EVA <b>01</b> | Articles
+                        </p>
+                        <hr />
+                    </a>
+                    <a href="#twitter">
+                        <p>
+                            EVA <b>02</b> | References
+                        </p>
+                        <hr />
+                    </a>
+                    <a href="/curriculum">
+                        <p>
+                            EVA <b>03</b> | Curriculum
+                        </p>
+                        <hr />
+                    </a>
                 </div>
 
                 <footer>
@@ -334,6 +317,6 @@ export default function Home() {
                     </div>
                 </Link>
             </div>
-        </ContentDetails>
+        </div>
     );
 }

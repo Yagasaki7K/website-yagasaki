@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "@docusaurus/Link";
-import CurriculumDetails from "/src/components/CurriculumDetails";
+import styles from "/src/css/curriculum.scss";
 
 function Curriculum() {
     return (
-        <CurriculumDetails>
+        <div className={styles}>
             <div className="LeftContent">
                 <Link href="/">
                     <img
@@ -26,45 +26,13 @@ function Curriculum() {
                         Sanity.io, GraphQL & Docker
                     </p>
                 </div>
-
-                <footer>
-                    <Link
-                        href="https://twitter.com/Yagasaki7K"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="uil uil-twitter"></i>
-                        <p>Twitter</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </Link>
-
-                    <Link
-                        href="https://github.com/Yagasaki7K"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="uil uil-github"></i>
-                        <p>GitHub</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </Link>
-
-                    <Link
-                        href="https://www.linkedin.com/in/andersonmarlon/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="uil uil-linkedin"></i>
-                        <p>Linkedin</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </Link>
-                </footer>
             </div>
 
             <div className="RightContent">
                 {/* Github Projects */}
                 <div className="content">
-                    <h1 className="title">Personal Affirmation</h1>
-                    <p className="description">
+                    <h1 className="xtitle">Personal Affirmation</h1>
+                    <p className="xdescription">
                         Experienced Software Development Analyst and Front-end
                         Developer building scalable systems and applications in
                         the Financial Technology (Fintech), Affiliate System,
@@ -73,12 +41,12 @@ function Curriculum() {
                     </p>
 
                     <Link href="/curriculo" className="curriculum">
-                        Click here to see Portuguese Resume
+                        Currículo em Português
                     </Link>
                 </div>
 
                 <div className="content">
-                    <h1 className="title">Professional Experiences</h1>
+                    <h1 className="xtitle">Professional Experiences</h1>
                     <strong>SOFTWARE DEVELOPER</strong> <br /> at Linx/Stone
                     Pagamentos S.A.
                     <p>October 2022 — Currently</p>
@@ -453,7 +421,7 @@ function Curriculum() {
                     </p>
                 </div>
             </div>
-        </CurriculumDetails>
+        </div>
     );
 }
 
