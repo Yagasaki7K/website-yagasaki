@@ -8,7 +8,7 @@ authors:
   image_url: https://github.com/yagasaki7k.png
 ---
 
-![Christopher Gower](https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80)
+![](https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80 "Christopher Gower")
 
 > _"Vou contar a minha experiência que tive ao desenvolver esse blog — o blog passado — e isso vai contar até mesmo quando eu tive o contato pela primeira vez com o NextJS."_
 

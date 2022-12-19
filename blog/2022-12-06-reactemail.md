@@ -8,7 +8,7 @@ authors:
   image_url: https://github.com/yagasaki7k.png
 ---
 
-![Stephen Phillips](https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+![](https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Stephen Phillips")
 
 > _"Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver."_
 

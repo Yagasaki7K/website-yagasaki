@@ -8,7 +8,7 @@ authors:
   image_url: https://github.com/yagasaki7k.png
 ---
 
-![Jay Wennington](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+![](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Jay Wennington")
 
 > _"Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?"_
 
