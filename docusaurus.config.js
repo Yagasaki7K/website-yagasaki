@@ -63,6 +63,11 @@ const config = {
                     },
                 ],
             },
+            colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: true,
+            },
+            image: 'https://i.imgur.com/1ypU0Xs.png'
         }),
 };
 
