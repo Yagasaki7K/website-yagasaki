@@ -22,11 +22,11 @@ export default function Home() {
                 <link
                     rel="stylesheet"
                     href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-                ></link>
+                />
                 <script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-39P50954DX"
-                ></script>
+                />
             </Head>
             <div className="LeftContent">
                 <h2>Anderson Marlon</h2>

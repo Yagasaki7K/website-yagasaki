@@ -1,8 +1,9 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Anderson Marlon // Software Developer",
-    tagline: "Dinosaurs are cool",
+    title: "Anderson Marlon // Yagasaki7K",
+    description: "Software Developer @ Stone & Kalify Inc",
     url: "https://yagasaki.vercel.app",
+    image: "https://i.imgur.com/1ypU0Xs.png",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
