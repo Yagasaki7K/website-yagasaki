@@ -1,6 +1,7 @@
 ---
 slug: minha-experiencia-com-o-desenvolvimento-do-blog-com-nextjs
 title: Minha experiência com o desenvolvimento do blog com NextJS
+description: Vou contar a minha experiência que tive ao desenvolver esse blog — o blog passado — e isso vai contar até mesmo quando eu tive o contato pela primeira vez com o NextJS.
 authors:
   name: Anderson Marlon
   title: Software Developer na Stone Co.

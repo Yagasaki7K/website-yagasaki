@@ -1,6 +1,7 @@
 ---
 slug: react-email-de-zeno-rocha
 title: React Email de Zeno Rocha
+description: Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver.
 authors:
   name: Anderson Marlon
   title: Software Developer na Stone Co.
