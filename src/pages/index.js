@@ -35,7 +35,7 @@ export default function Home() {
                 />
                 <meta
                     name="twitter:description"
-                    content={"Software Developer @ Stone"}
+                    content={"Software Developer @ Stone Co."}
                 />
                 <meta
                     name="twitter:image"
