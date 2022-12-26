@@ -27,6 +27,22 @@ export default function Home() {
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-39P50954DX"
                 />
+                <head>
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:site" content="@Yagasaki7K" />
+                    <meta
+                        name="twitter:title"
+                        content="Anderson Marlon // Yagasaki7K"
+                    />
+                    <meta
+                        name="twitter:description"
+                        content="Software Developer @ Stone"
+                    />
+                    <meta
+                        name="twitter:image"
+                        content="https://i.imgur.com/1ypU0Xs.png"
+                    />
+                </head>
             </Head>
             <div className="LeftContent">
                 <h2>Anderson Marlon</h2>
