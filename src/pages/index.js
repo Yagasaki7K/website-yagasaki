@@ -321,7 +321,7 @@ export default function Home() {
                         </div>
                         <div className="twitterContent">
                             <blockquote>
-                                <h3>@punktsx</h3>
+                                <h3>@Punktsx</h3>
                                 <p>
                                     Frontend Developer 👩🏻‍💻🌐📱 || Amante de
                                     Astronomia 🔭 || Science 🧬
