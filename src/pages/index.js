@@ -173,6 +173,25 @@ export default function Home() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="/blog/removendo-o-twitter-analytics-do-feed">
+                    <div className="boxGithub">
+                        <h2>
+                            Removendo o Twitter Analytics do Feed
+                        </h2>
+                        <p>
+                            Hoje mais cedo estava navegando no Twitter
+                            como de costume e o usuário Thiago havia publicado uma dica,
+                            uma solução de nossos problemas.
+                        </p>
+                        <div className="star">
+                            <p>
+                                Acessar a matéria{" "}
+                                <i className="uil uil-external-link-alt"></i>
+                            </p>
+                        </div>
+                    </div>
+                </Link>
+
                 <Link href="/blog/dark-mode-localstorage-scheme-button-default-ou-local-time">
                     <div className="boxGithub">
                         <h2>
@@ -202,23 +221,6 @@ export default function Home() {
                             Me considero desenvolvedor fazem oito anos ~ desde
                             essa publicação ~ e somente agora entendi como e
                             para quê serve teste unitário ...
-                        </p>
-                        <div className="star">
-                            <p>
-                                Acessar a matéria{" "}
-                                <i className="uil uil-external-link-alt"></i>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="/blog/react-email-de-zeno-rocha">
-                    <div className="boxGithub">
-                        <h2>React Email de Zeno Rocha</h2>
-                        <p>
-                            Zeno Rocha imaginou aquilo que todo desenvolvedor
-                            front-end estava cansado de tentar desenvolver. Ou
-                            até mesmo sair das ...
                         </p>
                         <div className="star">
                             <p>
