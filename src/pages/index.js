@@ -173,6 +173,23 @@ export default function Home() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="/blog/quando-decidir-se-e-melhor-trabalhar-em-um-monorepo-ou-repositorios-individuais">
+                    <div className="boxGithub">
+                        <h2>
+                            Quando decidir se é melhor trabalhar em um monorepo ou repositórios individuais?
+                        </h2>
+                        <p>
+                            Eu estava em uma reunião da empresa que trabalho e o assunto era sobre o monorepo, o que é, como funciona e quando é melhor utilizar. A discussão foi muito boa e acredito que todos os envolvidos saíram com uma visão diferente sobre o assunto...
+                        </p>
+                        <div className="star">
+                            <p>
+                                Acessar a matéria{" "}
+                                <i className="uil uil-external-link-alt"></i>
+                            </p>
+                        </div>
+                    </div>
+                </Link>
+
                 <Link href="/blog/removendo-o-twitter-analytics-do-feed">
                     <div className="boxGithub">
                         <h2>
@@ -202,25 +219,6 @@ export default function Home() {
                             O Dark Mode vem sendo requisitado por muitas
                             pessoas, isso até mesmo por mim, ninguém aguenta
                             aquele holofote na sua cara às ...
-                        </p>
-                        <div className="star">
-                            <p>
-                                Acessar a matéria{" "}
-                                <i className="uil uil-external-link-alt"></i>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="/blog/testes-unitarios-como-e-quando-usar-para-iniciantes">
-                    <div className="boxGithub">
-                        <h2>
-                            Testes Unitários: Como e quando usar para iniciantes
-                        </h2>
-                        <p>
-                            Me considero desenvolvedor fazem oito anos ~ desde
-                            essa publicação ~ e somente agora entendi como e
-                            para quê serve teste unitário ...
                         </p>
                         <div className="star">
                             <p>
