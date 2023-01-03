@@ -92,7 +92,8 @@ A criação de um arquivo `_document.js` personalizado estenderá o documento pa
 que controlará a estrutura HTML. É aqui que você pode colocar links para arquivos externos, como o link
 de uma fonte do Google Fonts, e é um bom lugar para metatags que permanecerão constantes em todo o site.
 
-:::tip Se você não usa o styled-components em seu projeto, você pode ignorar as informações abaixo do
+:::tip
+Se você não usa o styled-components em seu projeto, você pode ignorar as informações abaixo do
 `Fast refresh with NextJS doesn't broken the CSS` e focar apenas na codificação dentro do `render()`,
 nele temos informações simples que não iremos alterar e irá permanecer em toda a aplicação.
 :::
