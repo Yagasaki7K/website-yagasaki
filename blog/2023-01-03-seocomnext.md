@@ -9,7 +9,7 @@ authors:
   image_url: https://github.com/yagasaki7k.png
 ---
 
-![](https://images.unsplash.com/photo-1590247813693-5541d1c609fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1509&q=80 "Nana Smirnova")
+![](https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 "Firmbee.com")
 
 > _"Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ..."_
 
@@ -26,7 +26,7 @@ visuais não foi difícil, para um desenvolvedor focado em Front-end como eu, de
 semanas. Ali contava com tudo pronto, slide, menu, footer, etc. Mas, o que me deixou mais tempo foi a
 questão do SEO. Eu não queria que o SEO fosse feito de forma manual, eu queria que fosse feito de forma
 automática, como o Docusaurus faz. Então, eu tive que estudar como o Docusaurus fazia e como o Next.js
-fazia e comparar como funcionava por debaixo dos panos. 
+fazia e comparar como funcionava por debaixo dos panos.
 
 E, no final, não resolveu de nada. O maior problema? Várias fontes auxiliavam em desenvolver o SEO focado
 apenas na primeira página e não em algo como um blog que requer um SEO dinâmico em outras páginas, o
@@ -64,7 +64,7 @@ arquivo conterá o objeto SEO que usaremos em todo o site. Este arquivo é adequ
 qualquer coisa sujeita a alterações. Verifique se essa nomenclatura não irá atrapalhar o projeto ou dar
 conflito em alguma palavra reservada.
 
-```js	
+```js
 // src/seo.js
 
 const SEO = {
@@ -90,7 +90,7 @@ alterá-lo aqui para refletir as alterações em todo o site.
 ## Criando um arquivo _document
 A criação de um arquivo `_document.js` personalizado estenderá o documento padrão usado em cada página,
 que controlará a estrutura HTML. É aqui que você pode colocar links para arquivos externos, como o link
-de uma fonte do Google Fonts, e é um bom lugar para metatags que permanecerão constantes em todo o site. 
+de uma fonte do Google Fonts, e é um bom lugar para metatags que permanecerão constantes em todo o site.
 
 :::tip Se você não usa o styled-components em seu projeto, você pode ignorar as informações abaixo do
 `Fast refresh with NextJS doesn't broken the CSS` e focar apenas na codificação dentro do `render()`,
@@ -234,7 +234,7 @@ const OwnHead = ({
             <meta name="twitter:image" content={ogTwitterImage} />
 
             <link rel="canonical" href={canonicalUrl} />
-            
+
             <meta property="og:locale" content="en_US" />
             <meta property="og:site_name" content={SEO.companyName} />
             <meta property="og:type" content={ogType} />
