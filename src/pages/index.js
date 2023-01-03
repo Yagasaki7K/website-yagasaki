@@ -173,6 +173,23 @@ export default function Home() {
                 {/* Articles */}
                 <h1 id="blog">Blog - Portuguese</h1>
 
+                <Link href="/blog/configurando-o-seo-do-head-com-nextjs">
+                    <div className="boxGithub">
+                        <h2>
+                            Configurando o SEO do Head com Next.js
+                        </h2>
+                        <p>
+                            Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ...
+                        </p>
+                        <div className="star">
+                            <p>
+                                Acessar a matéria{" "}
+                                <i className="uil uil-external-link-alt"></i>
+                            </p>
+                        </div>
+                    </div>
+                </Link>
+
                 <Link href="/blog/quando-decidir-se-e-melhor-trabalhar-em-um-monorepo-ou-repositorios-individuais">
                     <div className="boxGithub">
                         <h2>
@@ -199,26 +216,6 @@ export default function Home() {
                             Hoje mais cedo estava navegando no Twitter
                             como de costume e o usuário Thiago havia publicado uma dica,
                             uma solução de nossos problemas.
-                        </p>
-                        <div className="star">
-                            <p>
-                                Acessar a matéria{" "}
-                                <i className="uil uil-external-link-alt"></i>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="/blog/dark-mode-localstorage-scheme-button-default-ou-local-time">
-                    <div className="boxGithub">
-                        <h2>
-                            Dark Mode: LocalStorage, Schema, Button Default ou
-                            Local Time?
-                        </h2>
-                        <p>
-                            O Dark Mode vem sendo requisitado por muitas
-                            pessoas, isso até mesmo por mim, ninguém aguenta
-                            aquele holofote na sua cara às ...
                         </p>
                         <div className="star">
                             <p>
