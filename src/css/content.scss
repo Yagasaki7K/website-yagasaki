@@ -2,6 +2,10 @@
     position: fixed;
     margin-top: -50px;
 
+    @media screen and (max-width: 1440px) {
+        padding: 25px 0 0 6rem;
+    }
+
     @media screen and (max-width: 1366px) {
         padding: 25px 0 0 4rem;
     }
@@ -142,6 +146,11 @@
     color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1440px) {
+        margin-left: 42rem;
+        margin-top: -20px;
+    }
 
     @media screen and (max-width: 1366px) {
         margin-left: 42rem;

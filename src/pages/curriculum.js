@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "@docusaurus/Link";
-import styles from "/src/css/curriculum.scss";
+import styles from "../css/curriculum.scss";
 
 function Curriculum() {
     return (
@@ -171,7 +171,7 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
-                    <h1 className="title">
+                    <h1 className="xtitle">
                         Service Provision {`&`} Personal Projects
                     </h1>
                     <strong>Founder {`&`} CTO</strong> <br /> at Kalify Inc
@@ -233,11 +233,11 @@ function Curriculum() {
                         <li>
                             Project available on{" "}
                             <Link
-                                href="https://webessentials.com.br/"
+                                href="https://webessentials.vercel.app/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                https://webessentials.com.br/
+                                https://webessentials.vercel.app/
                             </Link>
                         </li>
                     </ul>
@@ -308,7 +308,7 @@ function Curriculum() {
                 </div>
 
                 <div className="content">
-                    <h1 className="title">Certificates</h1>
+                    <h1 className="xtitle">Certificates</h1>
                     <p>
                         <strong>
                             Modern Web with Javascript + Projects

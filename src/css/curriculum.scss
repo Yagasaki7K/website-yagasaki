@@ -110,11 +110,17 @@
         }
     }
 }
+
 .RightContent {
     margin-left: 58.5rem;
     color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1440px) {
+        margin-left: 4rem;
+        margin-top: -20px;
+    }
 
     @media screen and (max-width: 1366px) {
         margin-left: 42rem;
@@ -122,12 +128,12 @@
     }
 
     @media screen and (max-width: 1024px) {
-        margin-left: -28rem;
+        margin-left: 28rem;
         margin-top: 45rem;
     }
 
     @media screen and (max-width: 768px) {
-        margin-left: -28rem;
+        margin-left: 20rem;
         margin-top: 45rem;
     }
 
@@ -182,6 +188,7 @@
 
         .xdescription {
             line-height: 20px;
+            width: 90%;
         }
 
         .curriculum {
@@ -195,12 +202,14 @@
 
         p {
             line-height: 20px;
+            width: 90%;
         }
 
         ul {
             margin-top: 20px;
             li {
                 margin-left: -20px;
+                width: 90%;
 
                 a {
                     color: #fb8dca;

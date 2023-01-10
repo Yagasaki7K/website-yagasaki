@@ -44,7 +44,7 @@ export default function Home() {
             </Head>
             <div className="LeftContent">
                 <h2>Anderson Marlon</h2>
-                <h4>Software Developer @ Stone & Kalify Inc</h4>
+                <h4>Software Developer @ Stone Co.</h4>
 
                 <div className="ContentText">
                     <p>
