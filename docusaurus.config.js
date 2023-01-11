@@ -41,28 +41,28 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            navbar: {
-                title: "Yagasaki",
-                logo: {
-                    alt: "Anderson Marlon // Software Developer",
-                    src: "https://github.com/yagasaki7k.png",
-                },
-                items: [
-                    { to: "/", label: "Início", position: "left" },
-                    { to: "/blog", label: "Blog", position: "left" },
+            // navbar: {
+            //     title: "Yagasaki",
+            //     logo: {
+            //         alt: "Anderson Marlon // Software Developer",
+            //         src: "https://github.com/yagasaki7k.png",
+            //     },
+            //     items: [
+            //         { to: "/", label: "Início", position: "left" },
+            //         { to: "/blog", label: "Blog", position: "left" },
 
-                    {
-                        href: "https://twitter.com/Yagasaki7k",
-                        label: "Twitter",
-                        position: "right",
-                    },
-                    {
-                        href: "https://github.com/Yagasaki7k",
-                        label: "GitHub",
-                        position: "right",
-                    },
-                ],
-            },
+            //         {
+            //             href: "https://twitter.com/Yagasaki7k",
+            //             label: "Twitter",
+            //             position: "right",
+            //         },
+            //         {
+            //             href: "https://github.com/Yagasaki7k",
+            //             label: "GitHub",
+            //             position: "right",
+            //         },
+            //     ],
+            // },
             colorMode: {
                 defaultMode: 'dark',
                 disableSwitch: true,

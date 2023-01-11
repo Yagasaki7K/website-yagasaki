@@ -1,0 +1,346 @@
+.LeftContent {
+    position: fixed;
+    margin-top: -50px;
+    padding: 88px 0 0 20rem;
+
+    @media screen and (max-width: 1366px) {
+        padding: 25px 0 0 8rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 25px 0 0 4rem;
+    }
+
+    .firstImage {
+        padding: 60px 0 60px 0;
+        border-radius: 30%;
+        width: 25rem;
+    }
+
+    .firstImage:hover {
+        filter: grayscale(100%);
+        transition: 2s;
+    }
+
+    @media screen and (max-width: 414px) {
+        .firstImage {
+            width: 20rem;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .firstImage {
+            width: 17rem;
+        }
+    }
+
+    h2 {
+        font-size: 64px;
+        color: #fff;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin-top: -50px;
+        color: #fff;
+    }
+
+    .ContentText {
+        width: 420px;
+
+        p {
+            color: #949495;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        a {
+            display: flex;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+
+            .uil-linkedin {
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            .uil-external-link-alt {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            margin-bottom: -100px;
+        }
+
+        ul {
+            margin-top: -20px;
+
+            li {
+                color: #bcbcbc;
+                list-style: none;
+                margin-left: -33px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        padding: 25px 0 0 25px;
+
+        .ContentText {
+            width: 300px;
+        }
+
+        @media screen and (max-width: 320px) {
+            padding: 15px 0 0 15px;
+
+            h2 {
+                font-size: 48px;
+            }
+            .ContentText {
+                width: 250px;
+            }
+            .uil-external-link-alt {
+                display: none;
+            }
+        }
+    }
+}
+
+.RightContent {
+    margin-left: 58.5rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1440px) {
+        margin-left: 4rem;
+        margin-top: -20px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        margin-left: 42rem;
+        margin-top: -20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-left: 28rem;
+        margin-top: 45rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 20rem;
+        margin-top: 45rem;
+    }
+
+    @media screen and (max-width: 414px) {
+        margin-left: -24rem;
+        margin-top: 45rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        margin-left: -24rem;
+        margin-top: 44rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin-left: -17rem;
+        margin-top: 43rem;
+    }
+
+    .xtitle {
+        text-transform: uppercase;
+        margin-left: 0px;
+        text-decoration: underline;
+    }
+
+    .content {
+        @media screen and (max-width: 1366px) {
+            width: 40rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 40rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 30rem;
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 23rem;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 21rem;
+        }
+
+        @media screen and (max-width: 320px) {
+            width: 18rem;
+        }
+
+        width: 50rem;
+        margin-top: 40px;
+
+        .xdescription {
+            line-height: 20px;
+            width: 90%;
+        }
+
+        .curriculum {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 30px 0px;
+            width: 30%;
+        }
+
+        p {
+            line-height: 20px;
+            width: 90%;
+        }
+
+        ul {
+            margin-top: 20px;
+            li {
+                margin-left: -20px;
+                width: 90%;
+
+                a {
+                    color: #fb8dca;
+                }
+            }
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.Download {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+
+    @media screen and (max-width: 1366px) {
+        margin-left: 42rem;
+        margin-top: -20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-left: -28rem;
+        margin-top: 45rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: -28rem;
+        margin-top: 45rem;
+    }
+
+    @media screen and (max-width: 414px) {
+        margin-left: -24rem;
+        margin-top: 45rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        margin-left: -24rem;
+        margin-top: 44rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin-left: -17rem;
+        margin-top: 43rem;
+    }
+
+    .title {
+        text-transform: uppercase;
+        margin-left: 0px;
+        text-decoration: underline;
+    }
+
+    .content {
+        @media screen and (max-width: 1366px) {
+            width: 40rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 40rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 30rem;
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 23rem;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 21rem;
+        }
+
+        @media screen and (max-width: 320px) {
+            width: 18rem;
+        }
+
+        width: 50rem;
+        margin-top: -2rem;
+
+        .description {
+            line-height: 20px;
+        }
+
+        .curriculum {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 30px 0px;
+            width: 30%;
+        }
+
+        p {
+            line-height: 20px;
+        }
+
+        ul {
+            margin-top: 20px;
+            li {
+                margin-left: -20px;
+
+                a {
+                    color: #fb8dca;
+                }
+            }
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}

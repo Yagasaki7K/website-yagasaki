@@ -42,291 +42,43 @@ export default function Home() {
                     content={"https://i.imgur.com/1ypU0Xs.png"}
                 />
             </Head>
-            <div className="LeftContent">
-                <h2>Anderson Marlon</h2>
-                <h4>Software Developer @ Stone Co.</h4>
-
-                <div className="ContentText">
-                    <p>
-                        I build solutions from Internet at Kalify building
-                        projects like Kalify Community and Web Essentials using
-                        Javascript and love for web development. I also share
-                        what I learn and my experiences in the web on my blog
-                        and my curriculum.
-                    </p>
-                    <p>フロントエンド開発者</p>
-                </div>
-
-                <div className="summary">
-                    <h4>Summary</h4>
-                    <a href="#github">
-                        <p>
-                            EVA <b>00</b> | Projects
-                        </p>
-                        <hr />
-                    </a>
-                    <a href="#blog">
-                        <p>
-                            EVA <b>01</b> | Articles
-                        </p>
-                        <hr />
-                    </a>
-                    <a href="#twitter">
-                        <p>
-                            EVA <b>02</b> | References
-                        </p>
-                        <hr />
-                    </a>
-                    <a href="/curriculum">
-                        <p>
-                            EVA <b>03</b> | Curriculum
-                        </p>
-                        <hr />
-                    </a>
-                </div>
-
-                <footer>
-                    <img
-                        src="https://github.com/Yagasaki7k.png"
-                        alt="Anderson Marlon"
-                    />
-                    <Link
-                        href="https://twitter.com/Yagasaki7K"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="uil uil-twitter"></i>
-                        <p>Twitter</p>
-                        <i className="uil uil-external-link-alt"></i>
+            <div className="navigation">
+                <div className="navigation_left">
+                    <Link href="/">
+                        <img src="https://github.com/Yagasaki7K.png" alt="Yagasaki7K" />
+                        <h2>Yagasaki/Dev</h2>
                     </Link>
-
-                    <Link
-                        href="https://github.com/Yagasaki7K"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="uil uil-github"></i>
-                        <p>GitHub</p>
-                        <i className="uil uil-external-link-alt"></i>
-                    </Link>
-                </footer>
+                </div>
+                <div className="navigation_right">
+                    <Link href="/blog">Blog</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="https://github.com/Yagasaki7K">GitHub</Link>
+                    <Link href="https://twitter.com/Yagasaki7K">Twitter</Link>
+                </div>
             </div>
 
-            <div className="RightContent">
-                {/* Github Projects */}
-                <h1 id="github">Github Projects</h1>
+            <div className="content">
+                <h2>Hello friend, I would love to build something great together, come and <Link href="mailto:anderson18.marlon@gmail.com">say hi</Link>, build with me <Link href="https://kalify.vercel.app/">Kalify Inc</Link> projects or find out more <Link href="/about">about me</Link></h2>
+            </div>
 
-                <Link
-                    href="https://github.com/Yagasaki7K/website-essentials"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxGithub">
-                        <h3>NextJS/Typescript</h3>
-                        <h2>Yagasaki7K/website-essentials</h2>
-                        <p>List of softwares essentials for your computer.</p>
-                        <div className="star">
-                            <i className="uil uil-star"></i>
-                            <p className="starnumber"> 7</p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link
-                    href="https://github.com/Yagasaki7K/website-findyourpet"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxGithub">
-                        <h3>React/Styled Components</h3>
-                        <h2>Yagasaki7K/website-findyourpet</h2>
-                        <p>
-                            App to help you rescue, inform and donate your pets
-                            with love! 🐶💜🐱
-                        </p>
-                        <div className="star">
-                            <i className="uil uil-star"></i>
-                            <p className="starnumber"> 4</p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link
-                    href="https://github.com/Yagasaki7K/website-newsletterchamps"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxGithub">
-                        <h3>Javascript</h3>
-                        <h2>Yagasaki7K/website-newsletterchamps</h2>
-                        <p>
-                            A page on website to display a Newsletter from
-                            Filipe Deschamps
-                        </p>
-                        <div className="star">
-                            <i className="uil uil-star"></i>
-                            <p className="starnumber"> 2</p>
-                        </div>
-                    </div>
-                </Link>
-
-                {/* Articles */}
-                <h1 id="blog">Blog - Portuguese</h1>
-
-                <Link href="/blog/configurando-o-seo-do-head-com-nextjs">
-                    <div className="boxGithub">
-                        <h2>
-                            Configurando o SEO do Head com Next.js
-                        </h2>
-                        <p>
-                            Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ...
-                        </p>
-                        <div className="star">
-                            <p>
-                                Acessar a matéria{" "}
-                                <i className="uil uil-external-link-alt"></i>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="/blog/quando-decidir-se-e-melhor-trabalhar-em-um-monorepo-ou-repositorios-individuais">
-                    <div className="boxGithub">
-                        <h2>
-                            Quando decidir se é melhor trabalhar em um monorepo ou repositórios individuais?
-                        </h2>
-                        <p>
-                            Eu estava em uma reunião da empresa que trabalho e o assunto era sobre o monorepo, o que é, como funciona e quando é melhor utilizar. A discussão foi muito boa e acredito que todos os envolvidos saíram com uma visão diferente sobre o assunto...
-                        </p>
-                        <div className="star">
-                            <p>
-                                Acessar a matéria{" "}
-                                <i className="uil uil-external-link-alt"></i>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="/blog/removendo-o-twitter-analytics-do-feed">
-                    <div className="boxGithub">
-                        <h2>
-                            Removendo o Twitter Analytics do Feed
-                        </h2>
-                        <p>
-                            Hoje mais cedo estava navegando no Twitter
-                            como de costume e o usuário Thiago havia publicado uma dica,
-                            uma solução de nossos problemas.
-                        </p>
-                        <div className="star">
-                            <p>
-                                Acessar a matéria{" "}
-                                <i className="uil uil-external-link-alt"></i>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-
-                {/* Twitter Feed */}
-                <h1 id="twitter">References on Twitter</h1>
-
-                <Link
-                    href="https://twitter.com/Yagasaki7K"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxTwitter">
-                        <div className="twitterImage">
-                            <img
-                                src="https://github.com/Yagasaki7K.png"
-                                alt="Twitter"
-                            />
-                        </div>
-                        <div className="twitterContent">
-                            <blockquote>
-                                <h3>@Yagasaki7K</h3>
-                                <p>Software Developer @ Stone / Kalify Inc</p>
-                                <p>Taekwondo Fighter @ Campinas Fighters</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link
-                    href="https://twitter.com/sseraphini"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxTwitter">
-                        <div className="twitterImage">
-                            <img
-                                src="https://github.com/sibelius.png"
-                                alt="Twitter"
-                            />
-                        </div>
-                        <div className="twitterContent">
-                            <blockquote>
-                                <h3>@Sseraphini</h3>
-                                <p>
-                                    Abstraction Engineer
-                                    http://patreon.com/sibelius I Bet on
-                                    People/Startups - send me your Pitch Deck to
-                                    get funded
-                                    http://sibelius.github.io/zettelkasten/
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link
-                    href="https://twitter.com/WonderWanny"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxTwitter">
-                        <div className="twitterImage">
-                            <img
-                                src="https://github.com/WonderWanny.png"
-                                alt="Twitter"
-                            />
-                        </div>
-                        <div className="twitterContent">
-                            <blockquote>
-                                <h3>@WonderWanny</h3>
-                                <p>
-                                    Community Manager, SQL Dev & DBA. Digital
-                                    nomadic nerd, antifa, hyperactive, obsessed
-                                    with Flamingos and Wonder Woman. 🦩 From
-                                    Brazil. 🇧🇷
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link
-                    href="https://twitter.com/punktsx"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="boxTwitter">
-                        <div className="twitterImage">
-                            <img
-                                src="https://github.com/pamellafernandes.png"
-                                alt="Twitter"
-                            />
-                        </div>
-                        <div className="twitterContent">
-                            <blockquote>
-                                <h3>@Punktsx</h3>
-                                <p>
-                                    Frontend Developer 👩🏻‍💻🌐📱 || Amante de
-                                    Astronomia 🔭 || Science 🧬
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </Link>
+            <div className="footer">
+                <div className="footer_left">
+                    <strong>Copyright</strong>
+                    <p>© {new Date().getFullYear()} <Link href="/">Anderson "Yagasaki" Marlon</Link></p>
+                </div>
+                <div className="footer_center">
+                    <strong>Contact</strong>
+                    <Link href="mailto:anderson18.marlon@gmail.com">Email</Link>
+                    <Link href="https://linkedin.com/in/andersonmarlon">Linkedin</Link>
+                    <Link href="https://twitter.com/Yagasaki7K">Twitter</Link>
+                    <Link href="https://api.whatsapp.com/send?phone=5519998018174">Whatsapp</Link>
+                </div>
+                <div className="footer_right">
+                    <strong>Check my work</strong>
+                    <Link href="/blog">Blog</Link>
+                    <Link href="https://github.com/Yagasaki7K">GitHub</Link>
+                    <Link href="https://behance.net/yagasaki">Behance</Link>
+                </div>
             </div>
         </div>
     );
