@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "image": "",
+        "name": "Product 1",
+        "category": "Product 1 category",
+        "description": "Product 1 description",
+        "slug": "product-1",
+        "price": 200,
+        "discount": 0,
+        "freight": 0
+    },
+    {
+        "id": 2,
+        "image": "",
+        "name": "Product 2",
+        "category": "Product 2 category",
+        "description": "Product 2 description",
+        "slug": "product-2",
+        "price": 200,
+        "discount": 0,
+        "freight": 0
+    }
+]
