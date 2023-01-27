@@ -111,7 +111,7 @@
     .quote {
         font-size: 1.7rem;
         font-style: italic;
-        border-left: 5px solid #a50d29;
+        border-left: 5px solid var(--dark-primary);
 
         p {
             margin-left: 1rem;
@@ -179,6 +179,10 @@
     background: transparent;
     color: var(--third);
 
+    @media (max-width: 1366px) {
+        margin: 0 17rem 0 17rem;
+    }
+
     @media (max-width: 768px) {
         margin: 0 5rem 0 5rem;
     }
@@ -202,6 +206,10 @@
         display: flex;
         flex-direction: column;
         margin-right: 12rem;
+
+        @media (max-width: 1366px) {
+            margin-right: 5rem;
+        }
 
         @media (max-width: 768px) {
             margin-right: 5rem;
