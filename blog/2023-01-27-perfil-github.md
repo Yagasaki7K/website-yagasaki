@@ -9,7 +9,7 @@ authors:
     image_url: https://github.com/yagasaki7k.png
 ---
 
-![](https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 "Firmbee.com")
+![](https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80 "Roman Synkevych 🇺🇦")
 
 > _"Muitas pessoas possuem o Github, mas não entendem o real peso, a real importância de manter seu portfólio, sua porta de entrada bem atualizada e chamativa para qualquer um olhar e se impressionar com o que você desenvolve."_
 
