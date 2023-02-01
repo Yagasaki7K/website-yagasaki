@@ -31,32 +31,56 @@ Então instale o Docker. Estou usando o [Scoop](https://scoop.sh/), porque ele j
 
 Lembrando que o Scoop é usado fora de um terminal administrativo.
 
+_Pra ganhar o docker.exe e o dockerd.exe_
+
 ```powershell
-scoop install docker # pra ganhar o docker.exe e o dockerd.exe
+scoop install docker
 ```
 
 Então, em um terminal administrativo (WSL por exemplo), instale e configure o serviço do Docker:
 
-```bash
-# cria o Serviço NT Docker
+_Cria o Serviço NT Docker_
+
+```powershell
 dockerd --register-service
-# configura o serviço para iniciar manualmente assim ele não inicia com o Windows
+```
+
+_Configura o serviço para iniciar manualmente assim ele não inicia com o Windows_
+
+```powershell
 Set-Service docker -StartupType Manual
-# inicia o serviço
+```
+
+_Inicia o serviço_
+
+```powershell
 Start-Service docker
-# Checa se o pipe foi criado
+```
+
+_Checa se o pipe foi criado_
+
+```powershell
 Get-Item //./pipe/docker_engine
-# Verifica se o Docker está funcionando no terminal de admin
+```
+
+_Verifica se o Docker está funcionando no terminal de admin_
+
+```powershell
 docker info
 ```
 
 Até esse momento você precisou de um terminal administrativo para usar o Docker, mas agora vamos permitir que seu usuário faça o acesso por um terminal normal. O Docker usa o named pipe `//./pipe/docker_engine` para se comunicar. Alguns tutoriais indicam mexer nas ACLs deste pipe, mas isso não é o ideal. A melhor opção é alterar o arquivo de configuração do Docker e deixá-lo controlar o acesso, assim (de novo no terminal administrativo):
 
-```bash
-# Configura o Docker para funcionar com o usuário atual sem precisar de um terminal admin
+_Configura o Docker para funcionar com o usuário atual sem precisar de um terminal admin_
+
+```powershell
 mkdir $env:ProgramData\docker\config
 @{ group = "docker-users" } | ConvertTo-Json | Out-File $env:ProgramData\docker\config\daemon.json
-# Coloca usuário atual no grupo `docker-users`, se ele já não existe e já está lá
+```
+
+_Coloca usuário atual no grupo `docker-users`, se ele já não existe e já está lá_
+
+```powershell
 $dockerUsers = Get-LocalGroup docker-users -ErrorAction SilentlyContinue
 if (!($dockerUsers)) {
     dockerUsers = New-LocalGroup docker-users
@@ -66,14 +90,18 @@ if (!($dockerUsers)) {
         Add-LocalGroupMember -Group $dockerUsers -Member $(whoami)
     }
 }
-# Reinicia o serviço do Docker
+```
+
+_Reinicia o serviço do Docker_
+
+```powershell
 Stop-Service docker
 Start-Service docker
 ```
 
 E a partir daí você já pode usar o Docker direto pelo terminal não-administrativo:
 
-```bash
+```powershell
 docker info
 docker ps
 docker build ...
@@ -81,16 +109,16 @@ docker build ...
 
 Lembrando que você não vai poder usar o Rancher (ou qualquer outro runtime de contêineres) enquanto o serviço do Docker estiver rodando. Para usá-lo, pare o serviço primeiro:
 
-```bash
+```powershell
 Stop-Service docker
 ```
 
 E, quando for usar contêineres Windows, primeiro inicie o serviço:
 
-```bash
+```powershell
 Start-Service docker
 ```
 
 É isso. Simples, né? Espero que tenha ajudado.
 
-Caso você ainda queira revisar a primeira versão desse artigo, você pode acessá-la [aqui](https://www.tabnews.com.br/Yagasaki/instalando-o-docker-no-wsl-2-sem-o-docker-desktop).
+Caso você ainda queira revisar a primeira versão [desse artigo](https://www.tabnews.com.br/Yagasaki/instalando-o-docker-no-wsl-2-sem-o-docker-desktop).
