@@ -1,7 +1,7 @@
 ---
 slug: rodando-docker-no-windows-sem-docker-desktop
 title: Rodando Docker no Windows sem Docker Desktop
-description: Essa publicação aborda como fazer isso no Ubuntu 20.04 e 22.04, mas deve funcionar com qualquer distro que suporte a execução do Docker. Digo "deveria" porque não experimentei pessoalmente todas as distros, mas não há nada sobre isso que indique que não funcionará em outras distros.
+description: Essa publicação aborda como fazer isso no Windows 10, mas deve funcionar com Windows 11 e qualquer WSL que suporte a execução do Docker. Digo "deveria" porque não experimentei pessoalmente todas as distros, mas não há nada sobre isso que indique que não funcionará em outras distros.
 authors:
     name: Anderson Marlon
     title: Software Developer na Stone Co.
@@ -11,7 +11,7 @@ authors:
 
 ![](https://images.unsplash.com/photo-1595587637401-83ff822bd63e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=901&q=80 "Dominik Lückmann")
 
-> _"Essa publicação aborda como fazer isso no Ubuntu 20.04 e 22.04, mas deve funcionar com qualquer distro que suporte a execução do Docker. Digo "deveria" porque não experimentei pessoalmente todas as distros, mas não há nada sobre isso que indique que não funcionará em outras distros."_
+> _"Essa publicação aborda como fazer isso no Windows 10, mas deve funcionar com Windows 11 e qualquer WSL que suporte a execução do Docker. Digo "deveria" porque não experimentei pessoalmente todas as distros, mas não há nada sobre isso que indique que não funcionará em outras distros."_
 
 Anteriormente eu havia escrito um artigo no [TabNews](https://www.tabnews.com.br/Yagasaki/instalando-o-docker-no-wsl-2-sem-o-docker-desktop) sobre como fazer para rodar o Docker no Windows sem a necessidade do Docker Desktop. Hoje, novamente, alguns meses depois, trago uma melhoria dessa evolução. E muito mais instruída para que você não fique perdido em como rodar a aplicação por debaixo dos panos.
 
