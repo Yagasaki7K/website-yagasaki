@@ -1,89 +1,41 @@
-<p align="center">
-   <img src="https://github.com/Yagasaki7K.png" width="300"/>
-</p>
+# Website
 
-<p align="center">
-   <a href="https://www.linkedin.com/in/andersonmarlon/">
-      <img alt="AndersonMarlon" src="https://img.shields.io/badge/-AndersonMarlon-5965e0?style=flat&logo=Linkedin&logoColor=white" />
-   </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Yagasaki7K/website-yagasaki?color=5965e0">
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-  <a href="https://github.com/Yagasaki7K/website-yagasaki/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Yagasaki7K/website-yagasaki?color=5965e0">
-  </a>
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-5965e0">
-  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Yagasaki7K/website-yagasaki?color=5965e0" />
-  <a href="https://github.com/Yagasaki7K/website-yagasaki/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/Yagasaki7K/website-yagasaki?color=5965e0&logo=github">
-  </a>
-</p>
+### Installation
 
-<div align="center">
-  <sub>Yagasaki Website. Built with 💜 by
-    <a href="https://github.com/Yagasaki7K">Anderson "Yagasaki" Marlon</a> and
-    <a href="https://github.com/Yagasaki7K/website-yagasaki/graphs/contributors">
-      contributors
-    </a>
-  </sub>
-</div>
-
-# 📌 Table of Contents
-
-- [📌 Table of Contents](#-table-of-contents)
-- [👀 Demo Website](#-demo-website)
-- [💻 Technologies](#-technologies)
-- [🚀 Features](#-features)
-- [🚧 How to run](#-how-to-run)
-- [🐛 Issues](#-issues)
-- [🎉 Contributing](#-contributing)
-- [📕 License](#-license)
-
-# 👀 Demo Website
-
-👉  Demo: https://yagasaki.vercel.app/
-
-# 💻 Technologies
-
-This project was made using the follow technologies:
-
-* ReactJS
-* Docusaurus 2
-* Styled Components
-
-# 🚀 Features
-
-Personal website with curriculum and blog.
-
-# 🚧 How to run
-
-```bash
-# Clone Repository
-$ git clone https://github.com/Yagasaki7K/website-yagasaki.git
-$ Go to folder using terminal
-$ yarn (needs yarn installed)
-$ yarn dev (if you wanna change something) // yarn start (just to see running)
+```
+$ yarn
 ```
 
-If you want something, wait for `yarn build` to be obeyed, and after that open a little change decision!
+### Local Development
 
-# 🐛 Issues
+```
+$ yarn start
+```
 
-Feel free to **file a new issue** with a respective title and description on the the [website-yagasaki](https://github.com/Yagasaki7K/website-yagasaki/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-# 🎉 Contributing
+### Build
 
-First of all, thank you for being interested in helping out, your time is always appreciated in every way.
+```
+$ yarn build
+```
 
-Here's some tips:
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-* Check the [issues page](https://github.com/Yagasaki7K/website-yagasaki/issues) for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
-* Feature requests are welcomed! Provide some details on why it would be helpful for you and others, explain how you're using bull-board and if possible even some screenshots if you are willing to mock something!
+### Deployment
 
-Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+Using SSH:
 
-# 📕 License
+```
+$ USE_SSH=true yarn deploy
+```
 
-Released in 2021
+Not using SSH:
 
-Made by [Anderson Marlon](https://github.com/Yagasaki7K).
-This project is under the [MIT license](./LICENSE).
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

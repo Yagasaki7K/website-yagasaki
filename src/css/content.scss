@@ -87,6 +87,10 @@
     margin: 6rem 20%;
     font-family: "Nunito Sans", sans-serif;
 
+    @media (max-width: 1366px) {
+        margin: 0rem 20%;
+    }
+
     h2 {
         font-size: 4rem;
 
