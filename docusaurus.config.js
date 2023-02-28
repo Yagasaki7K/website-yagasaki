@@ -16,8 +16,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "pt",
+    locales: ["en", "pt"],
   },
 
   plugins: [
@@ -70,16 +70,28 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Powered by",
+            title: "Projetos",
             items: [
               {
                 label: "Kalify Inc",
-                to: "https://kalify.vercel.app/",
+                to: "https://kalify.vercel.app/#projects",
+              },
+              {
+                label: "Essentials",
+                to: "https://webessentials.com.br/",
+              },
+              {
+                label: "FindYourPet",
+                to: "https://findyourpet.vercel.app/",
+              },
+              {
+                label: "Onigiri Hardcore",
+                to: "https://onigirihardcore.vercel.app/",
               },
             ],
           },
           {
-            title: "Contact",
+            title: "Contato",
             items: [
               {
                 label: "Email",
@@ -96,7 +108,7 @@ const config = {
             ],
           },
           {
-            title: "Check my work",
+            title: "Meus Trabalhos",
             items: [
               {
                 label: "Blog",
@@ -104,11 +116,11 @@ const config = {
               },
               {
                 label: "Github",
-                to: "/blog",
+                to: "https://github.com/Yagasaki7K",
               },
               {
                 label: "Behance",
-                to: "/blog",
+                to: "https://behance.net/yagasaki",
               },
             ],
           },
