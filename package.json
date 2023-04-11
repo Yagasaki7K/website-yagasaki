@@ -13,7 +13,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "yagasaki": "yarn upgrade-interactive --latest"
+    "yagasaki": "yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest"
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^1.0.0",
