@@ -68,7 +68,7 @@ export default function About() {
           src="https://pbs.twimg.com/media/FtcDfyDacAIAzpg?format=jpg&name=large"
           alt="Campinas Fighters"
         />
-        <h2>3rd Kup Belt at Campinas Fighters</h2>
+        <h2>2rd Kup Belt at Campinas Fighters</h2>
 
         <p>
           Hi, my name is Anderson Marlon, AKA Yagasaki. In this section I'll
@@ -135,8 +135,8 @@ export default function About() {
           <h4>Campinas Fighters</h4>
           <p>
             {/* <strong>Black Belt (1th Dan)</strong> | <i>2023</i> <br />
-            <strong>🥋 Red w/ Black Belt (1st Kup)</strong> | <i>2023</i> <br />
-            <strong>🥋 Red Belt (2nd Kup)</strong> | <i>2023</i> <br /> */}
+            <strong>🥋 Red w/ Black Belt (1st Kup)</strong> | <i>2023</i> <br /> */}
+            <strong>🥋 Red Belt (2nd Kup)</strong> | <i>2023</i> <br />
             <strong>🥋 Blue w/ Red Belt (3th Kup)</strong> | <i>2022</i> <br />
           </p>
 
