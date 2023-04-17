@@ -254,7 +254,7 @@ Mais uma coisa para falar um pouco mais antes de terminarmos. Ou seja, por que c
 - Isso ajuda a comunidade e seus colegas a conhecê-lo. Esse reconhecimento pode lhe trazer muitas oportunidades em sua carreira.
 - Ele ajuda você a aprender mais sobre gerenciamento de projetos e pode deixá-lo inspirado para iniciar seu próprio projeto.
 
-## Embrulhar!
+## VAMOS NESSA!
 Como mencionei, o código aberto está aberto para todos participarem. Existem muitas oportunidades que você pode aproveitar e aprender algo novo. Tudo que você precisa é decidir começar e começar.
 
 **O CÓDIGO ABERTO ESTÁ ESPERANDO POR VOCÊ**
