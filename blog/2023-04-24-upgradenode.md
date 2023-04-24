@@ -22,7 +22,7 @@ Antes de começarmos, temos uma dica: verifique qual versão do NodeJS você est
 ## Três formas de dar update NodeJS em máquinas Linux
 Quando o assunto é atualizar Node Linux, há três formas principais com as quais isso pode ser feito. Na sequência, daremos detalhes sobre cada uma delas.
 
-### Usando nvm
+## Usando nvm
 O Node Version Manager, mais conhecido como NVM, é de longe a melhor maneira para se dar update NodeJS em máquinas Linux.
 
 Para isso, você precisará de um compilador de C++, do pacote build-essential e da biblioteca libssl-dev. Rode um update primeiro para depois instalar os pacotes, de acordo com os comandos abaixo: 
@@ -47,7 +47,7 @@ Baixe, instale e compile versões mais recentes do NodeJS com `nvm install #.#.#
 
 Já para verificar qual é a versão mais recente, basta acessar o site do NodeJS.
 
-### Usando um gerenciador de pacotes
+## Usando um gerenciador de pacotes
 Se o NVM não funcionou para você ou prefere um jeito mais tranquilo, um gerenciador de pacotes é agora o seu melhor caminho.
 
 O Node Package Manager, ou NPM, pode te ajudar a descobrir, compartilhar e usar código, junto com dependências. E o melhor de tudo é que o NodeJS já vem com o NPM pré-instalado, porém, ele é atualizado com mais frequência que o Node.
@@ -66,7 +66,7 @@ Portanto, para limpar o cache do NPM, instalar o módulo “n” e instalar a ma
 
 Para você instalar a versão mais recente, seja estável ou não, rode `sudo n latest`. Outra alternativa é rodar `n #.#.#`, para atualizar NodeJS para uma versão específica.
 
-### Usando pacotes binários
+## Usando pacotes binários
 Vamos ser honestos, você provavelmente não quer seguir este caminho…
 
 Mas, se as outras opções não deram certo e você estiver desesperado, existe a possibilidade de ir para a [página oficial de downloads](https://nodejs.org/en/download/) para conseguir um pacote binário 32-bit ou 64-bit para dar update NodeJS ou instalar.
@@ -82,12 +82,12 @@ Já para instalar o pacote binário em /usr/local, rode:
 
 Agora que você tem o Node e o NPM em mãos, considere dar uma nova chance para a opção 2 na próxima vez que for atualizar Node Linux.
 
-### Update NodeJS no Windows e no macOS
+## Update NodeJS no Windows e no macOS
 Agora que já explicamos como atualizar Node no Linux, partiremos para a segunda parte deste conteúdo, que é voltada para quem utiliza Windows ou MacOS. 
 
 Você pode começar essa jornada acessando a [página de downloads do Node](https://nodejs.org/en/download/), afinal, lá é possível encontrar pacotes binários para atualizar Node Windows e para o MacOS.
 
 Usar os pré-instaladores, com extensão .msi para o Windows e .pkg para o macOS, é o melhor caminho para tornar o processo de instalação e update do NodeJS muito mais fácil e eficiente! Basta fazer o download, rodar o arquivo e deixar o instalador cuidar de todo o resto! Com cada update instalado, as novas versões do NodeJS e do NPM vão repor as versões mais velhas.
 
-Alternativamente, os usuários de macOS podem também usar a opção do npm e do módulo “n” e os usuários Windows, caso possuam WSL, também usar a opção do npm e do módulo “n” .
+Alternativamente, os usuários de macOS podem também usar a opção do npm e do módulo “n” e os usuários Windows, caso possuam WSL, também usar a opção do npm e do módulo “n”.
 
