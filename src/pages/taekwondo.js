@@ -114,7 +114,13 @@ export default function About() {
 
         <h3>Achievements & Goals:</h3>
         <div className="positions">
-          <h4>Campeonato Paulista de Taekwondo</h4>
+          <h4>Campeonato Paulista de Taekwondo - Second Stage</h4>
+          <p>
+            <strong>🎖️ First Place</strong> | <strong>Campinas Fighters</strong>{" "}
+            | <i>2023</i>
+          </p>
+
+          <h4>Campeonato Paulista de Taekwondo - First Stage</h4>
           <p>
             <strong>🥉 Third Place</strong> | <strong>Campinas Fighters</strong>{" "}
             | <i>2023</i>
