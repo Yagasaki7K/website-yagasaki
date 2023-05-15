@@ -158,8 +158,8 @@ export default function About() {
 
           <h4>Badboy Campinas - OTC</h4>
           <p>
-            <strong>🥈 Second Place</strong> |{" "}
-            <strong>Campinas Fighters</strong> | <i>2014</i>
+            <strong>🥈 Second Place</strong> | <strong>Márcio Eugênio</strong> |{" "}
+            <i>2014</i>
           </p>
 
           <h4>Master Márcio Eugênio</h4>

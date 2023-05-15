@@ -118,13 +118,17 @@ export default function About() {
         <div className="positions">
           <h4>Software Developer</h4>
           <p>
-            <strong>Stone Co.</strong> | <i>October 2022 — Currently</i>
+            <strong>Linx S.A.</strong> | <i>October 2022 — Currently</i>
           </p>
           <p>
-            Working in A.I. and e-commerce applications. Using: React, NextJS,
-            TypeScript, NodeJS, GraphQL, Hasura, UI/UX, Storybook, Figma,
-            ChakraUI, CI/CD, Docusaurus, Unit and Integration Tests, AWS Cloud
-            and Postgress
+            Currently working on A.I. of communication with e-commerce
+            applications.
+          </p>
+
+          <p>
+            Using React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX,
+            Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit
+            Testing with Jest, AWS Cloud and Postgress
           </p>
 
           <h4>Systems Development Analyst</h4>
