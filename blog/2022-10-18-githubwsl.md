@@ -4,7 +4,7 @@ title: Github Desktop vs WSL
 description: Quando se trata de ter dois ambientes, os problemas são maiores, mas é melhor do que ter um problema maior do que eles que possa tomar muito de seu tempo.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Stone Co.
+  title: Software Developer na Linx
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

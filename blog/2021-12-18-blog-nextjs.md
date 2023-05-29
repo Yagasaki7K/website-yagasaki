@@ -4,7 +4,7 @@ title: Minha experiência com o desenvolvimento do blog com NextJS
 description: Vou contar a minha experiência que tive ao desenvolver esse blog — o blog passado — e isso vai contar até mesmo quando eu tive o contato pela primeira vez com o NextJS.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Stone Co.
+  title: Software Developer na Linx
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

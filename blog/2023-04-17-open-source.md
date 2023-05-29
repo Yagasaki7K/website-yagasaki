@@ -4,7 +4,7 @@ title: Como contribuir para projetos de código aberto – um guia para iniciant
 description: À medida que avançamos tecnologicamente, mais e mais produtos e serviços estão sendo transformados em serviços prontos para software. E muitos deles estão sendo feitos de código aberto.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

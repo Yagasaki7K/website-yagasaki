@@ -4,7 +4,7 @@ title: Front-end, Back-end, Fullstack, o que é e para onde ir?
 description: Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?
 authors:
   name: Anderson Marlon
-  title: Software Developer na Stone Co.
+  title: Software Developer na Linx
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

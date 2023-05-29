@@ -4,7 +4,7 @@ title: O mínimo que você precisa saber para iniciar um projeto em TypeScript
 description: É normal questionar se TypeScript é ou não uma linguagem de programação por algumas razões. Primeiramente, TypeScript é um superset de JavaScript, o que significa que é uma extensão da sintaxe e recursos da linguagem JavaScript.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

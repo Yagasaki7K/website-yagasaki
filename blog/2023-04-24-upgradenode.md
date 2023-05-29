@@ -4,7 +4,7 @@ title: Dando update no NodeJS - um tutorial fácil e rápido
 description: Realizar o update NodeJS com certa frequência é o melhor caminho para ter acesso a todas as novidades que são lançadas de tempos em tempos no software.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

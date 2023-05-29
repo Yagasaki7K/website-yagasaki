@@ -4,7 +4,7 @@ title: React Email de Zeno Rocha
 description: Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Stone Co.
+  title: Software Developer na Linx
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

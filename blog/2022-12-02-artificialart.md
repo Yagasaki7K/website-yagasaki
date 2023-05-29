@@ -4,7 +4,7 @@ title: Ilustração vs Inteligência Artificial
 description: Estava navegando no Twitter e vi, não uma, não duas, mas várias reclamações de artistas sobre “pessoas que pagaram para ter imagens geradas pela inteligência artificial e não apoiam o artista”.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Stone Co.
+  title: Software Developer na Linx
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

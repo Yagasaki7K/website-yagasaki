@@ -4,7 +4,7 @@ title: Rodando Docker no Windows sem Docker Desktop
 description: Essa publicação aborda como fazer isso no Windows 10, mas deve funcionar com Windows 11 e qualquer WSL que suporte a execução do Docker. Digo "deveria" porque não experimentei pessoalmente todas as distros, mas não há nada sobre isso que indique que não funcionará em outras distros.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

@@ -4,7 +4,7 @@ title: Introdução ao Git e GitHub para iniciantes
 description: Git é um sistema de **controle de versão** distribuído que permite que várias pessoas trabalhem juntas em um projeto. Ele permite que você acompanhe as alterações em seus arquivos, reverta a um estado anterior, ramifique-se em diferentes versões e trabalhe em colaboração com outros desenvolvedores.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

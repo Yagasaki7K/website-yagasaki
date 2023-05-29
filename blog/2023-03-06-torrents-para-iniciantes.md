@@ -4,7 +4,7 @@ title: Como usar o uTorrent para iniciantes
 description: Muitas pessoas ainda não sabem como usar o uTorrent, mas não se preocupe, pois neste artigo irei ensinar como usá-lo para iniciantes.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

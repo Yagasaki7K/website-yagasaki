@@ -4,7 +4,7 @@ title: Recebendo mensagens de commit no Discord (Webhook)
 description: Comunicação com sua equipe ou grupo de amigos que estão desenvolvendo é um pequeno passo para alcançar ainda mais o sucesso. Com o Webhook do Discord, isso fica mais fácil, todo mundo sabe o que acontece e quando acontece e claro, tudo direitinho
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

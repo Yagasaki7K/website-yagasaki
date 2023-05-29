@@ -4,7 +4,7 @@ title: Apresentação de Projetos e Primeiros Passos com o GitHub Pages
 description: Este artigo aborda o tema da apresentação de projetos e os primeiros passos para utilizar o GitHub Pages como plataforma de hospedagem.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

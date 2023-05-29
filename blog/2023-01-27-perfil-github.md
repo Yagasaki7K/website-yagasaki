@@ -4,7 +4,7 @@ title: Montando um perfil interessante e exemplar no GitHub
 description: Por esses dias, vejo muitos desenvolvedores júniors ou até mesmo alguém em busca de um estágio que se quer possuí um perfil no Github ou nem está atualizado, bem estruturado ou com um bom README.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Stone Co.
+    title: Software Developer na Linx
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---
