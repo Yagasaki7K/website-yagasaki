@@ -1,6 +1,7 @@
 ---
 slug: como-usar-o-utorrent-para-iniciantes
 title: Como usar o uTorrent para iniciantes
+image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
 description: Muitas pessoas ainda não sabem como usar o uTorrent, mas não se preocupe, pois neste artigo irei ensinar como usá-lo para iniciantes.
 authors:
     name: Anderson Marlon

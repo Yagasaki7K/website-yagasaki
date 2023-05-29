@@ -1,6 +1,7 @@
 ---
 slug: o-minimo-que-voce-precisa-saber-para-iniciar-um-projeto-em-typescript
 title: O mínimo que você precisa saber para iniciar um projeto em TypeScript
+image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 description: É normal questionar se TypeScript é ou não uma linguagem de programação por algumas razões. Primeiramente, TypeScript é um superset de JavaScript, o que significa que é uma extensão da sintaxe e recursos da linguagem JavaScript.
 authors:
     name: Anderson Marlon

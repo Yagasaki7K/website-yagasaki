@@ -1,6 +1,7 @@
 ---
 slug: montando-um-perfil-interessante-e-exemplar-no-github
 title: Montando um perfil interessante e exemplar no GitHub
+image: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80
 description: Por esses dias, vejo muitos desenvolvedores júniors ou até mesmo alguém em busca de um estágio que se quer possuí um perfil no Github ou nem está atualizado, bem estruturado ou com um bom README.
 authors:
     name: Anderson Marlon

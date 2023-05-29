@@ -1,6 +1,7 @@
 ---
 slug: react-email-de-zeno-rocha
 title: React Email de Zeno Rocha
+image: https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
 description: Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver.
 authors:
   name: Anderson Marlon

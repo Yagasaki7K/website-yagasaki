@@ -1,6 +1,7 @@
 ---
 slug: configurando-o-seo-do-head-com-nextjs
 title: Configurando o SEO do Head com Next.js
+image: https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 description: Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ...
 authors:
   name: Anderson Marlon

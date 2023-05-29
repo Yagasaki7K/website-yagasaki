@@ -1,6 +1,7 @@
 ---
 slug: introdução-ao-git-e-git-hub-para-iniciantes
 title: Introdução ao Git e GitHub para iniciantes
+image: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1188&q=80
 description: Git é um sistema de **controle de versão** distribuído que permite que várias pessoas trabalhem juntas em um projeto. Ele permite que você acompanhe as alterações em seus arquivos, reverta a um estado anterior, ramifique-se em diferentes versões e trabalhe em colaboração com outros desenvolvedores.
 authors:
     name: Anderson Marlon

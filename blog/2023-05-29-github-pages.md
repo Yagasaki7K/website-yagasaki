@@ -1,6 +1,7 @@
 ---
 slug: apresentacao-de-projetos-e-primeiros-passos-com-o-git-hub-pages
 title: Apresentação de Projetos e Primeiros Passos com o GitHub Pages
+image: https://images.unsplash.com/photo-1590935216109-8d3318de2c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
 description: Este artigo aborda o tema da apresentação de projetos e os primeiros passos para utilizar o GitHub Pages como plataforma de hospedagem.
 authors:
     name: Anderson Marlon
