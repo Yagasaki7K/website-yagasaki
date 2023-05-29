@@ -9,7 +9,7 @@ authors:
     image_url: https://github.com/yagasaki7k.png
 ---
 
-![](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 "Scott Graham")
+![](https://images.unsplash.com/photo-1590935216109-8d3318de2c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80 "Markus Winkler")
 
 > _"Este artigo aborda o tema da apresentação de projetos e os primeiros passos para utilizar o GitHub Pages como plataforma de hospedagem."_
 
