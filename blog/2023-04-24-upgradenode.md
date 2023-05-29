@@ -1,5 +1,5 @@
 ---
-slug: dando-update-no-node-js-um-tutorial-fácil-e-rápido
+slug: dando-update-no-node-js-um-tutorial-facil-e-rapido
 title: Dando update no NodeJS - um tutorial fácil e rápido
 image: https://images.unsplash.com/photo-1512908390106-b1af96afe5cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 description: Realizar o update NodeJS com certa frequência é o melhor caminho para ter acesso a todas as novidades que são lançadas de tempos em tempos no software.

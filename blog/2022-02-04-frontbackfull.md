@@ -1,5 +1,5 @@
 ---
-slug: front-end-back-end-fullstack-o-que-é-e-para-onde-ir
+slug: front-end-back-end-fullstack-o-que-e-e-para-onde-ir
 title: Front-end, Back-end, Fullstack, o que é e para onde ir?
 image: https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
 description: Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?
