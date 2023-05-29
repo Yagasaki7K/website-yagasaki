@@ -29,10 +29,10 @@ export default function Home() {
         />
         <meta name="twitter:card" content={"summary_large_image"} />
         <meta name="twitter:site" content={"@Yagasaki7K"} />
-        <meta name="twitter:title" content={"Anderson Marlon // Yagasaki7K"} />
+        <meta name="twitter:title" content={"Anderson Marlon // Yagasaki"} />
         <meta
           name="twitter:description"
-          content={"Software Developer @ Stone Co."}
+          content={"Software Developer @ Linx"}
         />
         <meta
           name="twitter:image"
