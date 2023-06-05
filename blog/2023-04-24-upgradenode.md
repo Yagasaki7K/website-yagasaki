@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1512908390106-b1af96afe5cd?ixlib=rb-4.0
 description: Realizar o update NodeJS com certa frequência é o melhor caminho para ter acesso a todas as novidades que são lançadas de tempos em tempos no software.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

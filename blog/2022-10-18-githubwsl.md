@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-4.0.3&
 description: Quando se trata de ter dois ambientes, os problemas são maiores, mas é melhor do que ter um problema maior do que eles que possa tomar muito de seu tempo.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Linx
+  title: Software Developer
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

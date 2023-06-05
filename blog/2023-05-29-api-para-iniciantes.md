@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0
 description: Uma API (Application Programming Interface) é um conceito fundamental no mundo da programação e do desenvolvimento de software. Ela desempenha um papel crucial na comunicação entre diferentes sistemas, permitindo que aplicativos, serviços e plataformas interajam e compartilhem dados de maneira eficiente e padronizada.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

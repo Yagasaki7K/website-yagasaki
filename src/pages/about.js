@@ -32,7 +32,7 @@ export default function About() {
         <meta name="twitter:title" content={"Anderson Marlon // Yagasaki7K"} />
         <meta
           name="twitter:description"
-          content={"Software Developer @ Stone Co."}
+          content={"Software Developer (Typescript, React.js, NextJS)"}
         />
         <meta
           name="twitter:image"
@@ -66,8 +66,8 @@ export default function About() {
       <div className="content-about">
         <h2>I'm Yagasaki,</h2>
         <h2>
-          Frontend / Full Stack Software Developer (Typescript, React.js,
-          Node.js) at Stone Co. from Campinas, Brazil
+          Software Developer (Typescript, React.js, NextJS) from Campinas,
+          Brazil
         </h2>
         <div className="quote">
           <p>
@@ -118,7 +118,7 @@ export default function About() {
         <div className="positions">
           <h4>Software Developer</h4>
           <p>
-            <strong>Linx S.A.</strong> | <i>October 2022 — Currently</i>
+            <strong>Linx S.A.</strong> | <i>October 2022 — June 2023</i>
           </p>
           <p>
             Currently working on A.I. of communication with e-commerce
@@ -128,7 +128,7 @@ export default function About() {
           <p>
             Using React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX,
             Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit
-            Testing with Jest, AWS Cloud and Postgress
+            Testing with Jest, AWS Cloud, NestJS and Postgress
           </p>
 
           <h4>Systems Development Analyst</h4>

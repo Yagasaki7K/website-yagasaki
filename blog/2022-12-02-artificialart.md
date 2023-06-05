@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0
 description: Estava navegando no Twitter e vi, não uma, não duas, mas várias reclamações de artistas sobre “pessoas que pagaram para ter imagens geradas pela inteligência artificial e não apoiam o artista”.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Linx
+  title: Software Developer
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

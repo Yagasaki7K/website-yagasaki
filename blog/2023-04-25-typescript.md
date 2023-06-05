@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0
 description: É normal questionar se TypeScript é ou não uma linguagem de programação por algumas razões. Primeiramente, TypeScript é um superset de JavaScript, o que significa que é uma extensão da sintaxe e recursos da linguagem JavaScript.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

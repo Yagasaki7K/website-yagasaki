@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1595587637401-83ff822bd63e?ixlib=rb-4.0
 description: Essa publicação aborda como fazer isso no Windows 10, mas deve funcionar com Windows 11 e qualquer WSL que suporte a execução do Docker. Digo "deveria" porque não experimentei pessoalmente todas as distros, mas não há nada sobre isso que indique que não funcionará em outras distros.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

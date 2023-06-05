@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0
 description: Git é um sistema de **controle de versão** distribuído que permite que várias pessoas trabalhem juntas em um projeto. Ele permite que você acompanhe as alterações em seus arquivos, reverta a um estado anterior, ramifique-se em diferentes versões e trabalhe em colaboração com outros desenvolvedores.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

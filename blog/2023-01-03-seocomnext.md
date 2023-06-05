@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0
 description: Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ...
 authors:
   name: Anderson Marlon
-  title: Software Developer na Linx
+  title: Software Developer
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0
 description: Front-end, back-end, fullstack, mobile developer, o que são esses nomes e para onde seguir?
 authors:
   name: Anderson Marlon
-  title: Software Developer na Linx
+  title: Software Developer
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

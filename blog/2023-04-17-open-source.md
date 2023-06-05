@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1603912699214-92627f304eb6?ixlib=rb-4.0
 description: À medida que avançamos tecnologicamente, mais e mais produtos e serviços estão sendo transformados em serviços prontos para software. E muitos deles estão sendo feitos de código aberto.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

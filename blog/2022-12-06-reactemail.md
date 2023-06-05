@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-4.0.3&
 description: Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Linx
+  title: Software Developer
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

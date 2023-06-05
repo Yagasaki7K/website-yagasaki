@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1590935216109-8d3318de2c1c?ixlib=rb-4.0
 description: Este artigo aborda o tema da apresentação de projetos e os primeiros passos para utilizar o GitHub Pages como plataforma de hospedagem.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

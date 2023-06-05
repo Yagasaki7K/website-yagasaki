@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0
 description: Vou contar a minha experiência que tive ao desenvolver esse blog — o blog passado — e isso vai contar até mesmo quando eu tive o contato pela primeira vez com o NextJS.
 authors:
   name: Anderson Marlon
-  title: Software Developer na Linx
+  title: Software Developer
   url: https://github.com/yagasaki7k
   image_url: https://github.com/yagasaki7k.png
 ---

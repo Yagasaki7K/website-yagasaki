@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0
 description: Muitas pessoas ainda não sabem como usar o uTorrent, mas não se preocupe, pois neste artigo irei ensinar como usá-lo para iniciantes.
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---

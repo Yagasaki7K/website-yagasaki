@@ -5,7 +5,7 @@ image: https://images.unsplash.com/photo-1584344794229-b3cfd1622f21?ixlib=rb-4.0
 description: Comunicação com sua equipe ou grupo de amigos que estão desenvolvendo é um pequeno passo para alcançar ainda mais o sucesso. Com o Webhook do Discord, isso fica mais fácil, todo mundo sabe o que acontece e quando acontece e claro, tudo direitinho
 authors:
     name: Anderson Marlon
-    title: Software Developer na Linx
+    title: Software Developer
     url: https://github.com/yagasaki7k
     image_url: https://github.com/yagasaki7k.png
 ---
