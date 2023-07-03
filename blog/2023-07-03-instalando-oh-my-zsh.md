@@ -2,7 +2,7 @@
 slug: instalando-o-zsh-e-oh-my-zsh-no-wsl-ubuntu
 title: Instalando o ZSH e Oh My ZSH no WSL Ubuntu
 image: https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
-description: Neste artigo vou comentar com vocês sobre como transformar sua sala do ChatGPT em uma sala de terapia, claro que isso é apenas um experimento e NÃO DEVE DE MANEIRA ALGUMA, substituir o profissional da área.
+description: O ZSH é um Shell Linux amplamente usado por desenvolvedores, por ser mais fácil instalar plugins e personalizar temas, quando comparado com o Shell Bash que é o padrão na maioria das distribuições Linux.
 authors:
     name: Anderson Marlon
     title: Software Developer
