@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: "Zettelkasten",
-                to: "/docs/zettelkasten",
+                to: "/docs/zettelkasten/intro",
               },
               {
                 label: "Github",
