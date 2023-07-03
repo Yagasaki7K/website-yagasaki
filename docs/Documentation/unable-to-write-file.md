@@ -1,4 +1,4 @@
-# Unable to Write File no Linux/VS Code
+# Unable to Write File on Linux/VS Code
 
 
 I recently encountered this issue, and I knew it was a permission problem.

@@ -1,0 +1,79 @@
+---
+slug: instalando-o-zsh-e-oh-my-zsh-no-wsl-ubuntu
+title: Instalando o ZSH e Oh My ZSH no WSL Ubuntu
+image: https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
+description: Neste artigo vou comentar com vocês sobre como transformar sua sala do ChatGPT em uma sala de terapia, claro que isso é apenas um experimento e NÃO DEVE DE MANEIRA ALGUMA, substituir o profissional da área.
+authors:
+    name: Anderson Marlon
+    title: Software Developer
+    url: https://github.com/yagasaki7k
+    image_url: https://github.com/yagasaki7k.png
+---
+
+![](https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80 "Lukas")
+
+O ZSH é um Shell Linux amplamente usado por desenvolvedores, por ser mais fácil instalar plugins e personalizar temas, quando comparado com o Shell Bash que é o padrão na maioria das distribuições Linux.
+
+## Primeiro, instale o Zsh
+```bash 
+sudo apt install zsh
+```
+
+Ferramenta para gerenciar sua configuração do Zsh. Inclui mais de 200 plug-ins opcionais (rails, git, OSX, hub, capistrano, cerveja, formiga, php, python, etc), mais de 140 temas e uma ferramenta de atualização automática.
+
+Consulte o site [ohmyz.sh](https://ohmyz.sh/) para mais detalhes.
+
+## Defina ele como padrão no terminal
+```bash 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Confirme a definição do ZSH como shell padrão e dessa forma ele já estará disponível.
+
+O [Github do Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) descreve os temas que podemos usar na configuração do nosso shell. Tem muitas opções.
+
+# Instale o tema Spaceship - Opcional
+Spaceship é um prompt Zsh minimalista, poderoso e extremamente personalizável. O repositório do Github possui todas as orientações para realizarmos a instalação.
+
+Configuração sugerida para o Spaceship, deve ser incluída no fim do arquivo `~/.zshrc`:
+
+```
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  hg            # Mercurial section (hg_branch  + hg_status)
+  exec_time     # Execution time
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+SPACESHIP_USER_SHOW=always
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_CHAR_SYMBOL="❯"
+SPACESHIP_CHAR_SUFFIX=" "
+```
+[Link com as definições](https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md) das diversas opções que podemos usar para customizar o prompt com o Spaceship.
+
+## Plugin Zsh Autosuggestions
+Outro recurso interessante para configurar com o Zsh é o plugin de sugestões para comandos, com base no histórico de comandos já usados. Para instalar esse plugin precisamos primeiro clonar o repositório do Github:
+
+```bash 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+Agora precisamos incluir o `zsh-autosuggestions` no parâmetro de plugins dentro do arquivo `~/.zshrc`:
+
+`plugins=(git zsh-autosuggestions)`
+
+Se já tiver algum plugin definido, inclua o `zsh-autosuggestions` separando com "espaço".
+
+Por fim, recarregar as configurações do Zsh para que o seu terminal aberto já carregue as novas configurações:
+
+```bash
+source ~/.zshrc
+```
+
+Gostou? Vale lembrar que existe o meu `zshrc` personalizado [nesse link](https://gist.github.com/Yagasaki7K/3a1796fc99989b882bbf80f897edf97a), será necessário adicionar o Fira Code como fonte padrão do navegador para que os símbolos sejam exibidos corretamente.

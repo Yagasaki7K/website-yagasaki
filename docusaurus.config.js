@@ -49,16 +49,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "https://i.imgur.com/1ypU0Xs.png",
+      image: "https://github.com/Yagasaki7K.png",
       navbar: {
-        title: "Yagasaki/Blog",
+        title: "Yagasaki Zettelkasten",
         logo: {
           alt: "Anderson Marlon // Software Developer",
           src: "https://github.com/yagasaki7k.png",
         },
         items: [
           //   { to: "/", label: "Início", position: "left" },
-          //   { to: "/blog", label: "Blog", position: "left" },
+            { to: "/blog", label: "Blog", position: "left" },
+            { to: "/docs/Zettelkasten/intro", label: "Zettelkasten", position: "left" },
 
           {
             href: "https://twitter.com/Yagasaki7k",
@@ -119,6 +120,10 @@ const config = {
               {
                 label: "Blog",
                 to: "/blog",
+              },
+              {
+                label: "Zettelkasten",
+                to: "/docs/zettelkasten",
               },
               {
                 label: "Github",
