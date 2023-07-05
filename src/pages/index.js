@@ -75,7 +75,7 @@ export default function Home() {
         <div className="footer_center">
           <strong>Contact</strong>
           <Link href="mailto:anderson18.marlon@gmail.com">Email</Link>
-          <Link href="https://linkedin.com/in/andersonmarlon">Linkedin</Link>
+          <Link href="https://linkedin.com/in/yagasaki">Linkedin</Link>
           <Link href="https://twitter.com/Yagasaki7K">Twitter</Link>
           <Link href="https://api.whatsapp.com/send?phone=5519998018174">
             Whatsapp
