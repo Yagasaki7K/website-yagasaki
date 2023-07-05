@@ -2,8 +2,8 @@
 
 :root {
     --background: #161819;
-    --primary: #9266cc;
-    --dark-primary: #8849da;
+    --primary: #6886a6;
+    --dark-primary: #6888b0;
     --second: #e8e6e3;
     --second-light: #a5a5a5;
     --third: #787877;
@@ -27,23 +27,28 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body::-webkit-scrollbar {
-    width: 14px;               /* width of the entire scrollbar */
+    width: 14px;
+    /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--background);        /* color of the tracking area */
+    background: var(--background);
+    /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--primary);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--background);  /* creates padding around scroll thumb */
+    background-color: var(--primary);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--background);
+    /* creates padding around scroll thumb */
 }
 
 a {
