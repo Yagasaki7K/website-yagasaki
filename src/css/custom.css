@@ -6,7 +6,7 @@
     --dark-primary: #6888b0;
     --second: #e8e6e3;
     --second-light: #a5a5a5;
-    --third: #787877;
+    --third: #e5e5e5;
 }
 
 html {
@@ -30,6 +30,14 @@ body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.homePage {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(34, 99, 193, 1) 50%, rgba(2, 0, 36, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 body::-webkit-scrollbar {

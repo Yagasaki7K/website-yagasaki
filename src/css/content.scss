@@ -6,8 +6,12 @@
     margin: 0 18.5%;
 
     .navigation_left {
+        @media (max-width: 1024px) {
+            margin-left: -10rem;
+        }
+
         @media (max-width: 768px) {
-            margin-left: 3rem;
+            margin-left: 0rem;
         }
 
         @media (max-width: 390px) {
@@ -55,6 +59,7 @@
         a {
             margin-right: 1rem;
             text-decoration: none;
+            color: var(--third);
         }
 
         @media (max-width: 768px) {
@@ -85,18 +90,66 @@
 }
 
 .content {
-    margin: 6rem 20%;
+    margin: 8rem 20%;
     font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
 
     @media (max-width: 1366px) {
-        margin: 0rem 20%;
+        margin: 1rem 20%;
+    }
+
+    @media (max-width: 1024px) {
+        margin: 0rem 10%;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0rem 5%;
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 12rem;
+        font-weight: 800;
+        line-height: 10rem;
+        margin-left: -0.7rem;
 
-        a {
-            text-decoration: none;
+        @media (max-width: 1366px) {
+            font-size: 8rem;
+            line-height: 7rem;
+            margin-left: -0.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 6rem;
+            line-height: 5rem;
+            margin-left: -0.5rem;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 3.5rem;
+            line-height: 3rem;
+            margin-left: 0rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+
+        @media (max-width: 1366px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 300;
+
+        @media (max-width: 1366px) {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
         }
     }
 }
@@ -186,6 +239,10 @@
 
     @media (max-width: 1366px) {
         margin: 0 17rem 0 17rem;
+    }
+
+    @media (max-width: 1024px) {
+        margin: 0 10rem 0 3rem;
     }
 
     @media (max-width: 768px) {
