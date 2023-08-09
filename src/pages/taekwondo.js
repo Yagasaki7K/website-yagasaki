@@ -159,7 +159,6 @@ export default function About() {
 
                         <h4>Master Márcio Eugênio</h4>
                         <p>
-                            <strong>🥋 Green Belt (6th Kup)</strong> | <i>2015</i> <br />
                             <strong>🥋 Yellow Belt (8th Kup)</strong> | <i>2014</i> <br />
                             <strong>🥋 White Belt (10th Kup)</strong> | <i>2014</i> <br />
                         </p>
