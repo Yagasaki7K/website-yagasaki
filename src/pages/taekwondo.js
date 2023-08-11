@@ -57,7 +57,7 @@ export default function About() {
                         src="https://pbs.twimg.com/media/FtcDfyDacAIAzpg?format=jpg&name=large"
                         alt="Campinas Fighters"
                     />
-                    <h2>2rd Kup Belt at Campinas Fighters</h2>
+                    <h2>1st Kup Belt at Campinas Fighters</h2>
 
                     <p>
                         Hi, my name is Anderson Marlon, AKA Yagasaki. In this section I'll
@@ -103,6 +103,22 @@ export default function About() {
 
                     <h3>Achievements & Goals:</h3>
                     <div className="positions">
+                        {/* <h4>Campinas Fighters</h4>
+                        <p>
+                            <strong>🥋 Black Belt (1th Dan)</strong> | <i>2023</i> <br />
+                        </p>
+
+                        <h4>Copa América de Taekwondo</h4>
+                        <p>
+                            <strong>🏅 First Place</strong> | <strong>Campinas Fighters</strong>{" "}
+                            | <i>2023</i>
+                        </p> */}
+
+                        <h4>Campinas Fighters</h4>
+                        <p>
+                            <strong>🥋 Red w/ Black Belt (1st Kup)</strong> | <i>2023</i> <br />
+                        </p>
+
                         <h4>Campeonato Paulista de Taekwondo - Third Stage</h4>
                         <p>
                             <strong>🥈 Second Place</strong> |{" "}
@@ -135,8 +151,7 @@ export default function About() {
 
                         <h4>Campinas Fighters</h4>
                         <p>
-                            {/* <strong>Black Belt (1th Dan)</strong> | <i>2023</i> <br />
-            <strong>🥋 Red w/ Black Belt (1st Kup)</strong> | <i>2023</i> <br /> */}
+
                             <strong>🥋 Red Belt (2nd Kup)</strong> | <i>2023</i> <br />
                             <strong>🥋 Blue w/ Red Belt (3th Kup)</strong> | <i>2022</i> <br />
                         </p>
