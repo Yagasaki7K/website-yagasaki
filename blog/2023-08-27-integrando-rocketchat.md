@@ -1,0 +1,268 @@
+---
+slug: integrando-seu-chat-com-o-rocketchat-omnichannel
+title: Integrando seu chat com o Rocketchat Omnichannel
+image: https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2016&q=80
+description: Algumas pessoas que me conhece sabe que eu já trabalhei e até os dias de hoje trabalho com Rocketchat, é uma ferramenta
+fundamental para ter uma ampla comunicação com o cliente, se tratando de ecommerce, ele é simplesmente fantástico ...
+authors:
+  name: Anderson Marlon
+  title: Software Developer
+  url: https://github.com/yagasaki7k
+  image_url: https://github.com/yagasaki7k.png
+---
+
+![](https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2016&q=80 "NASA")
+
+Algumas pessoas que me conhece sabe que eu já trabalhei e até os dias de hoje trabalho com Rocketchat, é uma ferramenta
+fundamental para ter uma ampla comunicação com o cliente, se tratando de ecommerce, ele é simplesmente fantástico. Ele é um app
+onde poderíamos centralizar contatos vindos de diferentes plataformas de comunicação em um único meio de atendimento. Existem
+funcionalidades já prontas disponíveis na loja da plataforma, permitindo integrar com o WhatsApp, Telegram ou Twitter. Além disso,
+é disponibilizado na área administrativa um script nativo personalizado capaz de adicionar ao seu site um frame externo do próprio
+Rocket para conversação.
+
+Agora, vamos entender melhor como realizar essa integração de forma manual, entendendo os usos das APIs e Webhooks.
+
+Vale lembrar que esse artigo não é de minha autoria, mas do [4Linux Blog](https://blog.4linux.com.br/integrando-seu-chat-com-o-rocket-omnichannel/), estou apenas compartilhando para ser um atalho até mesmo pra mim.
+
+## Entendendo o caso de uso
+
+Imagine que na sua empresa seja disponibilizado um chat (seja via web e/ou aplicativo) para os clientes e você deseja integrá-lo
+ao Rocket para centralizar os atendimentos em uma única plataforma, que é especializada nesse tipo de situação. Ou até mesmo, você
+ainda não tem esse chat, mas deseja criá-lo e quer ter o menor custo de implementação.
+
+Tudo isso é simples! Com o Rocket você não vai precisar se preocupar com um servidor complexo, armazenamento de dados, atendimento
+etc. Você pode apenas criar o frontend para o cliente (ou utilizar o widget fornecido) e um backend simples capaz de realizar as
+chamadas à API do Rocket e receber chamadas de resposta via Webhook.
+
+Para se comunicar com o Rocket, temos dois meios disponíveis:
+
+- Via API: Criação de usuários (visitantes), criação de salas, envio de mensagens;
+- Via Webhook: Rockchat enviando informações sobre as salas abertas – Respostas dos atendentes, encerramento de salas, transferências;
+  Pode parecer complicado em um primeiro momento, mas não é! Vamos entender melhor o que será necessário.
+
+## Preparando o ambiente
+
+Como o foco aqui é como realizar a integração, não vamos ficar perdendo tempo com instalação do Rocket. Vamos utilizar o Docker
+para auxiliar com isso.
+
+Criei um docker-compose de exemplo para facilitar a infraestrutura. Você pode visualizar ele aqui:
+
+```yaml
+version: "3.0"
+
+services:
+  rocketchat:
+    image: rocketchat/rocket.chat:3.16.2
+    command: >
+      bash -c
+        "for i in `seq 1 30`; do
+          node main.js &&
+          s=$$? && break || s=$$?;
+          echo \"Tried $$i times. Waiting 5 secs...\";
+          sleep 5;
+        done; (exit $$s)"
+    restart: unless-stopped
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PORT=3000
+      - ROOT_URL=http://localhost:3000
+      - MONGO_URL=mongodb://mongo:27017/rocketchat
+      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
+      - ADMIN_USERNAME=rocket
+      - ADMIN_PASS=PZxs7wsHWEJLP98z
+      - ADMIN_EMAIL=admin@rocketchat.local
+    depends_on:
+      - mongo
+    ports:
+      - 3000:3000
+
+  mongo:
+    image: mongo:4.0
+    restart: unless-stopped
+    volumes:
+      - ./data/db:/data/db
+      - ./data/dump:/dump
+    command: mongod --smallfiles --oplogSize 128 --replSet rs0 --storageEngine=mmapv1
+
+  mongo-init-replica:
+    image: mongo:4.0
+    command: >
+      bash -c
+        "for i in `seq 1 30`; do
+          mongo mongo/rocketchat --eval \"
+            rs.initiate({
+              _id: 'rs0',
+              members: [ { _id: 0, host: 'localhost:27017' } ]})\" &&
+          s=$$? && break || s=$$?;
+          echo \"Tried $$i times. Waiting 5 secs...\";
+          sleep 5;
+        done; (exit $$s)"
+    depends_on:
+      - mongo
+```
+
+Ele irá iniciar o ambiente com tudo que precisamos, e já irá criar um usuário administrador (Login rocket e senha
+PZxs7wsHWEJLP98z). Basta fazer login e realizar a configuração inicial.
+
+Com o Rocket rodando, precisamos realizar uma simples configuração. Por padrão o Omnichannel não vem habilitado, mas é simples ajustar isso!
+
+Basta acessar a Administração, procurar pelo menu Omnichannel e marcar a opção Omnichannel habilitado. Não se esqueça de salvar.
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-23_17-13.png)
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-23_17-15-1024x310.png)
+
+A configuração é simplesmente isso! Agora temos o Rocket prontinho para receber nossa integração.
+
+## Acessando a documentação
+
+Nessa página temos detalhes sobre os endpoints disponibilizados, tanto para o Rocket como um todo, quanto especificamente para o Omnichannel. Nesse caso, como iremos trabalhar integrando com o livechat, podemos acessar sua documentação específica.
+
+Há alguns termos que aparecem bastante quando acessamos a documentação, então vamos entendê-los melhor:
+
+**Agent** – Agentes são os atendentes dos chats. Eles acessaram o Rocket pela sua interface e recebem os chats vindos via Omnichannel.
+
+**Visitor** – Visitantes são os seus clientes que entraram via Omnichannel. Para que haja o atendimento dentro do Rocket é necessário que esse cliente seja criado como um visitante. Visitantes existem apenas no Omnichannel, não são usuários do Rocket e não podem acessá-lo.
+
+**Custom field** – Campos personalizados que podem ser adicionados ao registro dos visitantes.
+
+**Contact** – Contato é basicamente um visitante. Apesar de existir na documentação APIs diferentes referenciando individualmente cada um, eles são o mesmo registro dentro do banco. Há apenas diferença nas suas APIs, tendo mais campos obrigatórios para manipulação.
+
+**Room** – Sala criada para realizar a conversa entre o agente e o cliente. A sala deve ser encerrada ao final do atendimento e cada novo irá gerar uma nova sala, mesmo que seja o mesmo contato.
+
+Tendo entendido isso, vamos ter um último passo antes de analisar as APIs que precisamos.
+
+## Autenticando no Rocket
+
+Nenhuma das APIs que vamos utilizar necessita de autenticação, mas é bom entender como conseguir esses dados antes de
+continuarmos. E isso é bem simples: estando logado com um usuário administrador, basta gerar um token.
+
+Para gerar o token, basta acessar Minha conta, e clicar em Token de acesso pessoal. Na tela aberta, você deve digitar um nome para
+identificar esse token e opcionalmente selecionar Ignorar Autenticação de dois fatores (só faz sentido caso deseje utilizar 2FA
+nessa conta) e clicar em Adicionar.
+
+Será aberto uma tela com os dados do token. Guarde bem esses dados! Eles não serão exibidos novamente. Caso perca, será necessário
+gerar um novo token.
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-23_18-38.png)
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-23_18-42-1024x265.png)
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-23_18-43.png)
+
+**Observação:** Poderia ser qualquer usuário, não necessariamente um administrador, mas nesse caso precisaria ajustar as permissões desse usuário manualmente para permitir o uso da API e ter os acessos necessários ao livechat. Com o administrador, fica mais fácil, mas em um ambiente produtivo seria mais interessante ter um usuário específico com apenas os acessos necessários.
+
+Agora que já temos tudo preparado, podemos começar a analisar as APIs.
+
+Começando com as APIs: Criando um visitante
+
+A primeira coisa a se fazer para integrar o seu chat com o Rocket é criar o visitante. Esse passo será constante, visto que sempre que um novo usuário for transferido, ele precisará ser criado ou atualizado. A mesma API realiza as duas ações, criar e atualizar o visitante. 
+
+Para essa ação, temos basicamente um campo obrigatório para criar o visitante. Mas vamos entender melhor cada um:
+
+**token\*** – Um texto de identificação desse visitante. Essa informação deve ser gerada pelo seu sistema para poder encontrar o visitante dentro do Rocket. Ele é o único campo obrigatório e será utilizado como chave para criação e atualização dos dados.
+
+**name** – O nome do visitante. Será exibido como nome das salas e em cada mensagem.
+
+**email** – O e-mail do visitante. Além de ser exibido para os agentes que atendem esse contato, pode ser utilizado para envio da transcrição da conversa automaticamente.
+
+**department** – Departamento do visitante. Esse campo é muito importante pois ele será decisivo ao tentar criar uma sala para o contato. Caso o contato tenha um departamento e não tenha sido especificado um agente específico, será criado a sala apenas com o departamento especificado.
+phone – Telefone do visitante.
+
+**username** – Usuário do visitante. Será utilizado para identificação interna e buscas. Se não for informado na criação, será gerado um valor aleatório. Esse valor não poderá ser alterado.
+
+**customFields** – Campos personalizados do contato. Esses campos precisam ter sido previamente criados via API ou interface. Nesse momento eles terão apenas seus valores definidos. Esse campo é uma lista de objetos contendo a seguite extrutura:
+
+- **key** – O nome do campo definido quando foi criado.
+
+- **value** – O valor desse campo.
+
+- **overwrite** – Se deseja sobrescrever o valor ou não. Se verdadeiro sempre irá definir o valor. Se falso, só irá definidor o valor caso ainda não tenha nenhuma informação.
+
+Agora que entendemos os campos, teríamos o corpo da requisição seguinte a estrutura:
+
+```JSON
+{
+    "visitor": {
+        "token": "visitante-identificador",
+        "name": "Meu visistante",
+        "email": "visitante@meusite.com",
+        "department": "SAC",
+        "phone": "+55 11 98765-4321",
+        "username": "meuvisitante-123",
+        "customFields": [{
+            "key": "address",
+            "value": "Rocket.Chat street",
+            "overwrite": true
+        }]
+    }
+}
+```
+
+O endereço dessa API seria: **/api/v1/livechat/visitor**. Utilizando o método **POST**, você poderá criar e atualizar visitantes por esse endereço.
+
+Além do momento da criação, o seu uso é interessante para alternar entre os departamentos e atualizar os campos customizados. Com isso, já temos o visitante criado e pronto para falar com um atendente.
+
+## Avançado com as APIs: Criando salas e enviando mensagens
+A criação de salas é um processo simples. Ela utiliza o método **GET** e endereço **/api/v1/livechat/room**. Ela é utilizada tanto para criar salas como resgatar seus dados.
+
+Todos seus parâmetros são informados via query param na url. Vamos entender melhor eles:
+
+**token*** – O token do visitante que irá utilizar essa sala. Esse campo é **obrigatório** em qualquer requisição a esse endpoint.
+**rid** – O id da sala. Quando você está criando uma sala esse valor não deve ser informado, afinal, sequer existe. Porém para leitura, deverá ser informado ou uma nova sala será criada.
+**agentId** – O id do agente que irá atender essa sala. Se esse valor não for informado, a sala será criada para um atendente aleatório. Caso o visitante tenha um departamento definido, será atribuído um atendente desse departamento.
+Um ponto importante na criação de salas é a disponibilidade dos agentes: existe a opção de aceitar que as salas sejam criadas mesmo que o agente não esteja online. Mas caso essa opção não seja marcada, a criação de sala apenas funciona se o agente estiver online no Rocket e no Omnichannel.
+
+Agora que já termos a sala criada, podemos enviar mensagens! Também é um processo simples. Esse endpoint utiliza o método **POST** e o endereço **/api/v1/livechat/message**.
+
+O seus poucos parâmetros possíveis são passados via corpo da requisição. Vamos entender melhor eles:
+
+**token*** – O token do visitante que está enviando a mensagem. Precisa ser do mesmo visitante que criou a sala. Esse campo é obrigatório.
+**rid*** – O id da sala onde a mensagem será enviada. Ela precisa estar com o status aberta. Esse campo é obrigatório.
+**msg*** – O texto da mensagem a ser enviada. Esse campo não pode ultrapassar o limite definido nas configurações do Rocket. Ele é obrigatório.
+**_id** – O id da mensagem a ser criada. Caso não seja informado, um id será criado.
+**agent** – Na documentação informa que esse campo deve ser o agente da sala. Mas olhando o código do Rocket ele não faz sentido e nunca será usada. Podemos ignora-lo.
+
+Teríamos o corpo da requisição seguindo a estrutura:
+
+```JSON
+
+{
+    "token": "visitante-identificador",
+    "rid": "sala-id-123",
+    "msg": "Bom dia!"
+}
+
+```
+
+Com isso, já podemos criar um visitante, uma sala e enviar mensagens. Agora o próximo passo é receber o retorno do Rocket com as mensagens enviadas pelos agentes e os eventos que podem ocorrer.
+
+## Webhooks: Recebendo retorno do Rocket
+Como havia dito, para receber o retorno do Rocket sobre os eventos ocorridos na sala, a melhor forma é via Webhook. Você até conseguiria fazer isso via API (pode visualizar melhor isso na documentação). Porém, via API você teria que efetuar constantes requisições para receber atualizações e tratar cada item da resposta individualmente. Não há possibilidade de filtros por apenas dados não vistos ou algo parecido, no máximo por eventos ocorridos após um timestamp informado. Resumindo, é mais complexo utilizar API e menos prático.
+
+Para utilizar Webhooks é simples! Para configurá-lo, basta acessar o menu Omnichannel e clicar em Webhooks. Na tela aberta, você deve digitar o endereço para onde essas requisições serão disparadas e selecionar quais eventos deverão disparar essa ação. Opcionalmente pode informar um token que será enviado no cabeçalho das requisições para validar a autenticidade. Clique em Salvar para aplicar as mudanças.
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-24_12-00.png)
+
+![](https://blog.4linux.com.br/wp-content/uploads/2021/08/2021-08-24_12-02-1024x425.png)
+
+Os eventos possíveis são:
+
+**Chat Start** – Sala criada.
+**Chat Close** – Sala encerrada.
+**Agent Messages** – Mensagem do atendente.
+**Chat Taken** – Agente recebeu a sala.
+**Chat Queued** – Sala entrou na fila para encontrar agente (Há possibilidade de uso de serviços externos para sorteio de agente, por isso esse evento pode fazer sentido).
+**Forwarding** – Sala encaminhada para outra agente/departamento.
+**Offline Messages** – Dependendo se tiver a opção de mensagens offline habilitada e utilizar o widget fornecido, ou utilizar a API, esse evento pode ocorrer. Basicamente o visitante poderia informar o seu nome, e-mail e uma mensagem quando não tiver agentes online.
+**Visitor Messages** – Mensagem do visitante.
+Para cada evento, é realizada uma requisição POST para o endereço informado. O corpo da requisição varia em cada evento, mas é identificado o tipo do evento entre os campos.
+
+No mínimo, será necessário configurar os eventos de sala fechada e mensagem do agente, pois assim será possível saber quando ocorrem respostas e quando for encerrado. Os demais eventos podem não ser necessários.
+
+---
+
+E por enquanto é isso. Entendeu tudo? Se ainda estiver com dúvida, faço questão de poder te ajudar lá no Twitter através do
+@Yagasaki7K. Mas lembrando, existem suporte através da própria documentação - que não é lá complexa - existe comunidades dispostas
+a te ajudar e foruns a rodo. Então, pesquise, estude e se esforce bem. Até a próxima!
