@@ -2,14 +2,14 @@
 slug: integrando-seu-chat-com-o-rocketchat-omnichannel
 title: Integrando seu chat com o Rocketchat Omnichannel
 image: https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2016&q=80
-description: Algumas pessoas que me conhece sabe que eu já trabalhei e até os dias de hoje trabalho com Rocketchat, é uma ferramenta
-fundamental para ter uma ampla comunicação com o cliente, se tratando de ecommerce, ele é simplesmente fantástico ...
+description: Algumas pessoas que me conhece sabe que eu já trabalhei e até os dias de hoje trabalho com Rocketchat, é uma ferramenta fundamental para ter uma ampla comunicação com o cliente, se tratando de ecommerce, ele é simplesmente fantástico.
 authors:
-  name: Anderson Marlon
-  title: Software Developer
-  url: https://github.com/yagasaki7k
-  image_url: https://github.com/yagasaki7k.png
+  - name: Anderson Marlon
+    title: Software Developer
+    url: https://github.com/yagasaki7k
+    image_url: https://github.com/yagasaki7k.png
 ---
+
 
 ![](https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2016&q=80 "NASA")
 
@@ -47,7 +47,7 @@ para auxiliar com isso.
 
 Criei um docker-compose de exemplo para facilitar a infraestrutura. Você pode visualizar ele aqui:
 
-```yaml
+```shell
 version: "3.0"
 
 services:
@@ -161,7 +161,7 @@ A primeira coisa a se fazer para integrar o seu chat com o Rocket é criar o vis
 
 Para essa ação, temos basicamente um campo obrigatório para criar o visitante. Mas vamos entender melhor cada um:
 
-**token\*** – Um texto de identificação desse visitante. Essa informação deve ser gerada pelo seu sistema para poder encontrar o visitante dentro do Rocket. Ele é o único campo obrigatório e será utilizado como chave para criação e atualização dos dados.
+**token*** – Um texto de identificação desse visitante. Essa informação deve ser gerada pelo seu sistema para poder encontrar o visitante dentro do Rocket. Ele é o único campo obrigatório e será utilizado como chave para criação e atualização dos dados.
 
 **name** – O nome do visitante. Será exibido como nome das salas e em cada mensagem.
 
@@ -264,5 +264,5 @@ No mínimo, será necessário configurar os eventos de sala fechada e mensagem d
 ---
 
 E por enquanto é isso. Entendeu tudo? Se ainda estiver com dúvida, faço questão de poder te ajudar lá no Twitter através do
-@Yagasaki7K. Mas lembrando, existem suporte através da própria documentação - que não é lá complexa - existe comunidades dispostas
+[@Yagasaki7K](https://twitter.com/Yagasaki7K). Mas lembrando, existem suporte através da própria documentação - que não é lá complexa - existe comunidades dispostas
 a te ajudar e foruns a rodo. Então, pesquise, estude e se esforce bem. Até a próxima!
