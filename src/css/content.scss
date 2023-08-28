@@ -295,14 +295,18 @@ hr {
     display: flex;
     flex-wrap: wrap;
 
-    input {
+    img {
         width: 33%;
+        height: 33%;
         padding: 0.5rem;
+        object-fit: cover;
+        filter: brightness(0.5);
     }
 
-    input:hover {
+    img:hover {
         transition: 1s;
         transform: scale(1.03);
         cursor: pointer;
+        filter: brightness(1);
     }
 }
