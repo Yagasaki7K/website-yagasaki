@@ -111,4 +111,4 @@ Vale lembrar que o Rocketchat é uma plataforma open source e a comunidade anda 
 
 Com esses comandos em mãos, você estará melhor preparado para dominar o Rocketchat e aproveitar ao máximo essa plataforma poderosa de comunicação e colaboração, isso inclui fazer interações com bot e clientes através do Whatsapp. Espero que essas dicas sejam úteis, já que pra mim será uma mão na roda para projetos futuros.
 
-- Nunca mexeu e quer [configurar pela primeira vez](https://ya)? Me segue!
+- Nunca mexeu e quer [configurar pela primeira vez](https://yagasaki.dev/blog/guia-de-comandos-rocketchat-para-iniciantes)? Me segue!
