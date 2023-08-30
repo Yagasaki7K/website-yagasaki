@@ -1,8 +1,8 @@
 ---
 slug: guia-detalhado-configuração-do-rocket-chat-no-azure-com-funcionalidades-avançadas
-title: Guia Detalhado - Configuração do Rocket.Chat no Azure com Funcionalidades Avançadas
+title: Guia Detalhado - Configuração do Rocketchat no Azure com Funcionalidades Avançadas
 image: https://plus.unsplash.com/premium_photo-1674082012152-fb856017c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
-description: Este guia aborda o processo detalhado de instalação e configuração do Rocket.Chat em uma máquina virtual Ubuntu na plataforma Microsoft Azure, com foco em habilitar funcionalidades avançadas como integração com um frame externo e configurações de omnichannel ...
+description: Este guia aborda o processo detalhado de instalação e configuração do Rocketchat em uma máquina virtual Ubuntu na plataforma Microsoft Azure, com foco em habilitar funcionalidades avançadas como integração com um frame externo e configurações de omnichannel ...
 authors:
   name: Anderson Marlon
   title: Software Developer
@@ -23,7 +23,7 @@ Este guia aborda o processo detalhado de instalação e configuração do Rocket
 
 ## Instalação e Configuração do Rocketchat
 
-1. Instale o Rocket.Chat através do seguinte comando:
+1. Instale o Rocketchat através do seguinte comando:
   
 ``` bash
 sudo snap install rocketchat-server --channel=5.x/stable
