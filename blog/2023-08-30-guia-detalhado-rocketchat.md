@@ -12,7 +12,7 @@ authors:
 
 ![](https://plus.unsplash.com/premium_photo-1674082012152-fb856017c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 "Unsplash+")
 
-Este guia aborda o processo detalhado de instalação e configuração do Rocket.Chat em uma máquina virtual Ubuntu na plataforma Microsoft Azure, com foco em habilitar funcionalidades avançadas como integração com um frame externo e configurações de omnichannel.
+Este guia aborda o processo detalhado de instalação e configuração do Rocketchat em uma máquina virtual Ubuntu na plataforma Microsoft Azure - pode funcionar em outras plataformas, mas não foi testado como Google Cloud Plataform, Heroku e outros - com foco em habilitar funcionalidades avançadas como integração com um frame externo e configurações de omnichannel.
 
 ## Instalação da Máquina Virtual no Azure
 
