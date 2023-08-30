@@ -17,9 +17,9 @@ Este guia aborda o processo detalhado de instalação e configuração do Rocket
 ## Instalação da Máquina Virtual no Azure
 
 1. Acesse o portal Azure: https://portal.azure.com/
-2. Crie uma nova máquina virtual Ubuntu.
-3. Utilize uma senha para acessar a máquina via SSH.
-4. Configure o DNS padrão para a máquina virtual.
+2. Crie uma nova máquina virtual Ubuntu
+3. Utilize uma senha para acessar a máquina via SSH
+4. Configure o DNS padrão para a máquina virtual
 
 ## Instalação e Configuração do Rocketchat
 
