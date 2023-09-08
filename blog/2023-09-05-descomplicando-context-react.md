@@ -1,6 +1,6 @@
 ---
 slug: context-api-como-criar-como-usar-e-como-alimentar-para-iniciantes
-title: Context API - Como criar, como usar e como alimentar para iniciantes
+title: ContextAPI - Como criar, como usar e como alimentar para iniciantes
 image: https://images.unsplash.com/photo-1593663922663-34cbd6671eae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80
 description: Neste artigo abordaremos um assunto bastante interessante no React chamado context, que disponibiliza uma maneira de passar os dados entre a árvore de componentes sem precisar passar props manualmente em cada nível.
 authors:
