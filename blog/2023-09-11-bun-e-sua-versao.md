@@ -1,7 +1,7 @@
 ---
 slug: bun-o-compilador-javascript-mais-rapido-do-mundo-e-lancado-oficialmente
 title: "Bun, o compilador JavaScript mais rápido do mundo é lançado oficialmente"
-image: https://onigirihardcore.com.br/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fonigirihardcore-88090.appspot.com%2Fo%2Fimages%252F266450546-379f2213-fd3e-4223-bb8e-25adfa1e61cc.png%3Falt%3Dmedia%26token%3D853bdb54-78b2-4a68-84ab-dab5ba480e68&w=1920&q=75
+image: https://d1tlzifd8jdoy4.cloudfront.net/wp-content/uploads/2022/07/eyecatch_bun_1200x630-960x504.png
 description: "Hoje fiquei desacreditado, é 11 de Setembro de 2023 e recebi a notícia de que dia 08 de Setembro a versão 1.0 do Bun saiu, só não soube disso, porque aqui no Brasil foi pós-feriado e muita gente acabou emendando, inclusive eu"
 authors:
   - name: "Anderson Marlon"
@@ -10,7 +10,7 @@ authors:
     image_url: "https://github.com/yagasaki7k.png"
 ---
 
-![Onigiri Hardcore](https://onigirihardcore.com.br/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fonigirihardcore-88090.appspot.com%2Fo%2Fimages%252F266450546-379f2213-fd3e-4223-bb8e-25adfa1e61cc.png%3Falt%3Dmedia%26token%3D853bdb54-78b2-4a68-84ab-dab5ba480e68&w=1920&q=75)
+![https://dev.classmethod.jp/articles/bun/](https://d1tlzifd8jdoy4.cloudfront.net/wp-content/uploads/2022/07/eyecatch_bun_1200x630-960x504.png)
 
 Hoje fiquei desacreditado, é 11 de Setembro de 2023 e recebi a notícia de que dia 08 de Setembro a versão 1.0 do Bun saiu, só não soube disso, porque aqui no Brasil foi pós-feriado e muita gente acabou emendando - inclusive eu. Mas vamos lá, o que é o Bun e porquê ele vai revolucionar tanto em questão de velocidade de compiladores.
 
