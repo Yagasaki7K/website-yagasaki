@@ -1,7 +1,7 @@
 ---
 slug: bun-o-compilador-javascript-mais-rapido-do-mundo-e-lancado-oficialmente
 title: "Bun, o compilador JavaScript mais rápido do mundo é lançado oficialmente"
-image: https://d1tlzifd8jdoy4.cloudfront.net/wp-content/uploads/2022/07/eyecatch_bun_1200x630-960x504.png
+image: https://images.unsplash.com/photo-1592811773343-9abf0b1a6920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 description: "Hoje fiquei desacreditado, é 11 de Setembro de 2023 e recebi a notícia de que dia 08 de Setembro a versão 1.0 do Bun saiu, só não soube disso, porque aqui no Brasil foi pós-feriado e muita gente acabou emendando, inclusive eu"
 authors:
   - name: "Anderson Marlon"
@@ -10,7 +10,7 @@ authors:
     image_url: "https://github.com/yagasaki7k.png"
 ---
 
-![https://dev.classmethod.jp/articles/bun/](https://d1tlzifd8jdoy4.cloudfront.net/wp-content/uploads/2022/07/eyecatch_bun_1200x630-960x504.png)
+![Cesar Carlevarino Aragon](https://images.unsplash.com/photo-1592811773343-9abf0b1a6920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
 
 Hoje fiquei desacreditado, é 11 de Setembro de 2023 e recebi a notícia de que dia 08 de Setembro a versão 1.0 do Bun saiu, só não soube disso, porque aqui no Brasil foi pós-feriado e muita gente acabou emendando - inclusive eu. Mas vamos lá, o que é o Bun e porquê ele vai revolucionar tanto em questão de velocidade de compiladores.
 
