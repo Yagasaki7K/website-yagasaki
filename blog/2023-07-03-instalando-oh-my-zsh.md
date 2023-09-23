@@ -62,7 +62,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 Outro recurso interessante para configurar com o Zsh é o plugin de sugestões para comandos, com base no histórico de comandos já usados. Para instalar esse plugin precisamos primeiro clonar o repositório do Github:
 
 ```bash 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 Agora precisamos incluir o `zsh-autosuggestions` no parâmetro de plugins dentro do arquivo `~/.zshrc`:
 
