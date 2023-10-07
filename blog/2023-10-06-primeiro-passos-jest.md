@@ -83,9 +83,10 @@ Este artigo forneceu uma introdução à configuração do Jest e à criação d
 
 Aqui estão algumas dicas adicionais para iniciantes no Jest:
 
-Use o comando `jest --watch` para executar os testes automaticamente sempre que você fizer uma alteração no código.
-Use o comando `jest --coverage` para gerar um relatório de cobertura de código para seus testes.
-Use o comando `jest --verbose` para obter mais informações sobre os resultados dos testes.
+- Use o comando `jest --watch` para executar os testes automaticamente sempre que você fizer uma alteração no código.
+- Use o comando `jest --coverage` para gerar um relatório de cobertura de código para seus testes.
+- Use o comando `jest --verbose` para obter mais informações sobre os resultados dos testes.
+
 Espero que este artigo tenha sido útil!
 
 ## Adicionais
