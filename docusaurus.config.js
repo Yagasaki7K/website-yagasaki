@@ -16,8 +16,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "pt",
-    locales: ["pt", "en"],
+    defaultLocale: "pt-br",
+    locales: ["pt-br"],
   },
 
   plugins: [
@@ -58,8 +58,8 @@ const config = {
         },
         items: [
           //   { to: "/", label: "Início", position: "left" },
-            { to: "/blog", label: "Blog", position: "left" },
-            { to: "/docs/Zettelkasten/intro", label: "Zettelkasten", position: "left" },
+          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/docs/Zettelkasten/intro", label: "Zettelkasten", position: "left" },
 
           {
             href: "https://twitter.com/Yagasaki7k",
