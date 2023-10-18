@@ -91,12 +91,12 @@ export default function About() {
                     <p>
                         Right from the start, I was champion of the America Cup and then
                         champion of the Vale League, after that, I was third place in the
-                        Paulista Championship, challenging myself in the 63kgs and 68kgs competition.
+                        Paulista Championship, challenging myself in the 68kgs competition.
                     </p>
 
                     <p>
-                        I'm currently an athlete at Campinas Fighters, 3rd Kup fighting in the
-                        63kg category. My intention is to reach 58kgs until I conquer the
+                        I'm currently an athlete at Campinas Fighters, 1st Kup fighting in the
+                        63kg and 68kgs category. My intention is to conquer the
                         black belt and continue with the conquests and victories that await
                         me.
                     </p>
