@@ -2,7 +2,7 @@
 
 :root {
     --background: #161819;
-    --primary: #5563ef;
+    --primary: #7359f8;
     --dark-primary: #1e2355;
     --second: #e8e6e3;
     --second-light: #ccc;
@@ -33,8 +33,7 @@ body {
 }
 
 .homePage {
-    background: #1e2355;
-    background: linear-gradient(45deg, #1e2355 0%, #5563ef 50%, #1e2355 100%);
+    background: #161819;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

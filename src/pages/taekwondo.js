@@ -106,13 +106,19 @@ export default function About() {
                         {/* <h4>Campinas Fighters</h4>
                         <p>
                             <strong>🥋 Black Belt (1th Dan)</strong> | <i>2023</i> <br />
-                        </p>
+                        </p> */}
+
+                        {/* <h4>São Roque Internacional</h4>
+                        <p>
+                            <strong>🥈 Second Place</strong> | <strong>Campinas Fighters</strong>{" "}
+                            | <i>2023</i>
+                        </p> */}
 
                         <h4>Copa América de Taekwondo</h4>
                         <p>
-                            <strong>🏅 First Place</strong> | <strong>Campinas Fighters</strong>{" "}
+                            <strong>🥈 Second Place</strong> | <strong>Campinas Fighters</strong>{" "}
                             | <i>2023</i>
-                        </p> */}
+                        </p>
 
                         <h4>Campinas Fighters</h4>
                         <p>
