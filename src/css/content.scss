@@ -39,13 +39,13 @@
             h2 {
                 padding-top: 1rem;
                 margin-left: 1rem;
-                color: var(--second);
+                color: var(--primary);
                 text-decoration: none;
                 font-weight: 700;
                 font-size: 1.8rem;
 
                 &:hover {
-                    color: var(--primary);
+                    color: var(--second);
                 }
             }
         }
@@ -111,7 +111,9 @@
         font-size: 12rem;
         font-weight: 800;
         line-height: 10rem;
+        margin-top: -1rem;
         margin-left: -0.7rem;
+        color: var(--primary);
 
         @media (max-width: 1366px) {
             font-size: 8rem;
