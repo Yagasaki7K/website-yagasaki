@@ -91,7 +91,7 @@ export default function About() {
                     <p>
                         Right from the start, I was champion of the America Cup and then
                         champion of the Vale League, after that, I was third place in the
-                        Paulista Championship, challenging myself in the 68kgs competition.
+                        Paulista Championship, challenging myself in the 63kgs and 68kgs competition.
                     </p>
 
                     <p>
