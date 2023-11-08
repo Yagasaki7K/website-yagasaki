@@ -148,6 +148,11 @@ export default function About() {
                     <div className="certificates">
                         <p>
                             <strong>
+                                Complete Dialogflow - Master the Creation of Virtual Assistants{" "}
+                            </strong>
+                            by Universidade Global, Rogerio Guimaraes - November 2023
+                        </p><p>
+                            <strong>
                                 Modern Web with Projects (JS/Typescript/React/Node){" "}
                             </strong>
                             by COD3R - August 2022
