@@ -59,7 +59,7 @@ const config = {
         items: [
           //   { to: "/", label: "Início", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/docs/Zettelkasten/intro", label: "Zettelkasten", position: "left" },
+          { to: "/docs/intro", label: "Docs", position: "left" },
 
           {
             href: "https://twitter.com/Yagasaki7k",
@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: "Zettelkasten",
-                to: "/docs/zettelkasten/intro",
+                to: "/docs/intro",
               },
               {
                 label: "Github",
