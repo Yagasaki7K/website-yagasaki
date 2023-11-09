@@ -59,7 +59,7 @@ const config = {
         items: [
           //   { to: "/", label: "Início", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/docs/intro", label: "Docs", position: "left" },
+          { to: "/docs/git-push-results-in-authentication-failed", label: "Docs", position: "left" },
 
           {
             href: "https://twitter.com/Yagasaki7k",
@@ -122,8 +122,8 @@ const config = {
                 to: "/blog",
               },
               {
-                label: "Zettelkasten",
-                to: "/docs/intro",
+                label: "Docs",
+                to: "/docs/git-push-results-in-authentication-failed",
               },
               {
                 label: "Github",
