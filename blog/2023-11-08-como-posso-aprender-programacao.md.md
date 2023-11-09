@@ -1,7 +1,7 @@
 ---
 slug: como-posso-aprender-programacao
 title: Como posso aprender programação em 2023
-image: https://jestjs.io/pt-BR/img/opengraph.png
+image: https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 description: A programação é uma habilidade valiosa e altamente procurada nos dias de hoje. Se você está interessado em ingressar nesse emocionante mundo da tecnologia, é natural se perguntar por onde começar. Este artigo explora as diferentes trilhas da programação ...
 authors:
   - name: Anderson Marlon
