@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import style from "../css/content.scss";
 import Navigation from "../components/navigation";
@@ -30,14 +29,14 @@ export default function Home() {
                     src="https://www.googletagmanager.com/gtag/js?id=G-39P50954DX"
                 />
 
-                <meta name="description" content="Software Developer & Front-end Specialist" />
+                <meta name="description" content="Front-end & Software Developer" />
                 <meta
                     name="keywords"
                     content="Desenvolvedor front-end, Front-end developer, Desenvolvedor web, Web developer, Desenvolvedor de interfaces, Interface developer, Desenvolvedor de UX, UX developer, Desenvolvedor de UI, UI developer, Software developer, Programador, Developer, Engenheiro de software, Software engineer, Desenvolvedor de back-end, Back-end developer, Desenvolvedor full-stack, Full-stack developer, Desenvolvedor de jogos, Game developer, Agência, Agência de desenvolvimento, Web agency, Software agency, Agência de marketing digital, Digital marketing agency, Agência de design, Design agency, Freelance, Desenvolvedor freelancer, Freelance developer, Programador freelancer, Freelance programmer, Engenheiro de software freelancer, Freelance software engineer, react, nextjs, next, typescript, styled, styled components, components, firebase, rocketchat, docker"
                 />
 
                 <meta property="og:title" content="Anderson Marlon // Yagasaki" />
-                <meta property="og:description" content="Software Developer & Front-end Specialist" />
+                <meta property="og:description" content="Front-end & Software Developer" />
                 <meta
                     property="og:keywords"
                     content="Desenvolvedor front-end, Front-end developer, Desenvolvedor web, Web developer, Desenvolvedor de interfaces, Interface developer, Desenvolvedor de UX, UX developer, Desenvolvedor de UI, UI developer, Software developer, Programador, Developer, Engenheiro de software, Software engineer, Desenvolvedor de back-end, Back-end developer, Desenvolvedor full-stack, Full-stack developer, Desenvolvedor de jogos, Game developer, Agência, Agência de desenvolvimento, Web agency, Software agency, Agência de marketing digital, Digital marketing agency, Agência de design, Design agency, Freelance, Desenvolvedor freelancer, Freelance developer, Programador freelancer, Freelance programmer, Engenheiro de software freelancer, Freelance software engineer, react, nextjs, next, typescript, styled, styled components, components, firebase, rocketchat, docker"
@@ -52,7 +51,7 @@ export default function Home() {
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Anderson Marlon // Yagasaki" />
-                <meta name="twitter:description" content="Software Developer & Front-end Specialist" />
+                <meta name="twitter:description" content="Front-end & Software Developer" />
                 <meta name="twitter:image:alt" content="Anderson Marlon // Yagasaki" />
             </Head>
 

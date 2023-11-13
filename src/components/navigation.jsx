@@ -16,7 +16,6 @@ const Navigation = () => {
                 <Link href="https://github.com/Yagasaki7K">GitHub</Link>
                 <Link href="https://twitter.com/Yagasaki7K">Twitter</Link>
                 <Link href="/taekwondo">TKD</Link>
-                {/* <Link href="/ai">AI Art</Link> */}
             </div>
         </div>
     )

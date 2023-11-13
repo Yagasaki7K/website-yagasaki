@@ -23,7 +23,6 @@ const Footer = () => {
             <div className="footer_right">
                 <strong>My Work</strong>
                 <Link href="/blog">Blog</Link>
-                <Link href="/ai">AI Art</Link>
                 <Link href="https://github.com/Yagasaki7K">GitHub</Link>
                 <Link href="https://behance.net/yagasaki">Behance</Link>
             </div>
