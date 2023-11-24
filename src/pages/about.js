@@ -110,7 +110,7 @@ export default function About() {
                         <p>
                             Using React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX,
                             Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit
-                            Testing with Jest, AWS Cloud, NestJS and Postgress
+                            Testing with Jest, AWS Cloud, NestJS and Postgress.
                         </p>
 
                         <h4>Systems Development Analyst</h4>
@@ -124,10 +124,7 @@ export default function About() {
                             types of digital business. We're using technologies like NextJS,
                             Typescript, Push Notification using Javascript via Google
                             Developers, Scrum and Kabam during development, Google Analytics,
-                            Facebook Ads and using Digital Ocean to DevOps our system. <br />
-                            <br />
-                            Project available at{" "}
-                            <Link href="https://credits.com.br/">https://credits.com.br/</Link>
+                            Facebook Ads and using Digital Ocean to DevOps our system.
                         </p>
 
                         <h4>Junior Marketing Assistant / Development Frontend</h4>
@@ -139,7 +136,7 @@ export default function About() {
                             the company, including the main website, how to use each product
                             website and several other segments for customer communication using
                             MVC Architecture, MySQL and NodeJS – later the project was changed
-                            to Laravel
+                            to Laravel.
                         </p>
                     </div>
 
