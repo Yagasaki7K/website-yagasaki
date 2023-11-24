@@ -23,6 +23,16 @@ Antes de começarmos, temos uma dica: verifique qual versão do NodeJS você est
 ## Três formas de dar update NodeJS em máquinas Linux
 Quando o assunto é atualizar Node Linux, há três formas principais com as quais isso pode ser feito. Na sequência, daremos detalhes sobre cada uma delas.
 
+## Meu node/npm não está instalado
+Apenas execute esse comando, ele irá instalar uma versão antiga do node, já considerada `deprecated` ou desatualizada, mas como iremos atualizar em seguida, não terá problema.
+
+O comando cURL é:
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
 ## Usando nvm
 O Node Version Manager, mais conhecido como NVM, é de longe a melhor maneira para se dar update NodeJS em máquinas Linux.
 
