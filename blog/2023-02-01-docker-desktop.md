@@ -120,6 +120,38 @@ E, quando for usar contêineres Windows, primeiro inicie o serviço:
 Start-Service docker
 ```
 
-É isso. Simples, né? Espero que tenha ajudado.
+## Consigo instalar o Docker via CLI usando WSL diretamente?
+
+Sim, caso você utilize o WSL, você irá adicionar o docker as dependências da apt
+
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
+
+Em seguida, você irá instalar a última versão do Docker
+
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+E depois você poderá verificar se o Docker está instalado corretamente
+
+```bash
+docker --version
+```
+
+É isso. Muito simples, né? Espero que tenha ajudado.
 
 Caso você ainda queira revisar a primeira versão [desse artigo](https://www.tabnews.com.br/Yagasaki/instalando-o-docker-no-wsl-2-sem-o-docker-desktop).
