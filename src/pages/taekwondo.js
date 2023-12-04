@@ -103,16 +103,17 @@ export default function About() {
 
                     <h3>Achievements & Goals:</h3>
                     <div className="positions">
-                        {/* <h4>Campinas Fighters</h4>
-                        <p>
-                            <strong>🥋 Black Belt (1th Dan)</strong> | <i>2023</i> <br />
+                        <h4>Campinas Fighters</h4>
+                        {/* <p>
+                            <strong>🥋 Black Belt (1st Dan)</strong> | <i>2023</i> <br />
+                            <a href="">Link to Course Completion (PT-BR)</a> <br />
                         </p> */}
 
-                        {/* <h4>São Roque Internacional</h4>
+                        <h4>São Roque International</h4>
                         <p>
-                            <strong>🥈 Second Place</strong> | <strong>Campinas Fighters</strong>{" "}
+                            <strong>🎖️ First Place</strong> | <strong>Campinas Fighters</strong>{" "}
                             | <i>2023</i>
-                        </p> */}
+                        </p>
 
                         <h4>Copa América de Taekwondo</h4>
                         <p>
