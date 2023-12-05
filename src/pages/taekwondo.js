@@ -103,7 +103,7 @@ export default function About() {
 
                     <h3>Achievements & Goals:</h3>
                     <div className="positions">
-                        <h4>Campinas Fighters</h4>
+                        {/* <h4>Campinas Fighters</h4> */}
                         {/* <p>
                             <strong>🥋 Black Belt (1st Dan)</strong> | <i>2023</i> <br />
                             <a href="">Link to Course Completion (PT-BR)</a> <br />
