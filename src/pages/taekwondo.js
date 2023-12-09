@@ -57,7 +57,7 @@ export default function About() {
                         src="https://pbs.twimg.com/media/FtcDfyDacAIAzpg?format=jpg&name=large"
                         alt="Campinas Fighters"
                     />
-                    <h2>1st Kup Belt at Campinas Fighters</h2>
+                    <h2>1st Dan (Black Belt) at Campinas Fighters</h2>
 
                     <p>
                         Hi, my name is Anderson Marlon, AKA Yagasaki. In this section I'll
@@ -95,10 +95,9 @@ export default function About() {
                     </p>
 
                     <p>
-                        I'm currently an athlete at Campinas Fighters, 1st Kup fighting in the
-                        63kg and 68kgs category. My intention is to conquer the
-                        black belt and continue with the conquests and victories that await
-                        me.
+                        I'm currently an athlete at Campinas Fighters, 1st Dan fighting in the
+                        63kg and 68kgs category. My intention is to conquer the São Paulo Team and Brazilian Team
+                        and continue with the conquests and victories that await me.
                     </p>
 
                     <h3>Achievements & Goals:</h3>
