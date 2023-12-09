@@ -105,7 +105,7 @@ export default function About() {
                         <h4>Campinas Fighters</h4>
                         <p>
                             <strong>🥋 Black Belt (1st Dan)</strong> | <i>2023</i> <br />
-                            <a href="">Link to Course Completion (PT-BR)</a> <br />
+                            <a href="https://yagasaki.dev/blog/taekwondo-black-belt">Link to Course Completion (PT-BR)</a> <br />
                         </p>
 
                         <h4>São Roque International</h4>
