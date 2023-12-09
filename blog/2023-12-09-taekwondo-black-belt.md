@@ -13,9 +13,8 @@ authors:
 ![Leslie Jones](https://images.unsplash.com/photo-1525198104776-f6e8a873f9b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 Antes de apresentar meu trabalho de conclusão de curso, que nada mais é do que validar minha parte teórica dentro do Taekwondo,
-recomendo que você veja (em inglês), toda a minha trajetória no tatame. Sei que isso não tem nada a ver com programação, 
+recomendo que você veja (em inglês), [toda a minha trajetória no tatame](https://yagasaki.dev/taekwondo). Sei que isso não tem nada a ver com programação, 
 como eu tenho o costume de publicar aqui, mas deixo registrado.
-
 
 # Taekwondo Por Anderson Marlon Tomaz Alves
 
