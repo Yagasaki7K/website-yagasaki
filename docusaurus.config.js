@@ -51,13 +51,13 @@ const config = {
     ({
       image: "https://github.com/Yagasaki7K.png",
       navbar: {
-        title: "Yagasaki Zettelkasten",
+        title: "Yagasaki/Blog",
         logo: {
           alt: "Anderson Marlon // Software Developer",
           src: "https://github.com/yagasaki7k.png",
         },
         items: [
-          //   { to: "/", label: "Início", position: "left" },
+          { to: "/", label: "Início", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/docs/git-push-results-in-authentication-failed", label: "Docs", position: "left" },
 
