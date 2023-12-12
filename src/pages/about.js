@@ -100,6 +100,21 @@ export default function About() {
                     <div className="positions">
                         <h4>Software Developer</h4>
                         <p>
+                            <strong>Whatsupper</strong> | <i>August 2023 — December 2023</i>
+                        </p>
+                        <p>
+                            Communication with e-commerce applications, Integration with IA,
+                            SigaAntenado Project and more.
+                        </p>
+
+                        <p>
+                            Using technologies like jQuery, React, TypeScript, NodeJS, CI/CD, Firebase, Rocketchat, Google Cloud Platform, Firebase Logging, integration and unit tests with Jest, NestJS, GPT Integration and Stripe.
+                        </p>
+
+                        <h4>Systems Development Analyst</h4>
+
+                        <h4>Software Developer</h4>
+                        <p>
                             <strong>Linx S.A.</strong> | <i>October 2022 — June 2023</i>
                         </p>
                         <p>
