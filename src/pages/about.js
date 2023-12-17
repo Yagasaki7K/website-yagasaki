@@ -160,98 +160,135 @@ export default function About() {
                     <div className="certificates">
                         <p>
                             <strong>
-                                Complete Dialogflow - Master the Creation of Virtual Assistants{" "}
+                                TDD – Guided Software Development Tests – via Coursera (Free){" "}
                             </strong>
-                            by Universidade Global, Rogerio Guimaraes - November 2023
-                        </p><p>
+                            by  Instituto Tecnológico de Aeronáutica (ITA) - December 2023
+                        </p>
+
+                        <p>
                             <strong>
                                 Modern Web with Projects (JS/Typescript/React/Node){" "}
                             </strong>
                             by COD3R - August 2022
                         </p>
+
+                        <p>
+                            <strong>
+                                Complete Dialogflow - Master the Creation of Virtual Assistants{" "}
+                            </strong>
+                            by Universidade Global, Rogerio Guimaraes - November 2023
+                        </p>
+
+                        <p>
+                            <strong>
+                                Modern Web with Projects (JS/Typescript/React/Node){" "}
+                            </strong>
+                            by COD3R - August 2022
+                        </p>
+
                         <p>
                             <strong>Workshop Figma </strong>
                             by Design Culture - April 2022
                         </p>
+
                         <p>
                             <strong>
                                 Introduction and Complete Course in Computer Science{" "}
                             </strong>
                             by Harvard - March 2022
                         </p>
+
                         <p>
                             <strong>Participation, Proud Tech </strong>
                             by Softplan - March 2022
                         </p>
+
                         <p>
                             <strong>Agile Days  </strong>
                             by Instituto de Gestão e Tecnologia da Informação (IGTI) - November
                             2021
                         </p>
+
                         <p>
                             <strong>Participation, Masterclass Github Actions </strong>
                             by Azure na Prática - January 2021
                         </p>
+
                         <p>
                             <strong>Participation, Hackathon (Third Place) </strong>
                             by Shawee, AMBEV Hackathon - December 2020
                         </p>
+
                         <p>
                             <strong>Linux Terminal </strong>
                             by Profº Diego Mariano - October 2020
                         </p>
+
                         <p>
                             <strong>Introduction to the Linux Operation System </strong>
                             by Profº Diego Mariano - October 2020
                         </p>
+
                         <p>
                             <strong>Introduction to MySQL Database </strong>
                             by Profº Diego Mariano - October 2020
                         </p>
+
                         <p>
                             <strong>Creating Dynamic Web Pages with PHP </strong>
                             by Profº Diego Mariano - October 2020
                         </p>
+
                         <p>
                             <strong>Facebook Blueprint - Basic to Advanced </strong>
                             by Faculdade do Marketing Digital - July 2020
                         </p>
+
                         <p>
                             <strong>11th Edition - Omnistack Week </strong>
                             by Rocketseat - March 2020
                         </p>
+
                         <p>
                             <strong>Introduction to Git and Version Control </strong>
                             by Digital Innovation One - February 2020
                         </p>
+
                         <p>
                             <strong>Getting Started with Git and Your Commands </strong>
                             by Digital Innovation One - February 2020
                         </p>
+
                         <p>
                             <strong>Arctic Code Vault Contributor </strong>
                             by Github Archive Program - February 2020
                         </p>
+
                         <p>
                             <strong>Essential Programming Logic </strong>
                             by Digital Innovation One - February 2020
                         </p>
+
                         <p>
                             <strong>Internet programming with HTMl5 and CSS3 </strong>
                             by Digital Innovation One - February 2020
                         </p>
+
                         <p>
                             <strong>Web Programming for Scientific Dissemination </strong>
                             by Profº Diego Mariano - January 2020
                         </p>
+
                         <p>
                             <strong>Web Design with PHP, HTML, CSS and JS </strong>
                             by Udemy - January 2020
                         </p>
+
                         <p>
                             <strong>Illustration and Graphic Design for the Web </strong>
                             by Bradesco - May 2017
                         </p>
+
                         <p>
                             <strong>Web Design and Graphic Design </strong>
                             by MacPoli Cursos - December 2014
