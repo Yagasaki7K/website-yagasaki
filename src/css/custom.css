@@ -66,3 +66,7 @@ a {
 a:hover {
     color: var(--second);
 }
+
+blockquote {
+    color: var(--primary);
+}
