@@ -160,9 +160,9 @@ export default function About() {
                     <div className="certificates">
                         <p>
                             <strong>
-                                TDD – Guided Software Development Tests – via Coursera (Free){" "}
+                                TDD – Guided Software Development Tests{" "}
                             </strong>
-                            by  Instituto Tecnológico de Aeronáutica (ITA) - December 2023
+                            by Instituto Tecnológico de Aeronáutica (Coursera Free) - December 2023
                         </p>
 
                         <p>
