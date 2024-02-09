@@ -100,7 +100,7 @@ export default function About() {
                     <div className="positions">
                         <h4>Software Developer</h4>
                         <p>
-                            <strong>Whatsupper</strong> | <i>August 2023 — December 2023</i>
+                            <strong>WhatsUpper</strong> | <i>August 2023 — December 2023</i>
                         </p>
                         <p>
                             Communication with e-commerce applications, Integration with IA,
@@ -111,14 +111,12 @@ export default function About() {
                             Using technologies like jQuery, React, TypeScript, NodeJS, CI/CD, Firebase, Rocketchat, Google Cloud Platform, Firebase Logging, integration and unit tests with Jest, NestJS, GPT Integration and Stripe.
                         </p>
 
-                        <h4>Systems Development Analyst</h4>
-
                         <h4>Software Developer</h4>
                         <p>
-                            <strong>Linx S.A.</strong> | <i>October 2022 — June 2023</i>
+                            <strong>Stone Co. / Linx S.A.</strong> | <i>October 2022 — June 2023</i>
                         </p>
                         <p>
-                            Currently working on A.I. of communication with e-commerce
+                            Working on A.I. of communication with e-commerce
                             applications.
                         </p>
 
@@ -158,6 +156,20 @@ export default function About() {
                     <h3>Certificates:</h3>
 
                     <div className="certificates">
+                        <p>
+                            <strong>
+                                NLW Expert (Node, TS, Fastify, Prisma, Docker, PostgreSQL, Redis, Zod & WebSocket){" "}
+                            </strong>
+                            by Rocketseat - February 2024
+                        </p>
+
+                        <p>
+                            <strong>
+                                NLW Expert (React, TS, Vite, TailwindCSS, Web Storage & Web Speech){" "}
+                            </strong>
+                            by Rocketseat - February 2024
+                        </p>
+
                         <p>
                             <strong>
                                 TDD – Guided Software Development Tests{" "}
