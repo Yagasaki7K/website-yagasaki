@@ -1,4 +1,5 @@
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: "Anderson Marlon // Yagasaki7K",
   url: "https://yagasaki.vercel.app",
@@ -16,13 +17,13 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "pt-br",
-    locales: ["pt-br"],
+    defaultLocale: "pt-BR",
+    locales: ['pt-BR'],
   },
 
   plugins: [
     "docusaurus-plugin-sass",
-    require.resolve("@cmfcmf/docusaurus-search-local"),
+    require.resolve("@cmfcmf/docusaurus-search-local", { language: 'pt-BR' }),
   ],
 
   presets: [
@@ -57,9 +58,9 @@ const config = {
           src: "https://github.com/yagasaki7k.png",
         },
         items: [
-          { to: "/", label: "Início", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/docs/git-push-results-in-authentication-failed", label: "Docs", position: "left" },
+          { to: "/blog", label: "Publicações", position: "left" },
+          { to: "/docs/command-trigger-pipeline", label: "Documentação", position: "left" },
+          { to: "/about", label: "Sobre", position: "left" },
 
           {
             href: "https://twitter.com/Yagasaki7k",
@@ -122,12 +123,12 @@ const config = {
                 to: "/blog",
               },
               {
-                label: "Docs",
-                to: "/docs/git-push-results-in-authentication-failed",
-              },
-              {
                 label: "Github",
                 to: "https://github.com/Yagasaki7K",
+              },
+              {
+                label: "Instagram",
+                to: "https://instagram.com/yagasaki.dev",
               },
               {
                 label: "Behance",
@@ -136,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Anderson "Yagasaki" Marlon`,
+        copyright: `Copyright © 2014 - ${new Date().getFullYear()} Anderson "Yagasaki" Marlon`,
       },
       colorMode: {
         defaultMode: "dark",
