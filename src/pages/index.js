@@ -47,7 +47,7 @@ export default function Home() {
                     content="https://cdn-images-1.medium.com/max/800/0*eBBvNAU5Qz9roeNf.png"
                 />
                 <meta property="og:site_name" content="Anderson Marlon // Yagasaki" />
-                <meta property="og:locale" content="en_US" />
+                <meta property="og:locale" content="pt-BR" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Anderson Marlon // Yagasaki" />
