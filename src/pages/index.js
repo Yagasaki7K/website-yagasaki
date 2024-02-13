@@ -61,7 +61,7 @@ export default function Home() {
                 <div className="content">
                     <h3><img src="https://github.com/tairosonloa/tairosonloa/raw/main/assets/wave.gif?raw=true" width="25px" /> Hi, I'm Anderson Marlon</h3>
                     <h2>Software <br /> Developer</h2>
-                    <h4>ReactJS | NextJS | Typescript | Styled Components | Firebase | Docker | Rocketchat</h4>
+                    <h4>ReactJS | NextJS | Typescript | NestJS | Firebase | Docker | Rocketchat | Styled Components</h4>
                 </div>
 
                 <Footer />
