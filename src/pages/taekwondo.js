@@ -104,6 +104,11 @@ export default function About() {
                     <div className="positions">
                         <h4>Campinas Fighters</h4>
                         <p>
+                            <strong>📝 Certificate of Attendance for 1st Kyorugui Arbitration Seminar by Nova FETESP</strong> | <i>2024</i>
+                        </p>
+
+                        <h4>Campinas Fighters</h4>
+                        <p>
                             <strong>📝 Referee Certificate by Kombat Taekwondo</strong> | <i>2024</i>
                         </p>
 
