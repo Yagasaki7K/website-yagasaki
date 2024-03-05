@@ -179,13 +179,6 @@ export default function About() {
 
                         <p>
                             <strong>
-                                Modern Web with Projects (JS/Typescript/React/Node){" "}
-                            </strong>
-                            by COD3R - August 2022
-                        </p>
-
-                        <p>
-                            <strong>
                                 Complete Dialogflow - Master the Creation of Virtual Assistants{" "}
                             </strong>
                             by Universidade Global, Rogerio Guimaraes - November 2023
