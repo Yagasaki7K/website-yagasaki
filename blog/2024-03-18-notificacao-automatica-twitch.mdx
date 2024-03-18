@@ -1,0 +1,149 @@
+---
+slug: "notificacao-automatica-da-twitch-para-o-discord"
+title: "Notificação automática da Twitch para o Discord"
+image: "https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+authors: [yagasaki]
+description: >
+  Neste artigo, irei te ensinar a enviar notificação no seu canal do Discord para todo o momento em que sua live estiver online, claro que recomendo que seja a sua live ou de alguém muito conhecido, não para meios comerciais, por conta da quantidade de uma applet/receita dentro da plataforma - no máximo dois na free tier.
+tags: ['Discord', 'Twitch', 'Webhook']
+
+---
+
+![Caspar Camille Rubin](https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+Neste artigo, irei te ensinar a enviar notificação no seu canal do Discord para todo o momento em que sua live estiver online,
+claro que recomendo que seja a sua live ou de alguém muito conhecido - não para meios comerciais - por conta da quantidade
+de uma applet/receita dentro da plataforma - no máximo dois na free tier.
+
+## Parte 1 - Registrar no IFTTT
+Acesse [https://ifttt.com/](https://ifttt.com/) e crie uma conta (se ainda não tiver uma)
+
+## Parte 2 - Criar um Webhook do Discord
+- Encontre o canal do Discord para o qual você gostaria de enviar os tweets.
+- Nas configurações desse canal, encontre a opção Webhooks e crie um novo webhook.
+  **Observação: Este URL deve ser mantido _privado_. Permite que qualquer pessoa escreva mensagens nesse canal específico usando esse URL específico.** Mantenha-o seguro!
+
+  ![WebhookDiscord](http://i.imgur.com/PZE2wFu.png)
+- Nomeie o webhook como quiser e fique à vontade para alterar a imagem de perfil genérica. Escolhi [este ícone](https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-128.png) porque se encaixa bem no círculo.
+- Copie o URL para algum lugar e mantenha-o à mão para a próxima etapa.
+
+### Parte 3 - Criar um novo applet/receita no IFTTT
+1. Acesse [aqui](https://ifttt.com/create) para criar um novo "Applet".
+2. Clique no grande azul "[+] This" e escolha "Twitch" (use a barra de pesquisa para encontrá-lo rapidamente).
+3. Conecte sua conta, se necessário.
+4. Escolha "Nova transmissão iniciada por você" (deve ser a segunda opção da esquerda para a direita).
+5. Clique no grande azul "[+] That" e escolha "Webhooks".
+6. Escolha "Fazer uma solicitação web" (deve ser a única opção).
+7. Preencha os seguintes detalhes:
+   - **URL:** _[seu URL da "parte 2" acima]_
+   - **Método:** POST
+   - **Tipo de conteúdo:** `application/json`
+   - **Corpo:** _[veja o trecho abaixo]_
+8. Clique em "Criar ação".
+9. Pronto!
+
+#### Trecho para o "Corpo"
+Os webhooks são super personalizáveis e permitem criar visuais bastante detalhados. No entanto, seu formato também é um pouco complexo de acertar sem testes extensivos, então aqui está um modelo que seria útil para a maioria das pessoas:
+
+```json
+{
+  "content": "{{ChannelName}} foi ao vivo no Twitch",
+  "embeds": [{
+    "title": "{{ChannelUrl}}",
+    "url": "{{ChannelUrl}}",
+    "color": 6570404,
+    "footer": {
+      "text": "{{CreatedAt}}"
+    },
+    "image": {
+      "url": "{{StreamPreview}}"
+    },
+    "author": {
+      "name": "{{ChannelName}} está transmitindo agora"
+    },
+    "fields": [
+      {
+        "name": "Jogando",
+        "value": "{{Game}}",
+        "inline": true
+      },
+      {
+        "name": "Iniciado em (fuso horário do streamer)",
+        "value": "{{CreatedAt}}",
+        "inline": true
+      }
+    ]
+  }]
+}
+```
+
+Este trecho que produzimos, irá criar uma notificação personalizada como abaixo - usamos o canal do xQcow como exemplo:
+
+<p align="center">
+<img src="https://gist.githubusercontent.com/smiley/78c1c2a57d17a179a978a1438b389710/raw/screenshot_discord_webhook_template.png"/>
+</p>
+
+### Mensagem Personalizada
+Caso queira ter uma mensagem personalizada para alguma categoria, troque a variável pela mensagem que desejar.
+
+Um exemplo, é substituir o content para aquilo que quiser. 
+
+Ao invés de `{{ChannelName}} foi ao vivo no Twitch`, mudaremos para `{{ChannelName}} está ao vivo no Twitch!`, por exemplo.
+
+## Mostrar sua foto de perfil da Twitch no incorporado (avançado)
+Se você deseja mostrar sua foto de perfil do Twitch na caixa:
+
+1. Acesse o Twitch
+2. Clique com o botão direito do mouse em sua foto de perfil no canto superior direito:
+
+<p align="center">
+<img src="https://gist.githubusercontent.com/smiley/78c1c2a57d17a179a978a1438b389710/raw/screenshot_twitch_userarea.png"/>
+</p>
+
+3. Clique em "Copiar endereço da imagem"
+4. Cole esse endereço neste blob em vez de `<URL_DA_IMAGEM>`:
+
+```JSON
+"thumbnail": {
+  "url": "<URL_DA_IMAGEM>"
+},
+```
+
+1. Cole esse blob abaixo da área image no blob principal, para que essa parte mude de:
+
+```JSON
+    "footer": {
+      "text": "{{CreatedAt}}"
+    },
+    "image": {
+      "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_{{ChannelName}}-1280x720.jpg"
+    },
+    "author": {
+      "name": "{{ChannelName}} está transmitindo agora!"
+    },
+```
+
+Para isso:
+
+```JSON
+    "footer": {
+      "text": "{{CreatedAt}}"
+    },
+    "image": {
+      "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_{{ChannelName}}-1280x720.jpg"
+    },
+    "thumbnail": {
+      "url": "<URL_DA_IMAGEM>"
+    },
+    "author": {
+      "name": "{{ChannelName}} está transmitindo agora!"
+    },
+```
+
+**Observação**: O endereço da imagem que você acabou de usar para sua foto de perfil do Twitch pode parar de funcionar se você mudar sua foto. Então é
+recomendado que pegue a imagem URL do seu perfil do Twitch - toda vez que alterar - e cole no blob principal.
+
+## Créditos
+
+- Este guia foi adaptado deste [guia do YouTube para Discord via IFTTT](https://gist.github.com/Godimas/ae8e7c7cbd6236622c777d6bcb7a6748).
+- O ícone do webhook do Twitch é cortesia da FIVEicons LLC e está disponível sob uma licença CC-BY 2.5 aqui: [https://www.iconfinder.com/icons/318551/twitch_twitch.tv_icon](https://www.iconfinder.com/icons/318551/twitch_twitch.tv_icon).
