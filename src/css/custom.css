@@ -2,8 +2,8 @@
 
 :root {
     --background: #161819;
-    --primary: #e0ced2;
-    --dark-primary: #dab1ba;
+    --primary: #2f5ba2;
+    --dark-primary: rgb(62, 67, 116);
     --second: #e8e6e3;
     --second-light: #ccc;
     --third: #e5e5e5;
@@ -33,7 +33,7 @@ body {
 }
 
 .homePage {
-    background: #161819;
+    background: var(--background);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,6 +58,10 @@ body::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
+h2 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
+}
+
 a {
     color: var(--primary);
     text-decoration: none;
@@ -65,8 +69,4 @@ a {
 
 a:hover {
     color: var(--second);
-}
-
-blockquote {
-    color: var(--primary);
 }

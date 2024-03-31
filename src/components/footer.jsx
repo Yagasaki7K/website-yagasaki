@@ -14,11 +14,8 @@ const Footer = () => {
             <div className="footer_center">
                 <strong>Contact</strong>
                 <Link href="mailto:anderson18.marlon@gmail.com">Email</Link>
-                <Link href="https://linkedin.com/in/andersonmarlon">LinkedIn</Link>
                 <Link href="https://twitter.com/Yagasaki7K">Twitter</Link>
-                <Link href="https://api.whatsapp.com/send?phone=5519998018174">
-                    Whatsapp
-                </Link>
+                <Link href="https://discord.gg/jhSepmE7nN">Discord</Link>
             </div>
             <div className="footer_right">
                 <strong>My Work</strong>

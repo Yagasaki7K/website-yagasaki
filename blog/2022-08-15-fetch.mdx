@@ -14,6 +14,8 @@ Essa semana me deparei com um problema, era um problema simples, enviar uma requ
 
 A questão é que eu estava com um problema tão grande com o NextJS a respeito de enviar a requisição, que toda as vezes que eu clicava em enviar, ele retornava _“Failed to fetch”_, não entendi o porquê, isso porque estava usando `console.log(error)` e ele apenas informava isso e nada mais.
 
+<!--truncate-->
+
 Graças a um usuário do Discord (gosha#6801), me informou que pelo fato de estar enviando uma requisição utilizando form, não dava tempo de enviar a requisição, já que todas as vezes, ele dava refresh na página e cancelava. A resposta para isso? Era utiliza o `onSubmit={(e) => e.preventDefault()}` e redirecionar o usuário quando terminasse a execução.
 
 O que o código faz? Ao dar submit, ao invés dele dar aquele famoso refresh do formulário, ele apenas enviará e irá dar um “pausebreak”, não dando continuidade na questão de refresh, assim ficará a sua mercê do que quer fazer em seguida.
