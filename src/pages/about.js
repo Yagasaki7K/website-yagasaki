@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import style from "../css/content.scss";
 import Footer from "../components/footer";
@@ -155,7 +154,7 @@ export default function About() {
 
                     <h3>Certificates:</h3>
 
-                    <div className="certificates">
+                    <div className="certificates" id="awards">
                         <p>
                             <strong>
                                 NLW Expert (Node, TS, Fastify, Prisma, Docker, PostgreSQL, Redis, Zod & WebSocket){" "}

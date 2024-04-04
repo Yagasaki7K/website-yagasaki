@@ -7,6 +7,14 @@
     --second: #e8e6e3;
     --second-light: #ccc;
     --third: #e5e5e5;
+
+    /* SteamUI */
+    --theme: #dd9247;
+    --transparent: rgba(0, 0, 0, 0.6);
+    --transparent-light: rgba(0, 0, 0, 0.2);
+    --transparent-hard: rgba(0, 0, 0, 0.8);
+    --white: #fff;
+    --gray: #9b9b9b;
 }
 
 html {
