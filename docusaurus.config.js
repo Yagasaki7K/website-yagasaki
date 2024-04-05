@@ -22,7 +22,8 @@ const config = {
     },
 
     plugins: [
-        "docusaurus-plugin-sass"
+        "docusaurus-plugin-sass",
+        require.resolve("@cmfcmf/docusaurus-search-local", { language: 'pt-BR' }),
     ],
 
     presets: [
