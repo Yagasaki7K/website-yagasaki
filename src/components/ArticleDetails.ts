@@ -4,20 +4,44 @@ const ArticleDetails = styled.div`
     margin-left: 24.6rem;
     margin-top: 5rem;
 
+    @media (max-width: 1366px) {
+        margin-left: 8rem;
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 1rem;
+    }
+
     .card {
         width: 65rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 1024px) {
+            width: 50rem;
+        }
+
+        @media (max-width: 768px) {
+            width: 94%;
+        }
 
         .details {
             display: flex;
             align-items: center;
             text-align: center;
             justify-content: space-between;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
             
             .tags {
                 display: flex;
                 flex-direction: row;
                 gap: 0.5rem;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
 
                 span {
                     background: var(--background-alt);
@@ -28,6 +52,10 @@ const ArticleDetails = styled.div`
                     font-size: 0.8rem;
                     text-transform: uppercase;
                     padding: 0.5rem 1rem;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -68,6 +96,10 @@ const ArticleDetails = styled.div`
             color: var(--header);
             margin-bottom: 0rem;
             margin-top: 1rem;
+
+            @media (max-width: 768px) {
+                font-size: 2.5rem;
+            }
         }
 
         h2 {
@@ -90,6 +122,15 @@ const ArticleDetails = styled.div`
             width: 1200px;
             object-fit: cover;
             border-radius: 0.5rem;
+
+            @media (max-width: 1024px) {
+                width: 930px;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-left: 0rem;
+            }
         }
 
         p {
@@ -97,6 +138,10 @@ const ArticleDetails = styled.div`
             line-height: 1.8;
             color: var(--font);
             margin-top: 2rem;
+
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
+            }
         }
 
         a {
@@ -111,6 +156,10 @@ const ArticleDetails = styled.div`
             margin-bottom: 1rem;
             color: var(--font-light);
 
+            @media (max-width: 768px) {
+                font-size: 0.8rem;
+            }
+
             code {
                 background: none;
                 font-family: 'JetBrains Mono', monospace;
@@ -124,6 +173,10 @@ const ArticleDetails = styled.div`
             line-height: 1.5;
             color: var(--font);
             margin-left: 1rem;
+
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
+            }
         }
     }
 

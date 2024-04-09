@@ -6,9 +6,31 @@ const HeaderDetails = styled.div`
     align-items: center;
     padding: 10rem 10rem 5rem 10rem;
 
+    @media (max-width: 1366px) {
+        padding: 10rem 0rem 5rem 0rem;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 5rem 0rem 5rem 0rem;
+    }
+
     .leftContent {
         width: 40%;
         margin-right: 5rem;
+
+        @media (max-width: 1366px) {
+            width: 50%;
+        }
+
+        @media (max-width: 1024px) {
+            width: 40%;
+        }
+
+        @media (max-width: 768px) {
+            width: 80%;
+            margin-right: 0rem;
+        }
 
         h1 {
             font-weight: 800;
