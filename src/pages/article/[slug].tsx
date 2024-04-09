@@ -94,7 +94,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
             />
 
             <Head>
-                <title>{frontmatter.title} | Yagasaki7K</title>
+                <title>{frontmatter.title}&nbsp;|&nbsp;Yagasaki7K</title>
             </Head>
 
             <div className="overlay" />
