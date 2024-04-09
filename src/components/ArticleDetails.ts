@@ -89,6 +89,7 @@ const ArticleDetails = styled.div`
             margin-left: -5rem;
             width: 1200px;
             object-fit: cover;
+            border-radius: 0.5rem;
         }
 
         p {

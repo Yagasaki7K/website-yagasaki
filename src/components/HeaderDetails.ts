@@ -44,14 +44,14 @@ const HeaderDetails = styled.div`
 
     .rightContent {
         img {
-            border-radius: .375rem;
+            border-radius: 0.5rem;
         }
     }
 
     .search {
         width: 100%;
         padding: 1rem;
-        border-radius: 0.375rem;
+        border-radius: 0.5rem;
         border: 1px solid var(--border);
         background: var(--background);
         color: var(--font);
