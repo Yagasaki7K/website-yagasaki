@@ -34,8 +34,6 @@ const HomeArticlesDetails = styled.div`
         }
     }
 
-    
-
     .articles {
         display: flex;
         flex-direction: column;
@@ -45,6 +43,24 @@ const HomeArticlesDetails = styled.div`
 
         a {
             text-decoration: none;
+        }
+
+        button {
+            color: var(--font);
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 0.375rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 95.5%;
+            margin-left: 4.5rem;
+
+            &:hover {
+                background: var(--background);
+            }
         }
         
         .article {

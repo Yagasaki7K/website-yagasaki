@@ -7,6 +7,7 @@ import calculateReadingTime from "@/utils/calculateReadingTime";
 import { useState } from "react";
 import Link from "next/link";
 import LayoutArticle from "@/components/LayoutArticle";
+import Head from "next/head";
 
 export interface Frontmatter {
     slug: string;
@@ -76,17 +77,21 @@ export default function Search({ posts }: { posts: PostProps[] }) {
     });
     return (
         <>
+            <Head>
+                <title>Anderson Marlon // Yagasaki7K</title>
+            </Head>
+
             <div className="overlay" />
 
             <HeaderDetails>
-                <input type="text" className="search" placeholder="Pesquisar..." onChange={(e) => setSearch(e.target.value)} />
+                <input type="text" className="search" placeholder="Search a article..." onChange={(e) => setSearch(e.target.value)} />
             </HeaderDetails>
 
             <HomeArticlesDetails>
                 <div className="header">
-                    <h2>Yagasaki/Blog - {posts.length} Artigos Encontrados</h2>
+                    <h2>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
-                    <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Voltar ao Inicio</i></Link>
+                    <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                 </div>
 
                 <div className="articles">

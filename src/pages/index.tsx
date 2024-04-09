@@ -10,6 +10,7 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/pt-br'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import LayoutArticle from "@/components/LayoutArticle";
+import Head from "next/head";
 
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
@@ -71,9 +72,17 @@ export async function getStaticProps() {
     }
 }
 
+function redirectToSearch() {
+    window.location.href = '/search'
+}
+
 export default function Home({ posts }: { posts: PostProps[] }) {
     return (
         <>
+            <Head>
+                <title>Anderson Marlon // Yagasaki7K</title>
+            </Head>
+
             <div className="overlay" />
 
             <HeaderDetails>
@@ -108,6 +117,8 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                             <LayoutArticle {...post} />
                         </a>
                     ))}
+
+                    <button onClick={redirectToSearch}>See more ...</button>
                 </div>
             </HomeArticlesDetails>
         </>

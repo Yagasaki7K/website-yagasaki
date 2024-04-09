@@ -9,6 +9,8 @@ import { PostProps } from '../index';
 import calculateReadingTime from '@/utils/calculateReadingTime';
 import formatDate from '@/utils/formatDate';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -64,6 +66,36 @@ export default function PostPage({ frontmatter, content }: PostProps) {
 
     return (
         <>
+            <NextSeo
+                title={frontmatter.title}
+                description={frontmatter.excerpt}
+                canonical={`https://yagasaki.dev/`}
+                openGraph={{
+                    url: 'https://yagasaki.dev/',
+                    title: frontmatter.title,
+                    description: frontmatter.excerpt,
+                    images: [
+                        {
+                            url: frontmatter.image,
+                            width: 460,
+                            height: 460,
+                            alt: frontmatter.title,
+                            type: 'image/jpeg' || 'image/png',
+                        }
+                    ],
+                    siteName: 'Anderson Marlon // Yagasaki7K',
+                }}
+                twitter={{
+                    handle: '@Yagasaki7K',
+                    site: '@Yagasaki7K',
+                    cardType: 'summary_large_image',
+                }}
+            />
+
+            <Head>
+                <title>{frontmatter.title} | Yagasaki7K</title>
+            </Head>
+
             <div className="overlay" />
 
             <ArticleDetails>
