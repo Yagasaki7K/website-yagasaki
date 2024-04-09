@@ -11,6 +11,7 @@ import formatDate from '@/utils/formatDate';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
+import Copyright from '@/components/Copyright';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -120,7 +121,8 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                         <div dangerouslySetInnerHTML={{ __html: htmlContent || '' }} />
                     </div>
                 </div>
-            </ArticleDetails >
+            </ArticleDetails>
+            <Copyright />
         </>
     );
 }

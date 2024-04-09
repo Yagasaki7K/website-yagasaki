@@ -8,6 +8,7 @@ import { useState } from "react";
 import Link from "next/link";
 import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
+import Copyright from "@/components/Copyright";
 
 export interface Frontmatter {
     slug: string;
@@ -102,6 +103,7 @@ export default function Search({ posts }: { posts: PostProps[] }) {
                     ))}
                 </div>
             </HomeArticlesDetails>
+            <Copyright />
         </>
     );
 }

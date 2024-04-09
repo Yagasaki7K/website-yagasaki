@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ArticleDetails = styled.div`
     margin-left: 24.6rem;
-    margin-top: 11rem;
+    margin-top: 5rem;
 
     .card {
         width: 65rem;

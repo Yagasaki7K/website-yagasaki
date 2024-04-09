@@ -11,6 +11,7 @@ import 'dayjs/locale/pt-br'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
+import Copyright from "@/components/Copyright";
 
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
@@ -121,6 +122,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                     <button onClick={redirectToSearch}>See more ...</button>
                 </div>
             </HomeArticlesDetails>
+            <Copyright />
         </>
     );
 }
