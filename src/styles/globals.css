@@ -62,3 +62,19 @@ h1 {
         "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
         "Noto Color Emoji";
 }
+
+body::-webkit-scrollbar {
+    width: 14px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--font);
+    border-radius: 20px;
+    border: 3px solid var(--background);
+}
