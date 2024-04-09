@@ -1,0 +1,85 @@
+---
+title: Guia Detalhado - Configuração do Rocketchat no Azure com Funcionalidades Avançadas
+excerpt: Configuração do Rocketchat no Azure para quem é mais experiente
+image: https://plus.unsplash.com/premium_photo-1674082012152-fb856017c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
+tags: ['RocketChat', 'API', 'Webhook', 'Azure', 'Omnichannel']
+date: '2023-08-30'
+---
+
+![](https://plus.unsplash.com/premium_photo-1674082012152-fb856017c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 "Unsplash+")
+
+Este guia aborda o processo detalhado de instalação e configuração do Rocketchat em uma máquina virtual Ubuntu na plataforma Microsoft Azure - pode funcionar em outras plataformas, mas não foi testado como Google Cloud Plataform, Heroku e outros - com foco em habilitar funcionalidades avançadas como integração com um frame externo e configurações de omnichannel.
+
+## Instalação da Máquina Virtual no Azure
+
+1. Acesse o portal Azure: https://portal.azure.com/
+2. Crie uma nova máquina virtual Ubuntu
+3. Utilize uma senha para acessar a máquina via SSH
+4. Configure o DNS padrão para a máquina virtual
+
+<!--truncate-->
+
+## Instalação e Configuração do Rocketchat
+
+1. Instale o Rocketchat através do seguinte comando:
+  
+``` bash
+sudo snap install rocketchat-server --channel=5.x/stable
+```
+
+2. Configure o portal com o endereço da sua máquina virtual:
+
+```bash
+sudo snap set rocketchat-server siteurl=https://SEU_ENDERECO.azure.com
+```
+
+3. Reinicie o serviço do Rocketchat:
+
+```bash
+sudo systemctl enable --now snap.rocketchat-server.rocketchat-caddy
+sudo snap restart rocketchat-server
+```
+
+4. Acesse o portal configurado e realize as configurações iniciais.
+
+## Configuração do Omnichannel
+
+1. Acesse as configurações do Rocketchat no painel de administração.
+2. Em "Admin / Config / Omnichannel", habilite o "External Frame" e configure a URL do frame externo.
+3. Configure as opções de "Livechat":
+  - Título do Livechat: Defina um nome descritivo.
+  - Roteamento: Atribua novas conversas para um agente bot.
+4. Em "Admin / Config / Accounts", desative a autenticação de dois fatores (TOTP).
+5. Em "Admin / Permissões", desabilite o fechamento de salas omnichannel para os respectivos cargos.
+6. Opcional: Em "Users", adicione um usuário bot com email verificado e defina o cargo dele.
+
+## Integração com Frame Externo
+
+1. Em "Omnichannel / Webhooks", configure a URL do webhook para receber informações do frame externo.
+2. Defina um token secreto para o webhook.
+3. Selecione todas as opções para enviar solicitações ao webhook.
+
+## Configuração de Agentes e Departamentos
+
+1. Em "Omnichannel / Agents", adicione um usuário local (admin) e o usuário bot.
+2. Defina o status do bot como disponível.
+3. Em "Omnichannel / Managers", adicione um usuário local (admin).
+4. Em "Omnichannel / Departments", crie os departamentos desejados (por exemplo: HUMAN_DEPARTMENT e BOT_DEPARTMENT).
+
+## Configurações Adicionais
+
+1. Personalize o CSS customizado conforme necessário, por exemplo:
+
+```CSS
+.rcx-sidebar-footer footer {
+  height: 6rem !important;
+  text-align: center;
+}
+```
+
+## Considerações Finais
+Este guia abordou passo a passo a instalação e configuração do Rocketchat no Azure, mas tem possibilidade de funcionar em outros
+ambientes como Google Cloud Plataform, Heroku e outros. Assim habilitando recursos avançados como integração com um frame externo
+e configurações de omnichannel. Certifique-se de verificar a documentação oficial do Rocketchat para obter informações
+atualizadas e detalhadas sobre cada configuração, lembrando que estamos usando a versão 5.x que evita certas limitações de recursos
+como o funcionamento do Frame Externo, por exemplo.

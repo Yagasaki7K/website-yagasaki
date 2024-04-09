@@ -1,0 +1,170 @@
+---
+title: "Evento da Rocketseat junto da minha experiência e uso do Bun"
+excerpt: "Juntei o evento NextLevelWeek e testei o Bun, novo compilador Javascript"
+image: "https://images.unsplash.com/photo-1601034693303-8f8848f3ffa1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+tags: ['Node', 'Bun', 'Tutorial', 'Análise', 'Rocketseat']
+date: '2024-04-02'
+---
+
+![Gil Ndjouwou](https://images.unsplash.com/photo-1601034693303-8f8848f3ffa1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+Bun para quem não conhece, é um runtime Javascript All-in-One, o que significa? É que ele faz tudo que o Node faz e um
+pouco mais, ele tem sistema de testes, ele também tem o próprio gerenciador de pacotes (package manager) e é muito mais
+rápido que `npm` e `yarn`, com a sua versão Bun 1.1, agora ele também está disponível para Windows, ele permite testes
+dentro de sua própria aplicação, algo que o Node demorou um tempo para incrementar, e todos eram reféns do Jest ou
+similares.
+
+Claro que ele ainda utiliza algumas coisas do próprio Node, como o caso do `node:fs` para deletar arquivos ou fazer
+algumas necessidades, mas em comparação, ele já supera e muito o próprio Node pela absurda velocidade que ele vem
+apresentando. Node é escrito em JavaScript, Python, C, C++ e CoffeeScript, enquanto Bun é escrito em Zig que para
+muitos, além de ser uma experiência a um escopo bem pequeno, vem trazendo resultados absurdos em comparação e as imagens - segundo o Bun - não mentem.
+
+Vale lembrar que tanto Node, quanto Deno, ambos são escritos em cima do V8 do Chrome, enquanto o Bun, é escrito em cima
+do Javascript Core, que é o motor do Safari, o mesmo motor que é utilizado até mesmo no React Native - biblioteca de
+desenvolvimento mobile.
+
+<p align="center">
+  <img src="https://github.com/Yagasaki7K/website-nlwunite/assets/23272064/c6e7c0ce-fc58-48d4-81e2-1f412db1c8f2"/>
+  <img src="https://github.com/Yagasaki7K/website-nlwunite/assets/23272064/0b00b2ae-31e5-42e1-9efc-389fc7ecd89b"/>
+</p>
+
+## Node.js x Bun
+
+Estou aproveitando que está acontecendo, nesse exato momento, o evento da Rocketseat e usarei como base apenas a
+primeira aula do evento. No evento, criaremos uma aplicação de eventos presenciais usando Node, mas gostaria de
+aproveitar o espaço e fazer o comparativo, já que estamos usando aplicativos reais para fazer o teste, o que é bem
+interessante para ver a questão do peso dessa briga - ao invés de apenas ver tempo de execução de looping, como já fiz
+anteriormente em [fight-nodexbun](https://github.com/Yagasaki7K/fight-nodexbun).
+
+No repositório mencionado, apenas testei a velocidade de instalação, a velocidade em adicionar novos módulos e a
+execução dele usando NextJS - framework de frontend - para ver como ambos se comportariam nessa situação. Claro que,
+esses dados são bem relativos, já que estava usando o Bun v1.0 e o Node v20.12 para fazer o comparativo, além do meu
+sistema operacional ser um Windows rodando em WSL, já que rodando em uma máquina Linux poderia trazer bem mais
+resultados significativos. Além do mais, aproveitando que se tratava de NextJS, utilizei também do turbopack no
+cenário do Node para ver seu comportamento e executar os testes.
+
+Você pode ver todos os detalhes de como foi a "briga" lá no README.md do repositório.
+
+## NLW Unite e comparativo de código
+
+Inicialmente na primeira aula, Diego menciona os comparativos, do uso do Node, do uso do Deno, e do uso do Bun. Ele
+menciona que Node é o que grandes empresas estão acostumadas usar, a vantagem do Deno e do Bun é que ambos já possuem
+Typescript por padrão, o que significa mais segurança para o código e menciona uma desvantagem - da qual não concordo
+cem por cento - que Bun é mantido apenas por uma equipe pequena de desenvolvedores, enquanto o Node já está mais
+tempo no mercado. Tire suas conclusões, mas não vou mencionar meu comentário aqui, mas deixarei uma 
+[thread lá no Twitter/X em inglês](https://twitter.com/Yagasaki7K/status/1775178680085500262), sobre o assunto.
+
+Logo de começo, tivemos a necessidade de fazer toda a configuração do Typescript do lado do Node, enquanto do lado
+do Bun isso já é nativo, para quem não está acostumado fica até chatinho, mas não é um problema.
+
+Assim que adicionamos o `fastify` na aplicação, já vemos a velocidade que cada um levou para instalar.
+
+```bash
+...
+├─ string_decoder@1.3.0
+├─ thread-stream@2.4.1
+├─ toad-cache@3.7.0
+├─ uri-js@4.4.1
+└─ yallist@4.0.0
+Done in 7.32s.
+```
+
+```bash
+bun add v1.1.0 (5903a614)
+
+installed fastify@4.26.2
+
+63 packages installed [522.00ms]
+```
+
+E esse tipo de comportamento já surpreende e muito logo de cara, mas como eu já fiz essa comparação anteriormente, na
+briga, como mencionado no repositório, não irei entrar nesses detalhes por ora.
+
+Com um exemplo simples, só pegando o Fastify e o executando na porta 3333, adicionei o `console.time()` e
+`console.timeEnd()` para ver quanto tempo toda a execução levou em sua primeira vez, usando o mesmo código, tanto em
+Node, quanto em Bun e esse foi o resultado:
+
+- Node: Tempo de execução: 13.869ms
+- Bun: [12.91ms] Tempo de execução
+
+No script de execução, estamos usando no Node `tsx src/server.ts`, enquanto no Bun, estamos usando `bun run server.ts`
+
+Claro que é uma diferença bem pouca, mas vamos aprofundar mais. O que foi usado no código?
+
+```ts
+console.time("Tempo de execução");
+
+import fastify from "fastify";
+
+const app = fastify();
+
+app.get("/", () => {
+  return "Hello World!";
+});
+
+app.listen({ port: 3333 }).then(() => {
+  console.log("HTTP server running on http://localhost:3333");
+  console.timeEnd("Tempo de execução");
+});
+```
+
+Apenas isso, a conclusão com base nisso varia muito a baixo nível do qual eu não tenho conhecimento para falar sobre,
+mas acredito que se tratando de uma biblioteca externa - caso do Fastify - isso pode levar a uma alteração na resposta
+definitiva, diferente de estarmos usando o Node "puro" e o Bun "puro" para fazer a comparação, mas como estamos usando
+comparação com projetos reais, não vem ao caso.
+
+Mas e a nível de projeto, usando mais bibliotecas, mais rotas, mais funcionalidades. Como ficaria o tempo de execução?
+
+Levando em consideração que adicionamos até agora: Prisma, Fastify Swagger UI e o Fastify Swagger, além de ter feito toda a configuração do
+banco de dados, então, ficou um tempo para ter cache, além de executar esses comandos com o servidor desligado, ele
+não está rodando junto com as instalações e migrations.
+
+### Primeira Migration
+- Node: ✔ Generated Prisma Client (v5.12.0) to ./node_modules/@prisma/client in 35ms
+- Bun: ✔ Generated Prisma Client (v5.12.0) to ./node_modules/@prisma/client in 33ms
+
+### Instalando Fastify Swagger
+- Node: ├─ openapi-types@12.1.3 └─ yaml@2.4.1 | Done in 4.07s.
+- Bun: installed @fastify/swagger@8.14.0 // 5 packages installed [414.00ms]
+
+### Fastify Swagger UI
+- Node: ├─ wrap-ansi-cjs@7.0.0 └─ wrap-ansi@8.1.0 | Done in 3.12s.
+- Bun: installed @fastify/swagger-ui@3.0.0 // 48 packages installed [679.00ms]
+
+### Fastify Cors
+- Node: ├─ mnemonist@0.39.6 └─ obliterator@2.0.4 | Done in 5.69s.
+- Bun: installed @fastify/cors@9.0.1 // 3 packages installed [2.09s]
+
+Fora esses detalhes, apenas fizemos uma requisição usando HTTP Client para criar uma tabela no banco, mas como isso, não
+envolve o uso do Bun ou do Node, acredito que não fará diferença. Claro que, ainda adicionarei detalhes vistos nas
+outras aulas na parte de conclusão, mas por enquanto é isso.
+
+## Conclusão com base na Primeira Aula
+Vejo que sim, se você for desenvolvedor Node, você terá praticamente ZERO problemas para migrar para o bun, exceto, em
+ficar decorando vicios de chamadas como o meu caso de `yarn dev` ou outros scripts, mas fora isso, acredito que a
+mudança é tão ligeira que é quase insignificante no meio do desenvolvimento e durante a criação, claro que instalação de
+grandes bibliotecas e modulos, isso pode fazer uma mudança significativa, mas para chegar a esse nível, o projeto tem
+que estar absurdamente grande para vermos a real diferença entre os dois.
+
+Se ainda tiver em dúvidas como foi feito o projeto, e queira clonar para testar na sua própria máquina
+Linux/Windows/Mac, você pode acessar o repositório da aplicação que desenvolvi com a Rocketseat na 
+[própria página do repositório](https://github.com/Yagasaki7K/website-nlwunite) e testar por você mesmo.
+
+Como ando dizendo, as tecnologias estão evoluindo muito rápido, então, não sou o dono da verdade, estou apenas usando
+com base no que eu vejo, e no que eu aplico no dia a dia, fique à vontade para me questionar.
+
+## Conclusão Finais
+
+Bun é sim, muito veloz em comparação ao Node em vários aspectos, o que faz eu desejar, claro, trocar o runtime do
+Javascript que uso nos meus projetos. Ainda mais se tratando de Typescript, ele e muito mais performável que o Node,
+por vir de forma nativa e claro, ele infnorma até mesmo quando as importações são de tipagens e elas precisam
+ser definidas como `type`, na hora da importação.
+
+Outro fator que eu vi, é que durante o `building` do desenvolvimento na Vercel, a velocidade dele na hora de instalar,
+fazer as configurações e tudo mais, que é na hora que a gente faz o commit do projeto, ele é absurdamente mais veloz,
+superando até o mesmo o `turbopack` da própria Vercel.
+
+Então minha recomendação é, vale a pena utilizar o Bun para aplicações em pequena e médias escalas, para evitar
+problemas futuros de manutenção. Incluindo algumas abordagens que ele faz no Typescript que são mais restritas
+do que o próprio Node em si, mas são detalhes e nada que o costume não supere esses pequenos detalhes que fazem
+diferença em uma aplicação de grande escala.

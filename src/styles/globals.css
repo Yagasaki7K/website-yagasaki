@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background: #0e1016;
+    --background-alt: #232634;
+    --border: #181b25;
+    --header: #eceef3;
+    --font: #acb2c9;
+    --font-light: #dadde7;
+    --font-dark: #5f6b8a;
+    --gray: #7f869c;
+    --red: #e10065;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: var(--background)
+}
+
+.overlay {
+    background: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    stroke: var(--grid-color);
+    mask-image: linear-gradient(0deg, transparent, var(--background-alt));
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'><path d='M0 .5H31.5V32'/></svg>");
+    z-index: -1;
+}
+
+h1 {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+        "Noto Color Emoji";
+}

@@ -1,0 +1,225 @@
+---
+title: "Desvendando o NestJS, uma jornada para iniciantes"
+excerpt: "Entenda o que é NestJS e suas funções de modulos, controladores e serviços"
+image: "https://nestjs.com/header.1af6756a.png"
+tags: ["NestJS", "Angular", "Java", "TypeScript"]
+date: '2024-02-13'
+---
+
+![Nestjs.com](https://nestjs.com/header.1af6756a.png)
+
+Minha maior dificuldade com NestJS era realmente entender Módulos, Controladores e Serviços, mas talvez o motivo disso
+seja não ter tido contato anterior com linguagens "mais pesadas" como Java ou frameworks como Angular que constantemente
+lidam com esse tipo de cenário.
+
+Então, vou fazer uma espécie de Zettelkasten ou até mesmo - de leigo para leigo - e anotar tudo que eu tenho de
+dificuldade, cenários, analogias e tudo que é necessário para aprendermos juntos como o que é o NestJS e como ele
+funciona, já aviso que isso pode ficar grande esse tipo de conteúdo, então recomendo você utilizar o menu da direita
+para se orientar em tópicos e assuntos que sejam pertinentes a você ou ao assunto que esteja procurando. Bom, vamos lá!
+
+<!--truncate-->
+
+## O que é o NestJS?
+
+NestJS é um framework para construção de aplicativos web em Node.js, que utiliza conceitos e padrões familiares aos
+desenvolvedores que já trabalham com Angular. Ele foi projetado para ser escalável, modular e fácil de manter. O NestJS
+utiliza TypeScript como sua linguagem principal, o que permite aos desenvolvedores aproveitar recursos avançados de
+tipagem estática e compilação para JavaScript.
+
+### Dúvida: Injeção de Dependência tem a ver?
+
+Resumidamente, quando você injeta uma dependência, você tá fornecendo tudo que é externo e que uma classe precisa pra
+funcionar. Se você simplesmente importa de uma classe pra outra você acaba criando um acoplamento, porque a classe que
+recebe o import está diretamente ligada a que fornece. 
+
+Então sim, tem a ver, já que o NestJS usa classes.
+
+## Entendendo o que é Modules, Providers, Controllers e Services no NestJS
+
+### Modules (Módulos)
+Seguindo a documentação do NextJS:
+
+> Um módulo é uma classe anotada com um decorador @Module(). O decorador @Module() fornece metadados que o Nest usa para organizar a estrutura da aplicação.
+> 
+> Cada aplicação tem pelo menos um módulo, um módulo raiz. O módulo raiz é o ponto de partida que o Nest usa para construir o grafo da aplicação - a estrutura interna de dados que o Nest usa para resolver relacionamentos e dependências de módulos e provedores. Embora teoricamente pequenas aplicações possam ter apenas o módulo raiz, esse não é o caso típico. Queremos enfatizar que os módulos são altamente recomendados como uma maneira eficaz de organizar seus componentes. Assim, para a maioria das aplicações, a arquitetura resultante empregará múltiplos módulos, cada um encapsulando um conjunto de capacidades intimamente relacionadas.
+
+Entendeu? Senão, nem eu.
+
+Mas vamos dissecar isso. Um módulo é uma classe que usa um decorador chamado `@Module()`, ou seja, ela é identificada
+por essa nomenclatura. Um módulo é obrigado a ter um módulo raiz que é o principal, talvez aquele vinculado ao
+aplicativo em si, ou seja, a base da árvore tem de vir de um módulo e depois a gente vai separando eles ou até mesmo
+criando galhos separados para a mesma aplicação. Sendo assim, eles são responsáveis e altamente recomendados, como
+citado acima por ser uma maneira eficaz de organizar os componentes.
+
+```typescript
+import { Module } from '@nestjs/common';
+import { CatsController } from './cats.controller';
+import { CatsService } from './cats.service';
+
+@Module({
+  controllers: [CatsController],
+  providers: [CatsService],
+})
+export class CatsModule {}
+```
+
+Aqui, podemos ver que o modulo é responsável pela importação dos controladores (controllers) e do provedores
+(providers), mas vamos usar a nomenclatura em português para facilitar, estamos aprendendo, não é mesmo?
+
+Sabe-se que no controllers por exemplo, ele é um array: `controllers: [CatsController],`, podendo colocar mais de um
+controlador dentro do módulo e assim, se repetindo para os demais. 
+
+Mas vamos a minha opinião e experiência. Sabemos que podemos importar mais de vinte, se necessário, então, temos que ter
+consciência e bom senso de limitar isso a cinco e utilizar outros módulos para fazer outras importações, caso ao
+contrário, será a mesma coisa que no React, veremos uns trinta useState para criar coisas simples que até mesmo o
+Javascript puro poderia fazer.
+
+![](https://docs.nestjs.com/assets/Shared_Module_1.png)
+
+Então atente-se a criação e importação de controladores para dentro dos módulos, se for o caso, crie ramificações, crie
+outro módulo, importe ele e importe os controladores para dentro dele identificando o
+cenário mais correto daquela situação, como Users Module, Orders Module e Chat Module (como o caso da imagem acima).
+
+Para criarmos um módulo usando CLI, nós podemos usar o seguinte comando:
+
+```bash
+nest g module cats
+```
+
+### Providers (Provedores)
+
+Segundo a documentação, novamente, já que é importante seguir ela e segundo a própria comunidade, a documentação do
+NestJS é uma das mais bem feitas da atualidade.
+
+> Os Provedores são um conceito fundamental no Nest. Muitas das classes básicas do Nest podem ser tratadas como
+> provedores - serviços, repositórios, fábricas, ajudantes, e assim por diante. A ideia principal de um provedor é que
+> ele pode ser injetado como uma dependência; isso significa que os objetos podem criar várias relações entre si, e a
+> função de "conectar" esses objetos pode ser amplamente delegada ao sistema de tempo de execução do Nest.
+
+Entendeu o cenário? Eu acredito que ficou mais complexo do que a explicação dos módulos, mas vamos lá. De volta a
+dissecar.
+
+Provedores é um conceito inicialmente, então ele é apenas uma ideia, mas ideia de que? De que classes básicas, são
+chamadas de provedores, como serviços, repositórios e outros exemplos de cenário, como eu traduzi ao pé da letra,
+fábricas e ajudantes são na verdade factories e helpers, pode ser que você tenha noção do uso desse cenário melhor do
+que eu.
+
+A ideia dele é que ele pode ser injetado como uma dependência, lembra que mencionei mais acima? O que quer dizer que
+objetos podem ter relações entre si - lá ele - e podem se conectar e comunicar-se entre si, é uma espécie de pássaro
+passando informações entre as árvores (módulos).
+
+Então o CatsService (service) mencionado dentro do provedores no código dos módulos, está correto? Sim. Services é um
+provider.
+
+Ficou confuso? Se sim, entenda que no código, na hora que estamos importando CatsService para dentro de providers,
+estamos dizendo para nosso provedor que esse serviço (CatsService) irá prover uma funcionalidade, entendeu? Então, ele
+não é um modulo, ele é provedor, o motivo? Ele é um serviço. Por isso, é fundamental a nomenclatura, separar os nomes
+como DogService, BirdService, ou CatHelpers para entender que todos eles fazem parte de um provedor, é uma prática útil
+para organizar o código e evitar confusões.
+
+### O que é Serviços (Services) e quando usar?
+
+Já sabemos que Services é uma coletânea de provedores, se ele tem alguma funcionalidade, ele é importado dentro
+do provedor, mas BirdService é um provedor? Sim. Ele é um service? Sim. Ele é um Helper? Não, já que não usamos
+essa nomenclatura e isso pode atrapalhar seu entendimento do código.
+
+No NestJS, os serviços são classes que são importadas dentro do provedor, como mencionado, e eles possuem a lógica de
+negócios da aplicação. Eles são responsáveis por executar tarefas específicas, como acessar bancos de dados, realizar
+operações de leitura e gravação, executar cálculos complexos e interagir com outros serviços ou componentes da
+aplicação, vamos interpretar eles sendo como funções no Javascript, responsáveis por fazer a questão funcionar.
+
+Acredito que no caso das importações, lembra que eu falei que o ideal é chamarmos cinco módulos e depois separarmos, se
+for o caso? Acredito que não tenha problema ter vinte importações, desde que ele não seja no módulo raiz, e sim,
+no módulo que ele é responsável, vamos usar o caso da calculadora, certo? Quantos services ele pode ter? 
+
+Posso criar um para adição, outro para subtração, outro para multiplicação e assim por diante e não tem problema. O
+problema maior é você colocar todas essas importações dentro do módulo raiz, sendo que estamos criando um celular,
+imagina a bagunça que seria, então o ideal, é criarmos um módulo chamado calculatorModule() e importar lá dentro
+esses services.
+
+Outro exemplo é, em uma aplicação de lista de tarefas, você pode ter um serviço de TaskService que contém métodos para
+criar, atualizar, recuperar e excluir tarefas do banco de dados. Esse serviço pode ser importado (injetado) em um
+controlador de tarefas para lidar com as solicitações HTTP relacionadas às tarefas.
+
+Para criar um serviço, via CLI, você pode utilizar o seguinte comando:
+
+```bash
+nest g service cats
+```
+
+### Controllers (Controladores)
+
+E vamos ver na documentação.
+
+> O objetivo de um controlador é receber solicitações específicas para a aplicação. O mecanismo de roteamento controla qual controlador recebe quais solicitações. Frequentemente, cada controlador tem mais de uma rota, e diferentes rotas podem realizar diferentes ações. Para criar um controlador básico, usamos classes e decoradores. Os decoradores associam classes com metadados necessários e permitem que o Nest crie um mapa de roteamento (vinculando solicitações aos controladores correspondentes).
+
+Vamos simplificar isso. Qual é a funcionalidade de um controlador? Receber solicitações especificas para a aplicação, então podemos definir
+que ele pode receber uma funcionalidade para deletar, adicionar ou editar uma funcionalidade dentro da aplicação. Como eles podem ter mais
+de uma rota, então fica claro que podemos definir um `task/delete` ou `task/create` como rotar para fazer determinadas operações, como
+no caso de deletar e criar.
+
+Para criar um controlador básico, utilizamos classes, assim como nos serviços e decoradores (decorators), os decoradores nesse caso do controlador
+é o `@Controller('cats')`, ele é que é o responsável por criar a rota que a aplicação ou usuário irá acessar para conseguir determinada coisa, vamos
+ver no código abaixo por exemplo:
+
+```typescript
+import { Controller, Get } from '@nestjs/common';
+
+@Controller('cats')
+export class CatsController {
+  @Get()
+  findAll(): string {
+    return 'This action returns all cats';
+  }
+}
+```
+
+Explicando o código acima, nós pegamos o `@Controller`, definimos que a rota que iremos usar (método de roteamento) será
+`cats`, então quando acessar `localhost:3000/cats`, por exemplo, seremos jogados para esse lugar. Definimos que ele é
+uma classe, como a nomenclatura já diz e que ele tem um `@Get()`.
+
+Mas o que isso significa? É que pelo método HTTP, essa rota ela terá o método GET, então fica fácil definir o que ela
+irá fazer, no caso, iremos devolver uma informação e dentro ainda, temos uma função chamada `findAll()` que é do tipo
+_string_, que irá retornar `'This action returns all cats'`.
+
+Complicado? Acho que não.
+
+Para criar um controller usando CLI, usamos o seguinte comando:
+
+```bash
+nest g controller name
+```
+
+## Entendendo o cenário
+
+Ficou claro como usamos cada funcionalidade para aprendermos a usar o Nest? Claro, ele é um framework back-end de Javascript,
+então ele é meio que um compilado de funcionalidades em cima do Express. Então temos várias funções semi-prontas,
+que irão facilitar nossa vida para criar uma aplicação.
+
+Usamos um módulo para definir categorias, como o caso de tarefas ou uma calculadora, levando em conta que são aplicações simples,
+usamos um controlador para dizer o que acontece quando acessar aquela rota em especifica, seja para deletar um cálculo ou armazenar ele,
+e usamos o serviço para fazer a funcionalidade funcionar, como fazer um cálculo, por exemplo.
+
+Entendemos que o cenário para a criação desse tipo de aplicação varia muito, acabo que recomendando em utilizar em
+médias-altas aplicações. O que significa? Não há necessidade de utilizar um NestJS para usar métodos HTTP para criar
+uma calculadora por exemplo ou fazer um uso de uma simples API, mas existem vários cenários adequados como criar
+um dashboard financeiro, criar um site de notícias e deixar bem mais completo e esse tipo de cenário.
+
+## Considerações Finais
+
+A documentação dele é bem explicada, como podemos ver, eu consegui entender bem mais o que de fato é o NestJS do que
+seguindo cursos ou vídeos no Youtube, eu simplesmente parei para ler a documentação e usei desse artigo para explicar o
+que eu aprendi para outra pessoa sobre o que foi passado. Entender todo o cenário, ler com calma, ver a funcionalidade
+daquele código pouco a pouco e tentar se auto explicar, é uma das maneiras mais simples de se aprender e absorver
+conhecimento, então não se assuste.
+
+Espero de fato ter conseguido explicar todo o cenário básico do NestJS, espero que você possa pegar projetos
+e ideias no Youtube para clonar ou utilizar a seu favor para fixar ainda mais essas ideias de como ele funciona, e claro,
+entender quando utilizá-lo, já que ele é basicamente um carro bem veloz na mão de quem usa e você não vai usar ele para ir
+na padaria e buscar pão.
+
+Espero ter ajudado, pois a construção desse artigo em si, já foi de grande ajuda até mesmo para mim em entender esse
+cenário e aplicação e bom, qualquer dúvida ou sugestão, você pode me chamar lá no
+[Twitter](https://twitter.com/Yagasaki7k) ou na [Comunidade no WhatsApp](https://chat.whatsapp.com/KOgletvhYCvFIpuo9SNgGJ).
+
+Obrigado por ter lido até aqui e até a próxima!

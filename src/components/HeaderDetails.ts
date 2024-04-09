@@ -1,0 +1,65 @@
+import styled from "styled-components";
+
+const HeaderDetails = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 10rem 5rem 10rem;
+
+    .leftContent {
+        width: 40%;
+        margin-right: 5rem;
+
+        h1 {
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--header);
+            font-size: 4.5rem;
+            line-height: 1;
+        }
+
+        p {
+            color: var(--font);
+            font-size: 1.25rem;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+
+            a {
+                i {
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                    color: var(--font);
+
+                    &:hover {
+                        color: var(--header);
+                    }
+                }
+            }
+        }
+    }
+
+    .rightContent {
+        img {
+            border-radius: .375rem;
+        }
+    }
+
+    .search {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.375rem;
+        border: 1px solid var(--border);
+        background: var(--background);
+        color: var(--font);
+        font-size: 1.25rem;
+        outline: none;
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+    }
+`
+
+export default HeaderDetails;
