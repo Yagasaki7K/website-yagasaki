@@ -20,11 +20,11 @@ const ArticleDetails = styled.div`
                 gap: 0.5rem;
 
                 span {
-                    background: #12151c;
+                    background: var(--background-alt);
                     border: 1px solid var(--border);
                     padding: 0.5rem;
                     border-radius: 0.2rem;
-                    color: var(--font-light);
+                    color: var(--font);
                     font-size: 0.8rem;
                     text-transform: uppercase;
                     padding: 0.5rem 1rem;
@@ -34,7 +34,7 @@ const ArticleDetails = styled.div`
             .date {
                 p {
                     font-size: 1rem;
-                    color: var(--font-light);
+                    color: var(--font);
 
                     span {
                         font-weight: bold;
@@ -94,7 +94,7 @@ const ArticleDetails = styled.div`
         p {
             font-size: 1.3rem;
             line-height: 1.8;
-            color: var(--font-light);
+            color: var(--font);
             margin-top: 2rem;
         }
 
@@ -121,7 +121,7 @@ const ArticleDetails = styled.div`
             margin-top: 1rem;
             font-size: 1.3rem;
             line-height: 1.5;
-            color: var(--font-light);
+            color: var(--font);
             margin-left: 1rem;
         }
     }

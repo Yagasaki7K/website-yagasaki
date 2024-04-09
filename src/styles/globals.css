@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --background: #0e1016;
-    --background-alt: #232634;
-    --border: #181b25;
-    --header: #eceef3;
-    --font: #acb2c9;
+    --background: #fcfcfd;
+    --background-alt: #fff;
+    --border: #eceef3;
+    --header: #232634;
+    --font: #464950;
     --font-light: #dadde7;
     --font-dark: #5f6b8a;
     --gray: #7f869c;
     --red: #e10065;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0e1016;
+        --background-alt: #232634;
+        --border: #181b25;
+        --header: #eceef3;
+        --font: #acb2c9;
+        --font-light: #dadde7;
+        --font-dark: #5f6b8a;
+        --gray: #7f869c;
+    }
 }
 
 * {
