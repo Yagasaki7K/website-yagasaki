@@ -62,6 +62,11 @@ const HeaderDetails = styled.div`
                 }
             }
         }
+
+        a {
+            color: var(--red);
+            text-decoration: none;
+        }
     }
 
     .rightContent {
