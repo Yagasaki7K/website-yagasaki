@@ -27,7 +27,7 @@ const HomeArticlesDetails = styled.div`
         }
     }
 
-    .header {
+    .header, .header-about {
         display: flex;
         justify-content: space-between;
         width: 70rem;
@@ -44,6 +44,11 @@ const HomeArticlesDetails = styled.div`
                 font-style: normal;
             }
         }
+    }
+
+    .header-about {
+        margin-top: 8rem;
+        margin-bottom: 2rem;
     }
 
     .articles {
@@ -218,6 +223,65 @@ const HomeArticlesDetails = styled.div`
                     margin-left: 0rem;
                     width: 20rem;
                 }
+            }
+        }
+    }
+
+    .about {
+        width: 68rem;
+        color: var(--font);
+
+        @media (max-width: 1024px) {
+            width: 50rem;
+        }
+
+        @media (max-width: 768px) {
+            width: 20.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .quote {
+            margin: 2rem 0;
+            font-size: 1.5rem;
+
+            u {
+                color: var(--red);
+            }
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        .positions {
+            margin-top: 2rem;
+
+            h3 {
+                margin-bottom: -3rem;
+            }
+
+            h4 {
+                margin-top: 3rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        .certificates {
+            margin-top: 2rem;
+
+            strong {
+                color: var(--red);
             }
         }
     }
