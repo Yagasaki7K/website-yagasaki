@@ -1,0 +1,158 @@
+---
+title: Storybook - Como usar e os primeiros passos
+excerpt: Imagine documentar seus componentes e testá-lo sem precisar abrir na página em que ele foi adicionado.
+image: https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+tags: ['Storybook', 'Frontend', 'Primeiros Passos']
+date: '2024-04-15'
+---
+
+![](https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "Unsplash+ In collaboration with Ave Calvar")
+
+Vamos entender inicialmente o primeiro cenário para o uso do Storybook, assim como qualquer outra biblioteca,
+existia um problema e ele aparece como uma solução, correto?
+
+Imagine que você precisa ver como foi feito aquele componente especificio, seja um botão, uma barra de navegação,
+um rodapé ou até mesmo um design de formulário. Mas caramba, em que página ele foi adicionado? Como ele está se 
+comportando? Esse tipo de dor de cabeça iremos encontrar principalmente em uma aplicação de média-grande escala.
+
+O motivo? São vários componentes, temos que ficar procurando um por um, e ainda tentar adivinhar aonde que ele
+foi adicionado. Claro que podemos usar o search do VS Code e buscar pelo nome dele, filtrar todos os arquivos,
+ver que rota aquilo está sendo adicionado para depois, enfim, ver como ele é, qual é o comportamento e tudo mais.
+
+Deu até uma canseira né? Pois então, o Storybook veio para isso. Para facilitar esse esquema. Há quem diga que
+frontend não possui uma forma de fazer testes - até porque pra que iremos testar pinturas de botões.
+
+## Introdução
+
+Para quem ainda não entendeu. O Storybook é uma ferramenta muito útil para desenvolvedores de aplicações React. Ele
+permite criar e testar componentes de forma isolada, sem a necessidade de criar um aplicativo completo. Isso facilita o
+desenvolvimento e permite que os desenvolvedores criem componentes reutilizáveis e consistentes em suas aplicações.
+
+Ficou mais fácil? Pegou a ideia? Mas tá, e como começamos? Para começar a usar o Storybook, precisamos instalar o pacote npm do
+Storybook. Isso pode ser feito executando o seguinte comando:
+
+```bash
+npx storybook init
+```
+
+O Storybook examinará as dependências do seu projeto durante o processo de instalação e fornecerá a melhor configuração
+disponível.
+
+O comando acima fará as seguintes alterações em seu ambiente local:
+
+- Instalar as dependências necessárias.
+- Configurar os scripts necessários para executar e construir o Storybook .
+- Adicionar a configuração padrão do Storybook & Adicionar algumas stories padronizadas para você começar.
+- Configurar a telemetria para nos ajudar a melhorar o Storybook. 
+
+Após a instalação, podemos rodar ele usando `yarn` ou `npm`, se você sabe trocar a configuração para o `yarn`, fique
+à vontade. Mas para não dificultar muito, iremos manter no `npm`, então, em seu terminal, dê:
+
+```bash
+npm run storybook
+```
+
+Talvez apareça uma mensagem pedindo a confirmação no processo de instalação do Storybook ou pedindo para você utilizar o
+npm7. Você pode confirmar o avanço digitando “y”. Ele iniciará o Storybook localmente e exibirá o endereço. Dependendo
+da configuração do seu sistema, ele abrirá automaticamente o endereço em uma nova guia do navegador e você será saudado
+por uma tela de boas-vindas.
+
+Caso ele não abra automaticamente o endereço em uma nova guia do navegador. Basta acessar a porta que o Storybook
+informará, no nosso caso é o http://localhost/:6006/
+
+### Entendendo a estrutura
+
+Perceba que em nossa aplicação foram adicionadas duas pastas: `stories` e `.storybook`. Além disso, temos o arquivo `.npmrc`
+para trabalhar com versões legados do npm.
+
+Agora vamos entender melhor o que foi gerado pelo Storybook em nossa
+aplicação antes de documentar algo.
+
+Perceba que dentro da pasta stories temos um arquivo chamado `Introduction.stories.mdx` que é exatamente a primeira página
+que aparece quando damos o comando `npm run storybook` no terminal.
+
+Para darmos inicio, vamos entrar nesse `Introduction.stories.mdx` e limpar ele, deixando-o apenas simples para iniciarmos
+nosso primeiro componente.
+
+```tsx
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Example/Introduction">
+```
+
+Após mudar o código no arquivo `Introduction.stories.mdx` iremos apagar os arquivos gerado pelo storybook na pasta
+`stories`, também iremos excluir a pasta `assets` de dentro de stories. Dessa forma, teremos somente o arquivo
+Introduction que modificamos.
+
+## Criando componente
+
+Diferente do padrão do Storybook que adicionar os componentes na pasta `stories`, iremos adicionar nosso componente em uma
+pasta criada por nós. Dentro da pasta `src` criamos a pasta chamada `components`, e dentro de components teremos dois
+arquivos: `Button.jsx` e `Button.stories.mdx`
+
+Dentro do arquivo `Button.stories.mdx` iremos colar o mesmo código do arquivo `Introduction.stories.mdx` porém iremos
+modificar alguns detalhes em seu código.
+
+```tsx
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Components/Button" components={Button}/>
+```
+
+Mas tenha calma, lembra que deletamos a pasta? Então, é claro qu ele ainda não irá aparecer em nossa documentação.
+Então, agora precisamos avisar aos Storybook onde ele irá encontrar os componente que serão documentados por ele.
+
+Lembra a pasta `.storybook` gerada pelo Storybook na raiz da nossa aplicação? Basicamente nela temos nossa configuração do
+Storybook.
+
+Dentro do arquivo `main.js` iremos mudar e colocar o comando abaixo. Neste código estamos falando que nossos componentes
+estão em algum lugar de dentro da pasta `src` com o formato `stories`.
+
+```js
+module.exports = {
+    stories: [
+        "../src/**/*.stories.mdx", 
+        "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    ],
+}
+```
+
+Dependendo da versão do seu Storybook ele irá fazer toda essa configuração de mudança de pasta no main.js
+automaticamente, se você reparar quando voltar para o localhost, verá que tem um erro, já que sempre que mudamos algo de
+dentro da pasta `.storybook` temos que reiniciar a documentação, ou seja, finalizar o processo `(Ctrl + C)` e voltar
+a rodar novamente com o comando `npm run storybook`.
+
+Pronto! Após reiniciar o Storybook teremos a renderização do nosso arquivo `Button.stories.mdx` em nossa documentação.
+
+Após isso, importamos o componente Button dentro do arquivo `Button.stories.mdx` e vamos ver como ele funciona.
+
+```tsx
+import { Meta } from "@storybook/addon-docs";
+import Button from "../src/components/Button";
+
+<Meta title="Components/Button" components={Button}/>
+```
+
+Agora que conseguimos isolar o componente, será possível testar ele, mudar o comportamento e fazer uma série
+de funcionalidades que irá funcionar como a documentação que precisamos. Claro que, podemos unificar tudo em uma única
+pasta para evitar ter que procurar na mesma pasta do componente, podemos adicionar mais detalhes que o Storybook pode
+nos proporcionar como funções Story, Canvas e ArgsTable - [veja a documentação oficial para saber mais.](https://storybook.js.org/docs/get-started)
+
+Enfim, use de acordo com a necessidade do seu projeto, documente-o e se aventure em testar componentes e utilizar
+desses exemplos, como uma forma de simplificar o seu trabalho.
+
+Lembrando também que até o momento utilizamos arquivos no formado `.mdx` mas também é comum encontrar arquivo em `.jsx`
+para documentar componentes. O próprio Storybook utiliza `.jsx` nos exemplos gerado pelo comando `npx storybook init` e
+em sua documentação oficial utiliza `.mdx`. Então, não existe uma forma correta de utilizar, vai de acordo com suas
+pessoas da sua equipe ou empresa.
+
+Com este código é possível documentar variações de alguns componentes em nossa aplicação. Por mais que seja um exemplo
+utilizando um Button, a sua estrutura será a mesma para outros elementos no código. 
+
+E claro, uma opinião minha é que o Storybook é muito útil para documentação, testes e usadas em ambientes de média-alta
+escala devida a alta criação de componentes, complexidade e funcionalidades espalhadas em uma estrutura. Não vejo
+necessidade de criar e documentar componentes em aplicações pequenas - a não ser que esteja fazendo isso em meios
+didáticos - ou realmente, tenha chance de seu pequeno projeto começar a se tornar algo complexo e tenha uma quantidade
+grande de componentes, mas é apenas uma opinião minha, seja livre para usar e documentar.
+
+Curtiu? Faça um teste você mesmo e se aprofunde no Storybook!

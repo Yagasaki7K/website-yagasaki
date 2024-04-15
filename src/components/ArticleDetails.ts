@@ -153,7 +153,7 @@ const ArticleDetails = styled.div`
             background: var(--background-alt);
             border-radius: 0.5rem;
             padding: 1rem;
-            margin-bottom: 1rem;
+            margin: 1rem 0;
             color: var(--font-light);
 
             @media (max-width: 768px) {
