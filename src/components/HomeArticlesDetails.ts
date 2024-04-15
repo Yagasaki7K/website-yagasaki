@@ -285,6 +285,57 @@ const HomeArticlesDetails = styled.div`
             }
         }
     }
+
+    .tkd {
+        width: 68rem;
+        color: var(--font);
+
+        @media (max-width: 1024px) {
+            width: 50rem;
+        }
+
+        @media (max-width: 768px) {
+            width: 20.5rem;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        a {
+            color: var(--red);
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        .positions {
+            margin-top: 2rem;
+
+            h3 {
+                margin-bottom: -2rem;
+            }
+
+            h4 {
+                margin-top: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
 `
 
 export default HomeArticlesDetails

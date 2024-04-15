@@ -13,7 +13,6 @@ const about = () => {
             <div className="overlay" />
 
             <HomeArticlesDetails>
-
                 <div className="header-about">
                     <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                 </div>
@@ -45,22 +44,22 @@ const about = () => {
                             <strong>Languages:</strong> Javascript / Typescript
                         </p>
                         <p>
-                            <strong>Frontend:</strong> React.js, Next.js & Waku
+                            <strong>Frontend:</strong> React.js, Next.js, Vite & Waku
                         </p>
                         <p>
-                            <strong>Backend:</strong> Node.js, Express, Nest, Bun & Fastify
+                            <strong>Backend:</strong> Node.js, Bun, Express, Fastify & Nest
                         </p>
                         <p>
-                            <strong>Database:</strong> Firebase & SQL Lite
+                            <strong>Database:</strong> Prisma, Hasura, Firebase & SQL Lite
                         </p>
                         <p>
-                            <strong>Testing:</strong> Node Test, Bun Test & Jest
+                            <strong>Testing:</strong> Node Test, Bun Test, Storybook, Cypress & Jest
                         </p>
                         <p>
                             <strong>DevOps:</strong> Docker, CI/CD & Github Actions
                         </p>
                         <p>
-                            <strong>Design:</strong> Figma & UX/UI
+                            <strong>Design:</strong> Figma, Adobe XD, Photoshop & UX/UI
                         </p>
                         <p>
                             <strong>Other:</strong> Git, Serverless, Vercel, etc...
