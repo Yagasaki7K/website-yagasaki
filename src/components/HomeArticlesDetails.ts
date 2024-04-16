@@ -56,7 +56,7 @@ const HomeArticlesDetails = styled.div`
         flex-direction: column;
         gap: 1.5rem;
         margin-top: 1rem;
-        width: 65rem;
+        width: 68.8%;
 
         a {
             text-decoration: none;
@@ -94,24 +94,20 @@ const HomeArticlesDetails = styled.div`
             gap: 0.5rem;
             border: 1px solid var(--border);
             border-radius: 0.375rem;
-            width: 62rem;
+            width: 95.5%;
             margin-left: 4.5rem;
             transition: 0.2s;
 
             @media (max-width: 1024px) {
                 margin-left: 0rem;
-                width: 50rem;
-
-                .content {
-                    width: 40rem;
-                }
             }
 
             @media (max-width: 768px) {
-                width: 20.5rem;
+                margin-left: -1rem;
+                width: 140%;
 
                 .content {
-                    width: 15rem;
+                    width: 132%;
                 }
             }
 

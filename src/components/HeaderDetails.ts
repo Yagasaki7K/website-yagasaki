@@ -73,6 +73,10 @@ const HeaderDetails = styled.div`
         img {
             border-radius: 0.5rem;
         }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .search {

@@ -53,7 +53,7 @@ const about = () => {
                             <strong>Database:</strong> Prisma, Hasura, Firebase & SQL Lite
                         </p>
                         <p>
-                            <strong>Testing:</strong> Node Test, Bun Test, Storybook, Cypress & Jest
+                            <strong>Testing:</strong> Node Test, Bun Test, Storybook & Jest
                         </p>
                         <p>
                             <strong>DevOps:</strong> Docker, CI/CD & Github Actions
@@ -62,7 +62,7 @@ const about = () => {
                             <strong>Design:</strong> Figma, Adobe XD, Photoshop & UX/UI
                         </p>
                         <p>
-                            <strong>Other:</strong> Git, Serverless, Vercel, etc...
+                            <strong>Other:</strong> Git, Serverless, Vercel, Docusaurus, etc...
                         </p>
                     </div>
 
