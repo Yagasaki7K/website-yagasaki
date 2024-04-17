@@ -150,7 +150,7 @@ const HomeArticlesDetails = styled.div`
                     z-index: 3;
 
                     @media (max-width: 768px) {
-                        font-size: 1rem;
+                        font-size: 1.25rem;
                         line-height: 1.5rem;
                     }
                 }
@@ -161,7 +161,7 @@ const HomeArticlesDetails = styled.div`
                     color: var(--font);
 
                     @media (max-width: 768px) {
-                        font-size: 0.875rem;
+                        font-size: 1rem;
                         line-height: 1.25rem;
                     }
                 }  
