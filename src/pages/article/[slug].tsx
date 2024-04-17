@@ -12,6 +12,8 @@ import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import Copyright from '@/components/Copyright';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/github.css';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -63,6 +65,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
         };
 
         fetchContent();
+        hljs.highlightAll();
     }, [content]);
 
     return (
@@ -118,7 +121,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                         </div>
                     </div>
                     <div className='post-body'>
-                        <div dangerouslySetInnerHTML={{ __html: htmlContent || '' }} />
+                        <div dangerouslySetInnerHTML={({ __html: htmlContent || '' })} />
                     </div>
                 </div>
             </ArticleDetails>

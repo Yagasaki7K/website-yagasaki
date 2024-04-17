@@ -12,6 +12,7 @@
   "dependencies": {
     "dayjs": "^1.11.10",
     "gray-matter": "^4.0.3",
+    "highlight.js": "^11.9.0",
     "marked": "^12.0.1",
     "next": "14.1.4",
     "next-seo": "^6.5.0",
