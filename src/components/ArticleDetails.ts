@@ -150,7 +150,7 @@ const ArticleDetails = styled.div`
         }
 
         pre {
-            background: var(--background-alt);
+            background: var(--code);
             border-radius: 0.5rem;
             padding: 1rem;
             margin: 1rem 0;

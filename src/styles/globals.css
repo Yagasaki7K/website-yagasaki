@@ -10,6 +10,7 @@
     --font-dark: #5f6b8a;
     --gray: #7f869c;
     --red: #e10065;
+    --code: #eceef3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
         --font-light: #dadde7;
         --font-dark: #5f6b8a;
         --gray: #7f869c;
+        --code: #b6b9ca;
     }
 }
 

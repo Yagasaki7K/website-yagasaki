@@ -65,8 +65,11 @@ export default function PostPage({ frontmatter, content }: PostProps) {
         };
 
         fetchContent();
-        hljs.highlightAll();
     }, [content]);
+
+    useEffect(() => {
+        hljs.highlightAll();
+    }, [htmlContent]);
 
     return (
         <>
