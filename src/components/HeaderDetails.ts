@@ -90,6 +90,10 @@ const HeaderDetails = styled.div`
         outline: none;
         margin-bottom: 1rem;
         margin-top: -2rem;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
     }
 `
 

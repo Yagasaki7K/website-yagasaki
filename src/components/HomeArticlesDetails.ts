@@ -30,7 +30,16 @@ const HomeArticlesDetails = styled.div`
     .header, .header-about {
         display: flex;
         justify-content: space-between;
-        width: 70rem;
+        width: 75%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            margin-top: -2rem;
+        }
 
         .backToHome {
             color: var(--red);
@@ -58,6 +67,10 @@ const HomeArticlesDetails = styled.div`
         margin-top: 1rem;
         width: 68.8%;
 
+        @media (max-width: 768px) {
+            margin-top: 1rem;
+        }
+
         a {
             text-decoration: none;
         }
@@ -77,10 +90,11 @@ const HomeArticlesDetails = styled.div`
 
             @media (max-width: 1024px) {
                 margin-left: 0rem;
+                width: 59rem;
             }
 
             @media (max-width: 768px) {
-                width: 20.5rem;
+                width: 42.5rem;
             }
 
             &:hover {
@@ -103,12 +117,7 @@ const HomeArticlesDetails = styled.div`
             }
 
             @media (max-width: 768px) {
-                margin-left: -1rem;
-                width: 140%;
-
-                .content {
-                    width: 132%;
-                }
+                width: 42.5rem;
             }
 
             &:hover {
@@ -130,7 +139,7 @@ const HomeArticlesDetails = styled.div`
                 width: 38rem;
 
                 @media (max-width: 768px) {
-                    width: 21rem;
+                    width: 100%;
                 }
 
                 h4 {
@@ -224,7 +233,7 @@ const HomeArticlesDetails = styled.div`
     }
 
     .about {
-        width: 68rem;
+        width: 70%;
         color: var(--font);
 
         @media (max-width: 1024px) {
@@ -232,7 +241,7 @@ const HomeArticlesDetails = styled.div`
         }
 
         @media (max-width: 768px) {
-            width: 20.5rem;
+            width: 90%;
         }
 
         h2 {
