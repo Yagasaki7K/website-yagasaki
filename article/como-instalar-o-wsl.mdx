@@ -1,0 +1,65 @@
+---
+title: Como instalar o Windows Subsystem for Linux (WSL)
+excerpt: 'Aprenda a instalar o WSL e descubra as vantagens de seu uso para desenvolvedores e por que abandonar o dual boot pode ser uma boa ideia.'
+image: https://w.wallhaven.cc/full/13/wallhaven-135w7w.png
+tags: ['WSL', 'Windows', 'Desenvolvimento', 'Programação']
+date: '2024-04-19'
+---
+
+![](https://w.wallhaven.cc/full/13/wallhaven-135w7w.png "Douglas Lopes")
+
+O Windows Subsystem for Linux (WSL) é uma ferramenta poderosa que permite executar distribuições Linux diretamente no Windows. Isso significa que você pode aproveitar o ambiente de linha de comando (CLI/Terminal) do Linux, juntamente com suas ferramentas e utilitários favoritos, sem a necessidade de alternar entre sistemas operacionais. Neste guia, vamos mostrar como instalar o WSL no Windows 10 e Windows 11, discutir as vantagens de seu uso para desenvolvedores e por que abandonar o dual boot pode ser uma boa ideia.
+
+## Instalando o WSL no Windows 10 e Windows 11
+
+1. **Ative o WSL**: Abra o PowerShell como administrador e execute o seguinte comando para habilitar o recurso WSL:
+
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+
+2. **Instale o WSL**: Abra o PowerShell como administrador e execute o seguinte comando para instalar o WSL:
+
+```powershell
+wsl --install
+```
+
+3. **Instale uma distribuição Linux**: Após habilitar o WSL, vá para a Microsoft Store e procure por uma distribuição Linux de sua escolha, como Ubuntu, Debian ou Fedora. Clique em "Instalar" e siga as instruções na tela para concluir a instalação.
+
+4. **Inicie a distribuição instalada**: Após a instalação ser concluída, você pode iniciar a distribuição Linux recém-instalada a partir do menu Iniciar. Isso abrirá uma janela de terminal onde você pode interagir com o Linux. Ou, se preferir, você pode baixar o Terminal Preview na Microsoft Store - caso esteja no Windows 10 - e utilizá-lo. Vale lembrar que no Windows 11 ela já está disponível.
+
+Alguns erros que geralmente acontecem ao tentar instalar a primeira vez é.
+
+- Virtualização não está habilitada
+Para resolver esse problema de virtualização, recomendamos que você desligue o computador e vá até a BIOS, procure a virtualização nas configurações de sua BIOS e ligue ela, claro, se você não entender sobre o assunto, procure algum tutorial no Youtube e tome cuidado com o que estiver alterando, sempre traduza, caso tenha dificuldade no inglês.
+
+- O Windows Subsystem for Linux (WSL) precisa estar na versão 2.
+Você pode listar suas distribuições do Linux instaladas e verificar a versão do WSL para a qual cada uma está definida inserindo o comando: `wsl -l -v` no PowerShell ou Prompt de Comando do Windows. Para definir a versão padrão como WSL 1 ou WSL 2 quando uma nova distribuição do Linux é instalada, use o comando: `wsl --set-default-version <Version#>`, substituindo `<Version#>` por 1 ou 2.
+
+Tá, mas qual é a vantagem de eu usar o WSL ao invés de usar um Dual Boot por exemplo?
+
+## Ambiente de desenvolvimento familiar
+Com o WSL, os desenvolvedores podem usar ferramentas e utilitários Linux diretamente no Windows. Isso elimina a necessidade de alternar entre sistemas operacionais e permite que você trabalhe em um ambiente de desenvolvimento familiar, independentemente da plataforma que estiver usando.
+
+## Suporte nativo para linha de comando e scripts
+O WSL oferece suporte nativo para a linha de comando do Linux, o que significa que você pode executar scripts, comandos e ferramentas Linux diretamente no Windows. Isso é especialmente útil para desenvolvedores que trabalham com ferramentas baseadas em linha de comando ou que precisam automatizar tarefas usando scripts.
+
+## Integração perfeita com o Windows
+O WSL é integrado perfeitamente ao Windows, o que significa que você pode acessar facilmente arquivos e recursos do sistema Windows do ambiente Linux e vice-versa. Isso simplifica o processo de desenvolvimento e facilita a colaboração com outros desenvolvedores que podem estar usando o Windows ou o Linux.
+
+# Por que abandonar o dual boot
+
+## Maior conveniência e produtividade
+O uso do WSL elimina a necessidade de alternar entre sistemas operacionais usando o dual boot. Isso economiza tempo e torna o processo de desenvolvimento mais conveniente e produtivo, permitindo que você se concentre em escrever código em vez de lidar com configurações de sistema complicadas.
+
+## Melhor integração com o Windows
+Embora o dual boot ofereça uma maneira de executar sistemas operacionais separados em um único computador, ele pode ser complicado de configurar e manter. Além disso, o dual boot não oferece a mesma integração perfeita com o Windows que o WSL, o que significa que você pode enfrentar desafios ao compartilhar arquivos e recursos entre os sistemas operacionais.
+
+## Menor impacto no desempenho do sistema
+Executar dois sistemas operacionais em um único computador usando o dual boot pode ter um impacto significativo no desempenho do sistema, além de você simplesmente acabar danificando ele por erro de configuração ou algum imprevisto de incompatibilidade, especialmente em computadores com recursos limitados. O uso do WSL, por outro lado, não afeta o desempenho do sistema, pois as distribuições Linux são executadas como processos isolados no Windows.
+
+Em resumo, o Windows Subsystem for Linux (WSL) oferece uma maneira conveniente e eficiente para desenvolvedores executarem distribuições Linux diretamente no Windows. Com o WSL, você pode aproveitar as vantagens do ambiente de linha de comando do Linux sem sacrificar a integração e a familiaridade do Windows. Ao abandonar o dual boot em favor do WSL, você pode tornar seu processo de desenvolvimento mais fácil, conveniente e produtivo.
+
+Vale lembrar que é recomendável que você já tenha o básico de conhecimento sobre terminais Linux para utilizar o WSL, já que não existe uma interface gráfica que pode te ajudar nesse tipo de navegação, ficando a mercê do próprio explorer do Windows - na versão do W11, ele já aparece o ícone de WSL na lateral.
+
+Dúvidas? Bom, qualquer coisa chama no [Twitter/X](https://twitter.com/Yagasaki7K) ou siga as [documentações da Microsoft](https://learn.microsoft.com/pt-br/windows/wsl/install) para entender melhor como instalar distribuições diferentes ou para sanar qualquer outro tipo de dúvida.
