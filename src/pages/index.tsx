@@ -95,8 +95,9 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create. I like Final Fantasy, drifting, japanese culture and I believe that &quot;X-Tudo&quot; is a healthy snack.</p>
 
-
                     <p>Currently, I&apos;m based in São Paulo, Brazil, but also <Link href="/about">in the web</Link>.</p>
+
+                    <p>You can also see me <Link href="https://stream.yagasaki.dev/">streaming</Link> something or even coding.</p>
 
                     <p>
                         <a href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></a>

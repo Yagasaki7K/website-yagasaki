@@ -26,7 +26,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/utils/sortByDate.js"
+    "src/utils/sortByDate.js",
+    "getTime.js"
   ],
   "exclude": [
     "node_modules"

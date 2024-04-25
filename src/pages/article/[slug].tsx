@@ -107,7 +107,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
 
             <ArticleDetails>
                 <div className='card card-page'>
-                    <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Voltar ao Inicio</i></Link>
+                    <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                     <h1 className='post-title'>{frontmatter.title}</h1>
                     <p className="minRead">Leitura de {calculateReadingTime(htmlContent ? htmlContent : '')} minutos</p>
 
