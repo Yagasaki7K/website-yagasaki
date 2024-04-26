@@ -88,7 +88,7 @@ const ArticleDetails = styled.div`
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 1.875em;
             line-height: 1.35;
             color: var(--header);
             margin-bottom: 0rem;
@@ -100,7 +100,7 @@ const ArticleDetails = styled.div`
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.875em;
             line-height: 1.35;
             color: var(--header);
             margin-top: 2rem;
@@ -132,7 +132,7 @@ const ArticleDetails = styled.div`
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 18px;
             line-height: 1.8;
             color: var(--font);
             margin-top: 2rem;
@@ -147,12 +147,17 @@ const ArticleDetails = styled.div`
             background: var(--background-alt);
             padding: 1rem; 
             border-radius: 15px;
-            font-size: 1rem;
-            margin-bottom: 1rem;
+            font-size: 18px;
+            margin: 1rem 0;
+            line-height: 1.8;
 
-            em {
-                font-size: 1rem;
+            em, li {
+                font-size: 16px;
             }
+        }
+
+        em {
+            text-decoration: underline;
         }
 
         a {
@@ -165,15 +170,38 @@ const ArticleDetails = styled.div`
             border-radius: 0.5rem;
             padding: 1rem;
             margin: 1rem 0;
+            font-size: 14px;
             color: var(--font-light);
-
-            @media (max-width: 768px) {
-                font-size: 0.8rem;
-            }
 
             code {
                 background: none;
                 font-family: 'JetBrains Mono', monospace;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: var(--font);
+
+            th, td {
+                border: 1px solid var(--border);
+                padding: 0.5rem;
+            }
+
+            tr:nth-child(even) {
+                background-color: var(--background-alt);
+            }
+
+            th {
+                background: var(--background-alt);
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
             }
         }
 
