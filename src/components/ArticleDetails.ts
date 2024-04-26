@@ -99,6 +99,10 @@ const ArticleDetails = styled.div`
             }
         }
 
+        .post-title {
+            font-size: 3rem;
+        }
+
         h2 {
             font-size: 1.875em;
             line-height: 1.35;
