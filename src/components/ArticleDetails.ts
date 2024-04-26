@@ -1,20 +1,17 @@
 import styled from "styled-components";
 
 const ArticleDetails = styled.div`
-    margin-left: 24.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-top: 5rem;
 
-    @media (max-width: 1366px) {
-        margin-left: 8rem;
-    }
-
-    @media (max-width: 768px) {
-        margin-left: 1rem;
-    }
-
     .card {
-        width: 65rem;
+        width: 50rem;
         margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
 
         @media (max-width: 1024px) {
             width: 50rem;
@@ -118,13 +115,14 @@ const ArticleDetails = styled.div`
         }
 
         img {
-            margin-left: -5rem;
+            margin-left: -12rem;
             width: 1200px;
             object-fit: cover;
             border-radius: 0.5rem;
 
             @media (max-width: 1024px) {
-                width: 930px;
+                margin-left: -3rem;
+                width: 900px;
             }
 
             @media (max-width: 768px) {
@@ -141,6 +139,19 @@ const ArticleDetails = styled.div`
 
             @media (max-width: 768px) {
                 font-size: 1.1rem;
+            }
+        }
+
+        aside {
+            color: var(--font);
+            background: var(--background-alt);
+            padding: 1rem; 
+            border-radius: 15px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+
+            em {
+                font-size: 1rem;
             }
         }
 
