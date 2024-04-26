@@ -22,19 +22,12 @@ const about = () => {
                     <h1>
                         Software Developer from São Paulo, Brazil
                     </h1>
-                    <div className="quote">
-                        <p>
-                            <b>❝</b> <u>Science</u> without results is just <u>witchcraft</u>
-                            <b>❞</b> — Cave Johnson
-                        </p>
-                    </div>
 
                     <p>
-                        I am a <strong>code enthusiast</strong>, specialized for{" "}
-                        <strong>web</strong>. I&apos;m Focused on modern technologies using
-                        Javascript and building great products and solutions alone or together
-                        with Kalify Inc, the brazilian community of developers using open source method. Persistent, dedicated and reliable worker, personally
-                        very communicative and friendly.
+                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Firebase, Hasura, SQL Lite, GraphQL, Jest, Node.js, Bun.js, Serverless, Microservices and more …
+                    </p>
+                    <p>
+                        Technology Enthusiast, Specialized in Web and Self-taught.
                     </p>
 
 
@@ -44,25 +37,25 @@ const about = () => {
                             <strong>Languages:</strong> Javascript / Typescript
                         </p>
                         <p>
-                            <strong>Frontend:</strong> React.js, Next.js, Vite & Waku
+                            <strong>Frontend:</strong> React.js, Next.js & Vite
                         </p>
                         <p>
-                            <strong>Backend:</strong> Node.js, Bun, Express, Fastify & Nest
+                            <strong>Backend:</strong> Node.js, Bun, Express, Fastify & Nest.js
                         </p>
                         <p>
                             <strong>Database:</strong> Prisma, Hasura, Firebase & SQL Lite
                         </p>
                         <p>
-                            <strong>Testing:</strong> Node Test, Bun Test, Storybook & Jest
+                            <strong>Testing:</strong> Node, Bun, Storybook & Jest
                         </p>
                         <p>
-                            <strong>DevOps:</strong> Docker, CI/CD & Github Actions
+                            <strong>DevOps:</strong> Docker, Vercel, CI/CD & Github Actions
                         </p>
                         <p>
                             <strong>Design:</strong> Figma, Adobe XD, Photoshop & UX/UI
                         </p>
                         <p>
-                            <strong>Other:</strong> Git, Serverless, Vercel, Docusaurus, etc...
+                            <strong>Other:</strong> Git, Serverless, Google Cloud, Docusaurus, etc...
                         </p>
                     </div>
 
@@ -78,6 +71,11 @@ const about = () => {
                             SigaAntenado Project and more.
                         </p>
 
+                        <li>Responsible to developer a payment method using Stripe.</li>
+                        <li>Responsible to develop and delivery the settings and functionally of Rocketchat and integrate with iframe of company together with ecommerce solution.</li>
+                        <li>Build and develop a jQuery Single Page Application quiz for client and suggest a better way to find a solution for the customer based on the problem and redirect them to a specialized communication department.</li>
+
+
                         <p>
                             Using technologies like jQuery, React, TypeScript, NodeJS, CI/CD, Firebase, Rocketchat, Google Cloud Platform, Firebase Logging, integration and unit tests with Jest, NestJS, GPT Integration and Stripe.
                         </p>
@@ -91,6 +89,13 @@ const about = () => {
                             applications.
                         </p>
 
+                        <li>Responsible to use DialogFlow and build new routines to communicate with the app.</li>
+                        <li>Construction of project documentation, tests and their functionalities.</li>
+                        <li>Integration via AI on new routines using Rocketchat and Whatsapp and communication with the customer.</li>
+                        <li>Construction of the responsivity website for the product and its presentation of solutions and functionalities using the app with ecommerce and the customer’s needs.</li>
+                        <li>Manufacturing and testing new routines, templates and communication behaviors.</li>
+
+
                         <p>
                             Using React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX,
                             Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit
@@ -102,6 +107,12 @@ const about = () => {
                             <strong>Cenário Capital</strong> |{" "}
                             <i>April 2021 — September 2021</i>
                         </p>
+
+                        <li>Construction of the responsivity website for the solution of the company.</li>
+                        <li>Construction of the quiz to find a better way to customer to find a better way to request a service based in your needs.</li>
+                        <li>Construction of push notification method using Javascript and Google Developers to advice the customer about new features.</li>
+                        <li>Manufacturing Digital Ocean Solutions to give a better DevOps system to our project.</li>
+
                         <p>
                             Cenário Capital is a Brazilian company Founded in 2008 with
                             expertise in digital marketing and analytical focus on different
@@ -111,7 +122,7 @@ const about = () => {
                             Facebook Ads and using Digital Ocean to DevOps our system.
                         </p>
 
-                        <h4>Junior Marketing Assistant / Development Frontend</h4>
+                        <h4>Marketing Assistant Jr. / Development Frontend Jr.</h4>
                         <p>
                             <strong>Marry Perry Paris</strong> | <i>July 2020 – October 2020</i>
                         </p>
@@ -128,14 +139,14 @@ const about = () => {
                         <h3>Certificates:</h3>
                         <p>
                             <strong>
-                                NLW Unite (Node, Bun (experimental), Typescript, Fastify, Prisma, Zod & Swagger){" "}
+                                NLW Unite (Node, Typescript, Fastify, Prisma, Zod & Swagger){" "}
                             </strong>
                             by Rocketseat - April 2024
                         </p>
 
                         <p>
                             <strong>
-                                NLW Unite (React, Vite, TypeScript, Styled Components, Bun, Unicons & Dayjs){" "}
+                                NLW Unite (React, Vite, TypeScript, Styled Components, Unicons & Dayjs){" "}
                             </strong>
                             by Rocketseat - April 2024
                         </p>
@@ -284,7 +295,7 @@ const about = () => {
                         </p>
                     </div>
                 </div>
-            </HomeArticlesDetails>
+            </HomeArticlesDetails >
         </>
     )
 }
