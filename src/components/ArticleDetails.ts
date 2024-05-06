@@ -170,7 +170,7 @@ const ArticleDetails = styled.div`
         }
 
         pre {
-            background: var(--code);
+            background: var(--background-alt);
             border-radius: 0.5rem;
             padding: 1rem;
             margin: 1rem 0;
@@ -181,6 +181,15 @@ const ArticleDetails = styled.div`
                 background: none;
                 font-family: 'JetBrains Mono', monospace;
             }
+        }
+
+        code {
+            background: var(--background-alt);
+            border-radius: 0.5rem;
+            padding: 0.15rem 0.5rem;
+            font-size: 14px;
+            color: var(--font-light);
+            font-family: 'JetBrains Mono', monospace;
         }
 
         table {
