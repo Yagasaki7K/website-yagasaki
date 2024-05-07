@@ -51,6 +51,8 @@ const HeaderDetails = styled.div`
             unicode-bidi: isolate;
 
             a {
+                cursor: pointer;
+                
                 i {
                     font-size: 2rem;
                     margin-right: 1rem;

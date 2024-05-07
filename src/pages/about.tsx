@@ -24,7 +24,7 @@ const about = () => {
                     </h1>
 
                     <p>
-                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Firebase, Hasura, SQL Lite, GraphQL, Jest, Node.js, Bun.js, Serverless, Microservices and more …
+                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, RegEx, UI/UX, Responsive Design, Firebase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, NestJS, Bun.js, Serverless, Microservices and more …
                     </p>
                     <p>
                         Technology Enthusiast, Specialized in Web and Self-taught.
@@ -37,13 +37,13 @@ const about = () => {
                             <strong>Languages:</strong> Javascript / Typescript
                         </p>
                         <p>
-                            <strong>Frontend:</strong> React.js, Next.js & Vite
+                            <strong>Frontend:</strong> React.js, Next.js, Angular 17 & Vite
                         </p>
                         <p>
                             <strong>Backend:</strong> Node.js, Bun, Express, Fastify & Nest.js
                         </p>
                         <p>
-                            <strong>Database:</strong> Prisma, Hasura, Firebase & SQL Lite
+                            <strong>Database:</strong> Prisma, Hasura, Firebase, MySQL, PostgreSQL & SQL Lite
                         </p>
                         <p>
                             <strong>Testing:</strong> Node, Bun, Storybook & Jest

@@ -13,6 +13,7 @@ import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
 import Link from "next/link";
+import { title } from "process";
 
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
@@ -78,6 +79,15 @@ function redirectToSearch() {
     window.location.href = '/search'
 }
 
+function shareContent() {
+    if (navigator.share) {
+        navigator.share({
+            url: "https://yagasaki.dev",
+            title: 'Anderson Marlon // Software Developer',
+        })
+    }
+}
+
 export default function Home({ posts }: { posts: PostProps[] }) {
     return (
         <>
@@ -104,13 +114,14 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                         <a href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-github"></i></a>
                         <a href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></a>
                         <a href="mailto:anderson18.marlon@gmail.com" target="_blank" rel="noreferrer"><i className="uil uil-at"></i></a>
+                        <a onClick={shareContent}><i className="uil uil-share"></i></a>
                     </p>
                 </div>
                 <div className="rightContent">
                     <Image src="https://github.com/Yagasaki7K.png" alt="GitHub/Yagasaki7K"
                         width={400} height={400} loading="lazy" decoding="async" title="GitHub/Yagasaki7K" />
                 </div>
-            </HeaderDetails>
+            </HeaderDetails >
 
             <HomeArticlesDetails>
                 <h2>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
