@@ -7,6 +7,16 @@ const ArticleDetails = styled.div`
 
     margin-top: 5rem;
 
+    .text {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .uwu {
+        font-family: 'Milky Honey', cursive;
+        src: url('../fonts//Milky\ Honey.otf') format('otf');
+        src: url('../fonts//Milky\ Honey.ttf') format('ttf');
+    }
+
     .card {
         width: 50rem;
         margin-bottom: 2rem;
@@ -70,17 +80,39 @@ const ArticleDetails = styled.div`
 
         .backToHome {
             text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
+            display: flex;
+            justify-content: space-between;
 
             i {
                 font-style: normal;
             }
+
+            a {
+                color: var(--red);
+
+                &:hover {
+                    color: var(--pink);
+                }
+            }
+
+            span {
+                margin-left: 1rem;
+                color: var(--pink);
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .on {
+                color: var(--pink);
+                text-decoration: none;
+            }
+
+            .off {
+                color: var(--font);
+            }
         }
 
-        .minRead{
+        .minRead {
             text-transform: uppercase;
             color: var(--red);
             font-weight: bold;

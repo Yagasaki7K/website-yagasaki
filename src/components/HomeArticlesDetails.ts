@@ -27,6 +27,16 @@ const HomeArticlesDetails = styled.div`
         }
     }
 
+    .poppins {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .uwu {
+        font-family: 'Milky Honey', cursive;
+        src: url('../fonts//Milky\ Honey.otf') format('otf');
+        src: url('../fonts//Milky\ Honey.ttf') format('ttf');
+    }
+
     .header, .header-about {
         display: flex;
         justify-content: space-between;
@@ -82,7 +92,6 @@ const HomeArticlesDetails = styled.div`
             border-radius: 0.375rem;
             padding: 0.5rem 1rem;
             font-size: 1rem;
-            font-family: 'Poppins', sans-serif;
             cursor: pointer;
             transition: 0.2s;
             width: 95.5%;

@@ -15,6 +15,19 @@ const HeaderDetails = styled.div`
         padding: 5rem 0rem 5rem 0rem;
     }
 
+    .text {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+        "Noto Color Emoji";
+    }
+
+    .uwu {
+        font-family: 'Milky Honey', cursive;
+        src: url('../fonts//Milky\ Honey.otf') format('otf');
+        src: url('../fonts//Milky\ Honey.ttf') format('ttf');
+    }
+
     .leftContent {
         width: 40%;
         margin-right: 5rem;
@@ -38,6 +51,10 @@ const HeaderDetails = styled.div`
             color: var(--header);
             font-size: 4.5rem;
             line-height: 1;
+
+            span {
+                cursor: pointer;
+            }
         }
 
         p {
@@ -68,6 +85,10 @@ const HeaderDetails = styled.div`
         a {
             color: var(--red);
             text-decoration: none;
+
+            &:hover {
+                color: var(--pink);
+            }
         }
     }
 

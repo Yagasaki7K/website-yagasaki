@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import HeaderDetails from "@/components/HeaderDetails";
 import HomeArticlesDetails from "@/components/HomeArticlesDetails";
 import Image from "next/image";
@@ -13,7 +14,7 @@ import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
 import Link from "next/link";
-import { title } from "process";
+import { useRouter } from "next/router";
 
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
@@ -89,6 +90,20 @@ function shareContent() {
 }
 
 export default function Home({ posts }: { posts: PostProps[] }) {
+    const router = useRouter();
+    const uwuUrl = router.asPath;
+    const [uwu, setUwu] = useState(false);
+
+    useEffect(() => {
+        if (uwuUrl !== undefined && uwuUrl !== null) {
+            if (uwuUrl.includes('uwu=true')) {
+                setUwu(true);
+            } else {
+                setUwu(false);
+            }
+        }
+    }, [uwuUrl]);
+
     return (
         <>
             <Head>
@@ -98,8 +113,9 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             <div className="overlay" />
 
             <HeaderDetails>
-                <div className="leftContent">
-                    <h1 onClick={() => console.log(posts)}>{"Hi, I'm Yagasaki."}</h1>
+                <div className={`${uwu ? 'leftContent uwu' : 'leftContent text'}`}>
+
+                    <h1>Hi, I'm Yagasaki<span onClick={() => setUwu(!uwu)}>.</span></h1>
 
                     <p>I enjoy turning solutions into code. I&apos;m a tech enthusiast and love staying up to date with all the latest cutting-edge features.</p>
 
@@ -126,17 +142,17 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             <HomeArticlesDetails>
                 <h2>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
-                <div className="articles">
+                <div className={`${uwu ? 'articles uwu' : 'articles poppins'}`}>
                     {posts && posts.slice(0, 10).map((post, index) => (
                         <a href={`/article/${post.slug}`} key={index}>
                             <LayoutArticle {...post} />
                         </a>
                     ))}
 
-                    <button onClick={redirectToSearch}>See more ...</button>
+                    <button className={`${uwu ? 'uwu' : 'poppins'}`} onClick={redirectToSearch}>See more ...</button>
                 </div>
             </HomeArticlesDetails>
-            <Copyright />
+            <Copyright isUwu={uwu} />
         </>
     );
 }
