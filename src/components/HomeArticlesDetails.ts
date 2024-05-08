@@ -52,6 +52,15 @@ const HomeArticlesDetails = styled.div`
         }
 
         .backToHome {
+            
+            a {
+                color: var(--red);
+
+                &:hover {
+                    color: var(--pink);
+                }
+            }
+
             color: var(--red);
             text-decoration: none;
 
