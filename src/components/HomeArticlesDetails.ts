@@ -27,7 +27,7 @@ const HomeArticlesDetails = styled.div`
         }
     }
 
-    .poppins {
+    .inter {
         font-family: 'Inter', sans-serif;
     }
 
