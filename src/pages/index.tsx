@@ -140,16 +140,16 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </HeaderDetails >
 
             <HomeArticlesDetails>
-                <h2 className={`${uwu ? 'uwu' : 'inter'}`}>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
+                <h2 className={`${uwu ? 'uwu' : 'poppins'}`}>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
-                <div className={`${uwu ? 'articles uwu' : 'articles inter'}`}>
+                <div className={`${uwu ? 'articles uwu' : 'articles poppins'}`}>
                     {posts && posts.slice(0, 10).map((post, index) => (
                         <a href={`/article/${post.slug}`} key={index}>
                             <LayoutArticle {...post} />
                         </a>
                     ))}
 
-                    <button className={`${uwu ? 'uwu' : 'inter'}`} onClick={redirectToSearch}>See more ...</button>
+                    <button className={`${uwu ? 'uwu' : 'poppins'}`} onClick={redirectToSearch}>See more ...</button>
                 </div>
             </HomeArticlesDetails>
             <Copyright isUwu={uwu} />

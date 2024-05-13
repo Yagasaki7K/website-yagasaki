@@ -13,11 +13,11 @@ const about = () => {
             <div className="overlay" />
 
             <HomeArticlesDetails>
-                <div className="header-about">
+                <div className="header-about poppins">
                     <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                 </div>
 
-                <div className="tkd">
+                <div className="tkd poppins">
                     <img
                         src="https://pbs.twimg.com/media/FtcDfyDacAIAzpg?format=jpg&name=large"
                         alt="Campinas Fighters"

@@ -13,11 +13,11 @@ const about = () => {
             <div className="overlay" />
 
             <HomeArticlesDetails>
-                <div className="header-about">
+                <div className="header-about poppins">
                     <Link className="backToHome" href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                 </div>
 
-                <div className="about">
+                <div className="about poppins">
                     <h2>I&apos;m Yagasaki,</h2>
                     <h1>
                         Software Developer from São Paulo, Brazil

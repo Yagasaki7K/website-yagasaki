@@ -27,8 +27,8 @@ const HomeArticlesDetails = styled.div`
         }
     }
 
-    .inter {
-        font-family: 'Inter', sans-serif;
+    .poppins {
+        font-family: 'Poppins', sans-serif;
     }
 
     .uwu {
@@ -161,7 +161,7 @@ const HomeArticlesDetails = styled.div`
                 }
 
                 h4 {
-                    font-size: 1.25rem;
+                    font-size: 1.24rem;
                     line-height: 1.75rem;
                     font-weight: 600;
                     color: var(--header);
@@ -176,6 +176,7 @@ const HomeArticlesDetails = styled.div`
                 p {
                     font-size: 1rem;
                     line-height: 1.5rem;
+                    width: 36rem;
                     color: var(--font);
 
                     @media (max-width: 768px) {
