@@ -123,13 +123,14 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>Currently, I&apos;m based in São Paulo, Brazil, but also <Link href="/about">in the web</Link>.</p>
 
-                    <p>You can also see me <Link href="https://stream.yagasaki.dev/">streaming</Link> something or even coding.</p>
+                    <p>You can also see me <Link href="https://stream.yagasaki.dev/">streaming</Link> something or even coding. </p>
 
                     <p>
                         <a href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></a>
                         <a href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-github"></i></a>
                         <a href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></a>
                         <a href="mailto:anderson18.marlon@gmail.com" target="_blank" rel="noreferrer"><i className="uil uil-at"></i></a>
+                        <a href="/bookmarks"><i className="uil uil-bookmark"></i></a>
                         <a onClick={shareContent}><i className="uil uil-share"></i></a>
                     </p>
                 </div>
