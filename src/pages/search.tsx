@@ -89,7 +89,7 @@ export default function Search({ posts }: { posts: PostProps[] }) {
             </HeaderDetails>
 
             <HomeArticlesDetails>
-                <div className="header">
+                <div className="header poppins">
                     <h2>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
                     <div className="backToHome">
@@ -97,7 +97,7 @@ export default function Search({ posts }: { posts: PostProps[] }) {
                     </div>
                 </div>
 
-                <div className="articles">
+                <div className="articles poppins">
                     {filteredPosts && filteredPosts.map((post, index) => (
                         <a href={`/article/${post.slug}`} key={index}>
                             <LayoutArticle {...post} />
