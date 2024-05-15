@@ -132,7 +132,7 @@ const ArticleDetails = styled.div`
         }
 
         .post-title {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         h2 {
