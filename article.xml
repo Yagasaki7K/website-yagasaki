@@ -1,0 +1,677 @@
+<rss version="2.0">
+<channel>
+<title>yagasaki.dev/Blog</title>
+<link>http://yagasaki.dev/</link>
+<description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
+<lastBuildDate>Wed, 15 May 2024 15:32:48 GMT</lastBuildDate>
+<docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+<generator>Feed</generator>
+<language>pt-br</language>
+<image>
+<title>yagasaki.dev/Blog</title>
+<url>https://yagasaki.dev/_next/image?url=https%3A%2F%2Fgithub.com%2FYagasaki7K.png&w=640&q=75</url>
+<link>http://yagasaki.dev/</link>
+</image>
+<copyright>© 2014 - 2024 Anderson "Yagasaki" Marlon</copyright>
+<item>
+<title>
+<![CDATA[ Análise do Arc Browser, meu substituto do Google Chrome ]]>
+</title>
+<link>https://yagasaki.dev/article/analisando-arc-browser</link>
+<guid>analisando-arc-browser</guid>
+<pubDate>Thu, 09 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Arc é um navegador que é mais que o Chrome, e conta com uma interface leve, minimalista e funcionalidades de brilhar os olhos. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Análise do Playbook de Alekson Fortes ]]>
+</title>
+<link>https://yagasaki.dev/article/analise-do-playbook-de-alekson-fortes</link>
+<guid>analise-do-playbook-de-alekson-fortes</guid>
+<pubDate>Wed, 24 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda meu ponto sobre o playbook de Alekson Fortes e como ele se baseia na minha vida pessoal. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Entendendo o que é uma API e como ela funciona para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/api-para-iniciantes</link>
+<guid>api-para-iniciantes</guid>
+<pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Uma API (Application Programming Interface) é um conceito fundamental no mundo da programação e do desenvolvimento de software. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Ilustração vs Inteligência Artificial ]]>
+</title>
+<link>https://yagasaki.dev/article/artificialart</link>
+<guid>artificialart</guid>
+<pubDate>Fri, 02 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda a discussão de artista por pessoas que pagaram para ter imagens geradas pela inteligência artificial ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Minha Experiência com o Desenvolvimento do Blog com NextJS ]]>
+</title>
+<link>https://yagasaki.dev/article/blog-com-nextjs</link>
+<guid>blog-com-nextjs</guid>
+<pubDate>Sat, 18 Dec 2021 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ A minha jornada ao explorar NextJS em futuro projeto de blog. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Bun, o compilador JavaScript mais rápido do mundo é lançado oficialmente ]]>
+</title>
+<link>https://yagasaki.dev/article/bun-e-sua-versao</link>
+<guid>bun-e-sua-versao</guid>
+<pubDate>Mon, 11 Sep 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Conhecendo o mais novo complicador JavaScript ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Conheça o meu bun/yarn commit e facilite a sua vida ]]>
+</title>
+<link>https://yagasaki.dev/article/bun-yarn-commit</link>
+<guid>bun-yarn-commit</guid>
+<pubDate>Tue, 16 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Uma maneira de atualizar, buildar e subir os commits de maneira simples, direta e sem complicações. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como criar um blog usando Github Pages + Obsidian + Quartz ]]>
+</title>
+<link>https://yagasaki.dev/article/como-criar-seu-blog</link>
+<guid>como-criar-seu-blog</guid>
+<pubDate>Fri, 29 Mar 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a criar um blog simples usando três tecnologias ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como instalar o Windows Subsystem for Linux (WSL) ]]>
+</title>
+<link>https://yagasaki.dev/article/como-instalar-o-wsl</link>
+<guid>como-instalar-o-wsl</guid>
+<pubDate>Sat, 20 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a instalar o WSL e descubra as vantagens de seu uso para desenvolvedores e por que abandonar o dual boot pode ser uma boa ideia. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como posso aprender programação em 2024 ]]>
+</title>
+<link>https://yagasaki.dev/article/como-posso-aprender-programacao</link>
+<guid>como-posso-aprender-programacao</guid>
+<pubDate>Wed, 08 Nov 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ O que fazer e quais passos devo seguir em 2024 para começar na programação? ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Conheça sobre Developer Relations (#DevRel) ]]>
+</title>
+<link>https://yagasaki.dev/article/conheca-sobre-devrel</link>
+<guid>conheca-sobre-devrel</guid>
+<pubDate>Fri, 18 Mar 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Descubra o que é Developer Relations (#DevRel) e como fazer parte desse meio. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Primeiramente, Deixe-me Apresentar: Eu Sou Anderson ]]>
+</title>
+<link>https://yagasaki.dev/article/conheca-yagasaki</link>
+<guid>conheca-yagasaki</guid>
+<pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Conheça Anderson Marlon desenvolvedor em sua jornada de autodescoberta e evolução. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como Conseguir Experiência Sendo Júnior/Iniciante ]]>
+</title>
+<link>https://yagasaki.dev/article/conseguir-experiencia-sendo-junior</link>
+<guid>conseguir-experiencia-sendo-junior</guid>
+<pubDate>Sat, 18 Dec 2021 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Dicas valiosas para ingressar na área de desenvolvimento e o que fazer para conseguir experiência. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Cultivar a Semente ou usar um Kit de Ferramentas? ]]>
+</title>
+<link>https://yagasaki.dev/article/cultivar-a-semente-ou-usar-um-kit-de-ferramentas</link>
+<guid>cultivar-a-semente-ou-usar-um-kit-de-ferramentas</guid>
+<pubDate>Sat, 16 Mar 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda qual é a melhor abordagem para desenvolver um projeto e lidar com desafios complexos ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Kombat Taekwondo Referee Siminar Brazil, Seminário de Desenvolvimento de Árbitros ]]>
+</title>
+<link>https://yagasaki.dev/article/curso-de-kombat-taekwondo</link>
+<guid>curso-de-kombat-taekwondo</guid>
+<pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ A nova metodologia para criar alguém de referência no Taekwondo. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Dark Mode - LocalStorage, Scheme, Button Default ou Local Time? ]]>
+</title>
+<link>https://yagasaki.dev/article/darkmode</link>
+<guid>darkmode</guid>
+<pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda qual é a melhor maneira de hospedar a configuração temática de sua aplicação ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ ContextAPI - Como criar, como usar e como alimentar para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/descomplicando-context-react</link>
+<guid>descomplicando-context-react</guid>
+<pubDate>Tue, 05 Sep 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Sobre o ContextAPI e aprendendo a criar, usar e alimentá-lo ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Desvendando o NestJS, uma jornada para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/desvendando-o-nest-js-uma-jornada-para-iniciantes</link>
+<guid>desvendando-o-nest-js-uma-jornada-para-iniciantes</guid>
+<pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda o que é NestJS e suas funções de modulos, controladores e serviços ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Recebendo mensagens de commit no Discord (Webhook) ]]>
+</title>
+<link>https://yagasaki.dev/article/discord-webhook</link>
+<guid>discord-webhook</guid>
+<pubDate>Wed, 15 Feb 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a configurar um webhook para receber mensagens de commit no grupo do seu Discord ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Rodando Docker no Windows sem Docker Desktop ]]>
+</title>
+<link>https://yagasaki.dev/article/docker-desktop</link>
+<guid>docker-desktop</guid>
+<pubDate>Wed, 01 Feb 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Uma abordagem para quem não quer o modelo desktop e prefere usar no shell ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Aplicativo que cria clone virtual do usuário faz sucesso no Brasil ]]>
+</title>
+<link>https://yagasaki.dev/article/entrevista-replika</link>
+<guid>entrevista-replika</guid>
+<pubDate>Wed, 23 Aug 2017 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Descubra o Replika, seu clone virtual ao alcance de um aplicativo ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Enviando um E-mail Usando Next.js ou React.js com Fetch ]]>
+</title>
+<link>https://yagasaki.dev/article/enviando-email-com-fetch</link>
+<guid>enviando-email-com-fetch</guid>
+<pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a enviar um e-mail usando Next.js ou React.js com Fetch e evite o erro "Failed to fetch". ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Frequently Asked Questions ]]>
+</title>
+<link>https://yagasaki.dev/article/faq</link>
+<guid>faq</guid>
+<pubDate>Wed, 08 Nov 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Perguntas e respostas frequentes sobre o meu mundo da tecnologia e minhas experiências ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Fazendo deploy da sua aplicação Web na Vercel ]]>
+</title>
+<link>https://yagasaki.dev/article/fazendo-deploy-na-vercel</link>
+<guid>fazendo-deploy-na-vercel</guid>
+<pubDate>Tue, 14 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Um artigo de passo-a-passo para te ensinar a subir sua aplicação web em produção na hospedagem da Vercel. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Front-end, Back-end, Fullstack, o que é e para onde ir? ]]>
+</title>
+<link>https://yagasaki.dev/article/frontbackfull</link>
+<guid>frontbackfull</guid>
+<pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda os conceitos de front-end, back-end, fullstack e mobile development. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Introdução ao Git e GitHub para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/git-github</link>
+<guid>git-github</guid>
+<pubDate>Wed, 15 Mar 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Git e GitHub, comandos e sua configuração inicial para quem está aprendendo ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Apresentação de Projetos e Primeiros Passos com o GitHub Pages ]]>
+</title>
+<link>https://yagasaki.dev/article/github-pages</link>
+<guid>github-pages</guid>
+<pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Como criar um site estático com o GitHub Pages e o GitHub Actions ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Github Desktop vs WSL ]]>
+</title>
+<link>https://yagasaki.dev/article/githubvswsl</link>
+<guid>githubvswsl</guid>
+<pubDate>Tue, 18 Oct 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda a diferença entre os ambientes de trabalho e qual optar para o mais vantajoso ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Guia Detalhado - Configuração do Rocketchat no Azure com Funcionalidades Avançadas ]]>
+</title>
+<link>https://yagasaki.dev/article/guia-detalhado-rocketchat</link>
+<guid>guia-detalhado-rocketchat</guid>
+<pubDate>Wed, 30 Aug 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Configuração do Rocketchat no Azure para quem é mais experiente ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ 14 Hábitos de Desenvolvedores Altamente Produtivos ]]>
+</title>
+<link>https://yagasaki.dev/article/habitos-altamente-produtivos</link>
+<guid>habitos-altamente-produtivos</guid>
+<pubDate>Wed, 20 Apr 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Descubra os hábitos essenciais para aumentar sua produtividade como desenvolvedor. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ 3º Lugar no Hackathon pela AMBEV em parceria com a Shawee ]]>
+</title>
+<link>https://yagasaki.dev/article/hackathon-ambev</link>
+<guid>hackathon-ambev</guid>
+<pubDate>Tue, 06 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ "Hopyeast", projeto vencedor, utiliza Engenharia Genética para inovação ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Instalando o ZSH e Oh My ZSH no WSL Ubuntu ]]>
+</title>
+<link>https://yagasaki.dev/article/instalando-oh-my-zsh</link>
+<guid>instalando-oh-my-zsh</guid>
+<pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a instalar via WSL ou Linux, o OhMyZsh, o terminal mais desejado e estiloso do Linux ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Integrando seu chat com o Rocketchat Omnichannel ]]>
+</title>
+<link>https://yagasaki.dev/article/integrando-rocketchat</link>
+<guid>integrando-rocketchat</guid>
+<pubDate>Tue, 22 Aug 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Preparando o ambiente e integrando de forma manual sua aplicação com o Rocketchat Omnichannel ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Curso de Introdução e Contribuição ao Código Aberto ]]>
+</title>
+<link>https://yagasaki.dev/article/introducao-ao-codigo-aberto</link>
+<guid>introducao-ao-codigo-aberto</guid>
+<pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Este curso abrangente irá guiá-lo pelo fascinante mundo do código aberto e ajudá-lo a se tornar um contribuidor ativo. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Marketing Talks #CPS01 foi marcado por clima informal e conteúdo direto ao ponto ]]>
+</title>
+<link>https://yagasaki.dev/article/meetup-latorre</link>
+<guid>meetup-latorre</guid>
+<pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Primeira edição do Marketing Talks reúne 55 profissionais para discutir o futuro do setor. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Evento da Rocketseat junto da minha experiência e uso do Bun ]]>
+</title>
+<link>https://yagasaki.dev/article/minha-experiencia-com-bun</link>
+<guid>minha-experiencia-com-bun</guid>
+<pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Juntei o evento NextLevelWeek e testei o Bun, novo compilador Javascript ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Quando decidir se é melhor trabalhar em um monorepo ou repositórios individuais? ]]>
+</title>
+<link>https://yagasaki.dev/article/monorepo</link>
+<guid>monorepo</guid>
+<pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Existem vários fatores a considerar quando se decide se é melhor trabalhar em um monorepo ou em vários repositórios individuais. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Evento do NodeBR em Campinas - Frontend Universe ]]>
+</title>
+<link>https://yagasaki.dev/article/nodebr-e-ifood-em-campinas</link>
+<guid>nodebr-e-ifood-em-campinas</guid>
+<pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda tudo que aconteceu no evento do NodeBR em parceria com o iFood em Campinas ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Notificação automática da Twitch para o Discord ]]>
+</title>
+<link>https://yagasaki.dev/article/notificacao-automatica-twitch</link>
+<guid>notificacao-automatica-twitch</guid>
+<pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a enviar notificação para seu Discord sempre que seu canal na Twitch entrar ao ar ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ O que é Lazy Loading e para que serve? ]]>
+</title>
+<link>https://yagasaki.dev/article/o-que-e-lazy-loading</link>
+<guid>o-que-e-lazy-loading</guid>
+<pubDate>Sat, 04 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Lazy loading é uma teoria de otimização que ajuda o usuário a reduzir o tempo de carregamento e melhorar a experiência do usuário. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como contribuir para projetos de código aberto – um guia para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/open-source</link>
+<guid>open-source</guid>
+<pubDate>Mon, 17 Apr 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a contribuir para projetos de código aberto e evoluir projetos de comunidade. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Montando um perfil interessante e exemplar no GitHub ]]>
+</title>
+<link>https://yagasaki.dev/article/perfil-github</link>
+<guid>perfil-github</guid>
+<pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda como montar um perfil relevante no Github e ser destaque entre os desenvolvedores ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Playbook do Desenvolvimento Profissional Internacional ]]>
+</title>
+<link>https://yagasaki.dev/article/playbook-do-desenvolvimento-profissional-internacional</link>
+<guid>playbook-do-desenvolvimento-profissional-internacional</guid>
+<pubDate>Wed, 24 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Este playbook é o seu melhor amigo para uma carreira internacional de sucesso. Dividido em duas sessões, teórica e prática. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Primeiros passos com Jest, o framework de teste Javascript ]]>
+</title>
+<link>https://yagasaki.dev/article/primeiro-passos-jest</link>
+<guid>primeiro-passos-jest</guid>
+<pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ O Jest é um framework de teste JavaScript popular que é usado para escrever testes unitários, testes de integração e testes de ponta a ponta. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como transformar seu website em um Progressive Web Application (PWA) ]]>
+</title>
+<link>https://yagasaki.dev/article/pwa</link>
+<guid>pwa</guid>
+<pubDate>Fri, 24 Mar 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Aprenda a transformar uma aplicação web em um modelo desktop usando PWA ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Tudo mudou para os desenvolvedores em React.js ]]>
+</title>
+<link>https://yagasaki.dev/article/reactcra</link>
+<guid>reactcra</guid>
+<pubDate>Tue, 18 Apr 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Se você é um desenvolvedor React, provavelmente não deve ter ouvido falar sobre o Create-React-App (CRA). ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ React Email de Zeno Rocha ]]>
+</title>
+<link>https://yagasaki.dev/article/reactemail</link>
+<guid>reactemail</guid>
+<pubDate>Tue, 06 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Zeno Rocha imaginou aquilo que todo desenvolvedor front-end estava cansado de tentar desenvolver. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ RestAPI vs GraphQL - Prós, Contras e Qual Usar? ]]>
+</title>
+<link>https://yagasaki.dev/article/restapi-vs-graphql</link>
+<guid>restapi-vs-graphql</guid>
+<pubDate>Tue, 12 Dec 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda os lados positivos e negativos entre as duas maiores formas de consumir APIs. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Dimensionando equipes de engenharia por meio de RFCs: anotando as coisas ]]>
+</title>
+<link>https://yagasaki.dev/article/rfc-method</link>
+<guid>rfc-method</guid>
+<pubDate>Sun, 17 Dec 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Essa metodologia vai simplesmente mudar como você organiza suas tarefas ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Guia de Comandos Rocketchat para Iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/rocketchat-comandos-uteis</link>
+<guid>rocketchat-comandos-uteis</guid>
+<pubDate>Sun, 27 Aug 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Guia de comandos do Rocketchat de configuração para quem está começando ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Simplificando a validação de dados com Zod ]]>
+</title>
+<link>https://yagasaki.dev/article/simplificando-a-vida-com-zod</link>
+<guid>simplificando-a-vida-com-zod</guid>
+<pubDate>Wed, 17 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ O Zod é uma biblioteca de validação de dados para TypeScript que simplifica o processo de validação de objetos e valores. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Storybook - Como usar e os primeiros passos ]]>
+</title>
+<link>https://yagasaki.dev/article/storybook-primeiros-passos</link>
+<guid>storybook-primeiros-passos</guid>
+<pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Imagine documentar seus componentes e testá-lo sem precisar abrir na página em que ele foi adicionado. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Taekwondo - Eu me tornei faixa preta ]]>
+</title>
+<link>https://yagasaki.dev/article/taekwondo-black-belt</link>
+<guid>taekwondo-black-belt</guid>
+<pubDate>Sat, 09 Dec 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Trabalho de conclusão de curso para o Taekwondo, uma validação teórica dentro da arte ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como usar o ChatGPT como uma forma de terapia virtual ]]>
+</title>
+<link>https://yagasaki.dev/article/terapia</link>
+<guid>terapia</guid>
+<pubDate>Mon, 05 Jun 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Como transformar sua sala do ChatGPT em uma sala de terapia, isso não deve substituir o profissional da área. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como usar o uTorrent para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/torrents-para-iniciantes</link>
+<guid>torrents-para-iniciantes</guid>
+<pubDate>Mon, 06 Mar 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Lembre-se que esse conteúdo é para fins educativos, e o uso dele é inteiramente de sua responsabilidade. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Removendo o Twitter Analytics do Feed ]]>
+</title>
+<link>https://yagasaki.dev/article/twitter-analytics</link>
+<guid>twitter-analytics</guid>
+<pubDate>Wed, 28 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Remova o Analytics do seu feed e deixe tudo mais limpo, sem informações desnecessárias ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ TypeScript - Types vs. Interfaces e qual usar escolher no próximo projeto? ]]>
+</title>
+<link>https://yagasaki.dev/article/typescript-types-e-interfaces-e-qual-usar</link>
+<guid>typescript-types-e-interfaces-e-qual-usar</guid>
+<pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Veja o que é um tipo, interfaces e qual usar no TypeScript. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ O mínimo que você precisa saber para iniciar um projeto em TypeScript ]]>
+</title>
+<link>https://yagasaki.dev/article/typescript</link>
+<guid>typescript</guid>
+<pubDate>Tue, 25 Apr 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Se você não é um desenvolvedor de JavaScript, provavelmente não deve ter ouvido falar sobre o TypeScript. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Testes Unitários - Como e quando usar para iniciantes ]]>
+</title>
+<link>https://yagasaki.dev/article/unit-test</link>
+<guid>unit-test</guid>
+<pubDate>Tue, 13 Dec 2022 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Me considero desenvolvedor fazem oito anos ~ desde essa publicação ~ e somente agora entendi como e para quê serve teste unitário. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como dar update no NodeJS - um tutorial fácil e rápido ]]>
+</title>
+<link>https://yagasaki.dev/article/upgradenode</link>
+<guid>upgradenode</guid>
+<pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Afinal, saber como atualizar Node é importantíssimo, ainda mais quando se usa terminal. ]]>
+</description>
+</item>
+</channel>
+</rss>
