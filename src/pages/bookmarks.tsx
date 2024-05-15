@@ -11,7 +11,7 @@ const booksmark = () => {
                     <div className="backToHome">
                         <Link href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                     </div>
-                    <h1 className='post-title'>Booksmark</h1>
+                    <h1 className='post-title'>Bookmarks</h1>
 
                     <div className="details">
                         <div className="date">
