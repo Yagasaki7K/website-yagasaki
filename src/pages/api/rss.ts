@@ -26,7 +26,7 @@ const feed = new Feed({
     }
 });
 
-export default async function handler(req: { method: string; }, res: { setHeader: (arg0: string, arg1: string | string[]) => void; status: (arg0: number) => { (): any; new(): any; send: { (arg0: string): void; new(): any; }; end: { (arg0: string): void; new(): any; }; }; }) {
+export default async function handler(req: any, res: any){
     if (req.method === 'GET') {
         const posts = getPosts();
         const rss = await generateRSS(posts);
@@ -35,6 +35,7 @@ export default async function handler(req: { method: string; }, res: { setHeader
     } else {
         res.setHeader('Allow', ['GET']);
         res.status(405).end(`Method ${req.method} Not Allowed`);
+        res.status(500).send('Internal Server Error', { error: Error });
     }
 }
 
