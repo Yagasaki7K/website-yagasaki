@@ -11,8 +11,8 @@ const feed = new Feed({
     id: "http://yagasaki.dev/",
     link: "http://yagasaki.dev/",
     language: "pt-br",
-    image: "https://yagasaki.dev/_next/image?url=https%3A%2F%2Fgithub.com%2FYagasaki7K.png&w=640&q=75",
-    favicon: "https://yagasaki.dev/_next/image?url=https%3A%2F%2Fgithub.com%2FYagasaki7K.png&w=640&q=75",
+    image: "https://github.com/Yagasaki7K.png",
+    favicon: "https://github.com/Yagasaki7K.png",
     copyright: "© 2014 - 2024 Anderson \"Yagasaki\" Marlon",
     updated: new Date(), // optional, default = today
     generator: "Feed", // optional, default = 'Feed for Node.js'
