@@ -6,6 +6,7 @@ const booksmark = () => {
     return (
         <>
             <div className="overlay" />
+            <title>Yagasaki.dev | Bookmarks</title>
             <ArticleDetails>
                 <div className='card card-page text'>
                     <div className="backToHome">

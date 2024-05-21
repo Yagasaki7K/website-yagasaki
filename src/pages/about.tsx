@@ -7,7 +7,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>Anderson Marlon // Yagasaki7K</title>
+                <title>Yagasaki.dev | About</title>
             </Head>
 
             <div className="overlay" />

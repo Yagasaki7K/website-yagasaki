@@ -123,7 +123,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>Currently, I&apos;m based in São Paulo, Brazil, but also <Link href="/about">in the web</Link>.</p>
 
-                    <p>You can also see me <Link href="https://stream.yagasaki.dev/">streaming</Link> something or even coding. </p>
+                    <p>You can also see me <Link href="https://stream.yagasaki.dev/" target="_blank" rel="noreferrer">streaming <i className="uil uil-external-link-alt"></i></Link> something or even coding. </p>
 
                     <p>
                         <a href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></a>
@@ -138,7 +138,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                     <Image src="https://github.com/Yagasaki7K.png" alt="GitHub/Yagasaki7K"
                         width={400} height={400} loading="lazy" decoding="async" title="GitHub/Yagasaki7K" />
                 </div>
-            </HeaderDetails >
+            </HeaderDetails>
 
             <HomeArticlesDetails>
                 <h2 className={`${uwu ? 'uwu' : 'poppins'}`}>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
