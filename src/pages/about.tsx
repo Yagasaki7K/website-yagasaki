@@ -139,6 +139,13 @@ const about = () => {
                         <h3>Certificates:</h3>
                         <p>
                             <strong>
+                                Firebase: Realtime Database, Cloud, Auth and Security{" "}
+                            </strong>
+                            by Gabriel Barreto - May 2024
+                        </p>
+
+                        <p>
+                            <strong>
                                 NLW Unite (Node, Typescript, Fastify, Prisma, Zod & Swagger){" "}
                             </strong>
                             by Rocketseat - April 2024
