@@ -3,7 +3,7 @@
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Wed, 15 May 2024 17:30:25 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 May 2024 18:25:37 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -367,6 +367,28 @@
 </item>
 <item>
 <title>
+<![CDATA[ Aprenda a instalar e usar o Docker no WSL de uma vez ]]>
+</title>
+<link>https://yagasaki.dev/article/instalando-docker-no-wsl</link>
+<guid>instalando-docker-no-wsl</guid>
+<pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ A solução definitiva para instalar e usar o Docker no Windows Subsystem Linux (WSL) ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Aprenda a instalar e usar o Obsidian no WSL ]]>
+</title>
+<link>https://yagasaki.dev/article/instalando-obsidian-no-wsl</link>
+<guid>instalando-obsidian-no-wsl</guid>
+<pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ A solução definitiva para instalar e usar o Obsidian no Windows Subsystem Linux (WSL) ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ Instalando o ZSH e Oh My ZSH no WSL Ubuntu ]]>
 </title>
 <link>https://yagasaki.dev/article/instalando-oh-my-zsh</link>
@@ -429,6 +451,17 @@
 <pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Existem vários fatores a considerar quando se decide se é melhor trabalhar em um monorepo ou em vários repositórios individuais. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ NextJS vs React – Uma comparação para o Frontend ]]>
+</title>
+<link>https://yagasaki.dev/article/next-vs-react-uma-comparacao-para-o-frontend</link>
+<guid>next-vs-react-uma-comparacao-para-o-frontend</guid>
+<pubDate>Tue, 21 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ No cenário em rápida evolução do desenvolvimento frontend, escolher a tecnologia certa é crucial para construir aplicações ]]>
 </description>
 </item>
 <item>
