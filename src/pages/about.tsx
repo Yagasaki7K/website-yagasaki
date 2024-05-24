@@ -33,7 +33,7 @@ const about = () => {
 
 
                     <div className="languages">
-                        <h3>Skills and expertise:</h3>
+                        <h3>Skills and expertise</h3>
                         <p>
                             <strong>Languages:</strong> Javascript / Typescript
                         </p>
@@ -62,7 +62,7 @@ const about = () => {
 
 
                     <div className="positions">
-                        <h3>Positions:</h3>
+                        <h3>Positions</h3>
                         <h4>Software Developer</h4>
                         <p>
                             <strong>WhatsUpper</strong> | <i>August 2023 — December 2023</i>
@@ -81,6 +81,8 @@ const about = () => {
                             Using technologies like jQuery, React, TypeScript, NodeJS, CI/CD, Firebase, Rocketchat, Google Cloud Platform, Firebase Logging, integration and unit tests with Jest, NestJS, GPT Integration and Stripe.
                         </p>
 
+                        <hr />
+
                         <h4>Software Developer</h4>
                         <p>
                             <strong>Stone Co. / Linx S.A.</strong> | <i>October 2022 — June 2023</i>
@@ -96,12 +98,13 @@ const about = () => {
                         <li>Construction of the responsivity website for the product and its presentation of solutions and functionalities using the app with ecommerce and the customer’s needs.</li>
                         <li>Manufacturing and testing new routines, templates and communication behaviors.</li>
 
-
                         <p>
                             Using React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX,
                             Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit
                             Testing with Jest, AWS Cloud, NestJS and Postgress.
                         </p>
+
+                        <hr />
 
                         <h4>Systems Development Analyst</h4>
                         <p>
@@ -123,6 +126,8 @@ const about = () => {
                             Facebook Ads and using Digital Ocean to DevOps our system.
                         </p>
 
+                        <hr />
+
                         <h4>Marketing Assistant Jr. / Development Frontend Jr.</h4>
                         <p>
                             <strong>Marry Perry Paris</strong> | <i>July 2020 – October 2020</i>
@@ -134,10 +139,12 @@ const about = () => {
                             MVC Architecture, MySQL and NodeJS – later the project was changed
                             to Laravel.
                         </p>
+
+                        <hr />
                     </div>
 
                     <div className="certificates" id="awards">
-                        <h3>Certificates:</h3>
+                        <h3>Certificates</h3>
                         <p>
                             <strong>
                                 Firebase: Realtime Database, Cloud, Auth and Security{" "}
@@ -207,7 +214,7 @@ const about = () => {
                         </p>
 
                         <p>
-                            <strong>Participation, Proud Tech </strong>
+                            <strong>Participation, Proud Tech{" "}</strong>
                             by Softplan - March 2022
                         </p>
 
@@ -218,89 +225,130 @@ const about = () => {
                         </p>
 
                         <p>
-                            <strong>Participation, Masterclass Github Actions </strong>
+                            <strong>Participation, Masterclass Github Actions{" "}</strong>
                             by Azure na Prática - January 2021
                         </p>
 
                         <p>
-                            <strong>Participation, Hackathon (Third Place) </strong>
+                            <strong>Participation, Hackathon (Third Place){" "}</strong>
                             by Shawee, AMBEV Hackathon - December 2020
                         </p>
 
                         <p>
-                            <strong>Linux Terminal </strong>
+                            <strong>Linux Terminal{" "}</strong>
                             by Profº Diego Mariano - October 2020
                         </p>
 
                         <p>
-                            <strong>Introduction to the Linux Operation System </strong>
+                            <strong>Introduction to the Linux Operation System{" "}</strong>
                             by Profº Diego Mariano - October 2020
                         </p>
 
                         <p>
-                            <strong>Introduction to MySQL Database </strong>
+                            <strong>Introduction to MySQL Database{" "}</strong>
                             by Profº Diego Mariano - October 2020
                         </p>
 
                         <p>
-                            <strong>Creating Dynamic Web Pages with PHP </strong>
+                            <strong>Creating Dynamic Web Pages with PHP{" "}</strong>
                             by Profº Diego Mariano - October 2020
                         </p>
 
                         <p>
-                            <strong>Facebook Blueprint - Basic to Advanced </strong>
+                            <strong>Facebook Blueprint - Basic to Advanced{" "}</strong>
                             by Faculdade do Marketing Digital - July 2020
                         </p>
 
                         <p>
-                            <strong>11th Edition - Omnistack Week </strong>
+                            <strong>11th Edition - Omnistack Week{" "}</strong>
                             by Rocketseat - March 2020
                         </p>
 
                         <p>
-                            <strong>Introduction to Git and Version Control </strong>
+                            <strong>Introduction to Git and Version Control{" "}</strong>
                             by Digital Innovation One - February 2020
                         </p>
 
                         <p>
-                            <strong>Getting Started with Git and Your Commands </strong>
+                            <strong>Getting Started with Git and Your Commands{" "}</strong>
                             by Digital Innovation One - February 2020
                         </p>
 
                         <p>
-                            <strong>Arctic Code Vault Contributor </strong>
+                            <strong>Arctic Code Vault Contributor{" "}</strong>
                             by Github Archive Program - February 2020
                         </p>
 
                         <p>
-                            <strong>Essential Programming Logic </strong>
+                            <strong>Essential Programming Logic{" "}</strong>
                             by Digital Innovation One - February 2020
                         </p>
 
                         <p>
-                            <strong>Internet programming with HTMl5 and CSS3 </strong>
+                            <strong>Internet programming with HTMl5 and CSS3{" "}</strong>
                             by Digital Innovation One - February 2020
                         </p>
 
                         <p>
-                            <strong>Web Programming for Scientific Dissemination </strong>
+                            <strong>Web Programming for Scientific Dissemination{" "}</strong>
                             by Profº Diego Mariano - January 2020
                         </p>
 
                         <p>
-                            <strong>Web Design with PHP, HTML, CSS and JS </strong>
+                            <strong>Web Design with PHP, HTML, CSS and JS{" "}</strong>
                             by Udemy - January 2020
                         </p>
 
                         <p>
-                            <strong>Illustration and Graphic Design for the Web </strong>
+                            <strong>Illustration and Graphic Design for the Web{" "}</strong>
                             by Bradesco - May 2017
                         </p>
 
                         <p>
-                            <strong>Web Design and Graphic Design </strong>
+                            <strong>Web Design and Graphic Design{" "}</strong>
                             by MacPoli Cursos - December 2014
                         </p>
+                    </div>
+
+                    <hr />
+
+                    <div className="projects" id="projects">
+                        <h3>Projects</h3>
+                        <p><strong>website-steamfolio</strong> - <a href="https://github.com/Yagasaki7K/website-steamfolio" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://steamfolio.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>Building a customizable portfolio interface in the style of Steam. Using Bun, React and Vite.</p>
+
+                        <p><strong>website-onigirihardcore</strong> - <a href="https://github.com/Yagasaki7K/website-onigirihardcore" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://onigirihardcore.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>Onigiri Hardcore is a website about news, games, animes and entertainment</p>
+
+                        <p><strong>app-stream</strong> - <a href="https://github.com/Yagasaki7K/app-stream" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://thetwitch.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>A player website to watch Twitch.tv without distractions.</p>
+
+                        <p><strong>website-meconta</strong> - <a href="https://github.com/Yagasaki7K/website-meconta/" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://me-conta.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>MeConta is a financial management app your way, with the possibility of viewing data through graphs.</p>
+
+                        <p><strong>website-essentials</strong> - <a href="https://github.com/Yagasaki7K/website-essentials" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://webessentials.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>Essentials softwares for your computer</p>
+
+                        <p><strong>website-findyourpet</strong> - <a href="https://github.com/Yagasaki7K/website-findyourpet" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://findyourpet.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>App to help you rescue, inform and donate your pets with love! 🐶💜🐱</p>
+
+                        <p><strong>feature-notificationpush</strong> - <a href="https://github.com/Yagasaki7K/feature-notificationpush" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://yagasaki7k.github.io/feature-notificationpush/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>A feature to do a Notification Push without framework or package</p>
+
+                        <p><strong>website-empreguei</strong> - <a href="https://github.com/Yagasaki7K/website-empreguei" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://empreguei.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>A website to find and send jobs without ads and distractions</p>
+
+                        <p><strong>website-newsletterchamps (deprecated)</strong> - <a href="https://github.com/Yagasaki7K/website-newsletterchamps" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://newsletterchamps.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>A page on website to display a Newsletter from Filipe Deschamps</p>
+
+                        <p><strong>app-pomodoro</strong> - <a href="https://github.com/Yagasaki7K/app-pomodoro" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://appomodoro.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>An intuitive timer built with React, following the Pomodoro technique</p>
+
+                        <p><strong>app-speechtotext</strong> - <a href="https://github.com/Yagasaki7K/app-speechtotext" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://app-speech-to-text.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>Accurately convert speech into text with an API powered by the best of Google’s AI research and technology.</p>
+
+                        <p><strong>app-notemarkdown</strong> - <a href="https://github.com/Yagasaki7K/app-notemarkdown" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://notemarkdown.vercel.app" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p>Easy way to edit and preview a markdown without save and with fast refresh.</p>
                     </div>
                 </div>
             </HomeArticlesDetails>
