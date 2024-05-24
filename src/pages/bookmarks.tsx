@@ -1,4 +1,5 @@
 import ArticleDetails from '@/components/ArticleDetails'
+import Copyright from '@/components/Copyright'
 import Link from 'next/link'
 import React from 'react'
 
@@ -112,6 +113,7 @@ const booksmark = () => {
                     </div>
                 </div>
             </ArticleDetails>
+            <Copyright isUwu={false} />
         </>
     )
 }

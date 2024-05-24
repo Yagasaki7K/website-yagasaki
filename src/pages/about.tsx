@@ -1,3 +1,4 @@
+import Copyright from '@/components/Copyright'
 import HomeArticlesDetails from '@/components/HomeArticlesDetails'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -302,7 +303,8 @@ const about = () => {
                         </p>
                     </div>
                 </div>
-            </HomeArticlesDetails >
+            </HomeArticlesDetails>
+            <Copyright isUwu={false} />
         </>
     )
 }
