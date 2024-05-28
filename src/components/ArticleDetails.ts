@@ -222,7 +222,7 @@ const ArticleDetails = styled.div`
     }
 
     pre {
-      background: var(--background-alt);
+      background: var(--codeblock);
       border-radius: 0.5rem;
       padding: 1rem;
       margin: 1rem 0;
@@ -236,7 +236,7 @@ const ArticleDetails = styled.div`
     }
 
     code {
-      background: var(--background-alt);
+      background: var(--codeblock);
       border-radius: 0.5rem;
       padding: 0.15rem 0.5rem;
       font-size: 14px;

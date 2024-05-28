@@ -12,6 +12,7 @@
     --red: #e10065;
     --code: #eceef3;
     --pink: #dc77b6;
+    --codeblock: #000;
 }
 
 @media (prefers-color-scheme: dark) {
