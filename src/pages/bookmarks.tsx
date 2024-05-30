@@ -42,6 +42,8 @@ const booksmark = () => {
                         <li><a href="https://xnacly.me/posts/2022/linux-for-powerusers/" target='_blank' rel="noopener noreferrer">Linux guide for power users</a></li>
                         <li><a href="https://jxnl.co/writing/2024/06/01/advice-to-young-people/" target='_blank' rel="noopener noreferrer">Advice to Young People, The Lies I Tell Myself</a></li>
                         <li><a href="https://read.highgrowthengineer.com/p/becoming-a-go-to-person-gets-you" target='_blank' rel="noopener noreferrer">Becoming a go-to person gets you promoted. Here's how to do it as a software engineer.</a></li>
+                        <li><a href="https://www.danilo.life/post/3" target='_blank' rel="noopener noreferrer">Introspection and Growth</a></li>
+                        <li><a href="https://blog.lucis.dev/blog/pense-nos-incentivos-antes-de-qualquer-coisa" target='_blank' rel="noopener noreferrer">Incentivos antes de qualquer coisa</a></li>
                         <li><a href="" target='_blank' rel="noopener noreferrer"></a></li>
 
                         {/* --- */}
