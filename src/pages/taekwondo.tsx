@@ -68,6 +68,12 @@ const about = () => {
 
                     <div className="positions">
                         <h3>Achievements & Goals:</h3>
+                        <h4>Campeonato Paulista de Taekwondo - Third Stage</h4>
+                        <p>
+                            <strong>🥈 Second Place</strong> | <strong>Campinas Fighters</strong>{" "}
+                            | <i>2024</i>
+                        </p>
+
                         <h4>Arnold Sports - Double Match</h4>
                         <p>
                             <strong>🥉 Third Place</strong> | <strong>Campinas Fighters</strong>{" "}

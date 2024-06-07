@@ -35,7 +35,7 @@ const about = () => {
                     <div className="languages">
                         <h3>Skills and expertise</h3>
                         <p>
-                            <strong>Languages:</strong> Javascript / Typescript
+                            <strong>Languages:</strong> Javascript / Typescript, Python
                         </p>
                         <p>
                             <strong>Frontend:</strong> React.js, Next.js, Angular 17 & Vite
@@ -75,7 +75,6 @@ const about = () => {
                         <li>Responsible to developer a payment method using Stripe.</li>
                         <li>Responsible to develop and delivery the settings and functionally of Rocketchat and integrate with iframe of company together with ecommerce solution.</li>
                         <li>Build and develop a jQuery Single Page Application quiz for client and suggest a better way to find a solution for the customer based on the problem and redirect them to a specialized communication department.</li>
-
 
                         <p>
                             Using technologies like jQuery, React, TypeScript, NodeJS, CI/CD, Firebase, Rocketchat, Google Cloud Platform, Firebase Logging, integration and unit tests with Jest, NestJS, GPT Integration and Stripe.
@@ -145,6 +144,13 @@ const about = () => {
 
                     <div className="certificates" id="awards">
                         <h3>Certificates</h3>
+                        <p>
+                            <strong>
+                                Web Development with Python: Python, Django, Pytest & OOP{" "}
+                            </strong>
+                            by IBM SkillsBuild - June 2024
+                        </p>
+
                         <p>
                             <strong>
                                 Firebase: Realtime Database, Cloud, Auth and Security{" "}

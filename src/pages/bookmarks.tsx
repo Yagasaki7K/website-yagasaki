@@ -44,6 +44,7 @@ const booksmark = () => {
                         <li><a href="https://read.highgrowthengineer.com/p/becoming-a-go-to-person-gets-you" target='_blank' rel="noopener noreferrer">Becoming a go-to person gets you promoted. Here's how to do it as a software engineer.</a></li>
                         <li><a href="https://www.danilo.life/post/3" target='_blank' rel="noopener noreferrer">Introspection and Growth</a></li>
                         <li><a href="https://blog.lucis.dev/blog/pense-nos-incentivos-antes-de-qualquer-coisa" target='_blank' rel="noopener noreferrer">Incentivos antes de qualquer coisa</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=kPdLsrggPH0&ab_channel=LuanaCarolina" target='_blank' rel="noopener noreferrer">Você NUNCA mais vai ESQUECER o que leu (Video)</a></li>
                         <li><a href="" target='_blank' rel="noopener noreferrer"></a></li>
 
                         {/* --- */}
