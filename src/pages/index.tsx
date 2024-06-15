@@ -119,7 +119,11 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>I enjoy turning solutions into code. I&apos;m a tech enthusiast and love staying up to date with all the latest cutting-edge features.</p>
 
-                    <p>I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create. I like Final Fantasy, drifting, japanese culture and I believe that &quot;X-Tudo&quot; is a healthy snack.</p>
+                    <p>
+                        I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create.
+                    </p>
+
+                    <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <a href="ascii.yagasaki.dev">ASCII</a> - and I believe that &quot;X-Tudo&quot; is a healthy snack.</p>
 
                     <p>Currently, I&apos;m based in São Paulo, Brazil, but also <Link href="/about">in the web</Link>.</p>
 

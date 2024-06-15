@@ -10,25 +10,25 @@
     "commit": "bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
   },
   "dependencies": {
-    "dayjs": "^1.11.10",
+    "dayjs": "^1.11.11",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.9.0",
-    "marked": "^12.0.1",
-    "million": "^3.0.6",
+    "marked": "^12.0.2",
+    "million": "^3.1.11",
     "next": "14.1.4",
     "next-seo": "^6.5.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "sonner": "^1.4.41",
-    "styled-components": "^6.1.8"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sonner": "^1.5.0",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.1.4"
   }
 }
