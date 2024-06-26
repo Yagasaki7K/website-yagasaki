@@ -25,8 +25,6 @@ const LayoutArticle = (post: PostProps) => {
                 </div>
             </div>
 
-            <div className="cutImage"></div>
-
             <div className="img">
                 <Image src={post.frontmatter?.image} alt="" width={400} height={400} />
             </div>

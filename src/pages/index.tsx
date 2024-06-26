@@ -111,6 +111,28 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </Head>
 
             <div className="overlay" />
+            <div className="ball"></div>
+            <div
+                className="ball"
+                style={
+                    {
+                        "--delay": "-12s",
+                        "--size": "0.35",
+                        "--speed": "25s",
+                    } as React.CSSProperties
+                }
+            ></div>
+
+            <div
+                className="ball"
+                style={
+                    {
+                        "--delay": "-10s",
+                        "--size": "0.3",
+                        "--speed": "15s",
+                    } as React.CSSProperties
+                }
+            ></div>
 
             <HeaderDetails>
                 <div className={`${uwu ? 'leftContent uwu' : 'leftContent text'}`}>

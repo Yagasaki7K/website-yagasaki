@@ -124,9 +124,9 @@ const HomeArticlesDetails = styled.div`
       display: flex;
       flex-direction: row;
       gap: 0.5rem;
-      border: 1px solid var(--border);
+      border: 1px solid var(--gray);
       border-radius: 0.375rem;
-      width: 95.5%;
+      width: 93.3%;
       margin-left: 4.5rem;
       transition: 0.2s;
 
@@ -140,10 +140,6 @@ const HomeArticlesDetails = styled.div`
 
       &:hover {
         background: var(--border);
-
-        .cutImage {
-          background: var(--border);
-        }
 
         .details {
           border-image: linear-gradient(
@@ -219,33 +215,10 @@ const HomeArticlesDetails = styled.div`
         }
       }
 
-      .cutImage {
-        transform: skew(20deg);
-        width: 4rem;
-        background: var(--background);
-        z-index: 2;
-        margin-right: -6.1rem;
-        margin-left: -1rem;
-        transition: 0.2s;
-
-        @media (max-width: 1024px) {
-          margin-left: 0rem;
-          margin-right: 0rem;
-        }
-      }
-
-      .cutImage,
       img {
-        height: 9rem;
-
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-
-      img {
-        margin-left: 4rem;
         width: 22rem;
+        height: 8.83rem;
+        border-radius: 0 0.375rem 0.375rem 0;
         object-fit: cover;
         margin-bottom: -10px;
 
