@@ -144,6 +144,7 @@ html {
         transform: translate3D(0%, 51%, 0) rotate(360deg);
     }
 }
+
 body {
     background: var(--background);
 }
