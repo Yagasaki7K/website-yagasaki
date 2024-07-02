@@ -24,9 +24,19 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 wsl --install
 ```
 
-3. **Instale uma distribuição Linux**: Após habilitar o WSL, vá para a Microsoft Store e procure por uma distribuição Linux de sua escolha, como Ubuntu, Debian ou Fedora. Clique em "Instalar" e siga as instruções na tela para concluir a instalação.
+3. **Atualize o WSL**:
 
-4. **Inicie a distribuição instalada**: Após a instalação ser concluída, você pode iniciar a distribuição Linux recém-instalada a partir do menu Iniciar. Isso abrirá uma janela de terminal onde você pode interagir com o Linux. Ou, se preferir, você pode baixar o Terminal Preview na Microsoft Store - caso esteja no Windows 10 - e utilizá-lo. Vale lembrar que no Windows 11 ela já está disponível.
+```powershell
+wsl --update
+```
+
+4. **Instale uma distribuição Linux**: Após habilitar o WSL, existe a opção de instalar direto pelo Terminal, se você der `wsl --install` você verá a lista de distros disponíveis para download (No exemplo, usarei Ubuntu-24.04), caso o contrário vá para a Microsoft Store e procure por uma distribuição Linux de sua escolha, como Ubuntu, Debian ou Fedora. Clique em "Instalar" e siga as instruções na tela para concluir a instalação.
+   
+```powershell
+wsl --install -d Ubuntu-24.04
+```
+
+5. **Inicie a distribuição instalada**: Após a instalação ser concluída, você pode iniciar a distribuição Linux recém-instalada a partir do menu Iniciar. Isso abrirá uma janela de terminal onde você pode interagir com o Linux. Ou, se preferir, você pode baixar o Terminal Preview na Microsoft Store - caso esteja no Windows 10 - e utilizá-lo. Vale lembrar que no Windows 11 ela já está disponível.
 
 Alguns erros que geralmente acontecem ao tentar instalar a primeira vez é.
 
@@ -34,7 +44,7 @@ Alguns erros que geralmente acontecem ao tentar instalar a primeira vez é.
 Para resolver esse problema de virtualização, recomendamos que você desligue o computador e vá até a BIOS, procure a virtualização nas configurações de sua BIOS e ligue ela, claro, se você não entender sobre o assunto, procure algum tutorial no Youtube e tome cuidado com o que estiver alterando, sempre traduza, caso tenha dificuldade no inglês.
 
 - O Windows Subsystem for Linux (WSL) precisa estar na versão 2.
-Você pode listar suas distribuições do Linux instaladas e verificar a versão do WSL para a qual cada uma está definida inserindo o comando: `wsl -l -v` no PowerShell ou Prompt de Comando do Windows. Para definir a versão padrão como WSL 1 ou WSL 2 quando uma nova distribuição do Linux é instalada, use o comando: `wsl --set-default-version <Version#>`, substituindo `<Version#>` por 1 ou 2.
+Você pode listar suas distribuições do Linux instaladas e verificar a versão do WSL para a qual cada uma está definida, lembre-se de verificar se ele está atualizado seguindo o passo 3, depois insira o comando: `wsl -l -v` no PowerShell ou Prompt de Comando do Windows. Para definir a versão padrão como WSL 1 ou WSL 2 quando uma nova distribuição do Linux é instalada, use o comando: `wsl --set-default-version <Version#>`, substituindo `<Version#>` por 1 ou 2.
 
 Tá, mas qual é a vantagem de eu usar o WSL ao invés de usar um Dual Boot por exemplo?
 
