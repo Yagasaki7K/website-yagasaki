@@ -99,9 +99,9 @@ export default function Search({ posts }: { posts: PostProps[] }) {
 
                 <div className="articles poppins">
                     {filteredPosts && filteredPosts.map((post, index) => (
-                        <a href={`/article/${post.slug}`} key={index}>
+                        <Link href={`/article/${post.slug}`} key={index}>
                             <LayoutArticle {...post} />
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </HomeArticlesDetails>

@@ -97,7 +97,7 @@ const about = () => {
 
                         <h4>Campinas Fighters</h4>
                         <p>
-                            <strong>🥋 Black Belt (1st Dan)</strong> | <i>2023</i> - <a href="https://yagasaki.dev/article/taekwondo-black-belt">Link to Course Completion (PT-BR)</a>
+                            <strong>🥋 Black Belt (1st Dan)</strong> | <i>2023</i> - <Link href="https://yagasaki.dev/article/taekwondo-black-belt">Link to Course Completion (PT-BR)</Link>
                         </p>
 
                         <h4>São Roque International</h4>

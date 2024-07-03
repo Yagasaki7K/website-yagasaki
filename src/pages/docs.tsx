@@ -16,10 +16,10 @@ const doc = () => {
                     <h1 className='post-title'>Docs</h1>
                     <div className='post-body'>
                         <h1>Summary</h1>
-                        <li><a href="#ssl3">ssl3_get_record:wrong version</a></li>
-                        <li><a href="#git-push-results">Git Push Results in Authentication Failed</a></li>
-                        <li><a href="#unable-to-write-file">Unable to write file on Linux/VS Code</a></li>
-                        <li><a href="#nx-eaccess-permission-denied">NX EACCESS Permission Denied</a></li>
+                        <li><Link href="#ssl3">ssl3_get_record:wrong version</Link></li>
+                        <li><Link href="#git-push-results">Git Push Results in Authentication Failed</Link></li>
+                        <li><Link href="#unable-to-write-file">Unable to write file on Linux/VS Code</Link></li>
+                        <li><Link href="#nx-eaccess-permission-denied">NX EACCESS Permission Denied</Link></li>
                     </div>
 
                     <div className='post-body'>

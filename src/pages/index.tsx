@@ -145,19 +145,19 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                         I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create.
                     </p>
 
-                    <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <a href="https://ascii.yagasaki.dev">ASCII</a> - and I believe than &quot;X-Tudo&quot; is a healthy snack.</p>
+                    <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <Link href="https://ascii.yagasaki.dev">ASCII</Link> - and I believe than &quot;X-Tudo&quot; is a healthy snack.</p>
 
-                    <p>My relevant projects: <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore</a>, <a href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio</a>, <a href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials (Desktop)</a>.</p>
+                    <p>My relevant projects: <Link href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore</Link>, <Link href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio</Link>, <Link href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials (Desktop)</Link>.</p>
                     <p>Currently, I&apos;m based in São Paulo - Brazil, but also <Link href="/about">in the web</Link>.</p>
 
                     <p>You can also see me <Link href="https://stream.yagasaki.dev/" target="_blank" rel="noreferrer">streaming <i className="uil uil-external-link-alt"></i></Link> something or even coding. </p>
 
                     <p>
-                        <a href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></a>
-                        <a href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-github"></i></a>
-                        <a href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></a>
-                        <a href="mailto:anderson18.marlon@gmail.com" target="_blank" rel="noreferrer"><i className="uil uil-at"></i></a>
-                        <a href="/bookmarks"><i className="uil uil-bookmark"></i></a>
+                        <Link href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></Link>
+                        <Link href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-github"></i></Link>
+                        <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></Link>
+                        <Link href="mailto:anderson18.marlon@gmail.com" target="_blank" rel="noreferrer"><i className="uil uil-at"></i></Link>
+                        <Link href="/bookmarks"><i className="uil uil-bookmark"></i></Link>
                         <a onClick={shareContent}><i className="uil uil-share"></i></a>
                     </p>
                 </div>
@@ -172,9 +172,9 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                 <div className={`${uwu ? 'articles uwu' : 'articles poppins'}`}>
                     {posts && posts.slice(0, 10).map((post, index) => (
-                        <a href={`/article/${post.slug}`} key={index}>
+                        <Link href={`/article/${post.slug}`} key={index}>
                             <LayoutArticle {...post} />
-                        </a>
+                        </Link>
                     ))}
 
                     <button className={`${uwu ? 'uwu' : 'poppins'}`} onClick={redirectToSearch}>See more ...</button>

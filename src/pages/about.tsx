@@ -34,15 +34,15 @@ const about = () => {
                     <div className="projects">
                         <h3>My Relevant Projects</h3>
                         <p>
-                            <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore:</a> It's a news portal for the nerd world, bringing news involving anime, games, films, series and technology. It was built using Next.js, <s>Firebase</s>, Styled Components, DayJS, Gray Matter, Framer Motion, Marked, Million, Next-SEO, Redis, Sonner and Markdown.
+                            <Link href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore:</Link> It's a news portal for the nerd world, bringing news involving anime, games, films, series and technology. It was built using Next.js, <s>Firebase</s>, Styled Components, DayJS, Gray Matter, Framer Motion, Marked, Million, Next-SEO, Redis, Sonner and Markdown.
                         </p>
                         <p>
-                            <a href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials or Web Essentials:</a> It's an application for you to easily find applications that are useful for your computer after formatting, making your life easier and bringing things closer to you - it only works on the desktop - it was developed using ReactJS, NextJS, Javascript, JSON and Styled Components.
+                            <Link href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials or Web Essentials:</Link> It's an application for you to easily find applications that are useful for your computer after formatting, making your life easier and bringing things closer to you - it only works on the desktop - it was developed using ReactJS, NextJS, Javascript, JSON and Styled Components.
                         </p>
                         <p>
-                            <a href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio:</a> Imagine having a development portfolio for yourself that looks like Steam and is completely personalized, with updated data straight from Github? That's the idea, Steamfolio is a simple and configurable project to make everything look like your professional, combined with Steam.
+                            <Link href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio:</Link> Imagine having a development portfolio for yourself that looks like Steam and is completely personalized, with updated data straight from Github? That's the idea, Steamfolio is a simple and configurable project to make everything look like your professional, combined with Steam.
                         </p>
-                        <p>You can see more projects on my <a href="https://github.com/yagasaki7k" target="_blank" rel="noreferrer">Github</a> or <a href="#projects">above in Projects</a>.</p>
+                        <p>You can see more projects on my <Link href="https://github.com/yagasaki7k" target="_blank" rel="noreferrer">Github</Link> or <Link href="#projects">above in Projects</Link>.</p>
                     </div>
 
                     <div className="languages">
@@ -304,40 +304,40 @@ const about = () => {
 
                     <div className="projects" id="projects">
                         <h3>Projects</h3>
-                        <p><strong>website-steamfolio</strong> - <a href="https://github.com/Yagasaki7K/website-steamfolio" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://steamfolio.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-steamfolio</strong> - <Link href="https://github.com/Yagasaki7K/website-steamfolio" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://steamfolio.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>Building a customizable portfolio interface in the style of Steam. Using Bun, React and Vite.</p>
 
-                        <p><strong>website-onigirihardcore</strong> - <a href="https://github.com/Yagasaki7K/website-onigirihardcore" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://onigirihardcore.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-onigirihardcore</strong> - <Link href="https://github.com/Yagasaki7K/website-onigirihardcore" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://onigirihardcore.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>Onigiri Hardcore is a website about news, games, animes and entertainment</p>
 
-                        <p><strong>app-stream</strong> - <a href="https://github.com/Yagasaki7K/app-stream" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://thetwitch.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>app-stream</strong> - <Link href="https://github.com/Yagasaki7K/app-stream" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://thetwitch.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>A player website to watch Twitch.tv without distractions.</p>
 
-                        <p><strong>website-meconta</strong> - <a href="https://github.com/Yagasaki7K/website-meconta/" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://me-conta.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-meconta</strong> - <Link href="https://github.com/Yagasaki7K/website-meconta/" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://me-conta.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>MeConta is a financial management app your way, with the possibility of viewing data through graphs.</p>
 
-                        <p><strong>website-essentials</strong> - <a href="https://github.com/Yagasaki7K/website-essentials" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://webessentials.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-essentials</strong> - <Link href="https://github.com/Yagasaki7K/website-essentials" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://webessentials.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>Essentials softwares for your computer</p>
 
-                        <p><strong>website-findyourpet</strong> - <a href="https://github.com/Yagasaki7K/website-findyourpet" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://findyourpet.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-findyourpet</strong> - <Link href="https://github.com/Yagasaki7K/website-findyourpet" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://findyourpet.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>App to help you rescue, inform and donate your pets with love! 🐶💜🐱</p>
 
-                        <p><strong>feature-notificationpush</strong> - <a href="https://github.com/Yagasaki7K/feature-notificationpush" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://yagasaki7k.github.io/feature-notificationpush/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>feature-notificationpush</strong> - <Link href="https://github.com/Yagasaki7K/feature-notificationpush" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://yagasaki7k.github.io/feature-notificationpush/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>A feature to do a Notification Push without framework or package</p>
 
-                        <p><strong>website-empreguei</strong> - <a href="https://github.com/Yagasaki7K/website-empreguei" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://empreguei.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-empreguei</strong> - <Link href="https://github.com/Yagasaki7K/website-empreguei" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://empreguei.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>A website to find and send jobs without ads and distractions</p>
 
-                        <p><strong>website-newsletterchamps (deprecated)</strong> - <a href="https://github.com/Yagasaki7K/website-newsletterchamps" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://newsletterchamps.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>website-newsletterchamps (deprecated)</strong> - <Link href="https://github.com/Yagasaki7K/website-newsletterchamps" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://newsletterchamps.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>A page on website to display a Newsletter from Filipe Deschamps</p>
 
-                        <p><strong>app-pomodoro</strong> - <a href="https://github.com/Yagasaki7K/app-pomodoro" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://appomodoro.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>app-pomodoro</strong> - <Link href="https://github.com/Yagasaki7K/app-pomodoro" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://appomodoro.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>An intuitive timer built with React, following the Pomodoro technique</p>
 
-                        <p><strong>app-speechtotext</strong> - <a href="https://github.com/Yagasaki7K/app-speechtotext" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://app-speech-to-text.vercel.app/" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>app-speechtotext</strong> - <Link href="https://github.com/Yagasaki7K/app-speechtotext" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://app-speech-to-text.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>Accurately convert speech into text with an API powered by the best of Google’s AI research and technology.</p>
 
-                        <p><strong>app-notemarkdown</strong> - <a href="https://github.com/Yagasaki7K/app-notemarkdown" target="_blank" rel='noreferrer'>Source Code</a> - <a href="https://notemarkdown.vercel.app" target="_blank" rel='noreferrer'>Demo</a></p>
+                        <p><strong>app-notemarkdown</strong> - <Link href="https://github.com/Yagasaki7K/app-notemarkdown" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://notemarkdown.vercel.app" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>Easy way to edit and preview a markdown without save and with fast refresh.</p>
                     </div>
                 </div>
