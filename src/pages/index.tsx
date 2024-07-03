@@ -147,7 +147,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <a href="https://ascii.yagasaki.dev">ASCII</a> - and I believe than &quot;X-Tudo&quot; is a healthy snack.</p>
 
-                    <p>My relevant projects: <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore</a>, <a href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio</a>, <a href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials (Desktop)</a></p>
+                    <p>My relevant projects: <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore</a>, <a href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio</a>, <a href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials (Desktop)</a>.</p>
                     <p>Currently, I&apos;m based in São Paulo - Brazil, but also <Link href="/about">in the web</Link>.</p>
 
                     <p>You can also see me <Link href="https://stream.yagasaki.dev/" target="_blank" rel="noreferrer">streaming <i className="uil uil-external-link-alt"></i></Link> something or even coding. </p>

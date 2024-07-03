@@ -34,7 +34,7 @@ const about = () => {
                     <div className="projects">
                         <h3>My Relevant Projects</h3>
                         <p>
-                            <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore:</a> It's a news portal for the nerd world, bringing news involving anime, games, films, series and technology. It was built using Next.js, Firebase, Styled Components, DayJS, Gray Matter, Framer Motion, Marked, Million, Next-SEO, Redis, Sonner and Markdown.
+                            <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore:</a> It's a news portal for the nerd world, bringing news involving anime, games, films, series and technology. It was built using Next.js, <s>Firebase</s>, Styled Components, DayJS, Gray Matter, Framer Motion, Marked, Million, Next-SEO, Redis, Sonner and Markdown.
                         </p>
                         <p>
                             <a href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials or Web Essentials:</a> It's an application for you to easily find applications that are useful for your computer after formatting, making your life easier and bringing things closer to you - it only works on the desktop - it was developed using ReactJS, NextJS, Javascript, JSON and Styled Components.
