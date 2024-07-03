@@ -25,12 +25,25 @@ const about = () => {
                     </h1>
 
                     <p>
-                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, RegEx, UI/UX, Responsive Design, Firebase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, NestJS, Bun.js, Serverless, Microservices and more …
+                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, RegEx, UI/UX, Responsive Design, Firebase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, NestJS, Bun.js, Whatsapp API, Rocketchat, Serverless, Microservices and more …
                     </p>
                     <p>
                         Technology Enthusiast, Specialized in Web and Self-taught.
                     </p>
 
+                    <div className="projects">
+                        <h3>My Relevant Projects</h3>
+                        <p>
+                            <a href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore:</a> It's a news portal for the nerd world, bringing news involving anime, games, films, series and technology. It was built using Next.js, Firebase, Styled Components, DayJS, Gray Matter, Framer Motion, Marked, Million, Next-SEO, Redis, Sonner and Markdown.
+                        </p>
+                        <p>
+                            <a href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials or Web Essentials:</a> It's an application for you to easily find applications that are useful for your computer after formatting, making your life easier and bringing things closer to you - it only works on the desktop - it was developed using ReactJS, NextJS, Javascript, JSON and Styled Components.
+                        </p>
+                        <p>
+                            <a href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio:</a> Imagine having a development portfolio for yourself that looks like Steam and is completely personalized, with updated data straight from Github? That's the idea, Steamfolio is a simple and configurable project to make everything look like your professional, combined with Steam.
+                        </p>
+                        <p>You can see more projects on my <a href="https://github.com/yagasaki7k" target="_blank" rel="noreferrer">Github</a> or <a href="#projects">above in Projects</a>.</p>
+                    </div>
 
                     <div className="languages">
                         <h3>Skills and expertise</h3>
@@ -59,7 +72,6 @@ const about = () => {
                             <strong>Other:</strong> Git, Serverless, Google Cloud, Docusaurus, etc...
                         </p>
                     </div>
-
 
                     <div className="positions">
                         <h3>Positions</h3>
