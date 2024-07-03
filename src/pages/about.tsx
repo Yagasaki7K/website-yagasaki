@@ -65,25 +65,6 @@ const about = () => {
                         <h3>Positions</h3>
                         <h4>Software Developer</h4>
                         <p>
-                            <strong>WhatsUpper</strong> | <i>August 2023 — December 2023</i>
-                        </p>
-                        <p>
-                            Communication with e-commerce applications, Integration with IA,
-                            SigaAntenado Project and more.
-                        </p>
-
-                        <li>Responsible to developer a payment method using Stripe.</li>
-                        <li>Responsible to develop and delivery the settings and functionally of Rocketchat and integrate with iframe of company together with ecommerce solution.</li>
-                        <li>Build and develop a jQuery Single Page Application quiz for client and suggest a better way to find a solution for the customer based on the problem and redirect them to a specialized communication department.</li>
-
-                        <p>
-                            Using technologies like jQuery, React, TypeScript, NodeJS, CI/CD, Firebase, Rocketchat, Google Cloud Platform, Firebase Logging, integration and unit tests with Jest, NestJS, GPT Integration and Stripe.
-                        </p>
-
-                        <hr />
-
-                        <h4>Software Developer</h4>
-                        <p>
                             <strong>Stone Co. / Linx S.A.</strong> | <i>October 2022 — June 2023</i>
                         </p>
                         <p>
@@ -96,19 +77,20 @@ const about = () => {
                         <li>Integration via AI on new routines using Rocketchat and Whatsapp and communication with the customer.</li>
                         <li>Construction of the responsivity website for the product and its presentation of solutions and functionalities using the app with ecommerce and the customer’s needs.</li>
                         <li>Manufacturing and testing new routines, templates and communication behaviors.</li>
+                        <li>Responsible to developer a payment method using Stripe.</li>
+                        <li>Responsible to develop and delivery the settings and functionally of Rocketchat and integrate with iframe of company together with ecommerce solution.</li>
+                        <li>Build and develop a jQuery Single Page Application quiz for client and suggest a better way to find a solution for the customer based on the problem and redirect them to a specialized communication department.</li>
 
                         <p>
-                            Using React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX,
-                            Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit
-                            Testing with Jest, AWS Cloud, NestJS and Postgress.
+                            Using jQuery, Firebase, Google Cloud Platform, Firebase Logging, React, NextJS, TypeScript, NodeJS, GraphQL, Hasura, UI/UX, Storybook, Figma, ChakraUI, CI/CD, Docusaurus, Integration and Unit Testing with Jest, AWS Cloud, NestJS, GPT Integration, Stripe and Postgress.
                         </p>
 
                         <hr />
 
-                        <h4>Systems Development Analyst</h4>
+                        <h4>Junior Marketing Assistant / Front-end Developer / Systems Development Analyst</h4>
                         <p>
                             <strong>Cenário Capital</strong> |{" "}
-                            <i>April 2021 — September 2021</i>
+                            <i>October 2020 — September 2021</i>
                         </p>
 
                         <li>Construction of the responsivity website for the solution of the company.</li>
@@ -117,26 +99,16 @@ const about = () => {
                         <li>Manufacturing Digital Ocean Solutions to give a better DevOps system to our project.</li>
 
                         <p>
+                            I was responsible for the development of several landing pages for the company, including the main website, how to use each product website and several other segments for customer communication using MVC Architecture, MySQL and NodeJS – later the project was changed to Laravel.
+                        </p>
+
+                        <p>
                             Cenário Capital is a Brazilian company Founded in 2008 with
                             expertise in digital marketing and analytical focus on different
                             types of digital business. We&apos;re using technologies like NextJS,
                             Typescript, Push Notification using Javascript via Google
                             Developers, Scrum and Kabam during development, Google Analytics,
                             Facebook Ads and using Digital Ocean to DevOps our system.
-                        </p>
-
-                        <hr />
-
-                        <h4>Marketing Assistant Jr. / Development Frontend Jr.</h4>
-                        <p>
-                            <strong>Marry Perry Paris</strong> | <i>July 2020 – October 2020</i>
-                        </p>
-                        <p>
-                            I was responsible for the development of several landing pages for
-                            the company, including the main website, how to use each product
-                            website and several other segments for customer communication using
-                            MVC Architecture, MySQL and NodeJS – later the project was changed
-                            to Laravel.
                         </p>
 
                         <hr />
