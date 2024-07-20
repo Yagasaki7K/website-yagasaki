@@ -128,6 +128,42 @@ const about = () => {
 
                     <div className="certificates" id="awards">
                         <h3>Certificates</h3>
+
+                        <p>
+                            <strong>
+                                NLW Journey - GO{" "}
+                            </strong>
+                            by Rocketseat - July 2024
+                        </p>
+
+                        <p>
+                            <strong>
+                                NLW Journey - NodeJS{" "}
+                            </strong>
+                            by Rocketseat - July 2024
+                        </p>
+
+                        <p>
+                            <strong>
+                                NLW Journey - Java{" "}
+                            </strong>
+                            by Rocketseat - July 2024
+                        </p>
+
+                        <p>
+                            <strong>
+                                NLW Journey - Python{" "}
+                            </strong>
+                            by Rocketseat - July 2024
+                        </p>
+
+                        <p>
+                            <strong>
+                                NLW Journey - React (Tailwind, React){" "}
+                            </strong>
+                            by Rocketseat - July 2024
+                        </p>
+
                         <p>
                             <strong>
                                 Web Development with Python: Python, Django, Pytest & OOP{" "}
