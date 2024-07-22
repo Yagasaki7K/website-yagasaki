@@ -145,10 +145,10 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                         I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create.
                     </p>
 
-                    <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <Link href="https://ascii.yagasaki.dev">ASCII</Link> - and I believe than &quot;X-Tudo&quot; is a healthy snack.</p>
-
                     <p>My relevant projects: <Link href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore</Link>, <Link href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio</Link>, <Link href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials (Desktop)</Link>.</p>
                     <p>Currently, I&apos;m based in São Paulo - Brazil, but also <Link href="/about">in the web</Link>.</p>
+
+                    <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <Link href="https://ascii.yagasaki.dev">ASCII</Link> - and I believe than &quot;X-Tudo&quot; is a healthy snack.</p>
 
                     <p>You can also see me <Link href="https://stream.yagasaki.dev/" target="_blank" rel="noreferrer">streaming <i className="uil uil-external-link-alt"></i></Link> something or even coding. </p>
 
