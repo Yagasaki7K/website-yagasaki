@@ -112,10 +112,15 @@ Alternative: Turn off every firewall protection
 
 DNS: 8.8.8.8/8.8.4.4
 
+
 ## Installing Anaconda (Python)
 
-````bash
+```bash
 wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
 
 bash Anaconda3-2020.07-Linux-x86_64.sh
 ```
+
+## Error upgrading to WSL 2 : There are no more endpoints available from the endpoint mapper (WSL)
+
+What ended up being the issue for me was the **Host Network Service** was not running. I set it to run automatically and started it up. I was then able to launch Ubuntu and set it as the default in WSL 2.
