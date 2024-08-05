@@ -9,12 +9,17 @@
     --font-light: #dadde7;
     --font-dark: #5f6b8a;
     --gray: #7f869c;
+    --gray-light: #edf0f6;
     /* --red: #e10065; */
     --red: #9b8acf;
     --code: #eceef3;
     /* --pink: #dc77b6; */
     --pink: #7358c2;
     --codeblock: #000;
+    --white: #fff;
+        --black: #111827;
+        --advice-bg: #edf0f6;
+        --advice-font: #3b3b3b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +33,8 @@
         --font-dark: #5f6b8a;
         --gray: #7f869c;
         --code: #b6b9ca;
+        --advice-bg: #232634;
+            --advice-font: #b6b9ca;
     }
 }
 
@@ -147,6 +154,7 @@ html {
 
 body {
     background: var(--background);
+    font-family: 'Inter', sans-serif
 }
 
 .overlay {
@@ -164,12 +172,10 @@ body {
 
 body::-webkit-scrollbar {
     width: 14px;
-    /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
     background: var(--background);
-    /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {

@@ -151,8 +151,25 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                     <div className='post-body'>
                         <div dangerouslySetInnerHTML={({ __html: htmlContent || '' })} />
                     </div>
+
+                    <div className="touch">
+                        <div className="leftContent">
+                            <h2>Fique atualizado!</h2>
+                            <p>Nunca perca um post ou anúncio de projeto que eu faça. Siga-me no Twitter para manter contato, fazer perguntas ou conversar.</p>
+                        </div>
+                        <div className="rightContent">
+                            <span>
+                                <a href="https://twitter.com/Yagasaki7K" target="_blank"><i className="uil uil-twitter" /> Conecte-se</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div className="buymeacoffee">
+                        <p>Gostou do artigo? <a href="https://pixmeacoffee.vercel.app/yagasaki" target='_blank'>Faça um PIX de café!</a> ☕</p>
+                    </div>
                 </div>
-            </ArticleDetails >
+
+            </ArticleDetails>
             <Copyright isUwu={uwu} />
         </>
     );

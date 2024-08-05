@@ -222,12 +222,12 @@ const ArticleDetails = styled.div`
     }
 
     pre {
-      background: var(--codeblock);
+      background: var(--gray-light);
       border-radius: 0.5rem;
       padding: 1rem;
       margin: 1rem 0;
       font-size: 14px;
-      color: var(--font-light);
+      color: var(--advice-font);
 
       code {
         background: none;
@@ -236,11 +236,11 @@ const ArticleDetails = styled.div`
     }
 
     code {
-      background: var(--codeblock);
+      background: var(--advice-bg);
       border-radius: 0.5rem;
       padding: 0.15rem 0.5rem;
-      font-size: 14px;
-      color: var(--font-light);
+      font-size: 1rem;
+      color: var(--advice-font);
       font-family: "JetBrains Mono", monospace;
     }
 
@@ -251,6 +251,10 @@ const ArticleDetails = styled.div`
       margin-bottom: 2rem;
       font-size: 1.1rem;
       color: var(--font);
+
+      @media (max-width: 768px) {
+        font-size: 1.1rem;
+      }
 
       th,
       td {
@@ -265,10 +269,6 @@ const ArticleDetails = styled.div`
       th {
         background: var(--background-alt);
       }
-
-      @media (max-width: 768px) {
-        font-size: 1.1rem;
-      }
     }
 
     li {
@@ -281,6 +281,64 @@ const ArticleDetails = styled.div`
 
       @media (max-width: 768px) {
         font-size: 1.1rem;
+      }
+    }
+
+    .touch {
+      display: flex;
+      padding: 2rem;
+      background: var(--advice-bg);
+      border-radius: 15px;
+      margin: 2rem;
+      align-items: center;
+
+      .leftContent {
+        width: 60%;
+
+        h2 {
+          margin-top: 0rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: var(--font);
+          margin-top: 1rem;
+        }
+      }
+
+      .rightContent {
+        margin-left: 2rem;
+
+        span {
+          font-size: 1.3rem;
+          background: var(--black);
+          color: var(--white);
+          border-radius: 25px;
+          padding: 1rem 2rem;
+          border: none;
+
+          a {
+            color: var(--white);
+            text-decoration: none;
+          }
+
+          &:hover {
+            filter: brightness(1.1);
+          }
+        }
+      }
+    }
+
+    .buymeacoffee {
+      width: 100%;
+      background: var(--advice-bg);
+      text-align: center;
+      padding: 1rem 0;
+      border-radius: 5px;
+
+      p {
+        margin-top: 0rem;
+        color: var(--advice-font);
       }
     }
   }
