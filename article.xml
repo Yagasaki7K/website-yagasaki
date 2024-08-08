@@ -3,7 +3,7 @@
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Wed, 22 May 2024 18:25:37 GMT</lastBuildDate>
+<lastBuildDate>Thu, 08 Aug 2024 05:03:00 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -15,7 +15,7 @@
 <copyright>© 2014 - 2024 Anderson "Yagasaki" Marlon</copyright>
 <item>
 <title>
-<![CDATA[ Análise do Arc Browser, meu substituto do Google Chrome ]]>
+<![CDATA[ Análise do Arc Browser, meu substituto do Chrome ]]>
 </title>
 <link>https://yagasaki.dev/article/analisando-arc-browser</link>
 <guid>analisando-arc-browser</guid>
@@ -43,7 +43,7 @@
 <guid>api-para-iniciantes</guid>
 <pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Uma API (Application Programming Interface) é um conceito fundamental no mundo da programação e do desenvolvimento de software. ]]>
+<![CDATA[ Uma API é um conceito fundamental no mundo da programação ]]>
 </description>
 </item>
 <item>
@@ -120,7 +120,7 @@
 <guid>como-instalar-o-wsl</guid>
 <pubDate>Sat, 20 Apr 2024 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Aprenda a instalar o WSL e descubra as vantagens de seu uso para desenvolvedores e por que abandonar o dual boot pode ser uma boa ideia. ]]>
+<![CDATA[ Aprenda a instalar o WSL e descubra as vantagens para desenvolvedores e por que o dual boot mão é uma boa ideia. ]]>
 </description>
 </item>
 <item>
@@ -132,6 +132,17 @@
 <pubDate>Wed, 08 Nov 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ O que fazer e quais passos devo seguir em 2024 para começar na programação? ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como usar o Redis para contar acessos em páginas estáticas ]]>
+</title>
+<link>https://yagasaki.dev/article/como-usar-redis-para-contar-acessos</link>
+<guid>como-usar-redis-para-contar-acessos</guid>
+<pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Usando Redis para servir de contador de visitantes em blog/sites ]]>
 </description>
 </item>
 <item>
@@ -197,7 +208,7 @@
 <guid>darkmode</guid>
 <pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Entenda qual é a melhor maneira de hospedar a configuração temática de sua aplicação ]]>
+<![CDATA[ Entenda qual é a melhor maneira de temática de sua aplicação ]]>
 </description>
 </item>
 <item>
@@ -362,7 +373,7 @@
 <guid>hackathon-ambev</guid>
 <pubDate>Tue, 06 Dec 2022 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ "Hopyeast", projeto vencedor, utiliza Engenharia Genética para inovação ]]>
+<![CDATA[ "Hopyeast", projeto vencedor, utiliza Engenharia Genética ]]>
 </description>
 </item>
 <item>
@@ -428,18 +439,18 @@
 <guid>meetup-latorre</guid>
 <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Primeira edição do Marketing Talks reúne 55 profissionais para discutir o futuro do setor. ]]>
+<![CDATA[ Primeira edição do Marketing Talks reúne 55 profissionais ]]>
 </description>
 </item>
 <item>
 <title>
-<![CDATA[ Evento da Rocketseat junto da minha experiência e uso do Bun ]]>
+<![CDATA[ Evento da Rocketseat e o uso do Bun ]]>
 </title>
 <link>https://yagasaki.dev/article/minha-experiencia-com-bun</link>
 <guid>minha-experiencia-com-bun</guid>
 <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Juntei o evento NextLevelWeek e testei o Bun, novo compilador Javascript ]]>
+<![CDATA[ Juntei o evento NextLevelWeek da Rocketseat e testei o Bun, novo compilador Javascript ]]>
 </description>
 </item>
 <item>
@@ -505,7 +516,7 @@
 <guid>open-source</guid>
 <pubDate>Mon, 17 Apr 2023 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Aprenda a contribuir para projetos de código aberto e evoluir projetos de comunidade. ]]>
+<![CDATA[ Aprenda a contribuir para projetos e evoluir projetos de comunidade. ]]>
 </description>
 </item>
 <item>
@@ -532,13 +543,13 @@
 </item>
 <item>
 <title>
-<![CDATA[ Primeiros passos com Jest, o framework de teste Javascript ]]>
+<![CDATA[ Primeiros passos com Jest, framework de teste ]]>
 </title>
 <link>https://yagasaki.dev/article/primeiro-passos-jest</link>
 <guid>primeiro-passos-jest</guid>
 <pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ O Jest é um framework de teste JavaScript popular que é usado para escrever testes unitários, testes de integração e testes de ponta a ponta. ]]>
+<![CDATA[ Um framework de teste JavaScript popular que é usado para escrever testes unitários, testes de integração e testes de ponta a ponta. ]]>
 </description>
 </item>
 <item>
@@ -549,7 +560,7 @@
 <guid>pwa</guid>
 <pubDate>Fri, 24 Mar 2023 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Aprenda a transformar uma aplicação web em um modelo desktop usando PWA ]]>
+<![CDATA[ Aprenda a transformar uma aplicação web em PWA ]]>
 </description>
 </item>
 <item>
@@ -593,7 +604,7 @@
 <guid>rfc-method</guid>
 <pubDate>Sun, 17 Dec 2023 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Essa metodologia vai simplesmente mudar como você organiza suas tarefas ]]>
+<![CDATA[ Essa metodologia vai simplesmente mudar como você se organiza ]]>
 </description>
 </item>
 <item>
@@ -697,6 +708,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ Uma Coisa Que Nunca Te Explicaram Sobre TypeScript ]]>
+</title>
+<link>https://yagasaki.dev/article/uma-coisa-que-nunca-te-explicaram-sobre-typescript</link>
+<guid>uma-coisa-que-nunca-te-explicaram-sobre-typescript</guid>
+<pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Há algo no TypeScript que você provavelmente entendeu errado, algo sobre tsconfig.json. Vamos resolver isso! ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ Testes Unitários - Como e quando usar para iniciantes ]]>
 </title>
 <link>https://yagasaki.dev/article/unit-test</link>
@@ -715,6 +737,17 @@
 <pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Afinal, saber como atualizar Node é importantíssimo, ainda mais quando se usa terminal. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Linux - Lista de erros e soluções rápidas ]]>
+</title>
+<link>https://yagasaki.dev/article/zettelkasten-errors</link>
+<guid>zettelkasten-errors</guid>
+<pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Apenas algumas dicas para quem esbarra em um problema ou outro quando está usando Terminal - em inglês ]]>
 </description>
 </item>
 </channel>
