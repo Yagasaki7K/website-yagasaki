@@ -119,8 +119,8 @@ const HomeArticlesDetails = styled.div`
             font-size: 1rem;
             cursor: pointer;
             transition: 0.2s;
-            width: 95.5%;
-            margin-left: 4.5rem;
+            width: 93.5%;
+            margin-left: 0rem;
 
             @media (max-width: 1024px) {
                 margin-left: 0rem;
