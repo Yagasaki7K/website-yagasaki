@@ -286,11 +286,23 @@ const ArticleDetails = styled.div`
 
     .touch {
       display: flex;
-      padding: 2rem;
-      background: var(--advice-bg);
+      padding: 2rem 2rem 1rem 2rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+
+      background: var(--background-alt);
       border-radius: 15px;
       margin: 2rem;
       align-items: center;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
 
       .leftContent {
         width: 60%;
@@ -309,9 +321,13 @@ const ArticleDetails = styled.div`
       .rightContent {
         margin-left: 2rem;
 
+        @media (max-width: 768px) {
+          margin-left: 0rem;
+        }
+
         span {
           font-size: 1.3rem;
-          background: var(--black);
+          background: var(--background);
           color: var(--white);
           border-radius: 25px;
           padding: 1rem 2rem;
