@@ -92,9 +92,9 @@ export default function PostPage({ frontmatter, content }: PostProps) {
             <NextSeo
                 title={frontmatter.title}
                 description={frontmatter.excerpt}
-                canonical={`https://yagasaki.dev/`}
+                canonical="https://yagasaki.dev/"
                 openGraph={{
-                    url: 'https://yagasaki.dev/',
+                    url: `https://yagasaki.dev/`,
                     title: frontmatter.title,
                     description: frontmatter.excerpt,
                     images: [
@@ -103,8 +103,8 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                             width: 460,
                             height: 460,
                             alt: frontmatter.title,
-                            type: 'image/jpeg' || 'image/png',
-                        }
+                            type: frontmatter.image.includes('.png') ? 'image/png' : 'image/jpeg',
+                        },
                     ],
                     siteName: 'Anderson Marlon // Yagasaki7K',
                 }}
