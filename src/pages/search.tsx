@@ -105,7 +105,7 @@ export default function Search({ posts }: { posts: PostProps[] }) {
                     ))}
                 </div>
             </HomeArticlesDetails>
-            <Copyright isUwu={false} />
+            <Copyright />
         </>
     );
 }

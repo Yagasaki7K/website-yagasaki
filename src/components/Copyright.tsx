@@ -1,17 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface CopyrightProps {
-    isUwu: boolean;
-}
 
-const Copyright = ({ isUwu }: CopyrightProps) => {
-    let uwu = isUwu;
+const Copyright = () => {
 
     return (
         <CopyrightDetails>
             <hr />
-            <div className={`leftContent ${uwu ? 'uwu' : 'inter'}`}>
+            <div className="leftContent inter">
                 <a href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer">© 2014 - {new Date().getFullYear()} Anderson &quot;Yagasaki&quot; Marlon</a>
             </div>
         </CopyrightDetails>
@@ -30,12 +26,6 @@ const CopyrightDetails = styled.div`
 
     .inter {
         font-family: 'Inter', sans-serif;
-    }
-
-    .uwu {
-        font-family: 'Milky Honey', cursive;
-        src: url('../fonts//Milky\ Honey.otf') format('otf');
-        src: url('../fonts//Milky\ Honey.ttf') format('ttf');
     }
 
     a {

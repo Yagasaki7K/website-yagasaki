@@ -64,7 +64,7 @@ const doc = () => {
                     </div>
                 </div>
             </ArticleDetails>
-            <Copyright isUwu={false} />
+            <Copyright />
         </>
     )
 }

@@ -90,20 +90,6 @@ function shareContent() {
 }
 
 export default function Home({ posts }: { posts: PostProps[] }) {
-    const router = useRouter();
-    const uwuUrl = router.asPath;
-    const [uwu, setUwu] = useState(false);
-
-    useEffect(() => {
-        if (uwuUrl !== undefined && uwuUrl !== null) {
-            if (uwuUrl.includes('uwu=true')) {
-                setUwu(true);
-            } else {
-                setUwu(false);
-            }
-        }
-    }, [uwuUrl]);
-
     return (
         <>
             <Head>
@@ -135,11 +121,11 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             ></div>
 
             <HeaderDetails>
-                <div className={`${uwu ? 'leftContent uwu' : 'leftContent text'}`}>
+                <div className='leftContent text'>
 
-                    <h1>Hi, I'm Yagasaki<span onClick={() => setUwu(!uwu)}>.</span></h1>
+                    <h1>Hi, I'm Yagasaki.</h1>
 
-                    <p>I enjoy turning solutions into code. I&apos;m a tech enthusiast and love staying up to date with all the latest cutting-edge features.</p>
+                    <p>I&apos;m a software developer, front-end specialist, tech enthusiast and love staying up to date with all the latest cutting-edge features.</p>
 
                     <p>
                         I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create.
@@ -168,19 +154,19 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </HeaderDetails>
 
             <HomeArticlesDetails>
-                <h2 className={`${uwu ? 'uwu' : 'poppins'}`}>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
+                <h2 className="poppins">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
-                <div className={`${uwu ? 'articles uwu' : 'articles poppins'}`}>
+                <div className="articles poppins">
                     {posts && posts.slice(0, 10).map((post, index) => (
                         <Link href={`/article/${post.slug}`} key={index}>
                             <LayoutArticle {...post} />
                         </Link>
                     ))}
 
-                    <button className={`${uwu ? 'uwu' : 'poppins'}`} onClick={redirectToSearch}>See more ...</button>
+                    <button className="poppins" onClick={redirectToSearch}>See more ...</button>
                 </div>
             </HomeArticlesDetails>
-            <Copyright isUwu={uwu} />
+            <Copyright />
         </>
     );
 }

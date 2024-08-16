@@ -72,21 +72,6 @@ export default function PostPage({ frontmatter, content }: PostProps) {
         hljs.highlightAll();
     }, [htmlContent]);
 
-    const router = useRouter();
-    const uwuUrl = router.asPath;
-    console.log(uwuUrl)
-    const [uwu, setUwu] = useState(false);
-
-    useEffect(() => {
-        if (uwuUrl !== undefined && uwuUrl !== null) {
-            if (uwuUrl.includes('uwu=true')) {
-                setUwu(true);
-            } else {
-                setUwu(false);
-            }
-        }
-    }, [uwuUrl]);
-
     return (
         <>
             <NextSeo
@@ -122,18 +107,14 @@ export default function PostPage({ frontmatter, content }: PostProps) {
             <div className="overlay" />
 
             <ArticleDetails>
-                <div className={`${uwu ? 'card card-page uwu' : 'card card-page text'}`}>
+                <div className='card card-page text'>
                     <div className="backToHome">
                         <Link href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
-
-                        {
-                            uwu ?
-                                <span className="on" onClick={() => setUwu(!uwu)}>°˖✧◝(⁰▿⁰)◜✧˖°</span>
-                                :
-                                <span className="off" onClick={() => setUwu(!uwu)}>Click here to UwU</span>
-                        }
                     </div>
-                    <h1 className='post-title'>{frontmatter.title}</h1>
+                    <div className="title">
+                        <h1 className='post-title'>{frontmatter.title}</h1>
+                        <h1 className="stylish">{frontmatter.tags[0]}</h1>
+                    </div>
                     <p className="minRead">Leitura de {calculateReadingTime(htmlContent ? htmlContent : '')} minutos</p>
 
                     <div className="details">
@@ -170,7 +151,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                 </div>
 
             </ArticleDetails>
-            <Copyright isUwu={uwu} />
+            <Copyright />
         </>
     );
 }

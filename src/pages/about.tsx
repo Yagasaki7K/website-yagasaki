@@ -378,7 +378,7 @@ const about = () => {
                     </div>
                 </div>
             </HomeArticlesDetails>
-            <Copyright isUwu={false} />
+            <Copyright />
         </>
     )
 }
