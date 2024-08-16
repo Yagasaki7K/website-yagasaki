@@ -110,18 +110,16 @@ const ArticleDetails = styled.div`
             text-transform: uppercase;
             color: var(--red);
             font-weight: bold;
-            margin-top: 0rem;
+            margin-top: 1rem;
             text-align: center;
         }
 
         h1 {
-            font-size: 1.875em;
-            line-height: 1.35;
+            margin-top: 1rem;
+            font-weight: 800;
             color: var(--header);
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-            font-weight: normal;
-            font-family: "Pacifico", cursive;
+            font-size: 2.5rem;
+            line-height: 1.35;
 
             @media (max-width: 768px) {
                 font-size: 2.5rem;
@@ -133,6 +131,12 @@ const ArticleDetails = styled.div`
             position: relative;
             z-index: 1;
             text-align: center;
+            line-height: 1.35;
+            color: var(--header);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            font-weight: normal;
+            font-family: "Pacifico", cursive;
         }
 
         .stylish {

@@ -22,12 +22,6 @@ const HeaderDetails = styled.div`
             "Noto Color Emoji";
     }
 
-    .uwu {
-        font-family: "Milky Honey", cursive;
-        src: url("../fonts//Milky\ Honey.otf") format("otf");
-        src: url("../fonts//Milky\ Honey.ttf") format("ttf");
-    }
-
     .leftContent {
         width: 40%;
         margin-right: 5rem;

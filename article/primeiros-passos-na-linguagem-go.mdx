@@ -8,9 +8,12 @@ date: '2024-08-16'
 
 ![](https://safebooru.org//samples/4619/sample_ca6c98da5a62c2d4ab04437cd8efa192e3c4b601.jpg?5135295)
 
-# Sumário
-- [1. Introdução a Go](#1-introdução-a-go)
-- [2. Configurando ambiente](#2-configurando-ambiente)
+Caso você deseje utilizar esse conteúdo como uma fonte de estudos ao invés de uma revisão, eu sugiro acompanhar o
+[repositório original](https://github.com/Yagasaki7K/courses/tree/main/course-go-first-steps), aonde estarão sendo
+manutenções e melhorias de acordo com as necessidades, além de claro, estar separado por tópico em uma leitura menos
+cansativa.
+
+Vamos ao que interessa.
 
 # 1. Introdução a Go
 Go, também conhecida como Golang, é uma linguagem de programação de código aberto desenvolvida pelo Google. Foi
@@ -171,7 +174,7 @@ projeto mais limpo.
 Para projetos mais antigos, a introdução de módulos pode ser uma tarefa incremental. Usar _go mod init_ é um primeiro
 passo essencial para migrar um projeto existente para o sistema de módulos.
 
-# Iniciando o módulo:
+## Iniciando o módulo:
 Para iniciar um módulo no seu projeto, certifique-se de estar com o editor de códigos aberto, se você for acostumado com
 CLI, deixe ele na pasta de seu projeto. No seu editor de códigos, abra a pasta onde iniciaremos o módulo. Após isso, na
 parte superior esquerda clique em Terminal, depois em _New Terminal_ para abrir o terminal. Abrindo o terminal, verifique
@@ -630,7 +633,6 @@ Existem cinco palavas-chave/tipos de inteiros assinados em Go, cada um com o seu
   - Tamanho: 64 bits/8 bytes.
   - Faixa: -9223372036854775808 a 9223372036854775807.
 
-
 Esses são os tipos de dados inteiros em Go, cada um com seu tamanho e faixa específicos. O tipo _int_ é dependente da
 plataforma, o que significa que em sistemas de 32 bits, ele terá 32 bits, e em sistemas de 64 bits, terá 64 bits. Os
 tipos fixos, como _int8_, _int16_, _int32_ e _int64_, têm tamanhos fixos independentemente da plataforma. Cada tipo tem
@@ -693,6 +695,7 @@ O tipo de dados _float_ possui duas palavras-chave:
     de aproximadamente -3.4 vezes 10 elevado a 38 até 3.4 vezes 10 elevado a 38.
 
 Exemplo:
+
 ```go
 var flutuante float32 = 11.11 // Recebe um valor flutuante
 var Flutuante float32 = -3.2e+35 // Recebe um valor flutuante negativo
@@ -870,6 +873,7 @@ Em Go, existem duas funções que podem ser usadas para retornar o comprimento e
 
 ## len - Comprimento de uma Slice:
 A função "len" retorna o número de elementos presentes em uma slice. Por exemplo:
+
 ```go
 minhaSlice := []int{1, 2, 3, 4, 5}
 comprimento := len(minhaSlice) // Retorna 5
@@ -880,6 +884,7 @@ fmt.Println(comprimento) // Imprime o valor da variável comprimento
 ## cap - Capacidade de uma Slice:
 A função cap retorna a capacidade total da _slice_, ou seja, o número máximo de elementos que a _slice_ pode conter
 antes de precisar ser realocada para um espaço maior na memória.
+
 ```go
 minhaSlice := make([]int, 3, 5)
 capacidade := cap (minhaSlice) // Retorna 5
@@ -895,6 +900,7 @@ quantidade atual de elementos e a capacidade disponível na estrutura de dados.
 
 ## Criando uma Slice de um Array:
 Você pode criar uma slice fatiando um array. Exemplo:
+
 ```go
 // Criando uma slice de um array existente
 var minhaArray = [5]int{1, 2, 3, 4, 5} // Array
@@ -902,7 +908,9 @@ minhaSlice := minhaArray[1:4] // Cria uma slice contendo os elementos 2, 3, 4
 
 fmt.Println(minhaSlice) // Imprime o valor "[2 3 4]" na tela
 ```
+
 Veja outro exemplo:
+
 ```go
 minhaArray := [7]int{20, 21, 22, 23, 24, 25, 26}
 minhaSlice := minhaArray[2:4]
@@ -919,6 +927,7 @@ array, isso significa que a capacidade da slice é 5.
 
 ## Criando uma Slice coma função make():
 A função _make()_ também pode ser utilizada para criar uma slice.
+
 ```go
 // Sintaxe
 nome_da_slice := make([]Tipo, comprimento, capacidade)
@@ -976,6 +985,7 @@ elemento) sofreu uma modificação, saindo do valor 30 para 8000.
 
 ## Anexando Elementos numa Slice:
 Você pode anexar elementos ao final de uma slice utilizando a função "append()":
+
 ```go
 // Sintaxe
 nome_da_slice = append (nome_da_slice, elementol, elemento2, ...)
@@ -1281,6 +1291,7 @@ if condição {
 ```
 
 Aqui está um exemplo simples:
+
 ```go
 // Variável com tipo inferido recebendo o valor 15
 idade := 15
@@ -1297,6 +1308,7 @@ No exemplo acima, se a condição idade > 18 for verdadeira, o bloco de código 
 contrário, o bloco de código dentro do _else_ será executado.
 
 **Importante**: ao declarar _eles_, certifique-se de estar na linha certa, caso contrário, um erro de sintaxe será gerado. Veja um exemplo:
+
 ```go
 if idade > 18 {
     fmt.Println("Você é maior de idade.")
@@ -1321,6 +1333,7 @@ else {
 ```
 
 Aqui está um exemplo básico:
+
 ```go
 nota := 75
 
