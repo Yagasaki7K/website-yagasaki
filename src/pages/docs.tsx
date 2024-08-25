@@ -26,6 +26,7 @@ const doc = () => {
                         <li><Link href="#installing-obsidian-in-wsl">Installing Obsidian in WSL</Link></li>
                         <li><Link href="#fix-packetloss-on-fivem">Fix Packetloss on FiveM</Link></li>
                         <li><Link href="#error-upgrading-to-wsl2">Error upgrading to WSL 2</Link></li>
+                        <li><Link href="#error-during-installation-2502-and-2503">Error during installation: 2502 and 2503</Link></li>
                     </div>
 
                     <div className='post-body docs'>
@@ -117,9 +118,14 @@ const doc = () => {
 
                         <div id="error-upgrading-to-wsl2">
                             <h4>Error upgrading to WSL 2 : There are no more endpoints available from the endpoint mapper (WSL)</h4>
-                        </div>
 
-                        <p>What ended up being the issue for me was the <b>Host Network Service</b> was not running. I set it to run automatically and started it up. I was then able to launch Ubuntu and set it as the default in WSL 2.</p>
+                            <p>What ended up being the issue for me was the <b>Host Network Service</b> was not running. I set it to run automatically and started it up. I was then able to launch Ubuntu and set it as the default in WSL 2.</p>
+                        </div>
+                        <div id="error-during-installation-2502-and-2503">
+                            <h4>Error during installation: 2502 and 2503</h4>
+
+                            <p>C: {'>'} Windows {'>'} Temp {'>'} Proprieties {'>'} Security {'>'} Advanced {'>'} Windows user and change the permission to full control {'>'} Apply</p>
+                        </div>
                     </div>
                 </div>
             </ArticleDetails>
