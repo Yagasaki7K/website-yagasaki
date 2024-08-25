@@ -72,6 +72,13 @@ const ArticleDetails = styled.div`
             }
         }
 
+        .docs {
+            pre {
+                background: var(--background-alt);
+                color: var(--white);
+            }
+        }
+
         .backToHome {
             text-decoration: none;
             display: flex;
