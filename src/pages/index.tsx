@@ -97,7 +97,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </Head>
 
             <div className="overlay" />
-            <div className="ball"></div>
+            {/* <div className="ball"></div>
             <div
                 className="ball"
                 style={
@@ -118,7 +118,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                         "--speed": "15s",
                     } as React.CSSProperties
                 }
-            ></div>
+            ></div> */}
 
             <HeaderDetails>
                 <div className='leftContent text'>

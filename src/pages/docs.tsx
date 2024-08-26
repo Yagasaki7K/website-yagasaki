@@ -13,7 +13,7 @@ const doc = () => {
                     <div className="backToHome">
                         <Link href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                     </div>
-                    <h1 className='post-title'>Docs</h1>
+                    <h1 className='post-title'>Documentation and Fix Commom Errors</h1>
                     <div className='post-body'>
                         <h1>Summary</h1>
                         <li><Link href="#ssl3">ssl3_get_record:wrong version</Link></li>
