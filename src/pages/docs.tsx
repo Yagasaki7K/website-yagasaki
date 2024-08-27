@@ -27,6 +27,10 @@ const doc = () => {
                         <li><Link href="#fix-packetloss-on-fivem">Fix Packetloss on FiveM</Link></li>
                         <li><Link href="#error-upgrading-to-wsl2">Error upgrading to WSL 2</Link></li>
                         <li><Link href="#error-during-installation-2502-and-2503">Error during installation: 2502 and 2503</Link></li>
+                        <li><Link href="#kernel-41">Error: Kerner 41 (WIP)</Link></li>
+                        <li><Link href="#safe-overclock-gpu">Safe Overclock GPU</Link></li>
+                        <li><Link href="#fastest-chrome">Fastest Chrome Settings</Link></li>
+                        <li><Link href="#malware-native">Remove Malware without install softwares</Link></li>
                     </div>
 
                     <div className='post-body docs'>
@@ -125,6 +129,27 @@ const doc = () => {
                             <h4>Error during installation: 2502 and 2503</h4>
 
                             <p>C: {'>'} Windows {'>'} Temp {'>'} Proprieties {'>'} Security {'>'} Advanced {'>'} Windows user and change the permission to full control {'>'} Apply</p>
+                        </div>
+                        <div id="kernel-41">
+                            <h4>Error: Kerner 41 (WIP)</h4>
+
+                            <p>Change number of processors to maximum on msconfig OR reverse the optimize script (scripts-optimize/reverse-kernel41).</p>
+                            <p>Maybe is possible to fix the issue doing the two things.</p>
+                        </div>
+                        <div id="safe-overclock-gpu">
+                            <h4>Safe Overclock GPU</h4>
+
+                            <p>Download Nvidia App {'>'} System {'>'} Performance {'>'} Automatic Tuning.</p>
+                        </div>
+                        <div id="fastest-chrome">
+                            <h4>Fastest Chrome Settings</h4>
+
+                            <p>Chrome://Settings {'>'} Enable Hardware Acceleration {'>'} Disabled Run Background {'>'} Chrome://Flags {'>'} List {'>'} Override Software Rendering List {'>'} Enabled</p>
+                        </div>
+                        <div id="malware-native">
+                            <h4>Remove Malware without install softwares</h4>
+
+                            <p>Win+R {'>'} MRT {'>'} Full Scan</p>
                         </div>
                     </div>
                 </div>
