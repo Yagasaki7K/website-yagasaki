@@ -1,0 +1,22 @@
+name: Trigger Blog Update
+
+on:
+  push:
+    branches:
+      - main # Ou a branch que você deseja monitorar
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger update workflow
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const workflowDispatch = await github.rest.actions.createWorkflowDispatch({
+              owner: 'Yagasaki7K',
+              repo: 'yagasaki7k', # Repositório onde está o workflow de atualização
+              workflow: 'update-blog-posts.yaml', # Nome do workflow que atualizará o README
+              ref: 'main', # Branch onde o workflow está
+            });
+            console.log(workflowDispatch);
