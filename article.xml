@@ -1,9 +1,12 @@
 <rss version="2.0">
+<script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
+<script/>
+<script/>
 <channel>
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Thu, 08 Aug 2024 05:03:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 02 Sep 2024 17:32:59 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -253,6 +256,17 @@
 <pubDate>Wed, 01 Feb 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Uma abordagem para quem não quer o modelo desktop e prefere usar no shell ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Entenda Programação Orientada a Objetos de Maneira Simplificada (POO) ]]>
+</title>
+<link>https://yagasaki.dev/article/entenda-programacao-orientada-a-objetos-de-maneira-simplificada</link>
+<guid>entenda-programacao-orientada-a-objetos-de-maneira-simplificada</guid>
+<pubDate>Tue, 13 Aug 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Se você ainda não sabe, provavelmente te ensinaram errado. ]]>
 </description>
 </item>
 <item>
@@ -554,6 +568,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ Primeiros Passos na línguagem GO - Completo ]]>
+</title>
+<link>https://yagasaki.dev/article/primeiros-passos-na-linguagem-go</link>
+<guid>primeiros-passos-na-linguagem-go</guid>
+<pubDate>Fri, 16 Aug 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Um curso em texto completo sobre a introdução da linguagem de programação da Google ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ Como transformar seu website em um Progressive Web Application (PWA) ]]>
 </title>
 <link>https://yagasaki.dev/article/pwa</link>
@@ -737,17 +762,6 @@
 <pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Afinal, saber como atualizar Node é importantíssimo, ainda mais quando se usa terminal. ]]>
-</description>
-</item>
-<item>
-<title>
-<![CDATA[ Linux - Lista de erros e soluções rápidas ]]>
-</title>
-<link>https://yagasaki.dev/article/zettelkasten-errors</link>
-<guid>zettelkasten-errors</guid>
-<pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
-<description>
-<![CDATA[ Apenas algumas dicas para quem esbarra em um problema ou outro quando está usando Terminal - em inglês ]]>
 </description>
 </item>
 </channel>
