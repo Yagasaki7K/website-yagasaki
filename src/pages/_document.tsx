@@ -51,7 +51,7 @@ export default class MyDocument extends Document {
                                 width: 460,
                                 height: 460,
                                 alt: 'Anderson Marlon // Yagasaki7K',
-                                type: 'image/jpeg' || 'image/png',
+                                type: 'image/jpeg',
                             }
                         ],
                         siteName: 'Anderson Marlon // Yagasaki7K',

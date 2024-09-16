@@ -340,6 +340,9 @@ const about = () => {
 
                     <div className="projects" id="projects">
                         <h3>Projects</h3>
+                        <p><strong>game-sintoniasp</strong> - <Link href="https://sintoniasp.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
+                        <p>A FiveM server, city-themed around São Paulo using vRP, MySQL, CodeWalker, OpenIV, Javascript, Discord.js, etc.</p>
+
                         <p><strong>website-steamfolio</strong> - <Link href="https://github.com/Yagasaki7K/website-steamfolio" target="_blank" rel='noreferrer'>Source Code</Link> - <Link href="https://steamfolio.vercel.app/" target="_blank" rel='noreferrer'>Demo</Link></p>
                         <p>Building a customizable portfolio interface in the style of Steam. Using Bun, React and Vite.</p>
 

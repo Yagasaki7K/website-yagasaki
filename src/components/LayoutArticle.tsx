@@ -24,10 +24,6 @@ const LayoutArticle = (post: PostProps) => {
                     </p>
                 </div>
             </div>
-
-            <div className="img">
-                <Image src={post.frontmatter?.image} alt="" width={400} height={400} />
-            </div>
         </div>
     )
 }

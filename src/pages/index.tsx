@@ -123,20 +123,17 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             <HeaderDetails>
                 <div className='leftContent text'>
 
-                    <h1>Hi, I'm Yagasaki.</h1>
+                    <h1><img src="https://github.com/tairosonloa/tairosonloa/blob/main/assets/wave.gif?raw=true" alt="" />葛城 矢ヶ崎。</h1>
 
-                    <p>I&apos;m a software developer, front-end specialist, tech enthusiast and love staying up to date with all the latest cutting-edge features.</p>
+                    <p>lead dev <a href="https://github.com/byteonegroup" target="_blank">@byteonegroup</a>, support on <a href="https://github.com/byteonesolutions" target="_blank">@byteonesolutions</a> and mid-level software developer (javascript, typescript, lua, python, etc). </p>
 
-                    <p>
-                        I&apos;ve recently been improving my flaws - the backend side - and nowadays there&apos;s nothing I can&apos;t create.
-                    </p>
+                    <p>devout javascript advocate and occasionally dabbling in other languages, self-taught - can you read more <a href="/about">about me</a>.</p>
 
-                    <p>My relevant projects: <Link href="https://onigirihardcore.com.br" target="_blank" rel="noreferrer">Onigiri Hardcore</Link>, <Link href="https://steamfolio.vercel.app" target="_blank" rel="noreferrer">Steamfolio</Link>, <Link href="https://webessentials.com.br" target="_blank" rel="noreferrer">Essentials (Desktop)</Link>.</p>
-                    <p>Currently, I&apos;m based in São Paulo - Brazil, but also <Link href="/about">in the web</Link>.</p>
+                    <p>third place in the ambev hackathon and worked at stone co in 2023.</p>
 
-                    <p>I like Final Fantasy XIV - VII - XV, drifting, japanese culture - <Link href="https://ascii.yagasaki.dev">ASCII</Link> - and I believe than &quot;X-Tudo&quot; is a healthy snack.</p>
+                    <p>notable projects: <a href="https://steamfolio.vercel.app" target="_blank">steamfolio</a>, <a href="https://sintoniasp.vercel.app" target="_blank">sintoniasp</a>, <a href="https://webessentials.vercel.app" target="_blank">webessentials</a>, <a href="https://onigirihardcore.vercel.app" target="_blank">onigirihardcore</a>.</p>
 
-                    <p>You can also see me <Link href="https://stream.yagasaki.dev/" target="_blank" rel="noreferrer">streaming <i className="uil uil-external-link-alt"></i></Link> something or even coding. </p>
+                    <p>living in são paulo - brazil, but you can find me online:</p>
 
                     <p>
                         <Link href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></Link>
@@ -163,7 +160,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                         </Link>
                     ))}
 
-                    <button className="poppins" onClick={redirectToSearch}>See more ...</button>
+                    <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
                 </div>
             </HomeArticlesDetails>
             <Copyright />

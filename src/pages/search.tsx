@@ -89,14 +89,6 @@ export default function Search({ posts }: { posts: PostProps[] }) {
             </HeaderDetails>
 
             <HomeArticlesDetails>
-                <div className="header poppins">
-                    <h2>{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
-
-                    <div className="backToHome">
-                        <Link href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
-                    </div>
-                </div>
-
                 <div className="articles poppins">
                     {filteredPosts && filteredPosts.map((post, index) => (
                         <Link href={`/article/${post.slug}`} key={index}>

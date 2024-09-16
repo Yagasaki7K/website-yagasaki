@@ -52,6 +52,11 @@ const HeaderDetails = styled.div`
             span {
                 cursor: pointer;
             }
+
+            img {
+                width: 4rem;
+                margin-right: 2rem;
+            }
         }
 
         p {
@@ -118,8 +123,7 @@ const HeaderDetails = styled.div`
         color: var(--font);
         font-size: 1.25rem;
         outline: none;
-        margin-bottom: 1rem;
-        margin-top: -2rem;
+        margin-top: -5rem;
 
         @media (max-width: 768px) {
             width: 90%;

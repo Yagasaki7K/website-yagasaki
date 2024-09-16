@@ -34,7 +34,6 @@ const booksmark = () => {
                         <li><Link href="https://medium.com/language-learners-toolkit/want-to-speak-english-like-a-native-speaker-read-this-first-d6e07333407f" target='_blank' rel="noopener noreferrer">Want to speak English like a native speaker? Read this first.</Link></li>
                         <li><Link href="https://dev.to/azure/10-dicas-para-se-tornar-ninja-em-javascript-1775" target='_blank' rel="noopener noreferrer">10 Dicas para se Tornar Ninja em JavaScript!</Link></li>
                         <li><Link href="https://blog.bitsrc.io/how-to-fetch-api-data-in-react-like-a-pro-fd7379dc3e6f" target='_blank' rel="noopener noreferrer">How to Fetch API Data in React Like a Pro</Link></li>
-                        <li><Link href="" target='_blank' rel="noopener noreferrer"></Link></li>
 
                         {/* --- */}
 
@@ -45,74 +44,9 @@ const booksmark = () => {
                         <li><Link href="https://www.danilo.life/post/3" target='_blank' rel="noopener noreferrer">Introspection and Growth</Link></li>
                         <li><Link href="https://blog.lucis.dev/blog/pense-nos-incentivos-antes-de-qualquer-coisa" target='_blank' rel="noopener noreferrer">Incentivos antes de qualquer coisa</Link></li>
                         <li><Link href="https://www.youtube.com/watch?v=kPdLsrggPH0&ab_channel=LuanaCarolina" target='_blank' rel="noopener noreferrer">Você NUNCA mais vai ESQUECER o que leu (Video)</Link></li>
-                        <li><Link href="" target='_blank' rel="noopener noreferrer"></Link></li>
 
                         {/* --- */}
 
-                        <h1>List of Books That I Read</h1>
-                        <li>Boa Noite Punpun</li>
-                        <li>As Crônicas de Gelo e Fogo: A Guerra dos Tronos</li>
-                        <li>As Crônicas de Gelo e Fogo: A Fúria dos Reis</li>
-                        <li>A Sútil Arte de Ligar o Foda-se</li>
-                        <li>O Céu Não Existe</li>
-                        <li>Os Segredos da Mente Milionária</li>
-                        <li>O Diário de Annie Frank</li>
-                        <li>Clube da Luta</li>
-                        <li>Mitologia Nórdica</li>
-                        <li>Batman: Arkham Knight</li>
-                        <li>A Arte da Guerra</li>
-                        <li>A Cabana</li>
-                        <li>World of Warcraft: Marés da Guerra</li>
-                        <li>World of Warcraft: Alvorada dos Aspectos</li>
-                        <li>Guerra Civil</li>
-                        <li>A Morte do Capitão América</li>
-                        <li>O Navio Branco</li>
-                        <li>A Chave de Prata</li>
-                        <li>O Caso de Charles Dexter Ward</li>
-                        <li>O Chamado de Cthulhu</li>
-                        <li>Dagon</li>
-                        <li>A Cor que caiu do céu</li>
-                        <li>O Rei de Amarelo</li>
-                        <li>Harry Potter e a Pedra Filosofal</li>
-                        <li>Harry Potter e a Camara Secreta</li>
-                        <li>Percy Jackson</li>
-                        <li>Como eu era antes de você</li>
-
-                        {/* --- */}
-
-                        <h1>List of Books That I Want to Read</h1>
-                        <li><u>Mihail</u></li>
-                        <li><u>A Origem</u></li>
-                        <li><u>O Poder do Hábito</u></li>
-                        <li><u>Brigada dos Amaldiçoados</u></li>
-                        <li><u>Como fazer amigos e influenciar pessoas</u></li>
-                        <li>Fodeu Geral</li>
-                        <li>Depois de você</li>
-                        <li>O Pequeno Principe</li>
-                        <li>Sobrevivendo no Inferno</li>
-                        <li>A Revolução dos Bichos</li>
-                        <li>It, A Coisa</li>
-                        <li>Inferno</li>
-                        <li>O Código da Vinci</li>
-                        <li>Fortaleza Digital</li>
-                        <li>Anjos e Demônios</li>
-                        <li>Metamorfose</li>
-                        <li>O Processo</li>
-                        <li>Your Name</li>
-                        <li>Harry Potter e o Prisioneiro de Azkaban</li>
-                        <li>Harry Potter e o Enigma do Principe</li>
-                        <li>Harry Potter e a Ordem da Fênix</li>
-                        <li>Harry Potter e o Cálice de Fogo</li>
-                        <li>Harry Potter e as Reliquias da Morte</li>
-                        <li>World of Warcraft: Antes da Tempestade</li>
-                        <li>World of Warcraft: Crepúsculo dos Aspectos</li>
-                        <li>World of Warcraft: A Ruptura</li>
-                        <li>World of Warcraft: Sombras da Horda</li>
-                        <li>World of Warcraft: Crimes de Guerra</li>
-                        <li>As Crônicas de Gelo e Fogo: A Tormenta de Espadas</li>
-                        <li>As Crônicas de Gelo e Fogo: O Festim dos Corvos</li>
-                        <li>As Crônicas de Gelo e Fogo: A Dança dos Dragões</li>
-                        <li>Os Últimos dias de Krypton</li>
                     </div>
                 </div>
             </ArticleDetails>
