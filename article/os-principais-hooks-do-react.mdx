@@ -1,0 +1,100 @@
+---
+title: Você sabe o que são os hooks do React? Veja os principais e entenda-os de uma vez
+excerpt: 'Hoje existem diversos, então resolvi compartilhar aqui com vocês os conceitos, além dos 3 principais e mais básicos para começar! '
+image: https://images.unsplash.com/photo-1680315597398-0e1a4777a803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+tags: ['React', 'Hooks', 'Iniciante']
+date: '2024-09-18'
+---
+
+![](https://images.unsplash.com/photo-1680315597398-0e1a4777a803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+Inicialmente, vamos entender. O que são hooks? São funções do React que nos permitem utilizar recursos como gerenciamento de estados
+e efeitos colaterais em componentes funcionais, sem precisar escrever classes ou diversas linhas de código.
+
+O que podemos fazer com eles? Bom, gerenciamento de estados, ações após a renderização, acessar estados globais e até mesmo,
+utilizar referências.
+
+## useState
+Ele é quem nos permite **controlar os estados** de um componente. Ele retorna um par de valores: o valor atual do estado
+e uma função para atualizá-lo.
+
+No exemplo abaixo, ele está sendo utilizado para gerenciar se uma certa cadeira já foi arremessada. Quando o usuário
+clicar em "Sim" ou "Não", o estado é atualizado e a resposta exibida será alterada.
+
+```js
+function App() {
+    // Iniciamos como falso, já que não aconteceu ainda
+    const [cadeiraJaFoiArremessada, setCadeiraJaFoiArremessada] = useState(false)
+
+    // Função para atualizar o estado para verdadeiro
+    const confirmarArremesso = () => {
+        setCadeiraJaFoiArremessada(true)
+    }
+
+    // Função para atualizar o estado para falso
+    const negarArremesso = () => {
+        setCadeiraJaFoiArremessada(false)
+    }
+
+    return (
+        <div>
+            <h1>A cadeira já foi remessada?</h1>
+            <h2>Resposta: {cadeiraJaFoiArremessada ? 'Sim' : 'Não'}</h2>
+
+            <button onClick={confirmarArremesso}>Sim</button>
+            <button onClick={negarArremesso}>Não</button>
+        </div>
+    )
+}
+```
+
+Existem outras maneira de se fazer isso ao invés de criar funções propriamente ditas e tornar tudo mais simples, como:
+
+```jsx
+<button onClick={() => setCadeiraJaFoiArremessada(true)}>Sim</button>
+<button onClick={() => setCadeiraJaFoiArremessada(false)}>Não</button>
+```
+
+Isso irá eliminar uma quantidade imensa de código desnecessário e a funcionalidade ainda será a mesma.
+
+## useEffect
+
+Este hook nos permite executar efeitos colaterais em componentes, como chamadas de API e manipulação de DOM.
+
+Ele roda uma vez após a renderização inicial do componente e pode ser configurado para ser disparado sempre que um valor
+no array de dependências mudar.
+
+No exemplo abaixo, sempre que a variável **cadeiraJaFoiArremessada** for alterada, a função será executada.
+
+```jsx
+useEffect(() => {
+    if (cadeiraJaFoiArremessada) {
+        alert('Arremessaram a cadeira')
+    }
+}, [cadeiraJaFoiArremessada])
+```
+
+## useRef
+Ele nos possibilidade criarmos uma referência mutável, a qual podemos associar a elementos do DOM, como inputs,
+sem precisar causar uma nova renderização do componente.
+
+No exemplo abaixo, usamos o useRef para referenciar o campo de input e, com a função **focarNoInput**, podemos
+aplicar o foco diretamente utilizando o Javascript.
+
+```jsx
+function App() {
+    const inputRef = useRef(null)
+
+    const focarNoInput = () => inputRef.current.focus()
+
+    return (
+        <div>
+            <label>Quem arremessou a cadeira?</label>
+            <input ref={inputRef} type="text" />
+            <button onClick={focarNoInput}>Focar no input</button>
+        </div>
+    )
+}
+
+Curtiu o conteúdo? Fique à vontade para acrescentar ou perguntar algo útil para mim lá no [Twitter/X](https://twitter.com/yagasaki7k),
+compartilhe com amigos e conhecidos caso esse conteúdo tenha sido útil. Até mais!
