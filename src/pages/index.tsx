@@ -14,7 +14,6 @@ import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
