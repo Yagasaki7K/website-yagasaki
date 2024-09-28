@@ -139,14 +139,16 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                             <p>Nunca perca um post ou anúncio de projeto que eu faça. Siga-me no Twitter para manter contato, fazer perguntas ou conversar.</p>
                         </div>
                         <div className="rightContent">
+                        <a href="https://twitter.com/Yagasaki7K" target="_blank">
                             <span>
-                                <a href="https://twitter.com/Yagasaki7K" target="_blank"><i className="uil uil-twitter" /> Conecte-se</a>
+                                <i className="uil uil-twitter" /> Conecte-se
                             </span>
+                        </a>
                         </div>
                     </div>
 
                     <div className="buymeacoffee">
-                        <p>Gostou do artigo? <a href="https://pixmeacoffee.vercel.app/yagasaki" target='_blank'>Faça um PIX de café!</a> ☕</p>
+                        <p>Gostou do artigo? <a href="https://pixmeacoffee.vercel.app/yagasaki" target='_blank'>Faça um PIX de café! ☕</a></p>
                     </div>
                 </div>
 

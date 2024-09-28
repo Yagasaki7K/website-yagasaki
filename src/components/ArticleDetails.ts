@@ -361,6 +361,11 @@ const ArticleDetails = styled.div`
                     margin-left: 0rem;
                 }
 
+                a {
+                    color: var(--white);
+                    text-decoration: none;
+                }
+
                 span {
                     font-size: 1.3rem;
                     background: var(--background);
@@ -369,13 +374,8 @@ const ArticleDetails = styled.div`
                     padding: 1rem 2rem;
                     border: none;
 
-                    a {
-                        color: var(--white);
-                        text-decoration: none;
-                    }
-
                     &:hover {
-                        filter: brightness(1.1);
+                        filter: brightness(1.2);
                     }
                 }
             }
@@ -391,6 +391,14 @@ const ArticleDetails = styled.div`
             p {
                 margin-top: 0rem;
                 color: var(--advice-font);
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    filter: brightness(1.2);
+                }
             }
         }
     }
