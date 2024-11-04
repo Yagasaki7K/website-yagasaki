@@ -38,49 +38,38 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
 
     const filePath = path.join('article', `${slug}.mdx`);
-    try {
-        const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
-        const { data: frontmatter, content } = matter(markdownWithMeta);
+    const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
+    const { data: frontmatter, content } = matter(markdownWithMeta);
 
-        if (!content) {
-            console.error(`Content not found for slug: ${slug}`);
-            return { notFound: true };
-        }
-
-        const renderedContent = marked(content);
-
-        return {
-            props: {
-                frontmatter,
-                slug,
-                content: renderedContent,
-            },
-        };
-    } catch (error) {
-        console.error(`Failed to load file for slug: ${slug}`, error);
+    if (!content) {
+        console.error(`Content not found for slug: ${slug}`);
         return { notFound: true };
     }
+
+    const renderedContent = marked(content);
+
+    return {
+        props: {
+            frontmatter,
+            slug,
+            content: renderedContent || "", // Garantindo que `content` seja uma string vazia se for `undefined`
+        },
+    };
 }
 
-export default function PostPage({ frontmatter, content }: PostProps) {
-    // Initialize htmlContent with content, or fallback to an empty string if undefined
-    const [htmlContent, setHtmlContent] = useState<string>(content || "");
+export default function PostPage({ frontmatter, content = "" }: PostProps) { // Definindo um valor padrão para `content`
+    const [htmlContent, setHtmlContent] = useState<string>(content);
 
-    // Handle updates to content
     useEffect(() => {
-        setHtmlContent(content || ""); // Ensure htmlContent is always a string
+        setHtmlContent(content || ""); // Garantindo que `htmlContent` não seja `null`
     }, [content]);
 
-    // Initialize syntax highlighting after HTML content is set
     useEffect(() => {
         hljs.highlightAll();
     }, [htmlContent]);
 
-    // Render null if frontmatter or htmlContent is missing
-    if (!frontmatter || !htmlContent) {
-        console.error("frontmatter or htmlContent is missing", { frontmatter, htmlContent });
-        return null;
-    }
+    // Render nada se `frontmatter` ou `htmlContent` estiver ausente
+    if (!frontmatter || !htmlContent) return <p>Conteúdo não disponível</p>;
 
     return (
         <>
@@ -161,7 +150,6 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                         <p>Gostou do artigo? <a href="https://pixmeacoffee.vercel.app/yagasaki" target='_blank' rel="noreferrer">Faça um PIX de café! ☕</a></p>
                     </div>
                 </div>
-
             </ArticleDetails>
             <Copyright />
         </>
