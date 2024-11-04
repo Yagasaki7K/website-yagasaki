@@ -36,13 +36,9 @@ export interface PostProps {
 }
 
 export async function getStaticProps() {
-    // Lendo arquivos do diretório de artigos
     const files = fs.readdirSync(path.join('article'));
-
-    // Extraindo slug e frontmatter de cada artigo
     const posts = files.map((filename) => {
         const slug = filename.replace('.mdx', '');
-
         const markdownWithMeta = fs.readFileSync(
             path.join('article', filename),
             'utf-8'
@@ -98,29 +94,6 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </Head>
 
             <div className="overlay" />
-            {/* <div className="ball"></div>
-            <div
-                className="ball"
-                style={
-                    {
-                        "--delay": "-12s",
-                        "--size": "0.35",
-                        "--speed": "25s",
-                    } as React.CSSProperties
-                }
-            ></div>
-
-            <div
-                className="ball"
-                style={
-                    {
-                        "--delay": "-10s",
-                        "--size": "0.3",
-                        "--speed": "15s",
-                    } as React.CSSProperties
-                }
-            ></div> */}
-
             <HeaderDetails>
                 <div className='leftContent text'>
                     <h1><img src="https://github.com/tairosonloa/tairosonloa/blob/main/assets/wave.gif?raw=true" alt="" />i'm yagasaki!</h1>
@@ -151,17 +124,15 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </HeaderDetails>
 
             <HomeArticlesDetails>
-                <h2 className="poppins">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
-
+                <h2 className="poppins">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese?"><i className="uil uil-question-circle"></i></span></h2>
                 <div className="articles poppins">
                     {posts && posts.slice(0, 10).map((post, index) => (
                         post?.slug && post?.content ? (
                             <Link href={`/article/${post.slug}`} key={index}>
-                                <a><LayoutArticle {...post} /></a> {/* Wrapping with `a` tag for better accessibility */}
+                                <a><LayoutArticle {...post} /></a>
                             </Link>
-                        ) : null // Skip articles that don’t have required data
+                        ) : null
                     ))}
-
                     <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
                 </div>
             </HomeArticlesDetails>

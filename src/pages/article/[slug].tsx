@@ -29,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         paths,
         fallback: false,
     };
-}
+};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const slug = params?.slug as string;
@@ -55,9 +55,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
             content: renderedContent || "", // Garantindo que `content` seja uma string vazia se for `undefined`
         },
     };
-}
+};
 
-export default function PostPage({ frontmatter, content = "" }: PostProps) { // Definindo um valor padrão para `content`
+export default function PostPage({ frontmatter, content = "" }: PostProps) {
     const [htmlContent, setHtmlContent] = useState<string>(content);
 
     useEffect(() => {
@@ -68,8 +68,10 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) { // 
         hljs.highlightAll();
     }, [htmlContent]);
 
-    // Render nada se `frontmatter` ou `htmlContent` estiver ausente
-    if (!frontmatter || !htmlContent) return <p>Conteúdo não disponível</p>;
+    // Verificação detalhada para `frontmatter`
+    if (!frontmatter || !frontmatter.title || !frontmatter.excerpt || !frontmatter.date || !frontmatter.image) {
+        return <p>Conteúdo não disponível</p>;
+    }
 
     return (
         <>
@@ -108,7 +110,7 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) { // 
             <ArticleDetails>
                 <div className='card card-page text'>
                     <div className="backToHome">
-                        <Link href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
+                        <Link href={'/'}><a><i className="uil uil-arrow-left"> Back To Home</i></a></Link>
                     </div>
                     <div className="title">
                         <h1 className='post-title'>{frontmatter.title}</h1>
@@ -129,7 +131,7 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) { // 
                         </div>
                     </div>
                     <div className='post-body'>
-                        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+                        <div dangerouslySetInnerHTML={{ __html: htmlContent ?? '' }} />
                     </div>
 
                     <div className="touch">
