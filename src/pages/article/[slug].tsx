@@ -21,9 +21,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const paths = files.map((filename) => {
         const slug = filename.replace('.mdx', '');
         return {
-            params: {
-                slug: slug,
-            },
+            params: { slug },
         };
     });
 
@@ -33,8 +31,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
 }
 
-export const getStaticProps = async ({ params }: any) => {
-    if (!params || !params.slug) {
+export const getStaticProps = async ({ params }: { params: { slug: string } }) => {
+    if (!params?.slug) {
         return {
             notFound: true,
         };
@@ -44,7 +42,7 @@ export const getStaticProps = async ({ params }: any) => {
     const filePath = path.join('article', `${slug}.mdx`);
     const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
     const { data: frontmatter, content } = matter(markdownWithMeta);
-    const renderedContent = await marked(content);
+    const renderedContent = marked(content);
 
     return {
         props: {
@@ -56,20 +54,18 @@ export const getStaticProps = async ({ params }: any) => {
 }
 
 export default function PostPage({ frontmatter, content }: PostProps) {
-    const [htmlContent, setHtmlContent] = useState<string | null>(null);
+    const [htmlContent, setHtmlContent] = useState<string>("");
 
     useEffect(() => {
-        const fetchContent = async () => {
-            const markedContent = content || '';
-            setHtmlContent(markedContent);
-        };
-
-        fetchContent();
+        setHtmlContent(content || ""); // Fallback to an empty string if content is null or undefined
     }, [content]);
 
     useEffect(() => {
         hljs.highlightAll();
     }, [htmlContent]);
+
+    // Render null if frontmatter or htmlContent is not set
+    if (!frontmatter || !htmlContent) return null;
 
     return (
         <>
@@ -114,7 +110,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                         <h1 className='post-title'>{frontmatter.title}</h1>
                         <h1 className="stylish">{frontmatter.tags[0]}</h1>
                     </div>
-                    <p className="minRead">Leitura de {calculateReadingTime(htmlContent ? htmlContent : '')} minutos</p>
+                    <p className="minRead">Leitura de {calculateReadingTime(htmlContent)} minutos</p>
 
                     <div className="details">
                         <div className="tags">
@@ -129,7 +125,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                         </div>
                     </div>
                     <div className='post-body'>
-                        <div dangerouslySetInnerHTML={({ __html: htmlContent || '' })} />
+                        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                     </div>
 
                     <div className="touch">
