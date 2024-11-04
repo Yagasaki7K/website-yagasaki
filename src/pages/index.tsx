@@ -122,7 +122,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             <HeaderDetails>
                 <div className='leftContent text'>
 
-                    <h1><img src="https://github.com/tairosonloa/tairosonloa/blob/main/assets/wave.gif?raw=true" alt="" />葛城 矢ヶ崎。</h1>
+                    <h1><img src="https://github.com/tairosonloa/tairosonloa/blob/main/assets/wave.gif?raw=true" alt="" />i'm yagasaki!</h1>
 
                     <p>lead dev <a href="https://github.com/byteonegroup" target="_blank">@byteonegroup</a>, support on <a href="https://github.com/byteonesolutions" target="_blank">@byteonesolutions</a> and mid-level software developer (javascript, typescript, lua, python, etc). </p>
 
@@ -154,7 +154,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                 <div className="articles poppins">
                     {posts && posts.slice(0, 10).map((post, index) => (
-                        <Link href={`/article/${post.slug}`} key={index}>
+                        <Link href={`/article/${post?.slug}`} key={index}>
                             <LayoutArticle {...post} />
                         </Link>
                     ))}

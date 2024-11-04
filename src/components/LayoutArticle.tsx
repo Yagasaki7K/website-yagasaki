@@ -3,7 +3,6 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/pt-br'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { PostProps } from '@/pages'
-import Image from 'next/image'
 
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
@@ -13,9 +12,9 @@ const LayoutArticle = (post: PostProps) => {
         <div className="article">
             <div className="content">
                 <div className="details">
-                    <h4 className="scribble">{post.frontmatter.title}</h4>
-                    <p>{post.frontmatter.excerpt}</p>
-                    <small>Publicado {dayjs().to(post.frontmatter.date)}</small>
+                    <h4 className="scribble">{post.frontmatter?.title}</h4>
+                    <p>{post.frontmatter?.excerpt}</p>
+                    <small>Publicado {dayjs().to(post.frontmatter?.date)}</small>
                 </div>
 
                 <div className="tags">

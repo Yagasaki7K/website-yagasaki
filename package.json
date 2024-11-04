@@ -10,6 +10,7 @@
     "commit": "bun update && bun run vercel && git pull && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001677",
     "dayjs": "^1.11.13",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
