@@ -7,7 +7,7 @@
     "vercel": "next build",
     "start": "next start",
     "lint": "next lint",
-    "commit": "bun update && bun run vercel && git pull && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
+    "commit": "bun run vercel && git pull && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001677",
