@@ -14,7 +14,6 @@ import Head from 'next/head';
 import Copyright from '@/components/Copyright';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
-import { useRouter } from 'next/router';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -61,7 +60,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
 
     useEffect(() => {
         const fetchContent = async () => {
-            const markedContent = content;
+            const markedContent = content || '';
             setHtmlContent(markedContent);
         };
 

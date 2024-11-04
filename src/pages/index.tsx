@@ -33,12 +33,12 @@ export interface PostProps {
     slug: string
     frontmatter: Frontmatter
     readingTime: number,
-    content: string
+    content?: string
 }
 
 export async function getStaticProps() {
     // Get files from the posts dir
-    const files = fs.readdirSync(path.join('article'))
+    const files = fs.readdirSync(path.join('article'));
 
     // Get slug and frontmatter from posts
     const posts = files.map((filename) => {
@@ -49,17 +49,22 @@ export async function getStaticProps() {
         const markdownWithMeta = fs.readFileSync(
             path.join('article', filename),
             'utf-8'
-        )
+        );
 
-        const { data: frontmatter, content: markdownContent } = matter(markdownWithMeta)
+        const { data: frontmatter, content: markdownContent } = matter(markdownWithMeta);
         const readingTime = calculateReadingTime(markdownContent);
+
+        if (!markdownContent) {
+            console.warn(`Warning: ${filename} is missing content.`);
+        }
 
         return {
             slug,
             frontmatter,
             readingTime,
-        }
-    })
+            content: markdownContent // Use empty string as fallback
+        };
+    });
 
     return {
         props: {
@@ -67,12 +72,12 @@ export async function getStaticProps() {
                 if (a.frontmatter.date && b.frontmatter.date) {
                     return new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime();
                 } else {
-                    console.error('Erro: Uma das datas está ausente nos posts.');
+                    console.error('Error: A date is missing in one of the posts.');
                     return 0;
                 }
             }),
         },
-    }
+    };
 }
 
 function redirectToSearch() {
@@ -153,14 +158,16 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                 <h2 className="poppins">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
                 <div className="articles poppins">
-                    {posts && posts.slice(0, 10).map((post, index) => (
+                {posts && posts.slice(0, 10).map((post, index) => (
+                    post?.slug && post?.content ? (
                         <Link href={`/article/${post?.slug}`} key={index}>
                             <LayoutArticle {...post} />
                         </Link>
-                    ))}
+                    ) : null // Skip articles that don’t have required data
+                ))}
 
-                    <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
-                </div>
+                <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
+            </div>
             </HomeArticlesDetails>
             <Copyright />
         </>

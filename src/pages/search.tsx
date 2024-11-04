@@ -25,7 +25,7 @@ export interface PostProps {
     slug: string
     frontmatter: Frontmatter
     readingTime: number,
-    content: string
+    content?: string
 }
 
 export async function getStaticProps() {
