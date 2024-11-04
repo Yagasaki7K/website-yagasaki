@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { useEffect, useState } from 'react';
 import ArticleDetails from '@/components/ArticleDetails';
 import { PostProps } from '../index';
@@ -31,17 +31,21 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
 }
 
-export const getStaticProps = async ({ params }: { params: { slug: string } }) => {
-    if (!params?.slug) {
-        return {
-            notFound: true,
-        };
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const slug = params?.slug as string;
+    if (!slug) {
+        return { notFound: true };
     }
 
-    const { slug } = params;
     const filePath = path.join('article', `${slug}.mdx`);
     const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
     const { data: frontmatter, content } = matter(markdownWithMeta);
+
+    if (!content) {
+        console.error(`Content not found for slug: ${slug}`);
+        return { notFound: true };
+    }
+
     const renderedContent = marked(content);
 
     return {
@@ -54,17 +58,17 @@ export const getStaticProps = async ({ params }: { params: { slug: string } }) =
 }
 
 export default function PostPage({ frontmatter, content }: PostProps) {
-    const [htmlContent, setHtmlContent] = useState<string>("");
+    const [htmlContent, setHtmlContent] = useState<string>(content || "");
 
     useEffect(() => {
-        setHtmlContent(content || ""); // Fallback to an empty string if content is null or undefined
+        setHtmlContent(content || ""); // Ensure htmlContent is never null
     }, [content]);
 
     useEffect(() => {
         hljs.highlightAll();
     }, [htmlContent]);
 
-    // Render null if frontmatter or htmlContent is not set
+    // Render nothing if frontmatter or htmlContent is missing
     if (!frontmatter || !htmlContent) return null;
 
     return (
@@ -96,7 +100,7 @@ export default function PostPage({ frontmatter, content }: PostProps) {
             />
 
             <Head>
-                <title>{frontmatter.title}&nbsp;|&nbsp;Yagasaki7K</title>
+                <title>{frontmatter.title} | Yagasaki7K</title>
             </Head>
 
             <div className="overlay" />
@@ -134,16 +138,16 @@ export default function PostPage({ frontmatter, content }: PostProps) {
                             <p>Nunca perca um post ou anúncio de projeto que eu faça. Siga-me no Twitter para manter contato, fazer perguntas ou conversar.</p>
                         </div>
                         <div className="rightContent">
-                        <a href="https://twitter.com/Yagasaki7K" target="_blank">
-                            <span>
-                                <i className="uil uil-twitter" /> Conecte-se
-                            </span>
-                        </a>
+                            <a href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer">
+                                <span>
+                                    <i className="uil uil-twitter" /> Conecte-se
+                                </span>
+                            </a>
                         </div>
                     </div>
 
                     <div className="buymeacoffee">
-                        <p>Gostou do artigo? <a href="https://pixmeacoffee.vercel.app/yagasaki" target='_blank'>Faça um PIX de café! ☕</a></p>
+                        <p>Gostou do artigo? <a href="https://pixmeacoffee.vercel.app/yagasaki" target='_blank' rel="noreferrer">Faça um PIX de café! ☕</a></p>
                     </div>
                 </div>
 
