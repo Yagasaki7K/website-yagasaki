@@ -7,7 +7,7 @@
     "vercel": "next build",
     "start": "next start",
     "lint": "next lint",
-    "commit": "bun run vercel && git pull && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
+    "commit": "bun update && bun run vercel && git pull && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001677",
@@ -21,14 +21,14 @@
     "next-seo": "^6.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sonner": "^1.5.0",
+    "sonner": "^1.7.0",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "typescript": "^5.6.2",
-    "@types/node": "^20.16.10",
-    "@types/react": "^18.3.10",
-    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.3",
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.1.4"
   }

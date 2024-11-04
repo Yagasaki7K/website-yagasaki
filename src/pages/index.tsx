@@ -2,21 +2,20 @@ import { useEffect, useState } from "react";
 import HeaderDetails from "@/components/HeaderDetails";
 import HomeArticlesDetails from "@/components/HomeArticlesDetails";
 import Image from "next/image";
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import calculateReadingTime from "@/utils/calculateReadingTime";
-
-import dayjs from 'dayjs'
-import 'dayjs/locale/pt-br'
-import relativeTime from 'dayjs/plugin/relativeTime'
+import dayjs from 'dayjs';
+import 'dayjs/locale/pt-br';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
 import Link from "next/link";
 
-dayjs.extend(relativeTime)
-dayjs.locale('pt-br')
+dayjs.extend(relativeTime);
+dayjs.locale('pt-br');
 
 export interface Frontmatter {
     slug: string;
@@ -29,22 +28,20 @@ export interface Frontmatter {
 }
 
 export interface PostProps {
-    date: string
-    slug: string
-    frontmatter: Frontmatter
-    readingTime: number,
-    content?: string
+    date: string;
+    slug: string;
+    frontmatter: Frontmatter;
+    readingTime: number;
+    content?: string;
 }
 
 export async function getStaticProps() {
-    // Get files from the posts dir
+    // Lendo arquivos do diretório de artigos
     const files = fs.readdirSync(path.join('article'));
 
-    // Get slug and frontmatter from posts
+    // Extraindo slug e frontmatter de cada artigo
     const posts = files.map((filename) => {
-        // Create slug
-        let slug = '';
-        slug = filename.replace('.mdx', '');
+        const slug = filename.replace('.mdx', '');
 
         const markdownWithMeta = fs.readFileSync(
             path.join('article', filename),
@@ -62,7 +59,7 @@ export async function getStaticProps() {
             slug,
             frontmatter,
             readingTime,
-            content: markdownContent // Use empty string as fallback
+            content: markdownContent || '' // Garante uma string vazia como fallback
         };
     });
 
@@ -81,7 +78,7 @@ export async function getStaticProps() {
 }
 
 function redirectToSearch() {
-    window.location.href = '/search'
+    window.location.href = '/search';
 }
 
 function shareContent() {
@@ -89,7 +86,7 @@ function shareContent() {
         navigator.share({
             url: "https://yagasaki.dev",
             title: 'Anderson Marlon // Software Developer',
-        })
+        });
     }
 }
 
@@ -126,7 +123,6 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
             <HeaderDetails>
                 <div className='leftContent text'>
-
                     <h1><img src="https://github.com/tairosonloa/tairosonloa/blob/main/assets/wave.gif?raw=true" alt="" />i'm yagasaki!</h1>
 
                     <p>lead dev <a href="https://github.com/byteonegroup" target="_blank">@byteonegroup</a>, support on <a href="https://github.com/byteonesolutions" target="_blank">@byteonesolutions</a> and mid-level software developer (javascript, typescript, lua, python, etc). </p>
@@ -158,16 +154,16 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                 <h2 className="poppins">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese? Because every developer in Brazil faces difficulty learning English in the initial stages."><i className="uil uil-question-circle"></i></span></h2>
 
                 <div className="articles poppins">
-                {posts && posts.slice(0, 10).map((post, index) => (
-                    post?.slug && post?.content ? (
-                        <Link href={`/article/${post?.slug}`} key={index}>
-                            <LayoutArticle {...post} />
-                        </Link>
-                    ) : null // Skip articles that don’t have required data
-                ))}
+                    {posts && posts.slice(0, 10).map((post, index) => (
+                        post?.slug && post?.content ? (
+                            <Link href={`/article/${post.slug}`} key={index}>
+                                <a><LayoutArticle {...post} /></a> {/* Wrapping with `a` tag for better accessibility */}
+                            </Link>
+                        ) : null // Skip articles that don’t have required data
+                    ))}
 
-                <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
-            </div>
+                    <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
+                </div>
             </HomeArticlesDetails>
             <Copyright />
         </>
