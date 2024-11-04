@@ -38,38 +38,49 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
 
     const filePath = path.join('article', `${slug}.mdx`);
-    const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
-    const { data: frontmatter, content } = matter(markdownWithMeta);
+    try {
+        const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
+        const { data: frontmatter, content } = matter(markdownWithMeta);
 
-    if (!content) {
-        console.error(`Content not found for slug: ${slug}`);
+        if (!content) {
+            console.error(`Content not found for slug: ${slug}`);
+            return { notFound: true };
+        }
+
+        const renderedContent = marked(content);
+
+        return {
+            props: {
+                frontmatter,
+                slug,
+                content: renderedContent,
+            },
+        };
+    } catch (error) {
+        console.error(`Failed to load file for slug: ${slug}`, error);
         return { notFound: true };
     }
-
-    const renderedContent = marked(content);
-
-    return {
-        props: {
-            frontmatter,
-            slug,
-            content: renderedContent,
-        },
-    };
 }
 
 export default function PostPage({ frontmatter, content }: PostProps) {
+    // Initialize htmlContent with content, or fallback to an empty string if undefined
     const [htmlContent, setHtmlContent] = useState<string>(content || "");
 
+    // Handle updates to content
     useEffect(() => {
-        setHtmlContent(content || ""); // Ensure htmlContent is never null
+        setHtmlContent(content || ""); // Ensure htmlContent is always a string
     }, [content]);
 
+    // Initialize syntax highlighting after HTML content is set
     useEffect(() => {
         hljs.highlightAll();
     }, [htmlContent]);
 
-    // Render nothing if frontmatter or htmlContent is missing
-    if (!frontmatter || !htmlContent) return null;
+    // Render null if frontmatter or htmlContent is missing
+    if (!frontmatter || !htmlContent) {
+        console.error("frontmatter or htmlContent is missing", { frontmatter, htmlContent });
+        return null;
+    }
 
     return (
         <>
