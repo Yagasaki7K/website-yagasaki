@@ -14,6 +14,7 @@ import Head from 'next/head';
 import Copyright from '@/components/Copyright';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -73,24 +74,26 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
     }
 
     return (
-        <>
+        <ErrorBoundary>
             <NextSeo
-                title={frontmatter.title}
-                description={frontmatter.excerpt}
+                title={frontmatter.title || "Post"}
+                description={frontmatter.excerpt || "Descrição indisponível"}
                 canonical="https://yagasaki.dev/"
                 openGraph={{
                     url: `https://yagasaki.dev/`,
-                    title: frontmatter.title,
-                    description: frontmatter.excerpt,
-                    images: [
-                        {
-                            url: frontmatter.image,
-                            width: 460,
-                            height: 460,
-                            alt: frontmatter.title,
-                            type: frontmatter.image.includes('.png') ? 'image/png' : 'image/jpeg',
-                        },
-                    ],
+                    title: frontmatter.title || "Post",
+                    description: frontmatter.excerpt || "Descrição indisponível",
+                    images: frontmatter.image
+                        ? [
+                            {
+                                url: frontmatter.image,
+                                width: 460,
+                                height: 460,
+                                alt: frontmatter.title || "Imagem",
+                                type: frontmatter.image.includes('.png') ? 'image/png' : 'image/jpeg',
+                            },
+                        ]
+                        : [],
                     siteName: 'Anderson Marlon // Yagasaki7K',
                 }}
                 twitter={{
@@ -101,7 +104,7 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
             />
 
             <Head>
-                <title>{frontmatter.title} | Yagasaki7K</title>
+                <title>{frontmatter.title || "Yagasaki7K"}</title>
             </Head>
 
             <div className="overlay" />
@@ -112,14 +115,14 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
                         <Link href={'/'}><a><i className="uil uil-arrow-left"> Back To Home</i></a></Link>
                     </div>
                     <div className="title">
-                        <h1 className='post-title'>{frontmatter.title}</h1>
-                        <h1 className="stylish">{frontmatter.tags[0]}</h1>
+                        <h1 className='post-title'>{frontmatter.title || "Título indisponível"}</h1>
+                        {frontmatter.tags && <h1 className="stylish">{frontmatter.tags[0]}</h1>}
                     </div>
                     <p className="minRead">Leitura de {calculateReadingTime(htmlContent)} minutos</p>
 
                     <div className="details">
                         <div className="tags">
-                            {frontmatter.tags.map((tag: string) => (
+                            {frontmatter.tags && frontmatter.tags.map((tag: string) => (
                                 <p key={tag}>
                                     <span>{tag}</span>
                                 </p>
@@ -153,6 +156,6 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
                 </div>
             </ArticleDetails>
             <Copyright />
-        </>
+        </ErrorBoundary>
     );
 }
