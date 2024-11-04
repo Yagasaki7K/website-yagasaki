@@ -47,12 +47,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
 
     const renderedContent = marked(content);
-
     return {
         props: {
             frontmatter,
             slug,
-            content: renderedContent || "", // Garantindo que `content` seja uma string vazia se for `undefined`
+            content: renderedContent || "", // content sempre será uma string
         },
     };
 };
@@ -69,7 +68,7 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
     }, [htmlContent]);
 
     // Verificação detalhada para `frontmatter`
-    if (!frontmatter || !frontmatter.title || !frontmatter.excerpt || !frontmatter.date || !frontmatter.image) {
+    if (!frontmatter || !frontmatter.title || !frontmatter.excerpt || !frontmatter.date || !frontmatter.image || !htmlContent) {
         return <p>Conteúdo não disponível</p>;
     }
 
