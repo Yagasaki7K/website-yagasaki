@@ -19,7 +19,7 @@ const LayoutArticle = (post: PostProps) => {
 
                 <div className="tags">
                     <p>
-                        <span className="color">{post.readingTime} min de leitura</span> <span>{post.frontmatter?.tags?.[0]}</span> <span>{post.frontmatter?.tags?.[1]}</span> <span>{post.frontmatter?.tags?.[2]}</span>
+                        <span className="color">{post.readingTime} min de leitura</span> <span>{post.frontmatter?.tags?.[0]}</span> <span>{post.frontmatter?.tags?.[1]}</span><span>{post.frontmatter?.tags?.[2]}</span>
                     </p>
                 </div>
             </div>

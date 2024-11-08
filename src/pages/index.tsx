@@ -124,16 +124,16 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             </HeaderDetails>
 
             <HomeArticlesDetails>
-                <h2 className="poppins">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese?"><i className="uil uil-question-circle"></i></span></h2>
-                <div className="articles poppins">
-                    {posts && posts.slice(0, 10).map((post, index) => (
+                <h2 className="text">{posts.length} Articles in Brazilian Portuguese <span title="Why in Portuguese?"><i className="uil uil-question-circle"></i></span></h2>
+                <div className="articles text">
+                    {posts && posts.slice(0, 15).map((post, index) => (
                         post?.slug && post?.content ? (
                             <Link href={`/article/${post.slug}`} key={index}>
-                                <LayoutArticle {...post} />''
+                                <LayoutArticle {...post} />
                             </Link>
                         ) : null
                     ))}
-                    <button className="poppins" onClick={redirectToSearch}>Veja mais ...</button>
+                    <button className="text" onClick={redirectToSearch}>Veja mais ...</button>
                 </div>
             </HomeArticlesDetails>
             <Copyright />
