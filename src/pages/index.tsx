@@ -12,8 +12,8 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
-import Link from "next/link";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import Link from "next/link";
 
 dayjs.extend(relativeTime);
 dayjs.locale('pt-br');
@@ -105,14 +105,14 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>third place in the ambev hackathon and worked at stone co in 2023.</p>
 
-                    <p>notable projects: <a href="https://steamfolio.vercel.app" target="_blank">steamfolio</a>, <a href="https://sintoniasp.vercel.app" target="_blank">sintoniasp</a>, <a href="https://webessentials.vercel.app" target="_blank">webessentials</a>, <a href="https://onigirihardcore.vercel.app" target="_blank">onigirihardcore</a>.</p>
+                    <p>notable projects: <Link href="https://steamfolio.vercel.app" target="_blank">steamfolio</Link>, <Link href="https://sintoniasp.vercel.app" target="_blank">sintoniasp</Link>, <Link href="https://webessentials.vercel.app" target="_blank">webessentials</Link>, <Link href="https://onigirihardcore.vercel.app" target="_blank">onigirihardcore</Link>.</p>
 
                     <p>living in são paulo - brazil, but you can find me online:</p>
 
                     <p>
-                        <Link href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></Link>
-                        <Link href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-github"></i></Link>
                         <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></Link>
+                        <Link href="https://github.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-github"></i></Link>
+                        <Link href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></Link>
                         <Link href="mailto:anderson18.marlon@gmail.com" target="_blank" rel="noreferrer"><i className="uil uil-at"></i></Link>
                         <Link href="/bookmarks"><i className="uil uil-bookmark"></i></Link>
                         <a onClick={shareContent}><i className="uil uil-share"></i></a>
@@ -130,7 +130,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                     {posts && posts.slice(0, 10).map((post, index) => (
                         post?.slug && post?.content ? (
                             <Link href={`/article/${post.slug}`} key={index}>
-                                <a><LayoutArticle {...post} /></a>
+                                <LayoutArticle {...post} />''
                             </Link>
                         ) : null
                     ))}

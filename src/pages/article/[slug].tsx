@@ -112,7 +112,7 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
             <ArticleDetails>
                 <div className='card card-page text'>
                     <div className="backToHome">
-                        <Link href={'/'}><a><i className="uil uil-arrow-left"> Back To Home</i></a></Link>
+                        <Link href={'/'}><i className="uil uil-arrow-left"> Back To Home</i></Link>
                     </div>
                     <div className="title">
                         <h1 className='post-title'>{frontmatter.title || "Título indisponível"}</h1>
