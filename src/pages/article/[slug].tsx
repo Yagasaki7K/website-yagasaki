@@ -14,7 +14,6 @@ import Head from 'next/head';
 import Copyright from '@/components/Copyright';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
-import ErrorBoundary from '@/components/ErrorBoundary';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -74,7 +73,7 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
     }
 
     return (
-        <ErrorBoundary>
+        <>
             <NextSeo
                 title={frontmatter.title || "Post"}
                 description={frontmatter.excerpt || "Descrição indisponível"}
@@ -156,6 +155,6 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
                 </div>
             </ArticleDetails>
             <Copyright />
-        </ErrorBoundary>
+        </>
     );
 }

@@ -12,7 +12,6 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
-import ErrorBoundary from "@/components/ErrorBoundary";
 import Link from "next/link";
 
 dayjs.extend(relativeTime);
@@ -89,7 +88,7 @@ function shareContent() {
 
 export default function Home({ posts }: { posts: PostProps[] }) {
     return (
-        <ErrorBoundary>
+        <>
             <Head>
                 <title>Anderson Marlon // Yagasaki7K</title>
             </Head>
@@ -138,6 +137,6 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                 </div>
             </HomeArticlesDetails>
             <Copyright />
-        </ErrorBoundary>
+        </>
     );
 }
