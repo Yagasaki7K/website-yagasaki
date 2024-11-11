@@ -1,12 +1,9 @@
 <rss version="2.0">
-<script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
-<script/>
-<script/>
 <channel>
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Mon, 02 Sep 2024 17:32:59 GMT</lastBuildDate>
+<lastBuildDate>Mon, 11 Nov 2024 16:05:33 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -212,6 +209,17 @@
 <pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Entenda qual é a melhor maneira de temática de sua aplicação ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Desbloqueie o modo Ultra Security do seu Windows ]]>
+</title>
+<link>https://yagasaki.dev/article/desbloqueie-o-modo-ultra-security</link>
+<guid>desbloqueie-o-modo-ultra-security</guid>
+<pubDate>Sat, 28 Sep 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Já imaginou um desconhecido tentar acessar o seu computador e toda vez que digitar a senha corretamente ou até mesmo entrar automaticamente, ele apenas desligar? Seria estranho, certamente, você poderia dizer até que é um vírus ... ]]>
 </description>
 </item>
 <item>
@@ -535,6 +543,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ Você sabe o que são os hooks do React? Veja os principais e entenda-os de uma vez ]]>
+</title>
+<link>https://yagasaki.dev/article/os-principais-hooks-do-react</link>
+<guid>os-principais-hooks-do-react</guid>
+<pubDate>Wed, 18 Sep 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Hoje existem diversos, então resolvi compartilhar aqui com vocês os conceitos, além dos 3 principais e mais básicos para começar! ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ Montando um perfil interessante e exemplar no GitHub ]]>
 </title>
 <link>https://yagasaki.dev/article/perfil-github</link>
@@ -711,6 +730,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ Twitter e Cloudflare - Entenda tudo que está acontecendo, aspectos técnicos e polêmicas ]]>
+</title>
+<link>https://yagasaki.dev/article/twitter-e-cloudflare-entenda-tudo-que-esta-acontecendo-aspectos-tecnicos-e-polemicas</link>
+<guid>twitter-e-cloudflare-entenda-tudo-que-esta-acontecendo-aspectos-tecnicos-e-polemicas</guid>
+<pubDate>Thu, 19 Sep 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda as discussões sobre os aspectos técnicos por trás do bloqueio que levantou questões importantes sobre liberdade de expressão e controle da internet ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ TypeScript - Types vs. Interfaces e qual usar escolher no próximo projeto? ]]>
 </title>
 <link>https://yagasaki.dev/article/typescript-types-e-interfaces-e-qual-usar</link>
@@ -762,6 +792,17 @@
 <pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Afinal, saber como atualizar Node é importantíssimo, ainda mais quando se usa terminal. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Utilizando CSS-in-JS em componentes dinâmicos da aplicação ]]>
+</title>
+<link>https://yagasaki.dev/article/utilizando-css-in-js-em-componentes-dinamicos-da-aplicacao</link>
+<guid>utilizando-css-in-js-em-componentes-dinamicos-da-aplicacao</guid>
+<pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Entenda meu ponto sobre o playbook de Alekson Fortes e como ele se baseia na minha vida pessoal. ]]>
 </description>
 </item>
 </channel>
