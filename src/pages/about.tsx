@@ -178,7 +178,7 @@ const about = () => {
                         </p>
 
                         <p>
-                            <strong>1º Seminário de Arbitragem de Kyorugui{" "}</strong>by Nova FETESP - February 2024
+                            <strong>1st Kyorugui Arbitration Seminar{" "}</strong>by Nova FETESP - February 2024
                         </p>
 
                         <p>
