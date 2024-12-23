@@ -77,11 +77,26 @@ const about = () => {
                         <h3>Positions</h3>
                         <h4>Software Developer</h4>
                         <p>
+                            <strong>Astriia Co.</strong> | <i>September 2024 — Present</i>
+                        </p>
+                        <p>
+                            Working on A.I. of communication with astrology using Whatsapp API.
+                        </p>
+
+                        <li></li>
+
+                        <p>
+                            -
+                        </p>
+
+                        <hr />
+
+                        <h4>Software Developer</h4>
+                        <p>
                             <strong>Stone Co. / Linx S.A.</strong> | <i>October 2022 — June 2023</i>
                         </p>
                         <p>
-                            Working on A.I. of communication with e-commerce
-                            applications.
+                            Working on A.I. of communication with e-commerce applications.
                         </p>
 
                         <li>Responsible to use DialogFlow and build new routines to communicate with the app.</li>

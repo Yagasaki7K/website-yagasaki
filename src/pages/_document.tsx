@@ -70,7 +70,7 @@ export default class MyDocument extends Document {
 
                     <meta name="author" content="Anderson 'Yagasaki' Marlon" />
                     <meta name="robots" content="index, follow" />
-                    <link rel="shortcut icon" href="https://github.com/Yagasaki7K.png" />
+                    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Yagasaki7K/main/logo.png" type="image/png"/>
                     <meta property="og:locale" content="pt_BR" />
 
                     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
