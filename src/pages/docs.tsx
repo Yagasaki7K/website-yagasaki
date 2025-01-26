@@ -2,12 +2,16 @@ import React from 'react'
 import ArticleDetails from '@/components/ArticleDetails'
 import Link from 'next/link'
 import Copyright from '@/components/Copyright'
+import Head from 'next/head'
 
 const doc = () => {
     return (
         <>
             <div className="overlay" />
-            <title>Yagasaki.dev | Bookmarks</title>
+            <Head>
+                <title>Yagasaki | mid-level software developer using JS and TS</title>
+                <link rel="icon" type="image/png" href="https://github.com/Yagasaki7K.png" />
+            </Head>
             <ArticleDetails>
                 <div className='card card-page text'>
                     <div className="backToHome">

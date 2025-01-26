@@ -82,7 +82,8 @@ export default function Search({ posts }: { posts: PostProps[] }) {
     return (
         <>
             <Head>
-                <title>Anderson Marlon // Yagasaki7K</title>
+                <title>Yagasaki | mid-level software developer using JS and TS</title>
+                <link rel="icon" type="image/png" href="https://github.com/Yagasaki7K.png" />
             </Head>
 
             <div className="overlay" />

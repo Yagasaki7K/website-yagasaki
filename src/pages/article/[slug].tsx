@@ -74,6 +74,10 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
 
     return (
         <>
+            <Head>
+                <title>Yagasaki | mid-level software developer using JS and TS</title>
+                <link rel="icon" type="image/png" href="https://github.com/Yagasaki7K.png" />
+            </Head>
             <NextSeo
                 title={frontmatter.title || "Post"}
                 description={frontmatter.excerpt || "Descrição indisponível"}

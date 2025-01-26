@@ -38,23 +38,23 @@ export default class MyDocument extends Document {
         return (
             <Html lang="pt-br">
                 <NextSeo
-                    title='Anderson Marlon // Yagasaki7K'
+                    title='Yagasaki | mid-level software developer using JS and TS'
                     description='Software Developer'
                     canonical={`https://yagasaki.dev/`}
                     openGraph={{
                         url: 'https://yagasaki.dev/',
-                        title: 'Anderson Marlon // Yagasaki7K',
+                        title: 'Yagasaki | mid-level software developer using JS and TS',
                         description: 'Software Developer',
                         images: [
                             {
                                 url: 'https://cdn-images-1.medium.com/max/800/0*eBBvNAU5Qz9roeNf.png',
                                 width: 460,
                                 height: 460,
-                                alt: 'Anderson Marlon // Yagasaki7K',
+                                alt: 'Yagasaki | mid-level software developer using JS and TS',
                                 type: 'image/jpeg',
                             }
                         ],
-                        siteName: 'Anderson Marlon // Yagasaki7K',
+                        siteName: 'Yagasaki | mid-level software developer using JS and TS',
                     }}
                     twitter={{
                         handle: '@Yagasaki7K',
@@ -70,7 +70,8 @@ export default class MyDocument extends Document {
 
                     <meta name="author" content="Anderson 'Yagasaki' Marlon" />
                     <meta name="robots" content="index, follow" />
-                    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Yagasaki7K/main/logo.png" type="image/png"/>
+                    <link rel="icon" type="image/png" href="https://github.com/Yagasaki7K.png" />
+
                     <meta property="og:locale" content="pt_BR" />
 
                     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
