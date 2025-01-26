@@ -76,6 +76,7 @@ const HeaderDetails = styled.div`
                     font-size: 2rem;
                     margin-right: 1rem;
                     color: var(--font);
+                    transition: 0.5s;
 
                     &:hover {
                         color: var(--header);
@@ -97,6 +98,7 @@ const HeaderDetails = styled.div`
         a {
             color: var(--red);
             text-decoration: none;
+            transition: 0.5s;
 
             &:hover {
                 color: var(--pink);

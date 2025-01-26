@@ -258,26 +258,22 @@ const ArticleDetails = styled.div`
         }
 
         pre {
-            background: var(--gray-light);
-            border-radius: 0.5rem;
-            padding: 1rem;
-            margin: 1rem 0;
-            font-size: 14px;
-            color: var(--advice-font);
-
-            code {
-                background: none;
-                font-family: "JetBrains Mono", monospace;
-            }
+            margin: 0; /* Remove o espaçamento extra do pre */
         }
 
         code {
-            background: var(--advice-bg);
-            border-radius: 0.5rem;
-            padding: 0.15rem 0.5rem;
-            font-size: 1rem;
-            color: var(--advice-font);
+            position: relative;
+            background-color: var(--dracula-bg);
+            color: var(--dracula-yellow);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
             font-family: "JetBrains Mono", monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            overflow: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
         table {
