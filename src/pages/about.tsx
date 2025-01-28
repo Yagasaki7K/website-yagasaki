@@ -146,6 +146,10 @@ const about = () => {
                         <h3>Certificates</h3>
 
                         <p>
+                            <strong>How to build a Micro SasS with Next.js, Firebase, Google Analytics and Stripe{" "}</strong>by Rocketseat - January 2025
+                        </p>
+
+                        <p>
                             <strong>Build a web API with Node.js and Express{" "}</strong>by Microsoft Ignite - November 2024
                         </p>
 
