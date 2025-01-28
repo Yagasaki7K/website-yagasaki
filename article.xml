@@ -3,7 +3,7 @@
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Mon, 11 Nov 2024 16:05:33 GMT</lastBuildDate>
+<lastBuildDate>Tue, 28 Jan 2025 15:47:10 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -121,6 +121,17 @@
 <pubDate>Sat, 20 Apr 2024 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Aprenda a instalar o WSL e descubra as vantagens para desenvolvedores e por que o dual boot mão é uma boa ideia. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como mover o WSL para outra unidade do disco ]]>
+</title>
+<link>https://yagasaki.dev/article/como-mover-o-wsl-para-outra-unidade-do-disco</link>
+<guid>como-mover-o-wsl-para-outra-unidade-do-disco</guid>
+<pubDate>Tue, 24 Dec 2024 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Uma maneira de transferir os arquivos do WSL sem perder nada de praticidade, os arquivos e os programas do seu WSL. ]]>
 </description>
 </item>
 <item>
@@ -396,6 +407,17 @@
 <pubDate>Tue, 06 Dec 2022 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ "Hopyeast", projeto vencedor, utiliza Engenharia Genética ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Hugging Face facilita para desenvolvedores rodarem modelos de IA em nuvens de terceiros ]]>
+</title>
+<link>https://yagasaki.dev/article/hugging-face-facilita-para-desenvolvedores-rodarem-modelos-de-ia-em-nuvens-de-terceiros</link>
+<guid>hugging-face-facilita-para-desenvolvedores-rodarem-modelos-de-ia-em-nuvens-de-terceiros</guid>
+<pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ A plataforma de desenvolvimento de IA Hugging Face fez parceria com fornecedores de nuvem de terceiros, incluindo a SambaNova, para lançar o Inference Providers ... ]]>
 </description>
 </item>
 <item>
