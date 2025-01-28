@@ -11,6 +11,10 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'techcrunch.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'w.wallhaven.cc',
       },
       {
