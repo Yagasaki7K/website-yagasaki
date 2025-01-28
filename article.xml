@@ -3,7 +3,7 @@
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Tue, 28 Jan 2025 15:47:10 GMT</lastBuildDate>
+<lastBuildDate>Tue, 28 Jan 2025 16:07:50 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -220,6 +220,17 @@
 <pubDate>Fri, 16 Dec 2022 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Entenda qual é a melhor maneira de temática de sua aplicação ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ DeepSeek-R1 e o impacto que seu lançamento causou no mercado ]]>
+</title>
+<link>https://yagasaki.dev/article/deep-seek-r1-e-o-impacto-que-seu-lançamento-causou-no-mercado</link>
+<guid>deep-seek-r1-e-o-impacto-que-seu-lançamento-causou-no-mercado</guid>
+<pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ O tema de hoje é o DeepSeek-R1 e o impacto que seu lançamento causou no mercado. Como em qualquer assunto técnico, há muita desinformação circulando por aí. O propósito deste artigo não é ser altamente técnico, mas sim explicar de forma clara o que o modelo é (e o que não é). ]]>
 </description>
 </item>
 <item>
