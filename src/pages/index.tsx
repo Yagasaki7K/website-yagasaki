@@ -101,7 +101,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
 
                     <p>lead dev <a href="https://github.com/byteonegroup" target="_blank">@byteonegroup</a>, support on <a href="https://github.com/byteonesolutions" target="_blank">@byteonesolutions</a> and mid-level software developer (javascript, typescript, lua, python, etc). </p>
 
-                    <p>devout javascript advocate and occasionally dabbling in other languages, self-taught - can you read more <a href="/about">about me</a>.</p>
+                    <p>devout <span className="wave">javascript</span> and <span className="wave">typescript</span> advocate and occasionally dabbling in other languages, self-taught - can you read more <a href="/about">about me</a>.</p>
 
                     <p>third place in the ambev hackathon and worked at stone co in 2023.</p>
 

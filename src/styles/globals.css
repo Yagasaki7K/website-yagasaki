@@ -205,3 +205,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
     padding: 1rem;
 }
+
+.wave {
+    text-decoration: underline wavy var(--red);
+}

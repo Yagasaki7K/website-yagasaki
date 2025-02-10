@@ -105,10 +105,21 @@ const HomeArticlesDetails = styled.div`
 
         .article {
             display: flex;
-            border: 1px solid var(--gray);
-            border-radius: 0.375rem;
+            border-radius: 11px;
             transition: 0.2s;
             padding: 0.5rem 2rem;
+            position: relative;
+            background: var(--background);
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: -2px;
+                z-index: -1;
+                border-radius: 15px;
+                background: linear-gradient(220.94deg, var(--red) 14.43%, var(--pink));
+                /* background: linear-gradient(220.94deg, var(--red) 14.43%, var(--pink), var(--red) 85.28%); */
+            }
 
             @media (max-width: 768px) {
                 padding: 0.5rem 1rem;
