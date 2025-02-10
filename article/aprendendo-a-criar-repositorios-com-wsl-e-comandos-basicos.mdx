@@ -1,0 +1,59 @@
+---
+title: Aprendendo a criar repositórios com WSL e comandos básicos
+excerpt: 'Imagine que você acabou de instalar seu WSL, conforme eu havia explicado em 19 de Abril do ano passado, mas você está perdido, não sabe o que fazer, como começar e o que deveria ser feito para começar a utilizar o WSL adequadamente.'
+image: https://safebooru.org//samples/1797/sample_5a4829cc66b2ba4f9e5eaae9d1df76331a85e775.jpg?5467027
+tags: ['Iniciante', 'Git', 'WSL']
+date: '2025-02-09'
+---
+
+![](https://safebooru.org//samples/1797/sample_5a4829cc66b2ba4f9e5eaae9d1df76331a85e775.jpg?5467027)
+
+Imagine que você acabou de [instalar seu WSL](https://yagasaki.vercel.app/article/como-instalar-o-wsl), conforme eu havia explicado em 19 de Abril do ano passado,
+mas você está perdido, não sabe o que fazer, como começar e o que deveria ser feito para começar a utilizar o WSL adequadamente junto com os seus repositórios do GitHub. Tudo bem?
+
+Então, imaginando que você está com WSL instalado corretamente e o VSCode possuí a extensão [WSL da Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl),
+vamos a algumas dicas que devem ser seguidas.
+
+Inicialmente, vamos entender os comandos básicos do Linux - de preferência Debian (Ubuntu, Debian, etc).
+
+- `cd`, responsável por ir até o diretório, se você der `cd ..`, você voltará uma pasta, se você der `cd NOMEDAPASTA`, você entrará dentro dela. E atente-se a caixa alta.
+- `ls`, você irá listar os arquivos que está no diretório em que você se encontra, muito útil para saber aonde você deve ir, ou se está em uma pasta errada.
+- `mkdir`, comando para criar uma pasta - Mas não usaremos nesse artigo.
+- `rm -rf NOMEDAPASTA`, comando para remover uma pasta - Mas não usaremos nesse artigo.
+
+Agora que você sabe o básico do básico, vamos a dicas.
+
+## Quando for criar um projeto novo
+Eu geralmente recomendo criar direto pelo site, dessa maneira, você evita complicações desnecessárias e configurações do pasta para transformá-la em repositório. Caso queira saber,
+como fazer isso, e se tornar um expert do terminal, procure mais a respeito do `git init` e as possibilidades que nele existem, de acordo com a documentação.
+
+Enfim, vamos aos passos:
+1. Crie um repositório no [site do GitHub](https://github.com/new)
+2. Coloque o nome do repositório, a descrição e deixe sempre marcado que você deseja um `README.md` no seu projeto.
+3. Clique em `<> Code` no repositório e selecione a opção do SSH - caso não tenha configurado ou não saiba o que é um SSH, [leia esse artigo](https://www.ssh.com/academy/ssh/keygen) - em inglês.
+4. Vá no Ubuntu (Terminal), e verifique se você está em alguma pasta, geralmente estará indicado em azul `~`, se não estiver, use `cd ..` ou `cd ~` para voltar.
+5. Clone o repositório.
+6. Dentro dele `cd NOMEDAPASTA`, faça as alterações ou copie os novos arquivos.
+7. Caso seja uma migração -  Copie os arquivos dentro da pasta do Ubuntu, escreva no Ubuntu: `explorer.exe .` e através do Windows Explorer, jogue os arquivos na pasta correspondente.
+8. Elimine todos os arquivos com a extensão `.Zone.Identifier`, ele atrapalha que o projeto rode adequadamente - falarei o motivo disso mais abaixo.
+9. Depois de removido, faça o procedimento de `git add .`, `git commit -am "COLOQUE A ALTERAÇÃO"` e `git push`.
+10. Caso tenha esquecido de remover o `Zone.Identifier` depois que subiu o commit, não tem problema, remova eles, em seguida suba um novo commit.
+
+## Clonar um projeto/fork já existente.
+1. Clone o repositório na raiz do seu Ubuntu, novamente, estará indicado `~` em azul.
+2. Um exemplo de como clonar é através do comando: `git clone https://github.com/SEUNOME/NOME-DO-REPOSITORIO.git`
+3. Acesse o interior da pasta através do `cd NOMEDAPASTA` e instale as dependências - caso o projeto tenha um arquivo `package.json` use `npm install` ou use algo de acordo com as preferências já sugeridas no projeto existente como `yarn` ou `bun` - Em casos de projetos em Javascript.
+
+## Abrindo o VSCode usando Ubuntu.
+1. Abra o VSCode, no canto inferior esquerdo em azul, verifique se está escrito `WSL: Ubuntu` ou algo do gênero.
+2. Se sim, abra a pasta através do `Open Folder` e continue o procedimento previsto, como codar o seu projeto.
+3. Se não, clique com o botão esquerdo no canto inferior esquerdo em azul.
+4. Irá abrir uma caixa no centro do seu VSCode, clique em `Connect with WSL`.
+5. Abra a pasta através do `Open Folder` e continue o procedimento previsto, como codar o seu projeto.
+
+## O que é o .Zone.Identifier?
+Quando você baixa um arquivo da internet (por exemplo, de um navegador como Chrome ou Edge), o Windows adiciona um marcador especial ao arquivo para indicar que ele veio de uma "zona de internet". Esse marcador é armazenado em um arquivo oculto chamado .Zone.Identifier, que é associado ao arquivo original. Esse arquivo contém informações sobre a zona de segurança do arquivo.
+
+O .Zone.Identifier é usado pelo Windows para decidir se deve exibir um aviso de segurança quando você tenta abrir o arquivo. Por exemplo, ao abrir um executável baixado da internet, o Windows pode mostrar uma mensagem como: "Este arquivo veio da internet. Você tem certeza de que deseja executá-lo?"
+
+E como estamos rodando tudo através do WSL, isso pode gerar um conflito e não é isso que queremos. Por isso, removemos.
