@@ -99,7 +99,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                 <div className='leftContent text'>
                     <h1><img src="https://github.com/tairosonloa/tairosonloa/blob/main/assets/wave.gif?raw=true" alt="" />i'm yagasaki!</h1>
 
-                    <p>lead dev <a href="https://github.com/byteonegroup" target="_blank">@byteonegroup</a>, support on <a href="https://github.com/byteonesolutions" target="_blank">@byteonesolutions</a> and mid-level software developer (javascript, typescript, lua, python, etc). </p>
+                    <p>cto, tech lead and software developer <a href="https://engide.com.br" target="_blank">@engide</a>, software developer <a href="https://github.com/astriia-com" target="_blank">@astriia</a> and mid-level software developer (javascript, typescript, nodejs, bun, express, firebase, lua, python, etc). </p>
 
                     <p>devout <span className="wave">javascript</span> and <span className="wave">typescript</span> advocate and occasionally dabbling in other languages, self-taught - can you read more <a href="/about">about me</a>.</p>
 
