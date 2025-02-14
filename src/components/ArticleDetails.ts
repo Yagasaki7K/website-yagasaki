@@ -224,7 +224,7 @@ const ArticleDetails = styled.div`
 
         p {
             font-size: 18px;
-            line-height: 1.8;
+            line-height: 1.5;
             color: var(--font);
             margin-top: 2rem;
 
@@ -306,7 +306,7 @@ const ArticleDetails = styled.div`
         li {
             margin-bottom: 1rem;
             margin-top: 1rem;
-            font-size: 1.3rem;
+            font-size: 18px;
             line-height: 1.5;
             color: var(--font);
             margin-left: 1rem;

@@ -146,6 +146,10 @@ const about = () => {
                         <h3>Certificates</h3>
 
                         <p>
+                            <strong>Technical Leadership (Tech Lead){" "}</strong>by Sérgio Fiorotti in Rocketseat - February 2025
+                        </p>
+
+                        <p>
                             <strong>How to build a Micro SasS with Next.js, Firebase, Google Analytics and Stripe{" "}</strong>by Rocketseat - January 2025
                         </p>
 
