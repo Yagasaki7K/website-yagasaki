@@ -286,7 +286,7 @@ const about = () => {
                         </p>
 
                         <p>
-                            <strong>Internet programming with HTMl5 and CSS3{" "}</strong>by Digital Innovation One - February 2020
+                            <strong>Internet programming with HTML5 and CSS3{" "}</strong>by Digital Innovation One - February 2020
                         </p>
 
                         <p>

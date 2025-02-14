@@ -222,6 +222,24 @@ const ArticleDetails = styled.div`
             }
         }
 
+        iframe {
+            margin-left: -12rem;
+            width: 1200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+
+            @media (max-width: 1024px) {
+                margin-left: -3rem;
+                width: 900px;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-left: 0rem;
+            }
+        }
+
         p {
             font-size: 18px;
             line-height: 1.5;

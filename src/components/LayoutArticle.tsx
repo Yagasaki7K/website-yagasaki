@@ -7,22 +7,6 @@ import { PostProps } from '@/pages'
 dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
 
-const codeBlockRegex = /```([\s\S]*?)```/g;
-const keywordsRegex = /\b(const|let|var|import|from|function|return)\b/g;
-const stringRegex = /(["'`])([^"'`]+)\1/g;
-
-function highlightExcerpt(excerpt: string) {
-  if (!excerpt) return '';
-
-  return excerpt.replace(codeBlockRegex, (match: any, codeInside: string) => {
-    let highlighted = codeInside
-      .replace(keywordsRegex, '<span class="keyword">$1</span>')
-      .replace(stringRegex, '<span class="string">$&</span>');
-
-    return `<pre class="code-block"><code>${highlighted}</code></pre>`;
-  });
-}
-
 const LayoutArticle = (post: PostProps) => {
     return (
         <div className="article">
