@@ -336,7 +336,7 @@ const ArticleDetails = styled.div`
 
         .touch {
             display: flex;
-            padding: 2rem 2rem 1rem 2rem;
+            padding: 2rem;
 
             @media (max-width: 768px) {
                 flex-direction: column;
