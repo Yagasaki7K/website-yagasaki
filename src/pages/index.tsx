@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import HeaderDetails from "@/components/HeaderDetails";
 import HomeArticlesDetails from "@/components/HomeArticlesDetails";
 import fs from 'fs';
@@ -87,26 +87,29 @@ function shareContent() {
     }
 }
 
-// Interface para os dados de memória retornados
+// deviceInfo.ts
 interface MemoryInfo {
-    totalHeapMB: number; // Tamanho total do heap JS em MB
-    usedHeapMB: number;  // Memória usada pelo heap JS em MB
-    heapLimitMB: number; // Limite máximo do heap JS em MB
+    totalHeapMB: number;
+    usedHeapMB: number;
+    heapLimitMB: number;
 }
 
-// Interface para o resultado da estimativa
 interface DeviceEstimate {
-    cores: number | null;          // Número de núcleos lógicos
-    memoryInfo: MemoryInfo | null; // Informações de memória (se disponível)
-    estimatedRAM: string;          // Estimativa da RAM total
+    cores: number | null;
+    memoryInfo: MemoryInfo | null;
+    estimatedRAM: string;
 }
 
-// Função para obter informações de CPU
+interface PerformanceMemory {
+    totalJSHeapSize: number;
+    usedJSHeapSize: number;
+    jsHeapSizeLimit: number;
+}
+
 function getCPUInfo(): number | null {
     return navigator.hardwareConcurrency || null;
 }
 
-// Função para obter informações de memória (apenas Chrome/Edge)
 function getMemoryInfo(): MemoryInfo | null {
     if ('memory' in performance) {
         const memory = performance.memory as PerformanceMemory;
@@ -118,14 +121,6 @@ function getMemoryInfo(): MemoryInfo | null {
     return null;
 }
 
-// Tipagem para performance.memory (não está no lib.d.ts padrão)
-interface PerformanceMemory {
-    totalJSHeapSize: number;
-    usedJSHeapSize: number;
-    jsHeapSizeLimit: number;
-}
-
-// Função principal para estimar a memória do dispositivo
 function estimateDeviceMemory(): DeviceEstimate {
     const cores = getCPUInfo();
     const memoryInfo = getMemoryInfo();
@@ -147,12 +142,17 @@ function estimateDeviceMemory(): DeviceEstimate {
     return { cores, memoryInfo, estimatedRAM };
 }
 
-// Exemplo de uso
-const deviceInfo = estimateDeviceMemory();
-
 export default function Home({ posts }: { posts: PostProps[] }) {
     useEffect(() => {
         useFluidCursor();
+    }, []);
+
+    const [deviceInfo, setDeviceInfo] = useState<DeviceEstimate | null>(null);
+
+    useEffect(() => {
+        const info = estimateDeviceMemory();
+        setDeviceInfo(info);
+        console.log(info);
     }, []);
 
     return (
@@ -165,7 +165,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             <div className="overlay" />
             <HeaderDetails>
                 <div className='leftContent text'>
-                    {deviceInfo.estimatedRAM === 'Provavelmente 16 GB ou mais' ? <canvas id='fluid' className='fluid' /> : null}
+                    {deviceInfo?.estimatedRAM === 'Provavelmente 16 GB ou mais' ? <canvas id='fluid' className='fluid' /> : null}
                     <h1>i'm yagasaki!</h1>
 
                     <p>cto, tech lead and software developer <a href="https://engide.com.br" target="_blank">@engide</a>, software developer <a href="https://github.com/astriia-com" target="_blank">@astriia</a> and mid-level software developer (javascript, typescript, nodejs, bun, express, firebase, lua, python, etc).</p>
