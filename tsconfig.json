@@ -29,7 +29,7 @@
     "**/*.tsx",
     "src/utils/sortByDate.js",
     "getTime.js"
-, "src/hooks/use-FluidCursor.js"  ],
+  ],
   "exclude": [
     "node_modules"
   ]
