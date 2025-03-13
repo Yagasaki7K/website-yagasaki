@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import HeaderDetails from "@/components/HeaderDetails";
 import HomeArticlesDetails from "@/components/HomeArticlesDetails";
 import fs from 'fs';
@@ -12,7 +11,6 @@ import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
 import Link from "next/link";
-import useFluidCursor from "@/hooks/use-FluidCursor";
 
 dayjs.extend(relativeTime);
 dayjs.locale('pt-br');
@@ -87,74 +85,7 @@ function shareContent() {
     }
 }
 
-// deviceInfo.ts
-interface MemoryInfo {
-    totalHeapMB: number;
-    usedHeapMB: number;
-    heapLimitMB: number;
-}
-
-interface DeviceEstimate {
-    cores: number | null;
-    memoryInfo: MemoryInfo | null;
-    estimatedRAM: string;
-}
-
-interface PerformanceMemory {
-    totalJSHeapSize: number;
-    usedJSHeapSize: number;
-    jsHeapSizeLimit: number;
-}
-
-function getCPUInfo(): number | null {
-    return navigator.hardwareConcurrency || null;
-}
-
-function getMemoryInfo(): MemoryInfo | null {
-    if ('memory' in performance) {
-        const memory = performance.memory as PerformanceMemory;
-        const totalHeapMB = Number((memory.totalJSHeapSize / 1024 / 1024).toFixed(2));
-        const usedHeapMB = Number((memory.usedJSHeapSize / 1024 / 1024).toFixed(2));
-        const heapLimitMB = Number((memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2));
-        return { totalHeapMB, usedHeapMB, heapLimitMB };
-    }
-    return null;
-}
-
-function estimateDeviceMemory(): DeviceEstimate {
-    const cores = getCPUInfo();
-    const memoryInfo = getMemoryInfo();
-    let estimatedRAM: string;
-
-    if (memoryInfo) {
-        const { heapLimitMB } = memoryInfo;
-        if (heapLimitMB < 1500) {
-            estimatedRAM = 'Provavelmente menos de 4 GB';
-        } else if (heapLimitMB < 3000) {
-            estimatedRAM = 'Provavelmente entre 4 e 8 GB';
-        } else {
-            estimatedRAM = 'Provavelmente 16 GB ou mais';
-        }
-    } else {
-        estimatedRAM = 'Informação de memória não disponível neste navegador';
-    }
-
-    return { cores, memoryInfo, estimatedRAM };
-}
-
 export default function Home({ posts }: { posts: PostProps[] }) {
-    useEffect(() => {
-        useFluidCursor();
-    }, []);
-
-    const [deviceInfo, setDeviceInfo] = useState<DeviceEstimate | null>(null);
-
-    useEffect(() => {
-        const info = estimateDeviceMemory();
-        setDeviceInfo(info);
-        console.log(info);
-    }, []);
-
     return (
         <>
             <Head>
@@ -165,7 +96,6 @@ export default function Home({ posts }: { posts: PostProps[] }) {
             <div className="overlay" />
             <HeaderDetails>
                 <div className='leftContent text'>
-                    {deviceInfo?.estimatedRAM === 'Provavelmente 16 GB ou mais' ? <canvas id='fluid' className='fluid' /> : null}
                     <h1>i'm yagasaki!</h1>
 
                     <p>cto, tech lead and software developer <a href="https://engide.com.br" target="_blank">@engide</a>, software developer <a href="https://github.com/astriia-com" target="_blank">@astriia</a> and mid-level software developer (javascript, typescript, nodejs, bun, express, firebase, lua, python, etc).</p>
