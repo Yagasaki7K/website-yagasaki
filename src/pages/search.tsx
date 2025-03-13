@@ -101,11 +101,14 @@ export default function Search({ posts }: { posts: PostProps[] }) {
             <HomeArticlesDetails>
                 <div className="articles poppins">
                     {filteredPosts.length > 0 ? (
-                        filteredPosts.map((post, index) => (
-                            <Link href={`/article/${post.slug}`} key={index}>
-                                <LayoutArticle {...post} />
-                            </Link>
-                        ))
+                        filteredPosts.map((post, index) => {
+                            const identifier = ['one', 'two', 'three', 'four'][index % 4];
+                            return (
+                                <Link href={`/article/${post.slug}`} key={index}>
+                                    <LayoutArticle {...post} identifier={identifier} />
+                                </Link>
+                            )
+                        })
                     ) : (
                         <p>No articles found for your search.</p>
                     )}
