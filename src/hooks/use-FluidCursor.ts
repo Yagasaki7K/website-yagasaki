@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 
 const useFluidCursor = () => {
   useEffect(() => {
@@ -6,6 +6,22 @@ const useFluidCursor = () => {
 
     const canvas = document.getElementById('fluid') as HTMLCanvasElement | null;
     if (!canvas) return;
+
+    const resizeCanvas = useCallback(() => {
+      if (!canvas) return false;
+      const width = scaleByPixelRatio(canvas.clientWidth);
+      const height = scaleByPixelRatio(canvas.clientHeight);
+      if (canvas.width !== width || canvas.height !== height) {
+        canvas.width = width;
+        canvas.height = height;
+        return true;
+      }
+      return false;
+    }, [canvas]);
+
+    const scaleByPixelRatio = useCallback((input: number) => {
+      return Math.floor(input * (window.devicePixelRatio || 1));
+    }, []);
 
     resizeCanvas();
 
@@ -51,23 +67,7 @@ const useFluidCursor = () => {
       TRANSPARENT: true,
     };
 
-    function resizeCanvas() {
-      if (!canvas) return false;
-      const width = scaleByPixelRatio(canvas.clientWidth);
-      const height = scaleByPixelRatio(canvas.clientHeight);
-      if (canvas.width !== width || canvas.height !== height) {
-        canvas.width = width;
-        canvas.height = height;
-        return true;
-      }
-      return false;
-    }
-
-    function scaleByPixelRatio(input: number) {
-      return Math.floor(input * (window.devicePixelRatio || 1));
-    }
-
-    function updatePointerMoveData(pointer: Pointer, posX: number, posY: number) {
+    const updatePointerMoveData = useCallback((pointer: Pointer, posX: number, posY: number) => {
       pointer.prevTexcoordX = pointer.texcoordX;
       pointer.prevTexcoordY = pointer.texcoordY;
       pointer.texcoordX = posX / canvas!.width;
@@ -75,9 +75,9 @@ const useFluidCursor = () => {
       pointer.deltaX = pointer.texcoordX - pointer.prevTexcoordX;
       pointer.deltaY = pointer.texcoordY - pointer.prevTexcoordY;
       pointer.moved = Math.abs(pointer.deltaX) > 0 || Math.abs(pointer.deltaY) > 0;
-    }
+    }, [canvas]);
 
-    function updatePointerDownData(pointer: Pointer, id: number, posX: number, posY: number) {
+    const updatePointerDownData = useCallback((pointer: Pointer, id: number, posX: number, posY: number) => {
       pointer.id = id;
       pointer.down = true;
       pointer.moved = false;
@@ -88,14 +88,14 @@ const useFluidCursor = () => {
       pointer.deltaX = 0;
       pointer.deltaY = 0;
       pointer.color = generateColor();
-    }
+    }, [canvas]);
 
-    function generateColor(): Color {
+    const generateColor = useCallback((): Color => {
       const c = HSVtoRGB(Math.random(), 1.0, 1.0);
       return { r: c.r * 0.15, g: c.g * 0.15, b: c.b * 0.15 };
-    }
+    }, []);
 
-    function HSVtoRGB(h: number, s: number, v: number): Color {
+    const HSVtoRGB = useCallback((h: number, s: number, v: number): Color => {
       let r = 0, g = 0, b = 0;
       const i = Math.floor(h * 6);
       const f = h * 6 - i;
@@ -113,21 +113,21 @@ const useFluidCursor = () => {
       }
 
       return { r, g, b };
-    }
+    }, []);
 
-    const handleMouseDown = (e: MouseEvent) => {
+    const handleMouseDown = useCallback((e: MouseEvent) => {
       const pointer = pointers[0];
       updatePointerDownData(pointer, -1, e.clientX, e.clientY);
-    };
+    }, [updatePointerDownData]);
 
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = useCallback((e: MouseEvent) => {
       const pointer = pointers[0];
       updatePointerMoveData(pointer, e.clientX, e.clientY);
-    };
+    }, [updatePointerMoveData]);
 
-    const handleMouseUp = () => {
+    const handleMouseUp = useCallback(() => {
       pointers[0].down = false;
-    };
+    }, []);
 
     window.addEventListener('mousedown', handleMouseDown);
     window.addEventListener('mousemove', handleMouseMove);
