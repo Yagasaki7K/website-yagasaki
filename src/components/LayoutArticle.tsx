@@ -9,7 +9,7 @@ dayjs.locale('pt-br')
 
 const LayoutArticle = (post: PostProps) => {
     return (
-        <div className="article">
+        <div className={`article ${post.identifier}`}>
             <div className="content">
                 <div className="details">
                     <h4 className="scribble">{post.frontmatter?.title}</h4>

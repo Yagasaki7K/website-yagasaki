@@ -10,21 +10,24 @@
     "commit": "git pull && bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001700",
+    "caniuse-lite": "^1.0.30001704",
+    "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "feed": "^4.2.2",
+    "framer-motion": "^12.5.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
     "marked": "^12.0.2",
-    "next": "^15.1.7",
+    "next": "^15.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sonner": "^1.7.4",
-    "styled-components": "^6.1.15"
+    "styled-components": "^6.1.15",
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
-    "typescript": "^5.7.3",
-    "@types/node": "^20.17.19",
+    "typescript": "^5.8.2",
+    "@types/node": "^20.17.24",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "eslint": "^8.57.1",

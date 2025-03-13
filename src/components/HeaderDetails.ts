@@ -4,7 +4,7 @@ const HeaderDetails = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem 10rem 5rem 10rem;
+    padding: 5rem 10rem 5rem 10rem;
 
     @media (max-width: 1366px) {
         padding: 10rem 0rem 5rem 0rem;
@@ -15,6 +15,15 @@ const HeaderDetails = styled.div`
         padding: 5rem 0rem 5rem 0rem;
     }
 
+    .fluid {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
     .text {
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -23,8 +32,7 @@ const HeaderDetails = styled.div`
     }
 
     .leftContent {
-        width: 40%;
-        margin-right: 5rem;
+        width: 45%;
 
         @media (max-width: 1366px) {
             width: 50%;
@@ -44,6 +52,7 @@ const HeaderDetails = styled.div`
             color: var(--header);
             font-size: 4.5rem;
             line-height: 1;
+            text-align: center;
 
             @media (max-width: 768px) {
                 font-size: 4rem;
@@ -68,6 +77,7 @@ const HeaderDetails = styled.div`
             margin-inline-start: 0px;
             margin-inline-end: 0px;
             unicode-bidi: isolate;
+            text-align: center;
 
             a {
                 cursor: pointer;
@@ -103,16 +113,6 @@ const HeaderDetails = styled.div`
             &:hover {
                 color: var(--pink);
             }
-        }
-    }
-
-    .rightContent {
-        img {
-            border-radius: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            display: none;
         }
     }
 

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const HomeArticlesDetails = styled.div`
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,46 +125,38 @@ const HomeArticlesDetails = styled.div`
             }
         }
 
+        .one {
+            background: linear-gradient(90deg, #dc6061 0%, #d9608c);
+        }
+
+        .two {
+            background: linear-gradient(90deg, #73ba79 0%, #5db777);
+        }
+
+        .three {
+            background: linear-gradient(90deg, #7a77a4 0%, #7470a9);
+        }
+
+        .four {
+            background: linear-gradient(90deg, #ffa779 0%, #dd8a5e);
+        }
+
         .article {
             display: flex;
             border-radius: 11px;
             transition: 0.2s;
             padding: 0.5rem 2rem;
             position: relative;
-            background: var(--background);
-
-            &::before {
-                content: "";
-                position: absolute;
-                inset: -2px;
-                z-index: -1;
-                border-radius: 15px;
-                background: linear-gradient(220.94deg, var(--red) 14.43%, var(--background));
-                animation: gradient 0.7s ease-in-out infinite;
-            }
 
             @media (max-width: 768px) {
                 padding: 0.5rem 1rem;
-            }
-
-            &:hover {
-                background: var(--border);
-
-                .details {
-                    border-image: linear-gradient(
-                            to right,
-                            var(--background-alt),
-                            transparent
-                        )
-                        1;
-                }
             }
 
             .details {
                 border-bottom: 1px solid;
                 border-image: linear-gradient(
                         to right,
-                        var(--border),
+                        var(--gray),
                         transparent
                     )
                     1;
@@ -192,7 +183,7 @@ const HomeArticlesDetails = styled.div`
                 p {
                     font-size: 1rem;
                     line-height: 1.5rem;
-                    color: var(--font);
+                    color: var(--header);
 
                     @media (max-width: 768px) {
                         font-size: 0.75rem;
@@ -203,7 +194,7 @@ const HomeArticlesDetails = styled.div`
                 small {
                     font-size: 0.875rem;
                     line-height: 1.25rem;
-                    color: var(--gray);
+                    color: var(--header);
                 }
             }
 
@@ -217,10 +208,10 @@ const HomeArticlesDetails = styled.div`
                 p {
                     font-size: 0.75rem;
                     line-height: 1.25rem;
-                    color: var(--gray);
+                    color: var(--header);
 
                     .color {
-                        color: var(--font);
+                        color: var(--header);
                     }
 
                     span {
