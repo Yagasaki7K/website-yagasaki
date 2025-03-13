@@ -115,24 +115,28 @@ const useFluidCursor = () => {
       return { r, g, b };
     }
 
-    window.addEventListener('mousedown', (e) => {
+    const handleMouseDown = (e: MouseEvent) => {
       const pointer = pointers[0];
       updatePointerDownData(pointer, -1, e.clientX, e.clientY);
-    });
+    };
 
-    window.addEventListener('mousemove', (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const pointer = pointers[0];
       updatePointerMoveData(pointer, e.clientX, e.clientY);
-    });
+    };
 
-    window.addEventListener('mouseup', () => {
+    const handleMouseUp = () => {
       pointers[0].down = false;
-    });
+    };
+
+    window.addEventListener('mousedown', handleMouseDown);
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
 
     return () => {
-      window.removeEventListener('mousedown', () => {});
-      window.removeEventListener('mousemove', () => {});
-      window.removeEventListener('mouseup', () => {});
+      window.removeEventListener('mousedown', handleMouseDown);
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
     };
   }, []);
 };
