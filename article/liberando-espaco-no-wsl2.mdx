@@ -1,0 +1,66 @@
+---
+title: Liberando espaço no WSL2
+excerpt: 'Imagine que você é um desenvolvedor, usa WSL - ambiente de desenvolvimento Linux no Windows - usa Docker e por algum motivo ...'
+image: https://safebooru.org//samples/4619/sample_d3e96e81f2591af055bb8f9c5312d2d0d1d5c991.jpg?4859150
+tags: ['Desenvolvimento', 'WSL', 'Dicas']
+date: '2025-04-29'
+---
+
+![](https://safebooru.org//samples/1547/sample_25408a7d329087f914e28db646bad7da7ae7a720.jpg?5678146)
+
+Imagine que você é um desenvolvedor, usa WSL - ambiente de desenvolvimento Linux no Windows - usa Docker e por algum motivo,
+meses depois da primeira formatação, seu disco está literalmente lotado, mas você não tem a minima ideia do que aconteceu.
+Pois é, isso já aconteceu comigo. Você usa limpa disco, programas de terceiros, até mesmo o próprio limpador do Windows, mas
+nada aconteceu, você continua com o espaço lotado.
+
+Em casos - como o meu - já cheguei até a formatar o computador. Só que convenhamos, é um saco perder horas e horas configurando tudo de novo,
+mas afinal, o que acontece?
+
+O WSL usa disco dinâmico, então ele vai aumentando o tamanho do disco virtual do WSL conforme você vai precisando de espaço.
+Só tem um problema, ele só aumenta o tamanho de disco, ele não consegue diminuir sozinho (ou quase). Então se você colocar um arquivo de 20GB no WSL,
+ele vai adicionar 20GB ao tamanho do disco, e quando você deletar o arquivo, o tamanho do disco não irá diminuir. Mas é bem simples fazer a realocação do espaço.
+
+# Procure pelos arquivos do disco virtual
+
+Para isso, vamos caminhando até as pastas, diretamente no Windows - esqueça WSL.
+
+Você vai até esse local:
+
+```bash
+C:\Users\_SEU_USUÁRIO_\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu...\LocalState
+```
+
+Para quem estiver usando o Docker Desktop também existe esse local:
+
+```bash
+C:\Users\_SEU_USUÁRIO_\AppData\Local\Docker\wsl\data
+```
+
+Abra o Powershell como Administrador e execute os seguintes comandos:
+
+```bash
+wsl --shutdown
+
+diskpart
+
+select vdisk file="C:\...\...\ext4.vhdx"
+
+attach vdisk readonly
+
+compact vdisk
+
+detach vdisk
+```
+
+> ⚠️ **Importante:** Não pule o passo 1
+
+E pronto, você terá liberado alguns GBs do seu disco. Existem relatos - inclusive para quem usa Docker
+que chega a ser liberado mais de 60GB, então faça isso periodicamente.
+
+Sabe quais foram as fontes desse artigo?
+
+- [Issue #4699](https://github.com/microsoft/wsl/issues/4699)
+- [Compact WSL2 Disk](https://www.github.com/mikemaccana/compact-wsl2-disk/)
+
+Esse artigo foi útil pra você? Dá um feedback lá no [Twitter](https://twitter.com/Yagasaki7k) e me fale quanto
+de espaço foi liberado do seu disco.
