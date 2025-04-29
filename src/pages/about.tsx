@@ -146,6 +146,10 @@ const about = () => {
                         <h3>Certificates</h3>
 
                         <p>
+                            <strong>NestJS{" "}</strong>by Jornada do Dev - April 2025
+                        </p>
+
+                        <p>
                             <strong>Technical Leadership (Tech Lead){" "}</strong>by Sérgio Fiorotti in Rocketseat - February 2025
                         </p>
 
