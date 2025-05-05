@@ -78,16 +78,25 @@ const about = () => {
                         <h3>Positions</h3>
                         <h4>Software Developer</h4>
                         <p>
-                            <strong>Astriia Co.</strong> | <i>September 2024 — Present</i>
+                            <strong>Astriia Co.</strong> | <i>September 2024 — May 2025</i>
                         </p>
                         <p>
                             Working on A.I. of communication with astrology using Whatsapp API.
                         </p>
 
-                        <li></li>
+                        <li>Development of an application with astrology and AI (OpenAI).</li>
+                        <li>Database in communication with the user and OpenAI using Firebase.</li>
+                        <li>Vercel Cron to schedule notifications and personalized alerts.</li>
+                        <li>Use of Facebook Blueprint to send templates and manage WhatsApp API.</li>
+                        <li>Construction of an interactive feedback landing page.</li>
+                        <li>Communication with webhook through Discord for logging purposes.</li>
+                        <li>Use of Vercel Blob to generate Astral Map images.</li>
+                        <li>Use of AstrologyAPI for queries and analysis together with OpenAI.</li>
+                        <li>Setup and checkout system using Stripe</li>
+                        <li>Documentation and all detailed functionality for technical purposes using Docusaurus.</li>
 
                         <p>
-                            -
+                            Using Firebase, Next.js, React.js, Node.js (Express), Bun.js (Express), Typescript, WhatsApp API, Vercel Blob / Vercel Cron, OpenAI API, Discord Webhook, AstrologyAPI, Excalidraw, Docusaurus, Facebook Business, Facebook Blueprint, Jest, Stripe, Github Projects (SCRUM) and Facebook Developers.
                         </p>
 
                         <hr />
