@@ -96,7 +96,7 @@ const about = () => {
                         <li>Documentation and all detailed functionality for technical purposes using Docusaurus.</li>
 
                         <p>
-                            Using Firebase, Next.js, React.js, Node.js (Express), Bun.js (Express), Typescript, WhatsApp API, Vercel Blob / Vercel Cron, OpenAI API, Discord Webhook, AstrologyAPI, Excalidraw, Docusaurus, Facebook Business, Facebook Blueprint, Jest, Stripe, Github Projects (SCRUM) and Facebook Developers.
+                            Using Firebase, Next.js, React.js, Node.js (Express), Bun.js (Express), Typescript, WhatsApp API, Vercel Blob / Vercel Cron, OpenAI API, Discord Webhook, AstrologyAPI, Excalidraw, Docusaurus, Facebook Business, Facebook Blueprint, Facebook Developers Jest, Stripe and Github Projects (SCRUM).
                         </p>
 
                         <hr />
