@@ -184,6 +184,12 @@ const HomeArticlesDetails = styled.div`
                     font-size: 1rem;
                     line-height: 1.5rem;
                     color: var(--header);
+                    // limite a 3 linhas
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
 
                     @media (max-width: 768px) {
                         font-size: 0.75rem;
@@ -195,6 +201,10 @@ const HomeArticlesDetails = styled.div`
                     font-size: 0.875rem;
                     line-height: 1.25rem;
                     color: var(--header);
+                    margin-top: 0.5rem;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
                 }
             }
 
