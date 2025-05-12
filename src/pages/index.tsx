@@ -98,7 +98,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                 <div className='leftContent text'>
                     <h1>i'm yagasaki!</h1>
 
-                    <p>cto, tech lead and software developer <a href="https://engide.com.br" target="_blank">@engide</a>, software developer <a href="https://github.com/astriia-com" target="_blank">@astriia</a> and mid-level software developer (javascript, typescript, nodejs, bun, express, firebase, lua, python, etc).</p>
+                    <p>cto, tech lead and software developer <a href="https://engide.com.br" target="_blank">@engide</a> and mid-level software developer (javascript, typescript, nodejs, bun, express, firebase, lua, python, etc).</p>
 
                     <p>
                         <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></Link>
