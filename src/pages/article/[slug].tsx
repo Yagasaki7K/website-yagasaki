@@ -14,6 +14,7 @@ import Head from 'next/head';
 import Copyright from '@/components/Copyright';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
+import { getInfosAndSendToDiscord } from '@/utils/getInfosAndSendToDiscord';
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const files = fs.readdirSync(path.join('article'));
@@ -71,6 +72,10 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
     if (!frontmatter || !frontmatter.title || !frontmatter.excerpt || !frontmatter.date || !frontmatter.image || !htmlContent) {
         return <p>Conteúdo não disponível</p>;
     }
+
+    useEffect(() => {
+        getInfosAndSendToDiscord()
+    }, []);
 
     return (
         <>

