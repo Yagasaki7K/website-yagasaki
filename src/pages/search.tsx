@@ -9,24 +9,7 @@ import Link from "next/link";
 import LayoutArticle from "@/components/LayoutArticle";
 import Head from "next/head";
 import Copyright from "@/components/Copyright";
-
-export interface Frontmatter {
-    slug: string;
-    title: string;
-    image: string;
-    authors: string[];
-    tags: string[];
-    date: string;
-    excerpt: string;
-}
-
-export interface PostProps {
-    date: string;
-    slug: string;
-    frontmatter: Frontmatter;
-    readingTime: number;
-    content?: string;
-}
+import { PostProps } from "./index";
 
 export async function getStaticProps() {
     // Get files from the posts dir
