@@ -3,7 +3,7 @@
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Tue, 28 Jan 2025 16:07:50 GMT</lastBuildDate>
+<lastBuildDate>Tue, 24 Jun 2025 21:29:28 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -44,6 +44,17 @@
 <pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Uma API é um conceito fundamental no mundo da programação ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Aprendendo a criar repositórios com WSL e comandos básicos ]]>
+</title>
+<link>https://yagasaki.dev/article/aprendendo-a-criar-repositorios-com-wsl-e-comandos-basicos</link>
+<guid>aprendendo-a-criar-repositorios-com-wsl-e-comandos-basicos</guid>
+<pubDate>Sun, 09 Feb 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Imagine que você acabou de instalar seu WSL, conforme eu havia explicado em 19 de Abril do ano passado, mas você está perdido, não sabe o que fazer ... ]]>
 </description>
 </item>
 <item>
@@ -103,6 +114,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ China lança modelo de IA que supera OpenAI, DeepSeek e Meta ]]>
+</title>
+<link>https://yagasaki.dev/article/china-lanca-modelo-de-ia-que-supera-open-ai-deep-seek-e-meta</link>
+<guid>china-lanca-modelo-de-ia-que-supera-open-ai-deep-seek-e-meta</guid>
+<pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ A China acaba de dar um grande passo no desenvolvimento da inteligência artificial ao lançar o modelo K1.5 Loong Thinking. Este novo modelo já ... ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ Como criar um blog usando Github Pages + Obsidian + Quartz ]]>
 </title>
 <link>https://yagasaki.dev/article/como-criar-seu-blog</link>
@@ -110,6 +132,17 @@
 <pubDate>Fri, 29 Mar 2024 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Aprenda a criar um blog simples usando três tecnologias ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Como instalar o Ragnarok LATAM no Linux via Proton (usando Heroic) ]]>
+</title>
+<link>https://yagasaki.dev/article/como-instalar-o-ragnarok-latam-no-linux-via-proton-usando-heroic</link>
+<guid>como-instalar-o-ragnarok-latam-no-linux-via-proton-usando-heroic</guid>
+<pubDate>Thu, 06 Mar 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Se você é das antigas e jogou Ragnarok, deve ter ficado sabendo que o Ragnarok Latam, criado pela Gravity, está de volta e trazendo nostalgia a todos. ]]>
 </description>
 </item>
 <item>
@@ -154,6 +187,17 @@
 <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Usando Redis para servir de contador de visitantes em blog/sites ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Configurando o SEO do Head com Next.js ]]>
+</title>
+<link>https://yagasaki.dev/article/configurando-o-seo-do-head-com-next-js</link>
+<guid>configurando-o-seo-do-head-com-next-js</guid>
+<pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ... ]]>
 </description>
 </item>
 <item>
@@ -230,7 +274,7 @@
 <guid>deep-seek-r1-e-o-impacto-que-seu-lançamento-causou-no-mercado</guid>
 <pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ O tema de hoje é o DeepSeek-R1 e o impacto que seu lançamento causou no mercado. Como em qualquer assunto técnico, há muita desinformação circulando por aí. O propósito deste artigo não é ser altamente técnico, mas sim explicar de forma clara o que o modelo é (e o que não é). ]]>
+<![CDATA[ O tema de hoje é o DeepSeek-R1 e o impacto que seu lançamento causou no mercado. Como em qualquer assunto técnico, há muita desinformação ... ]]>
 </description>
 </item>
 <item>
@@ -241,7 +285,7 @@
 <guid>desbloqueie-o-modo-ultra-security</guid>
 <pubDate>Sat, 28 Sep 2024 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ Já imaginou um desconhecido tentar acessar o seu computador e toda vez que digitar a senha corretamente ou até mesmo entrar automaticamente, ele apenas desligar? Seria estranho, certamente, você poderia dizer até que é um vírus ... ]]>
+<![CDATA[ Já imaginou um desconhecido tentar acessar o seu computador e toda vez que digitar a senha corretamente ou até mesmo entrar automaticamente ... ]]>
 </description>
 </item>
 <item>
@@ -268,6 +312,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ Diferenças entre Ciência da Computação, Análise e Desenvolvimento de Sistemas e Engenharia de Software ]]>
+</title>
+<link>https://yagasaki.dev/article/diferencas-entre-ciencia-da-computacao-analise-e-desenvolvimento-de-sistemas-e-engenharia-de-software</link>
+<guid>diferencas-entre-ciencia-da-computacao-analise-e-desenvolvimento-de-sistemas-e-engenharia-de-software</guid>
+<pubDate>Thu, 20 Feb 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ No universo da tecnologia, é comum encontrar confusão entre os cursos e áreas de Ciência da Computação, Análise e Desenvolvimento de Sistemas ... ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ Recebendo mensagens de commit no Discord (Webhook) ]]>
 </title>
 <link>https://yagasaki.dev/article/discord-webhook</link>
@@ -286,6 +341,17 @@
 <pubDate>Wed, 01 Feb 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Uma abordagem para quem não quer o modelo desktop e prefere usar no shell ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Dominando REST de Verdade - O Guia Rápido que Todo Dev Precisa Salvar ]]>
+</title>
+<link>https://yagasaki.dev/article/dominando-rest-de-verdade-o-guia-rapido-que-todo-dev-precisa-salvar</link>
+<guid>dominando-rest-de-verdade-o-guia-rapido-que-todo-dev-precisa-salvar</guid>
+<pubDate>Thu, 29 May 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Se você está construindo ou consumindo APIs REST, este guia direto ao ponto vai te mostrar tudo o que precisa saber para projetar serviços web com clareza ]]>
 </description>
 </item>
 <item>
@@ -428,7 +494,7 @@
 <guid>hugging-face-facilita-para-desenvolvedores-rodarem-modelos-de-ia-em-nuvens-de-terceiros</guid>
 <pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
 <description>
-<![CDATA[ A plataforma de desenvolvimento de IA Hugging Face fez parceria com fornecedores de nuvem de terceiros, incluindo a SambaNova, para lançar o Inference Providers ... ]]>
+<![CDATA[ A plataforma de desenvolvimento de IA Hugging Face fez parceria com fornecedores de nuvem de terceiros, incluindo a SambaNova ... ]]>
 </description>
 </item>
 <item>
@@ -484,6 +550,17 @@
 <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Este curso abrangente irá guiá-lo pelo fascinante mundo do código aberto e ajudá-lo a se tornar um contribuidor ativo. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Liberando espaço no WSL2 ]]>
+</title>
+<link>https://yagasaki.dev/article/liberando-espaco-no-wsl2</link>
+<guid>liberando-espaco-no-wsl2</guid>
+<pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Imagine que você é um desenvolvedor, usa WSL - ambiente de desenvolvimento Linux no Windows - usa Docker e por algum motivo ... ]]>
 </description>
 </item>
 <item>
@@ -554,6 +631,17 @@
 </item>
 <item>
 <title>
+<![CDATA[ O que é Developer Relations (DevRel)? ]]>
+</title>
+<link>https://yagasaki.dev/article/o-que-e-developer-relations-dev-rel</link>
+<guid>o-que-e-developer-relations-dev-rel</guid>
+<pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Escrevi um artigo explicando o que é Developer Relations, o que faz quem trabalha com isso, quais são os pilares e como essa área se conecta com comunidades e educação. ]]>
+</description>
+</item>
+<item>
+<title>
 <![CDATA[ O que é Lazy Loading e para que serve? ]]>
 </title>
 <link>https://yagasaki.dev/article/o-que-e-lazy-loading</link>
@@ -561,6 +649,17 @@
 <pubDate>Sat, 04 May 2024 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Lazy loading é uma teoria de otimização que ajuda o usuário a reduzir o tempo de carregamento e melhorar a experiência do usuário. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ O que é liderança técnica, o famoso Tech Lead? ]]>
+</title>
+<link>https://yagasaki.dev/article/o-que-e-lideranca-tecnica-o-famoso-tech-lead</link>
+<guid>o-que-e-lideranca-tecnica-o-famoso-tech-lead</guid>
+<pubDate>Wed, 12 Feb 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Esse artigo de estudo é uma análise com base na aula sobre Liderança Técnica do Sérgio Fiorotti na Rocketseat. Toda a explicação, toda a análise ... ]]>
 </description>
 </item>
 <item>
