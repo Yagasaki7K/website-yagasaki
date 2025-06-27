@@ -281,11 +281,11 @@ const ArticleDetails = styled.div`
 
         code {
             position: relative;
-            background-color: var(--dracula-bg);
+            background-color: var(--code);
             color: var(--pink);
             border-radius: 8px;
             margin: 1rem 0;
-            padding: 0rem 0.5rem;
+            padding: 0.25rem 0.5rem;
             font-family: "JetBrains Mono", monospace;
             font-size: 14px;
             line-height: 1.4;
