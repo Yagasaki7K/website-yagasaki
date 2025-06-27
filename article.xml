@@ -3,7 +3,7 @@
 <title>yagasaki.dev/Blog</title>
 <link>http://yagasaki.dev/</link>
 <description>I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.</description>
-<lastBuildDate>Tue, 24 Jun 2025 21:29:28 GMT</lastBuildDate>
+<lastBuildDate>Fri, 27 Jun 2025 14:19:06 GMT</lastBuildDate>
 <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 <generator>Feed</generator>
 <language>pt-br</language>
@@ -825,6 +825,17 @@
 <pubDate>Sat, 09 Dec 2023 00:00:00 GMT</pubDate>
 <description>
 <![CDATA[ Trabalho de conclusão de curso para o Taekwondo, uma validação teórica dentro da arte ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ TDD e DDD - Fundamentos Práticos para Desenvolvedores JS/TS ]]>
+</title>
+<link>https://yagasaki.dev/article/tdd-e-ddd-fundamentos-praticos-para-desenvolvedores-js-ts</link>
+<guid>tdd-e-ddd-fundamentos-praticos-para-desenvolvedores-js-ts</guid>
+<pubDate>Fri, 27 Jun 2025 00:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Neste artigo, você vai entender os fundamentos de TDD e DDD com clareza, exemplos diretos, sem jargão, e com comentários úteis para revisar no futuro. Ideal para quem trabalha com JavaScript/TypeScript e quer escrever código testável, limpo e guiado por regras de negócio ]]>
 </description>
 </item>
 <item>
