@@ -20,13 +20,13 @@ const about = () => {
                 </div>
 
                 <div className="about poppins">
-                    <h2>I&apos;m Yagasaki,</h2>
+                    <h2>I&apos;m Anderson "Yagasaki" Marlon,</h2>
                     <h1>
                         Software Developer from São Paulo, Brazil
                     </h1>
 
                     <p>
-                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, RegEx, UI/UX, Responsive Design, Firebase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, NestJS, Bun.js, Whatsapp API, Rocketchat, Serverless, Microservices and more …
+                        Software Developer, Fullstack Developer and Front-end Developer with experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, RegEx, UI/UX, Responsive Design, Firebase, Supabase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, NestJS, Bun.js, Whatsapp API, Rocketchat, Serverless, Microservices and more …
                     </p>
                     <p>
                         Technology Enthusiast, Specialized in Web and Self-taught.
@@ -52,16 +52,16 @@ const about = () => {
                             <strong>Languages:</strong> Javascript / Typescript, Python
                         </p>
                         <p>
-                            <strong>Frontend:</strong> React.js, Next.js, Angular 17 & Vite
+                            <strong>Frontend:</strong> React.js, Next.js & Vite
                         </p>
                         <p>
                             <strong>Backend:</strong> Node.js, Bun, Express, Fastify & Nest.js
                         </p>
                         <p>
-                            <strong>Database:</strong> Prisma, Hasura, Firebase, MySQL, PostgreSQL & SQL Lite
+                            <strong>Database:</strong> Prisma, Hasura, Firebase, Supabase, MySQL, PostgreSQL & SQL Lite
                         </p>
                         <p>
-                            <strong>Testing:</strong> Node, Bun, Storybook & Jest
+                            <strong>Testing:</strong> Node.js, Bun.js, Storybook & Jest
                         </p>
                         <p>
                             <strong>DevOps:</strong> Docker, Vercel, CI/CD & Github Actions
