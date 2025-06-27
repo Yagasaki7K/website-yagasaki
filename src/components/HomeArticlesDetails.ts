@@ -239,10 +239,14 @@ const HomeArticlesDetails = styled.div`
     .about {
         margin-top: 2rem;
         color: var(--font);
-        width: 75%;
+        padding: 2rem 15rem;
 
         @media (max-width: 1024px) {
-            width: 90%;
+            padding: 2rem 5rem;
+        }
+
+        @media (max-width: 768px) {
+            padding: 2rem 2rem;
         }
 
         h2 {
@@ -255,6 +259,10 @@ const HomeArticlesDetails = styled.div`
 
         h3 {
             font-size: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
         }
 
         hr {
