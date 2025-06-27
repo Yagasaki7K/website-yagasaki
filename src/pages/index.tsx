@@ -105,7 +105,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                 <div className='leftContent text'>
                     <h1>i'm yagasaki!</h1>
 
-                    <p>cto, tech lead and software developer <a href="https://engide.com.br" target="_blank">@engide</a> and mid-level software developer (javascript, typescript, nodejs, bun, express, firebase, lua, python, etc).</p>
+                    <p>fullstack mid-level software developer. <br /> read more <a href="/about">about me.</a></p>
 
                     <p>
                         <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noreferrer"><i className="uil uil-twitter"></i></Link>
@@ -113,7 +113,7 @@ export default function Home({ posts }: { posts: PostProps[] }) {
                         <Link href="https://linkedin.com/in/andersonmarlon" target="_blank" rel="noreferrer"><i className="uil uil-linkedin"></i></Link>
                         <Link href="mailto:anderson18.marlon@gmail.com" target="_blank" rel="noreferrer"><i className="uil uil-at"></i></Link>
                         <Link href="/bookmarks"><i className="uil uil-bookmark"></i></Link>
-                        <a onClick={shareContent}><i className="uil uil-share"></i></a>
+                        <a onClick={() => shareContent()}><i className="uil uil-share"></i></a>
                     </p>
                 </div>
             </HeaderDetails>
