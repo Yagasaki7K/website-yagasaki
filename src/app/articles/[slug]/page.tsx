@@ -1,4 +1,4 @@
-import { getArticleData } from "@/src/lib/articles";
+import { getArticleData } from "../../../lib/articles";
 import { Article } from "../../../components/article";
 
 function Tag({ tag }: { tag: string }) {
