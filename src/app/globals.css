@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sh-class: #2563eb; /* blue-600 */
+  --sh-identifier: #8b5cf6; /* violet-600 */
+  --sh-sign: #a1a1aa; /* slate-400 */
+  --sh-property: #0d9488; /* teal-600 */
+  --sh-entity: #059669; /* emerald-600 */
+  --sh-jsxliterals: #c026d3; /* fuchsia-600 */
+  --sh-string: #0891b2; /* cyan-600 */
+  --sh-keyword: #ef4444; /* red-500 */
+  --sh-comment: #64748b; /* slate-500 */
+}
+
+@layer base {
+  html,
+  body {
+    @apply min-h-screen bg-zinc-50 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-300;
+  }
+
+  article {
+    @apply flex flex-col gap-y-4;
+  }
+
+  p,
+  ul,
+  ol {
+    @apply text-zinc-700 dark:text-zinc-300/80;
+  }
+
+  article h2 {
+    @apply pt-8 text-3xl;
+  }
+
+  article h3 {
+    @apply pt-4 text-lg;
+  }
+
+  article ul,
+  article ol {
+    @apply pl-8;
+  }
+
+  article ul {
+    @apply list-disc;
+  }
+
+  article ol {
+    @apply list-decimal;
+  }
+
+  article blockquote {
+    @apply border-l-2 border-purple-500 pl-3 text-red-500 dark:border-purple-600 dark:text-zinc-300;
+  }
+
+  article :not(pre) > code {
+    @apply mx-1 select-all text-nowrap rounded px-1.5 py-0.5 text-sm text-zinc-950 ring-1 ring-zinc-300 dark:text-zinc-300 dark:ring-zinc-600;
+  }
+
+  article pre {
+    @apply overflow-x-auto p-4 text-sm ring-1 ring-zinc-300 dark:ring-zinc-500;
+  }
+
+  article a {
+    @apply text-zinc-950 underline decoration-purple-500 underline-offset-4 dark:text-zinc-300 dark:decoration-purple-600;
+  }
+}
