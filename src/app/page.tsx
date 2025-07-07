@@ -117,7 +117,7 @@ export default function HomePage() {
                         isMondayOrThursday && isAfterSevenPM && isBeforeElevenPM ?
                             <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-red-100 px-2 py-0.5 text-sm text-yellow-600 ring-1 ring-yellow-500 dark:bg-transparent dark:text-yellow-500 dark:ring-yellow-500">
                                 <div className="size-2 animate-pulse rounded-full bg-yellow-500 dark:bg-yellow-500" />
-                                Ausente
+                                Away
                             </span>
                          : isAfterTwoAM && isBeforeTenAM ?
                             <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-gray-100 px-2 py-0.5 text-sm text-gray-600 ring-1 ring-gray-500 dark:bg-transparent dark:text-gray-500 dark:ring-gray-500">
