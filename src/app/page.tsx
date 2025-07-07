@@ -81,6 +81,13 @@ const ExternalLink = (link: Link) => {
     );
 };
 
+const date = new Date();
+const isMondayOrThursday = [1, 3].includes(date.getDay());
+const isAfterSevenPM = date.getHours() >= 19;
+const isBeforeElevenPM = date.getHours() < 23;
+const isAfterTwoAM = date.getHours() >= 2;
+const isBeforeTenAM = date.getHours() < 10;
+
 export default function HomePage() {
     return (
         <div className="flex flex-col gap-6">
@@ -105,10 +112,24 @@ export default function HomePage() {
                             </a>
                         </div>
                     </div>
-                    <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
-                        <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
-                        Online
-                    </span>
+                    {
+
+                        isMondayOrThursday && isAfterSevenPM && isBeforeElevenPM ?
+                            <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-red-100 px-2 py-0.5 text-sm text-yellow-600 ring-1 ring-yellow-500 dark:bg-transparent dark:text-yellow-500 dark:ring-yellow-500">
+                                <div className="size-2 animate-pulse rounded-full bg-yellow-500 dark:bg-yellow-500" />
+                                Ausente
+                            </span>
+                         : isAfterTwoAM && isBeforeTenAM ?
+                            <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-gray-100 px-2 py-0.5 text-sm text-gray-600 ring-1 ring-gray-500 dark:bg-transparent dark:text-gray-500 dark:ring-gray-500">
+                                <div className="size-2 animate-pulse rounded-full bg-gray-500 dark:bg-gray-500" />
+                                Offline
+                            </span>
+                         :
+                            <span className="-mt-2 flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
+                                <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
+                                Online
+                            </span>
+                    }
                 </div>
                 <div className="flex flex-col gap-2">
                     <a

@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "vercel": "next build",
     "start": "next start",
     "lint": "next lint",
     "generate:rss": "node src/scripts/gen-rss.js",
-    "commit": "git pull && bun update && bun run vercel && && bun generate:rss && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
+    "commit": "git pull && bun run vercel && bun generate:rss && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^9.5.0",
