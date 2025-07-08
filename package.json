@@ -17,7 +17,7 @@
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.395.0",
     "moment": "^2.30.1",
-    "next": "14.0.4",
+    "next": "14.2.30",
     "react": "^18",
     "react-dom": "^18",
     "remark": "^15.0.1",
