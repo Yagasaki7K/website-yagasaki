@@ -8,9 +8,10 @@
 		"start": "next start",
 		"lint": "next lint",
 		"generate:rss": "node src/scripts/gen-rss.js",
-		"create:mylint": "bunx --bun biome init && mylint",
+		"create:mylint": "bunx --bun biome init && bun mylint",
 		"mylint": "bunx biome format --write",
-		"commit": "git pull && bun run vercel && bun generate:rss && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
+		"commit": "git pull && bun run vercel && bun generate:rss && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
+		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
 		"@icons-pack/react-simple-icons": "^9.5.0",
