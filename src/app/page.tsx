@@ -135,7 +135,7 @@ export default function HomePage() {
 					<Link
 						href="/anderson-marlon-cv.pdf"
 						download="anderson-marlon-cv.pdf"
-						className="flex flex-row items-center justify-center gap-3 rounded bg-purple-300 p-4 text-purple-800 ring-1 ring-purple-500 transition-all sm:hover:bg-purple-400 dark:bg-inherit dark:text-purple-500 dark:ring-purple-500 sm:sm:dark:hover:bg-zinc-800"
+						className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-all sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
 					>
 						<span className="text-nowrap">Download my CV</span>
 						<Download className="size-5 max-sm:hidden" />

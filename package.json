@@ -7,16 +7,18 @@
 		"vercel": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"generate:rss": "node src/scripts/gen-rss.js",
+		"generate-rss": "bun src/scripts/gen-rss.ts",
 		"create:mylint": "bunx --bun biome init && bun mylint",
 		"mylint": "bunx biome format --write",
-		"commit": "git pull && bun run vercel && bun generate:rss && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
-		"clean": "rm -rf node_modules && bun install"
+		"commit": "git pull && bun run vercel && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
+		"clean": "rm -rf node_modules && bun install",
+		"prebuild": "bun run generate-rss"
 	},
 	"dependencies": {
 		"@icons-pack/react-simple-icons": "^9.5.0",
 		"@vercel/analytics": "^1.5.0",
 		"dotenv": "^16.4.5",
+		"feed": "^5.1.0",
 		"gray-matter": "^4.0.3",
 		"lucide-react": "^0.395.0",
 		"moment": "^2.30.1",
