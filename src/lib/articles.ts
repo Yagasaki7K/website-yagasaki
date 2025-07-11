@@ -10,6 +10,8 @@ export type Article = {
 	tags: string[];
 	title: string;
 	date: string;
+	image: string;
+	description: string;
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "src/articles");
@@ -47,6 +49,8 @@ export function getArticles() {
 			id,
 			title: matterResult.data.title,
 			tags: matterResult.data.tags,
+			image: matterResult.data.image,
+			description: matterResult.data.description,
 			date: moment(matterResult.data.date).format("YYYY-MM-DD"),
 		};
 	});
@@ -76,6 +80,8 @@ export async function getArticleData(id: string) {
 		contentHtml,
 		title: matterResult.data.title,
 		tags: matterResult.data.tags || [],
+		image: matterResult.data.image,
+		description: matterResult.data.description,
 		date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM  Do, YYYY"),
 	};
 }

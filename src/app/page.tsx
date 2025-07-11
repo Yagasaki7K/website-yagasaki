@@ -6,6 +6,7 @@ import {
 	SiSitecore,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
+import Head from "next/head";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -90,7 +91,11 @@ const isBeforeTenAM = date.getHours() < 10;
 
 export default function HomePage() {
 	return (
-		<div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
+            <Head>
+                <title>{"Yagasaki7K - Software Developer"}</title>
+                <link rel="icon" type="image/png" href="https://github.com/Yagasaki7K.png" />
+            </Head>
 			<p className="text-sm">
 				São Paulo-based Brazilian. Building for the web for over 5 years — from
 				fullstack apps to developer tools. Next.js and Vercel Evangelist.
