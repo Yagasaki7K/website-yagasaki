@@ -13,8 +13,8 @@ export default function AboutPage() {
 					Experience in Javascript, Typescript, React.js, Next.js, Vite, Sass,
 					Redux, RegEx, UI/UX, Responsive Design, Firebase, Supabase, Hasura,
 					SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify,
-					NestJS, Bun.js, Whatsapp API, Rocketchat, Serverless, Microservices
-					and more …
+					Elysia.js, NestJS, Bun.js, Whatsapp API, Rocketchat, Serverless,
+					Microservices and more …
 				</p>
 				<p>Technology Enthusiast, Specialized in Web and Self-taught.</p>
 
@@ -27,7 +27,8 @@ export default function AboutPage() {
 						<strong>Frontend:</strong> React.js, Next.js & Vite
 					</p>
 					<p>
-						<strong>Backend:</strong> Node.js, Bun, Express, Fastify & Nest.js
+						<strong>Backend:</strong> Node.js, Bun, Express, Fastify, Elysia.js
+						& Nest.js
 					</p>
 					<p>
 						<strong>Database:</strong> Prisma, Hasura, Firebase, Supabase,
