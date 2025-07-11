@@ -6,9 +6,47 @@ import {
 	SiSitecore,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
-import Head from "next/head";
 import Link from "next/link";
 import { ReactNode } from "react";
+import { Metadata } from "next";
+
+// Metadados para a página
+export const metadata: Metadata = {
+	title: "Yagasaki7K - Software Developer",
+	description:
+		"São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
+	icons: {
+		icon: "https://github.com/Yagasaki7K.png",
+	},
+	openGraph: {
+		title: "Yagasaki7K - Software Developer",
+		description:
+			"São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
+		url: "https://yagasaki.dev",
+		siteName: "Anderson Marlon // Yagasaki7K",
+		images: [
+			{
+				url: "https://github.com/Yagasaki7K.png",
+				width: 460,
+				height: 460,
+				alt: "Yagasaki7K",
+			},
+		],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Yagasaki7K - Software Developer",
+		description:
+			"São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
+		creator: "@Yagasaki7K",
+		site: "@Yagasaki7K",
+		images: ["https://github.com/Yagasaki7K.png"],
+	},
+	alternates: {
+		canonical: "https://yagasaki.dev",
+	},
+};
 
 const XLogo = () => {
 	return (
@@ -69,6 +107,7 @@ const ExternalLink = (link: Link) => {
 			key={link.description}
 			href={link.url}
 			target="_blank"
+			rel="noopener noreferrer"
 			className="group flex items-center justify-between p-4 transition-all sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
 		>
 			<span className="flex items-center gap-4">
@@ -91,11 +130,7 @@ const isBeforeTenAM = date.getHours() < 10;
 
 export default function HomePage() {
 	return (
-        <div className="flex flex-col gap-6">
-            <Head>
-                <title>{"Yagasaki7K - Software Developer"}</title>
-                <link rel="icon" type="image/png" href="https://github.com/Yagasaki7K.png" />
-            </Head>
+		<div className="flex flex-col gap-6">
 			<p className="text-sm">
 				São Paulo-based Brazilian. Building for the web for over 5 years — from
 				fullstack apps to developer tools. Next.js and Vercel Evangelist.

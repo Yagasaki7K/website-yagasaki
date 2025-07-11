@@ -1,7 +1,6 @@
 import { getArticleData } from "../../../lib/articles";
 import { Article } from "../../../components/article";
-import { NextSeo } from "next-seo";
-import Head from "next/head";
+import { Metadata } from "next";
 
 function Tag({ tag }: { tag: string }) {
 	return (
@@ -9,6 +8,51 @@ function Tag({ tag }: { tag: string }) {
 			#{tag}
 		</div>
 	);
+}
+
+// Função para gerar metadados
+export async function generateMetadata({
+	params,
+}: {
+	params: { slug: string };
+}): Promise<Metadata> {
+	const articleData = await getArticleData(params.slug);
+
+	return {
+		title: articleData.title || "Post",
+		description: articleData.description || "Descrição indisponível",
+		openGraph: {
+			title: articleData.title || "Post",
+			description: articleData.description || "Descrição indisponível",
+			url: `https://yagasaki.dev/article/${params.slug}`,
+			siteName: "Anderson Marlon // Yagasaki7K",
+			images: articleData.image
+				? [
+						{
+							url: articleData.image,
+							width: 460,
+							height: 460,
+							alt: articleData.title || "Imagem",
+						},
+					]
+				: [],
+			type: "article",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: articleData.title || "Post",
+			description: articleData.description || "Descrição indisponível",
+			creator: "@Yagasaki7K",
+			site: "@Yagasaki7K",
+			images: articleData.image ? [articleData.image] : [],
+		},
+		alternates: {
+			canonical: `https://yagasaki.dev/article/${params.slug}`,
+		},
+		icons: {
+			icon: "https://github.com/Yagasaki7K.png",
+		},
+	};
 }
 
 export default async function ArticlePage({
@@ -20,45 +64,6 @@ export default async function ArticlePage({
 
 	return (
 		<>
-			<NextSeo
-				title={articleData.title || "Post"}
-				description={articleData.description || "Descrição indisponível"}
-				canonical="https://yagasaki.dev/"
-				openGraph={{
-					url: `https://yagasaki.dev/`,
-					title: articleData.title || "Post",
-					description: articleData.description || "Descrição indisponível",
-					images: articleData.image
-						? [
-								{
-									url: articleData.image,
-									width: 460,
-									height: 460,
-									alt: articleData.title || "Imagem",
-									type: articleData.image.includes(".png")
-										? "image/png"
-										: "image/jpeg",
-								},
-							]
-						: [],
-					siteName: "Anderson Marlon // Yagasaki7K",
-				}}
-				twitter={{
-					handle: "@Yagasaki7K",
-					site: "@Yagasaki7K",
-					cardType: "summary_large_image",
-				}}
-			/>
-
-			<Head>
-				<title>{articleData.title || "Yagasaki7K - Software Developer"}</title>
-				<link
-					rel="icon"
-					type="image/png"
-					href="https://github.com/Yagasaki7K.png"
-				/>
-			</Head>
-
 			<div className="flex flex-col items-center justify-center p-8">
 				<span className="text-sm text-zinc-500 dark:text-zinc-400">
 					{articleData.date}

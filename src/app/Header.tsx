@@ -41,7 +41,7 @@ export default function Header() {
 	};
 
 	return (
-        <header className="mx-auto max-w-prose py-8 max-sm:pt-4">
+		<header className="mx-auto max-w-prose py-8 max-sm:pt-4">
 			<nav className="flex items-center justify-between max-sm:flex-col max-sm:gap-6">
 				{isHome ? (
 					<div>
