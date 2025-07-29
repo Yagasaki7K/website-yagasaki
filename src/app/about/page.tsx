@@ -6,7 +6,7 @@ export default function AboutPage() {
 			</h1>
 			<article>
 				<h1>
-					Software Developer, Fullstack Developer and Black Belt Taekwondo (not
+					Software Engineer, Fullstack Engineer and Black Belt Taekwondo (not
 					relevant)
 				</h1>
 				<p>
