@@ -35,16 +35,9 @@ async function generateRSSFile(): Promise<void> {
 		fs.writeFileSync(rssFilePath, rssContent);
 
 		console.log("✅ RSS gerado com sucesso em:", rssFilePath);
-		console.log(
-			"📄 Tamanho do arquivo:",
-			(rssContent.length / 1024).toFixed(2),
-			"KB",
-		);
+		console.log("📄 Tamanho do arquivo:", (rssContent.length / 1024).toFixed(2), "KB");
 	} catch (error) {
-		console.error(
-			"❌ Erro ao gerar RSS:",
-			error instanceof Error ? error.message : "Erro desconhecido",
-		);
+		console.error("❌ Erro ao gerar RSS:", error instanceof Error ? error.message : "Erro desconhecido");
 		process.exit(1);
 	}
 }
@@ -65,9 +58,7 @@ function fetchRSSContent(url: string): Promise<string> {
 				if (response.statusCode === 200) {
 					resolve(data);
 				} else {
-					reject(
-						new Error(`HTTP ${response.statusCode}: ${response.statusMessage}`),
-					);
+					reject(new Error(`HTTP ${response.statusCode}: ${response.statusMessage}`));
 				}
 			});
 		});

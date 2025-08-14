@@ -13,16 +13,14 @@ interface Project {
 const projects: Project[] = [
 	{
 		name: "steamfolio",
-		description:
-			"Building a customizable portfolio interface in the style of Steam. Using Bun, React and Vite.",
+		description: "Building a customizable portfolio interface in the style of Steam. Using Bun, React and Vite.",
 		url: "https://steamfolio.vercel.app/",
 		imageUrl: "/projects/steamfolio.png",
 		githubUrl: "https://github.com/Yagasaki7K/website-steamfolio",
 	},
 	{
 		name: "onigirihardcore",
-		description:
-			"Onigiri Hardcore is a website about news, games, animes and entertainment",
+		description: "Onigiri Hardcore is a website about news, games, animes and entertainment",
 		url: "https://onigirihardcore.vercel.app/",
 		imageUrl: "/projects/onigirihardcore.png",
 		githubUrl: "https://github.com/Yagasaki7K/website-onigirihardcore",
@@ -43,32 +41,28 @@ const projects: Project[] = [
 	},
 	{
 		name: "findyourpet",
-		description:
-			"App to help you rescue, inform and donate your pets with love! 🐶💜🐱",
+		description: "App to help you rescue, inform and donate your pets with love! 🐶💜🐱",
 		url: "https://findyourpet.vercel.app/",
 		imageUrl: "/projects/findyourpet.png",
 		githubUrl: "https://github.com/Yagasaki7K/website-findyourpet",
 	},
 	{
 		name: "notification-push",
-		description:
-			"A feature to do a Notification Push without framework or package",
+		description: "A feature to do a Notification Push without framework or package",
 		url: "https://yagasaki7k.github.io/feature-notificationpush/",
 		imageUrl: "/projects/pushnotification.png",
 		githubUrl: "https://github.com/Yagasaki7K/feature-notificationpush",
 	},
 	{
 		name: "pomodoro",
-		description:
-			"An intuitive timer built with React, following the Pomodoro technique",
+		description: "An intuitive timer built with React, following the Pomodoro technique",
 		url: "https://appomodoro.vercel.app/",
 		imageUrl: "/projects/pomodoro.png",
 		githubUrl: "https://github.com/Yagasaki7K/app-pomodoro",
 	},
 	{
 		name: "notemarkdown",
-		description:
-			"Easy way to edit and preview a markdown without save and with fast refresh.",
+		description: "Easy way to edit and preview a markdown without save and with fast refresh.",
 		url: "https://notemarkdown.vercel.app/",
 		imageUrl: "/projects/notemarkdown.png",
 		githubUrl: "https://github.com/Yagasaki7K/app-notemarkdown",
@@ -108,9 +102,7 @@ function ProjectCard({ name, description, imageUrl, githubUrl, url }: Project) {
 export default function ProjectsPage() {
 	return (
 		<>
-			<h1 className="mb-16 mt-4 text-center max-sm:text-4xl text-5xl">
-				Projects
-			</h1>
+			<h1 className="mb-16 mt-4 text-center max-sm:text-4xl text-5xl">Projects</h1>
 			<div className="space-y-20">
 				{projects.map((project) => (
 					<ProjectCard key={project.url} {...project} />

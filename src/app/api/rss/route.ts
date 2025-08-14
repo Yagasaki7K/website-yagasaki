@@ -13,8 +13,7 @@ export interface PostProps {
 function createFeed() {
 	return new Feed({
 		title: "yagasaki.dev/Blog",
-		description:
-			"I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.",
+		description: "I enjoy turning solutions into code. I'm a tech enthusiast and love staying up to date with all the latest cutting-edge features.",
 		id: "http://yagasaki.dev/",
 		link: "http://yagasaki.dev/",
 		language: "pt-br",

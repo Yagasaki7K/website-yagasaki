@@ -1,10 +1,4 @@
-import {
-	SiBehance,
-	SiDiscord,
-	SiGithub,
-	SiLinkedin,
-	SiSitecore,
-} from "@icons-pack/react-simple-icons";
+import { SiBehance, SiDiscord, SiGithub, SiLinkedin, SiSitecore } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -13,15 +7,13 @@ import { Metadata } from "next";
 // Metadados para a página
 export const metadata: Metadata = {
 	title: "Yagasaki7K - Software Developer",
-	description:
-		"São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
+	description: "São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
 	icons: {
 		icon: "https://github.com/Yagasaki7K.png",
 	},
 	openGraph: {
 		title: "Yagasaki7K - Software Developer",
-		description:
-			"São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
+		description: "São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
 		url: "https://yagasaki.dev",
 		siteName: "Anderson Marlon // Yagasaki7K",
 		images: [
@@ -37,8 +29,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Yagasaki7K - Software Developer",
-		description:
-			"São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
+		description: "São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
 		creator: "@Yagasaki7K",
 		site: "@Yagasaki7K",
 		images: ["https://github.com/Yagasaki7K.png"],
@@ -132,9 +123,8 @@ export default function HomePage() {
 	return (
 		<div className="flex flex-col gap-6">
 			<p className="text-sm">
-				São Paulo-based Brazilian. Building for the web for over 5 years — from
-				fullstack apps to developer tools. Next.js and Vercel Evangelist.
-				Taekwondo Black Belt. Drift King. Guitar Hero.
+				São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist. Taekwondo
+				Black Belt. Drift King. Guitar Hero.
 			</p>
 			<div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
 				{externalLinks.map((link: Link) => (
@@ -146,10 +136,7 @@ export default function HomePage() {
 					<div className="sm:group relative -m-8 flex items-center gap-3 p-8 transition-all">
 						yagasakiwanderlust@proton.me
 						<div className="inline-flex items-center gap-3 transition-all sm:absolute sm:right-4 sm:opacity-0 sm:group-hover:right-1 sm:group-hover:opacity-100">
-							<Link
-								href="mailto:yagasakiwanderlust@proton.me"
-								className="text-zinc-800 dark:text-zinc-300"
-							>
+							<Link href="mailto:yagasakiwanderlust@proton.me" className="text-zinc-800 dark:text-zinc-300">
 								<Send className="size-4" />
 							</Link>
 						</div>

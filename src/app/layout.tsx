@@ -20,11 +20,7 @@ const karla = Karla({
 // https://www.reddit.com/r/nextjs/comments/1bhfikg/comment/kxwj9ou/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 const Header = dynamic(() => import("./Header"), { ssr: false });
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className="min-h-screen">
 			<body className={`${karla.className} min-h-full px-6`}>
@@ -48,11 +44,7 @@ export default function RootLayout({
 						>
 							Code
 						</a>
-						<Link
-							className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
-							target="_blank"
-							href="/rss.xml"
-						>
+						<Link className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400" target="_blank" href="/rss.xml">
 							RSS Feed
 						</Link>
 						<a
@@ -63,9 +55,7 @@ export default function RootLayout({
 							@Yagasaki7K
 						</a>
 					</div>
-					<blockquote className="text-zinc-800 dark:text-zinc-300">
-						Smile, you&apos;re alive :)
-					</blockquote>
+					<blockquote className="text-zinc-800 dark:text-zinc-300">Smile, you&apos;re alive :)</blockquote>
 				</footer>
 			</body>
 		</html>

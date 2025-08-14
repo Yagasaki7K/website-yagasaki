@@ -11,11 +11,7 @@ function Tag({ tag }: { tag: string }) {
 }
 
 // Função para gerar metadados
-export async function generateMetadata({
-	params,
-}: {
-	params: { slug: string };
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
 	const articleData = await getArticleData(params.slug);
 
 	return {
@@ -55,23 +51,15 @@ export async function generateMetadata({
 	};
 }
 
-export default async function ArticlePage({
-	params,
-}: {
-	params: { slug: string };
-}) {
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
 	const articleData = await getArticleData(params.slug);
 
 	return (
 		<>
 			<div className="flex flex-col items-center justify-center p-8">
-				<span className="text-sm text-zinc-500 dark:text-zinc-400">
-					{articleData.date}
-				</span>
+				<span className="text-sm text-zinc-500 dark:text-zinc-400">{articleData.date}</span>
 				<div className="flex w-full max-w-prose flex-col items-center justify-center gap-4 px-4 pb-6 pt-1">
-					<h1 className="text-center max-sm:text-3xl text-5xl">
-						{articleData.title}
-					</h1>
+					<h1 className="text-center max-sm:text-3xl text-5xl">{articleData.title}</h1>
 					<div className="flex flex-wrap gap-x-3">
 						{articleData.tags.map((tag: string) => (
 							<Tag tag={tag} key={tag} />

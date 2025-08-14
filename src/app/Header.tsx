@@ -8,11 +8,7 @@ import { useEffect, useState } from "react";
 function isThemeSetToDark() {
 	if (window == undefined) return;
 
-	return (
-		localStorage.theme === "dark" ||
-		(!("theme" in localStorage) &&
-			window.matchMedia("(prefers-color-scheme: dark)").matches)
-	);
+	return localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
 }
 
 export default function Header() {
@@ -47,9 +43,7 @@ export default function Header() {
 					<div>
 						<div className="flex flex-col max-sm:items-center">
 							Anderson &quot;Yagasaki&quot; Marlon
-							<span className="text-zinc-500 dark:text-zinc-400">
-								Software Developer
-							</span>
+							<span className="text-zinc-500 dark:text-zinc-400">Software Developer</span>
 						</div>
 					</div>
 				) : (
@@ -62,17 +56,12 @@ export default function Header() {
 						</div>
 						<div className="flex flex-col max-sm:items-center">
 							Anderson Marlon
-							<span className="text-zinc-500 dark:text-zinc-400">
-								Software Developer
-							</span>
+							<span className="text-zinc-500 dark:text-zinc-400">Software Developer</span>
 						</div>
 					</Link>
 				)}
 				<div className="flex items-center gap-4">
-					<button
-						onClick={() => toggleTheme()}
-						className="group relative flex items-center"
-					>
+					<button onClick={() => toggleTheme()} className="group relative flex items-center">
 						{isDarkMode ? (
 							<Moon className="size-5 fill-gray-700 transition-all sm:hover:-rotate-12 sm:hover:scale-110" />
 						) : (
