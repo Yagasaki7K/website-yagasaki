@@ -6,13 +6,13 @@ import { Metadata } from "next";
 
 // Metadados para a página
 export const metadata: Metadata = {
-	title: "Yagasaki7K - Software Developer",
+	title: "Yagasaki7K - Software Engineer",
 	description: "São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
 	icons: {
 		icon: "https://github.com/Yagasaki7K.png",
 	},
 	openGraph: {
-		title: "Yagasaki7K - Software Developer",
+		title: "Yagasaki7K - Software Engineer",
 		description: "São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
 		url: "https://yagasaki.dev",
 		siteName: "Anderson Marlon // Yagasaki7K",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Yagasaki7K - Software Developer",
+		title: "Yagasaki7K - Software Engineer",
 		description: "São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist.",
 		creator: "@Yagasaki7K",
 		site: "@Yagasaki7K",
