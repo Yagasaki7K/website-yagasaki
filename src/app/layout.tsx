@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
 	title: 'Anderson "Yagasaki" Marlon',
-	description: "Software Developer",
+	description: "Software Engineer",
 };
 
 const karla = Karla({

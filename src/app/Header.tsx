@@ -43,7 +43,7 @@ export default function Header() {
 					<div>
 						<div className="flex flex-col max-sm:items-center">
 							Anderson &quot;Yagasaki&quot; Marlon
-							<span className="text-zinc-500 dark:text-zinc-400">Software Developer</span>
+							<span className="text-zinc-500 dark:text-zinc-400">Software Engineer</span>
 						</div>
 					</div>
 				) : (
@@ -56,7 +56,7 @@ export default function Header() {
 						</div>
 						<div className="flex flex-col max-sm:items-center">
 							Anderson Marlon
-							<span className="text-zinc-500 dark:text-zinc-400">Software Developer</span>
+							<span className="text-zinc-500 dark:text-zinc-400">Software Engineer</span>
 						</div>
 					</Link>
 				)}
