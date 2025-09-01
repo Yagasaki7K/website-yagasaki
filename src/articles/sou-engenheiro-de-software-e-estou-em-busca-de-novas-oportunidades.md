@@ -3,7 +3,7 @@ title: Sou Engenheiro de Software e estou em busca de novas oportunidades
 excerpt: 'Nos últimos anos tive o privilégio de trabalhar em projetos desafiadores em empresas como Astriia e Stone Co. / Linx Commerce, além de inúmeros estudos e formações independentes. Essa jornada me permitiu crescer não apenas como engenheiro de software fullstack, mas também como alguém que busca soluções criativas, eficientes e escaláveis.'
 image: https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 tags: ['Desenvolvimento', 'Pessoal', 'Profissional']
-date: '2024-09-01'
+date: '2025-09-01'
 ---
 
 ![](https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
