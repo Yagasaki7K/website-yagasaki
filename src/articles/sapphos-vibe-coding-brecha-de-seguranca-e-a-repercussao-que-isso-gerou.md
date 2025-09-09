@@ -1,5 +1,5 @@
 ---
-title: Sapphos - Vibe coding, brecha de segurança e a repercussão que isso gerou nas redes sociais
+title: Caso Sapphos - Vibe coding, brecha de segurança e a repercussão que isso gerou nas redes sociais
 excerpt: 'Sapphos, aplicativo de relacionamento voltado para o público feminino, possuía falha grave em seu código capaz de expor fotos e documentos das usuárias. Time responsável trabalha em nova versão mais segura.'
 image: https://images.unsplash.com/photo-1593526613712-7b4b9a707330?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 tags: ['Cybersegurança', 'App', 'Vibe Coding']
