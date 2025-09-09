@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutPage() {
 	return (
 		<>
@@ -36,6 +38,105 @@ export default function AboutPage() {
 					<p>
 						<strong>Other:</strong> Git, Serverless, Google Cloud, Docusaurus, etc...
 					</p>
+				</div>
+
+				<div id="career">
+					<h2>Career</h2>
+					<p>
+						Personal projects or those involving self-development will be listed on{" "}
+						<Link href="https://linkedin.com/in/andersonmarlon" target="_blank">
+							Linkedin
+						</Link>
+						.
+					</p>
+
+					<h3 className="mb-3">
+						<strong className="text-sky-500">Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025
+					</h3>
+					<li className="mb-1">
+						Led the development of internal platforms using Node.js and React, successfully reducing the execution time of core internal processes by 35%.
+					</li>
+					<li className="mb-1">
+						Engineered AI-powered solutions integrated with the WhatsApp Business API and OpenAI, doubling the accuracy of personalized customer responses.
+					</li>
+					<li className="mb-1">
+						Implemented a Stripe payment system that boosted annual plan conversion by 28% and developed a feedback system that increased customer satisfaction
+						by 40%.
+					</li>
+					<p className="mt-1">
+						Using Express, Node.js, OpenAI API, WhatsApp API, Facebook Business API, Next.js, Discord Webhook, AstrologyAPI, Stripe and Python
+					</p>
+
+					<h3 className="mb-3">
+						<strong className="text-sky-500">Software Engineer II</strong> @ WhatsUpper | Aug 2023 - Dec 2023
+					</h3>
+					<li className="mb-1">
+						Specialized in developing and integrating intelligent automation solutions for the WhatsApp Business API, enhancing customer communication
+						workflows.
+					</li>
+					<li className="mb-1">
+						Built and maintained scalable backend services using Node.js to process high volumes of messages and power interactive chatbot experiences.
+					</li>
+					<li className="mb-1">
+						Collaborated with cross-functional teams to design and implement custom features, focusing on improving user engagement and retention through the
+						WhatsApp channel.
+					</li>
+					<p className="mt-1">Using Rocket.chat, Firebase, Next.js, WhatsApp API, Facebook Business API, Twilio and Firebase</p>
+
+					<h3 className="mb-3">
+						<strong className="text-sky-500">Software Engineer II</strong> @ Stone | Oct 2022 - Jul 2023
+					</h3>
+					<li className="mb-1">
+						Optimized DialogFlow routines and integrated them with Rocket.Chat, improving chatbot response speed by over 50% and increasing customer retention.
+					</li>
+					<li className="mb-1">
+						Developed an interactive SPA with jQuery to automate customer routing and enable WhatsApp-based checkouts, cutting down queue times by up to 20%.
+					</li>
+					<li className="mb-1">
+						Authored comprehensive documentation for system architectures and internal processes, ensuring scalability and simplifying future maintenance.
+					</li>
+					<p className="mt-1">
+						Using Rocket.chat, Hasura, Next.js, WhatsApp API, Facebook Business API, Twilio, Firebase, DialogFlow and Google Cloud Plataform
+					</p>
+
+					<h3 className="mb-3">
+						<strong className="text-sky-500">Systems Development Analyst I/II</strong> @ Cenário Capital | Oct 2020 - Sep 2021
+					</h3>
+					<li className="mb-1">
+						Developed and maintained critical financial systems, contributing to data analysis and process automation to support investment strategies.
+					</li>
+					<li className="mb-1">
+						Collaborated with analysts and stakeholders to gather requirements and translate them into functional software solutions, improving operational
+						efficiency through web quiz.
+					</li>
+					<li className="mb-1">
+						Progressed from a Junior to a Mid-level role by demonstrating strong technical skills in system design, database management, and backend
+						development.
+					</li>
+					<p className="mt-1">Using jQuery, HTML, CSS, Javascript, React, HTML for Email Marketing and Next.js</p>
+
+					<h3 className="mb-3">
+						<strong className="text-sky-500">Front-end Developer I / Jr. Marketing</strong> @ Marry Perry | Feb 2020 - Sep 2020
+					</h3>
+					<li className="mb-1">
+						Developed and enhanced the user interface (UI) of the e-commerce platform, focusing on creating a responsive and intuitive shopping experience.
+					</li>
+					<li className="mb-1">Implemented front-end features and optimizations that contributed to improved user engagement and conversion rates.</li>
+					<li className="mb-1">
+						Assisted the marketing team with technical tasks, including landing page creation, email template coding, tracking analytics and afiliates system.
+					</li>
+					<p className="mt-1">Using HTML, CSS, Javascript, Node.js, Express, MySQL and Python.</p>
+
+					<h3 className="mb-3">
+						<strong className="text-sky-500">Soldier</strong> @ Brazilian Army | Mar 2016 - Apr 2017
+					</h3>
+					<li className="mb-1">Developed strong discipline, resilience, and the ability to perform effectively in high-pressure, structured environments.</li>
+					<li className="mb-1">
+						Mastered teamwork and communication skills through collaborative daily operations and mission-critical exercises with a diverse team.
+					</li>
+					<li className="mb-1">
+						Demonstrated a high degree of responsibility and commitment while managing assigned communication equipment and executing duties with precision.
+					</li>
 				</div>
 
 				<div id="awards">
