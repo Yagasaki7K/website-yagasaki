@@ -143,7 +143,11 @@ export default function AboutPage() {
 					<h2>Certificates</h2>
 
 					<p className="mb-2">
-						<strong className="text-sky-500">NestJS </strong>by Jornada do Dev - April 2025
+						<strong className="text-sky-500">Introduction to automation with n8n</strong> by Enzo Panaroto in Rocketseat - September 2025
+					</p>
+
+					<p className="mb-2">
+						<strong className="text-sky-500">NestJS</strong> by Jornada do Dev - April 2025
 					</p>
 
 					<p className="mb-2">
@@ -162,19 +166,19 @@ export default function AboutPage() {
 					</p>
 
 					<p className="mb-2">
-						<strong className="text-sky-500">NLW Journey - GO </strong>by Rocketseat - July 2024
+						<strong className="text-sky-500">NLW Journey - GO</strong> by Rocketseat - July 2024
 					</p>
 
 					<p className="mb-2">
-						<strong className="text-sky-500">NLW Journey - NodeJS </strong>by Rocketseat - July 2024
+						<strong className="text-sky-500">NLW Journey - NodeJS</strong> by Rocketseat - July 2024
 					</p>
 
 					<p className="mb-2">
-						<strong className="text-sky-500">NLW Journey - Java </strong>by Rocketseat - July 2024
+						<strong className="text-sky-500">NLW Journey - Java</strong> by Rocketseat - July 2024
 					</p>
 
 					<p className="mb-2">
-						<strong className="text-sky-500">NLW Journey - Python </strong>by Rocketseat - July 2024
+						<strong className="text-sky-500">NLW Journey - Python</strong> by Rocketseat - July 2024
 					</p>
 
 					<p className="mb-2">
