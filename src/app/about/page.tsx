@@ -143,7 +143,7 @@ export default function AboutPage() {
 					<h2>Certificates</h2>
 
 					<p className="mb-2">
-						<strong className="text-sky-500">Introduction to automation with n8n</strong> by Enzo Panaroto in Rocketseat - September 2025
+						<strong className="text-sky-500">Introduction to automation with n8n</strong> by Enzzo Panarotto in Rocketseat - September 2025
 					</p>
 
 					<p className="mb-2">
