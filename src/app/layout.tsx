@@ -47,11 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<Link className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400" target="_blank" href="/rss.xml">
 							RSS Feed
 						</Link>
-						<a
-							className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
-							href="https://x.com/Yagasaki7K"
-							target="_blank"
-						>
+						<a className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400" href="https://x.com/Yagasaki7K" target="_blank">
 							@Yagasaki7K
 						</a>
 					</div>

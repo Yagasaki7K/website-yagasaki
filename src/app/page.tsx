@@ -123,8 +123,8 @@ export default function HomePage() {
 	return (
 		<div className="flex flex-col gap-6">
 			<p className="text-sm">
-				São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist. Taekwondo
-				Black Belt. Drift King. Guitar Hero.
+				São Paulo-based Brazilian. Building for the web for over 5 years — from fullstack apps to developer tools. Next.js and Vercel Evangelist. Taekwondo Black Belt. Drift King.
+				Guitar Hero.
 			</p>
 			<div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
 				{externalLinks.map((link: Link) => (

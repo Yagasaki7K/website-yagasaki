@@ -3,11 +3,7 @@ import { Article } from "../../../components/article";
 import { Metadata } from "next";
 
 function Tag({ tag }: { tag: string }) {
-	return (
-		<div className="flex size-4 w-fit items-center justify-center rounded-full px-2 py-3 text-sm ring-1 ring-zinc-400 dark:ring-1 dark:ring-zinc-500">
-			#{tag}
-		</div>
-	);
+	return <div className="flex size-4 w-fit items-center justify-center rounded-full px-2 py-3 text-sm ring-1 ring-zinc-400 dark:ring-1 dark:ring-zinc-500">#{tag}</div>;
 }
 
 // Função para gerar metadados
