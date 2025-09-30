@@ -34,7 +34,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.4",
 		"@types/node": "^20.19.18",
-		"@types/react": "^18.3.24",
+		"@types/react": "^18.3.25",
 		"@types/react-dom": "^18.3.7",
 		"autoprefixer": "^10.4.21",
 		"eslint": "^8.57.1",
