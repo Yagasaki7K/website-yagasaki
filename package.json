@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.4",
-		"@types/node": "^20.19.18",
+		"@types/node": "^20.19.19",
 		"@types/react": "^18.3.25",
 		"@types/react-dom": "^18.3.7",
 		"autoprefixer": "^10.4.21",
@@ -43,6 +43,6 @@
 		"prettier": "^3.6.2",
 		"prettier-plugin-tailwindcss": "^0.6.14",
 		"tailwindcss": "^3.4.17",
-		"typescript": "^5.9.2"
+		"typescript": "^5.9.3"
 	}
 }
