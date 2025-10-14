@@ -1,6 +1,5 @@
 import { GitBranch, Globe } from "lucide-react";
 import Image from "next/image";
-import { ReactNode } from "react";
 
 interface Project {
 	name: string;

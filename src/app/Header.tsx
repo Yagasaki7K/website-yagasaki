@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, Moon, Sun, Triangle } from "lucide-react";
+import { Camera, ChevronLeft, Github, Moon, Rss, Sun, Triangle } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -48,7 +48,7 @@ export default function Header() {
 					</div>
 				) : (
 					<Link
-						className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 ring-1 ring-sky-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 max-sm:text-center dark:ring-sky-600 dark:ring-opacity-0"
+						className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 ring-1 ring-purple-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 max-sm:text-center dark:ring-purple-600 dark:ring-opacity-0"
 						href="/"
 					>
 						<div className="absolute left-1 flex size-4 h-full w-12 items-center px-2">
@@ -61,37 +61,42 @@ export default function Header() {
 					</Link>
 				)}
 				<div className="flex items-center gap-4">
-					<button onClick={() => toggleTheme()} className="group relative flex items-center">
-						{isDarkMode ? (
-							<Moon className="size-5 fill-gray-700 transition-all sm:hover:-rotate-12 sm:hover:scale-110" />
-						) : (
-							<Sun className="size-5 fill-yellow-300 transition-all sm:hover:rotate-45 sm:hover:scale-110" />
-						)}
-					</button>
 					<Link
-						className="group relative rounded px-2 py-px ring-1 ring-sky-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
-						href="/projects"
-						data-is-current-path={path === "/projects"}
-					>
-						/projects
-						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-sky-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-sky-600 dark:text-transparent" />
-					</Link>
-					<Link
-						className="group relative rounded px-2 py-px ring-1 ring-sky-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
+						className="group relative rounded px-2 py-px ring-1 ring-purple-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-purple-600 dark:ring-opacity-0"
 						href="/articles"
 						data-is-current-path={path.startsWith("/articles")}
 					>
-						/articles
-						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-sky-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-sky-600 dark:text-transparent" />
+						Blog
+						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-purple-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-purple-600 dark:text-transparent" />
 					</Link>
 					<Link
-						className="group relative rounded px-2 py-px ring-1 ring-sky-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
+						className="group relative rounded px-2 py-px ring-1 ring-purple-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-purple-600 dark:ring-opacity-0"
+						href="/projects"
+						data-is-current-path={path === "/projects"}
+					>
+						Projects
+						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-purple-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-purple-600 dark:text-transparent" />
+					</Link>
+					<Link
+						className="group relative rounded px-2 py-px ring-1 ring-purple-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-purple-600 dark:ring-opacity-0"
 						href="/about"
 						data-is-current-path={path === "/about"}
 					>
-						/about
-						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-sky-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-sky-600 dark:text-transparent" />
+						Me
+						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-purple-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-purple-600 dark:text-transparent" />
 					</Link>
+					<Link className="group relative flex items-center" href="/photos" data-is-current-path={path === "/photos"}>
+						{isDarkMode ? <Camera className="size-5" /> : <Camera className="size-5 fill-black-300" />}
+					</Link>
+					<Link className="group relative flex items-center" href="https://github.com/Yagasaki7K" target="_blank">
+						{isDarkMode ? <Github className="size-5" /> : <Github className="size-5 fill-black-300" />}
+					</Link>
+					<Link className="group relative flex items-center" href="/api/rss" data-is-current-path={path === "/api/rss"}>
+						{isDarkMode ? <Rss className="size-5" /> : <Rss className="size-5 fill-black-300" />}
+					</Link>
+					<button onClick={() => toggleTheme()} className="group relative flex items-center">
+						{isDarkMode ? <Moon className="size-5" /> : <Sun className="size-5 fill-yellow-300" />}
+					</button>
 				</div>
 			</nav>
 		</header>
