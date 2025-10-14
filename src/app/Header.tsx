@@ -48,7 +48,7 @@ export default function Header() {
 					</div>
 				) : (
 					<Link
-						className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 ring-1 ring-purple-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 max-sm:text-center dark:ring-purple-600 dark:ring-opacity-0"
+						className="group relative -m-12 -my-2 -mr-4 flex items-center rounded py-2 pl-12 pr-4 ring-1 ring-purple-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 max-sm:text-center dark:ring-gray-50 dark:ring-opacity-0"
 						href="/"
 					>
 						<div className="absolute left-1 flex size-4 h-full w-12 items-center px-2">
@@ -62,28 +62,28 @@ export default function Header() {
 				)}
 				<div className="flex items-center gap-4">
 					<Link
-						className="group relative rounded px-2 py-px ring-1 ring-purple-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-purple-600 dark:ring-opacity-0"
+						className="group relative rounded px-2 py-px ring-1 ring-gray-50 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-gray-50 dark:ring-opacity-0"
 						href="/articles"
 						data-is-current-path={path.startsWith("/articles")}
 					>
 						Blog
-						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-purple-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-purple-600 dark:text-transparent" />
+						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-gray-50 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-gray-50 dark:text-transparent" />
 					</Link>
 					<Link
-						className="group relative rounded px-2 py-px ring-1 ring-purple-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-purple-600 dark:ring-opacity-0"
+						className="group relative rounded px-2 py-px ring-1 ring-gray-50 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-gray-50 dark:ring-opacity-0"
 						href="/projects"
 						data-is-current-path={path === "/projects"}
 					>
 						Projects
-						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-purple-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-purple-600 dark:text-transparent" />
+						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-gray-50 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-gray-50 dark:text-transparent" />
 					</Link>
 					<Link
-						className="group relative rounded px-2 py-px ring-1 ring-purple-600 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-purple-600 dark:ring-opacity-0"
+						className="group relative rounded px-2 py-px ring-1 ring-gray-50 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-gray-50 dark:ring-opacity-0"
 						href="/about"
 						data-is-current-path={path === "/about"}
 					>
 						Me
-						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-purple-600 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-purple-600 dark:text-transparent" />
+						<Triangle className="absolute left-1/2 mt-1 hidden size-2 fill-gray-50 text-zinc-800 group-data-[is-current-path=true]:block dark:fill-gray-50 dark:text-transparent" />
 					</Link>
 					<Link className="group relative flex items-center" href="/photos" data-is-current-path={path === "/photos"}>
 						{isDarkMode ? <Camera className="size-5" /> : <Camera className="size-5 fill-black-300" />}
