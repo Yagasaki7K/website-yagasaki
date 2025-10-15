@@ -4,7 +4,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 
-const countPhotos = 45;
+const countPhotos = 50;
 
 const Gallery = styled.div`
 	display: grid;

@@ -23,6 +23,7 @@ export default function AboutPage() {
 				<li className="ml-5">Chair: SuperFrame Iris RGB</li>
 				<li className="ml-5">Webcam: Logitech C920s</li>
 				<li className="ml-5">OS: Windows 11 with WSL2 (Ubuntu)</li>
+				<li className="ml-5">Smartphone: POCO X4 Pro (No NFC)</li>
 
 				<h1 className="text-xl mt-2">Development</h1>
 				<h1 className="text-lg">Editor</h1>
