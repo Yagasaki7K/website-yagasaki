@@ -28,7 +28,7 @@ export default function AboutPage() {
 				<h1 className="text-xl mt-2">Development</h1>
 				<h1 className="text-lg">Editor</h1>
 				<li className="ml-5">
-					Editor: VS Code / <s className="text-stone-600">Cursor</s> / <s className="text-stone-600">Sublime Text</s>
+					Editor: Zen / <s className="text-stone-600">Visual Studio Code</s> / <s className="text-stone-600">Cursor</s> / <s className="text-stone-600">Sublime Text</s>
 				</li>
 				<li className="ml-5">
 					VS Code Settings:{" "}
