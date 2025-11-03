@@ -4,8 +4,8 @@ import Link from "next/link";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
 import Script from "next/script";
-import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/next";
+import Header from "./Header";
 
 export const metadata: Metadata = {
 	title: 'Anderson "Yagasaki" Marlon',
@@ -17,20 +17,29 @@ const karla = Karla({
 	weight: ["400", "700"],
 });
 
-// https://www.reddit.com/r/nextjs/comments/1bhfikg/comment/kxwj9ou/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
-const Header = dynamic(() => import("./Header"), { ssr: false });
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+	const themeInit = `
+  (function() {
+    try {
+      var d = document.documentElement;
+      var t = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = (t === 'dark') || (t === null && prefersDark);
+      if (isDark) d.classList.add('dark'); else d.classList.remove('dark');
+    } catch (e) {}
+  })();`;
+
 	return (
 		<html lang="en" className="min-h-screen">
+			<head>
+				{/* Garante a classe 'dark' correta ANTES da hidratação */}
+				<Script id="theme-init" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: themeInit }} />
+			</head>
 			<body className={`${karla.className} min-h-full px-6`}>
 				<Analytics />
-				<Script id="theme-toggle" strategy="afterInteractive">
-					{`document.documentElement.classList.toggle("dark", localStorage.theme ===
-        "dark" || (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches))`}
-				</Script>
+
 				<Header />
+
 				<main className="mx-auto max-w-prose pb-4">
 					{children}
 					<ScrollToTop />
