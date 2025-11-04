@@ -4,7 +4,6 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
-import Cookies from "@/components/Cookies";
 import { steam } from "@/icons/steam";
 
 export default function Home() {
@@ -127,7 +126,6 @@ export default function Home() {
 				</div>
 			</HomeDetails>
 			<Footer />
-			<Cookies />
 		</>
 	);
 }

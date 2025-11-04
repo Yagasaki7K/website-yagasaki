@@ -12,7 +12,6 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
-import Cookies from "@/components/Cookies";
 import { PostProps } from "@/utils/PostProps";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -127,7 +126,6 @@ export default function PostPage({ frontmatter, content = "" }: PostProps) {
 				</div>
 			</ArticleDetails>
 			<Footer />
-			<Cookies />
 		</>
 	);
 }
