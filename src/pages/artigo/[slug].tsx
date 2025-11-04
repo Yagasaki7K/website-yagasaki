@@ -7,12 +7,11 @@ import { useEffect, useState } from "react";
 import ArticleDetails from "@/components/ArticleDetails";
 import calculateReadingTime from "@/utils/calculateReadingTime";
 import formatDate from "@/utils/formatDate";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
-import { PostProps } from "@/utils/PostProps";
+import { PostProps } from "@/types/PostProps";
 
 export const getStaticPaths: GetStaticPaths = async () => {
 	const files = fs.readdirSync(path.join("articles"));

@@ -14,12 +14,42 @@ const FooterDetails = styled.div`
         p {
             margin: 1rem 0;
             line-height: 1.8rem;
+            font-size: 1rem;
+
+            @media (max-width: 1024px) {
+                font-size: 0.95rem;
+                line-height: 1.7rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 0.85rem;
+                line-height: 1.6rem;
+            }
         }
 
         .p {
             font-size: 0.8rem;
             margin-bottom: 10px;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+
+            @media (max-width: 768px) {
+                font-size: 0.75rem;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 0.7rem;
+                margin-bottom: 8px;
+            }
 
             .link {
                 margin: 0 4px;
@@ -31,6 +61,20 @@ const FooterDetails = styled.div`
                 transition: 1s all ease;
                 display: flex;
                 align-items: center;
+
+                @media (max-width: 1024px) {
+                    font-size: 0.85rem;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 0.8rem;
+                    padding: 2px 6px;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 0.75rem;
+                    padding: 2px 5px;
+                }
 
                 a {
                     text-decoration: none;
@@ -45,8 +89,40 @@ const FooterDetails = styled.div`
                 img {
                     width: 15px;
                     margin-right: 5px;
+
+                    @media (max-width: 768px) {
+                        width: 13px;
+                        margin-right: 4px;
+                    }
+
+                    @media (max-width: 480px) {
+                        width: 12px;
+                        margin-right: 3px;
+                    }
                 }
             }
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 36rem;
+        }
+
+        @media (max-width: 820px) {
+            max-width: 32rem;
+        }
+
+        @media (max-width: 768px) {
+            text-align: center;
+            max-width: 90%;
+        }
+
+        @media (max-width: 480px) {
+            padding: 1rem;
+            max-width: 100%;
+        }
+
+        @media (max-width: 390px) {
+            padding: 0.75rem;
         }
     }
 `;

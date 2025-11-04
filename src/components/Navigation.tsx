@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import styled from "styled-components";
 
 const NavigationDetails = styled.div`
@@ -21,6 +20,16 @@ const NavigationDetails = styled.div`
             margin-right: 15px;
             border-radius: 50px;
             filter: grayscale(1);
+
+            @media (max-width: 768px) {
+                width: 45px;
+                margin-right: 10px;
+            }
+
+            @media (max-width: 480px) {
+                width: 38px;
+                margin-right: 8px;
+            }
         }
 
         a {
@@ -38,6 +47,18 @@ const NavigationDetails = styled.div`
         display: flex;
         gap: 20px;
         list-style: none;
+
+        @media (max-width: 1024px) {
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 10px;
+        }
+
+        @media (max-width: 640px) {
+            display: none;
+        }
     }
 
     a {
@@ -48,6 +69,37 @@ const NavigationDetails = styled.div`
         &:hover {
             color: var(--white);
         }
+
+        @media (max-width: 1024px) {
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 12px 24px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px 20px;
+    }
+
+    @media (max-width: 640px) {
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 12px;
     }
 `;
 

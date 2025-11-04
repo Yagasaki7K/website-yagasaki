@@ -16,12 +16,43 @@ const AboutDetails = styled.div`
         font-weight: 600;
         color: var(--white);
         margin-bottom: 2rem;
+
+        @media (max-width: 1024px) {
+            font-size: 2rem;
+            margin-bottom: 1.75rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     li {
         margin-left: 1.25rem;
         margin-top: 0.25rem;
         margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+
+        @media (max-width: 1024px) {
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            margin-left: 0.75rem;
+            font-size: 0.85rem;
+        }
     }
 
     .subTitle {
@@ -29,6 +60,21 @@ const AboutDetails = styled.div`
         line-height: 1.75rem;
         margin: 1rem 0;
         color: var(--white);
+
+        @media (max-width: 1024px) {
+            font-size: 1.15rem;
+            line-height: 1.6rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
     }
 
     s {
@@ -37,10 +83,35 @@ const AboutDetails = styled.div`
 
     .titleJob {
         margin: 1.5rem 0 1rem 0;
+
+        @media (max-width: 768px) {
+            margin: 1.25rem 0 0.75rem 0;
+        }
+
+        @media (max-width: 480px) {
+            margin: 1rem 0 0.5rem 0;
+        }
     }
 
     .job {
         margin-bottom: 2rem;
+        font-size: 1rem;
+        line-height: 1.6;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 1.75rem;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            margin-bottom: 1.25rem;
+            font-size: 0.85rem;
+        }
     }
 
     .certificate {
@@ -49,10 +120,62 @@ const AboutDetails = styled.div`
         strong {
             color: var(--white);
         }
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            margin-bottom: 0.75rem;
+        }
     }
 
     .description {
         margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--gray);
+
+        @media (max-width: 1024px) {
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.85rem;
+            line-height: 1.45;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        max-width: 42rem;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 38rem;
+    }
+
+    @media (max-width: 820px) {
+        max-width: 32rem;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 390px) {
+        padding: 0 0.75rem;
     }
 `;
 

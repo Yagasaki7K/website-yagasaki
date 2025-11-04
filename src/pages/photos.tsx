@@ -28,6 +28,51 @@ const Gallery = styled.div`
 	img:hover {
 		opacity: 0.8;
 	}
+
+	@media (max-width: 1440px) {
+		padding: 0 18rem;
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	}
+
+	@media (max-width: 1280px) {
+		padding: 0 14rem;
+		grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+	}
+
+	@media (max-width: 1024px) {
+		padding: 0 8rem;
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	}
+
+	@media (max-width: 912px) {
+		padding: 0 6rem;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	@media (max-width: 820px) {
+		padding: 0 4rem;
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	}
+
+	@media (max-width: 768px) {
+		padding: 0 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	}
+
+	@media (max-width: 640px) {
+		padding: 0 1.5rem;
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	}
+
+	@media (max-width: 480px) {
+		padding: 0 1rem;
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	}
+
+	@media (max-width: 390px) {
+		padding: 0 0.75rem;
+		grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	}
 `;
 
 const Modal = styled(motion.div)`
@@ -48,6 +93,28 @@ const Modal = styled(motion.div)`
 		max-height: 90vh;
 		border-radius: 10px;
 		object-fit: contain;
+
+		@media (max-width: 1024px) {
+			max-width: 92vw;
+			max-height: 88vh;
+		}
+
+		@media (max-width: 768px) {
+			max-width: 94vw;
+			max-height: 85vh;
+		}
+
+		@media (max-width: 480px) {
+			max-width: 96vw;
+			max-height: 80vh;
+			border-radius: 8px;
+		}
+
+		@media (max-width: 390px) {
+			max-width: 98vw;
+			max-height: 78vh;
+			border-radius: 6px;
+		}
 	}
 `;
 

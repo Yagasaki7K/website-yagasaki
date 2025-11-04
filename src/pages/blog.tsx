@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import HomeDetails from "@/components/HomeDetails";
 import formatDate from "@/utils/formatDate";
 import Navigation from "@/components/Navigation";
-import { PostProps } from "@/utils/PostProps";
+import { PostProps } from "@/types/PostProps";
 
 export async function getStaticProps() {
 	// Get files from the posts dir

@@ -8,7 +8,7 @@ import { game } from "../../content/game";
 import { book } from "../../content/book";
 import { useState } from "react";
 
-const AboutDetails = styled.div`
+const MediaDetails = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,61 @@ const AboutDetails = styled.div`
         font-weight: 600;
         color: var(--white);
         margin-bottom: 2rem;
+
+        @media (max-width: 1024px) {
+            font-size: 2rem;
+            margin-bottom: 1.75rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     p {
         margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--gray);
+
+        @media (max-width: 1024px) {
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
     }
 
     .buttons {
         margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            margin-top: 0.75rem;
+            gap: 0.5rem;
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
     }
 
     button {
@@ -39,11 +86,40 @@ const AboutDetails = styled.div`
         font-size: 1rem;
         color: var(--white);
         cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 0.95rem;
+            padding: 0.45rem 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+            padding: 0.4rem 0.7rem;
+        }
+
+        @media (max-width: 480px) {
+            width: 80%;
+            font-size: 0.85rem;
+            padding: 0.4rem 0.6rem;
+        }
     }
 
-    .anime, .movie, .game, .book {
+    .anime,
+    .movie,
+    .game,
+    .book {
         background: var(--white);
         color: var(--background);
+
+        &:hover {
+            filter: brightness(0.9);
+        }
     }
 
     tr {
@@ -52,20 +128,80 @@ const AboutDetails = styled.div`
         justify-content: space-between;
         border-bottom: 1px solid var(--gray-transparent);
         padding: 1rem 0 0rem 0;
+        width: 100%;
+        flex-wrap: wrap;
 
         td {
             font-family: "DM Mono";
             font-size: 0.9rem;
+            color: var(--white);
+
+            @media (max-width: 1024px) {
+                font-size: 0.85rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 0.8rem;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 0.75rem;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 0.25rem;
+            }
         }
+
+        @media (max-width: 1024px) {
+            max-width: 36rem;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 90%;
+            padding: 0.75rem 0;
+        }
+
+        @media (max-width: 480px) {
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        max-width: 42rem;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 38rem;
+    }
+
+    @media (max-width: 820px) {
+        max-width: 32rem;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 390px) {
+        padding: 0 0.75rem;
     }
 `;
 
-export default function AboutPage() {
+export default function MediaPage() {
 	const [tag, setTag] = useState("anime");
 	return (
 		<>
 			<Navigation />
-			<AboutDetails>
+			<MediaDetails>
 				<article>
 					<h1 className="title">Media Consumption</h1>
 					<p>
@@ -133,7 +269,7 @@ export default function AboutPage() {
 
 					<p>These are ones I enjoyed, not exhaustive. And not necessarily recommendations.</p>
 				</article>
-			</AboutDetails>
+			</MediaDetails>
 			<Footer />
 		</>
 	);

@@ -15,21 +15,122 @@ const UseDetails = styled.div`
         text-align: center;
         font-size: 3rem;
         line-height: 1rem;
+        color: var(--white);
+
+        @media (max-width: 1280px) {
+            font-size: 2.5rem;
+            margin-top: 3.5rem;
+            line-height: 1.2rem;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 2.25rem;
+            margin-top: 3rem;
+            margin-bottom: 1.75rem;
+        }
+
+        @media (max-width: 820px) {
+            font-size: 2rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.3rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2rem;
+        }
+
+        @media (max-width: 390px) {
+            font-size: 1.35rem;
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
     }
 
     li {
         margin-left: 1.25rem;
         margin-top: 0.25rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--gray);
+
+        @media (max-width: 1024px) {
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            margin-left: 0.75rem;
+            font-size: 0.85rem;
+        }
     }
 
     .subTitle {
         font-size: 1.25rem;
         line-height: 1.75rem;
         margin-top: 1rem;
+        color: var(--white);
+
+        @media (max-width: 1280px) {
+            font-size: 1.15rem;
+            line-height: 1.6rem;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.95rem;
+            line-height: 1.5rem;
+        }
     }
 
     s {
         color: var(--gray-risked);
+        font-size: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 390px) {
+        padding: 0 0.75rem;
     }
 `;
 
