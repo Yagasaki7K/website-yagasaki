@@ -103,6 +103,25 @@ const ArticleDetails = styled.div`
                 }
             }
 
+            .views {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .view-count {
+                    font-size: 1rem;
+                    color: var(--font);
+
+                    @media (max-width: 1024px) {
+                        font-size: 0.95rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
             .date {
                 p {
                     font-size: 1rem;

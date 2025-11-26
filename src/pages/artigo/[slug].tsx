@@ -2,8 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import { GetStaticPaths, GetStaticProps } from "next";
-import { useEffect, useState } from "react";
+import { GetServerSideProps } from "next";
 import ArticleDetails from "@/components/ArticleDetails";
 import calculateReadingTime from "@/utils/calculateReadingTime";
 import formatDate from "@/utils/formatDate";
@@ -12,119 +11,117 @@ import Head from "next/head";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { PostProps } from "@/types/PostProps";
+import { incrementArticleView } from "@/utils/redisClient";
 
-export const getStaticPaths: GetStaticPaths = async () => {
-	const files = fs.readdirSync(path.join("articles"));
+export const getServerSideProps: GetServerSideProps<PostProps> = async ({ params }) => {
+        const slug = params?.slug as string;
+        if (!slug) {
+                return { notFound: true };
+        }
 
-	const paths = files.map((filename) => {
-		const slug = filename.replace(".md", "");
-		return {
-			params: { slug },
-		};
-	});
+        const filePath = path.join("articles", `${slug}.md`);
+        if (!fs.existsSync(filePath)) {
+                return { notFound: true };
+        }
 
-	return {
-		paths,
-		fallback: false,
-	};
+        const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
+        const { data: frontmatter, content } = matter(markdownWithMeta);
+
+        if (!content) {
+                console.error(`Content not found for slug: ${slug}`);
+                return { notFound: true };
+        }
+
+        const renderedContent = marked(content);
+
+        let viewCount = 0;
+        try {
+                viewCount = await incrementArticleView(slug);
+        } catch (error) {
+                console.error("Failed to register article view", error);
+        }
+
+        return {
+                props: {
+                        frontmatter,
+                        slug,
+                        content: renderedContent || "",
+                        viewCount,
+                        date: frontmatter?.date ?? "",
+                        readingTime: calculateReadingTime(renderedContent || ""),
+                },
+        };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-	const slug = params?.slug as string;
-	if (!slug) {
-		return { notFound: true };
-	}
+export default function PostPage({ frontmatter, content = "", viewCount = 0 }: PostProps) {
+        if (!frontmatter || !frontmatter.title || !frontmatter.excerpt || !frontmatter.date || !frontmatter.image || !content) {
+                return <p>Conteúdo não disponível</p>;
+        }
 
-	const filePath = path.join("articles", `${slug}.md`);
-	const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
-	const { data: frontmatter, content } = matter(markdownWithMeta);
+        const formattedViews = new Intl.NumberFormat("pt-BR").format(viewCount ?? 0);
 
-	if (!content) {
-		console.error(`Content not found for slug: ${slug}`);
-		return { notFound: true };
-	}
+        return (
+                <>
+                        <NextSeo
+                                title={frontmatter.title || "Post"}
+                                description={frontmatter.excerpt || "Descrição indisponível"}
+                                canonical="https://campinasfighters.vercel.app"
+                                openGraph={{
+                                        url: `https://campinasfighters.vercel.app`,
+                                        title: frontmatter.title || "Post",
+                                        description: frontmatter.excerpt || "Descrição indisponível",
+                                        images: frontmatter.image
+                                                ? [
+                                                                {
+                                                                        url: frontmatter.image,
+                                                                        width: 460,
+                                                                        height: 460,
+                                                                        alt: frontmatter.title || "Imagem",
+                                                                        type: frontmatter.image.includes(".png") ? "image/png" : "image/jpeg",
+                                                                },
+                                                        ]
+                                                : [],
+                                        siteName: "Campinas Fighters | Associação Campineira de Formação ao Esporte",
+                                }}
+                                twitter={{
+                                        handle: "@",
+                                        site: "@campinas.fighters.team",
+                                        cardType: "summary_large_image",
+                                }}
+                        />
 
-	const renderedContent = marked(content);
-	return {
-		props: {
-			frontmatter,
-			slug,
-			content: renderedContent || "", // content sempre será uma string
-		},
-	};
-};
+                        <Head>
+                                <title>{frontmatter.title || "Campinas Fighters | Associação Campineira de Formação ao Esporte"}</title>
+                                <link rel="icon" type="image/png" href="/campinasfighters.png" />
+                        </Head>
 
-export default function PostPage({ frontmatter, content = "" }: PostProps) {
-	const [htmlContent, setHtmlContent] = useState<string>(content);
+                        <Navigation />
 
-	useEffect(() => {
-		setHtmlContent(content || ""); // Garantindo que `htmlContent` não seja `null`
-	}, [content]);
+                        <ArticleDetails>
+                                <div className="card card-page text">
+                                        <div className="title">
+                                                <h1 className="post-title">{frontmatter.title || "Título indisponível"}</h1>
+                                        </div>
 
-	// Verificação detalhada para `frontmatter`
-	if (!frontmatter || !frontmatter.title || !frontmatter.excerpt || !frontmatter.date || !frontmatter.image || !htmlContent) {
-		return <p>Conteúdo não disponível</p>;
-	}
-
-	return (
-		<>
-			<NextSeo
-				title={frontmatter.title || "Post"}
-				description={frontmatter.excerpt || "Descrição indisponível"}
-				canonical="https://campinasfighters.vercel.app"
-				openGraph={{
-					url: `https://campinasfighters.vercel.app`,
-					title: frontmatter.title || "Post",
-					description: frontmatter.excerpt || "Descrição indisponível",
-					images: frontmatter.image
-						? [
-								{
-									url: frontmatter.image,
-									width: 460,
-									height: 460,
-									alt: frontmatter.title || "Imagem",
-									type: frontmatter.image.includes(".png") ? "image/png" : "image/jpeg",
-								},
-							]
-						: [],
-					siteName: "Campinas Fighters | Associação Campineira de Formação ao Esporte",
-				}}
-				twitter={{
-					handle: "@",
-					site: "@campinas.fighters.team",
-					cardType: "summary_large_image",
-				}}
-			/>
-
-			<Head>
-				<title>{frontmatter.title || "Campinas Fighters | Associação Campineira de Formação ao Esporte"}</title>
-				<link rel="icon" type="image/png" href="/campinasfighters.png" />
-			</Head>
-
-			<Navigation />
-
-			<ArticleDetails>
-				<div className="card card-page text">
-					<div className="title">
-						<h1 className="post-title">{frontmatter.title || "Título indisponível"}</h1>
-					</div>
-
-					<div className="details">
-						<div className="date">
-							<p>
-								Publicado em <span>{formatDate(frontmatter.date)}</span>
-							</p>
-						</div>
-						<div className="tags">
-							<p className="minRead">Leitura de {calculateReadingTime(htmlContent)} minutos</p>
-						</div>
-					</div>
-					<div className="post-body">
-						<div dangerouslySetInnerHTML={{ __html: htmlContent ?? "" }} />
-					</div>
-				</div>
-			</ArticleDetails>
-			<Footer />
-		</>
-	);
+                                        <div className="details">
+                                                <div className="date">
+                                                        <p>
+                                                                Publicado em <span>{formatDate(frontmatter.date)}</span>
+                                                        </p>
+                                                </div>
+                                                <div className="tags">
+                                                        <p className="minRead">Leitura de {calculateReadingTime(content)} minutos</p>
+                                                </div>
+                                                <div className="views">
+                                                        <p className="view-count">{formattedViews} visualizações</p>
+                                                </div>
+                                        </div>
+                                        <div className="post-body">
+                                                <div dangerouslySetInnerHTML={{ __html: content ?? "" }} />
+                                        </div>
+                                </div>
+                        </ArticleDetails>
+                        <Footer />
+                </>
+        );
 }
