@@ -289,6 +289,10 @@ export default function AboutPage() {
 						<h2 className="subTitle">Certificates</h2>
 
 						<p className="certificate">
+							<strong className="text-gray-50">React</strong> by Gustavo Sales in Rocketseat - November 2025
+						</p>
+
+						<p className="certificate">
 							<strong className="text-gray-50">React Fundamentals</strong> by Gustavo Sales in Rocketseat - November 2025
 						</p>
 
