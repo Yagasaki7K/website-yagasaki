@@ -3,6 +3,7 @@ title: Como o Habbo Hotel foi construído nos anos 2000 sem Inteligência Artifi
 excerpt: 'No início dos anos 2000, enquanto a internet ainda engatinhava em termos de interatividade, surgiu um projeto que viraria referência mundial em jogos sociais online: o Habbo Hotel. Criado na Finlândia em 2000 pela Sulake, o Habbo se tornou um ícone dos MMOs sociais com seu estilo marcante em pixel art e ambientes virtuais que simulavam um hotel cheio de quartos, comunidades e interações entre usuários.'
 image: https://images.habbo.com/habbo-web/america/pt/assets/images/app_summary_image-1200x628.3bc8bbb2.png
 tags: ['Inteligência Artificial', 'Habbo Hotel', 'Curiosidade']
+authors: ['Igor Yagasaki']
 date: '2025-10-01'
 ---
 
