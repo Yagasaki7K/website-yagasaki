@@ -33,29 +33,28 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async ({ params
                 return { notFound: true };
         }
 
-        const frontmatter = frontmatterData as Partial<Frontmatter>;
-        const hasRequiredFrontmatterFields =
-                !!frontmatter.title &&
-                !!frontmatter.image &&
-                Array.isArray(frontmatter.authors) &&
-                Array.isArray(frontmatter.tags) &&
-                !!frontmatter.date &&
-                !!frontmatter.excerpt;
+	const frontmatter = frontmatterData as Partial<Frontmatter>;
+	const hasRequiredFrontmatterFields =
+			!!frontmatter.title &&
+			!!frontmatter.image &&
+			Array.isArray(frontmatter.tags) &&
+			!!frontmatter.date &&
+			!!frontmatter.excerpt;
 
-        if (!hasRequiredFrontmatterFields) {
-                console.error(`Invalid frontmatter for slug: ${slug}`);
-                return { notFound: true };
-        }
+	if (!hasRequiredFrontmatterFields) {
+		console.error(`Invalid frontmatter for slug: ${slug}`);
+		return { notFound: true };
+	}
 
-        const validatedFrontmatter: Frontmatter = {
-                slug: frontmatter.slug ?? slug,
-                title: frontmatter.title!,
-                image: frontmatter.image!,
-                authors: frontmatter.authors!,
-                tags: frontmatter.tags!,
-                date: frontmatter.date!,
-                excerpt: frontmatter.excerpt!,
-        };
+	const validatedFrontmatter: Frontmatter = {
+		slug: frontmatter.slug ?? slug,
+		title: frontmatter.title!,
+		image: frontmatter.image!,
+		authors: frontmatter.authors ?? [],
+		tags: frontmatter.tags!,
+		date: frontmatter.date!,
+		excerpt: frontmatter.excerpt!,
+	};
 
         const renderedContent = await marked(content);
 
