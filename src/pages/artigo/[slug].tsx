@@ -10,6 +10,7 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import { Frontmatter } from "@/types/Frontmatter";
 import { PostProps } from "@/types/PostProps";
 import { incrementArticleView } from "@/utils/redisClient";
 
@@ -25,14 +26,38 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async ({ params
         }
 
         const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
-        const { data: frontmatter, content } = matter(markdownWithMeta);
+        const { data: frontmatterData, content } = matter(markdownWithMeta);
 
         if (!content) {
                 console.error(`Content not found for slug: ${slug}`);
                 return { notFound: true };
         }
 
-        const renderedContent = marked(content);
+        const frontmatter = frontmatterData as Partial<Frontmatter>;
+        const hasRequiredFrontmatterFields =
+                !!frontmatter.title &&
+                !!frontmatter.image &&
+                Array.isArray(frontmatter.authors) &&
+                Array.isArray(frontmatter.tags) &&
+                !!frontmatter.date &&
+                !!frontmatter.excerpt;
+
+        if (!hasRequiredFrontmatterFields) {
+                console.error(`Invalid frontmatter for slug: ${slug}`);
+                return { notFound: true };
+        }
+
+        const validatedFrontmatter: Frontmatter = {
+                slug: frontmatter.slug ?? slug,
+                title: frontmatter.title!,
+                image: frontmatter.image!,
+                authors: frontmatter.authors!,
+                tags: frontmatter.tags!,
+                date: frontmatter.date!,
+                excerpt: frontmatter.excerpt!,
+        };
+
+        const renderedContent = await marked(content);
 
         let viewCount = 0;
         try {
@@ -43,11 +68,11 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async ({ params
 
         return {
                 props: {
-                        frontmatter,
+                        frontmatter: validatedFrontmatter,
                         slug,
                         content: renderedContent || "",
                         viewCount,
-                        date: frontmatter?.date ?? "",
+                        date: validatedFrontmatter.date ?? "",
                         readingTime: calculateReadingTime(renderedContent || ""),
                 },
         };
