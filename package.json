@@ -2,11 +2,11 @@
 	"name": "campinasfighters",
 	"version": "0.1.0",
 	"private": true,
-	"scripts": {
-		"dev": "next dev --turbopack",
-		"vercel": "next build",
-		"start": "next start",
-		"lint": "next lint",
+        "scripts": {
+                "dev": "bun run bun-ssr-server.ts",
+                "vercel": "next build",
+                "start": "NODE_ENV=production bun run bun-ssr-server.ts",
+                "lint": "next lint",
 		"create:mylint": "bunx --bun biome init && bun mylint",
 		"mylint": "bunx biome format --write",
 		"next:update": "bun add next@latest react@latest react-dom@latest eslint-config-next@latest",
