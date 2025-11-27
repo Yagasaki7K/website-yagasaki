@@ -110,36 +110,30 @@ const Navigation = () => {
 				<Link href="/">
 					<img src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" />
 				</Link>
-			</div>
+                        </div>
 
-			<div className="rightContent">
-				<Link href="/about">
-					<li>About</li>
-				</Link>
-				<Link href="/blog">
-					<li>Blog</li>
-				</Link>
-				<Link href="https://github.com/Yagasaki7K" target="_blank">
-					<li>Projects</li>
-				</Link>
-				<Link href="/photos">
-					<li>
-						<i className="uil uil-camera" />
-					</li>
-				</Link>
-				<Link href="https://x.com/yagasaki7k" target="_blank">
-					<li>
-						<i className="uil uil-twitter" />
-					</li>
-				</Link>
-				<Link href="https://github.com/yagasaki7k" target="_blank">
-					<li>
-						<i className="uil uil-github" />
-					</li>
-				</Link>
-				{/*<Link href="/#contato">
-					<li><i className="uil uil-rss"/></li>
-				</Link>*/}
+                        <div className="rightContent">
+                                <Link href="/about">
+                                        <li>About</li>
+                                </Link>
+                                <Link href="/blog">
+                                        <li>Blog</li>
+                                </Link>
+                                <Link href="https://github.com/Yagasaki7K" target="_blank">
+                                        <li>Projects</li>
+                                </Link>
+                                <Link href="/photos">
+                                        <li>Photos</li>
+                                </Link>
+                                <Link href="https://x.com/yagasaki7k" target="_blank">
+                                        <li>Twitter</li>
+                                </Link>
+                                <Link href="https://github.com/yagasaki7k" target="_blank">
+                                        <li>GitHub</li>
+                                </Link>
+                                {/*<Link href="/#contato">
+                                        <li><i className="uil uil-rss"/></li>
+                                </Link>*/}
 			</div>
 		</NavigationDetails>
 	);
