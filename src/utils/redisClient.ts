@@ -1,4 +1,6 @@
 const redisUrl = process.env.REDIS_URL ?? "redis://127.0.0.1:6379";
+const upstashUrl = process.env.UPSTASH_REDIS_REST_URL;
+const upstashToken = process.env.UPSTASH_REDIS_REST_TOKEN;
 
 let redisClient: any | null = null;
 let redisUnavailable = false;
@@ -10,9 +12,10 @@ function createRedisClient() {
 
         if (!redisClient) {
                 try {
-                        const redisConstructor = (Bun as any)?.Redis;
+                        const redisConstructor =
+                                typeof Bun !== "undefined" && (Bun as any)?.Redis ? (Bun as any).Redis : null;
                         if (!redisConstructor) {
-                                throw new Error("Bun Redis client not available");
+                                return null;
                         }
 
                         redisClient = new redisConstructor({ url: redisUrl });
@@ -41,32 +44,72 @@ async function readCounter(client: any, key: string): Promise<number> {
 }
 
 export async function incrementArticleView(slug: string): Promise<number> {
+        const key = `article:${slug}:views`;
         const client = createRedisClient();
         if (!client) {
-                return 0;
+                return incrementWithUpstash(key);
         }
 
         try {
-                const key = `article:${slug}:views`;
                 await client.incr(key);
-                return readCounter(client, key);
+                return await readCounter(client, key);
         } catch (error) {
                 console.error("Failed to increment article view count", error);
-                return 0;
+                return incrementWithUpstash(key);
         }
 }
 
 export async function getArticleViewCount(slug: string): Promise<number> {
+        const key = `article:${slug}:views`;
         const client = createRedisClient();
         if (!client) {
+                return fetchUpstashValue(key);
+        }
+
+        try {
+                return await readCounter(client, key);
+        } catch (error) {
+                console.error("Failed to fetch article view count", error);
+                return fetchUpstashValue(key);
+        }
+}
+
+async function incrementWithUpstash(key: string): Promise<number> {
+        if (!upstashUrl || !upstashToken) {
                 return 0;
         }
 
         try {
-                const key = `article:${slug}:views`;
-                return readCounter(client, key);
+                const response = await fetch(`${upstashUrl}/incr/${key}`, {
+                        headers: {
+                                Authorization: `Bearer ${upstashToken}`,
+                        },
+                });
+                const data = (await response.json()) as { result?: number | string };
+                const parsed = Number(data.result ?? 0);
+                return Number.isNaN(parsed) ? 0 : parsed;
         } catch (error) {
-                console.error("Failed to fetch article view count", error);
+                console.error("Failed to increment article view count via Upstash", error);
+                return 0;
+        }
+}
+
+async function fetchUpstashValue(key: string): Promise<number> {
+        if (!upstashUrl || !upstashToken) {
+                return 0;
+        }
+
+        try {
+                const response = await fetch(`${upstashUrl}/get/${key}`, {
+                        headers: {
+                                Authorization: `Bearer ${upstashToken}`,
+                        },
+                });
+                const data = (await response.json()) as { result?: number | string | null };
+                const parsed = Number(data.result ?? 0);
+                return Number.isNaN(parsed) ? 0 : parsed;
+        } catch (error) {
+                console.error("Failed to fetch article view count via Upstash", error);
                 return 0;
         }
 }
