@@ -12,6 +12,8 @@ const PER_FLAKE_DRIFT = 0.6;
 const OPACITY_MIN = 0.35;
 const OPACITY_MAX = 0.9;
 
+const FORCE_SNOW = process.env.NEXT_PUBLIC_FORCE_SNOW === "true";
+
 function prefersReducedMotion(): boolean {
         if (typeof window === "undefined") return false;
         return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -58,11 +60,17 @@ export default function SnowOverlay() {
 
                 const media = window.matchMedia("(prefers-reduced-motion: reduce)");
                 const updateEnabled = () => {
-                        const shouldEnable = !media.matches && isDecember;
+                        const reducedMotion = media.matches;
+                        const shouldEnable = (FORCE_SNOW || !reducedMotion) && isDecember;
                         setEnabled(shouldEnable);
                         console.log(
-                                `[SnowOverlay] Update enabled => reducedMotion=${media.matches}, isDecember=${isDecember}, enabled=${shouldEnable}`
+                                `[SnowOverlay] Update enabled => reducedMotion=${reducedMotion}, isDecember=${isDecember}, enabled=${shouldEnable}`
                         );
+                        if (!shouldEnable && reducedMotion && isDecember && !FORCE_SNOW) {
+                                console.info(
+                                        "[SnowOverlay] Overlay disabled to respect prefers-reduced-motion. Set NEXT_PUBLIC_FORCE_SNOW=true to override this behavior."
+                                );
+                        }
                 };
 
                 updateEnabled();
