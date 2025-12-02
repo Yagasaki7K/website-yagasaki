@@ -814,4 +814,9 @@ export const anime = [
 		author: "Asahi Production",
 		status: "Watching",
 	},
+	{
+		title: "Blade Runner: Black Out 2022",
+		author: "CygamesPictures",
+		status: "Completed",
+	},
 ];

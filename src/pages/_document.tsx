@@ -66,11 +66,11 @@ export default class MyDocument extends Document {
 						git, javascript, typescript, css, html, supabase, firebase, hasura, graphql, elysia, bun, node, whatsapp, api, openai, mysql, sqlite, mongodb, software, engineer, developer"
 					/>
 
-                                        <meta name="author" content="Anderson 'Yagasaki' Marlon" />
-                                        <meta name="robots" content="index, follow" />
-                                        <link rel="shortcut icon" href="https://github.com/Yagasaki7K.png" type="image/png" />
-                                        <meta property="og:locale" content="pt_BR" />
-                                </Head>
+					<meta name="author" content="Anderson 'Yagasaki' Marlon" />
+					<meta name="robots" content="index, follow" />
+					<link rel="shortcut icon" href="https://github.com/Yagasaki7K.png" type="image/png" />
+					<meta property="og:locale" content="pt_BR" />
+				</Head>
 
 				<body>
 					<Main />

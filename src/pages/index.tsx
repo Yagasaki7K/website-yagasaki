@@ -102,23 +102,23 @@ export default function Home() {
 							.
 						</p>
 						<p>I've lived in Campinas, in the interior of São Paulo state, Brazil, for some time now. If you're nearby, get in touch so we can grab a coffee or work together.</p>
-                                                <hr />
-                                                <p>Find me on</p>
-                                                <Link href="https://github.com/yagasaki7k" target="_blank">
-                                                        GitHub
-                                                </Link>
-                                                &nbsp;
-                                                <Link href="https://twitter.com/yagasaki7k" target="_blank">
-                                                        Twitter
-                                                </Link>
-                                                &nbsp;
-                                                <Link href="https://twitter.com/yagasaki7k" target="_blank">
-                                                        Discord Server
-                                                </Link>
-                                                &nbsp;
-                                                <Link href="https://instagram.com/cdnmv" target="_blank">
-                                                        Instagram
-                                                </Link>
+						<hr />
+						<p>Find me on</p>
+						<Link href="https://github.com/yagasaki7k" target="_blank">
+							GitHub
+						</Link>
+						&nbsp;
+						<Link href="https://twitter.com/yagasaki7k" target="_blank">
+							Twitter
+						</Link>
+						&nbsp;
+						<Link href="https://twitter.com/yagasaki7k" target="_blank">
+							Discord Server
+						</Link>
+						&nbsp;
+						<Link href="https://instagram.com/cdnmv" target="_blank">
+							Instagram
+						</Link>
 						<p>
 							Or mail me at <code>yagasakiwanderlust@proton.me</code>
 						</p>

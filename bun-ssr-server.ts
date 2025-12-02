@@ -10,10 +10,10 @@ const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-        createServer((req, res) => {
-                const parsedUrl = parse(req.url ?? "/", true);
-                void handle(req, res, parsedUrl);
-        }).listen(port, hostname, () => {
-                console.log(`Bun SSR server ready on http://${hostname}:${port}`);
-        });
+	createServer((req, res) => {
+		const parsedUrl = parse(req.url ?? "/", true);
+		void handle(req, res, parsedUrl);
+	}).listen(port, hostname, () => {
+		console.log(`Bun SSR server ready on http://${hostname}:${port}`);
+	});
 });
