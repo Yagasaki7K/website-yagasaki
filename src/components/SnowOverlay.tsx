@@ -32,12 +32,38 @@ export default function SnowOverlay() {
         const flakesRef = useRef<Flake[]>([]);
         const lastTsRef = useRef<number>(0);
         const [enabled, setEnabled] = useState(false);
+        const [isDecember, setIsDecember] = useState(false);
+
+        useEffect(() => {
+                if (typeof window === "undefined") return;
+
+                const checkMonth = () => {
+                        const now = new Date();
+                        const month = now.getMonth();
+                        const december = month === 11;
+                        setIsDecember(december);
+                        console.log(
+                                `[SnowOverlay] Month check => month=${month + 1}, december=${december}. Next check in 60 minutes.`
+                        );
+                };
+
+                checkMonth();
+                const interval = window.setInterval(checkMonth, 1000 * 60 * 60);
+
+                return () => window.clearInterval(interval);
+        }, []);
 
         useEffect(() => {
                 if (typeof window === "undefined") return;
 
                 const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-                const updateEnabled = () => setEnabled(!media.matches);
+                const updateEnabled = () => {
+                        const shouldEnable = !media.matches && isDecember;
+                        setEnabled(shouldEnable);
+                        console.log(
+                                `[SnowOverlay] Update enabled => reducedMotion=${media.matches}, isDecember=${isDecember}, enabled=${shouldEnable}`
+                        );
+                };
 
                 updateEnabled();
                 media.addEventListener("change", updateEnabled);
@@ -45,21 +71,30 @@ export default function SnowOverlay() {
                 return () => {
                         media.removeEventListener("change", updateEnabled);
                 };
-        }, []);
+        }, [isDecember]);
 
-	useEffect(() => {
-		if (!enabled) return;
+        useEffect(() => {
+                if (!enabled) {
+                        console.log("[SnowOverlay] Animation skipped because overlay is disabled.");
+                        return;
+                }
 
-		const canvas = canvasRef.current;
-		if (!canvas) return;
+                const canvas = canvasRef.current;
+                if (!canvas) {
+                        console.warn("[SnowOverlay] Canvas ref missing; snow overlay cannot start.");
+                        return;
+                }
 
-		const ctx = canvas.getContext("2d");
-		if (!ctx) return;
+                const ctx = canvas.getContext("2d");
+                if (!ctx) {
+                        console.warn("[SnowOverlay] 2D context unavailable; snow overlay cannot start.");
+                        return;
+                }
 
-		const resize = () => {
-			const dpr = window.devicePixelRatio || 1;
-			const width = window.innerWidth;
-			const height = window.innerHeight;
+                const resize = () => {
+                        const dpr = window.devicePixelRatio || 1;
+                        const width = window.innerWidth;
+                        const height = window.innerHeight;
 
 			canvas.width = Math.floor(width * dpr);
 			canvas.height = Math.floor(height * dpr);
@@ -88,12 +123,15 @@ export default function SnowOverlay() {
 
 		const init = () => {
 			resize();
-			flakesRef.current = Array.from({ length: FLAKES }, () => spawnFlake());
-			lastTsRef.current = performance.now();
-		};
+                        flakesRef.current = Array.from({ length: FLAKES }, () => spawnFlake());
+                        lastTsRef.current = performance.now();
+                        console.log(
+                                `[SnowOverlay] Initialized with ${flakesRef.current.length} flakes at ${canvas.width}x${canvas.height} (device pixels).`
+                        );
+                };
 
-		init();
-		window.addEventListener("resize", resize);
+                init();
+                window.addEventListener("resize", resize);
 
 		const globalWind = (tSec: number) => Math.sin(tSec * 0.12) * WIND_X + Math.sin((tSec + 7.13) * 0.04) * (WIND_X * 0.4);
 
@@ -134,13 +172,14 @@ export default function SnowOverlay() {
 			rafRef.current = requestAnimationFrame(step);
 		};
 
-		rafRef.current = requestAnimationFrame(step);
+                rafRef.current = requestAnimationFrame(step);
 
-		return () => {
-			window.removeEventListener("resize", resize);
-			if (rafRef.current) cancelAnimationFrame(rafRef.current);
-		};
-	}, [enabled]);
+                return () => {
+                        window.removeEventListener("resize", resize);
+                        if (rafRef.current) cancelAnimationFrame(rafRef.current);
+                        console.log("[SnowOverlay] Animation stopped and listeners removed.");
+                };
+        }, [enabled]);
 
 	if (!enabled) return null;
 
