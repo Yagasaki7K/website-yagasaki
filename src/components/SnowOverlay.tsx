@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 const FLAKES = 280;
 const MIN_SIZE = 1.2;
@@ -31,17 +32,28 @@ type Flake = {
 };
 
 export default function SnowOverlay() {
-	const canvasRef = useRef<HTMLCanvasElement | null>(null);
-	const rafRef = useRef<number | null>(null);
-	const flakesRef = useRef<Flake[]>([]);
-	const lastTsRef = useRef<number>(0);
-	const [enabled, setEnabled] = useState(false);
+        const canvasRef = useRef<HTMLCanvasElement | null>(null);
+        const rafRef = useRef<number | null>(null);
+        const flakesRef = useRef<Flake[]>([]);
+        const lastTsRef = useRef<number>(0);
+        const [enabled, setEnabled] = useState(false);
+        const router = useRouter();
 
-	useEffect(() => {
-		if (typeof window === "undefined") return;
-		const active = isHolidayWindow(new Date()) && !prefersReducedMotion();
-		setEnabled(active);
-	}, []);
+        useEffect(() => {
+                if (typeof window === "undefined") return;
+
+                const updateEnabled = () => {
+                        const active = isHolidayWindow(new Date()) && !prefersReducedMotion();
+                        setEnabled(active);
+                };
+
+                updateEnabled();
+                router.events.on("routeChangeComplete", updateEnabled);
+
+                return () => {
+                        router.events.off("routeChangeComplete", updateEnabled);
+                };
+        }, [router.events]);
 
 	useEffect(() => {
 		if (!enabled) return;
