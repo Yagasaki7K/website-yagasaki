@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
 
 const FLAKES = 280;
 const MIN_SIZE = 1.2;
@@ -13,13 +12,9 @@ const PER_FLAKE_DRIFT = 0.6;
 const OPACITY_MIN = 0.35;
 const OPACITY_MAX = 0.9;
 
-function isHolidayWindow(d: Date): boolean {
-        return d.getMonth() === 11;
-}
-
 function prefersReducedMotion(): boolean {
-	if (typeof window === "undefined") return false;
-	return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (typeof window === "undefined") return false;
+        return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
 type Flake = {
@@ -37,23 +32,20 @@ export default function SnowOverlay() {
         const flakesRef = useRef<Flake[]>([]);
         const lastTsRef = useRef<number>(0);
         const [enabled, setEnabled] = useState(false);
-        const router = useRouter();
 
         useEffect(() => {
                 if (typeof window === "undefined") return;
 
-                const updateEnabled = () => {
-                        const active = isHolidayWindow(new Date()) && !prefersReducedMotion();
-                        setEnabled(active);
-                };
+                const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+                const updateEnabled = () => setEnabled(!media.matches);
 
                 updateEnabled();
-                router.events.on("routeChangeComplete", updateEnabled);
+                media.addEventListener("change", updateEnabled);
 
                 return () => {
-                        router.events.off("routeChangeComplete", updateEnabled);
+                        media.removeEventListener("change", updateEnabled);
                 };
-        }, [router.events]);
+        }, []);
 
 	useEffect(() => {
 		if (!enabled) return;
