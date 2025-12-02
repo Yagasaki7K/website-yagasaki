@@ -13,9 +13,7 @@ const OPACITY_MIN = 0.35;
 const OPACITY_MAX = 0.9;
 
 function isHolidayWindow(d: Date): boolean {
-	const m = d.getMonth();
-	const day = d.getDate();
-	return (m === 11 && day >= 1) || (m === 0 && day <= 2);
+        return d.getMonth() === 11;
 }
 
 function prefersReducedMotion(): boolean {
