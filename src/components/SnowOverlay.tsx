@@ -35,6 +35,7 @@ export default function SnowOverlay() {
         const lastTsRef = useRef<number>(0);
         const [enabled, setEnabled] = useState(false);
         const [isDecember, setIsDecember] = useState(false);
+        const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
         useEffect(() => {
                 if (typeof window === "undefined") return;
@@ -61,14 +62,15 @@ export default function SnowOverlay() {
                 const media = window.matchMedia("(prefers-reduced-motion: reduce)");
                 const updateEnabled = () => {
                         const reducedMotion = media.matches;
-                        const shouldEnable = (FORCE_SNOW || !reducedMotion) && isDecember;
+                        const shouldEnable = FORCE_SNOW || isDecember;
+                        setPrefersReducedMotion(reducedMotion);
                         setEnabled(shouldEnable);
                         console.log(
                                 `[SnowOverlay] Update enabled => reducedMotion=${reducedMotion}, isDecember=${isDecember}, enabled=${shouldEnable}`
                         );
-                        if (!shouldEnable && reducedMotion && isDecember && !FORCE_SNOW) {
+                        if (reducedMotion && isDecember && !FORCE_SNOW) {
                                 console.info(
-                                        "[SnowOverlay] Overlay disabled to respect prefers-reduced-motion. Set NEXT_PUBLIC_FORCE_SNOW=true to override this behavior."
+                                        "[SnowOverlay] Reduced motion detected; using gentle snow animation. Set NEXT_PUBLIC_FORCE_SNOW=true to use full animation."
                                 );
                         }
                 };
@@ -129,9 +131,10 @@ export default function SnowOverlay() {
 			};
 		};
 
-		const init = () => {
-			resize();
-                        flakesRef.current = Array.from({ length: FLAKES }, () => spawnFlake());
+                const init = () => {
+                        resize();
+                        const flakeTarget = prefersReducedMotion && !FORCE_SNOW ? Math.floor(FLAKES * 0.35) : FLAKES;
+                        flakesRef.current = Array.from({ length: flakeTarget }, () => spawnFlake());
                         lastTsRef.current = performance.now();
                         console.log(
                                 `[SnowOverlay] Initialized with ${flakesRef.current.length} flakes at ${canvas.width}x${canvas.height} (device pixels).`
@@ -150,12 +153,13 @@ export default function SnowOverlay() {
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 			const tSec = ts / 1000;
-			const wind = globalWind(tSec);
+                        const wind = (prefersReducedMotion && !FORCE_SNOW ? 0.35 : 1) * globalWind(tSec);
 
-			for (let i = 0; i < flakesRef.current.length; i++) {
-				const f = flakesRef.current[i];
-				f.y += f.speed * dt;
-				f.x += (wind + f.drift) * dt;
+                        for (let i = 0; i < flakesRef.current.length; i++) {
+                                const f = flakesRef.current[i];
+                                const speedScale = prefersReducedMotion && !FORCE_SNOW ? 0.35 : 1;
+                                f.y += f.speed * dt * speedScale;
+                                f.x += (wind + f.drift) * dt * speedScale;
 
 				if (f.y - f.r > window.innerHeight) {
 					flakesRef.current[i] = spawnFlake(false);
@@ -187,7 +191,7 @@ export default function SnowOverlay() {
                         if (rafRef.current) cancelAnimationFrame(rafRef.current);
                         console.log("[SnowOverlay] Animation stopped and listeners removed.");
                 };
-        }, [enabled]);
+        }, [enabled, prefersReducedMotion]);
 
 	if (!enabled) return null;
 
