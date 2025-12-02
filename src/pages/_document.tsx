@@ -1,17 +1,22 @@
 import { ServerStyleSheet } from "styled-components";
-import Document from "next/document";
-import Html from "next/document"
-import Head from 'next/document'
-import Main from 'next/document'
-import NextScript from 'next/document'
+import Document, {
+        type DocumentContext,
+        type DocumentInitialProps,
+        Head,
+        Html,
+        Main,
+        NextScript,
+} from "next/document";
 
 import { NextSeo } from "next-seo";
 
 export default class MyDocument extends Document {
-	// Fast refresh with NextJS doesn't broken the CSS
-	static async getInitialProps(ctx: any) {
-		const sheet = new ServerStyleSheet();
-		const originalRenderPage = ctx.renderPage;
+        // Fast refresh with NextJS doesn't broken the CSS
+        static async getInitialProps(
+                ctx: DocumentContext,
+        ): Promise<DocumentInitialProps> {
+                const sheet = new ServerStyleSheet();
+                const originalRenderPage = ctx.renderPage;
 
 		try {
 			ctx.renderPage = () =>
