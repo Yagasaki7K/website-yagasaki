@@ -1,9 +1,9 @@
 ---
 title: Conheça o meu bun/yarn commit e facilite a sua vida
-excerpt: 'Uma maneira de atualizar, buildar e subir os commits de maneira simples, direta e sem complicações.'
+excerpt: "Uma maneira de atualizar, buildar e subir os commits de maneira simples, direta e sem complicações."
 image: https://images.unsplash.com/photo-1629654291663-b91ad427698f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Script', 'Desenvolvimento', 'Programação']
-date: '2024-04-16'
+tags: ["Script", "Desenvolvimento", "Programação"]
+date: "2024-04-16"
 ---
 
 ![](https://images.unsplash.com/photo-1629654291663-b91ad427698f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "Gabriel Heinzer")
@@ -16,12 +16,12 @@ Então segue a ideia comigo.
 
 ```json
 "scripts": {
-    "commit": "bun update && 
-    bun run vercel && 
-    read -p 'Descriptions Commit: ' message && 
-    git add . && 
-    echo -n \"$message - \" && 
-    node getTime.js | xargs -I {} git commit -m \"$message - {}\" && 
+    "commit": "bun update &&
+    bun run vercel &&
+    read -p 'Descriptions Commit: ' message &&
+    git add . &&
+    echo -n \"$message - \" &&
+    node getTime.js | xargs -I {} git commit -m \"$message - {}\" &&
     git push"
 },
 
@@ -35,10 +35,10 @@ responsável por colocar cada dependência que o desenvolvedor vai usar. E por i
 
 Nele, adicionamos na aba scripts, o comando "commit", que toda vez que a gente der `yarn commit`, `npm commit` ou `bun commit`, ele será acionado. Mas
 o que ele faz? Primeiramente, ele irá verificar - no nosso caso do bun - se existe atualizações de dependências. Se tiver, ele irá executar o `bun update` e
-irá atualizar tudo para a gente, deixando redondinho. 
+irá atualizar tudo para a gente, deixando redondinho.
 
 Após isso, ele irá rodar o `bun run vercel`, que no meu caso específico para o bun, ele irá rodar `"vercel": "next build"`, que é o `build` da aplicação
-em Next que estou desenvolvendo, então adapte-se ao que for melhor para você, existem casos que só o `yarn build`, `npm build` ou `bun build`,  irá resolver.
+em Next que estou desenvolvendo, então adapte-se ao que for melhor para você, existem casos que só o `yarn build`, `npm build` ou `bun build`, irá resolver.
 
 Depois que ele rodar os dois e der tudo certo, ele vai simplesmente pedir para escrever a mensagem que eu quero em seguida, no caso, deixei detalhado que era
 a descrição do commit para eu não me perder caso eu estivesse distraído, no meu caso, posso colocar como exemplo, `Added: Slug Page`.
@@ -64,10 +64,10 @@ dependências queremos atualizar ou se será todas, dando o seguinte comando: `y
 
 ```json
 "scripts": {
-    "commit": "yarn upgrade-interactive --latest && 
+    "commit": "yarn upgrade-interactive --latest &&
     yarn build && read -p 'Descriptions Commit: ' message &&
     git add . &&
-    echo -n \"$message - \" && 
+    echo -n \"$message - \" &&
     node getTime.js | xargs -I {} git commit -m \"$message - {}\" &&
      git push"
 },
@@ -79,15 +79,15 @@ dependências queremos atualizar ou se será todas, dando o seguinte comando: `y
 "scripts": {
     "commit": "npm update &&
     npm build &&
-    read -p 'Descriptions Commit: ' message && 
+    read -p 'Descriptions Commit: ' message &&
     git add . &&
-    echo -n \"$message - \" && 
-    node getTime.js | xargs -I {} git commit -m \"$message - {}\" && 
+    echo -n \"$message - \" &&
+    node getTime.js | xargs -I {} git commit -m \"$message - {}\" &&
     git push"
 },
 
 // package.json via NPM
 ```
 
-O que achou da ideia? Tem alguma sugestão para deixar esse script melhor ou até mesmo mais sofisticado? Se inventou alguma nova artimanha, 
+O que achou da ideia? Tem alguma sugestão para deixar esse script melhor ou até mesmo mais sofisticado? Se inventou alguma nova artimanha,
 ou até mesmo está com dúvida, deixe seu grito lá no [Twitter/X](https://twitter.com/Yagasaki7k) e a gente evolui juntos!

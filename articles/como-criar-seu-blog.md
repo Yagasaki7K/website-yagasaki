@@ -2,9 +2,8 @@
 title: "Como criar um blog usando Github Pages + Obsidian + Quartz"
 excerpt: "Aprenda a criar um blog simples usando três tecnologias"
 image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['Github Pages', 'Obsidian', 'Quartz', 'Tutorial', 'Iniciante']
-date: '2024-03-29'
-
+tags: ["Github Pages", "Obsidian", "Quartz", "Tutorial", "Iniciante"]
+date: "2024-03-29"
 ---
 
 ![Glenn Carstens-Peters](https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -29,11 +28,12 @@ O Obsidian é um aplicativo de anotação, o segredo é que ele gera os arquivo 
 os próprios arquivos .md/.mdx ou usar o Notion, mas isso é outro tutorial.1
 
 **Site oficial:** https://obsidian.md/
+
 ### Quartz
 
 O Quartz é um gerador de site estáticos, o pulo do gato é que ele será encarregado de pegar nosso arquivos de anotações gerado em Markdown pelo nosso Obsidian e converterá em HTML, só que ele não faz apenas isso. Ele é customizável e adiciona algumas funcionalidade ao nosso blog como grade de laytout, menus, barra de busca, tema escuro e claro, além de outras customizações que você pode estar fazendo. Se preferir de uma olhada na documentação para mais detalhes e não se esqueça de dar uma estrelinha no repositório do projeto.
 
-**Documentação:** https://quartz.jzhao.xyz/  -  **Github:** https://github.com/jackyzha0/quartz
+**Documentação:** https://quartz.jzhao.xyz/ - **Github:** https://github.com/jackyzha0/quartz
 
 # Fluxo de Postagem
 
@@ -73,23 +73,24 @@ git clone https://github.com/[seu_usuário]/[seu_repositório]
 
 4 - No terminal e acessando a pasta do projeto, instale as dependências e rode a aplicação para ver se está tudo rodando normalmente.
 
-````
+```
 npm install
 npx quartz build --serve
-````
+```
+
 Após o último comando se tudo estiver rodando perfeitamente, ele estará na porta 8080
 
 http://localhost:8080/
 
-Agora que nosso blog está rodando, vamos pular para a configuração do Obsidian, depois voltamos para nosso editor e faremos algumas alterações em nosso projeto. Pois como você pode ver, não há conteúdo na pasta  **/content** do nosso repositório e ao tentar cessr receberemos um 404 - Page Not Found.
+Agora que nosso blog está rodando, vamos pular para a configuração do Obsidian, depois voltamos para nosso editor e faremos algumas alterações em nosso projeto. Pois como você pode ver, não há conteúdo na pasta **/content** do nosso repositório e ao tentar cessr receberemos um 404 - Page Not Found.
 
 # Configurando o Obsidian
 
-Estou imaginando que você já fez a instalação do Obsidian, se não fez, instale e o configure, não vou me ater a formatação e usabilidade da ferramenta pois já tem bastante conteúdo na internet sobre isso, nosso ponto principal aqui é a criação de um novo cofre. 
+Estou imaginando que você já fez a instalação do Obsidian, se não fez, instale e o configure, não vou me ater a formatação e usabilidade da ferramenta pois já tem bastante conteúdo na internet sobre isso, nosso ponto principal aqui é a criação de um novo cofre.
 
 1- Abra o Obsidian e selecione opção para criar um novo cofre, o qual dedicaremos apenas ao blog.
 
-2 - Após clicar nessa opção, navegue até pasta de nosso projeto/repositório git que fizemos o clone e pelo Obisian selecione a pasta **content**, isso fará que tudo que criarmos agora em nosso Obsidian será salvo na pasta do nosso projeto onde o Quartz buscará o conteúdo para gerar nosso blog. 
+2 - Após clicar nessa opção, navegue até pasta de nosso projeto/repositório git que fizemos o clone e pelo Obisian selecione a pasta **content**, isso fará que tudo que criarmos agora em nosso Obsidian será salvo na pasta do nosso projeto onde o Quartz buscará o conteúdo para gerar nosso blog.
 
 Claro que não precisamos usar o Obsidian exclusivamente para fazer edições de markdown, mas estamos optando por ser uma boa interface gráfica para fazer a edição, e claro, se você já tem o costume de usar no seu cotidiano, fica mais fácil.
 
@@ -97,7 +98,7 @@ Claro que não precisamos usar o Obsidian exclusivamente para fazer edições de
 
 4- Após ter criando alguns arquivos volte para seu editor de código e verifique a pasta **content**, deve aparecer os arquivos de configuração do Obsidian e os arquivos que você criou.
 
-5 - Agora que os arquivos estão sendo salvos no lugar adequado, vamos conferir o resultado em nosso navegador, recarregue página e veja que nosso blog já está funcionando. Para teste crie novos pasta/arquivos/conteúdo e veja a mágica acontecer. 
+5 - Agora que os arquivos estão sendo salvos no lugar adequado, vamos conferir o resultado em nosso navegador, recarregue página e veja que nosso blog já está funcionando. Para teste crie novos pasta/arquivos/conteúdo e veja a mágica acontecer.
 
 # Removendo arquivos do projeto
 
@@ -134,50 +135,50 @@ Quartz: https://quartz.jzhao.xyz/hosting
 
 ```yml
 name: Deploy Quartz Site to GitHub Pages
- 
+
 on:
-  push:
-    branches:
-      - main
- 
+    push:
+        branches:
+            - main
+
 permissions:
-  contents: read
-  pages: write
-  id-token: write
- 
+    contents: read
+    pages: write
+    id-token: write
+
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
- 
+    group: "pages"
+    cancel-in-progress: false
+
 jobs:
-  build:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Fetch all history for git info
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.14
-      - name: Install Dependencies
-        run: npm ci
-      - name: Build Quartz
-        run: npx quartz build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: public
- 
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+    build:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0 # Fetch all history for git info
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 18.14
+            - name: Install Dependencies
+              run: npm ci
+            - name: Build Quartz
+              run: npx quartz build
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
+              with:
+                  path: public
+
+    deploy:
+        needs: build
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
 ```
 
 5 - Depois do passo anterior faça o commit das alterações realizadas e envie para o Github
@@ -201,7 +202,7 @@ git push origin main
 
 8 - Para corrigir isso vamos definir a branch **main** como nossa branch principal. Na opção **Default branch** escolha a **main**, selecionando a opção **switch to another branch**
 
-9 - Depois de criada e definida como principal a branch main, você deve ir na aba **Settings** e selecionar a seção 
+9 - Depois de criada e definida como principal a branch main, você deve ir na aba **Settings** e selecionar a seção
 **Environments** haverá uma já criada, exclua ela para que possamos criar outra, pois a atual está configurada para a branch antiga a **v4**.
 
 10 - Agora que não há nenhum ambiente configurado clique em **New environment**
@@ -220,7 +221,7 @@ clique no botão **No restriction** e depois selecione **Selected branchs and ta
 
 Parabéns seu blog foi publicado!
 
-Para acessar, clique no link mostrado no card do deploy, agora é só seguir o fluxo de alteração e ir publicando em seu blog. Para saber como personalizar seu blog de uma olhada na documentação do Quartz. 
+Para acessar, clique no link mostrado no card do deploy, agora é só seguir o fluxo de alteração e ir publicando em seu blog. Para saber como personalizar seu blog de uma olhada na documentação do Quartz.
 
 # Referências
 

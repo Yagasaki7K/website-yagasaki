@@ -2,8 +2,8 @@
 title: Kombat Taekwondo Referee Siminar Brazil, Seminário de Desenvolvimento de Árbitros
 excerpt: A nova metodologia para criar alguém de referência no Taekwondo.
 image: "https://images.unsplash.com/photo-1598518619776-eae3f8a34eac?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['Out of Context', 'Taekwondo']
-date: '2024-01-20'
+tags: ["Out of Context", "Taekwondo"]
+date: "2024-01-20"
 ---
 
 ![Sam Moghadam Khamseh](https://images.unsplash.com/photo-1598518619776-eae3f8a34eac?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -13,6 +13,7 @@ Isso não é um artigo sobre desenvolvimento ou tecnologia.
 --
 
 # Kombat Taekwondo Referee Siminar Brazil - Seminário de Desenvolvimento de Árbitros
+
 Liga Maior e Menor - 20 de Janeiro de 2024 / World's Premier Professional Taekwondo League
 
 A metodologia do Kombat Taekwondo é criar alguém de referência no Taekwondo. Quando se menciona
@@ -64,21 +65,23 @@ Seguir os critérios de julgamento para avaliar os dois competidores por meio de
 eficazes de luta e fazer sua própria avaliação independente de cada competidor.
 
 ## Níveis da Carreira do Árbitro
-**Nível 1 - Junior** / 
+
+**Nível 1 - Junior** /
 Minimo para graduação para Associado - 3 anos e minimo de 3 eventos
 
-**Nível 2 - Associado** / 
+**Nível 2 - Associado** /
 Se tiver envolvimento como arbitro em eventos nacionalmente.
 Minimo para graduação para Profissional - 5 anos e minimo de 5 eventos
 
-**Nível 3 - Profissional** / 
+**Nível 3 - Profissional** /
 Se tiver envolvimento como arbitro em eventos mundiais ou de suma importância.
 Minimo para graduação para Delegado Técnico - 10 anos e minimo de 10 eventos
 
-**Nível 4 - Delegado Técnico** / 
+**Nível 4 - Delegado Técnico** /
 Se tiver envolvimento como arbitro em eventos olimpicos ou de suma importância.
 
 ## Plano de Educação e Certificação
+
 O treinamento contínuo será oferecido pessoalmente e/ou online. Todos os workshops e seminários de
 educação não têm curso algum para os árbitros.
 
@@ -90,11 +93,13 @@ Nenhum treinamento ou certificação será necessário QUALQUER PAGAMENTO pela o
 Haverá testes de conhecimento posteriormente para análise anual de árbitros.
 
 ## Vantagens para os árbitros
+
 - Participação na divisão da receita do evento, oferecendo incentivos financeiros por sua dedicação e contribuições.
 - Cobertura de despesas relacionadas a viagens, garantindo que seu serviço como árbitro seja apoiado e acessível.
 - Acesso a sessões de treinamento e seminário gratuitos, facilitando o desenvolvimento profissional contínuo e o aprimoramento de habilidades.
 
 ## Plano de Remuneração do Árbitro Liga Profissional
+
 Level 1 - Junior - $150 por evento
 Level 2 - Associado - $300 por evento
 Level 3 - Profissional - $800 por evento
@@ -121,16 +126,19 @@ Os oficiais de arbitragem deve usar vestuário aprovado
 Tênis preto, calça preta (não pode jeans), cinto preto, camisa polo do Kombat Taekwondo (Oficial)
 
 ## Juízes Liga Minor
+
 - Será implementado um minimo de dois sistemas de juízes (três no máximo). No caso de ser utilizado um sistema de dois juízes, o árbitro central deve tomar a sua decisão para desempatar.
 - Os juízes seguirão os "Critérios de Julgamento" para avaliar ambos os competidores através de estratégias de luta e eficazes e escolher um vencedor.
 - Os juízes estarão posicionados em vários locais à volta da área de combate e tomarão a sua própria decisão independente sobre cada competidor.
 
 ## Juízes Liga Major
+
 - Será implementado um sistema mínimo de dois juízes (máximo de três). No caso de ser utilizado um sistema de dois júzises, o árbitro central tomará a sua decisão para desempatar.
 - Os juízes seguirão os "Critérios de Julgamento" para avaliar ambos os competidores através de estratégias de luta e eficazes e preencherão o Cartão de Pontuação e Julgamento.
 - Os juízes estarão posicionados em vários locais à volta da área de combate e tomarão a sua própria decisão independente sobre cada competidor.
 
 ## Equipamentos
+
 O organizador é responsável por fornecer os suprimentos instruídos pela Comissão de Eventos do Kombat. Os competidores são responsáveis por suas próprias bandagens para mãos, tornozelos e pés e pelo uso de protetores de espuma. A equipe médica do evento e o(s) árbitro(s) designados(s) inspecionarão cada competidor antes de entrar no área de competição.
 
 O que é itens obrigatórios? Luvas de mão e pé oficiais do evento, protetor genital (não é obrigatório no feminino), protetor bocal, protetor feminino (ou top como no UFC), protetor de braço e perna sem velcro (Espuma ou EVA). Os doboks não possuem restrições de cores de gola. Podendo lutar de camiseta, faixa e calça do dobok, não sendo obrigatório a parte de cima. O uso de protetor é obrigatório independente da vestimenta usada pelo atleta.
@@ -138,6 +146,7 @@ O que é itens obrigatórios? Luvas de mão e pé oficiais do evento, protetor g
 Já na Minor League, a luva é fechada, o uso do capacete (15-17 e 8-14 anos), qualquer modelo de capacete usado no Taekwondo pode ser utilizado, sem restrições e protetor de tórax são obrigatórios.
 
 ## Vestuário
+
 - Os competidores são obrigados a usar trajes oficiais aprovados pelo COmité de Eventos do Kombat Taekwondo. Durante o combate, os competidores só podem usar uniformes de Taekwondo brancos ou pretos com faixas. Além disso, calças de Taekwondo brancas ou pretas com t-shirts da escola/equipe com faixas.
 - Sapatos ou qualquer outro tipo de calçado, com exceção de palmilhas aprovadas pelo Kombat Taekwondo, não podem ser usados durante a competição.
 - Os treinadores e outros acompanhantes podem usar pólos com calças desportivas ou fatos de treino da equipe. Fatos de treino ou trajes casuais de negócios também são opcionais. NÃO são permitidas calças de ganga ou sandálias/sapatos abertos.
@@ -151,12 +160,15 @@ Já na Minor League, a luva é fechada, o uso do capacete (15-17 e 8-14 anos), q
 - Os árbitros avaliarão se o cabelo do competidor representa alguma ameaça à sua segurança ou à do adversário.
 
 ## Divisão de Peso na Major League
+
 Feminino
+
 - -49Kg / 49.1 - 57kg
 - 57.1 - 67Kg
 - +67Kg
 
 Masculino
+
 - -54Kg
 - 54.1Kg - 58kg
 - 58.1 - 63kg
@@ -192,65 +204,80 @@ a realização do evento.
 - O combate individual tem duração de três mininos na Liga Maior, na categoria Cadete e Junior na Liga Menor.
 - Na Liga Menor as categorias Infantil e Mirim terá duração de dois minutos.
 - Não existe intervalo de rounds e caso o lutador vá ao chão, serão permitido dez segundos para se levantar e continuar a luta em pé.
-  
+
 Sistema de competição: Eliminatória Simples
 
 ## Área de ataque permitida na Liga Maior
 
 Técnicas de mãos e chutes
+
 - Toda a cabeça acima do queixo para técnicas de chute.
 - Face frontal e ambos os lados da cabeça para técnicas de mão/cotovelo.
 - Todo o corpo, exceto a área da coluna vertebral acima da linha da cintura, para ambas as técnicas.
-  
+
 Projeções
+
 - Entre o osso do tornozelo e o joelho (frontal, lateral ou posterior)
 
 ## Área de ataque permitida na Liga Menor
 
 Técnicas de mãos e chutes
+
 - Toda a cabeça acima do queixo, exceto a parte de trás da cabeça.
-  
+
 Projeções
+
 - Entre o osso do tornozelo e o joelho (frontal, lateral ou posterior)
 
 ## Técnicas Válidas na Liga Menor
+
 **Mão e Braço**
+
 - Soco de punho fechado, punho de martelo e punho de costas. Não é permitido golpear com o cotovelo.
 
 **Perna**
+
 - Quaisquer técnicas de chute na zona permitida acima da cintura
 - Golpe de joelho sem segurar ou agarrar
 
 **Projeções**
+
 - As técnicas de derrubada devem ser aplicadas segurando ou agarrando a parte superior do corpo e quando o adversário não tiver a dar pontapés/chutes.
 - Aplicar as técnicas de derrubada ao agarrar dentro de 3 segundos.
 
 **Luta no Solo**
+
 - NÃO É PERMITIDO!
 
 ### Técnicas de Perna (Chutes) na Liga Menor
+
 - Junior (15 - 17 anos) - Tórax (Full Contact) - Cabeça (Full Contact)
 - Cadete (12 - 14 anos) - Tórax (Full Contact) - Cabeça (Light Contact)
 - Infantil (10 - 11 anos) - Tórax (Full Contact) - Cabeça (Light Contact)
 - Mirim (8 - 9 anos) - Tórax (Full Contact) - Cabeça (Light Contact)
 
 #### Definição de Contato Light
+
 - O contato ligeiro da mão e do pé com a cabeça.
 - Não há som no momento do contato.
 - A cabeça não se move, não existe potência.
 - Não há sangue ou marcas na cabeça.
 
 ## Técnicas Válidas na Liga Maior
+
 #### Mão e Braço
+
 - Soco de punho fechado, gancho, corte superior, punho de martelo e punho de costas.
 - Golpes de mão aberta, como golpes de faca e de mão de Ridge.
 - Golpes de cotovelo sem agarrar ou segurar o oponente em uma posição ereta.
 
 #### Perna
+
 - Quaisquer técnicas de chute na zona permitida acima da cintura
 - Golpe de joelho em pé, sem segurar ou agarrar qualquer parte do corpo ou da cabeça.
 
 #### Projeções
+
 - Rasteiras e raspagem são permitidos somente na faixa de aproximadamente 12 polegadas da parte inferior do calcanhar entre o osso do tornozelo e o joelho. É necessário segurar o oponente para essa técnica.
 - As técnicas de derrubada devem ser aplicadas segurando ou agarrando a parte superior do corpo e quando o oponente não estiver chutando.
 - Aplique as técnicas de derrubada ao agarrar (clinching) dentro de três segundos.
@@ -258,6 +285,7 @@ Projeções
 - NÃO é permitido o chute direto abaixo do joelho para tentar a raspagem.
 
 #### Luta no Solo
+
 - Qualquer parte do corpo toca o chão, exceto o pé.
 - O competidor SÓ pode usar socos no rosto e no corpo sem segurar ou agarrar.
 - NÃO é permitido nenhum tipo de técnica de chute, exceto o "caído", em que o competidor em uma posição inferior pode chutar ou bloquear o opoennte. NÃO são permitidos chutes abaixo da cintura ou diretamente na frente do rosto.
@@ -265,19 +293,23 @@ Projeções
 - **Não é permitido sentar ou montar em cima do competidor no solo**
 
 ## Penalidades (15)
+
 #### Mãos e Braço - Prohibited Hand Techniques (4)
+
 - Sufocamento ou qualquer golpe com a mão no pescoço ou na parte de trás da coluna vertebral.
 - Agarrar ou segurar o pescoço/cabeça/perna para realizar qualquer tipo de ataque.
 - Nenhum dedo em orifícios ou qualquer manipulação de articulação por meio de técnica de luta.
 - **NÃO é permitido golpear com o cotovelo ou qualquer outra técnica de mão que não seja um soco direto quando o competidor estiver caído no chão, e o competidor caído NÃO pode chutar o atacante diretamente no rosto ou abaixo da cintura**
 
 #### Chutes ou Perna (4)
+
 - Chutar abaixo da linha da cintura, exceto em técnicas de derrubada.
 - Bloqueio de joelho ou bloqueio intencional de chutes com qualquer parte da perna.
 - Chute na parte de trás da coluna vertebral.
 - Chutar ou pisotear o competidor que está no chão.
 
 ### Evitando uso de técnicas inseguras ou de má conduta
+
 - Regra dos 5 segundos: Se os competidores não estiverem lutando dentro de 5 segundos, o árbitro comandará verbalmente e em inglês "Fight", como advertência. Se a luta continuar sem nenhuma ação de um ou de ambos os competidores, será aplicada uma penalidade por "Evitar a luta".
 - Quando o competidor não demonstrar vontade de lutar, agarrando, segurando ou fugindo.
 - Dar cabeçadas, arrancar os olhos, fisgar peixes ou atacar os ombros.
@@ -288,6 +320,7 @@ Projeções
 - Fora da área de luta: Quando AMBOS os pés estão fora. Se o competidor for empurrado para fora com a mão, o peito ou o ombro, o outro competidor será penalizado.
 
 ### Advertências verbais, penalidades oficiais e lesões resultantes de uma penalidade.
+
 - O Árbitro Central tem autoridade para emitir advertências verbais, penalidades ou desqualificar um competidor por faltas cometidas durante a luta. As advertências serão emitidas sem interromper a ação da luta em andamento.
 - A execução deliberada de qualquer técnica proibida resultará em uma penalidade imediata. Para emitir uma penalidade oficial, o árbitro separará os lutadores e se comunicará diretamente com o atleta que está sendo advertido.
 - A execução não intencional de golpes de mão e chutes proibidos receberá uma advertência verbal imediata.
@@ -295,62 +328,74 @@ Projeções
 - Se um competidor sofrer uma lesão resultante de uma falta, se o competidor lesionado não puder continuar após consultar a equipe médica do evento, o competidor lesionado vencerá de acordo com as regras, regulamentos e políticas do Presidente da Comissão do Evento de Kombat Taekwondo.
 - Se um competidor sofre uma lesão provocada por um nocaute na cabeça, não poderá competir até receber autorização do médico, após sessenta (60) dias.
 
-
 ## A vitória pode ser alcançada por
+
 ### Nocaute
+
 - Nocaute por meio de ataques legais, como socos, chutes, joelhadas, cotoveladas ou quedas em que o competidor NÃO CONSEGUE CONTINUAR a luta devido aos golpes de alto impacto.
 - Nocaute duplo: Quando ambos os competidores forem nocauteados por ataques legais ao mesmo tempo e não conseguirem se levantar quando as 10 contagens terminarem, o vencedor da partida será determinado pelo cartão de pontuação do juiz antes do nocaute duplo.
-  
+
 ### Nocaute Técnico
+
 - Devido à interrupção do árbitro ou do médico. Por exemplo, quando um competidor não puder se defender devido à inferioridade técnica, uma lesão que comprometa seu bem-estar físico.
 - Solicitação de retirada do técnico ou do competidor.
 
 #### Knockdowns
+
 - Knockdown no chão devido a técnicas legais de chutes e mãos de alto impacto.
 - O árbitro central começará a "cantar" 10 contagens (1 a 10) quando o competidor estiver no chão. O competidor caído deve tentar se levantar em 10 segundos.
 - As quedas causadas por qualquer técnica de derrubada (raspagens, golpes, arremessos), empurrões, desequilíbrio ou escorregões NÃO são consideradas knockdowns. O árbitro central iniciará a contagem "verbal" de 10 para lembrar o competidor caído de se levantar.
 - Quando um competidor sofrer 3 knockdowns durante a luta, ele irá perder por nocaute técnico.
 
 ### Desqualificação
+
 - O competidor que cometer reptidamente ações ilegais "intencionais" receberá uma penalidade oficiail. Após receber seis (6) penalidades, o competidor será desqualificado da luta, o total de penalidade válidas são apenas de cinco.
 - Manipular o equipamento de proteção para obter vantagem ou causar lesões no adversário.
 - Derrubar um oponente por meio de ataques ilegais de qualquer tipo.
 
 ### Decisão dos Juízes
+
 #### Decisão Unânime
+
 - Quando os três juízes selecionam o mesmo competidor como vencedor do combate.
-  
+
 #### Decisão Dividida
+
 - Quando dois juízes escolhem um competidor como vencedor da partida e um juiz seleciona o oponente como vencedor. No caso de um sistema de dois juízes, o árbitro central deverá tomar uma decisão para critério de desempate.
 - No caso de uma competição ser concluída devido a _uma lesão resultante de uma falta ou de uma ocorrência de nocaute duplo_, serão aplicadas as regras estabelecidas pela comissão que preside com relação às decisões técnicas.
 - No final do combate, a decisão será anunciada pelo árbitro central como: "Juizes decisão", e anuncia o vencedor, no caso da liga menor.
 
 ### Critérios de Julgamentos
+
 #### Knockdowns
+
 - O knockdown ocorre quando o competidor é derrubado por golpes fortes e de alto impacto por meio de técnicas de mão/braço ou chute. Isso será determinado exclusivamente pelo árbitro.
 - 3 Knockdowns = TKO
 
 #### Chutes, golpes e derrubadas eficazes
+
 - Golpes legais obtidos por meio de uma combinação de chutes e golpes que têm um impacto imediato com o potencial de levar a um nocaute.
 - Execução bem-sucedida de quedas, tentativas de submissão (sequência bruta de golpes aonde o oponente não consegue se defender ou reagir adequadamente) e obtenção de posições vantajosas que resultam em impacto imediato com potencial para levar a um nocaute.
-  
+
 #### Agressividade
+
 - Fazer tentativas agressivas para terminar a partida de forma eficaz.
 - O termo-chave é eficaz
 - Perseguir um oponente sem resultados efetivos ou impacto não deve influenciar as avaliações dos juízes, como o caso de chutes que são realizados como formas de intimidar ao invés de acertar.
 
-
 ## Processo de avaliação e mensuração dos juízes
+
 - As avaliações em cada critério são feitas por nível de eficácia, não por pontos.
 - Cada técnica será avaliada de acrodo com os golpes desferidos com potência, ou seja, um atleta que desferir golpes e conseguir um knockdown não poderá ter o mesmo nível que seu adversário na técnica utilizada.
 - As técnicas de mão/braço ou chutes não devem ser registrados quantitativamente para determinar o nível dos ataques, mas devem ser registrados qualitativamente, ou seja, somente aqueles com potência e impacto no corpo ou na cabeça, descartando golpes que apenas tocam.
 
 ## Pontuações no Ranking
+
 Elas funcionam da seguinte maneira, o lutador que vencer no Mundial Open ganhará 40 pontos e receberá bônus se tiver knockout por chute sendo 15 pontos por cada combate e 10 pontos se caso for soco. Se for no Grand Prix, será 15 pontos pela vitória, 15 de bônus pelo knockout no chute e 10 de bônus se for no soco, e na liga maior será 5 pontos por vitória e os mesmos valores de bônus, 15 de chute e 10 de soco.
 
 Os mandatos duram dois anos, sendo o total de pontos vigente no ano integros, ou seja, o que você ganhou não será afetado. No ano posterior o valor é reduzido para 50%. Se você ganhou 120 em 2024, você ficará com 60 em 2025, em 2026 esse valor é zerado, já que usa como base +50% com base no valor ganho no primeiro ano.
 
-- Os pontos são atribuídos com base na tabela de pontos de classificação por tipo de torneio e categoria de prêmio. 
+- Os pontos são atribuídos com base na tabela de pontos de classificação por tipo de torneio e categoria de prêmio.
 - Os pontos atribuídos só serão válidos por dois anos completos a partir de primeiro de janeiro e serão revistos todos os anos.
 - Em todos os torneios da Liga Maior (League Major) que se realizem em dezembro, os pontos serão transferidos para o ano seguinte como Ano Um.
 - Durante o período de dois anos, os pontos serão deduzidos em 50% após cada ano concluído.
@@ -358,10 +403,12 @@ Os mandatos duram dois anos, sendo o total de pontos vigente no ano integros, ou
 - Os pontos do ranking serão atualizados mensalmente e/ou no prazo de 30 dias imediatamente após o torneio.
 
 ## Teste antidoping
+
 - Qualquer uso ou administração de drogas ou substâncias químicas descritas na Lista de Substâncias Proibidas da WADA é proibido. O Código Antidpoing da WADA deverá ser aplicado aos eventos do Kombat Taekwondo. As Regras Atidoping do Kombat Taekwondo deverão ser aplicadas aos eventos do Kombat Taekwondo.
 - O Organizador poderá realizar quaisquer testes de doping considerados necessários para determinar se um competidor violou essa regra. Qualquer competidor que se recuse a se submeter a esse teste ou que tenha violado essa regra será removido da classificação final, e o registro será transferido para o competidor seguinte na classificação da competição.
 
 ## Benefícios de se tornar um clube licenciado do Kombat Taekwondo
+
 - O Licensed Club permite que os proprietários de clubes/escolas de Taekwondo e seus alunos se afiliem maior organização profissional de Taekwondo Kombat do mundo.
 - Listagem de clubes licenciados em [https://www.kombattaekwondo.com](https://www.kombattaekwondo.com).
 - Acesso por atacado aos aparelhos e equipamentos do Kombat Taekwondo.
@@ -376,7 +423,9 @@ Os mandatos duram dois anos, sendo o total de pontos vigente no ano integros, ou
 - Elegível para sediar acampamentos, seminários, treinamentos e outros eventos educacionais sancionados pelo Kombat Taekwondo.
 
 ## Exigência de clube e custo de licenciamento
+
 ### Exigência de clube
+
 - Deve participar do Seminário de Árbitros de Kombat Taekwondo online para entender as regras e regulamentos.
 - Deve ter um clube de Taekwondo físico dedicado em tempo integral (sem YMCA, academias de ginástica, etc.)
 - Deve ter um site do Taekwondo Club e páginas de mídia social
@@ -387,12 +436,14 @@ Os mandatos duram dois anos, sendo o total de pontos vigente no ano integros, ou
     - Não ter registro criminal
 
 ### Taxa de Licença Anual
+
 - Atual árbitro certificado pelo Kombat Taekwondo ou lutador profissional do Kombat
-  - Isenção da taxa anual de licença
+    - Isenção da taxa anual de licença
 - Academia/Escola de Taekwondo
-  - Taxa anual de licença $100,00 (Cem doláres)
+    - Taxa anual de licença $100,00 (Cem doláres)
 
 ## Anotações Extra Oficiais
+
 É válida provocação durante a luta.
 
 É válido usar gaiola para desferir golpes, mas não é permitido para evitar quedas ou projeções, será considerado falta, interpretado como fuga de combate.

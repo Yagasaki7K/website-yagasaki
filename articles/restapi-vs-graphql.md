@@ -2,30 +2,31 @@
 title: "RestAPI vs GraphQL - Prós, Contras e Qual Usar?"
 excerpt: "Entenda os lados positivos e negativos entre as duas maiores formas de consumir APIs."
 image: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['GraphQL', 'RestAPI']
-date: '2023-12-12'
-
+tags: ["GraphQL", "RestAPI"]
+date: "2023-12-12"
 ---
+
 ![Louis Hansel](https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-Antes de tudo, isso não é realmente uma disputa, analisando o [vídeo do Augusto Galego no Twitter](https://twitter.com/RealGalego/status/1729846868316770709) 
-sobre o mesmo assunto, estou separando as ideias que de fato, fazem sentido pra mim referente a uma análise de prós e contras. 
+Antes de tudo, isso não é realmente uma disputa, analisando o [vídeo do Augusto Galego no Twitter](https://twitter.com/RealGalego/status/1729846868316770709)
+sobre o mesmo assunto, estou separando as ideias que de fato, fazem sentido pra mim referente a uma análise de prós e contras.
 
 Ultimamente ando sim, usando muito RestAPI, mais do que já usei GraphQL na vida. Acredito que a única vez em que usei, foi
 durante minha experiência na Stone para fazer comunicação com bot e tudo mais, então, é um assunto que de fato, eu preciso me
 aprofundar, ainda mais que quero atingir a plenitude como desenvolvedor fullstack, porém, não é algo que eu sinta firmeza ainda.
 
 Você desenvolvedor, tem todo o direito de questionar meus prós e contras, e tirar dúvidas, se assim for,
-até por quê eu não sou nenhum especialista em GraphQL e utilizo bem mais o método de RestAPI no dia a dia. Então, vamos lá. 
+até por quê eu não sou nenhum especialista em GraphQL e utilizo bem mais o método de RestAPI no dia a dia. Então, vamos lá.
 
 <!--truncate-->
 
 **RestAPI** (Representational State Transfer API) é uma abordagem arquitetural para criar serviços web, fazer
-a comunicação entre back-end e front-end para consumir dados. Ele é baseado no protocolo HTTP e utiliza os verbos 
+a comunicação entre back-end e front-end para consumir dados. Ele é baseado no protocolo HTTP e utiliza os verbos
 HTTP (GET, POST, PUT, DELETE) para manipular recursos e representar o estado desses recursos por meio de
 representações como JSON ou XML.
 
 ## Pontos Positivos do RestAPI:
+
 **Simplicidade**: O RestAPI segue princípios simples e bem estabelecidos, como a utilização de URIs (Uniform Resource Identifiers)
 para identificar recursos e os verbos HTTP para manipular esses recursos. Isso torna a API fácil de entender e implementar.
 
@@ -42,6 +43,7 @@ cache. Isso permite que as respostas sejam armazenadas em cache em diferentes ca
 API.
 
 ## Pontos Negativos do RestAPI:
+
 **Overfetching e Underfetching**: Em APIs Restful tradicionais, é comum ocorrer overfetching (quando o cliente recebe mais dados
 do que o necessário) ou underfetching (quando o cliente precisa fazer várias chamadas para obter todos os dados necessários). Isso
 pode levar a um aumento no tráfego da rede e no tempo de resposta.
@@ -59,6 +61,7 @@ pode levar a diferentes implementações e interpretações. Isso pode dificulta
 esforço adicional para integrar e consumir diferentes serviços.
 
 ## E o que é o RestFul?
+
 API Rest e API Restful são termos frequentemente usados de forma intercambiável, mas há uma diferença sutil entre eles.
 
 API Rest (ou simplesmente Rest) é uma abordagem arquitetural que define um conjunto de princípios e diretrizes para o design de
@@ -77,12 +80,14 @@ Em termos práticos, a diferença entre API Rest e API Restful é sutil e muitas
 descrever APIs que seguem o estilo Rest, mas a terminologia "Restful" é frequentemente usada para enfatizar que a API adere
 rigorosamente aos princípios e diretrizes do Rest.
 
-# E quanto ao GraphQL? 
+# E quanto ao GraphQL?
+
 GraphQL é uma linguagem de consulta para APIs e um tempo de execução para executar essas consultas com seus dados existentes. É
 uma alternativa à abordagem tradicional de RESTful APIs, fornecendo uma maneira mais eficiente e flexível de buscar e manipular
 dados.
 
 ## Pontos Positivos do GraphQL:
+
 **Eficiência**: Uma das principais vantagens do GraphQL é que ele permite que o cliente especifique exatamente os dados
 necessários, evitando assim o problema de overfetching ou underfetching que ocorre com frequência em APIs RESTful. Com GraphQL, o
 cliente pode buscar apenas os campos necessários para sua aplicação, reduzindo a largura de banda e o tempo de resposta.
@@ -100,6 +105,7 @@ ferramentas disponíveis para ajudar no desenvolvimento, como o GraphiQL, um IDE
 GraphQL, além de bibliotecas em várias linguagens de programação que facilitam a integração do GraphQL em aplicativos existentes.
 
 ## Pontos Negativos do GraphQL:
+
 **Curva de Aprendizado**: Embora a ideia central do GraphQL seja simples, pode haver uma curva de aprendizado ao entender todos os
 conceitos e padrões associados. Isso pode ser especialmente verdadeiro para desenvolvedores acostumados com abordagens RESTful
 tradicionais.
@@ -116,7 +122,8 @@ necessidades específicas dos clientes.
 própria camada de cache para melhorar o desempenho. Isso pode adicionar complexidade ao desenvolvimento e à manutenção da API.
 
 # E qual escolher?
-Em última análise, a escolha entre GraphQL e RestAPI depende das necessidades e requisitos do projeto. 
+
+Em última análise, a escolha entre GraphQL e RestAPI depende das necessidades e requisitos do projeto.
 
 Sua equipe é grande e não tem comunicação entre front-end e back-end? Não utiliza cache e não quer sofrer
 com overfetching? Recomendamos o GraphQL, claro, se os desenvolvedores estiverem habituados com isso.

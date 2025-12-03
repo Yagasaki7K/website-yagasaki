@@ -2,8 +2,8 @@
 title: Evento do NodeBR em Campinas - Frontend Universe
 excerpt: Entenda tudo que aconteceu no evento do NodeBR em parceria com o iFood em Campinas
 image: "https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/6e1276cf-a8ea-4290-a8db-6dee6f93b3a8"
-tags: ['NodeBR', 'Meetup', 'iFood', 'Campinas']
-date: '2024-03-01'
+tags: ["NodeBR", "Meetup", "iFood", "Campinas"]
+date: "2024-03-01"
 ---
 
 ![Anderson Marlon](https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/6e1276cf-a8ea-4290-a8db-6dee6f93b3a8)
@@ -21,6 +21,7 @@ Vamos lá.
 <!--truncate-->
 
 ## O que é o NodeBR?
+
 NodeBR é uma comunidade brasileira de Javascript para quem tem interesse em aprender e se aprofundar. O foco é
 literalmente ajudar outros desenvolvedores através de eventos, meetups e conferências, sempre trazendo um assunto novo,
 uma abordagem diferente para os curiosos e coisas assim. A comunidade tem grandes pessoas envolvidas nesse time, como
@@ -30,10 +31,11 @@ existe uma série de voluntários que ajudam e estão presentes nesses eventos e
 organização e apresentação desses eventos.
 
 ## Front-end Universe
+
 Mas o que aconteceu nesse evento em Campinas?
 
 Às 19hrs até 19h10 teve o Credenciamento e abertura com a NodeBR, mostrando todo o cenário que a NodeBR atua, seus objetivos,
-e o que podemos fazer para melhorar e ajudar essa comunidade. 
+e o que podemos fazer para melhorar e ajudar essa comunidade.
 
 Às 19h10 - 19h15 tivemos a Abertura Ifood, com Rafael Ireno, que explicou toda a jornada e os objetivos do iFood, as
 tecnologias que trabalham e já trabalharam dentro da empresa e a intenção de apoiar ainda mais o NodeBR para futuros
@@ -43,10 +45,10 @@ eventos.
 
 Às 19h15, tivemos a Paula Bonini que apresentou o Frontend Além do Código, explicando a necessidade da diversidade nos
 times, qual é o seu papel dentro do time, levando em consideração todas as posições envolvidas e o que fazer quando essa
-ausência existe. 
+ausência existe.
 
 A empatia com os "não-techs", como é o caso de trabalhar com dois times em que um não existe contato algum
-com desenvolvimento e programação. Qual é a abordagem que deve ser feita com isso. 
+com desenvolvimento e programação. Qual é a abordagem que deve ser feita com isso.
 
 A necessidade e importância de participar dos ritos que nada mais é que participar de reuniões e refinamentos mesmo que
 sejam focadas em outro setor da sua empresa, mas que ainda sim, possuem contato com você no futuro, e ter
@@ -91,8 +93,8 @@ caso ele gostaria de recusar o atendimento do cliente, assim como em várias out
 Mas, fica a reflexão de que, se você tiver oportunidade, você pode estar começando literalmente agora,
 ou estar a tempos desenvolvendo, vá a esses eventos que de mãos vazias jamais sairá.
 
-Caso queira ver como foi o evento completo e obter toda a experiência em primeira mão - mesmo que seja online - 
-para absorver o conhecimento e entender tudo o que foi falado, desde a importância com o time, com o cliente, enfim, 
+Caso queira ver como foi o evento completo e obter toda a experiência em primeira mão - mesmo que seja online -
+para absorver o conhecimento e entender tudo o que foi falado, desde a importância com o time, com o cliente, enfim,
 entender tudo o que foi passado no evento, é só clicar na imagem abaixo.
 
 E claro, deixo a mensagem para refletir sempre além do código e também, acompanhar o NodeBR nas redes e ficar

@@ -2,8 +2,8 @@
 title: Integrando seu chat com o Rocketchat Omnichannel
 excerpt: Preparando o ambiente e integrando de forma manual sua aplicação com o Rocketchat Omnichannel
 image: https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2016&q=80
-tags: ['RocketChat', 'API', 'Webhook']
-date: '2023-08-22'
+tags: ["RocketChat", "API", "Webhook"]
+date: "2023-08-22"
 ---
 
 ![](https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2016&q=80 "NASA")
@@ -154,11 +154,11 @@ Agora que já temos tudo preparado, podemos começar a analisar as APIs.
 
 Começando com as APIs: Criando um visitante
 
-A primeira coisa a se fazer para integrar o seu chat com o Rocket é criar o visitante. Esse passo será constante, visto que sempre que um novo usuário for transferido, ele precisará ser criado ou atualizado. A mesma API realiza as duas ações, criar e atualizar o visitante. 
+A primeira coisa a se fazer para integrar o seu chat com o Rocket é criar o visitante. Esse passo será constante, visto que sempre que um novo usuário for transferido, ele precisará ser criado ou atualizado. A mesma API realiza as duas ações, criar e atualizar o visitante.
 
 Para essa ação, temos basicamente um campo obrigatório para criar o visitante. Mas vamos entender melhor cada um:
 
-**token*** – Um texto de identificação desse visitante. Essa informação deve ser gerada pelo seu sistema para poder encontrar o visitante dentro do Rocket. Ele é o único campo obrigatório e será utilizado como chave para criação e atualização dos dados.
+**token\*** – Um texto de identificação desse visitante. Essa informação deve ser gerada pelo seu sistema para poder encontrar o visitante dentro do Rocket. Ele é o único campo obrigatório e será utilizado como chave para criação e atualização dos dados.
 
 **name** – O nome do visitante. Será exibido como nome das salas e em cada mensagem.
 
@@ -202,11 +202,12 @@ O endereço dessa API seria: **/api/v1/livechat/visitor**. Utilizando o método 
 Além do momento da criação, o seu uso é interessante para alternar entre os departamentos e atualizar os campos customizados. Com isso, já temos o visitante criado e pronto para falar com um atendente.
 
 ## Avançado com as APIs: Criando salas e enviando mensagens
+
 A criação de salas é um processo simples. Ela utiliza o método **GET** e endereço **/api/v1/livechat/room**. Ela é utilizada tanto para criar salas como resgatar seus dados.
 
 Todos seus parâmetros são informados via query param na url. Vamos entender melhor eles:
 
-**token*** – O token do visitante que irá utilizar essa sala. Esse campo é **obrigatório** em qualquer requisição a esse endpoint.
+**token\*** – O token do visitante que irá utilizar essa sala. Esse campo é **obrigatório** em qualquer requisição a esse endpoint.
 **rid** – O id da sala. Quando você está criando uma sala esse valor não deve ser informado, afinal, sequer existe. Porém para leitura, deverá ser informado ou uma nova sala será criada.
 **agentId** – O id do agente que irá atender essa sala. Se esse valor não for informado, a sala será criada para um atendente aleatório. Caso o visitante tenha um departamento definido, será atribuído um atendente desse departamento.
 Um ponto importante na criação de salas é a disponibilidade dos agentes: existe a opção de aceitar que as salas sejam criadas mesmo que o agente não esteja online. Mas caso essa opção não seja marcada, a criação de sala apenas funciona se o agente estiver online no Rocket e no Omnichannel.
@@ -215,10 +216,10 @@ Agora que já termos a sala criada, podemos enviar mensagens! Também é um proc
 
 O seus poucos parâmetros possíveis são passados via corpo da requisição. Vamos entender melhor eles:
 
-**token*** – O token do visitante que está enviando a mensagem. Precisa ser do mesmo visitante que criou a sala. Esse campo é obrigatório.
-**rid*** – O id da sala onde a mensagem será enviada. Ela precisa estar com o status aberta. Esse campo é obrigatório.
-**msg*** – O texto da mensagem a ser enviada. Esse campo não pode ultrapassar o limite definido nas configurações do Rocket. Ele é obrigatório.
-**_id** – O id da mensagem a ser criada. Caso não seja informado, um id será criado.
+**token\*** – O token do visitante que está enviando a mensagem. Precisa ser do mesmo visitante que criou a sala. Esse campo é obrigatório.
+**rid\*** – O id da sala onde a mensagem será enviada. Ela precisa estar com o status aberta. Esse campo é obrigatório.
+**msg\*** – O texto da mensagem a ser enviada. Esse campo não pode ultrapassar o limite definido nas configurações do Rocket. Ele é obrigatório.
+**\_id** – O id da mensagem a ser criada. Caso não seja informado, um id será criado.
 **agent** – Na documentação informa que esse campo deve ser o agente da sala. Mas olhando o código do Rocket ele não faz sentido e nunca será usada. Podemos ignora-lo.
 
 Teríamos o corpo da requisição seguindo a estrutura:
@@ -236,6 +237,7 @@ Teríamos o corpo da requisição seguindo a estrutura:
 Com isso, já podemos criar um visitante, uma sala e enviar mensagens. Agora o próximo passo é receber o retorno do Rocket com as mensagens enviadas pelos agentes e os eventos que podem ocorrer.
 
 ## Webhooks: Recebendo retorno do Rocket
+
 Como havia dito, para receber o retorno do Rocket sobre os eventos ocorridos na sala, a melhor forma é via Webhook. Você até conseguiria fazer isso via API (pode visualizar melhor isso na documentação). Porém, via API você teria que efetuar constantes requisições para receber atualizações e tratar cada item da resposta individualmente. Não há possibilidade de filtros por apenas dados não vistos ou algo parecido, no máximo por eventos ocorridos após um timestamp informado. Resumindo, é mais complexo utilizar API e menos prático.
 
 Para utilizar Webhooks é simples! Para configurá-lo, basta acessar o menu Omnichannel e clicar em Webhooks. Na tela aberta, você deve digitar o endereço para onde essas requisições serão disparadas e selecionar quais eventos deverão disparar essa ação. Opcionalmente pode informar um token que será enviado no cabeçalho das requisições para validar a autenticidade. Clique em Salvar para aplicar as mudanças.

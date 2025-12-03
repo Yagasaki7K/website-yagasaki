@@ -1,9 +1,9 @@
 ---
 title: Removendo o Twitter Analytics do Feed
-excerpt: 'Remova o Analytics do seu feed e deixe tudo mais limpo, sem informações desnecessárias'
+excerpt: "Remova o Analytics do seu feed e deixe tudo mais limpo, sem informações desnecessárias"
 image: https://images.unsplash.com/photo-1616469829167-0bd76a80c913?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
-tags: ['Tips', 'Twitter', 'Analytics']
-date: '2022-12-28'
+tags: ["Tips", "Twitter", "Analytics"]
+date: "2022-12-28"
 ---
 
 ![](https://images.unsplash.com/photo-1616469829167-0bd76a80c913?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 "Souvik Banerjee")
@@ -17,12 +17,14 @@ Hoje mais cedo estava navegando no Twitter como de costume e o usuário [Thiago]
 Inicialmente vá até a página do feed de notícias do seu Twitter. Abra o console através do F12 ou com o botão direito do mouse e inspecionar elemento, vá na aba de "Console", cole o código abaixo e instantaneamente verá a feature sumindo:
 
 ```javascript
-    function removeIcon () {  
+function removeIcon() {
     setInterval(() => {
-    [...document.querySelectorAll(".css-1dbjc4n.r-18u37iz.r-1h0z5md")].filter(div => div.innerHTML.includes("analytics")).forEach(div => div.remove())
-    }, 50)
-    };
-    removeIcon()
+        [...document.querySelectorAll(".css-1dbjc4n.r-18u37iz.r-1h0z5md")]
+            .filter((div) => div.innerHTML.includes("analytics"))
+            .forEach((div) => div.remove());
+    }, 50);
+}
+removeIcon();
 ```
 
 Mas lembre-se, toda vez que você reiniciar a página (F5), será necessário colocar o código novamente, então deixe essa dica salva enquanto o Elon Musk tem dificuldade para fazer isso em grande escala, apesar que isso seria maior gambiarra se estivesse no código fonte do Twitter 😂

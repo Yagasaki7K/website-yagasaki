@@ -1,16 +1,16 @@
 ---
 title: Aprenda a instalar e usar o Docker no WSL de uma vez
-excerpt: 'A solução definitiva para instalar e usar o Docker no Windows Subsystem Linux (WSL)'
+excerpt: "A solução definitiva para instalar e usar o Docker no Windows Subsystem Linux (WSL)"
 image: https://safebooru.org//samples/4180/sample_1748929975d7bd94cf16fc9c29c9bfb8adcc2fc9.jpg?4366213
-tags: ['Docker', 'DevOps', 'Iniciante']
-date: '2024-05-22'
+tags: ["Docker", "DevOps", "Iniciante"]
+date: "2024-05-22"
 ---
 
 ![](https://safebooru.org//samples/4180/sample_1748929975d7bd94cf16fc9c29c9bfb8adcc2fc9.jpg?4366213)
 
 Algum tempo atrás estava com dificuldade para realmente entender como instalar o Docker pelo WSL. Será
 que era instalando o pacote de dependências? Será que era fazendo o download do aplicativo e usando
-apenas no lado do Windows? 
+apenas no lado do Windows?
 
 Eis que surge a solução.
 

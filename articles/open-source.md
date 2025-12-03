@@ -2,8 +2,8 @@
 title: Como contribuir para projetos de código aberto – um guia para iniciantes
 excerpt: Aprenda a contribuir para projetos e evoluir projetos de comunidade.
 image: https://images.unsplash.com/photo-1603912699214-92627f304eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80
-tags: ['Iniciante', 'Open Source', 'Contribuição']
-date: '2023-04-17'
+tags: ["Iniciante", "Open Source", "Contribuição"]
+date: "2023-04-17"
 ---
 
 ![](https://images.unsplash.com/photo-1603912699214-92627f304eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80 "Clay Banks")
@@ -63,6 +63,7 @@ Existem muitas razões pelas quais você deve contribuir para um projeto de cód
 - Além disso, é divertido e lhe dá satisfação pessoal, de dever cumprido.
 
 ## Guia passo a passo sobre como contribuir para o código aberto
+
 Quando dizemos contribuir para o código aberto, isso não significa necessariamente que você precisa saber codificar. Existem diferentes maneiras pelas quais você pode contribuir, mesmo que não seja um programador - mas ter algumas habilidades de codificação ajudará você (e os projetos) muito.
 
 Algumas contribuições comuns podem ser feitas através de:
@@ -126,6 +127,7 @@ Embora não seja obrigatório, você pode considerar uma boa prática fazer part
 Então, agora você tem uma ideia do que é um projeto de sistema operacional e o que esperar ao contribuir para um. Passando para a parte mais importante, como saber para qual projeto contribuir?
 
 ## Como encontrar um projeto de código aberto para contribuir
+
 Contribuir funciona em todos os níveis, não há necessidade de pensar demais em como você fará isso. Em vez disso, pense em alguns dos projetos que você já usa e como pode alterá-los ou melhorá-los.
 
 A pesquisa mostrou que cerca de 30% das contribuições casuais são documentação, correções de erros de digitação ou até mesmo traduções.
@@ -141,13 +143,14 @@ E caso você queira encontrar mais, você pode acessar nossa [ala de projetos](h
 No mundo do software de código aberto, os problemas são relatados e corrigidos rapidamente. Portanto, uma boa maneira de dar o pontapé inicial é assumir um problema e tentar trabalhá-lo imediatamente.
 
 ## Como escolher um projeto de código aberto
+
 Depois de encontrar o projeto com o qual deseja contribuir, é hora de fazer uma pequena verificação. Certifique-se de que ele atenda aos seguintes critérios para que você saiba que será um bom projeto para trabalhar:
 
 - Verifique se tem um arquivo de licença.
 - Verifique quando foi feito o último commit. Isso ajudará você a saber se os mantenedores estão ativos e também fornecerá uma estimativa de quanto tempo levará para responder à sua contribuição.
 - Procure o número de contribuintes.
 - Verifique com que frequência as pessoas fazem commits.
-  
+
 Se você vir muitas atividades recentes, isso é um bom sinal – significa que a comunidade está ativa e os mantenedores também.
 
 Agora, se a primeira "verificação" der certo, prossiga para verificar também os seguintes pontos:
@@ -177,6 +180,7 @@ Depois de escolher o idioma com o qual deseja trabalhar, você também precisar�
 Depois de encontrar um projeto, você realmente deseja fazer contribuições. E você fará isso enviando pull request. Vamos falar sobre isso agora.
 
 ## O que é um pull request?
+
 Lembra do exemplo sobre o Google Docs? Bem, uma pull request é semelhante, só que desta vez trata-se de código.
 
 Podemos descrever uma pull request como quando um contribuidor envia alterações – seja código, documentação ou outro lugar – e pede a um mantenedor para verificar, certificar-se de que está tudo bem e, em seguida, mesclar com o projeto base.
@@ -184,9 +188,11 @@ Podemos descrever uma pull request como quando um contribuidor envia alteraçõe
 Então, como você envia um?
 
 ## Como enviar uma pull request
+
 Se você está nesta fase, significa que encontrou um projeto e está pronto para dar sua contribuição. Então, vamos falar sobre como realmente enviar uma pull request.
 
 ### Etapas para enviar um PR / Pull Request
+
 - Fork o repositório
 
 No canto superior direito, você verá o termo "fork". Tudo o que você precisa fazer é clicar nele e terá criado uma cópia do mesmo projeto em sua conta.
@@ -219,6 +225,7 @@ O comando listará todas as alterações feitas. Para adicioná-los usaremos o g
 Vamos adicionar uma mensagem de commit, explicando brevemente o que adicionamos: `git commit -m "<mensagem aqui>"`
 
 ### Empurre as alterações para a base remota
+
 Agora que tudo está definido, é hora de deixar nosso mantenedor saber o que adicionamos. Isso é possível pressionando as alterações com este comando:`git push origin <add-your-branch-name>` substituindo `<add-your-branch-name>` pelo nome do branch que você criou anteriormente, no meu caso será `git push origin yagasaki`.
 
 **Enviar alterações**
@@ -230,18 +237,20 @@ Criar um pull request tem algumas vantagens, como:
 - Ele permite que você contribua para outro repositório sem precisar de privilégios administrativos para fazer alterações no repositório.
 - Ele permite que outras pessoas revisem suas alterações e sugiram correções, acréscimos, edições e assim por diante.
 - Ele dá aos administradores do repositório controle sobre o que é adicionado ao repositório do projeto.
-  
+
 Parabéns 🥳🎉,
-Você acabou de concluir o fork padrão: clonar -> editar -> pull request e isso resume sua primeira contribuição. 
+Você acabou de concluir o fork padrão: clonar -> editar -> pull request e isso resume sua primeira contribuição.
 
 Você usará isso frequentemente como colaborador! Então, o que vem a seguir?
 
 ## O que vem depois do seu primeiro pull request?
+
 Isso não marca o fim! Agora é só encontrar mais projetos e continuar contribuindo. Além disso, fique atento ao mês dedicado a contribuições de código aberto todos os anos, administrado pela Digital Ocean, para ter a chance de ganhar alguns presentes incríveis.
 
 Mais uma coisa para falar um pouco mais antes de terminarmos. Ou seja, por que contribuir com o open source é gratificante.
 
 ## Benefícios de Contribuir para o Código Aberto
+
 - As pessoas que contribuem para um projeto de código aberto conhecem a tecnologia em um nível muito mais profundo do que simplesmente usando a tecnologia.
 - Você pode concentrar seus esforços em adicionar e alavancar recursos que beneficiarão os negócios com base na experiência com o que funciona e o que não funciona no mundo real.
 - Ele constrói sua moral e reputação. As pessoas que contribuem para projetos de código aberto têm acesso às percepções e experiências de outros membros da comunidade.
@@ -249,11 +258,13 @@ Mais uma coisa para falar um pouco mais antes de terminarmos. Ou seja, por que c
 - Se você estiver no GitHub, grande parte das coisas que você faz nessa plataforma são públicas. Use isso a seu favor, sempre fazendo o seu melhor ao contribuir e se comunicar com outros colaboradores.
 
 ## Por que você deve contribuir para o código aberto como desenvolvedor
+
 - Isso ajudará a aprimorar suas habilidades de codificação e melhorar a escrita de código limpo.
 - Isso ajuda a comunidade e seus colegas a conhecê-lo. Esse reconhecimento pode lhe trazer muitas oportunidades em sua carreira.
 - Ele ajuda você a aprender mais sobre gerenciamento de projetos e pode deixá-lo inspirado para iniciar seu próprio projeto.
 
 ## VAMOS NESSA!
+
 Como mencionei, o código aberto está aberto para todos participarem. Existem muitas oportunidades que você pode aproveitar e aprender algo novo. Tudo que você precisa é decidir começar e começar.
 
 **O CÓDIGO ABERTO ESTÁ ESPERANDO POR VOCÊ**

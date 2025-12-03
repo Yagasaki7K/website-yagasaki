@@ -1,9 +1,9 @@
 ---
-title: 'Conheça sobre Developer Relations (#DevRel)'
-excerpt: 'Descubra o que é Developer Relations (#DevRel) e como fazer parte desse meio.'
-image: 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
-tags: ['DevRel', 'Developer', 'Relation']
-date: '2022-03-18'
+title: "Conheça sobre Developer Relations (#DevRel)"
+excerpt: "Descubra o que é Developer Relations (#DevRel) e como fazer parte desse meio."
+image: "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+tags: ["DevRel", "Developer", "Relation"]
+date: "2022-03-18"
 ---
 
 ![](https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Christin Hume")
@@ -29,6 +29,7 @@ Geralmente esses membros respondem perguntas da comunidade, fazem perguntas para
 Deu para ter um pouco do entendimento da jogada?
 
 ### Como fazer parte desse meio?
+
 Um dos pontos é, seja uma desenvolvedora ou desenvolvedor que realmente faz parte da comunidade, comece escrevendo artigos. Você pode usar o Medium, Twitter, Dev.To, Notion ou até mesmo seu próprio blog, mas escreva, construa o seu perfil na comunidade e seja reconhecido aos poucos. Você pode escrever sobre o que está aprendendo ou ensinar algo que acabou de aprender ou até mesmo que saiba bem a tempos.
 
 Esse é um dos pontos em que nem eu entrei ainda e acho difícil, ainda mais na velocidade em que se consomem conteúdos e as comunidades se conversam, mas, planeje fazer palestras, seja em meetings, conferências, organize com a prefeitura da sua cidade — não se desanime se houver poucas pessoas interessadas — compartilhe conhecimento, seja reconhecido, mostre que através dos seus artigos, você é capaz de lecionar ou guiar pessoas para que sejam desenvolvedoras e que sejam capazes de compartilhar isso com a sociedade.

@@ -197,80 +197,81 @@ const MediaDetails = styled.div`
 `;
 
 export default function MediaPage() {
-	const [tag, setTag] = useState("anime");
-	return (
-		<>
-			<Navigation />
-			<MediaDetails>
-				<article>
-					<h1 className="title">Media Consumption</h1>
-					<p>
-						One’s life span is around 29,000 days, or 696,000 hours. Media consumption is a rather large chunk of my life, that more or less shapes the view I have today. While
-						we can’t live every lifestyle we dream of or experience everything we desire, media offers us a window into different stories and ways of life.
-					</p>
-					<p>I wanted to list them out, for myself, for share, or just for the record.</p>
+    const [tag, setTag] = useState("anime");
+    return (
+        <>
+            <Navigation />
+            <MediaDetails>
+                <article>
+                    <h1 className="title">Media Consumption</h1>
+                    <p>
+                        One’s life span is around 29,000 days, or 696,000 hours. Media consumption is a rather large chunk of my life, that more or
+                        less shapes the view I have today. While we can’t live every lifestyle we dream of or experience everything we desire, media
+                        offers us a window into different stories and ways of life.
+                    </p>
+                    <p>I wanted to list them out, for myself, for share, or just for the record.</p>
 
-					<div className="buttons">
-						<button className={tag === "anime" ? "anime" : ""} onClick={() => setTag("anime")}>
-							anime
-						</button>
-						<button className={tag === "movie" ? "movie" : ""} onClick={() => setTag("movie")}>
-							movie
-						</button>
-						<button className={tag === "game" ? "game" : ""} onClick={() => setTag("game")}>
-							game
-						</button>
-						<button className={tag === "book" ? "book" : ""} onClick={() => setTag("book")}>
-							book
-						</button>
-					</div>
+                    <div className="buttons">
+                        <button className={tag === "anime" ? "anime" : ""} onClick={() => setTag("anime")}>
+                            anime
+                        </button>
+                        <button className={tag === "movie" ? "movie" : ""} onClick={() => setTag("movie")}>
+                            movie
+                        </button>
+                        <button className={tag === "game" ? "game" : ""} onClick={() => setTag("game")}>
+                            game
+                        </button>
+                        <button className={tag === "book" ? "book" : ""} onClick={() => setTag("book")}>
+                            book
+                        </button>
+                    </div>
 
-					<div className="list">
-						{(() => {
-							const dataMap: Record<string, any[]> = {
-								anime,
-								movie,
-								game,
-								book,
-							};
+                    <div className="list">
+                        {(() => {
+                            const dataMap: Record<string, any[]> = {
+                                anime,
+                                movie,
+                                game,
+                                book,
+                            };
 
-							const list = dataMap[tag] ?? [];
+                            const list = dataMap[tag] ?? [];
 
-							// Ordem de prioridade desejada
-							const statusOrder = {
-								Watching: 4,
-								Playing: 4,
-								Reading: 4,
-								Completed: 3,
-								Planning: 2,
-								Dropped: 1,
-							};
+                            // Ordem de prioridade desejada
+                            const statusOrder = {
+                                Watching: 4,
+                                Playing: 4,
+                                Reading: 4,
+                                Completed: 3,
+                                Planning: 2,
+                                Dropped: 1,
+                            };
 
-							// Ordena a lista com base na prioridade
-							const sortedList = list
-								.slice()
-								.sort((a, b) => {
-									const orderA = statusOrder[a.status as keyof typeof statusOrder] ?? 999;
-									const orderB = statusOrder[b.status as keyof typeof statusOrder] ?? 999;
-									return orderA - orderB;
-								})
-								.reverse();
+                            // Ordena a lista com base na prioridade
+                            const sortedList = list
+                                .slice()
+                                .sort((a, b) => {
+                                    const orderA = statusOrder[a.status as keyof typeof statusOrder] ?? 999;
+                                    const orderB = statusOrder[b.status as keyof typeof statusOrder] ?? 999;
+                                    return orderA - orderB;
+                                })
+                                .reverse();
 
-							return sortedList.map((item, index) => (
-								<tr key={index}>
-									<td>
-										{item.title} {item.status ? `(${item.status})` : null}
-									</td>
-									<td>{item.author}</td>
-								</tr>
-							));
-						})()}
-					</div>
+                            return sortedList.map((item, index) => (
+                                <tr key={index}>
+                                    <td>
+                                        {item.title} {item.status ? `(${item.status})` : null}
+                                    </td>
+                                    <td>{item.author}</td>
+                                </tr>
+                            ));
+                        })()}
+                    </div>
 
-					<p>These are ones I enjoyed, not exhaustive. And not necessarily recommendations.</p>
-				</article>
-			</MediaDetails>
-			<Footer />
-		</>
-	);
+                    <p>These are ones I enjoyed, not exhaustive. And not necessarily recommendations.</p>
+                </article>
+            </MediaDetails>
+            <Footer />
+        </>
+    );
 }

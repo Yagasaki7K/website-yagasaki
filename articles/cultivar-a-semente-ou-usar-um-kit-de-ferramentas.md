@@ -2,8 +2,8 @@
 title: Cultivar a Semente ou usar um Kit de Ferramentas?
 excerpt: "Entenda qual é a melhor abordagem para desenvolver um projeto e lidar com desafios complexos"
 image: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['Tips', 'Mindset', 'Soft Skills']
-date: '2024-03-16'
+tags: ["Tips", "Mindset", "Soft Skills"]
+date: "2024-03-16"
 ---
 
 ![Dell](https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -21,7 +21,9 @@ Por outro lado, o Modelo "Kit de Ferramentas" representa uma abordagem mais simp
 A diferença entre os dois modelos é o desafio versus a praticidade. Enquanto o Cultivar a Semente oferece uma jornada desafiadora, repleta de aprendizado e crescimento por si só, o Modelo Kit de Ferramentas proporciona uma solução rápida e prática, com pouca parte aprofundada. No entanto, é importante reconhecer que o caminho mais fácil nem sempre é o mais adequado. Voltar ao Cultivar a Semente pode ser necessário para resolver problemas complexos ou alcançar novos patamares de excelência, no entanto, é claro, temos que dar dois passos para trás para avançarmos cinco a frente e esse tipo de coisa, pode acabar desanimando muita gente. Você escolher usar o kit de ferramentas, quando na verdade precisa cultivar a semente pode te causar um tempo de estudo, aprendizados e erros que poderão ser cruciais para você, ou não, vemos isso em "Interprete as coisas como um curso". Portanto, é essencial encontrar um equilíbrio entre essas abordagens, escolhendo a mais adequada para cada projeto e desafio que surgir.
 
 ## Interprete as coisas como um curso
+
 Imagine que você gastou horas, dinheiro em fazer um projeto para um cliente - esse cenário já aconteceu comigo - você passou noites em claro, estudou coisas que jamais teria estudado se não fosse esse projeto em específico e se dedicou, mas por algum motivo, o cliente simplesmente desistiu e não quer mais o projeto. Como você interpretaria essa ação? Para muitos, foi tempo e dinheiro jogados fora? Certo? Pode até ser, mas tente ver por uma perspectiva diferente, tente imaginar e interpretar as coisas como um curso. Você não gastou tempo e dinheiro atoa, você simplesmente participou de um curso, aonde a lógica que você incrementou e estudou, foram os responsáveis por te dar essa didática. Então você não gastou, vamos supor, quinhentos reais em um projeto e perdeu esse dinheiro, o que de fato aconteceu, foi que você pegou quinhentos reais e investiu em um curso aprofundado sobre a área em questão, e agora, por mais que você saiba apenas a ponta daquela área em especifica, você tem a capacidade de desenvolver várias outras aplicações em cima desse aprendizado ou você pode simplesmente, criar uma kit de ferramenta para esse tipo de projeto. É incrível, não é?
 
 ## Lixo x Tesouro
+
 Tá, mas aonde entra a questão do Lixo e Tesouro nessa questão? Existem muitas pessoas que vão chegar para você e dizer que o tempo que você gastou com aquele projeto ou ter interesse em um determinado assunto foi por água a baixo, mas não é bem assim. Para você, foi um tempo precioso, mas foi recompensado de outra maneira, certo? Vamos pensar assim, é claro. Enquanto para a outra pessoa, foi um lixo, uma total perda de tempo pra você. E é assim que funciona as coisas. Muitos assuntos, ideias de projetos e até mesmo abordagens, podem ser consideradas um lixo PARA AQUELA PESSOA e não para você, da mesma maneira que o assunto que ela tanto gosta pode ser um lixo para você e valioso para ela e está tudo bem. A ideia que Deschamps passa é para evitarmos tentar viver no mundo das outras pessoas e tentar viver o nosso da nossa maneira, seja para pegar coisas lixos e transformar em tesouro ou até mesmo pegar o tesouro e transformar em lixo, mas independente das duas, ambas, serão experiência, lembre-se disso.

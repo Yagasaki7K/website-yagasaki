@@ -2,8 +2,8 @@
 title: Quando decidir se é melhor trabalhar em um monorepo ou repositórios individuais?
 excerpt: Existem vários fatores a considerar quando se decide se é melhor trabalhar em um monorepo ou em vários repositórios individuais.
 image: https://images.unsplash.com/photo-1590247813693-5541d1c609fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1509&q=80
-tags: ['Monorepo', 'Repositório']
-date: '2022-12-30'
+tags: ["Monorepo", "Repositório"]
+date: "2022-12-30"
 ---
 
 ![](https://images.unsplash.com/photo-1590247813693-5541d1c609fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1509&q=80 "Nana Smirnova")

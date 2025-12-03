@@ -1,9 +1,9 @@
 ---
 title: Tutorial Javascript do Zero ao Hero - Sua Jornada Completa
-excerpt: 'Bem-vindo ao desenvolvimento web! Quer entender como páginas ganham vida e oferecem interatividade? JavaScript é a resposta, um pilar indispensável na internet moderna. JavaScript insere interatividade e dinamismo em websites. Sua relevância vai além do navegador: com Node.js para backend, React Native para mobile e Electron para desktop. É uma das linguagens mais flexíveis e requisitadas, abrindo diversas oportunidades.'
+excerpt: "Bem-vindo ao desenvolvimento web! Quer entender como páginas ganham vida e oferecem interatividade? JavaScript é a resposta, um pilar indispensável na internet moderna. JavaScript insere interatividade e dinamismo em websites. Sua relevância vai além do navegador: com Node.js para backend, React Native para mobile e Electron para desktop. É uma das linguagens mais flexíveis e requisitadas, abrindo diversas oportunidades."
 image: https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Javascript', 'Tutorial', 'Roadmap']
-date: '2025-08-17'
+tags: ["Javascript", "Tutorial", "Roadmap"]
+date: "2025-08-17"
 ---
 
 ![](https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -19,6 +19,7 @@ Este guia é para iniciantes, estudantes ou desenvolvedores experientes. Ao fina
 Pronto para o primeiro passo? Mergulhe nos fundamentos e construa sua base em JavaScript.
 
 ## Os Fundamentos Essenciais: Seus Primeiros Passos no Código
+
 Para o navegador executar seu JavaScript, você deve incluí-lo no HTML. Há algumas maneiras:
 
 1. Inline: Pequenos trechos de JS em atributos HTML (`<button onclick="...">`). Simples para casos muito específicos, mas não recomendado para blocos maiores, pois mistura lógica com estrutura, dificultando manutenção e legibilidade.
@@ -76,6 +77,7 @@ Para páginas interativas, lide com eventos (ações na página: cliques, envios
 O código sequencial é limitado. O JavaScript lida com o mundo assíncrono e operações demoradas como requisições de rede.
 
 ## Dominando a Assincronicidade: Callbacks, Promises e Async/Await
+
 Como JavaScript lida com operações demoradas sem "travar" a aplicação? A resposta é a assincronicidade. Para um nível expert, vamos entender como ela é orquestrada e quais ferramentas o JavaScript oferece para gerenciá-la, das abordagens mais antigas às mais modernas.
 
 A chave para o JS assíncrono, mesmo sendo single-threaded, é o Event Loop. Ele é o coração do modelo de concorrência e funciona com a **Call Stack**, **Web APIs** (ou Node.js APIs) e **Callback Queue**. Operações síncronas vão para a Call Stack. Operações assíncronas (ex: `setTimeout`, `fetch`) são enviadas à API do ambiente. Concluída, seu callback é colocado na Callback Queue. O Event Loop monitora a Call Stack e, quando vazia, move o primeiro callback da fila para a pilha para execução. Isso garante que tarefas demoradas não bloqueiem a thread principal, mantendo a aplicação responsiva.
@@ -89,7 +91,7 @@ Você interage com Promises usando:
 - `.then()`: para sucesso.
 - `.catch()`: para erro.
 - `.finally()`: para ações que devem ser executadas independentemente do resultado.
-Promises também lidam com múltiplas operações:
+  Promises também lidam com múltiplas operações:
 
 - `Promise.all()`: todas as Promises no array devem ser `fulfilled`.
 - `Promise.race()`: a primeira Promise no array a se resolver (sucesso ou falha).
@@ -168,6 +170,7 @@ Projetos "hero" exigem **testes** robustos. Testes automatizados garantem funcio
 Com esse arsenal, você está pronto para explorar estruturas e avançar na sua carreira como desenvolvedor JavaScript.
 
 ## Os Próximos Passos Rumo ao Nível Pro: Frameworks e Além
+
 Parabéns por dominar JavaScript! Para se tornar um desenvolvedor sênior, explore ferramentas e conceitos essenciais do desenvolvimento moderno.
 
 Mergulhe nos **Frameworks** e **Bibliotecas** JavaScript, essenciais para aplicações complexas:
@@ -193,6 +196,7 @@ Para gerenciar mudanças e colaborar, o **Controle de Versão** é indispensáve
 Parabéns! Solidifique seu aprendizado e torne-se um mestre JavaScript.
 
 ## Conclusão: Sua Jornada Apenas Começou
+
 Você consolidou uma base sólida em JavaScript, dominando fundamentos (DOM, async) essenciais para projetos complexos e experiências responsivas, preparando-se com mentalidade profissional.
 
 Este tutorial é só o começo. A maestria em JavaScript exige prática contínua. Mergulhe em Event Loop, Closures, contexto `this`. Aprofunde-se em **programação assíncrona (Promises, Async/Await)** e manipulação eficiente do DOM (**Reflows, Repaints, Lazy Loading, Debouncing, Throttling**). Aprimore com **boas práticas (Clean Code, SOLID)** e incorpore **testes (Jest, Cypress)**, **linters (ESLint)**, **formatadores (Prettier)** para qualidade e escalabilidade.

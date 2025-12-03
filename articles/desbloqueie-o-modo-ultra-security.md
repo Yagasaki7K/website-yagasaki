@@ -1,9 +1,9 @@
 ---
 title: Desbloqueie o modo Ultra Security do seu Windows
-excerpt: 'Já imaginou um desconhecido tentar acessar o seu computador e toda vez que digitar a senha corretamente ou até mesmo entrar automaticamente ...'
+excerpt: "Já imaginou um desconhecido tentar acessar o seu computador e toda vez que digitar a senha corretamente ou até mesmo entrar automaticamente ..."
 image: https://safebooru.org//samples/256/sample_0462c1628af4048d08c1b8b0408f900187999f6e.jpg?5171904
-tags: ['Windows', 'Script', 'Programação']
-date: '2024-09-28'
+tags: ["Windows", "Script", "Programação"]
+date: "2024-09-28"
 ---
 
 ![](https://safebooru.org//samples/256/sample_0462c1628af4048d08c1b8b0408f900187999f6e.jpg?5171904)

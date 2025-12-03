@@ -1,16 +1,18 @@
 ---
 title: O que é liderança técnica, o famoso Tech Lead?
-excerpt: 'Esse artigo de estudo é uma análise com base na aula sobre Liderança Técnica do Sérgio Fiorotti na Rocketseat. Toda a explicação, toda a análise ...'
+excerpt: "Esse artigo de estudo é uma análise com base na aula sobre Liderança Técnica do Sérgio Fiorotti na Rocketseat. Toda a explicação, toda a análise ..."
 image: https://safebooru.org//samples/2386/sample_237af85b75563428bfc120274a9831b0841344d4.jpg?2485489
-tags: ['Tecnologia', 'Evolução', 'Empresa']
-date: '2025-02-12'
+tags: ["Tecnologia", "Evolução", "Empresa"]
+date: "2025-02-12"
 ---
+
 ![](https://safebooru.org//samples/2386/sample_237af85b75563428bfc120274a9831b0841344d4.jpg?2485489)
 
 Esse artigo de estudo é uma análise com base na aula sobre Liderança Técnica do Sérgio Fiorotti na Rocketseat. Toda a explicação, toda a análise, é com base na aula dele, e
 transportada para o que eu entendo, o que eu acho, e a melhor abordagem em cima disso.
 
 # O que é ser Tech Lead?
+
 É um cargo, definitivamente, então diferente de ser um líder ou ter uma liderança em um projeto, isso não te faz um Tech Lead. O Tech Lead é um cargo, e ele é responsável por
 envolver a parte técnica, gerir as pessoas, o negócio, ele também é responsável por ajudar e/ou conduzir as diretrizes técnicas do negócio, e convergir a solução de um problema,
 mantendo a autonomia das pessoas, ou seja, a essência delas.
@@ -19,6 +21,7 @@ Claro que diferente disso, liderar um projeto já é mais diferente, já que voc
 as tarefas, tentar explicar com clareza o que deve ser feito, e assim por diante. Por isso, liderança não é um cargo.
 
 # Por que existe o Tech Lead?
+
 No primeiro momento, quando uma empresa é criada, geralmente ela compõe um CEO, sendo um Diretor Geral e um CTO, um diretor de tecnologia, geralmente essa pessoa é uma desenvolvedora,
 após ir evoluindo, a empresa vai crescendo, no primeiro momento podendo ter um desenvolvedor - sem contar o CTO - e um designer freela, depois disso ter três desenvolvedores e um designer,
 E no quarto momento ter sete desenvolvedores, um designer, um responsável pelo produto e um devops - que é o responsável pela infraestrutura. Agora, depois que passa desse número,
@@ -46,47 +49,52 @@ claro que pode acontecer por falta de oportunidade de trabalho, mas é incomum e
 Até porquê, quando se começa a gerir pessoas, você deixa a responsabilidade técnica para outras e o seu foco não volta mais a ser o mesmo.
 
 # Quais são os Pilares do Tech Lead? (4Ps)
+
 ## Plataforma
+
 - Arquitetura
-Qualidade do código, testes, documentação, escalabilidade, manutenibilidade, performance, segurança, e assim por diante.
+  Qualidade do código, testes, documentação, escalabilidade, manutenibilidade, performance, segurança, e assim por diante.
 
 - Decisões Técnicas
-Validar a decisão, sendo Paliativa ou Definitiva (sendo o melhor cenário)
+  Validar a decisão, sendo Paliativa ou Definitiva (sendo o melhor cenário)
 
 - DevOps
-Cultura DevOps, se preocupar com o processo de desenvolvimento, se preocupar com automatização, pipeline, com a validação, evitar erros.
+  Cultura DevOps, se preocupar com o processo de desenvolvimento, se preocupar com automatização, pipeline, com a validação, evitar erros.
 
 ## Produto
+
 - Modelos de Negócio
-Saber sobre o modelo de negócio da empresa, se é um SaaS, um marketplace, fintech. Existem problemas comuns em cada aspecto do negócio.
+  Saber sobre o modelo de negócio da empresa, se é um SaaS, um marketplace, fintech. Existem problemas comuns em cada aspecto do negócio.
 
 - Squad
-Como dividir o time de engenharia e desenvolvimento, tecnologia. Geralmente baseado em algum problema, existe motivo para ela ter sido dividida.
+  Como dividir o time de engenharia e desenvolvimento, tecnologia. Geralmente baseado em algum problema, existe motivo para ela ter sido dividida.
 
 - Time de Produto e Time de Projeto
-Dinâmica de projeto tem inicio e fim com prazos, depois disso não se envolve mais, porque depois de entregue, é finalizado.
-Já a dinâmica de produtos tem como exemplo uma plataforma, aonde tem problemas diários e ainda a soluções de melhoria em cima daquele produto, sendo uma plataforma de e-commerce, por exemplo. Trabalhando em algo de maneira constante, diferente do projeto.
+  Dinâmica de projeto tem inicio e fim com prazos, depois disso não se envolve mais, porque depois de entregue, é finalizado.
+  Já a dinâmica de produtos tem como exemplo uma plataforma, aonde tem problemas diários e ainda a soluções de melhoria em cima daquele produto, sendo uma plataforma de e-commerce, por exemplo. Trabalhando em algo de maneira constante, diferente do projeto.
 
 ## Processos
+
 - Agilidade
-Temos para isso as metologias de SCRUM/XP/Kanban. Mas e o papel do Scrum Master (SM)? Ele está ali mais para te educar, orientar e te dar um insight referente a metodologia que está utilizando,
-te dar um auxilio referente ao que deve ser entregue, referente a prazos do produto, qual dificuldade, as quebras de tarefas. E toda a decisão deve ser do Tech Lead.
+  Temos para isso as metologias de SCRUM/XP/Kanban. Mas e o papel do Scrum Master (SM)? Ele está ali mais para te educar, orientar e te dar um insight referente a metodologia que está utilizando,
+  te dar um auxilio referente ao que deve ser entregue, referente a prazos do produto, qual dificuldade, as quebras de tarefas. E toda a decisão deve ser do Tech Lead.
 
 - Ciclo de Desenvolvimento
-Se o desenvolvimento pegar uma tarefa e como ele está sendo entregue. Em um escopo menor, todos deverão ter direito a adicionar uma tarefa e cabe ao Tech Lead validar se aquela tarefa é válida ou não para o projeto.
+  Se o desenvolvimento pegar uma tarefa e como ele está sendo entregue. Em um escopo menor, todos deverão ter direito a adicionar uma tarefa e cabe ao Tech Lead validar se aquela tarefa é válida ou não para o projeto.
 
 - Playbooks
-Manuais de Incides de segurança, suporte, data especifica de prazo, quais alternativas, o que deve ser feito. O Tech Lead tem que educar o time e orientar para que outros saibam fazer o que ele faz e as alternativas e liberdades que o time poderá ter durante a ausência do Tech Lead, principalmente em situações aonde o projeto ou produto quebre ou tenha algum problema.
+  Manuais de Incides de segurança, suporte, data especifica de prazo, quais alternativas, o que deve ser feito. O Tech Lead tem que educar o time e orientar para que outros saibam fazer o que ele faz e as alternativas e liberdades que o time poderá ter durante a ausência do Tech Lead, principalmente em situações aonde o projeto ou produto quebre ou tenha algum problema.
 
 ## Pessoas
+
 - Jornada do Talento
-Como foi o recrutamento dessa pessoa, entrevista, contratação, integração, treinamento, desenvolvimento, promoção, e por fim, a saída.
+  Como foi o recrutamento dessa pessoa, entrevista, contratação, integração, treinamento, desenvolvimento, promoção, e por fim, a saída.
 
 - North Star e OKRs
-É como é feito a avaliação de uma pessoa dentro da equipe através das metas definidas pela empresa, como ela entregou e o que ela entregou (Resultado x Cultura), a avaliação do colaborador, como é o Plano de Desenvolvimento Individual (PDI), o que essa pessoa quer ser, qual é o seu plano de carreira.
+  É como é feito a avaliação de uma pessoa dentro da equipe através das metas definidas pela empresa, como ela entregou e o que ela entregou (Resultado x Cultura), a avaliação do colaborador, como é o Plano de Desenvolvimento Individual (PDI), o que essa pessoa quer ser, qual é o seu plano de carreira.
 
 - Cultura de Feedback
-Feedbacks constantes - Mais fácil de ter esse tipo de troca de experiência, feedbacks para evitar ansiedade em cima do desenvolvedor.
+  Feedbacks constantes - Mais fácil de ter esse tipo de troca de experiência, feedbacks para evitar ansiedade em cima do desenvolvedor.
 
 Feedback construtivo - O que foi bom, o que foi ruim, o que pode ser melhorado, o que pode ser feito para melhorar, o que pode ser feito para evitar que isso aconteça novamente.
 
@@ -113,51 +121,57 @@ E por último, o engajamento, quando se torna basicamente um embaixador da empre
 Recrutamento > Onboarding (Contratação) > Desenvolvimento (Performance > Evolução > Desenvolvimento) > Offboarding (Desligamento)
 
 ## Recrutamento
+
 - Quem você está procurando?
-  - Qual é o perfil desejado? (+ técnico / + comunicativo / + cultura (para evolução) / + experiência)
-  - Quais os desafios? (As tecnologias envolvidas, objetivos do projeto, os desafios da equipe)
-  - Descrição da vaga (Mais contingente com o dia a dia)
-  - O que muda na dinâmica do time (como o envolvimento vai dar impacto na equipe, o que ela espera da equipe)
+    - Qual é o perfil desejado? (+ técnico / + comunicativo / + cultura (para evolução) / + experiência)
+    - Quais os desafios? (As tecnologias envolvidas, objetivos do projeto, os desafios da equipe)
+    - Descrição da vaga (Mais contingente com o dia a dia)
+    - O que muda na dinâmica do time (como o envolvimento vai dar impacto na equipe, o que ela espera da equipe)
 
 - Simplifique o seu processo (que desafios ela já enfrentou ou precisa enfrentar para conquistar os objetivos necessários)
-  - Quais etapas terá o processo (entrevista técnica, entrevista com RH, entrevista com Tech Lead e como simplificar isso)
-  - Quais as expectativas sobre os candidatos (em cada etapa do processo)
-  - Quais as responsabilidades durante o processo (delegar funções para cada processo)
+    - Quais etapas terá o processo (entrevista técnica, entrevista com RH, entrevista com Tech Lead e como simplificar isso)
+    - Quais as expectativas sobre os candidatos (em cada etapa do processo)
+    - Quais as responsabilidades durante o processo (delegar funções para cada processo)
 
 - Não seja o vilão do recrutamento
- - Planeje sua agenda
- - Tempo para feedbacks (dar feedbacks para os candidatos)
- - Apresentar visão realista sobre o trabalho
- - Divulgação da vaga (Ajudar a divulgar a vaga, a construir a vaga)
- - Programa de indicações
+- Planeje sua agenda
+- Tempo para feedbacks (dar feedbacks para os candidatos)
+- Apresentar visão realista sobre o trabalho
+- Divulgação da vaga (Ajudar a divulgar a vaga, a construir a vaga)
+- Programa de indicações
 
 ## Onboarding (Contratação)
+
 - Antes de tudo
-Explicar o que ela precisa para trabalhar, acessos que ela precisa, ferramentas que serão utilizadas, como abrir chamado,
-como abrir uma issue - se necessária, processo de desenvolvimento para produção, como é feito o deploy, como é feito
-uma atualização, monitoramento, processo do projeto (Cliente > CEO / PO (Product Owner) > CTO > Desenvolvedores), code review, etc.
+  Explicar o que ela precisa para trabalhar, acessos que ela precisa, ferramentas que serão utilizadas, como abrir chamado,
+  como abrir uma issue - se necessária, processo de desenvolvimento para produção, como é feito o deploy, como é feito
+  uma atualização, monitoramento, processo do projeto (Cliente > CEO / PO (Product Owner) > CTO > Desenvolvedores), code review, etc.
 
 - Apresentações
- - Cultura (Valores da empresa, como trabalham, proatividade, autonomia, responsabilidade, comunicação)
- - Operação (Como é feito o deploy, como é feito o monitoramento, suporte ao cliente, como é feito o processo de desenvolvimento)
- - Processos (Os desafios que irá enfrentar)
+- Cultura (Valores da empresa, como trabalham, proatividade, autonomia, responsabilidade, comunicação)
+- Operação (Como é feito o deploy, como é feito o monitoramento, suporte ao cliente, como é feito o processo de desenvolvimento)
+- Processos (Os desafios que irá enfrentar)
 
 - Desafio (Acostumar com todo o processo, a rotina da empresa e da equipe) - Geralmente usado no tempo de experiência ou menos.
 
 ## Ciclo de Desenvolvimento
+
 - Cultura de feedbacks (1-1, feedbacks constantes, metas atingidas)
 - Alinhamento de carreira (Alinhar a carreira do contribuinte com o que ele deseja, aonde ele quer chegar)
 - North Star e OKRs (Avaliação de performance, o que foi entregue, metas da empresa, o que pode ser melhorado)
 - Delegar para desenvolver (Para eles desenvolverem da maneira que você deseja, sem interferir no processo e na qualidade)
 
 ## Performance
+
 Como avaliamos alguém que está se desenvolvendo?
+
 - 1-1s (Tenha frequência para dar feedbacks)
 - Avaliação 360
 - Como e quando dar um aumento? (Baseado na performance, reconhecimento, performar no desenvolvimento, na qualidade do trabalho, na qualidade do feedback)
 - Promoção e Mérito
 
 ## Offboarding
+
 - Já houveram feedbacks?
 - Decisão baseada em fatos
 - Decisão foi tomada em cima dos valores ou performance
@@ -165,136 +179,145 @@ Como avaliamos alguém que está se desenvolvendo?
 - Evite efetuar offboarding sozinho (Isso mostra apoio na decisão - escolha um outro líder)
 
 # Os cinco desafios das equipes
+
 Baseada no livro "Os cinco desafios das equipes" de Patrick Lencioni
 
 ## Desafio 1
+
 - Falta de confiança (entre os membros da equipe - geralmente acontece quando tem membro novo ou líder novo)
- - Escondem suas fraquezas e seus erros uns dos outros
- - Hesitam em pedir ajuda ou dar feedbacks
- - Hesitam em oferecer ajuda a pessoas que atuam fora de suas áreas de responsabilidade
- - Tiram conclusões precipitadas sobre as intenções e aptidões dos outros, sem tentar esclarecê-las
- - Não reconhecem nem exploram as experiências e habilidades uns dos outros
- - Perdem tempo e energia controlando o próprio comportamento para causar boa impressão
- - Guardam mágoas
- - Temem as reuniões e encontram motivos para evitar passar tempo junto dos colegas
+- Escondem suas fraquezas e seus erros uns dos outros
+- Hesitam em pedir ajuda ou dar feedbacks
+- Hesitam em oferecer ajuda a pessoas que atuam fora de suas áreas de responsabilidade
+- Tiram conclusões precipitadas sobre as intenções e aptidões dos outros, sem tentar esclarecê-las
+- Não reconhecem nem exploram as experiências e habilidades uns dos outros
+- Perdem tempo e energia controlando o próprio comportamento para causar boa impressão
+- Guardam mágoas
+- Temem as reuniões e encontram motivos para evitar passar tempo junto dos colegas
 
 - Onde existe confiança entre os membros da equipe
- - Admitem suas fraquezas e seus erros
- - Pedem ajuda
- - Aceitam perguntas e informações sobre suas áreas de responsabilidade
- - Dão uns aos outros o benefício da dúvida antes de chegar a conclusões negativas
- - Assumem riscos dando feedback, oferecendo ajuda
- - Valorizam e exploram as experiências e as habilidades uns dos outros
- - Investem tempo e energia em questões importantes, não em politicagens
- - Oferecem e aceitam desculpas sem hesitar
- - Anseiam pelas reuniões e por outras oportunidades de trabalhar em equipe
+- Admitem suas fraquezas e seus erros
+- Pedem ajuda
+- Aceitam perguntas e informações sobre suas áreas de responsabilidade
+- Dão uns aos outros o benefício da dúvida antes de chegar a conclusões negativas
+- Assumem riscos dando feedback, oferecendo ajuda
+- Valorizam e exploram as experiências e as habilidades uns dos outros
+- Investem tempo e energia em questões importantes, não em politicagens
+- Oferecem e aceitam desculpas sem hesitar
+- Anseiam pelas reuniões e por outras oportunidades de trabalhar em equipe
 
 - Seu papel como líder!
- - Ser o primeiro a demonstrar vulnerabilidade
- - Deve criar um ambiente onde vulnerabilidade não seja punida
- - E por fim, sua vulnerabilidade tem que ser verdadeira, fingir isso irá causar facilmente a perda de confiança da sua equipe
+- Ser o primeiro a demonstrar vulnerabilidade
+- Deve criar um ambiente onde vulnerabilidade não seja punida
+- E por fim, sua vulnerabilidade tem que ser verdadeira, fingir isso irá causar facilmente a perda de confiança da sua equipe
 
 ## Desafio 2
+
 - Medo de conflitos (Harmonia artificial na equipe)
- - Têm reuniões entediantes
- - Criam ambientes propícios a politicagens e ataques pessoais
- - Ignoram questões controversas que são fundamentais para o sucesso da equipe
- - Não exploram todas as opiniões e perspectivas dos integrantes da equipe
- - Perdem tempo e energia administrando riscos interpessoais e posturas
+- Têm reuniões entediantes
+- Criam ambientes propícios a politicagens e ataques pessoais
+- Ignoram questões controversas que são fundamentais para o sucesso da equipe
+- Não exploram todas as opiniões e perspectivas dos integrantes da equipe
+- Perdem tempo e energia administrando riscos interpessoais e posturas
 
 - Equipes que se envolvem nos conflitos
- - Têm reuniões interessantes e vigorosas
- - Extraem e exploram as ideias de todos os seus integrantes
- - Solucionam problemas com rapidez
- - Minimizam as politicagens
- - Colocam em pauta questões críticas
+- Têm reuniões interessantes e vigorosas
+- Extraem e exploram as ideias de todos os seus integrantes
+- Solucionam problemas com rapidez
+- Minimizam as politicagens
+- Colocam em pauta questões críticas
 
 - Seu papel como líder!
- - Deve demonstrar moderação e permitir que o desfecho ocorra naturalmente, sem interromper prematuramente o conflito querendo proteger e impossibilitando os demais membros a amadurecer e lidar por si só com os conflitos
- - Por mais banal que seja, ao evitar discussões que são necessárias e produtivas, você faz surgir essa disfunção!
+- Deve demonstrar moderação e permitir que o desfecho ocorra naturalmente, sem interromper prematuramente o conflito querendo proteger e impossibilitando os demais membros a amadurecer e lidar por si só com os conflitos
+- Por mais banal que seja, ao evitar discussões que são necessárias e produtivas, você faz surgir essa disfunção!
 
 ## Desafio 3
+
 - Falta de Comprometimento (Ambiguidade - Não consegue se comprometer)
- - Cria ambiguidade entre seus integrantes em relação a direção e prioridades
- - Vê portas se fecharem devido a análises excessivas e demora desnecessária
- - Alimenta a falta de confiança e o medo de errar
- - Revisita discussões e decisões inúmeras vezes
- - Estimular questionamentos entre seus integrantes
+- Cria ambiguidade entre seus integrantes em relação a direção e prioridades
+- Vê portas se fecharem devido a análises excessivas e demora desnecessária
+- Alimenta a falta de confiança e o medo de errar
+- Revisita discussões e decisões inúmeras vezes
+- Estimular questionamentos entre seus integrantes
 
 - Equipes comprometidas
- - Gera clareza em relação a direção e prioridades
- - Alinha todo o grupo em torno dos objetivos comuns
- - Desenvolve a capacidade de aprender através dos erros
- - Aproveita as oportunidades antes que os competidores ou concorrência façam isso
- - Segue em frente sem hesitação
- - Muda de direção sem hesitação ou culpa
+- Gera clareza em relação a direção e prioridades
+- Alinha todo o grupo em torno dos objetivos comuns
+- Desenvolve a capacidade de aprender através dos erros
+- Aproveita as oportunidades antes que os competidores ou concorrência façam isso
+- Segue em frente sem hesitação
+- Muda de direção sem hesitação ou culpa
 
 - Seu papel como líder!
- - Se sentir à vontade se alguma decisão se revelar errada
- - Deve estimular os demais a chegar a conclusões sobre as questões, assim como aderir ao que a equipe tiver decidido
- - Não supervalorizar a certeza e o consenso
+- Se sentir à vontade se alguma decisão se revelar errada
+- Deve estimular os demais a chegar a conclusões sobre as questões, assim como aderir ao que a equipe tiver decidido
+- Não supervalorizar a certeza e o consenso
 
 ## Desafio 4
+
 - Evitar responsabilizar os outros (Gerando baixos padrões)
- - Cria ressentimento entre os integrantes que possuem diferentes padrões de desempenho
- - Estimula a mediocridade
- - Perde prazos fundamentais
- - Coloca sobre os ombros do líder o fardo injusto de ser a única fonte de disciplina
+- Cria ressentimento entre os integrantes que possuem diferentes padrões de desempenho
+- Estimula a mediocridade
+- Perde prazos fundamentais
+- Coloca sobre os ombros do líder o fardo injusto de ser a única fonte de disciplina
 
 - Equipes que se responsabilizam
- - Faz com que cada membroi que tenha um mau desempenho sinta-se pressionado a melhorar
- - Identifica problemas em potencial com rapidez, através do questionamento das abordagens uns dos outros, sem hesitação
- - Estabelece o respeito entre todos os integrantes, que devem estabelecer os mesmos altos níveis de desempenho entre si
- - Evita a burocracia excessiva em relação ao controle do desempenho e às ações corretivas
+- Faz com que cada membroi que tenha um mau desempenho sinta-se pressionado a melhorar
+- Identifica problemas em potencial com rapidez, através do questionamento das abordagens uns dos outros, sem hesitação
+- Estabelece o respeito entre todos os integrantes, que devem estabelecer os mesmos altos níveis de desempenho entre si
+- Evita a burocracia excessiva em relação ao controle do desempenho e às ações corretivas
 
 - Seu papel como líder!
- - Estimular cultura e criar mecanismos para que todos os membros da equipe se responsabilizem uns aos outros
- - Evitar responsabilizar os outros por suas atribuições é um convite para mudar foco de atenção da sua equipe e não ao resultado coletivo
+- Estimular cultura e criar mecanismos para que todos os membros da equipe se responsabilizem uns aos outros
+- Evitar responsabilizar os outros por suas atribuições é um convite para mudar foco de atenção da sua equipe e não ao resultado coletivo
 
 ## Desafio 5
+
 - Falta de atenção aos resultados (Afetar status e ego)
- - Fica estagnada, não progride
- - Raramente supera seus concorrentes e inovações
- - Perde funcionários voltados para o alcance dos objetivos
- - Estimula membros a se concentrarem nas próprias carreiras e em objetivos individuais
- - Perde o foco facilmente
+- Fica estagnada, não progride
+- Raramente supera seus concorrentes e inovações
+- Perde funcionários voltados para o alcance dos objetivos
+- Estimula membros a se concentrarem nas próprias carreiras e em objetivos individuais
+- Perde o foco facilmente
 
 - Equipes que foca nos resultados coletivos
- - Mantém os funcionários que focam nos resultados
- - Minimiza o comportamento individualista
- - Fica feliz com o sucesso e sofre profundamente com o fracasso
- - Beneficia-se de indivíduos que renunciam aos próprios objetivos e/ou interesses pelo bem da equipe
- - Evita distrações
+- Mantém os funcionários que focam nos resultados
+- Minimiza o comportamento individualista
+- Fica feliz com o sucesso e sofre profundamente com o fracasso
+- Beneficia-se de indivíduos que renunciam aos próprios objetivos e/ou interesses pelo bem da equipe
+- Evita distrações
 
 - Seu papel como lider!
- - Se os membros da equipe sentirem que o líder valoriza qualquer coisa diferente de resultados, eles assumirão essa postura como uma permissão para fazer o mesmo
- - Deve valorizar recompensas e reconhecimentos para aqueles que fizeram contribuições verdadeiras para o alcance dos resultados coletivos
+- Se os membros da equipe sentirem que o líder valoriza qualquer coisa diferente de resultados, eles assumirão essa postura como uma permissão para fazer o mesmo
+- Deve valorizar recompensas e reconhecimentos para aqueles que fizeram contribuições verdadeiras para o alcance dos resultados coletivos
 
 # Empatia Assertiva
+
 - Importar-se pessoalmente
-Diz respeito a se importar de forma genuína pela pessoa como um todo e não só pelos aspectos profissionais.
+  Diz respeito a se importar de forma genuína pela pessoa como um todo e não só pelos aspectos profissionais.
 
 - Desafie diretamente
-Desafiar diretamente requer confiança para demonstrar que você se importa o suficiente para dizer o que precisa ser dito.
+  Desafiar diretamente requer confiança para demonstrar que você se importa o suficiente para dizer o que precisa ser dito.
 
 - Empatia Nociva
-Tem como foco fazer o outro se sentir bem ao invés de elogiar ou fazer críticas sinceras. Há uma preocupação genúina, mas evitamos falar o que precisa ser dito para evitar tensão, discórdia, mágoas e o mal estar. É um elogio não específico, com a intenção de agradar e não de ajudar a entender o que está bom ou ruim. Evita a conversa sincera.
+  Tem como foco fazer o outro se sentir bem ao invés de elogiar ou fazer críticas sinceras. Há uma preocupação genúina, mas evitamos falar o que precisa ser dito para evitar tensão, discórdia, mágoas e o mal estar. É um elogio não específico, com a intenção de agradar e não de ajudar a entender o que está bom ou ruim. Evita a conversa sincera.
 
 - Insinceridade Manipuladora
-Ocorre quando você não se importa o suficiente nem o desafia diretamente. Na maioria das vezes é uma tentativa de manipular o outro para obter ganho pessoal. Usado para fazer com que alguém goste de você, para conquistar vantagem, ou quando simplesmente estamos cansados demais para continuar discutindo.
+  Ocorre quando você não se importa o suficiente nem o desafia diretamente. Na maioria das vezes é uma tentativa de manipular o outro para obter ganho pessoal. Usado para fazer com que alguém goste de você, para conquistar vantagem, ou quando simplesmente estamos cansados demais para continuar discutindo.
 
 - Agressividade Ofensiva
-É quando você critica alguém sem se dar o trabalho de mostrar que se importa e/ou sem intenção genuína de ajudar. Muitas vezes você conhece as vulnerabilidades do outro e explora isso com intenção, para levar alguma vantagem ou impor sua dominância. São elogios irônicos ou críticas sem gentileza.
+  É quando você critica alguém sem se dar o trabalho de mostrar que se importa e/ou sem intenção genuína de ajudar. Muitas vezes você conhece as vulnerabilidades do outro e explora isso com intenção, para levar alguma vantagem ou impor sua dominância. São elogios irônicos ou críticas sem gentileza.
 
 - Sinceridade Radical / Empatia Assertiva
-É o feedback claro e sem maldade. Acontece quando você aborda diretamente o problema, dizendo o que precisa ser dito, de forma contextualizada, pessoal e específica, sem rodeios, com sinceridade e gentileza. É dizer as coisas como elas são indo direto ao ponto de forma empática e assertiva.
+  É o feedback claro e sem maldade. Acontece quando você aborda diretamente o problema, dizendo o que precisa ser dito, de forma contextualizada, pessoal e específica, sem rodeios, com sinceridade e gentileza. É dizer as coisas como elas são indo direto ao ponto de forma empática e assertiva.
 
 # Tour of Duty
+
 É uma ferramenta, um framework baseado no livro The Alliance: Managing Talent in the Networked Age, escriti pelo Reid Hoffman.
 
 "Nada mais é do que um alinhamento de expectativas e objetivos entre a empresa e o colaborador"
 
 ## Problema
+
 De acordo com uma pesquisa da Gallup, 70% dos colaboradores não são engajados nos seus trabalhos.
 
 E uma revisão dessa pesquisa mostra como o bem-estar e a experiência dos colaboradores está diretamente relacionado à produtividade, engajamento e resultados de negócios.
@@ -307,32 +330,37 @@ E quando não nos sentimentos engajados, acabamos saindo da empresa. Não criamo
 - Não nos sentimos ouvidos.
 
 ## Como funciona?
+
 - Conversas individuais (1:1s)
 - Tipos de Tour of Duty
 - Dinâmicas de Auto Conhecimento ou Inspiração
 - Desenhar seus objetivos - Alinhamentos de expectativas
 
 ### Conversas Individuais
+
 - Quais os planos pra sua vida?
 - Qual a próxima empresa e/ou cargo que você deseja trabalhar?
 
 ## Tipos
+
 - Transformacional - Ela quer evoluir no próprio cargo/carreira (Aprendizado > Aplicação > Transição)
 - Rotacional - Você irá para uma área totalmente nova ou quer mudar de profissão
 - Fundacional - Geralmente serve para aqueles que fundaram a empresa, ou que pretendem ficar por muitos anos, mais comum nos casos dos executivos.
 
 ## Dinâmicas
+
 - Valores / Auto conhecimento
- - Escolha três pessoas (fora da empresa) que você ela e descreva três valores que ela admira nelas
- - É importante aqui refletir sobre os seus princípios, o que te guia e faz ela agir.
- - Se esses valores conectam com seu objetivo e propósito
+- Escolha três pessoas (fora da empresa) que você ela e descreva três valores que ela admira nelas
+- É importante aqui refletir sobre os seus princípios, o que te guia e faz ela agir.
+- Se esses valores conectam com seu objetivo e propósito
 
 - Aspirações
- - Conecte-se com três pessoas que ela possui alguma ligação com seu objetivo, que exerça o cargo que você queira assumir talvez.
- - É importante aqui ela irá fazer as perguntas certas e ouvir bastante.
- - Refletir sobre as respostas dos entrevistados e se isso é o que ela deseja para a sua carreira.
+- Conecte-se com três pessoas que ela possui alguma ligação com seu objetivo, que exerça o cargo que você queira assumir talvez.
+- É importante aqui ela irá fazer as perguntas certas e ouvir bastante.
+- Refletir sobre as respostas dos entrevistados e se isso é o que ela deseja para a sua carreira.
 
 ## Desenhe seu Tour
+
 - Qual o objetivo para o colaborador? O que ele quer se tornar?
 - Quanto tempo ele precisa?
 - O que pode mudar para a empresa? (Analisar o que a mudança dele ajuda na sua empresa)

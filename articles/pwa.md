@@ -1,9 +1,9 @@
 ---
 title: Como transformar seu website em um Progressive Web Application (PWA)
-excerpt: 'Aprenda a transformar uma aplicação web em PWA'
+excerpt: "Aprenda a transformar uma aplicação web em PWA"
 image: https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
-tags: ['PWA', 'Progressive Web Application']
-date: '2023-03-24'
+tags: ["PWA", "Progressive Web Application"]
+date: "2023-03-24"
 ---
 
 ![](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Kelly Sikkema")
@@ -39,38 +39,38 @@ a documentação de cada um deles. No caso do VueJS, você pode usar o `vue-plug
 O que eu fiz? Inicialmente eu instalei o pacote `next-pwa` e adicionei ele no `next.config.js`:
 
 ```js
-const withPWA = require('next-pwa')
+const withPWA = require("next-pwa");
 
 module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-  },
-})
+    pwa: {
+        dest: "public",
+    },
+});
 ```
 
 Depois disso, eu adicionei o arquivo `manifest.json` na pasta `public`:
 
 ```json
 {
-  "name": "Essentials",
-  "short_name": "Essentials",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
-  "description": "Essentials é uma ferramenta para gerenciar seus projetos de forma simples e rápida.",
-  "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "Essentials",
+    "short_name": "Essentials",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "Essentials é uma ferramenta para gerenciar seus projetos de forma simples e rápida.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
 ```
 
@@ -86,6 +86,7 @@ gratificante como uma ferramenta tão pequena pode ser tão útil. Se tiver difi
 para web pode se transformar em aplicativo e acessar vários dispositivos, comportar várias situações sem ter que adaptar inteiramente o código, fazer toda a transformação, mudar a arquitetura, enfim, foi uma experiência demais.
 
 ## Por que você deveria transformar seu Web App em PWA?
+
 - O PWA permite que sua aplicação tenha um modo offline por meio da configuração de um service worker. Dá um pouco de trabalho e exige dedicação, mas funciona muito bem!
 - Normalmente os PWAs ocupam menos espaço no celular do usuário, pois o navegador só guarda o cache da sua aplicação.
 - Ele pode te ajudar a economizar em requisições! Sim, você pode configurar o seu service worker para interceptar requisições. Caso os dados da requisição já estejam guardados no cache, ele vai pegar os seus dados por meio do service worker e retornar sem fazer a requisição.

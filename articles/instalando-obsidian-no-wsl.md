@@ -1,9 +1,9 @@
 ---
 title: Aprenda a instalar e usar o Obsidian no WSL
-excerpt: 'A solução definitiva para instalar e usar o Obsidian no Windows Subsystem Linux (WSL)'
+excerpt: "A solução definitiva para instalar e usar o Obsidian no Windows Subsystem Linux (WSL)"
 image: https://github.com/Yagasaki7K/website-onigirihardcore/assets/23272064/3e27e6ac-55bf-4d31-8f49-1d2f7e84b64b
-tags: ['Obsidian', 'Notes', 'Iniciante']
-date: '2024-05-23'
+tags: ["Obsidian", "Notes", "Iniciante"]
+date: "2024-05-23"
 ---
 
 ![](https://github.com/Yagasaki7K/website-onigirihardcore/assets/23272064/3e27e6ac-55bf-4d31-8f49-1d2f7e84b64b)
@@ -23,7 +23,7 @@ o problema? Tinha que deixar o terminal aberto e a interface estava muito ruim d
 Eis que surge a solução no forum oficial da Obsidian.
 
 Deixo aqui os mesmos créditos que o autor do forum informou. Agradecimento ao [Maztuto do Discord](https://discord.com/channels/686053708261228577/694233507500916796/1154197889506082826).
-E com isso, o WSL2 agora permite utilizar o Linux GUI Apps de forma nativa usando o X11 e Wayland - 
+E com isso, o WSL2 agora permite utilizar o Linux GUI Apps de forma nativa usando o X11 e Wayland -
 esse era o real problema na época que havia mencionado. A incompatibilidade era tenta, que abandonei e fiquei usando
 o estilo do Obsidian no próprio VS Code.
 
@@ -70,6 +70,6 @@ você precisa reservar uma aba só para essa execução. Se você fechar a aba, 
 
 Diferente da versão direta do Windows que não depende de um terminal rodando para executar a aplicação.
 
-E aí? Gostou? Se tiver dúvidas, não hesite em me chamar lá no [X/Twitter](https://twitter.com/Yagasaki7K), e caso 
-tenha alguma dificuldade em outro aplicativo ou quer algum outro artigo também ensinando algo, pode me chamar 
+E aí? Gostou? Se tiver dúvidas, não hesite em me chamar lá no [X/Twitter](https://twitter.com/Yagasaki7K), e caso
+tenha alguma dificuldade em outro aplicativo ou quer algum outro artigo também ensinando algo, pode me chamar
 que a gente conversa a respeito!

@@ -22,9 +22,9 @@ Exemplos: reconhecer uma voz ao telefone, recomendar um filme no streaming, dete
 
 É importante distinguir três níveis que sempre aparecem em debates:
 
-* **IA estreita (narrow AI):** a que temos hoje. Focada em uma tarefa específica, como reconhecer rostos ou sugerir uma rota no GPS.
-* **IA geral (AGI):** ainda hipotética. Seria capaz de aprender qualquer coisa cognitiva, como um humano.
-* **IA superinteligente:** além da capacidade humana. Essa é terreno de ficção científica e discussões filosóficas.
+- **IA estreita (narrow AI):** a que temos hoje. Focada em uma tarefa específica, como reconhecer rostos ou sugerir uma rota no GPS.
+- **IA geral (AGI):** ainda hipotética. Seria capaz de aprender qualquer coisa cognitiva, como um humano.
+- **IA superinteligente:** além da capacidade humana. Essa é terreno de ficção científica e discussões filosóficas.
 
 Quase tudo o que você lê como “IA” hoje é na verdade **estatística em escala**: prever a próxima palavra, prever o próximo movimento, prever a probabilidade de fraude.
 
@@ -34,9 +34,9 @@ Quase tudo o que você lê como “IA” hoje é na verdade **estatística em es
 
 ### Raízes históricas
 
-* **1950–1980:** as ideias começaram. Alan Turing propôs o famoso “teste de Turing”. O perceptron, criado por Frank Rosenblatt, foi o embrião das redes neurais. Mas havia um problema: pouca memória, CPUs lentas, dados escassos.
-* **1990–2010:** surgiram avanços como máquinas de vetores de suporte (SVMs), árvores de decisão e regressão logística. Eles funcionavam bem para conjuntos de dados médios, mas o salto para algo maior parecia inalcançável.
-* **2012 em diante:** um divisor de águas. A rede AlexNet venceu a competição ImageNet em visão computacional com larga vantagem — e isso só foi possível porque rodava em GPUs.
+- **1950–1980:** as ideias começaram. Alan Turing propôs o famoso “teste de Turing”. O perceptron, criado por Frank Rosenblatt, foi o embrião das redes neurais. Mas havia um problema: pouca memória, CPUs lentas, dados escassos.
+- **1990–2010:** surgiram avanços como máquinas de vetores de suporte (SVMs), árvores de decisão e regressão logística. Eles funcionavam bem para conjuntos de dados médios, mas o salto para algo maior parecia inalcançável.
+- **2012 em diante:** um divisor de águas. A rede AlexNet venceu a competição ImageNet em visão computacional com larga vantagem — e isso só foi possível porque rodava em GPUs.
 
 ### O papel das GPUs
 
@@ -48,11 +48,11 @@ E justamente multiplicação de matrizes é o coração do treino de redes neura
 
 O que pouca gente sabe é que sem o mercado de videogames, talvez a IA tivesse atrasado 20 anos.
 
-* Nos anos 2000, consoles como o **PlayStation** e o **Xbox** disputavam gráficos cada vez mais realistas.
-* O PlayStation 2 foi até chamado de “o supercomputador mais barato da época”. Algumas universidades montaram clusters de PS2 para pesquisas científicas porque saía mais barato do que usar CPUs de laboratório.
-* NVIDIA, ATI (hoje AMD) e outras despejavam bilhões em pesquisa, só para melhorar experiência de jogo.
+- Nos anos 2000, consoles como o **PlayStation** e o **Xbox** disputavam gráficos cada vez mais realistas.
+- O PlayStation 2 foi até chamado de “o supercomputador mais barato da época”. Algumas universidades montaram clusters de PS2 para pesquisas científicas porque saía mais barato do que usar CPUs de laboratório.
+- NVIDIA, ATI (hoje AMD) e outras despejavam bilhões em pesquisa, só para melhorar experiência de jogo.
 
-Foi quando a comunidade científica percebeu: *“Se essa placa pode rodar GTA em tempo real, por que não usar essa potência para ciência e IA?”*.
+Foi quando a comunidade científica percebeu: _“Se essa placa pode rodar GTA em tempo real, por que não usar essa potência para ciência e IA?”_.
 
 Com o lançamento da **CUDA** (2007, da NVIDIA), programadores passaram a usar GPUs não apenas para gráficos, mas para qualquer cálculo intensivo. E então nasceu o que chamamos de **GPGPU** (General-Purpose GPU).
 
@@ -91,10 +91,10 @@ O processo de **treinamento** é o aprendizado. A rede recebe exemplos (milhares
 
 ### Tipos de redes
 
-* **Perceptron / MLP:** os mais básicos, blocos iniciais.
-* **CNN (convolucionais):** ótimas para imagens, detectam formas e padrões visuais.
-* **RNN / LSTM / GRU:** criadas para sequências, como frases ou séries temporais.
-* **Transformers:** hoje dominam linguagem. São a base do GPT, BERT e muitos outros.
+- **Perceptron / MLP:** os mais básicos, blocos iniciais.
+- **CNN (convolucionais):** ótimas para imagens, detectam formas e padrões visuais.
+- **RNN / LSTM / GRU:** criadas para sequências, como frases ou séries temporais.
+- **Transformers:** hoje dominam linguagem. São a base do GPT, BERT e muitos outros.
 
 A grande chave é entender: **a rede não entende como humanos entendem**. Ela estatisticamente aprende padrões e os replica.
 
@@ -120,10 +120,10 @@ Para evitar esse tipo de problema, principalmente se tratando de data, pergunte 
 
 Aqui entra a parte divertida: sim, eles têm fragilidades.
 
-* **Adversarial examples:** pequenas alterações no input podem gerar erros enormes.
-* **Prompt injection / jailbreak:** usuários pedem que o modelo ignore regras.
-* **Data poisoning:** colocar dados maliciosos no treino para corromper o comportamento.
-* **Simulações:** pedir para o modelo “se passar por Einstein” não cria Einstein. É como pedir a um ator para imitar alguém — o ator continua sendo ele mesmo, só que copiando gestos e falas.
+- **Adversarial examples:** pequenas alterações no input podem gerar erros enormes.
+- **Prompt injection / jailbreak:** usuários pedem que o modelo ignore regras.
+- **Data poisoning:** colocar dados maliciosos no treino para corromper o comportamento.
+- **Simulações:** pedir para o modelo “se passar por Einstein” não cria Einstein. É como pedir a um ator para imitar alguém — o ator continua sendo ele mesmo, só que copiando gestos e falas.
 
 ## Poder de processamento e custo de arquitetura
 
@@ -133,9 +133,9 @@ Treinar um modelo como GPT exige **clusters inteiros de GPUs ou TPUs rodando por
 
 E mesmo depois do treino, o uso em produção (o que você faz ao enviar uma pergunta) também tem custo. Cada resposta é um cálculo pesado. Por isso empresas usam técnicas como:
 
-* **Quantização:** reduzir tamanho do modelo.
-* **Distilação:** criar versões menores de um modelo grande.
-* **RAG (retrieval-augmented generation):** dar documentos prontos para a IA consultar.
+- **Quantização:** reduzir tamanho do modelo.
+- **Distilação:** criar versões menores de um modelo grande.
+- **RAG (retrieval-augmented generation):** dar documentos prontos para a IA consultar.
 
 É essa parte que explica porque apenas gigantes de tecnologia oferecem esses modelos em escala global.
 
@@ -145,30 +145,30 @@ Aqui sim chegamos ao impacto direto na vida das pessoas. A pergunta é: “a IA 
 
 A resposta não é simples.
 
-* **Automatiza tarefas, não empregos inteiros.** Uma assistente de IA pode preencher formulários, mas não substitui o contato humano em negociações complexas.
-* **Setores mais afetados:** atendimento, triagem de dados, tradução básica.
-* **Novas funções surgem:** curadoria de dados, engenharia de prompts, integração de IA em negócios.
-* **O problema maior:** se os ganhos de produtividade ficam apenas com empresas, a desigualdade aumenta.
+- **Automatiza tarefas, não empregos inteiros.** Uma assistente de IA pode preencher formulários, mas não substitui o contato humano em negociações complexas.
+- **Setores mais afetados:** atendimento, triagem de dados, tradução básica.
+- **Novas funções surgem:** curadoria de dados, engenharia de prompts, integração de IA em negócios.
+- **O problema maior:** se os ganhos de produtividade ficam apenas com empresas, a desigualdade aumenta.
 
 Ou seja: a IA não é a culpada isolada. A questão é **como sociedade e governos lidam com a mudança**.
 
 ## E a “Skynet”?
 
-Muita gente teme um cenário estilo *Exterminador do Futuro*, com máquinas autoconscientes declarando guerra à humanidade.
+Muita gente teme um cenário estilo _Exterminador do Futuro_, com máquinas autoconscientes declarando guerra à humanidade.
 
 Na prática, isso não existe. Modelos de hoje não têm consciência, vontade ou plano. Eles são ferramentas estatísticas.
 
 Mas há riscos reais, e eles são menos cinematográficos e mais preocupantes:
 
-* falhas em sistemas críticos (carros autônomos, hospitais),
-* uso malicioso (deepfakes, golpes automatizados),
-* decisões automáticas sem supervisão humana (viés, discriminação).
+- falhas em sistemas críticos (carros autônomos, hospitais),
+- uso malicioso (deepfakes, golpes automatizados),
+- decisões automáticas sem supervisão humana (viés, discriminação).
 
 A ficção da Skynet é útil como metáfora, mas o perigo atual está em **como usamos a IA em larga escala sem freios**.
 
 ## Conclusão
 
-A inteligência artificial é uma revolução tecnológica com potencial imenso, mas também com desafios reais. Entender como ela funciona, suas limitações e riscos é crucial para usá-la de forma consciente e ética. A história da OpenAI e o papel das GPUs mostram como avanços inesperados podem transformar o mundo. O futuro da IA depende não apenas da tecnologia, mas de escolhas humanas sobre seu uso. Nossa missão: ajudar a gente a entender e usar essa tecnologia de maneira consciente. 
+A inteligência artificial é uma revolução tecnológica com potencial imenso, mas também com desafios reais. Entender como ela funciona, suas limitações e riscos é crucial para usá-la de forma consciente e ética. A história da OpenAI e o papel das GPUs mostram como avanços inesperados podem transformar o mundo. O futuro da IA depende não apenas da tecnologia, mas de escolhas humanas sobre seu uso. Nossa missão: ajudar a gente a entender e usar essa tecnologia de maneira consciente.
 
 Espero que esse artigo tenha ajudado você a entender melhor o que é IA, como ela surgiu e para onde estamos indo.
 

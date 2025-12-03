@@ -2,8 +2,8 @@
 title: ContextAPI - Como criar, como usar e como alimentar para iniciantes
 excerpt: Sobre o ContextAPI e aprendendo a criar, usar e alimentá-lo
 image: https://images.unsplash.com/photo-1593663922663-34cbd6671eae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80
-tags: ['Context API', 'React', 'Desenvolvimento', 'Programação']
-date: '2023-09-05'
+tags: ["Context API", "React", "Desenvolvimento", "Programação"]
+date: "2023-09-05"
 ---
 
 ![](https://images.unsplash.com/photo-1593663922663-34cbd6671eae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80 "Mark König")
@@ -17,6 +17,7 @@ não queremos ter que ficar repetindo essa chamada nos outros componentes, certo
 <!--truncate-->
 
 ## Ah, mas por que não? Ou por que não criamos no topo e vamos chamando até embaixo?
+
 Vamos ao primeiro cenário. Imagine que ao invés de você fazer uma requisição pela página, você faz quatro para apenas uma página,
 certo? Isso é tranquilo quando se trata de um usuário, mas já pensou se a nossa aplicação tem mil acessos diários? Isso seria
 basicamente quatro mil requisições diária e isso é muita coisa para o banco de dados, isso sem contar as atualizações de página.
@@ -30,7 +31,7 @@ concorda? Ainda mais para quem vive de internet móveis.
 
 Para facilitar essa comunicação, seja de A para D e D para B, por exemplo, existe o Context API do React e aí que entramos no
 assunto. useContext, como funciona, de onde ele vem e como ele se alimenta. Em resumo, com o Context API podemos transitar esses
-dados através de componentes sem que ele sejam filhos diretos desse componente. 
+dados através de componentes sem que ele sejam filhos diretos desse componente.
 
 E vamos com calma entendendo passo a passo dessa situação, porque até para mim foi muito complexo entender no começo.
 
@@ -39,9 +40,9 @@ E vamos com calma entendendo passo a passo dessa situação, porque até para mi
 Primeiro, vamos importar e executar o método createContext
 
 ```jsx
-import { createContext } from 'react'
+import { createContext } from "react";
 
-const MyContext = createContext(null)
+const MyContext = createContext(null);
 ```
 
 Inicialmente definimos ele como null, já que queremos ele vazio e não queremos definir um tipo para ele ainda.
@@ -92,18 +93,18 @@ Primeiramente precisamos importa uma ou duas coisas, sendo: O Hook `useContext` 
 arquivo. Abaixo está um exemplo de como iremos usar o useContext a nosso favor.
 
 ```jsx
-import { useContext } from 'react'
+import { useContext } from "react";
 
-import MyContext from './MyContext.js'
+import MyContext from "./MyContext.js";
 
 export default function ComponentC() {
-  const userContext = useContext(MyContext)
+    const userContext = useContext(MyContext);
 
-  return (
-    <div>
-      <p>{userContext.name}</p>
-    </div>
-  )
+    return (
+        <div>
+            <p>{userContext.name}</p>
+        </div>
+    );
 }
 ```
 
@@ -122,20 +123,20 @@ Você deve se perguntar porque iriamos querer fazer isso, certo? Imagine que voc
 A ideia é o seguinte, vamos isolar a variável que a gente está passando para a propriedade `value` para facilitar a leitura e deixar um pouco mais organizado, okay? Nada de muito novo que fizemos aqui, é claro que estamos levando em consideração que ele é um objeto. Iremos apenas adicionar o valor do state e seu dispatch na variável providerValue e assim, inserimos no provider.
 
 ```jsx
-const MyContext = createContext(null)
+const MyContext = createContext(null);
 
 export default function Parent() {
-  const [name, setName] = useState('Yagasaki')
-  const providerValue = {
-    name,
-    setName,
-  }
+    const [name, setName] = useState("Yagasaki");
+    const providerValue = {
+        name,
+        setName,
+    };
 
-  return (
-    <MyContext.Provider value={providerValue}>
-      <ComponentA />
-    </MyContext.Provider>
-  )
+    return (
+        <MyContext.Provider value={providerValue}>
+            <ComponentA />
+        </MyContext.Provider>
+    );
 }
 ```
 
@@ -146,36 +147,36 @@ Dessa forma podemos alterar o valor da variável `name` a partir de qualquer com
 Olha como ficou o componente filho quando utilizamos o `useState` para passar a informação:
 
 ```jsx
-import { useContext } from 'react'
-import MyContext from './MyContext.js'
+import { useContext } from "react";
+import MyContext from "./MyContext.js";
 
 const ComponentA = () => {
-  const userContext = useContext(MyContext)
+    const userContext = useContext(MyContext);
 
-  function handleChange(event) {
-    const { newName } = event.target.value;
+    function handleChange(event) {
+        const { newName } = event.target.value;
 
-    if (true) {
-      // Alguma verificação, se necessário
+        if (true) {
+            // Alguma verificação, se necessário
+        }
+
+        userContext.setName(newName);
     }
 
-    userContext.setName(newName)
-  }
+    return (
+        <div>
+            <label>
+                Usuário: {userContext.name}
+                <input type="text" value={userContext.name} onChange={handleChange} />
+            </label>
+        </div>
+    );
+};
 
-  return (
-    <div>
-      <label>
-        Usuário: {userContext.name}
-        <input type="text" value={userContext.name} onChange={handleChange}/>
-      </label>
-    </div>
-  )
-}
-
-export default ComponentA
+export default ComponentA;
 ```
 
-Só tome cuidado com loops infinitos, em casos de formulário, use o `form onSubmit={(e) => e.preventDefault()}`, assim, evitará de atualizar a página quando 
+Só tome cuidado com loops infinitos, em casos de formulário, use o `form onSubmit={(e) => e.preventDefault()}`, assim, evitará de atualizar a página quando
 o usuário clicar em enviar, por exemplo, e claro, caso esteja usando um form.
 
 Fico muito agradecido que você tenha chegado até aqui, levou um pouco de tempo para construir esse artigo, já que tentei deixar o mais direto e bem explicado possível para você entender de fato como funciona o Contexto, já que eu levei muito tempo para realmente entender como ele funciona.

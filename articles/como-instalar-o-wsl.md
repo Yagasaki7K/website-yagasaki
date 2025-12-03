@@ -1,9 +1,9 @@
 ---
 title: Como instalar o Windows Subsystem for Linux (WSL)
-excerpt: 'Aprenda a instalar o WSL e descubra as vantagens para desenvolvedores e por que o dual boot mão é uma boa ideia.'
+excerpt: "Aprenda a instalar o WSL e descubra as vantagens para desenvolvedores e por que o dual boot mão é uma boa ideia."
 image: https://w.wallhaven.cc/full/13/wallhaven-135w7w.png
-tags: ['WSL', 'Windows', 'Linux', 'Programação', 'Iniciante']
-date: '2024-04-20'
+tags: ["WSL", "Windows", "Linux", "Programação", "Iniciante"]
+date: "2024-04-20"
 ---
 
 ![](https://w.wallhaven.cc/full/13/wallhaven-135w7w.png "Douglas Lopes")
@@ -31,7 +31,7 @@ wsl --update
 ```
 
 4. **Instale uma distribuição Linux**: Após habilitar o WSL, existe a opção de instalar direto pelo Terminal, se você der `wsl --install` você verá a lista de distros disponíveis para download (No exemplo, usarei Ubuntu-24.04), caso o contrário vá para a Microsoft Store e procure por uma distribuição Linux de sua escolha, como Ubuntu, Debian ou Fedora. Clique em "Instalar" e siga as instruções na tela para concluir a instalação.
-   
+
 ```powershell
 wsl --install -d Ubuntu-24.04
 ```
@@ -41,31 +41,37 @@ wsl --install -d Ubuntu-24.04
 Alguns erros que geralmente acontecem ao tentar instalar a primeira vez é.
 
 - Virtualização não está habilitada
-Para resolver esse problema de virtualização, recomendamos que você desligue o computador e vá até a BIOS, procure a virtualização nas configurações de sua BIOS e ligue ela, claro, se você não entender sobre o assunto, procure algum tutorial no Youtube e tome cuidado com o que estiver alterando, sempre traduza, caso tenha dificuldade no inglês.
+  Para resolver esse problema de virtualização, recomendamos que você desligue o computador e vá até a BIOS, procure a virtualização nas configurações de sua BIOS e ligue ela, claro, se você não entender sobre o assunto, procure algum tutorial no Youtube e tome cuidado com o que estiver alterando, sempre traduza, caso tenha dificuldade no inglês.
 
 - O Windows Subsystem for Linux (WSL) precisa estar na versão 2.
-Você pode listar suas distribuições do Linux instaladas e verificar a versão do WSL para a qual cada uma está definida, lembre-se de verificar se ele está atualizado seguindo o passo 3, depois insira o comando: `wsl -l -v` no PowerShell ou Prompt de Comando do Windows. Para definir a versão padrão como WSL 1 ou WSL 2 quando uma nova distribuição do Linux é instalada, use o comando: `wsl --set-default-version <Version#>`, substituindo `<Version#>` por 1 ou 2.
+  Você pode listar suas distribuições do Linux instaladas e verificar a versão do WSL para a qual cada uma está definida, lembre-se de verificar se ele está atualizado seguindo o passo 3, depois insira o comando: `wsl -l -v` no PowerShell ou Prompt de Comando do Windows. Para definir a versão padrão como WSL 1 ou WSL 2 quando uma nova distribuição do Linux é instalada, use o comando: `wsl --set-default-version <Version#>`, substituindo `<Version#>` por 1 ou 2.
 
 Tá, mas qual é a vantagem de eu usar o WSL ao invés de usar um Dual Boot por exemplo?
 
 ## Ambiente de desenvolvimento familiar
+
 Com o WSL, os desenvolvedores podem usar ferramentas e utilitários Linux diretamente no Windows. Isso elimina a necessidade de alternar entre sistemas operacionais e permite que você trabalhe em um ambiente de desenvolvimento familiar, independentemente da plataforma que estiver usando.
 
 ## Suporte nativo para linha de comando e scripts
+
 O WSL oferece suporte nativo para a linha de comando do Linux, o que significa que você pode executar scripts, comandos e ferramentas Linux diretamente no Windows. Isso é especialmente útil para desenvolvedores que trabalham com ferramentas baseadas em linha de comando ou que precisam automatizar tarefas usando scripts.
 
 ## Integração perfeita com o Windows
+
 O WSL é integrado perfeitamente ao Windows, o que significa que você pode acessar facilmente arquivos e recursos do sistema Windows do ambiente Linux e vice-versa. Isso simplifica o processo de desenvolvimento e facilita a colaboração com outros desenvolvedores que podem estar usando o Windows ou o Linux.
 
 # Por que abandonar o dual boot
 
 ## Maior conveniência e produtividade
+
 O uso do WSL elimina a necessidade de alternar entre sistemas operacionais usando o dual boot. Isso economiza tempo e torna o processo de desenvolvimento mais conveniente e produtivo, permitindo que você se concentre em escrever código em vez de lidar com configurações de sistema complicadas.
 
 ## Melhor integração com o Windows
+
 Embora o dual boot ofereça uma maneira de executar sistemas operacionais separados em um único computador, ele pode ser complicado de configurar e manter. Além disso, o dual boot não oferece a mesma integração perfeita com o Windows que o WSL, o que significa que você pode enfrentar desafios ao compartilhar arquivos e recursos entre os sistemas operacionais.
 
 ## Menor impacto no desempenho do sistema
+
 Executar dois sistemas operacionais em um único computador usando o dual boot pode ter um impacto significativo no desempenho do sistema, além de você simplesmente acabar danificando ele por erro de configuração ou algum imprevisto de incompatibilidade, especialmente em computadores com recursos limitados. O uso do WSL, por outro lado, não afeta o desempenho do sistema, pois as distribuições Linux são executadas como processos isolados no Windows.
 
 Em resumo, o Windows Subsystem for Linux (WSL) oferece uma maneira conveniente e eficiente para desenvolvedores executarem distribuições Linux diretamente no Windows. Com o WSL, você pode aproveitar as vantagens do ambiente de linha de comando do Linux sem sacrificar a integração e a familiaridade do Windows. Ao abandonar o dual boot em favor do WSL, você pode tornar seu processo de desenvolvimento mais fácil, conveniente e produtivo.

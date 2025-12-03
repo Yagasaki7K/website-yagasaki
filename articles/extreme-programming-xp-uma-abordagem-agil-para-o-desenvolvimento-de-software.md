@@ -1,9 +1,9 @@
 ---
 title: Extreme Programming (XP) - Uma Abordagem Ágil para o Desenvolvimento de Software
-excerpt: 'O Extreme Programming (XP) é uma metodologia ágil de desenvolvimento de software criada no final da década de 1990 por Kent Beck. Seu objetivo principal é melhorar a qualidade do software e a capacidade de resposta às mudanças de requisitos do cliente. Diferente de metodologias tradicionais, o XP coloca ênfase em práticas técnicas sólidas e em um ciclo de desenvolvimento altamente colaborativo.'
+excerpt: "O Extreme Programming (XP) é uma metodologia ágil de desenvolvimento de software criada no final da década de 1990 por Kent Beck. Seu objetivo principal é melhorar a qualidade do software e a capacidade de resposta às mudanças de requisitos do cliente. Diferente de metodologias tradicionais, o XP coloca ênfase em práticas técnicas sólidas e em um ciclo de desenvolvimento altamente colaborativo."
 image: https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Desenvolvimento', 'Metodologia', 'Programação']
-date: '2025-08-21'
+tags: ["Desenvolvimento", "Metodologia", "Programação"]
+date: "2025-08-21"
 ---
 
 ![](https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)

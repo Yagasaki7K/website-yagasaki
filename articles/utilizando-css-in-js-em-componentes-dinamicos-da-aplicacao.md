@@ -1,9 +1,9 @@
 ---
 title: Utilizando CSS-in-JS em componentes dinâmicos da aplicação
-excerpt: 'Entenda meu ponto sobre o playbook de Alekson Fortes e como ele se baseia na minha vida pessoal.'
+excerpt: "Entenda meu ponto sobre o playbook de Alekson Fortes e como ele se baseia na minha vida pessoal."
 image: https://safebooru.org//samples/514/sample_afd575d3d675683c6f19582e19edd62f56d900a5.jpg?5301417
-tags: ['CSS-in-JS', 'Styled Components', 'Iniciante']
-date: '2024-11-11'
+tags: ["CSS-in-JS", "Styled Components", "Iniciante"]
+date: "2024-11-11"
 ---
 
 ![](https://safebooru.org//samples/514/sample_afd575d3d675683c6f19582e19edd62f56d900a5.jpg?5301417)
@@ -26,28 +26,28 @@ Sendo, o Button.module.css:
 
 ```css
 .button {
-  background-color: #6200ea;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #3700b3;
+    background-color: #3700b3;
 }
 ```
 
 E o componente Button.js:
 
 ```js
-import React from 'react';
-import styles from './Button.module.css'; // Importa o CSS Module
+import React from "react";
+import styles from "./Button.module.css"; // Importa o CSS Module
 
 function Button() {
-  return <button className={styles.button}>Clique Aqui</button>;
+    return <button className={styles.button}>Clique Aqui</button>;
 }
 
 export default Button;
@@ -60,25 +60,25 @@ E no outro cenário, temos o styled-components, utilizando a mesma propriedade p
 o Javascript no CSS.
 
 ```js
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledButton = styled.button`
-  background-color: #6200ea;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
-  &:hover {
-    background-color: #3700b3;
-  }
+    &:hover {
+        background-color: #3700b3;
+    }
 `;
 
 function Button() {
-  return <StyledButton>Clique Aqui</StyledButton>;
+    return <StyledButton>Clique Aqui</StyledButton>;
 }
 
 export default Button;
@@ -91,27 +91,27 @@ mas diferentes _backgrounds_ para cada seção da nossa aplicação. Isso vale p
 mesmo botão e cores de fundo diferente, sendo uma para limpar o envio e outra para enviar.
 
 ```js
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 // Define as props do botão
 const StyledButton = styled.button`
-  background-color: ${({ bgColor }) => bgColor || '#6200ea'};
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+    background-color: ${({ bgColor }) => bgColor || "#6200ea"};
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 
-  &:hover {
-    opacity: 0.9; // Simples efeito de escurecimento reduzindo a opacidade
-  }
+    &:hover {
+        opacity: 0.9; // Simples efeito de escurecimento reduzindo a opacidade
+    }
 `;
 
 const Button = ({ bgColor, children }) => {
-  return <StyledButton bgColor={bgColor}>{children}</StyledButton>;
+    return <StyledButton bgColor={bgColor}>{children}</StyledButton>;
 };
 
 export default Button;
@@ -123,17 +123,17 @@ seja a cor de fundo do botão ou, caso ela não seja informada, ela será repres
 Sendo assim, em nossa aplicação, poderiamos chamar vários botões com o mesmo estilo, mas com cores diferentes.
 
 ```js
-import React from 'react';
-import Button from './Button';
+import React from "react";
+import Button from "./Button";
 
 function App() {
-  return (
-    <div>
-      <Button bgColor="#1e90ff">Clique Aqui</Button>
-      <Button bgColor="#ff6347">Excluir</Button>
-      <Button>Sem Cor (Fallback)</Button>
-    </div>
-  );
+    return (
+        <div>
+            <Button bgColor="#1e90ff">Clique Aqui</Button>
+            <Button bgColor="#ff6347">Excluir</Button>
+            <Button>Sem Cor (Fallback)</Button>
+        </div>
+    );
 }
 
 export default App;

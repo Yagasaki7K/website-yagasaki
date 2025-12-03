@@ -1,9 +1,9 @@
 ---
 title: Entendendo o Event Loop no Node.js
-excerpt: 'Vamos falar um pouco sobre o Event Loop, como ele funciona e o que ele resolve? O JavaScript é, por natureza, uma linguagem single-threaded. Isso significa que ele consegue executar apenas uma operação por vez** dentro do seu loop principal. E aí vem a grande questão: como o Node.js consegue lidar com operações assíncronas sem travar a execução do código?'
+excerpt: "Vamos falar um pouco sobre o Event Loop, como ele funciona e o que ele resolve? O JavaScript é, por natureza, uma linguagem single-threaded. Isso significa que ele consegue executar apenas uma operação por vez** dentro do seu loop principal. E aí vem a grande questão: como o Node.js consegue lidar com operações assíncronas sem travar a execução do código?"
 image: https://images.unsplash.com/photo-1613018274564-bec35a774995?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Node.js', 'Event Loop', 'Tutorial']
-date: '2025-09-30'
+tags: ["Node.js", "Event Loop", "Tutorial"]
+date: "2025-09-30"
 ---
 
 ![](https://images.unsplash.com/photo-1613018274564-bec35a774995?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -18,7 +18,7 @@ A resposta está no **Event Loop**.
 
 ## O que é o Event Loop?
 
-O **Event Loop** é o mecanismo que permite ao Node.js gerenciar tarefas assíncronas sem bloquear a thread principal.  
+O **Event Loop** é o mecanismo que permite ao Node.js gerenciar tarefas assíncronas sem bloquear a thread principal.
 Ele funciona em conjunto com o **kernel do sistema operacional**:
 
 - O código JavaScript principal agenda tarefas (chamadas assíncronas, timers, etc.).
@@ -37,24 +37,29 @@ Quando o Node.js inicializa:
 
 ## As fases do Event Loop
 
-O Event Loop é dividido em fases.  
+O Event Loop é dividido em fases.
 Cada fase possui uma **fila FIFO (First In, First Out)** de callbacks a serem executadas.
 
 As principais fases são:
 
 ### 1. **Timers**
+
 Executa callbacks agendadas por:
+
 - `setTimeout()`
 - `setInterval()`
 
 ### 2. **Callbacks Pendentes**
+
 Nesta fase, o Node.js lida com **operações de I/O** (como leitura de arquivos ou requisições de rede) que não puderam ser executadas imediatamente na fase anterior.
 
 ### 3. **Idle, Prepare**
-Fases internas utilizadas pelo Node.js.  
+
+Fases internas utilizadas pelo Node.js.
 Não costumam ser relevantes para quem está desenvolvendo.
 
 ### 4. **Poll**
+
 É uma das fases mais importantes:
 
 - Recupera novos eventos de I/O.
@@ -62,13 +67,15 @@ Não costumam ser relevantes para quem está desenvolvendo.
 - **Pode bloquear**: se não houver timers ou callbacks de `setImmediate()` pendentes, o Event Loop **aguarda** novos eventos de I/O antes de prosseguir.
 
 ### 5. **Check**
+
 Fase dedicada a callbacks agendadas com **`setImmediate()`**.
 
-Quando você usa `setImmediate()`, está basicamente dizendo:  
-*"Execute essa tarefa assim que o Event Loop chegar na fase `check`, no final deste ciclo."*
+Quando você usa `setImmediate()`, está basicamente dizendo:
+_"Execute essa tarefa assim que o Event Loop chegar na fase `check`, no final deste ciclo."_
 
 ### 6. **Close**
-Última fase do Event Loop.  
+
+Última fase do Event Loop.
 Aqui o Node.js lida com callbacks relacionadas ao **fechamento de recursos**, como sockets ou conexões que foram encerradas.
 
 ## Por que isso importa?
@@ -81,14 +88,14 @@ Com o **Event Loop**, o Node.js consegue:
 
 ## Onde aprender mais?
 
-Este artigo foi um resumo simplificado.  
+Este artigo foi um resumo simplificado.
 Para se aprofundar, consulte a documentação oficial do Node.js:
 
 [Documentação do Event Loop, Timers e NextTick](https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick)
 
 ### Conclusão
 
-O **Event Loop** é o coração do Node.js.  
+O **Event Loop** é o coração do Node.js.
 Ele é o que permite que o JavaScript, mesmo sendo single-threaded, se torne poderoso o bastante para lidar com aplicações **assíncronas, performáticas e escaláveis**.
 
 Saber o que é o Event Loop vai tornar seu código TS/JS melhor.

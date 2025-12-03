@@ -2,8 +2,8 @@
 title: Como usar o uTorrent para iniciantes
 excerpt: Lembre-se que esse conteúdo é para fins educativos, e o uso dele é inteiramente de sua responsabilidade.
 image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
-tags: ['Iniciante', 'Torrents']
-date: '2023-03-06'
+tags: ["Iniciante", "Torrents"]
+date: "2023-03-06"
 ---
 
 ![](https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80 "NASA")
@@ -22,11 +22,11 @@ O que precisamos fazer de inicio para começarmos a usar o torrent? Escolher um 
 
 Para quem estiver no computador, LEIA TUDO, não me responsabilizo por você baixar Opera, Norton ou qualquer antivirus que venha junto com o instalador por apenas você clicar "Next" atrás de "Next" sem ler o que está escrito.
 
-Entre em um dos sites deles e faça o download do programa, se for em computador. 
+Entre em um dos sites deles e faça o download do programa, se for em computador.
 
 - [uTorrent](https://www.utorrent.com/intl/pt/downloads/win?ref=yagasaki.dev/blog)
 - [BitTorrent](https://www.bittorrent.com/downloads/complete?ref=yagasaki.dev/blog)
-  
+
 Se for em celular, busque pelo aplicativo na loja de aplicativos do seu celular e faça o download.
 
 ## Usando o uTorrent
@@ -35,7 +35,7 @@ Agora que você já tem o programa instalado, vamos aprender a usá-lo.
 
 O torrent, nada mais é que um link (magnético) que você se comunica com outros computadores para receber todas as informações do aplicativo, programa, jogo, filme, música, etc. que você deseja baixar. E ele faz uma conexão em túnel com outros computadores que também estão baixando o mesmo arquivo, e assim, cada um desses computadores, te dá um pedacinho daquele arquivo completo, facilitando em se comunicar e em trocar informações, tornando o arquivo mais rápido de ser adquirido, quanto mais seeds (sementes) tiver no link magnético, mais rápido ele vai baixar, porque não depende de apenas um servidor, tornando uma linha reta, mas sim de comunicações com todos os outros que também baixaram o mesmo arquivo e acelerando ainda mais o download.
 
-Vamos lá, através de qualquer site, você consegue adquirir um link magnético, ou até mesmo gerar um para arquivos que você deseja compartilhar, mas lembrando, quanto mais seeds, mais rápido. 
+Vamos lá, através de qualquer site, você consegue adquirir um link magnético, ou até mesmo gerar um para arquivos que você deseja compartilhar, mas lembrando, quanto mais seeds, mais rápido.
 
 Será algo semelhante a isso:
 

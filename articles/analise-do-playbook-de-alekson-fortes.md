@@ -1,9 +1,9 @@
 ---
 title: Análise do Playbook de Alekson Fortes
-excerpt: 'Entenda meu ponto sobre o playbook de Alekson Fortes e como ele se baseia na minha vida pessoal.'
+excerpt: "Entenda meu ponto sobre o playbook de Alekson Fortes e como ele se baseia na minha vida pessoal."
 image: https://safebooru.org//samples/3778/sample_0cd2c17b23f67915823e93dd275e3647edccc4b0.jpg?3946794
-tags: ['Desenvolvimento', 'Pessoal', 'Profissional']
-date: '2024-04-24'
+tags: ["Desenvolvimento", "Pessoal", "Profissional"]
+date: "2024-04-24"
 ---
 
 ![](https://safebooru.org//samples/3778/sample_0cd2c17b23f67915823e93dd275e3647edccc4b0.jpg?3946794)
@@ -18,27 +18,32 @@ estou errando na minha carreira.
 Vou seguir todo o sumário para dar o meu feedback a respeito, então vamos lá.
 
 ### O que o mercado internacional exige?
+
 Inicialmente ele fala sobre o que o mercado internacional exige e claro, aqui, temos uma ótima observação vindo
 de fora, ainda mais se tratando de brasileiro que sou, tenho zero contato com o mundo internacionalmente em questões
 profissionais, então fica difícil entender o que é a necessidade do mercado e isso serviu como uma espécie de farol
 para me guiar com mais precisão.
 
 ### Formação Acadêmica
+
 Nesse quesito, sei que ainda vou ter que ralar muito para conseguir chamar atenção de alguma empresa internacional,
 mesmo tendo experiência por ter trabalhado em uma das maiores fintechs do Brasil - Stone -, ter essa noção do que eu
 preciso, ainda vai levar um tempo e não tem como ir contra o tempo de experiência.
 
 ### Idiomas
+
 Sei que meu inglês é bem intermediário, vi várias pessoas relatando isso e claro, além de consumir conteúdos,
 ler documentação, sempre estou em busca de melhorar e acredito que estou em um ponto aonde somente a prática leva
 a devida perfeição, mas, já estou com um belo de caminho andado.
 
 ### Como preparar o CV e Linkedin?
+
 Analisei o meu curriculo na plataforma que ele mencionou e saí com cerca de 35% de match. Sei que acredito
 que a minha maior concorrência é realmente em relação a esse currículo que tanto me atrapalha, muitos cursos,
 pouca experiência, grandes feitos, mas com a base, com o mockup que foi enviado, espero chamar bem mais atenção.
 
 ### Entrevistas
+
 Quanto a isso, só preciso me esforçar mais em separar as vagas em que eu me candidato e focar um pouco mais
 na empresa antes de ser chamado ao invés de esperar ser chamado primeiro para estudar depois. Além de entender,
 que posso melhorar ainda mais a minha comunicação, até mesmo na roda de amigos sinto que tenho um pouco de dificuldade
@@ -53,10 +58,10 @@ para me aprofundar e melhorar caso esse realmente seja um aspecto necessário pa
 ### Soft Skills
 
 - Compartilhar conhecimento e ajudar os outros sem esperar nada em troca.
-Eu vejo que essa questão, se encaixa em muitas pessoas que estão na área e não tem noção do quanto de conhecimento
-estão adquirindo e não estão compartilhando. Por isso digo, está começando na área? Sem problemas, anote tudo, explique
-tudo, mesmo que vinte mil pessoas tenha passado pela mesma trilha que você, pode ter certeza que daqui um, dois anos,
-outros estarão seguindo e poderão precisar de ajuda.
+  Eu vejo que essa questão, se encaixa em muitas pessoas que estão na área e não tem noção do quanto de conhecimento
+  estão adquirindo e não estão compartilhando. Por isso digo, está começando na área? Sem problemas, anote tudo, explique
+  tudo, mesmo que vinte mil pessoas tenha passado pela mesma trilha que você, pode ter certeza que daqui um, dois anos,
+  outros estarão seguindo e poderão precisar de ajuda.
 
 Então, não tenha medo de abrir um blog e explicar como funciona o HTML, não tenha medo de ensinar CSS alguém, são coisas
 básicas? Sim. Mas mostrar que você está compartilhando conhecimento com o que aprendeu ou com o que acabou de resolver,

@@ -1,9 +1,9 @@
 ---
 title: Primeiros Passos na línguagem GO - Completo
-excerpt: 'Um curso em texto completo sobre a introdução da linguagem de programação da Google'
+excerpt: "Um curso em texto completo sobre a introdução da linguagem de programação da Google"
 image: https://safebooru.org//samples/4619/sample_ca6c98da5a62c2d4ab04437cd8efa192e3c4b601.jpg?5135295
-tags: ['Iniciante', 'GO', 'Backend']
-date: '2024-08-16'
+tags: ["Iniciante", "GO", "Backend"]
+date: "2024-08-16"
 ---
 
 ![](https://safebooru.org//samples/4619/sample_ca6c98da5a62c2d4ab04437cd8efa192e3c4b601.jpg?5135295)
@@ -16,6 +16,7 @@ cansativa.
 Vamos ao que interessa.
 
 # 1. Introdução a Go
+
 Go, também conhecida como Golang, é uma linguagem de programação de código aberto desenvolvida pelo Google. Foi
 projetada para ser eficiente, concisa, simples e fácil de ler. O projeto inicial da lingaugem de programação Go
 foi iniciado em setembro de 2007 por três engenheiros renomados: _Robert Griesemer_, _Rob Pike_ e _Ken Thompson_,
@@ -24,45 +25,55 @@ de desenvolvimento de software no ambiento do Google, enfocando eficiência, con
 primeira versão estável foi lançada em 2012. Algumas características notáveis da linguagem Go incluem:
 
 ## Concorrência e Paralelismo:
+
 Go foi projetada com suporte integrado para concorrência e paralelismo. Ela possui primitivas de concorrência,
 como _goroutines_ (unidades leves de execução) e canais (mecanismo de comunicação entre _goroutines_), facilitando
 a construção de programas concorrentes de maneira eficiente.
 
 ## Coleta de Lixo Eficiente:
+
 Go possui um coletor de lixo eficiente que gerencia automaticamente a alocação e liberação de memória, aliviando
 os desenvolvedores da responsabilidade de gerenciar manualmente a alocação e desalocação de memória.
 
 ## Simplicidade e Legibilidade:
+
 Go foi projetada com uma sintaxe simples e clara. A linguagem evita recursos complexos e excessivamente
 abstratos, o que facilita a leitura e manutenção do código. A ideia é que o código seja claro e compreensível sem
 a necessidade de muita explicação.
 
 ## Compilação Rápida:
+
 Go é uma linguagem compilada e a compilação é rápida, o que ajuda no desenvolvimento eficiente. Ela também suporta a
 compilação cruzada, permitindo que você compile o código para diferentes sistemas operacionais e arquiteturas.
 
 ## Gerenciamento de Dependências Integrado:
+
 O Go possui uma ferramenta integrada para gerenciamento de dependências chamada
 "_go modules_". Isso facilita o controle e a gestão das dependências do projeto.
 
 ## Orientação a Interfaces:
+
 Go segue um paradigma de programação orientada a interfaces. Em vez de depender de herança de classes, o Go incentiva a
 composição de tipos através de interfaces, proporcionando flexibilidade e reutilização de código.
 
 ## Ferramentas de Teste Integradas:
+
 Go possui um sistema de teste integrado, facilitando a escrita e execução de testes unitários e de integração.
 
 ## Suporte a Programação de Baixo Nível:
+
 Go oferece suporte a programação de baixo nível quando necessário, incluindo a capacidade de
 manipular ponteiros, embora a linguagem incentive um estilo de programação seguro. A linguagem Go tem sido amplamente
 adotada em diversos projetos, desde desenvolvimento de sistemas distribuídos até aplicações de servidores web. Seu
 design focado na simplicidade, eficiência e concorrência a torna uma escolha popular para muitos desenvolvedores.
 
 # 2. Configurando ambiente
+
 Para começarmos a programar em Go, precisamos inicialmente configurar o nosso ambiente de desenvolvimento. Veja os
 passos de como configurar o seu ambiente de acordo com o seu sistema operacional.
 
 ## Windows 10 ou superior:
+
 Vá até a página [https://go.dev/dl](https://go.dev/dl) para baixar a versão binnária mais recente do instalador.
 Certifique-se de selecionar a versão compatível com seu sistema operacional, no caso do Windows (.msi)
 
@@ -75,15 +86,19 @@ para verificar se a instalação foi concluída com sucesso. Uma mensagem de ret
 ## Linux
 
 ### Debian/Ubuntu:
+
 `sudo apt-get update && apt-get upgrade -y && install golang`
 
 ### Arch/Manjaro:
+
 `sudo pacman -Syyu && pacman -S go`
 
 ### Fedora:
+
 `sudo dnf checkupdate && sudo dnf upgrade -y && sudo dnf install golang`
 
 ### OpenSUSE:
+
 `sudo zyper update && sudo zyper upgrade -y && sudo zyper install go`
 
 Os comandos citados acima sincronizam e atualizam os repositórios de cada distribuição e instala o Go. Porém, é
@@ -119,18 +134,22 @@ func main() {
 Agora, vamos entender um pouco sobre o que está acontecendo na estrutura acima:
 
 ## Pacote (package):
+
 Cada arquivo Go pertence a um pacote, e o pacote principal de um programa executável deve ser chamado de
 _main_. Isso inndica que é um programa executável.
 
 ## Importação (import):
+
 Após a declaração do pacote, você pode importar outros pacotes necessários para o seu programa. No exemplo,
 estamos importante o pacote _"fmt"_ para formatação de saída.
 
 ## Função Principal (func main()):
+
 Todo programa Go executável deve ter uma função chamada _main_. Esta é a função que será executada quando o programa for
 iniciado. O código dentro desta função será a entrada principal do seu programa.
 
 ## Corpo da Função Principal:
+
 O corpo da função _main_ contém o código que será executado quando o programa for iniciado. No exemplo, estamos usando a
 função _fmt.Println_ para imprimir "Hello, Go!" no console.
 
@@ -140,6 +159,7 @@ de fluxo. No entanto, todos os programas Go devem ter uma função main no pacot
 Agora que você já entende a estrutura básica de um programa, faremos o nosso primeiro programa em Go.
 
 # 4. Módulos
+
 Em Go, quando iniciamos um novo projeto, sempre começaremos com o comando _go mod init_. Ele é usado em Go para
 inicializar um novo módulo (ou converter um projeto existente em um módulo).
 
@@ -148,33 +168,40 @@ A introdução de módulos no Go é uma maneira de gerenciar dependências e ver
 Aqui estão algumas razões pelas quais você deve usar o _go mod init_:
 
 ## Gerenciamento de Dependências:
+
 Ao iniciar um módulo com go mod init, você está criando um ambiente onde o Go pode gerenciar suas dependências de forma
 estruturada. O arquivo go.mod resultante conterá informações sobre os módulos usados pelo seu projeto, incluindo suas
 versões.
 
 ## Controle de Versão:
+
 O go.mod inclui informações sobre as versões específicas das dependências utilizadas no projeto. Isso garante que, ао
 compartilhar o código ou ao reproduzi-lo em outro ambiente, as mesmas versões das dependências serão usadas, promovendo
 consistência.
 
 ## Facilita a Colaboração:
+
 O uso de módulos torna mais fácil para outros desenvolvedores colaborarem no seu projeto. Eles podem clonar o
 repositório e, ao executar _go get_, o Go baixará automaticamente as dependências corretas.
 
 ## Compatibilidade com Versionamento Semântico:
+
 O Go incentiva o uso de versionamento semântico (SemVer) para módulos. Isso significa que você pode especificar regras
 claras sobre como suas dependências podem ser atualizadas, evitando surpresas em atualizações automáticas.
 
 ## Simplifica o Controle de Versão com Git:
+
 Quando você inicializa um módulo, o _go mod init_ também cria automaticamente uma entrada no arquivo .gitignore para
 ignorar o diretório vendor/ (onde as dependências são armazenadas). Isso ajuda a manter o controle de versão do seu
 projeto mais limpo.
 
 ## Facilita a Migração para o Go Modules:
+
 Para projetos mais antigos, a introdução de módulos pode ser uma tarefa incremental. Usar _go mod init_ é um primeiro
 passo essencial para migrar um projeto existente para o sistema de módulos.
 
 ## Iniciando o módulo:
+
 Para iniciar um módulo no seu projeto, certifique-se de estar com o editor de códigos aberto, se você for acostumado com
 CLI, deixe ele na pasta de seu projeto. No seu editor de códigos, abra a pasta onde iniciaremos o módulo. Após isso, na
 parte superior esquerda clique em Terminal, depois em _New Terminal_ para abrir o terminal. Abrindo o terminal, verifique
@@ -190,6 +217,7 @@ Inicie o módulo utilizando o seguinte comandno: `go mod init hello/example`
 Um novo arquivo chamado _go.mod_ será criado na sua pasta.
 
 # 5. Olá, Mundo!
+
 Finalmente estaremos escrevendo os nossos primeiros códigos em Go, e não poderia ser diferente, né?, começaremos com o
 famoso "Olá, Mundo!"
 
@@ -229,19 +257,23 @@ um arquivo executável separado, seguindo nosso exemplo: `go run hello.go`.
 Uma resposta de "Olá, Mundo!" será exibida na tela.
 
 # 6. Comentários
+
 Comentários em código servem para fornecer informações adicionais que não são executadas pelo compilador ou
 interpretador da linguagem, mas são úteis para OS desenvolvedores que leem ou mantêm o código. Aqui estão algumas razões
 pelas quais os comentários são importantes:
 
 ## Explicação do Código:
+
 Comentários ajudam a explicar o propósito, a lógica e a funcionalidade do código. Isso torna mais fácil para outros
 desenvolvedores entenderem o que o código está fazendo.
 
 ## Documentação do Código:
+
 Comentários podem servir como uma forma de documentação embutida, fornecendo informações sobre como usar funções,
 classes ou módulos específicos.
 
 ## Anotações para Desenvolvedores Futuros:
+
 Comentários podem ser úteis para fornecer insights sobre decisões design, possíveis melhorias ou considerações para
 desenvolvedores futuros que podem precisar modificar ou estender o código. Lembre-se de que a prática de adicionar
 comentários deve ser equilibrada. Códigos autoexplicativos e bem organizados geralmente precisam de menos comentários.
@@ -252,6 +284,7 @@ Em Go, os comentários são semelhantes a outras linguagens de programação e p
 adicionais no código fonte. Aqui estão alguns detalhes sobre os comentários em Go:
 
 ## Comentários de Linha Única:
+
 Comentários de linha única são iniciados com //. Tudo na linha após // é considerado um comentário.
 
 ```go
@@ -259,7 +292,8 @@ Comentários de linha única são iniciados com //. Tudo na linha após // é co
 ```
 
 ## Comentários de Múltiplas Linhas:
-Os comentários de múltiplas linhas começam com /* e terminam com */.
+
+Os comentários de múltiplas linhas começam com /_ e terminam com _/.
 
 ```go
 /* Este é um comentário de múltiplas linhas em Go.
@@ -272,6 +306,7 @@ Também é possível comentar ao lado do seu código, para isso, utilize // ao l
 estará fazendo um comentário.
 
 # 7. Tipos, valores e variáveis
+
 Variáveis em programação são espaços de armazenamento com um nome simbólico (identificador) associado, que contêm dados
 ou valores manipulados por um programa. Em outras palavras, uma variável é um contêiner que armazena informações e pode
 ser referenciado ou manipulado em um programa de computador.
@@ -280,11 +315,13 @@ Em Go, assim como em muitas outras linguagens de programação, há conceitos fu
 variáveis. Aqui estão explicações sobre cada um desses conceitos em Go:
 
 ## Tipos:
+
 Go é uma linguagem de programação estaticamente tipada, o que significa que as variáveis têm tipos definidos em tempo de
 compilação. Os tipos em Go incluem tipos básicos (inteiros, ponto flutuante, booleanos, etc.) e tipos compostos
 (structs, slices, maps, arrays, etc.).
 
 Exemplos de tipos básicos:
+
 ```go
 var idade int // Inteiro
 var altura float64 // Ponto flutuante
@@ -293,6 +330,7 @@ var nome string // String
 ```
 
 Exemplos de tipos compostos:
+
 ```go
 var numeros [5]int // Array de inteiros com tamanho 5
 var dados map[string]int // Mapa de string para int 3
@@ -300,6 +338,7 @@ var lista [] float64 // Slice de ponto flutuante
 ```
 
 ## Valores:
+
 Os valores são as instâncias específicas de um tipo. Por exemplo, 42 é um valor do tipo _int_, e "Olá" é um valor do
 tipo _string_.
 
@@ -312,6 +351,7 @@ var texto string // 0 valor de "texto" é "" (zero value para string)
 ```
 
 ## Variáveis:
+
 Variáveis em Go são espaços de armazenamento com um nome que armazenam valores de um tipo específico.
 
 Você declara variáveis usando a palavra-chave var, seguida pelo nome da variável e seu tipo, e pode inicializá-las com
@@ -336,6 +376,7 @@ altura := 175.5 // Altura da pessoa
 ```
 
 Nesses casos, como mencionado anteriormente, o compilador irá definir automaticamente os tipos, sendo:
+
 - **nome** é inferido como **string**.
 - **idade** é inferido como **int**.
 - **altura** é inferido como **float64**.
@@ -347,18 +388,20 @@ importante observar que a inferência de tipo só é permitida dentro de funçõ
 tradicional de declaração de variáveis com _var_.
 
 ## Regra de Nomeação de Variáveis:
+
 Assim como em outras linguagens, Go tem uma regra para a nomeação de variáveis, veja:
-- O nome de uma variável pode começar com o caractere (“__”)
+
+- O nome de uma variável pode começar com o caractere (“\_\_”)
 - O nome de uma variável não pode começar com número (ex: 1); - O nome de uma variável não pode conter espaços;
 - O nome de uma variável não pode ser nenhuma palavra-chave Go (ex: _var_, _println_ etc.);
-- O nome de uma variável só pode conter caracteres alfanuméricos e sublinhados (a-z, A-Z, 0-9 e "_");
+- O nome de uma variável só pode conter caracteres alfanuméricos e sublinhados (a-z, A-Z, 0-9 e "\_");
 - O nome de uma variável é exatamente aquele que você colocou, ou seja, se você utilizar uma letra maiúscula quando
   declara a variável, deve colocar a mesma letra maiúscula quando chamar a variável (ex: nome, Nome e NOME são variáveis
   diferentes);
 - Não existe um limite para o comprimento do nome da variável;
 
-
 Existem técnicas que você pode utilizar para criar as suas variáveis, veja algumas:
+
 ```go
 nome_da_minha_variavel := 12.5 // Estilo Snake Case
 nomeDaMinhaVariavel := "Golang" // Estilo Camel Case
@@ -368,6 +411,7 @@ NomeDaMinhaVariavel := 150 // Estilo Pascal Case
 Cada variável tem um estilo diferente, cada estilo tem o seu nome.
 
 # 8. Constantes
+
 Em Go, constantes são valores fixos que não variam durante a execução do programa. Elas oferecem uma maneira de nomear e
 utilizar valores imutáveis que são conhecidos em tempo de compilação. A declaração de constantes é realizada mediante o
 uso da palavra-chave _const_, seguida pelo nome da constante e pelo valor que lhe é atribuído. Este mecanismo
@@ -377,6 +421,7 @@ alterados ao longo da execução do programa, como constantes matemáticas, limi
 Aqui estão alguns pontos importantes sobre constantes em Go:
 
 ## Declaração de Constantes:
+
 Para declarar uma constante, use a palavra-chave _const_ seguida pelo nome da constante e pelo valor.
 
 ```go
@@ -385,13 +430,16 @@ const idadeLimite = 18
 ```
 
 ## Tipos em Constantes:
+
 Ao contrário das variáveis, você não precisa explicitamente o tipo da constante, pois o compilador infere o tipo com
 base no contexto. Mas também é possível declarar o tipo.
+
 ```go
 const pi float64 = 3.1416
 ```
 
 ## Valores de Expressões Constantes:
+
 Os valores de expressões constantes devem ser determinados em tempo de compilação. Isso significa que você não pode usar
 funções ou resultados de tempo de execução para inicializar uma constante. Neste exemplo, a função _math.Sqrt_ é chamada
 para calcular a raiz quadrada de 25. Como esse cálculo só pode ser feito em tempo de execução, não é permitido usar esse
@@ -405,6 +453,7 @@ const resultado = math.sqrt(25)
 ```
 
 ## Enumerando Constantes:
+
 Você pode criar uma lista de constantes enumeradas usando a palavra-chave _iota_, que é um identificador que representa
 valores inteiros incrementados automaticamente.
 
@@ -422,6 +471,7 @@ const (
 ```
 
 ## Constantes Não Tipadas:
+
 As constantes em Go são não tipadas, o que significa que podem ser usadas em diferentes contextos sem a necessidade de
 conversão explícita.
 
@@ -431,6 +481,7 @@ var y int = x // Atribuição sem conversão explícita
 ```
 
 ## Constantes Exportadas:
+
 Constantes exportadas (iniciadas com letra maiúscula) são visíveis fora do pacote, enquanto constantes não exportadas
 (iniciadas com letra minúscula) são visíveis apenas dentro do pacote.
 
@@ -440,11 +491,13 @@ valorNaoExportado = 200 // Não exportada
 ```
 
 # 9. Outputs
+
 Em Go, a formatação de saída é comumente realizada utilizando o pacote "fmt". Este pacote fornece funções como _Print_,
 _Println_ e _Printf_ para exibir informações no console ou em outros destinos de saída. Além disso, o pacote "fmt"
 também oferece verbos de formatação, que são especificadores utilizados para formatar valores de acordo com seus tipos.
 
 ### fmt.Print() - Impressão Simples:
+
 A função _Print_ é utilizada para imprimir valores no console sem adicionar uma nova linha ao final. Ela aceita uma
 lista variável de argumentos e os imprime consecutivamente. Exemplo:
 
@@ -457,6 +510,7 @@ fmt.Print("Nome: ", nome, ", Idade: ", idade)
 ```
 
 ## fmt.Println() - Impressão com Nova Linha:
+
 A função _Println_ é semelhante à _Print_, mas adiciona automaticamente uma nova linha ao final da saída. Isso é útil
 para separar as linhas de saída. Exemplo:
 
@@ -467,6 +521,7 @@ fmt.Println("Nome:", nome, "Idade:", idade) // Saída | Nome: Bob Idade: 25
 ```
 
 ## fmt.Printf() - Impressão com Formatação:
+
 A função _Printf_ permite formatação de _string_ usando verbos específicos, sendo semelhante à função _Printf_ em C. Ela
 aceita uma _string_ de formato e uma lista variável de argumentos que serão formatados e impressos. Exemplo:
 
@@ -482,11 +537,14 @@ escolha entre _Print_, _Println_, ou _Printf_ depende das necessidades específi
 ausência de nova linha ao final da saída.
 
 # 10. Verbos de formatação
+
 Em Go, os verbos de formatação são especificadores que indicam como os valores devem ser formatados ao serem exibidos
 usando a função _Printf_ do pacote "fmt". Aqui estão alguns dos verbos de formatação mais comuns em Go:
 
 ## %v (Verbo de Valor):
+
 Utilizado para imprimir o valor de uma variável na sua forma natural, sem formatação específica.
+
 ```go
 nome = "Alice"
 idade := 25
@@ -495,7 +553,9 @@ fmt.Printf("Nome: %v, Idade: %v\n", nome, idade) // Saída: Nome: Alice, Idade: 
 ```
 
 ## %d (Verbo Decimal):
+
 Utilizado para formatar números inteiros.
+
 ```go
 numero := 42
 fmt.Printf("Número: %d\n", numero)
@@ -503,6 +563,7 @@ fmt.Printf("Número: %d\n", numero)
 ```
 
 ## %f (Verbo Ponto Flutuante):
+
 Utilizado para formatar números de ponto flutuante.
 
 ```go
@@ -511,6 +572,7 @@ fmt.Printf("Altura: %f\n", altura) // Saída: Altura: 175.500000
 ```
 
 ## %s (Verbo String):
+
 Utilizado para formatar strings.
 
 ```go
@@ -519,13 +581,16 @@ fmt.Printf("Mensagem: %s\n", mensagem) // Saída: Mensagem: Olá, mundo!
 ```
 
 ## %t (Verbo Booleano):
+
 Utilizado para formatar valores booleanos.
+
 ```go
 ativo := true
 fmt.Printf("Ativo: %t\n", ativo) // Saída: Ativo: true
 ```
 
 ## %b (Verbo Binário):
+
 Utilizado para formatar números em representação binária.
 
 ```go
@@ -537,6 +602,7 @@ Esses são apenas alguns dos verbos de formatação disponíveis em Go, existem 
 de valor que você está formatando e do resultado desejado na saída formatada.
 
 # 11. Tipos de dados
+
 Os tipos de dados em Go são essenciais para definir como os valores são armazenados na memória, interpretados e
 manipulados pelo programa. Cada variável em Go possui um tipo de dados associado, que determina as operações que podem
 ser realizadas com ela, a quantidade de memória que ela ocupa e a forma como ela é representada internamente.
@@ -545,11 +611,13 @@ Go é uma linguagem estaticamente tipada, ou seja, uma vez que for definido um t
 armazenar dados desse tipo.
 
 Esses são os três tipos básicos de dados em Go:
+
 - **bool**: representa um valor booleano, que será falso ou verdadeiro;
 - **numérico**: representa tipos inteiros, valores de ponto flutuante e tipos complexos;
 - **string**: representa uma sequência de caracteres.
 
 Aqui está um exemplo dos tipos de dados básicos em Go:
+
 ```go
 var verdadeiro bool = true // Valor booleano
 var numero int = 5 // Inteiro
@@ -558,6 +626,7 @@ var caracteres string = "Hi!" // Conjunto de caracteres
 ```
 
 ## Boolean:
+
 Em Go, o tipo de dado _bool_ representa valores booleanos, que podem ter apenas dois estados: verdadeiro (true) ou falso
 (false). O tipo _bool_ é frequentemente utilizado em expressões condicionais, estruturas de controle de fluxo e
 operações lógicas.
@@ -565,7 +634,9 @@ operações lógicas.
 Aqui estão alguns pontos importantes sobre o tipo _bool_ em Go:
 
 ## Declaração de Variáveis:
+
 Você pode declarar variáveis do tipo _bool_ da seguinte maneira:
+
 ```go
 var isTrue bool // retorna true (verdadeiro)
 var isFalse bool = false // retorna false (falso)
@@ -582,6 +653,7 @@ O tipo _bool_ é simples, mas é uma peça fundamental na programação, sendo e
 de fluxo em algoritmos e lógica condicional.
 
 ## Integer:
+
 Em Go, os tipos de dados inteiros são usados para representar números inteiros. Go fornece vários tipos de inteiros, com
 diferentes tamanhos e faixas, para atender necessidades de programação.
 
@@ -593,6 +665,7 @@ O tipo de dados inteiro possui duas categorias:
 **Importante**: o tipo padrão para inteiro é _int_. Se você não especificar um tipo, o tipo será _int_.
 
 ## Signed Integers (Inteiros Assinados):
+
 Em Go, os inteiros assinados são representados pelos tipos _int_ e outros tipos específicos, como _int8_, _int16_,
 _int32_ e _int64_. Esses tipos são usados para armazenar números inteiros que podem ser positivos, negativos ou zero, e
 têm a capacidade de representar o sinal (positivo ou negativo) do número.
@@ -600,6 +673,7 @@ têm a capacidade de representar o sinal (positivo ou negativo) do número.
 Aqui estão alguns detalhes sobre inteiros assinados em Go:
 
 ### Tipo (int):
+
 O tipo _int_ representa inteiros com sinal. O tamanho do _int_ é dependente da arquitetura do sistema onde o código está
 sendo compilado, sendo um int32 em sistemas de 32 bits e um int64 em sistemas de 64 bits.
 
@@ -613,25 +687,30 @@ numeroInteiroNegativo := -999 // Armazena o valor -999
 Existem cinco palavas-chave/tipos de inteiros assinados em Go, cada um com o seu tamanho e faixa:
 
 **Tipo (int):**
-  - Tamanho: depende da plataforma, sendo 32 bits em sistemas de 32 bits e 64 bits em sistemas de 64 bits.
-  - Faixa: -2147483648 a 2147483647 em sistemas de 32 bits e- 9223372036854775808 a 9223372036854775807 em sistemas de
-64 bits.
+
+- Tamanho: depende da plataforma, sendo 32 bits em sistemas de 32 bits e 64 bits em sistemas de 64 bits.
+- Faixa: -2147483648 a 2147483647 em sistemas de 32 bits e- 9223372036854775808 a 9223372036854775807 em sistemas de
+  64 bits.
 
 **Tipo (int8):**
-  - Tamanho: 8 bits/1 byte.
-  - Faixa: -128 a 127.
+
+- Tamanho: 8 bits/1 byte.
+- Faixa: -128 a 127.
 
 **Tipo (int16):**
-  - Tamanho: 16 bits/2 bytes.
-  - Faixa: -32768 a 32767.
+
+- Tamanho: 16 bits/2 bytes.
+- Faixa: -32768 a 32767.
 
 **Tipo (int32):**
-  - Tamanho: 32 bits/4 bytes.
-  - Faixa: -2147483648 a 2147483647.
+
+- Tamanho: 32 bits/4 bytes.
+- Faixa: -2147483648 a 2147483647.
 
 **Tipo (int64):**
-  - Tamanho: 64 bits/8 bytes.
-  - Faixa: -9223372036854775808 a 9223372036854775807.
+
+- Tamanho: 64 bits/8 bytes.
+- Faixa: -9223372036854775808 a 9223372036854775807.
 
 Esses são os tipos de dados inteiros em Go, cada um com seu tamanho e faixa específicos. O tipo _int_ é dependente da
 plataforma, o que significa que em sistemas de 32 bits, ele terá 32 bits, e em sistemas de 64 bits, terá 64 bits. Os
@@ -640,6 +719,7 @@ um intervalo de valores que pode representar, sendo importante considerar esses 
 apropriado para a sua aplicação.
 
 ### Signed Integers (Inteiros não-assinados):
+
 Em Go, os inteiros não assinados são representados pelos tipos _uint_ e outros tipos específicos, como _uint8_,
 _uint16_, _uint32_ e _uint64_. Diferentemente dos inteiros assinados, os inteiros não assinados representam apenas
 valores não negativos (zero e positivos) e não têm um bit de sinal. Aqui estão alguns detalhes sobre inteiros não
@@ -656,30 +736,36 @@ var numeroNegativo uint = -11 // Erro: o tipo "uint" não recebe valores negativ
 Existem cinco palavas-chave/tipos de inteiros não-assinados em Go, cada um com o seu tamanho e faixa:
 
 **Tipo(uint):**
-  - Tamanho: depende da plataforma, sendo 32 bits em sistemas de 32 bits e 64 bits em sistemas de 64 bits.
-  - Faixa: 0 a 4294967295 em sistemas de 32 bits e 0 a 18446744073709551615 em sistemas de 64 bits.
+
+- Tamanho: depende da plataforma, sendo 32 bits em sistemas de 32 bits e 64 bits em sistemas de 64 bits.
+- Faixa: 0 a 4294967295 em sistemas de 32 bits e 0 a 18446744073709551615 em sistemas de 64 bits.
 
 **Tipo(uint8):**
-  - Tamanho: 8 bits/1 byte.
-  - Faixa: 0 a 255.
+
+- Tamanho: 8 bits/1 byte.
+- Faixa: 0 a 255.
 
 **Tipo(uint16):**
-  - Tamanho: 16 bits/2 bytes.
-  - Faixa: 0 a 65535.
+
+- Tamanho: 16 bits/2 bytes.
+- Faixa: 0 a 65535.
 
 **Tipo(uint32):**
-  - Tamanho: 32 bits/4 bytes.
-  - Faixa: 0 a 4294967295.
+
+- Tamanho: 32 bits/4 bytes.
+- Faixa: 0 a 4294967295.
 
 **Tipo(uint64):**
-  - Tamanho: 64 bits/8 bytes.
-  - Faixa: 0 a 18446744073709551615.
+
+- Tamanho: 64 bits/8 bytes.
+- Faixa: 0 a 18446744073709551615.
 
 Esses são os tipos de dados inteiros não assinados em Go, cada um com seu tamanho e faixa específicos. Os tipos _uint_ e
 suas variantes representam valores que são sempre não negativos, incluindo zero e valores positivos, e são
 frequentemente usados quando você precisa representar quantidades que não fazem sentido como valores negativos.
 
 ## Float:
+
 O tipo de dados _float_ em programação, incluindo em Go, é usado para armazenar valores numéricos que representam
 números de ponto flutuante, ou seja, números reais. Esses números podem ter parte inteira e parte fracionária,
 permitindo a representação de valores não inteiros, como números decimais.
@@ -687,12 +773,13 @@ permitindo a representação de valores não inteiros, como números decimais.
 O tipo de dados _float_ possui duas palavras-chave:
 
 **Tipo(float32):**
-  - Tamanho: 32 bits (4 bytes).
-  - Precisão: aproximadamente 7 dígitos decimais de precisão.
-  - Faixa: aproximadamente de -3.4e+38 a 3.4e+38.
-  - Significado: O tipo float32 em Go representa números de ponto flutuante (números reais) com 32 bits de precisão.
-    Isso significa que pode representar números decimais com até sete dígitos significativos, e sua faixa de valores vai
-    de aproximadamente -3.4 vezes 10 elevado a 38 até 3.4 vezes 10 elevado a 38.
+
+- Tamanho: 32 bits (4 bytes).
+- Precisão: aproximadamente 7 dígitos decimais de precisão.
+- Faixa: aproximadamente de -3.4e+38 a 3.4e+38.
+- Significado: O tipo float32 em Go representa números de ponto flutuante (números reais) com 32 bits de precisão.
+  Isso significa que pode representar números decimais com até sete dígitos significativos, e sua faixa de valores vai
+  de aproximadamente -3.4 vezes 10 elevado a 38 até 3.4 vezes 10 elevado a 38.
 
 Exemplo:
 
@@ -702,13 +789,15 @@ var Flutuante float32 = -3.2e+35 // Recebe um valor flutuante negativo
 ```
 
 **Tipo(float64):**
-  - Tamanho: 64 bits (8 bytes).
-  - Precisão: aproximadamente 15 dígitos decimais de precisão. - Faixa: aproximadamente de -1.7e+308 a +1.7e+308.
-  - Significado: O tipo float64 em Go representa números de ponto flutuante com maior precisão, usando 64 bits. Isso
-    permite representar números decimais com até 15 dígitos significativos. A faixa de valores do float64 vai de
-    aproximadamente -1.7 vezes 10 elevado a 308 até 1.7 vezes 10 elevado a 308.
+
+- Tamanho: 64 bits (8 bytes).
+- Precisão: aproximadamente 15 dígitos decimais de precisão. - Faixa: aproximadamente de -1.7e+308 a +1.7e+308.
+- Significado: O tipo float64 em Go representa números de ponto flutuante com maior precisão, usando 64 bits. Isso
+  permite representar números decimais com até 15 dígitos significativos. A faixa de valores do float64 vai de
+  aproximadamente -1.7 vezes 10 elevado a 308 até 1.7 vezes 10 elevado a 308.
 
 Exemplo:
+
 ```go
 var flutuante float64 = -1.3e+220 // Recebe um valor flutuante negativo
 var Flutuante float64 = 111.111 // Recebe um valor flutuante
@@ -720,6 +809,7 @@ quando a precisão é crucial, como em cálculos científicos. O _float32_ é us
 precisão adicional não é necessária.
 
 ## String:
+
 O tipo de dados _string_ é empregado para armazenar sequências de caracteres, ou seja, texto. Os valores atribuídos a
 uma _string_ devem ser delimitados por aspas duplas. Essa representação é fundamental para trabalhar com dados textuais
 em Go, proporcionando uma maneira consistente e eficiente de lidar com informações como palavras, frases e outras formas
@@ -728,7 +818,9 @@ de texto.
 Aqui estão algumas características importantes sobre strings em Go:
 
 ## Declaração de Strings:
+
 Você pode declarar uma string usando aspas duplas.
+
 ```go
 mensagem := "Gopher Golang ^-^/!!!" // Essa é uma String
 ```
@@ -742,16 +834,20 @@ comportamentos inesperados. O pacote _strings_ oferece funcionalidades adicionai
 _strings_ de maneira eficiente.
 
 # 12. Arrays
+
 Em Go, um _array_ é um tipo de estrutura de dados que permite armazenar uma coleção fixa de elementos do mesmo tipo, ou
 seja, uma variável que armazena valores do mesmo tipo. Ao serem declarados, os arrays têm um tamanho predefinido que não
 pode ser alterado após sua criação. Alguns pontos essenciais sobre arrays em Go incluem:
 
 ## Declaração de Arrays:
+
 Arrays são declarados especificando o tipo dos elementos e seu tamanho. A sintaxe básica é utilizando "var" é:
+
 ```go
 var nomeArray = [tamanho]Tipo{valores} // Aqui o comprimento é definido
 var nomeArray = [...]Tipo{valores} // Aqui o comprimento é inferido
 ```
+
 Com o sinal “:=” é assim:
 
 ```go
@@ -764,6 +860,7 @@ uma dimensão fixa. Essa dimensão é definida explicitamente por um número ou 
 que o compilador decide a dimensão do _array_ com base no número de valores fornecidos).
 
 ## Acesso a Elementos de um Array:
+
 Você pode acessar um elemento específico do array consultando seu número de índice.
 
 Em Go, os índices do array começam em 0. Isso significa que [0] é o primeiro elemento, [1] é o segundo elemento, etc.
@@ -778,6 +875,7 @@ fmt.Println(contando [4]) // Imprime o valor 50
 ```
 
 ## Alterar Elementos de um Array:
+
 Você também pode alterar o valor de um elemento específico da matriz consultando o número do índice.
 
 Exemplo:
@@ -790,6 +888,7 @@ fmt.Println(contando) // Imprimindo o valor do array contando após a alteraçã
 ```
 
 ## Inicialização de Arrays:
+
 Se um array ou qualquer um de seus elementos não for explicitamente inicializado no código, será atribuído a eles o
 valor padrão correspondente ao seu tipo. É relevante notar que, para o tipo “int", o valor padrão é 0, enquanto para o
 tipo "string", o valor padrão é uma string vazia, representada por """. Essa característica garante consistência e
@@ -797,6 +896,7 @@ previsibilidade quando não há uma inicialização explícita, proporcionando v
 envolvidos.
 
 Exemplo:
+
 ```go
 array1 := [7]int{1,2,3,4,5,6,7} // Completamente inicializado
 array2 := [7]int{1,2,3,4} // Parcialmente inicializado
@@ -808,6 +908,7 @@ fmt.Println(array3) // Imprime o valor padrão (0)
 ```
 
 ## Inicialização de Elementos Específicos em Arrays:
+
 É possível inicializar apenas elementos específicos de um array. Exemplo:
 
 ```go
@@ -822,6 +923,7 @@ O _array_ possui 7 elementos ([7]), ao utilizar “0:10", estou atribuindo o val
 elemento). O “6:70" indica que estou atribuindo 70 ao índice 6 (sétimo elemento).
 
 ## Comprimento de Arrays:
+
 O tamanho de um array em Go é fixo e determinado durante a declaração. Para obter o tamanho, utiliza-se a função "len".
 
 Exemplo:
@@ -839,6 +941,7 @@ proporcionando um controle rígido sobre o tamanho da estrutura de dados. Entret
 slices são geralmente mais convenientes e amplamente utilizadas.
 
 # 13. Slices
+
 As slices são estruturas semelhantes aos _arrays_, mas oferecem maior poder e flexibilidade. Assim como os _arrays_, as
 _slices_ são utilizadas para armazenar vários valores do mesmo tipo em uma única variável. No entanto, ao contrário dos
 _arrays_, as _slices_ têm a capacidade de alterar dinamicamente seu comprimento, expandindo ou reduzindo conforme
@@ -852,6 +955,7 @@ Em Go, existem várias formas de criar uma slice, veja:
 - Usando a função **make()**.
 
 ## Criando uma Slice com o formato: []Tipo{valores}:
+
 ```go
 // Sintaxe
 minhaSlice := []Tipo{valores}
@@ -868,10 +972,12 @@ minhaSlice := []int{1,2,3}
 ```
 
 Em Go, existem duas funções que podem ser usadas para retornar o comprimento e a capacidade de uma fatia:
+
 - **Função len()** - retorna o comprimento da slice (o número de elementos na slice)
 - **Função cap()** - retorna a capacidade da slice (o número de elementos para os quais a slice pode aumentar ou diminuir)
 
 ## len - Comprimento de uma Slice:
+
 A função "len" retorna o número de elementos presentes em uma slice. Por exemplo:
 
 ```go
@@ -882,6 +988,7 @@ fmt.Println(comprimento) // Imprime o valor da variável comprimento
 ```
 
 ## cap - Capacidade de uma Slice:
+
 A função cap retorna a capacidade total da _slice_, ou seja, o número máximo de elementos que a _slice_ pode conter
 antes de precisar ser realocada para um espaço maior na memória.
 
@@ -899,6 +1006,7 @@ Ambas as funções são ferramentas valiosas ao manipular slices em Go, proporci
 quantidade atual de elementos e a capacidade disponível na estrutura de dados.
 
 ## Criando uma Slice de um Array:
+
 Você pode criar uma slice fatiando um array. Exemplo:
 
 ```go
@@ -926,6 +1034,7 @@ começam em 0. Isso significa que "O" é o primeiro elemento, 1 é o segundo e e
 array, isso significa que a capacidade da slice é 5.
 
 ## Criando uma Slice coma função make():
+
 A função _make()_ também pode ser utilizada para criar uma slice.
 
 ```go
@@ -956,6 +1065,7 @@ Neste exemplo, _make([]int, 3)_ cria uma slice de inteiros com um comprimento in
 atribuídos aos elementos do slice.
 
 ## Acessando Elementos de uma Slice:
+
 Em Go, você pode acessar os elementos de uma slice usando índices. O índice do primeiro elemento é 0, o segundo é 1, e
 assim por diante. Aqui está um exemplo simples de como acessar elementos de uma slice:
 
@@ -969,6 +1079,7 @@ Neste exemplo, _minhaSlice_ é uma slice de inteiros, com cinco elementos. Os el
 seguidos do índice desejado (ex: índice [0] retorna o valor 10).
 
 ## Alterando Elementos de uma Slice:
+
 Você pode alterar os elementos de uma slice atribuindo um novo valor a um elemento específico usando o índice
 correspondente. Aqui está um exemplo mais detalhado de como fazer isso:
 
@@ -984,6 +1095,7 @@ Neste exemplo, _minhaSlice_ é uma slice de inteiros inicializada com três elem
 elemento) sofreu uma modificação, saindo do valor 30 para 8000.
 
 ## Anexando Elementos numa Slice:
+
 Você pode anexar elementos ao final de uma slice utilizando a função "append()":
 
 ```go
@@ -1009,6 +1121,7 @@ Neste exemplo, _minhaSlice_ é uma slice de inteiros inicializada com três elem
 adicionar novos elementos à slice.
 
 ## Anexando uma Slice numa Slice:
+
 Para anexar todos os elementos de uma slice a outra slice, use a função _append()_.
 
 ```go
@@ -1028,10 +1141,12 @@ fmt.Printf("minhaSlice3 = %v\n", minhaSlice3) // Resultado da terceira slice
 fmt.Printf("Comprimento= %d\n", len(minhaSlice3)) // Resultado do comprimento
 fmt.Printf("Capacidade %d\n", cap(minhaSlice3)) // Resultado da capacidade
 ```
+
 No exemplo acima, _minhaSlice3_ utiliza a função _append()_ para anexar _minhaSlice_ e _minhaSlice2_. O resultado disso
 será a junção dos elementos de _minhaSlice_ e _minhaSlice2_.
 
 ## Eficiência de Memória:
+
 Ao utilizar _slices_ em Go, todos os elementos do _array_ subjacente são carregados na memória. Caso o _array_ seja
 extenso e você necessite apenas de alguns elementos, torna-se mais eficiente copiar exclusivamente esses elementos
 utilizando a função _copy()_.
@@ -1064,6 +1179,7 @@ capacidade inicial da _destination_ é suficiente para armazenar três elementos
 de _source_ serão copiados.
 
 # 14. Operadores
+
 Operadores são utilizados para executar operações em variáveis e valores. Por exemplo, o operador "+" é usado para somar
 dois valores. Veja o exemplo abaixo:
 
@@ -1087,6 +1203,7 @@ fmt.Println(soma4) // Imprimindo valor da variável "soma4"
 ```
 
 Go divide os operadores nos seguintes grupos:
+
 - **Aritméticos**;
 - **Atribuição**;
 - **Comparação**;
@@ -1094,23 +1211,25 @@ Go divide os operadores nos seguintes grupos:
 - **Bit a Bit (Bitwise)**.
 
 ## Operadores aritméticos:
+
 Operadores aritméticos são usados para realizar operações matemáticas comuns. Veja a tabela com os operadores, nomes,
 descrições e exemplos:
 
-| OPERADOR | NOME          | DESCRICÃO                                      | EXEMPLO |
-| -------- | ------------- | ---------------------------------------------- | ------- |
-| +        | Soma          | Adiciona dois valores                          | x + y   |
-| -        | Subtração     | Subtrai dois valores                           | x - y   |
-| *        | Multiplicação | Multiplica dois valores                        | x * y   |
-| /        | Divisão       | Divide dois valores                            | x / y   |
-| %        | Modulo        | Retorna o resto da divisão entre dois valores. | x % y   |
-| **       | Potência      | Eleva um valor a outro                         | x ** y  |
-| ++       | Incremento    | Incrementa um valor                            | x++     |
-| --       | Decremento    | Decrementa um valor                            | x--     |
+| OPERADOR | NOME          | DESCRICÃO                                      | EXEMPLO  |
+| -------- | ------------- | ---------------------------------------------- | -------- |
+| +        | Soma          | Adiciona dois valores                          | x + y    |
+| -        | Subtração     | Subtrai dois valores                           | x - y    |
+| \*       | Multiplicação | Multiplica dois valores                        | x \* y   |
+| /        | Divisão       | Divide dois valores                            | x / y    |
+| %        | Modulo        | Retorna o resto da divisão entre dois valores. | x % y    |
+| \*\*     | Potência      | Eleva um valor a outro                         | x \*\* y |
+| ++       | Incremento    | Incrementa um valor                            | x++      |
+| --       | Decremento    | Decrementa um valor                            | x--      |
 
 Esta lista mostra exemplos e equivalências dos operadores aritméticos em Go, que simplificam a expressão de operações frequentes.
 
 ## Operadores de atribuição:
+
 Operadores de atribuição são usados para atribuir valores a variáveis. No exemplo abaixo, o operador de atribuição (=) é
 usado para atribuir o valor 15 a uma variável chamada valor:
 
@@ -1134,7 +1253,7 @@ Uma lista de todos os operadores de atribuição:
 | =        | Atribuição                          | x = 5   |
 | +=       | Atribuição de adição                | x += 3  |
 | -=       | Atribuição de subtração             | x -= 3  |
-| *=       | Atribuição de multiplicação         | x *= 3  |
+| \*=      | Atribuição de multiplicação         | x \*= 3 |
 | /=       | Atribuição de divisão               | x /= 3  |
 | %=       | Atribuição de modulo                | x %= 3  |
 | &=       | Atribuição de bitwise e             | x &= 3  |
@@ -1144,6 +1263,7 @@ Uma lista de todos os operadores de atribuição:
 Esta lista mostra exemplos e equivalências dos operadores de atribuição compostos em Go, que simplificam a expressão de operações frequentes.
 
 ## Operadores de comparação:
+
 Operadores de comparação são usados para comparar dois valores.
 
 **Importante**: o valor de retorno de uma comparação é verdadeiro (1) ou falso (0).
@@ -1196,6 +1316,7 @@ Essa tabela resume os operadores de comparação, descrevendo seus nomes, exempl
 **Importante**: você aprenderá mais sobre operadores de comparação e como usá-los no capítulo **Condições**.
 
 ## Operadores bit a bit:
+
 Operadores bit a bit são usados em números (binários).
 
 Essa é a lista de todos os operadores bit a bit:
@@ -1229,6 +1350,7 @@ Exemplo: x >> 2
 ```
 
 # 15. Estruturas condicionais
+
 Em Go, as estruturas condicionais, como "_if_", "_else if_', e "_else_", proporcionam o controle do fluxo de execução do
 programa conforme determinadas condições. Essas construções permitem que você tome decisões lógicas, adaptando o
 comportamento do programa de acordo com os diferentes cenários que podem surgir durante a execução.
@@ -1253,6 +1375,7 @@ Além disso, Go oferece suporte aos operadores lógicos usuais:
 Você pode usar esses operadores ou suas combinações para criar condições para diferentes decisões.
 
 ## Declarando if:
+
 A declaração _if_ é usada para executar um bloco de código condicionalmente, dependendo da avaliação de uma expressão
 booleana. Veja a sintaxe básica:
 
@@ -1279,6 +1402,7 @@ valores para descobrir se o valor armazenado na variável é maior que 17. Se a 
 imprimido.
 
 ## Declarando else:
+
 A declaração _else_ em Go é usada em conjunto com a declaração _if_ para especificar um bloco de código a ser executado
 quando a condição do _if_ for falsa. Veja a sintaxe:
 
@@ -1319,6 +1443,7 @@ fmt.Println("Você é menor de idade.")
 ```
 
 ## Declarando else if:
+
 A declaração _else if_ em Go é utilizada para avaliar múltiplas condições em sequência, permitindo que você lide com
 diferentes cenários de maneira estruturada. Dê uma olhada na sintaxe:
 
@@ -1357,6 +1482,7 @@ Se nenhuma das condições anteriores for verdadeira, o bloco dentro do _else_ �
 Essa estrutura permite que você lide com uma série de condições de forma organizada e fornece flexibilidade para expressar a lógica condicional do seu programa.
 
 ## Declarando if aninhado:
+
 É possível utilizar estruturas _if_ aninhadas para lidar com condições mais complexas ou para realizar verificações adicionais em um bloco condicional. Veja a sintaxe:
 
 ```go
@@ -1386,6 +1512,7 @@ if idade >= 18 {
     }
 }
 ```
+
 Neste exemplo, há um _if_ aninhado dentro do bloco de código do primeiro _if_. O segundo _if_ verifica se o nome é
 "Alice" dentro do contexto de uma pessoa maior de idade. Dependendo das condições, diferentes mensagens serão impressas.
 
@@ -1410,8 +1537,9 @@ default:
 ```
 
 É assim que funciona:
+
 - A expressão é avaliada uma vez;
-O valor da expressão do _switch_ é comparado com os valores de cada case;
+  O valor da expressão do _switch_ é comparado com os valores de cada case;
 - Se houver uma correspondência, o bloco de código associado é executado;
 - A palavra-chave _default_ é opcional. Ela especifica algum código a ser executado se não houver correspondência de case.
 
@@ -1444,8 +1572,8 @@ após a execução do bloco correspondente.
 **Importante**: todos os valores de case devem ter o mesmo tipo que a expressão _switch_. Caso contrário, o compilador
 gerará um erro.
 
-
 ## Switch multi-case:
+
 você pode ter vários valores correspondentes em um único caso do _switch_. Isso é conhecido como "switch multi-case". A
 ideia é fornecer uma lista de valores que serão tratados de maneira semelhante quando comparados com a expressão do
 _switch_. Veja a sintaxe:
@@ -1486,10 +1614,12 @@ Isso torna o código mais conciso quando você precisa executar a mesma lógica 
 valores em um único caso economiza repetição de código e torna a estrutura do _switch_ mais clara.
 
 # 17. Loops
+
 A estrutura de repetição _for_ é bastante flexível e pode ser usada de diferentes maneiras. Vamos explorar as formas
 mais comuns do loop _for_ em Go.
 
 ## Forma Clássica (sintaxe):
+
 ```go
 for inicialização; condição; pós-execução {
 // código a ser repetido enquanto a condição for verdadeira
@@ -1559,6 +1689,7 @@ for {
 A sintaxe é parecida com a forma simplificada, porém, o que muda são as instruções que serão passadas.
 
 ## Declaração continue:
+
 A instrução _continue_ é usada para pular uma ou mais iterações no loop. Em seguida, continua com a próxima iteração no
 loop.
 
@@ -1580,6 +1711,7 @@ continua com a próxima iteração. Como resultado, quando você executa esse c�
 do programa, e os outros números de 0 a 10 serão impressos.
 
 ## Declaração break:
+
 A instrução break é usada para interromper/encerrar a execução do loop. Veja um exemplo onde o loop é interrompido:
 
 ```go
@@ -1605,6 +1737,7 @@ de chegar a esse ponto.
 **Importante**: continue e break geralmente são usados com condições.
 
 ## Loops Aninhados:
+
 Os loops aninhados em Go são uma construção onde um ou mais loops estão contidos dentro de outro loop. Isso é útil
 quando você precisa iterar sobre elementos em múltiplas dimensões, como em matrizes bidimensionais ou em situações que
 exigem iterações encadeadas.
@@ -1633,11 +1766,13 @@ Os loops aninhados são frequentemente usados para lidar com matrizes bidimensio
 situação em que seja necessário iterar sobre múltiplos conjuntos de dados encadeados.
 
 ## Palavra-chave range:
+
 A palavra-chave _range_ em Go é usada dentro de loops for para iterar sobre elementos em uma variedade de tipos de
 dados, como _slices_, _arrays_, _strings_, _maps_ e _canais_. Ela simplifica o processo de iteração, fornecendo valores
 do iterável e, opcionalmente, seus índices.
 
 Assim é a sintaxe básica:
+
 ```go
 for indice, valor := array | slice | map {
 // Código a ser executado para cada iteração
@@ -1671,10 +1806,11 @@ for valor := range numeros {
 }
 ```
 
-Neste caso, o "_" é usado para ignorar o índice, focando apenas nos valores. O uso do range proporciona uma maneira
+Neste caso, o "\_" é usado para ignorar o índice, focando apenas nos valores. O uso do range proporciona uma maneira
 concisa de iterar sobre elementos de uma coleção em Go.
 
 # 18. Functions
+
 Em Go, funções são blocos de código que realizam uma tarefa específica. Elas são fundamentais para organizar e
 modularizar o código em programas Go. Aqui estão alguns aspectos importantes sobre funções em Go:
 
@@ -1687,11 +1823,13 @@ func nomeDaFunção() {
 ```
 
 Para criar (geralmente chamada de declaração) uma função, faça o seguinte:
+
 - Use a palavra-chave _func_;
 - Especifique um nome para a função, seguido de parêntesis “()”;
 - Adicione o código que define o que a função deve fazer, entre chaves “{}”.
 
 ## Chamando funções:
+
 Funções não são executadas imediatamente. Elas são "salvas para uso posterior" e serão executadas quando forem chamadas.
 
 No exemplo abaixo, uma função chamada "_saudacao()_". A chave de abertura ({) indica o início do código da função, e a
@@ -1726,8 +1864,9 @@ func main() {
 ```
 
 ## Regras de Nomeação para Funções:
+
 - Um nome de função deve começar com uma letra.
-- Um nome de função pode conter apenas caracteres alfanuméricos e sublinhados (A-z, 0-9 e __ );
+- Um nome de função pode conter apenas caracteres alfanuméricos e sublinhados (A-z, 0-9 e \_\_ );
 - Nomes de funções diferenciam maiúsculas de minúsculas;
 - Um nome de função não pode conter espaços;
 - Se o nome da função consistir em várias palavras, podem ser utilizadas técnicas introduzidas para a nomeação de
@@ -1736,6 +1875,7 @@ func main() {
 **Dica**: Dê à função um nome que reflita o que ela faz.
 
 ## Parâmetros e Argumentos:
+
 As informações podem ser passadas para funções como parâmetro. Os parâmetros atuam como variáveis dentro da função. Os
 parâmetros e seus tipos são especificados após o nome da função, entre parênteses. Você pode adicionar quantos
 parâmetros quiser, basta separá-los com vírgula. Veja a sintaxe:
@@ -1767,6 +1907,7 @@ func main() {
 parâmetro, enquanto _Kage_ e _Gwenhwyfar_ são argumentos.
 
 ## Múltiplos Parâmetros:
+
 Em Go, você pode definir funções com múltiplos parâmetros para receber diferentes valores durante a chamada da função.
 Aqui está um exemplo de uma função com múltiplos parâmetros:
 
@@ -1797,6 +1938,7 @@ parâmetros nome e idade, respectivamente. Novamente, a mensagem será impressa 
 parâmetros, e os argumentos devem ser passados na mesma ordem.
 
 ## Retorno de Valores:
+
 Se quiser que a função retorne um valor, você precisa definir o tipo de dados do valor de retorno (como int, string,
 etc) e também usar a palavra-chave return dentro da função. Veja a sintaxe:
 
@@ -1828,6 +1970,7 @@ Na função _main_, a função soma é chamada dentro da função _fmt.Println_ 
 impressa na tela.
 
 ## Retorno de Valores Nomeados:
+
 Em Go, você também pode nomear os valores de retorno de uma função. Isso é útil quando uma função retorna múltiplos
 valores e você deseja tornar o código mais legível. Aqui está um exemplo de valores de retorno nomeados:
 
@@ -1848,6 +1991,7 @@ simples (significa que a instrução _return_ foi usada sem especificar o nome d
 O exemplo acima também pode ser escrito com a variável ao lado do return (ex: _return resultado_).
 
 ## Retorno de Valores armazenados numa Variável:
+
 O retorno de valores em Go pode ser armazenado diretamente em variáveis nomeadas na declaração da função. Aqui está um
 exemplo:
 
@@ -1872,6 +2016,7 @@ Na função _main_, a função _minhaFuncao_ é chamada com os argumentos (1 e 2
 nomeada _somaTotal_. Em seguida, o valor é impresso na tela.
 
 ## Múltiplos Valores de Retorno:
+
 É possível retornar múltiplos valores em uma única função. Isso é útil em situações em que você precisa fornecer mais de
 um resultado. Aqui está um exemplo simples:
 
@@ -1894,16 +2039,17 @@ func main() {
 ```
 
 O que acontece no exemplo acima:
+
 - A função _calcularSomaEProduto_ recebe dois parâmetros (_a_ e _b_) e retorna dois valores: a soma e o produto desses dois números.
 - Na função _main_, ao chamar a função, os valores de retorno são armazenados diretamente nas variáveis nomeadas
   _resultadoSoma_ e _resultadoProduto_.
 - Os valores armazenados são então impressos na tela.
 
 Se, por algum motivo, não quisermos utilizar alguns dos valores retornados de uma função, podemos adicionar um
-sublinhado ( _ ) para indicar que desejamos omitir esses valores. Essa prática é útil quando estamos cientes dos valores
+sublinhado ( \_ ) para indicar que desejamos omitir esses valores. Essa prática é útil quando estamos cientes dos valores
 de retorno, mas não temos a intenção de utilizá-los na lógica subsequente do programa.
 
-Quando você usa o sublinhado ( _ ), está indicando ao compilador que você não tem interesse em armazenar ou utilizar
+Quando você usa o sublinhado ( \_ ), está indicando ao compilador que você não tem interesse em armazenar ou utilizar
 esse valor de retorno específico. Veja um exemplo:
 
 ```go
@@ -1922,9 +2068,10 @@ func main() {
 }
 ```
 
-Neste exemplo, o valor de retorno do produto é ignorado usando (_) no lado esquerdo da atribuição. Isso é útil quando você está ciente do valor de retorno, mas não tem intenção de usá-lo na lógica subsequente do programa.
+Neste exemplo, o valor de retorno do produto é ignorado usando (\_) no lado esquerdo da atribuição. Isso é útil quando você está ciente do valor de retorno, mas não tem intenção de usá-lo na lógica subsequente do programa.
 
 ## Funções Recursivas:
+
 Em Go, é possível criar funções recursivas, ou seja, funções que chamam a si mesmas. Aqui está um exemplo simples de uma função recursiva que calcula o fatorial de um número:
 
 ```go
@@ -1980,9 +2127,10 @@ func main() {
 A função fatorial é definida para calcular o fatorial de um número n. A condição _if n == 0_ é o caso base, que retorna 1 quando n é igual
 a zero.
 
-A chamada recursiva _return n* fatorial(n-1)_ ocorre para valores diferentes de zero, calculando o fatorial de forma recursiva.
+A chamada recursiva _return n\* fatorial(n-1)_ ocorre para valores diferentes de zero, calculando o fatorial de forma recursiva.
 
 # 19. Structs
+
 Em Go, uma _struct_ (estrutura) é um tipo de dado composto que agrupa diferentes tipos de dados sob um único nome. Ela é frequentemente utilizada para modelar conceitos mais complexos, representando uma coleção de campos nomeados, onde cada campo pode ter um tipo de dado diferente. As _structs_ em Go são uma forma de organizar e agrupar dados relacionados.
 
 Enquanto _arrays_ são usados para armazenar vários valores do mesmo tipo de dados em uma única variável, _structs_ são usadas para armazenar vários valores de diferentes tipos de dados em uma única variável. Cada campo dentro de uma _struct_ pode ter um tipo de dado diferente, e os campos são acessados por meio de seus nomes.
@@ -2034,6 +2182,7 @@ Uma instância da _struct_ é criada com valores específicos para cada campo.
 Os campos da _struct_ são acessados usando a notação de ponto (pessoa1.Nome, pessoal.Idade, pessoa1.Altura).
 
 ## Passando Struct como Argumento de Função:
+
 Em Go, você pode passar uma struct como argumento para uma função da mesma maneira que faria com qualquer outro tipo de
 dado. Aqui está um exemplo simples:
 
@@ -2069,6 +2218,7 @@ Neste exemplo, a função _imprimirPessoa_ recebe uma _struct_ do tipo _Pessoa_ 
 campos dessa _struct_. Ao chamar a função, você passa uma instância da _struct_ como argumento, neste caso, _pessoa1_.
 
 # 20. Maps
+
 Um _map_ em Go é uma estrutura de dados que facilita a associação de valores a chaves, proporcionando uma implementação
 eficiente de tabelas de hash ou dicionários comuns em outras linguagens de programação. Essa estrutura consiste em uma
 coleção dinâmica de pares chave-valor, onde cada chave é única dentro do _map_ e está vinculada a um valor específico.
@@ -2087,7 +2237,6 @@ base em chaves únicas.
 
 Veja a sintaxe básica para criar um map, tanto com _var_ quanto com 0 ":=":
 
-
 ```go
 // Utilizando a palavra-chave 'var' para declarar e inicializar um map
 var a = map[TipoDaChave] TipoDoValor{chavel: value1, chave2: valor2,...}
@@ -2096,6 +2245,7 @@ b := map[TipoDaChave]TipoDoValor{chavel:valor1, chave2:valor2,...}
 ```
 
 Este exemplo mostra como criar mapas em Go:
+
 ```go
 func main() {
     var a = map[string]string{"marca": "Fiat", "modelo": "Uno", "ano": "2007"}
@@ -2120,6 +2270,7 @@ na _string_ de formato ajuda a alinhar a saída para melhor legibilidade.
 são armazenados de forma que haja uma recuperação eficiente dos dados do mapa.
 
 ## Criando Mapas usando a Função make():
+
 É possível criar mapas com a função _make()_. Veja a sintaxe:
 
 ```go
@@ -2154,6 +2305,7 @@ func main() {
 ```
 
 ## Criando um Mapa Vazio:
+
 Existem duas maneiras de criar um mapa vazio. Uma é usando a função _make()_ e a outra é usando a seguinte sintaxe:
 
 ```go
@@ -2185,6 +2337,7 @@ Isso significa que _b_ é _nil_ por padrão, pois não foi atribuído nenhum val
 
 **Tipos de chave permitidos:**
 A chave do mapa pode ser de qualquer tipo de dados para o qual o operador de igualdade (==) esteja definido. Esses incluem:
+
 - **Booleanos**;
 - **Números**;
 - **Strings**;
@@ -2194,6 +2347,7 @@ A chave do mapa pode ser de qualquer tipo de dados para o qual o operador de igu
 - **Interfaces** (desde que o tipo dinâmico suporte igualdade).
 
 Os tipos de chave inválidos são:
+
 - **Slices**;
 - **Maps**;
 - **Functions**.
@@ -2203,6 +2357,7 @@ Esses tipos são inválidos porque o operador de igualdade (==) não está defin
 **Importante**: os valores dos mapas podem ser de qualquer tipo.
 
 ## Acessar Elementos do Mapa:
+
 Para acessar elementos de um mapa em Go, você utiliza a chave correspondente ao elemento desejado dentro de colchetes “[ ]”. Veja um exemplo:
 
 ```go
@@ -2217,6 +2372,7 @@ func main() {
 ```
 
 ## Atualizar e Adicionar Elementos a um Mapa:
+
 É possível atualizar e adicionar elementos num mapa, veja:
 
 ```go
@@ -2236,7 +2392,9 @@ func main() {
 ```
 
 ## Remover Elementos de um Mapa:
+
 A remoção de elementos de um mapa é feita usando a função _delete()_. Veja como é a sintaxe:
+
 ```go
 delete (nomeDoMapa, chave)
 ```
@@ -2259,12 +2417,14 @@ func main() {
 ```
 
 ## Verificando Elementos Específicos em um Mapa:
+
 Você pode verificar se uma determinada chave existe em um mapa usando:
+
 ```go
 val, val, ok :=NomeDoMapa [ chave]
 ```
 
-Se você deseja apenas verificar a existência de uma determinada chave, pode usar o identificador em branco (_) no lugar
+Se você deseja apenas verificar a existência de uma determinada chave, pode usar o identificador em branco (\_) no lugar
 de val. Veja o exemplo:
 
 ```go
@@ -2291,6 +2451,7 @@ A variável _ok2_ é usada para descobrir se a chave existe ou não. Porque ter�
 chave "_color_" estivesse vazio. Este é o caso de _val3_.
 
 # Conclusão e Agradecimento
+
 Embora essa introdução tenha fornecido uma base sólida para entender o básico da linguagem Go, é importante destacar que
 o universo dessa linguagem é é vasto e cheio de recursos interessantes. Esta breve exploração é apenas o ponto de
 partida. Incentivo a todos a continuarem aprofundando seus conhecimentos, explorando temas mais avançados e buscando por

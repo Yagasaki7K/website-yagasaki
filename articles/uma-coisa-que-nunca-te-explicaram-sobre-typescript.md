@@ -1,9 +1,9 @@
 ---
 title: Uma Coisa Que Nunca Te Explicaram Sobre TypeScript
-excerpt: 'Há algo no TypeScript que você provavelmente entendeu errado, algo sobre tsconfig.json. Vamos resolver isso!'
+excerpt: "Há algo no TypeScript que você provavelmente entendeu errado, algo sobre tsconfig.json. Vamos resolver isso!"
 image: https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books/blob/master/Typescript/Chito_Saving_Burning_Mastering_Typescript.png?raw=true
-tags: ['Typescript']
-date: '2024-08-06'
+tags: ["Typescript"]
+date: "2024-08-06"
 ---
 
 ![](https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books/blob/master/Typescript/Chito_Saving_Burning_Mastering_Typescript.png?raw=true)
@@ -26,10 +26,10 @@ Vamos escrever uma aplicação frontend simples. E quero dizer realmente simples
 
 ```typescript
 // src/app.ts
-const greetingText = document.createElement('p')
-greetingText.innerText = 'Hello, John!'
+const greetingText = document.createElement("p");
+greetingText.innerText = "Hello, John!";
 
-document.body.appendChild(greetingText)
+document.body.appendChild(greetingText);
 ```
 
 Crie um elemento de parágrafo e cumprimente o John. Simples. Até agora, tudo bem.
@@ -42,11 +42,11 @@ Como nossa aplicação é, naturalmente, a melhor coisa desde o pão fatiado, va
 
 ```typescript
 // src/app.test.ts
-it('greets John', async () => {
-  await import('./app')
-  const greetingText = document.querySelector('p')
-  expect(greetingText).toHaveText('Hello, John!')
-})
+it("greets John", async () => {
+    await import("./app");
+    const greetingText = document.querySelector("p");
+    expect(greetingText).toHaveText("Hello, John!");
+});
 ```
 
 Quando tentarmos executar este teste, o TypeScript interferiria com um erro:
@@ -85,7 +85,7 @@ Volte para o módulo `app.ts` e adicione uma referência a uma variável global 
 // src/app.ts
 // ...application code.
 
-test
+test;
 ```
 
 Não definimos `test`. Não é um global do navegador e certamente não existe em nenhuma das bibliotecas padrão do TypeScript. É um erro, um bug, deveria ficar vermelho.
@@ -97,6 +97,7 @@ Este código compilaria? Claro. Funcionaria no navegador? Não. Ele lançaria um
 O `test` aqui é o que eu chamo de uma _definição fantasma_. É uma definição de tipo válida que descreve algo que simplesmente não existe. _Mais uma travessura do TypeScript_, você diria. _Não se apresse em culpar a ferramenta_, eu digo. Aqui está o que está acontecendo.
 
 ## (Mais de) uma configuração para governar todas
+
 Mova o módulo de teste `app.test.ts` do diretório `src` para um novo diretório chamado `test`. Abra-o. Espere, isso é um erro de tipo em `it` de novo? Nós não consertamos isso já adicionando `vitest/globals` ao nosso `tsconfig.json`?
 
 A questão é que o TypeScript não sabe o que fazer com o diretório `test`. Na verdade, o TypeScript nem sabe que ele existe, já que tudo o que apontamos em `tsconfig.json` é `src`:
@@ -133,15 +134,16 @@ Ok, então adicionamos `test` ao `include` e seguimos com nosso dia, qual é o g
 }
 ```
 
-**Onde a maioria dos desenvolvedores erram**. Adicionar novos diretórios ao `include` expande essa configuração para afetar _todos eles_. Embora essa mudança resolva os tipos do framework de teste em `test`, ela vazará para todos os módulos `src`! 
+**Onde a maioria dos desenvolvedores erram**. Adicionar novos diretórios ao `include` expande essa configuração para afetar _todos eles_. Embora essa mudança resolva os tipos do framework de teste em `test`, ela vazará para todos os módulos `src`!
 
 Você acabou de transformar todo o seu código-fonte em uma mansão assombrada, liberando centenas de tipos fantasmagóricos. Coisas que não existem serão tipificadas, coisas tipificadas podem entrar em conflito com outras definições, e a experiência geral com TypeScript se degradará drasticamente, especialmente à medida que sua aplicação crescer ao longo do tempo.
 
-Então, qual é a solução? Devemos criar vários `tsconfig.json` para cada diretório? 
+Então, qual é a solução? Devemos criar vários `tsconfig.json` para cada diretório?
 
 Na verdade, sim, você deve. Mas não para _cada_ diretório, e sim para cada _ambiente_ onde seu código deve ser executado.
 
 ## Runtimes e preocupações
+
 Por trás dos bastidores de uma aplicação web moderna há uma mistura de módulos. O código-fonte imediato da sua aplicação deve ser compilado, minificado, dividido em códigos, agrupado e enviado para seus usuários. Existem também arquivos de teste, que são módulos TypeScript também, nunca para serem compilados ou enviados para ninguém. Pode haver também histórias do Storybook, testes do Playwright, talvez um script customizado `*.ts` ou dois para automatizar coisas—todos úteis, todos com _intenções diferentes_ e destinados a rodar em _ambientes diferentes_.
 
 Mas para que escrevemos nossos módulos importa. Isso também importa para o TypeScript. Por que você acha que ele fornece o tipo _Document_ por padrão? Porque ele sabe que você provavelmente está desenvolvendo uma aplicação web. Desenvolvendo um servidor Node.js? Seja gentil e declare essa intenção instalando `@types/node`. O compilador não pode adivinhar por você, você precisa _dizer a ele o que deseja_.
@@ -233,6 +235,7 @@ Fica um pouco mais complicado para configurações que se cruzam, como aquela pa
 ### A propriedade references diz ao TypeScript para incluir a configuração dada na verificação de tipo, sem permitir que a configuração atual afete os arquivos incluídos.
 
 ## include vs references
+
 Ambas as propriedades `include` e `references` envolvem os arquivos "visíveis" para o TypeScript, mas o fazem de maneiras diferentes. Vamos recapitular essa diferença:
 
 - `include` controla quais arquivos são _afetados_ por esta configuração.
@@ -241,6 +244,7 @@ Ambas as propriedades `include` e `references` envolvem os arquivos "visíveis" 
 A configuração de teste de integração (`tsconfig.test.json`) ilustra essa diferença perfeitamente. Você deseja que essa configuração se aplique apenas aos arquivos de teste no diretório `./tests`, então é isso que você fornece em `include`. Mas você também quer ser capaz de importar o código-fonte testado nesses arquivos, o que significa que o TypeScript precisa conhecer esse código. Você _referencia_ a configuração dos arquivos-fonte (`tsconfig.src.json`) em `references`, o que expande transitivamente a visão do TypeScript para os arquivos incluídos lá, sem afetá-los pela configuração dos testes de integração.
 
 ## A parte prática
+
 Para melhor ou pior, estamos nos movendo para uma era onde as ferramentas de desenvolvimento são abstraídas de nós. É justo esperar que seu framework de escolha lide com essa selva de configurações para você. Na verdade, alguns frameworks já fazem isso. Tome o [Vite](https://github.com/vitejs/vite/tree/1c031723a821d654e9aed44e43a0a5fa47c240da/packages/create-vite/template-react-ts) como exemplo. Estou bastante confiante de que você pode encontrar uma configuração multi-configuração para TypeScript em praticamente qualquer outro projeto.
 
 Mas eu quero que você entenda que o TypeScript ainda é sua ferramenta, abstraída ou não, e você faria bem em aprender mais sobre ela, entendê-la melhor e usá-la corretamente.

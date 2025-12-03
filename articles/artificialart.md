@@ -1,9 +1,9 @@
 ---
 title: Ilustração vs Inteligência Artificial
-excerpt: 'Entenda a discussão de artista por pessoas que pagaram para ter imagens geradas pela inteligência artificial'
+excerpt: "Entenda a discussão de artista por pessoas que pagaram para ter imagens geradas pela inteligência artificial"
 image: https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80
-tags: ['Ilustração', 'IA']
-date: '2022-12-02'
+tags: ["Ilustração", "IA"]
+date: "2022-12-02"
 ---
 
 ![](https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80 "Anna Kolosyuk")
@@ -31,7 +31,9 @@ A questão da personalização é que em questão de vinte minutos ~ usando a Le
 E a personalização? Mudança de traços? Sem falar as alterações, porque SEMPRE existe aqueles clientes chatos que quer uma coisa, vê outra e quer sempre ficar mudando, trocando totlamente daquilo que desejou inicialmente, é chato, é frustrante e desgastante, leva tempo, recurso e dinheiro.
 
 ### O BOOM para o artista
+
 #
+
 O BOOM é que agora vocês (artistas) terão o funil correto de venda, o mesmo exemplo que eu, como desenvolvedor tenho. Quer pagar mais barato? Quer ir lá com o primo (IA) que acha melhor e mais em conta? Fica a vontade, mas a personalização, a exclusividade e um trabalho bem feito, somente eu poderei oferecer. Isso é algo que o Wix, Blogger, Wordpress oferece para clientes no-code, e está tudo bem, mas isso aumenta em mais minha preferência em transformar o meu trabalho em algo exclusivo, único e no preço que DEVE DE FATO, ser cobrado para aquele que DE FATO quer o meu trabalho.
 
 A Inteligência Artificial é um ponto em que vai abrir muitas alas para os artistas, tanto em questão de melhorias, quanto em questão de mostrar que é básico o serviço que eles oferecem, sendo generalizado, bugado e limitado.

@@ -1,9 +1,9 @@
 ---
 title: Instalando o ZSH e Oh My ZSH no WSL Ubuntu
-excerpt: 'Aprenda a instalar via WSL ou Linux, o OhMyZsh, o terminal mais desejado e estiloso do Linux'
+excerpt: "Aprenda a instalar via WSL ou Linux, o OhMyZsh, o terminal mais desejado e estiloso do Linux"
 image: https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
-tags: ['ZSH', 'Oh My ZSH', 'Shell', 'Shell Linux', 'Shell Script']
-date: '2023-07-03'
+tags: ["ZSH", "Oh My ZSH", "Shell", "Shell Linux", "Shell Script"]
+date: "2023-07-03"
 ---
 
 ![](https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80 "Lukas")
@@ -11,7 +11,8 @@ date: '2023-07-03'
 O ZSH é um Shell Linux amplamente usado por desenvolvedores, por ser mais fácil instalar plugins e personalizar temas, quando comparado com o Shell Bash que é o padrão na maioria das distribuições Linux.
 
 ## Primeiro, instale o Zsh
-```bash 
+
+```bash
 sudo apt install zsh
 ```
 
@@ -20,7 +21,8 @@ Ferramenta para gerenciar sua configuração do Zsh. Inclui mais de 200 plug-ins
 Consulte o site [ohmyz.sh](https://ohmyz.sh?ref=yagasaki.dev/blog) para mais detalhes.
 
 ## Defina ele como padrão no terminal
-```bash 
+
+```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -31,6 +33,7 @@ O [Github do Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes?ref=yagas
 <!--truncate-->
 
 # Instale o tema Spaceship - Opcional
+
 Spaceship é um prompt Zsh minimalista, poderoso e extremamente personalizável. O repositório do Github possui todas as orientações para realizarmos a instalação.
 
 Configuração sugerida para o Spaceship, deve ser incluída no fim do arquivo `~/.zshrc`:
@@ -54,14 +57,17 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 ```
+
 [Link com as definições](https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md?ref=yagasaki.dev/blog) das diversas opções que podemos usar para customizar o prompt com o Spaceship.
 
 ## Plugin Zsh Autosuggestions
+
 Outro recurso interessante para configurar com o Zsh é o plugin de sugestões para comandos, com base no histórico de comandos já usados. Para instalar esse plugin precisamos primeiro clonar o repositório do Github:
 
-```bash 
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
+
 Agora precisamos incluir o `zsh-autosuggestions` no parâmetro de plugins dentro do arquivo `~/.zshrc`:
 
 `plugins=(git zsh-autosuggestions)`

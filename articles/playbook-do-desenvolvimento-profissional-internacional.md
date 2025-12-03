@@ -1,15 +1,15 @@
 ---
 title: Playbook do Desenvolvimento Profissional Internacional
-excerpt: 'Este playbook é o seu melhor amigo para uma carreira internacional de sucesso. Dividido em duas sessões, teórica e prática.'
+excerpt: "Este playbook é o seu melhor amigo para uma carreira internacional de sucesso. Dividido em duas sessões, teórica e prática."
 image: https://safebooru.org//samples/3759/sample_1648090fe01da9a9ae581c862a966595dddeb548.jpg?3926859
-tags: ['Desenvolvimento', 'Pessoal', 'Profissional']
-date: '2024-04-24'
+tags: ["Desenvolvimento", "Pessoal", "Profissional"]
+date: "2024-04-24"
 ---
 
 ![](https://safebooru.org//samples/3759/sample_1648090fe01da9a9ae581c862a966595dddeb548.jpg?3926859)
 
 Esse é um artigo que foi retirado do Notion original do Alekson Fortes, como o intuito é ajudar o próximo - assim como ele - estou compartilhando,
-o mesmo artigo - ao invés do Notion pelo meu blog - Não sou o autor do playbook e todos os direitos são reservados ao Alekson Fortes, como o 
+o mesmo artigo - ao invés do Notion pelo meu blog - Não sou o autor do playbook e todos os direitos são reservados ao Alekson Fortes, como o
 conteúdo é gratuito e não possuo cunho financeiro, estarei disponibilizando o conteúdo.
 
 Caso você queira ver o conteúdo original pelo Notion e conteúdo original, [acesse esse link](https://alekson.notion.site/Playbook-do-Desenvolvimento-Profissional-Internacional-0c4dbbcb3f154b02ae8db3c3c5630b16).
@@ -41,7 +41,7 @@ Infratores sujeitos a medidas legais cabíveis.
 ## Comece por aqui
 
 <aside>
-🚀 Este playbook é o seu melhor amigo para uma carreira internacional de sucesso. 
+🚀 Este playbook é o seu melhor amigo para uma carreira internacional de sucesso.
 Dividido em duas sessões, teórica e prática, ele se baseia em experiências validadas, proporcionando insights para evitar os erros comuns cometidos por muitos.
 
 A **sessão teórica** oferece o conhecimento necessário para saber o que fazer, e também vai lhe ajudar a crescer como profissional e ser humano.
@@ -67,15 +67,14 @@ No meu caso, fui aprovado pela empresa canadense somente pelo meu conhecimento t
 
 Ao completar o seguinte checklist, você estará apto/a a **conseguir um emprego com visto de trabalho temporário** em praticamente qualquer lugar do mundo, incluindo os Estados Unidos e países europeus:
 
-- [ ]  **Formação Acadêmica Completa:**
+- [ ] **Formação Acadêmica Completa:**
     - Tecnólogo pode ser suficiente na grande maioria dos casos.
-- [ ]  **Experiência Profissional:**
+- [ ] **Experiência Profissional:**
     - 3-5 anos ou mais de experiência na área em que está buscando trabalho.
-- [ ]  **Comunicação no Idioma Local:**
+- [ ] **Comunicação no Idioma Local:**
     - Capacidade de se comunicar no idioma local da vaga, geralmente em inglês. Em alguns lugares, como Quebec, o francês pode ser necessário.
-- [ ]  **Grau de Mestrado (Opcional):**
+- [ ] **Grau de Mestrado (Opcional):**
     - Alguns países podem considerar um mestrado como um diferencial (nice to have), mas não é uma exigência. Por exemplo, nos EUA, pode ser relevante para certos programas de green card, mas mesmo assim não é uma exigência.
-    
 
 A seguir, você encontrará mais informações sobre como você pode obter diretamente uma residência permanente através da formação acadêmica.
 
@@ -84,7 +83,7 @@ A seguir, você encontrará mais informações sobre como você pode obter diret
 <aside>
 🚨 *Este checklist é apenas o início do guia completo e prático.*
 
-*Continue estudando a teoria e colocando em prática tudo o que aprender para aumentar suas chances cada vez mais. Conheço diversas pessoas com perfis superiores aos itens do checklist, mas que falham em desenvolver as habilidades fundamentais reunidas neste guia, e por isso não conseguem ter sucesso ao buscar um trabalho no exterior. Tenho certeza de que, se você seguir a teoria e a prática delineadas aqui, alcançará resultados extraordinários em sua carreira, assim como eu alcancei na minha.*
+_Continue estudando a teoria e colocando em prática tudo o que aprender para aumentar suas chances cada vez mais. Conheço diversas pessoas com perfis superiores aos itens do checklist, mas que falham em desenvolver as habilidades fundamentais reunidas neste guia, e por isso não conseguem ter sucesso ao buscar um trabalho no exterior. Tenho certeza de que, se você seguir a teoria e a prática delineadas aqui, alcançará resultados extraordinários em sua carreira, assim como eu alcancei na minha._
 
 </aside>
 
@@ -126,15 +125,15 @@ Recomendo que busque uma agência de imigração para o país para o qual gostar
 <aside>
 🌎 Inglês, Inglês, Inglês…
 
-Eu poderia encerrar este tópico apenas com a primeira linha. 
+Eu poderia encerrar este tópico apenas com a primeira linha.
 Inglês é uma prioridade. Pode ser interessante aprender outro idioma, como o francês para abrir portas na província de Quebec, aqui no Canadá, mas o inglês deve ser sua principal prioridade. Você vai precisar do inglês em qualquer lugar do mundo.
 
-Os melhores conteúdos da internet estão em inglês. A maioria das informações chega primeiro nesse idioma. A maioria dos melhores cursos, treinamentos, estão em inglês. 
+Os melhores conteúdos da internet estão em inglês. A maioria das informações chega primeiro nesse idioma. A maioria dos melhores cursos, treinamentos, estão em inglês.
 Se você ainda não fala inglês, tenha como meta se sentir confortável ao se comunicar no idioma. Agora, um detalhe importante: **estar confortável em se comunicar não significa falar fluentemente sem erros**. Você pode cometer quantos erros quiser, desde que esteja confortável e comunicável. Esse é o nível que você precisa para passar em uma entrevista, o passo mais importante de todos. Muitas pessoas com nível intermediário conseguem passar em entrevistas, pois têm coragem e não se importam em errar.
 
 Uma vez, tive uma reunião com meu gerente canadense e mencionei que tinha receio de assumir uma posição de liderança no meu local de trabalho, pois como eu poderia ser um bom líder tendo um inglês com erros? Ele me fez uma pergunta interessante: "O que você acharia de mim se eu pudesse falar português com erros?" Parei, pensei e respondi: "Acharia incrível!" E ele replicou: "Pois então, a mesma coisa se aplica a você! Todos sabem que você fala outro idioma e que o inglês não é sua primeira língua."
 
-**O importante é se comunicar**. Claro, com o tempo, seus idiomas se tornarão mais fluentes e com *MENOS* erros, mas jamais *SEM* erros. Você comete erros até mesmo em português! Não espere não cometer erros em um idioma secundário.
+**O importante é se comunicar**. Claro, com o tempo, seus idiomas se tornarão mais fluentes e com _MENOS_ erros, mas jamais _SEM_ erros. Você comete erros até mesmo em português! Não espere não cometer erros em um idioma secundário.
 
 </aside>
 
@@ -146,7 +145,7 @@ Uma vez, tive uma reunião com meu gerente canadense e mencionei que tinha recei
 [Talent Montreal](https://talentmontreal.com/en/jobs): Foi por meio deles que tive minha primeira oportunidade de emprego no Canadá, na empresa Intelerad. O site oferece diversas vagas em diversas áreas.
 
 [Vanhack](https://vanhack.com/): Este site é muito utilizado por profissionais da área de tecnologia que buscam oportunidades de emprego no Canadá.
- 
+
 [Hitmarker](https://hitmarker.net/): Destinado à indústria de jogos em todo o mundo.
 
 [Indeed](https://ca.indeed.com/?r=us): Um dos sites mais populares para busca de empregos no Canadá e EUA.
@@ -161,7 +160,7 @@ Empresas que sei que patrocinam ou já patrocinaram vistos no Canadá:
 [SII Canada](https://sii-group.com/en-CA/offers)
 [Astek](https://astek.ca/en/carreer/)
 
-Empresas que sei que contratam remotamente: 
+Empresas que sei que contratam remotamente:
 [Fortis Games](https://www.fortisgames.com/careers/)
 [IronBelly](https://ironbellystudios.com/career/)
 [Tucows](https://www.tucows.com/careers/opportunities)
@@ -179,9 +178,9 @@ Empresas que sei que contratam remotamente:
 
 A maioria das empresas utiliza o sistema ATS para filtrar a enorme quantidade de currículos que recebem. Com isso, é necessário criar um CV preparado para um sistema ATS e, ao mesmo tempo, chamar a atenção da pessoa que o lê.
 
-Existe um sistema chamado [***Jobscan***](https://www.jobscan.co/) para ajudá-lo a criar o CV. Ele permite testar seu CV contra qualquer vaga que você queira aplicar para saber se há um match ideal.
+Existe um sistema chamado [**_Jobscan_**](https://www.jobscan.co/) para ajudá-lo a criar o CV. Ele permite testar seu CV contra qualquer vaga que você queira aplicar para saber se há um match ideal.
 
-***[Aqui](https://www.jobscan.co/resume-templates)*** eles oferecem modelos de CV que são ATS friendly. Sugiro que você utilize algum dos disponíveis na lista. É melhor ter um CV funcional do que um CV bonito que não chegue às pessoas que precisam recebê-lo.
+**_[Aqui](https://www.jobscan.co/resume-templates)_** eles oferecem modelos de CV que são ATS friendly. Sugiro que você utilize algum dos disponíveis na lista. É melhor ter um CV funcional do que um CV bonito que não chegue às pessoas que precisam recebê-lo.
 
 Basicamente, você precisa montar o CV no padrão que o Jobscan está recomendando nos modelos. Você também tem 5 job scans gratuitos por mês, utilize-os com inteligência!
 
@@ -209,10 +208,10 @@ Aqui, vou lhe mostrar como você pode se destacar:
 Com a facilidade atual de se candidatar a vagas, manter um controle de todas as aplicações pode ser um desafio. Recomendo criar uma planilha para listar todas as vagas para as quais enviou seu currículo. Quando você tem controle sobre as vagas, é mais fácil localizar a descrição da vaga, informação crucial para o seu sucesso. Geralmente, quando a pessoa responsável pelo recrutamento responde, ela não especifica a vaga à qual está se referindo. Imagine iniciar uma conversa sem saber qual vaga está sendo mencionada.
 
 Antes de conversar com o recrutamento, estude minuciosamente todos os detalhes da descrição da vaga. Conheça suas habilidades e limitações. Seu objetivo é estar preparado(a) para destacar seu valor nas áreas em que se destaca e responder adequadamente sobre as áreas em que precisa melhorar.
-Por exemplo, se a vaga exige inglês e liderança, mas você não teve experiência formal como líder, destaque suas habilidades em inglês quando questionado sobre o idioma. Quando questionado(a) sobre liderança, mencione atividades em que atua como líder em outros contextos, como em grupos informais ou em atividades esportivas. 
+Por exemplo, se a vaga exige inglês e liderança, mas você não teve experiência formal como líder, destaque suas habilidades em inglês quando questionado sobre o idioma. Quando questionado(a) sobre liderança, mencione atividades em que atua como líder em outros contextos, como em grupos informais ou em atividades esportivas.
 É essencial compreender seus pontos fortes em relação à vaga e, ao mesmo tempo, estar ciente das suas limitações, que são as áreas em que pode ter uma desvantagem em relação à concorrência para poder dar a melhor resposta possível.
 
-Outro ponto crucial que muitos negligenciam é o aspecto emocional. Por isso, sempre defendo um investimento significativo em soft skills. Neste playbook, você encontra uma introdução sobre soft skills na seção 1.8, e recomendo que continue a investir nessa área. Controlar suas emoções, manter a calma e a tranquilidade durante uma entrevista são fatores essenciais para o sucesso. Nas minhas primeiras entrevistas, eu sentia muito medo, mas com a prática, ganhei conforto em participar de entrevista com profissionais de todos os níveis de uma empresa. Investir em inteligência emocional é fundamental para superar esses desafios. Participar de entrevistas para cargos menos desejados, apenas para ganhar habilidades, é uma excelente maneira de adquirir experiência. 
+Outro ponto crucial que muitos negligenciam é o aspecto emocional. Por isso, sempre defendo um investimento significativo em soft skills. Neste playbook, você encontra uma introdução sobre soft skills na seção 1.8, e recomendo que continue a investir nessa área. Controlar suas emoções, manter a calma e a tranquilidade durante uma entrevista são fatores essenciais para o sucesso. Nas minhas primeiras entrevistas, eu sentia muito medo, mas com a prática, ganhei conforto em participar de entrevista com profissionais de todos os níveis de uma empresa. Investir em inteligência emocional é fundamental para superar esses desafios. Participar de entrevistas para cargos menos desejados, apenas para ganhar habilidades, é uma excelente maneira de adquirir experiência.
 
 Teste seu valor, explore o mercado e aprenda com a prática!
 
@@ -223,8 +222,8 @@ Teste seu valor, explore o mercado e aprenda com a prática!
 <aside>
 🤝 Neste tópico vamos abordar as coisas que você deve fazer e aquelas que jamais deve fazer em uma entrevista.
 
-**FAZER**: 
-**Focar no seu sucesso e resultados**: Tenha sempre uma história pronta para contar seus resultados. Quando perguntarem se conhece algum assunto, apresente resultados relacionados a esse assunto. Um exemplo que tenho comigo e sempre utilizo: se me perguntarem sobre minhas habilidades de comunicação, eu respondo: "Consigo me comunicar em quatro idiomas, tenho habilidades para palestrar e gravar vídeos, e já fui presidente de um clube Toastmasters, onde ajudei pessoas a se desenvolverem na área de comunicação." Respostas assim impressionam qualquer entrevistador. 
+**FAZER**:
+**Focar no seu sucesso e resultados**: Tenha sempre uma história pronta para contar seus resultados. Quando perguntarem se conhece algum assunto, apresente resultados relacionados a esse assunto. Um exemplo que tenho comigo e sempre utilizo: se me perguntarem sobre minhas habilidades de comunicação, eu respondo: "Consigo me comunicar em quatro idiomas, tenho habilidades para palestrar e gravar vídeos, e já fui presidente de um clube Toastmasters, onde ajudei pessoas a se desenvolverem na área de comunicação." Respostas assim impressionam qualquer entrevistador.
 
 **Adaptar-se às necessidades da empresa:** Mostre como suas habilidades e experiências estão alinhadas com as necessidades específicas da empresa.
 
@@ -248,7 +247,7 @@ Teste seu valor, explore o mercado e aprenda com a prática!
 <aside>
 🗣️ Quanto mais você investir em Soft Skills, maiores serão as suas chances de ter sucesso na vida. O seu desenvolvimento profissional depende do seu desenvolvimento pessoal. Eu comecei com desenvolvimento pessoal, ou como alguns chamam, Soft Skills, em 2009. Meu primeiro contato com essa área foi através de um seminário sobre autoestima de 2 dias que mudou minha vida. Desde então, comecei a ler livros, fazer cursos e consumir conteúdo desse assunto.
 
-Esse guia não é sobre Soft Skills, mas eu fortemente recomendo que você invista nessa área, pois, ao morar fora, você vai precisar de soft skills para ter sucesso. Morar fora não é fácil. Você vai ter desafios que não temos no país onde nascemos. Construir uma vida do zero em um novo local com uma cultura e pessoas diferentes não é para todos. 
+Esse guia não é sobre Soft Skills, mas eu fortemente recomendo que você invista nessa área, pois, ao morar fora, você vai precisar de soft skills para ter sucesso. Morar fora não é fácil. Você vai ter desafios que não temos no país onde nascemos. Construir uma vida do zero em um novo local com uma cultura e pessoas diferentes não é para todos.
 
 Lembre-se também de que até conseguir chegar no exterior, você ainda tem uma vida para viver no local em que você se encontra. Soft Skills são essenciais para ter sucesso e paz de espírito durante sua jornada em qualquer momento da sua vida.
 
@@ -332,9 +331,9 @@ Qual área você está trabalhando? Em qual país você está vivendo? Quais idi
 </aside>
 
 **Atividade para você realizar**
-Ao final desta atividade, você deve ter algo similar a esse exemplo: 
+Ao final desta atividade, você deve ter algo similar a esse exemplo:
 
-Sou uma referência reconhecida na área de TI em todo o mundo e moro no Canadá. Sou um líder, atuando como embaixador dos princípios ágeis e DevOps na area de Teste de Software. 
+Sou uma referência reconhecida na área de TI em todo o mundo e moro no Canadá. Sou um líder, atuando como embaixador dos princípios ágeis e DevOps na area de Teste de Software.
 Oriento o pensamento estratégico, integração e otimização das atividades de qualidade. Sou um defensor da melhoria contínua. Possuo amplo conhecimento em Testes, Programação e Automação. Trabalho porque amo e quero, não porque preciso, e ainda tenho um excelente salário. Estou em um ambiente maravilhoso, com pessoas incríveis que querem crescer a cada dia. Meu chefe é muito bom, ele/ela me escuta, é um verdadeiro líder e me ajuda na minha carreira. Falo inglês, português, francês e espanhol fluentemente. Tenho facilidade em falar em público e expressar as minhas ideias.
 
 ## 2.2. Encontrando o seu trabalho dos sonhos
@@ -386,7 +385,7 @@ Requisito 1
 Requisito 2
 etc
 
-*A proposta aqui é identificar os requisitos mais frequentes. Ao conhecer os requisitos mais frequentes, você terá clareza sobre quais áreas de aprendizado merecem mais atenção. Para ser o(a) candidato(a) perfeito para a empresa, é necessário atender à maioria dos requisitos da vaga. Concentre-se na empresa que mais deseja, mas lembre-se de que a empresa dos seus sonhos nem sempre é a que tem as portas abertas. Às vezes, trabalhar para a empresa que está em quinto lugar na sua lista pode ser a única opção. Por isso, é importante se preparar para o mercado de trabalho e priorizar os requisitos mais frequentes entre todas as 5 empresas que você listou.*
+_A proposta aqui é identificar os requisitos mais frequentes. Ao conhecer os requisitos mais frequentes, você terá clareza sobre quais áreas de aprendizado merecem mais atenção. Para ser o(a) candidato(a) perfeito para a empresa, é necessário atender à maioria dos requisitos da vaga. Concentre-se na empresa que mais deseja, mas lembre-se de que a empresa dos seus sonhos nem sempre é a que tem as portas abertas. Às vezes, trabalhar para a empresa que está em quinto lugar na sua lista pode ser a única opção. Por isso, é importante se preparar para o mercado de trabalho e priorizar os requisitos mais frequentes entre todas as 5 empresas que você listou._
 
 ## 2.3. Definindo suas metas
 
@@ -400,12 +399,12 @@ De prioridade para metas SMART, lembre-se de que elas devem ser:
 - Atingíveis (Achievable): realistas e considerando seus recursos e habilidades.
 - Relevantes (Relevant): alinhadas com seus objetivos de longo prazo.
 - Com prazo definido (Time-based): estabeleça prazos para manter o foco e avaliar o progresso.
-</aside>
+  </aside>
 
 **Atividade para você realizar**
 Exemplo:
 
-Suponhamos que ainda não alcancei o que descrevi como ideal em minha carreira: "Ter facilidade em falar em público e expressar minhas ideias". 
+Suponhamos que ainda não alcancei o que descrevi como ideal em minha carreira: "Ter facilidade em falar em público e expressar minhas ideias".
 Para atingir esse objetivo, estabelecerei uma meta:
 
 **Meta 1:** Desenvolver habilidade em falar em público e expressar ideias.
@@ -413,7 +412,7 @@ Realizar uma palestra até o final de 2025.
 
 Outro exemplo:
 
-Digamos que ainda não alcancei um dos requisitos mais comuns para as vagas de emprego dos meus sonhos: "Conhecimento em programação Python intermediário". 
+Digamos que ainda não alcancei um dos requisitos mais comuns para as vagas de emprego dos meus sonhos: "Conhecimento em programação Python intermediário".
 Criarei uma segunda meta para atingir esse objetivo:
 
 **Meta 2:** Dominar conhecimento intermediário em programação Python.
@@ -430,7 +429,7 @@ Instruções de uso:
 1. Preencha a coluna "To-do" com todas as suas metas definidas no passo anterior.
 2. Deixe as metas em ordem de prioridade para você saber qual puxar para o "In progress" primeiro.
 3. Seja inteligente com a sua capacidade de fazer coisas ao mesmo tempo e gerencie bem seu tempo e sua energia para dar conta de toda a sua lista de metas.
-</aside>
+ </aside>
 
 **Ferramenta bônus para você utilizar:**
 
@@ -445,7 +444,7 @@ Instruções de uso:
 1. Preencha a coluna "**Fiz o meu melhor em...**" com as tarefas que você gostaria de realizar diariamente. Por exemplo: Aprender idioma.
 2. Para cada dia em que você completar a tarefa, marque um X no checklist.
 3. Isso ajudará você a desenvolver hábitos e a se comprometer com seus objetivos.
-</aside>
+ </aside>
 
 **Ferramenta opcional para você utilizar:**
 

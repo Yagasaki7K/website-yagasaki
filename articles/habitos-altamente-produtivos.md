@@ -2,8 +2,8 @@
 title: "14 Hábitos de Desenvolvedores Altamente Produtivos"
 excerpt: "Descubra os hábitos essenciais para aumentar sua produtividade como desenvolvedor."
 image: "https://images.unsplash.com/photo-1542596081-6d3eaca5240c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-tags: ['Hábitos', 'Dicas']
-date: '2022-04-20'
+tags: ["Hábitos", "Dicas"]
+date: "2022-04-20"
 ---
 
 ![](https://images.unsplash.com/photo-1542596081-6d3eaca5240c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Drew Beamer")
@@ -91,7 +91,7 @@ Busque os seguintes passos:
 - Escrever código simples com nomes significativos da variáveis/métodos e classes. Não assuma que outras pessoas entenderão nomes abreviados que não significam muito ou alguns termos que podem mudar com o tempo.
 
 - Ter bons testes automatizados. Isso fornecerá documentação adicional sobre seu código e também ajudará qualquer pessoa que precise trabalhar nele no futuro.
-  
+
 - Use ferramenta de controle de versão como documentação. A medida que o projeto evolui, são feitas alterações e correções de bugs o tempo todo. No futuro, quando se tornar um código legado, ninguém conseguirá entender as decisões e alterações feitas naquele momento, se não estiverem documentadas. O histórico de commits e pull request são uma boa ferramenta para explicar os porquês.
 
 ### Disciplina vs Motivação

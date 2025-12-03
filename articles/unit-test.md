@@ -2,8 +2,8 @@
 title: Testes Unitários - Como e quando usar para iniciantes
 excerpt: Me considero desenvolvedor fazem oito anos ~ desde essa publicação ~ e somente agora entendi como e para quê serve teste unitário.
 image: https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80
-tags: ['Testes', 'Unitários', 'Junior', 'Iniciante']
-date: '2022-12-13'
+tags: ["Testes", "Unitários", "Junior", "Iniciante"]
+date: "2022-12-13"
 ---
 
 ![](https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80 "Aaron Burden")

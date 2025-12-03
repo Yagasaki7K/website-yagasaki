@@ -2,8 +2,8 @@
 title: Curso de Introdução e Contribuição ao Código Aberto
 excerpt: Este curso abrangente irá guiá-lo pelo fascinante mundo do código aberto e ajudá-lo a se tornar um contribuidor ativo.
 image: "https://images.unsplash.com/photo-1647166545674-ce28ce93bdca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['Open Source', 'Código Aberto', 'Comunidade', 'Curso']
-date: '2024-02-17'
+tags: ["Open Source", "Código Aberto", "Comunidade", "Curso"]
+date: "2024-02-17"
 ---
 
 ![Praveen Thirumurugan](https://images.unsplash.com/photo-1647166545674-ce28ce93bdca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -289,7 +289,6 @@ Substitua "Sua mensagem de commit" por uma breve descrição das alterações qu
 git push origin main
 ```
 
-
 Isso enviará suas mudanças para o ramo "main" do seu repositório remoto. Se você quiser verificar seu trabalho, vá para o seu repositório no GitHub. Você deverá ver 'olá mundo!' no seu arquivo README.md.
 
 Agora você configurou com sucesso o Git e o GitHub na sua máquina local e está pronto para colaborar em projetos de código aberto!
@@ -331,8 +330,8 @@ O Discord é uma plataforma popular de mensagens e chat de voz amplamente utiliz
 
 Os servidores Discord podem ser uma excelente maneira de encontrar pessoas que compartilham seus interesses e buscam oportunidades de colaboração. Ao criar laços com outros desenvolvedores, você pode:
 
-* Descobrir novos projetos para trabalhar
-* Formar parcerias valiosas
+- Descobrir novos projetos para trabalhar
+- Formar parcerias valiosas
 
 ### Como começar
 
@@ -398,7 +397,6 @@ Substitua "nome-da-sua-branch" por um nome descritivo, como "correcao-bug-123" o
 4. **Faça as suas alterações**: Agora que você tem uma nova branch, pode fazer as alterações no código. Certifique-se de seguir as diretrizes e convenções de codificação do projeto, e teste as suas alterações para garantir que funcionam conforme o esperado.
 
 5. **Confirme as suas alterações (commit)**: Após fazer as suas alterações, coloque-as na área de preparação e faça um commit usando os seguintes comandos:
-
 
 ```bash
 git add .
@@ -603,7 +601,9 @@ Informações importantes para incluir ao destacar suas contribuições:
 - Detalhes sobre colaboração e trabalho em equipe.
 
 #### Formato de seu Destaque
+
 Para ser eficaz ao destacar suas contribuições, recomendamos usar o seguinte formato:
+
 - **Título**: deve ser uma breve descrição da contribuição. Por exemplo, "Criação de uma ação GitHub para mesclar automaticamente solicitações de pull".
 - **Link**
 - **Descrição**: ao destacar sua contribuição, recomendamos mencionar o impacto que teve em todo o projeto. Isso pode ser útil para enfatizar suas qualificações ao se candidatar a empregos, especialmente se você tiver lacunas em seu histórico de empregos. Considere usar o seguinte modelo para ajudar a transformar esse destaque em uma história:
@@ -661,6 +661,7 @@ Em conclusão, iniciar a aventura do código aberto é uma experiência gratific
 Parabéns pela sua jornada no mundo do código aberto! Aqui estão algumas recursos para você aprender mais sobre como começar no código aberto:
 
 ### Guias e tutoriais
+
 - [Guias de Código Aberto](https://opensource.guide/) do GitHub: guias abrangentes sobre vários aspectos do código aberto, incluindo como começar, contribuir, manter projetos e criar comunidades.
 
 - [Primeiras Contribuições](https://github.com/firstcontributions/first-contributions) por Roshan Jossey: um guia amigável para iniciantes que o orientará durante sua primeira contribuição para um projeto de código aberto.

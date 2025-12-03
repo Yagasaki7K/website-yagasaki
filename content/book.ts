@@ -1,7 +1,7 @@
 export const book = [
-	{
-		title: "鋼の錬金術師 FULLMETAL ALCHEMIST",
-		author: "荒川弘",
-		status: "Completed",
-	},
+    {
+        title: "鋼の錬金術師 FULLMETAL ALCHEMIST",
+        author: "荒川弘",
+        status: "Completed",
+    },
 ];

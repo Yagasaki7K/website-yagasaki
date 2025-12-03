@@ -1,9 +1,9 @@
 ---
 title: Entendendo o que é uma API e como ela funciona para iniciantes
-excerpt: 'Uma API é um conceito fundamental no mundo da programação'
+excerpt: "Uma API é um conceito fundamental no mundo da programação"
 image: https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
-tags: ['API', 'Desenvolvimento', 'Programação']
-date: '2023-05-29'
+tags: ["API", "Desenvolvimento", "Programação"]
+date: "2023-05-29"
 ---
 
 ![](https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80 "Douglas Lopes")
@@ -33,6 +33,7 @@ Existem diferentes tipos de APIs que podem ser utilizadas, dependendo do objetiv
 **APIs de plataforma:** São APIs fornecidas por grandes plataformas, como Google, Facebook e Twitter. Elas permitem que os desenvolvedores interajam com os serviços e recursos dessas plataformas, como autenticação de usuário, publicação em redes sociais e acesso a dados específicos.
 
 ## Vantagens do uso de APIs
+
 O uso de APIs traz diversos benefícios, tanto para os provedores quanto para os consumidores de serviços. Algumas vantagens incluem:
 
 **Reutilização de código:** Ao fornecer uma API, os desenvolvedores podem criar componentes e funcionalidades que podem ser reutilizados em diferentes projetos e contextos.
@@ -44,6 +45,7 @@ O uso de APIs traz diversos benefícios, tanto para os provedores quanto para os
 **Estímulo à inovação:** Ao disponibilizar APIs, as empresas e plataformas encorajam a inovação e a criação de novos aplicativos que utilizam seus serviços e recursos.
 
 ## Finalizando
-As APIs desempenham um papel fundamental na interconexão e comunicação entre sistemas e aplicativos. Elas permitem que diferentes softwares se comuniquem de maneira eficiente, compartilhem dados e ofereçam serviços em conjunto. Compreender o conceito de APIs e como elas funcionam é essencial para qualquer desenvolvedor ou pessoa interessada em tecnologia. 
+
+As APIs desempenham um papel fundamental na interconexão e comunicação entre sistemas e aplicativos. Elas permitem que diferentes softwares se comuniquem de maneira eficiente, compartilhem dados e ofereçam serviços em conjunto. Compreender o conceito de APIs e como elas funcionam é essencial para qualquer desenvolvedor ou pessoa interessada em tecnologia.
 
 Esperamos que este artigo tenha fornecido uma visão geral clara sobre o assunto e inspire você a explorar ainda mais as possibilidades das APIs em seus projetos futuros.

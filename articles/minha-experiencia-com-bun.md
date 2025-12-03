@@ -2,8 +2,8 @@
 title: "Evento da Rocketseat e o uso do Bun"
 excerpt: "Juntei o evento NextLevelWeek da Rocketseat e testei o Bun, novo compilador Javascript"
 image: "https://images.unsplash.com/photo-1601034693303-8f8848f3ffa1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['Node', 'Bun', 'Tutorial', 'Análise', 'Rocketseat']
-date: '2024-04-02'
+tags: ["Node", "Bun", "Tutorial", "Análise", "Rocketseat"]
+date: "2024-04-02"
 ---
 
 ![Gil Ndjouwou](https://images.unsplash.com/photo-1601034693303-8f8848f3ffa1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -99,12 +99,12 @@ import fastify from "fastify";
 const app = fastify();
 
 app.get("/", () => {
-  return "Hello World!";
+    return "Hello World!";
 });
 
 app.listen({ port: 3333 }).then(() => {
-  console.log("HTTP server running on http://localhost:3333");
-  console.timeEnd("Tempo de execução");
+    console.log("HTTP server running on http://localhost:3333");
+    console.timeEnd("Tempo de execução");
 });
 ```
 
@@ -120,18 +120,22 @@ banco de dados, então, ficou um tempo para ter cache, além de executar esses c
 não está rodando junto com as instalações e migrations.
 
 ### Primeira Migration
+
 - Node: ✔ Generated Prisma Client (v5.12.0) to ./node_modules/@prisma/client in 35ms
 - Bun: ✔ Generated Prisma Client (v5.12.0) to ./node_modules/@prisma/client in 33ms
 
 ### Instalando Fastify Swagger
+
 - Node: ├─ openapi-types@12.1.3 └─ yaml@2.4.1 | Done in 4.07s.
 - Bun: installed @fastify/swagger@8.14.0 // 5 packages installed [414.00ms]
 
 ### Fastify Swagger UI
+
 - Node: ├─ wrap-ansi-cjs@7.0.0 └─ wrap-ansi@8.1.0 | Done in 3.12s.
 - Bun: installed @fastify/swagger-ui@3.0.0 // 48 packages installed [679.00ms]
 
 ### Fastify Cors
+
 - Node: ├─ mnemonist@0.39.6 └─ obliterator@2.0.4 | Done in 5.69s.
 - Bun: installed @fastify/cors@9.0.1 // 3 packages installed [2.09s]
 
@@ -140,6 +144,7 @@ envolve o uso do Bun ou do Node, acredito que não fará diferença. Claro que, 
 outras aulas na parte de conclusão, mas por enquanto é isso.
 
 ## Conclusão com base na Primeira Aula
+
 Vejo que sim, se você for desenvolvedor Node, você terá praticamente ZERO problemas para migrar para o bun, exceto, em
 ficar decorando vicios de chamadas como o meu caso de `yarn dev` ou outros scripts, mas fora isso, acredito que a
 mudança é tão ligeira que é quase insignificante no meio do desenvolvimento e durante a criação, claro que instalação de

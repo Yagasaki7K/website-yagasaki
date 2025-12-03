@@ -1,10 +1,9 @@
 ---
-
-title: 'Como Conseguir Experiência Sendo Júnior/Iniciante'
-excerpt: 'Dicas valiosas para ingressar na área de desenvolvimento e o que fazer para conseguir experiência.'
-image: 'https://images.unsplash.com/photo-1508344928928-7165b67de128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
-tags: ['Junior', 'Experiência']
-date: '2021-12-18'
+title: "Como Conseguir Experiência Sendo Júnior/Iniciante"
+excerpt: "Dicas valiosas para ingressar na área de desenvolvimento e o que fazer para conseguir experiência."
+image: "https://images.unsplash.com/photo-1508344928928-7165b67de128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+tags: ["Junior", "Experiência"]
+date: "2021-12-18"
 ---
 
 ![](https://images.unsplash.com/photo-1508344928928-7165b67de128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Eduardo Balderas")

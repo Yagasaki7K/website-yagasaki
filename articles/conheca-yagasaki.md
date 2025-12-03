@@ -1,9 +1,9 @@
 ---
-title: 'Primeiramente, Deixe-me Apresentar: Eu Sou Anderson'
-excerpt: 'Conheça Anderson Marlon desenvolvedor em sua jornada de autodescoberta e evolução.'
-image: 'https://images.unsplash.com/photo-1621693733036-e00dc554e19e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=811&q=80'
-tags: ['Yagasaki', 'Anderson', 'Marlon']
-date: '2021-11-16'
+title: "Primeiramente, Deixe-me Apresentar: Eu Sou Anderson"
+excerpt: "Conheça Anderson Marlon desenvolvedor em sua jornada de autodescoberta e evolução."
+image: "https://images.unsplash.com/photo-1621693733036-e00dc554e19e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=811&q=80"
+tags: ["Yagasaki", "Anderson", "Marlon"]
+date: "2021-11-16"
 ---
 
 ![](https://images.unsplash.com/photo-1621693733036-e00dc554e19e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=811&q=80 "Hello I'm Nik")

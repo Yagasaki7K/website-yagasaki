@@ -2,8 +2,8 @@
 title: Tudo mudou para os desenvolvedores em React.js
 excerpt: Se você é um desenvolvedor React, provavelmente não deve ter ouvido falar sobre o Create-React-App (CRA).
 image: https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-tags: ['React', 'CRA', 'Vite']
-date: '2023-04-18'
+tags: ["React", "CRA", "Vite"]
+date: "2023-04-18"
 ---
 
 ![](https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 "Lautaro Andreani")

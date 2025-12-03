@@ -1,9 +1,9 @@
 ---
 title: Como atualizar seu README do Github com as últimas publicações de Blog ou Dev.to
-excerpt: 'Deixe seu README atualizado automaticamente usando Github Actions'
+excerpt: "Deixe seu README atualizado automaticamente usando Github Actions"
 image: https://safebooru.org//samples/3476/sample_194dcdd9525a9333cf8fee32ef0d96540f99ff51.jpg?3615216
-tags: ['Utilidade', 'Github', 'Blog']
-date: '2024-05-16'
+tags: ["Utilidade", "Github", "Blog"]
+date: "2024-05-16"
 ---
 
 ![](https://safebooru.org//samples/3476/sample_194dcdd9525a9333cf8fee32ef0d96540f99ff51.jpg?3615216)
@@ -44,9 +44,9 @@ Lembrando que estou usando a geração de API do Next, que fica dentro de `api/h
 
 ```ts
 import { Feed } from "feed";
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 import calculateReadingTime from "@/utils/calculateReadingTime";
 import { Frontmatter, PostProps } from "..";
 ```
@@ -67,7 +67,7 @@ const feed = new Feed({
     language: "pt-br",
     image: "https://github.com/Yagasaki7K.png",
     favicon: "https://github.com/Yagasaki7K.png",
-    copyright: "© 2014 - 2024 Anderson \"Yagasaki\" Marlon",
+    copyright: '© 2014 - 2024 Anderson "Yagasaki" Marlon',
     updated: new Date(), // optional, default = today
     generator: "Feed", // optional, default = 'Feed for Node.js'
     feedLinks: {
@@ -76,8 +76,8 @@ const feed = new Feed({
     author: {
         name: "Anderson Marlon",
         email: "anderson18.marlon@gmail.com",
-        link: "https://yagasaki.dev"
-    }
+        link: "https://yagasaki.dev",
+    },
 });
 ```
 
@@ -89,20 +89,20 @@ Agora vamos gerar o método para que ao acessar o site e o endereço que estamos
 algo como `localhost:3000/api/rss`.
 
 ```ts
-
-export default async function handler(req: any, res: any){
-    if (req.method === 'GET') {
+export default async function handler(req: any, res: any) {
+    if (req.method === "GET") {
         const posts = getPosts();
         const rss = await generateRSS(posts);
-        res.setHeader('Content-Type', 'text/xml');
+        res.setHeader("Content-Type", "text/xml");
         res.status(200).send(rss);
     } else {
-        res.setHeader('Allow', ['GET']);
+        res.setHeader("Allow", ["GET"]);
         res.status(405).end(`Method ${req.method} Not Allowed`);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send("Internal Server Error");
     }
 }
 ```
+
 Informamos o handler de `req` e `res` como `any`, por preguiça mesmo, mas como é muita coisa inclusa, você
 pode estar pesquisando a melhor maneira de fazer isso, já que estamos passando duas props que são de requisição e resposta
 do servidor.
@@ -119,30 +119,26 @@ que cada um tem uma maneira de fazer. No caso, estou indo na pasta `articles`, p
 configurando eles por ordem de data e depois setando todo mundo como deve ser.
 
 ```ts
-
 function getPosts(): PostProps[] {
-    const files = fs.readdirSync(path.join('article'));
+    const files = fs.readdirSync(path.join("article"));
 
     return files.map((filename) => {
-        let slug = filename.replace('.mdx', '');
+        let slug = filename.replace(".mdx", "");
 
-        const markdownWithMeta = fs.readFileSync(
-            path.join('article', filename),
-            'utf-8'
-        )
+        const markdownWithMeta = fs.readFileSync(path.join("article", filename), "utf-8");
 
-        const { data: frontmatter, content: markdownContent } = matter(markdownWithMeta)
+        const { data: frontmatter, content: markdownContent } = matter(markdownWithMeta);
         const readingTime = calculateReadingTime(markdownContent);
 
         // Ensure frontmatter object includes all required properties
         const formattedFrontmatter: Frontmatter = {
             slug, // Ensure slug is included
-            title: frontmatter.title || '', // Include title
-            image: frontmatter.image || '', // Include image
+            title: frontmatter.title || "", // Include title
+            image: frontmatter.image || "", // Include image
             authors: frontmatter.authors || [], // Include authors
             tags: frontmatter.tags || [], // Include tags
-            date: frontmatter.date || '', // Include date
-            excerpt: frontmatter.excerpt || '', // Include excerpt
+            date: frontmatter.date || "", // Include date
+            excerpt: frontmatter.excerpt || "", // Include excerpt
         };
 
         return {
@@ -154,7 +150,6 @@ function getPosts(): PostProps[] {
         };
     });
 }
-
 ```
 
 Agora chegamos a um ponto importante. Porque lembra que configuramos o cabeçalho do nosso XML? Agora é necessário
@@ -162,7 +157,6 @@ passar a configuração de todas as publicações para dentro deles, ou seja, de
 e é esses itens que serão as publicações, então fiz da seguinte maneira.
 
 ```ts
-
 async function generateRSS(posts: PostProps[]): Promise<string> {
     const rssItems: PostProps[] = [];
 
@@ -191,7 +185,7 @@ async function generateRSS(posts: PostProps[]): Promise<string> {
             frontmatter: post.frontmatter,
             readingTime: post.readingTime,
             date: post.frontmatter.date,
-            content: '', // or whatever content field should be
+            content: "", // or whatever content field should be
         });
     });
 
@@ -215,6 +209,7 @@ A primeira coisa que você deve fazer no seu README.md é colocar a seguinte coi
 
 ```md
 ### 📕 Latest Blog Posts
+
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 ```
@@ -237,23 +232,23 @@ Caso queira saber depois como arrumei, é só acompanhar os updates no [yagasaki
 ```yaml
 name: Latest blog post workflow
 on:
-  schedule: # Run workflow automatically
-    - cron: '0 * * * *' # Runs every hour, on the hour
-  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+    schedule: # Run workflow automatically
+        - cron: "0 * * * *" # Runs every hour, on the hour
+    workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
 permissions:
-  contents: write # To write the generated contents to the readme
+    contents: write # To write the generated contents to the readme
 
 jobs:
-  update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Pull in dev.to posts
-        uses: gautamkrishnar/blog-post-workflow@v1
-        with:
-          feed_list: "https://dev.to/feed/yagasaki7k" ## Change here to URL xml or your feed of dev.to
+    update-readme-with-blog:
+        name: Update this repo's README with latest blog posts
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Pull in dev.to posts
+              uses: gautamkrishnar/blog-post-workflow@v1
+              with:
+                  feed_list: "https://dev.to/feed/yagasaki7k" ## Change here to URL xml or your feed of dev.to
 ```
 
 Você só precisa alterar o `feed_list` e nada mais. A não ser que queira que ele fique verificando em mais tempo,

@@ -2,8 +2,8 @@
 title: Storybook - Como usar e os primeiros passos
 excerpt: Imagine documentar seus componentes e testá-lo sem precisar abrir na página em que ele foi adicionado.
 image: https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Storybook', 'Frontend', 'Primeiros Passos', "Iniciante"]
-date: '2024-04-15'
+tags: ["Storybook", "Frontend", "Primeiros Passos", "Iniciante"]
+date: "2024-04-15"
 ---
 
 ![](https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "Unsplash+ In collaboration with Ave Calvar")
@@ -12,7 +12,7 @@ Vamos entender inicialmente o primeiro cenário para o uso do Storybook, assim c
 existia um problema e ele aparece como uma solução, correto?
 
 Imagine que você precisa ver como foi feito aquele componente especificio, seja um botão, uma barra de navegação,
-um rodapé ou até mesmo um design de formulário. Mas caramba, em que página ele foi adicionado? Como ele está se 
+um rodapé ou até mesmo um design de formulário. Mas caramba, em que página ele foi adicionado? Como ele está se
 comportando? Esse tipo de dor de cabeça iremos encontrar principalmente em uma aplicação de média-grande escala.
 
 O motivo? São vários componentes, temos que ficar procurando um por um, e ainda tentar adivinhar aonde que ele
@@ -43,7 +43,7 @@ O comando acima fará as seguintes alterações em seu ambiente local:
 - Instalar as dependências necessárias.
 - Configurar os scripts necessários para executar e construir o Storybook .
 - Adicionar a configuração padrão do Storybook & Adicionar algumas stories padronizadas para você começar.
-- Configurar a telemetria para nos ajudar a melhorar o Storybook. 
+- Configurar a telemetria para nos ajudar a melhorar o Storybook.
 
 Após a instalação, podemos rodar ele usando `yarn` ou `npm`, se você sabe trocar a configuração para o `yarn`, fique
 à vontade. Mas para não dificultar muito, iremos manter no `npm`, então, em seu terminal, dê:
@@ -96,7 +96,7 @@ modificar alguns detalhes em seu código.
 ```tsx
 import { Meta } from "@storybook/addon-docs";
 
-<Meta title="Components/Button" components={Button}/>
+<Meta title="Components/Button" components={Button} />;
 ```
 
 Mas tenha calma, lembra que deletamos a pasta? Então, é claro qu ele ainda não irá aparecer em nossa documentação.
@@ -110,11 +110,8 @@ estão em algum lugar de dentro da pasta `src` com o formato `stories`.
 
 ```js
 module.exports = {
-    stories: [
-        "../src/**/*.stories.mdx", 
-        "../src/**/*.stories.@(js|jsx|ts|tsx)"
-    ],
-}
+    stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+};
 ```
 
 Dependendo da versão do seu Storybook ele irá fazer toda essa configuração de mudança de pasta no main.js
@@ -130,7 +127,7 @@ Após isso, importamos o componente Button dentro do arquivo `Button.stories.mdx
 import { Meta } from "@storybook/addon-docs";
 import Button from "../src/components/Button";
 
-<Meta title="Components/Button" components={Button}/>
+<Meta title="Components/Button" components={Button} />;
 ```
 
 Agora que conseguimos isolar o componente, será possível testar ele, mudar o comportamento e fazer uma série
@@ -147,7 +144,7 @@ em sua documentação oficial utiliza `.mdx`. Então, não existe uma forma corr
 pessoas da sua equipe ou empresa.
 
 Com este código é possível documentar variações de alguns componentes em nossa aplicação. Por mais que seja um exemplo
-utilizando um Button, a sua estrutura será a mesma para outros elementos no código. 
+utilizando um Button, a sua estrutura será a mesma para outros elementos no código.
 
 E claro, uma opinião minha é que o Storybook é muito útil para documentação, testes e usadas em ambientes de média-alta
 escala devida a alta criação de componentes, complexidade e funcionalidades espalhadas em uma estrutura. Não vejo

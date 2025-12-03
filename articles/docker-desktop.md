@@ -2,8 +2,8 @@
 title: Rodando Docker no Windows sem Docker Desktop
 excerpt: "Uma abordagem para quem não quer o modelo desktop e prefere usar no shell"
 image: https://images.unsplash.com/photo-1595587637401-83ff822bd63e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=901&q=80
-tags: ['Docker', 'Windows', 'Powershell']
-date: '2023-02-01'
+tags: ["Docker", "Windows", "Powershell"]
+date: "2023-02-01"
 ---
 
 ![](https://images.unsplash.com/photo-1595587637401-83ff822bd63e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=901&q=80 "Dominik Lückmann")

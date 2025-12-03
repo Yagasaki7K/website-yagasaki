@@ -1,19 +1,19 @@
 ---
 title: Construindo sua Operação SaaS do Zero
-excerpt: 'O maior desafio de empreender com um produto digital não é técnico — é emocional. É sobre vencer o medo de errar, de se expor e de ser julgado. A maioria das pessoas deseja os resultados, mas evita o desconforto do processo.'
+excerpt: "O maior desafio de empreender com um produto digital não é técnico — é emocional. É sobre vencer o medo de errar, de se expor e de ser julgado. A maioria das pessoas deseja os resultados, mas evita o desconforto do processo."
 image: https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Desenvolvimento', 'SaaS', 'Empreendedorismo']
-date: '2025-07-10'
+tags: ["Desenvolvimento", "SaaS", "Empreendedorismo"]
+date: "2025-07-10"
 ---
 
 ![](https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 Este material é voltado para quem deseja iniciar um projeto SaaS, mesmo sem ter experiência anterior, e está em busca de clareza para estruturar sua operação do zero. Vamos dividir o conteúdo em quatro pilares principais:
 
-1. Demanda  
-2. Produto  
-3. Oferta  
-4. Tráfego  
+1. Demanda
+2. Produto
+3. Oferta
+4. Tráfego
 
 Mas antes de entrar nesses tópicos, precisamos falar sobre o principal fator de qualquer negócio: você.
 
@@ -130,4 +130,3 @@ Comece pequeno, resolvendo um problema real, e vá ajustando conforme avança.
 Se você chegou até aqui, provavelmente está mais preparado do que imagina. Coloque em prática o que leu, teste com usuários reais e siga aprimorando.
 
 Seu projeto não precisa ser perfeito para começar. Ele só precisa existir.
-

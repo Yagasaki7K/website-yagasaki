@@ -1,9 +1,9 @@
 ---
 title: Como instalar o Ragnarok LATAM no Linux via Proton (usando Heroic)
-excerpt: 'Se você é das antigas e jogou Ragnarok, deve ter ficado sabendo que o Ragnarok Latam, criado pela Gravity, está de volta e trazendo nostalgia a todos.'
+excerpt: "Se você é das antigas e jogou Ragnarok, deve ter ficado sabendo que o Ragnarok Latam, criado pela Gravity, está de volta e trazendo nostalgia a todos."
 image: https://safebooru.org//images/9/da5915ef1cbc7c1b6c995883053ca6c70b164d42.jpg?8321
-tags: ['Games', 'Linux', 'Dicas']
-date: '2025-03-06'
+tags: ["Games", "Linux", "Dicas"]
+date: "2025-03-06"
 ---
 
 ![](https://safebooru.org//images/9/da5915ef1cbc7c1b6c995883053ca6c70b164d42.jpg?8321)
@@ -31,16 +31,19 @@ sudo apt install flatpak
 ```
 
 Adicione o repositório Flathub:
+
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 Instale o Heroic:
+
 ```bash
 flatpak install flathub com.heroicgameslauncher.hgl
 ```
 
 > A versão Flatpak do Heroic Games Launcher é preferível, pois garante atualizações rápidas, maior controle de permissões e desempenho superior em relação ao APT e Snap, que podem ter versões desatualizadas ou sobrecarga de desempenho. Além disso, por ser a versão "Oficial" do app, é recomendada pelos próprios desenvolvedores.
+
 </details>
 
 - **Proton GE** (Proton GloriousEggroll)
@@ -68,6 +71,7 @@ flatpak install flathub com.heroicgameslauncher.hgl
 8. Após a instalação, localize o executável do jogo:
 
 Caminho padrão:
+
 ```yaml
 ~/path/to/prefix/Prefixes/default/Ragnarok/pfx/drive_c/Gravity/Ragnarok/Ragnarok.exe
 ```
@@ -95,6 +99,7 @@ Caminho padrão:
 > ```
 > ~/path/to/prefix/Prefixes/default/Ragnarok/pfx/drive_c/Windows/System32
 > ```
+>
 > para o jogo rodar corretamente. Vale a tentativa se algo não funcionar!
 
 ---

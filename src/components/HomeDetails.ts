@@ -174,7 +174,10 @@ const HomeDetails = styled.div`
                     overflow: hidden;
                 }
 
-                .small, h4, img, p {
+                .small,
+                h4,
+                img,
+                p {
                     width: 35rem;
                 }
 

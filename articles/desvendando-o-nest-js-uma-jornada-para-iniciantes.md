@@ -3,7 +3,7 @@ title: "Desvendando o NestJS, uma jornada para iniciantes"
 excerpt: "Entenda o que é NestJS e suas funções de modulos, controladores e serviços"
 image: "https://nestjs.com/header.1af6756a.png"
 tags: ["NestJS", "Angular", "Java", "TypeScript", "Iniciante"]
-date: '2024-02-13'
+date: "2024-02-13"
 ---
 
 ![Nestjs.com](https://nestjs.com/header.1af6756a.png)
@@ -30,17 +30,18 @@ tipagem estática e compilação para JavaScript.
 
 Resumidamente, quando você injeta uma dependência, você tá fornecendo tudo que é externo e que uma classe precisa pra
 funcionar. Se você simplesmente importa de uma classe pra outra você acaba criando um acoplamento, porque a classe que
-recebe o import está diretamente ligada a que fornece. 
+recebe o import está diretamente ligada a que fornece.
 
 Então sim, tem a ver, já que o NestJS usa classes.
 
 ## Entendendo o que é Modules, Providers, Controllers e Services no NestJS
 
 ### Modules (Módulos)
+
 Seguindo a documentação do NextJS:
 
 > Um módulo é uma classe anotada com um decorador @Module(). O decorador @Module() fornece metadados que o Nest usa para organizar a estrutura da aplicação.
-> 
+>
 > Cada aplicação tem pelo menos um módulo, um módulo raiz. O módulo raiz é o ponto de partida que o Nest usa para construir o grafo da aplicação - a estrutura interna de dados que o Nest usa para resolver relacionamentos e dependências de módulos e provedores. Embora teoricamente pequenas aplicações possam ter apenas o módulo raiz, esse não é o caso típico. Queremos enfatizar que os módulos são altamente recomendados como uma maneira eficaz de organizar seus componentes. Assim, para a maioria das aplicações, a arquitetura resultante empregará múltiplos módulos, cada um encapsulando um conjunto de capacidades intimamente relacionadas.
 
 Entendeu? Senão, nem eu.
@@ -52,13 +53,13 @@ criando galhos separados para a mesma aplicação. Sendo assim, eles são respon
 citado acima por ser uma maneira eficaz de organizar os componentes.
 
 ```typescript
-import { Module } from '@nestjs/common';
-import { CatsController } from './cats.controller';
-import { CatsService } from './cats.service';
+import { Module } from "@nestjs/common";
+import { CatsController } from "./cats.controller";
+import { CatsService } from "./cats.service";
 
 @Module({
-  controllers: [CatsController],
-  providers: [CatsService],
+    controllers: [CatsController],
+    providers: [CatsService],
 })
 export class CatsModule {}
 ```
@@ -67,7 +68,7 @@ Aqui, podemos ver que o modulo é responsável pela importação dos controlador
 (providers), mas vamos usar a nomenclatura em português para facilitar, estamos aprendendo, não é mesmo?
 
 Sabe-se que no controllers por exemplo, ele é um array: `controllers: [CatsController],`, podendo colocar mais de um
-controlador dentro do módulo e assim, se repetindo para os demais. 
+controlador dentro do módulo e assim, se repetindo para os demais.
 
 Mas vamos a minha opinião e experiência. Sabemos que podemos importar mais de vinte, se necessário, então, temos que ter
 consciência e bom senso de limitar isso a cinco e utilizar outros módulos para fazer outras importações, caso ao
@@ -130,7 +131,7 @@ aplicação, vamos interpretar eles sendo como funções no Javascript, respons�
 
 Acredito que no caso das importações, lembra que eu falei que o ideal é chamarmos cinco módulos e depois separarmos, se
 for o caso? Acredito que não tenha problema ter vinte importações, desde que ele não seja no módulo raiz, e sim,
-no módulo que ele é responsável, vamos usar o caso da calculadora, certo? Quantos services ele pode ter? 
+no módulo que ele é responsável, vamos usar o caso da calculadora, certo? Quantos services ele pode ter?
 
 Posso criar um para adição, outro para subtração, outro para multiplicação e assim por diante e não tem problema. O
 problema maior é você colocar todas essas importações dentro do módulo raiz, sendo que estamos criando um celular,
@@ -163,14 +164,14 @@ Para criar um controlador básico, utilizamos classes, assim como nos serviços 
 ver no código abaixo por exemplo:
 
 ```typescript
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get } from "@nestjs/common";
 
-@Controller('cats')
+@Controller("cats")
 export class CatsController {
-  @Get()
-  findAll(): string {
-    return 'This action returns all cats';
-  }
+    @Get()
+    findAll(): string {
+        return "This action returns all cats";
+    }
 }
 ```
 

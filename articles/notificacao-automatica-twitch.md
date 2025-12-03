@@ -2,9 +2,8 @@
 title: "Notificação automática da Twitch para o Discord"
 excerpt: "Aprenda a enviar notificação para seu Discord sempre que seu canal na Twitch entrar ao ar"
 image: "https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-tags: ['Discord', 'Twitch', 'Webhook']
-date: '2024-03-18'
-
+tags: ["Discord", "Twitch", "Webhook"]
+date: "2024-03-18"
 ---
 
 ![Caspar Camille Rubin](https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -14,20 +13,24 @@ claro que recomendo que seja a sua live ou de alguém muito conhecido - não par
 de uma applet/receita dentro da plataforma - no máximo dois na free tier.
 
 ## Parte 1 - Registrar no IFTTT
+
 Acesse [https://ifttt.com/](https://ifttt.com/) e crie uma conta (se ainda não tiver uma)
 
 <!--truncate-->
 
 ## Parte 2 - Criar um Webhook do Discord
+
 - Encontre o canal do Discord para o qual você gostaria de enviar os tweets.
 - Nas configurações desse canal, encontre a opção Webhooks e crie um novo webhook.
   **Observação: Este URL deve ser mantido _privado_. Permite que qualquer pessoa escreva mensagens nesse canal específico usando esse URL específico.** Mantenha-o seguro!
 
-  ![WebhookDiscord](http://i.imgur.com/PZE2wFu.png)
+    ![WebhookDiscord](http://i.imgur.com/PZE2wFu.png)
+
 - Nomeie o webhook como quiser e fique à vontade para alterar a imagem de perfil genérica. Escolhi [este ícone](https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-128.png) porque se encaixa bem no círculo.
 - Copie o URL para algum lugar e mantenha-o à mão para a próxima etapa.
 
 ## Parte 3 - Criar um novo applet/receita no IFTTT
+
 1. Acesse [aqui](https://ifttt.com/create) para criar um novo "Applet".
 2. Clique no grande azul "[+] This" e escolha "Twitch" (use a barra de pesquisa para encontrá-lo rapidamente).
 3. Conecte sua conta, se necessário.
@@ -35,45 +38,48 @@ Acesse [https://ifttt.com/](https://ifttt.com/) e crie uma conta (se ainda não 
 5. Clique no grande azul "[+] That" e escolha "Webhooks".
 6. Escolha "Fazer uma solicitação web" (deve ser a única opção).
 7. Preencha os seguintes detalhes:
-   - **URL:** _[seu URL da "parte 2" acima]_
-   - **Método:** POST
-   - **Tipo de conteúdo:** `application/json`
-   - **Corpo:** _[veja o trecho abaixo]_
+    - **URL:** _[seu URL da "parte 2" acima]_
+    - **Método:** POST
+    - **Tipo de conteúdo:** `application/json`
+    - **Corpo:** _[veja o trecho abaixo]_
 8. Clique em "Criar ação".
 9. Pronto!
 
 #### Trecho para o "Corpo"
+
 Os webhooks são super personalizáveis e permitem criar visuais bastante detalhados. No entanto, seu formato também é um pouco complexo de acertar sem testes extensivos, então aqui está um modelo que seria útil para a maioria das pessoas:
 
 ```json
 {
-  "content": "{{ChannelName}} foi ao vivo no Twitch",
-  "embeds": [{
-    "title": "{{ChannelUrl}}",
-    "url": "{{ChannelUrl}}",
-    "color": 6570404,
-    "footer": {
-      "text": "{{CreatedAt}}"
-    },
-    "image": {
-      "url": "{{StreamPreview}}"
-    },
-    "author": {
-      "name": "{{ChannelName}} está transmitindo agora"
-    },
-    "fields": [
-      {
-        "name": "Jogando",
-        "value": "{{Game}}",
-        "inline": true
-      },
-      {
-        "name": "Iniciado em (fuso horário do streamer)",
-        "value": "{{CreatedAt}}",
-        "inline": true
-      }
+    "content": "{{ChannelName}} foi ao vivo no Twitch",
+    "embeds": [
+        {
+            "title": "{{ChannelUrl}}",
+            "url": "{{ChannelUrl}}",
+            "color": 6570404,
+            "footer": {
+                "text": "{{CreatedAt}}"
+            },
+            "image": {
+                "url": "{{StreamPreview}}"
+            },
+            "author": {
+                "name": "{{ChannelName}} está transmitindo agora"
+            },
+            "fields": [
+                {
+                    "name": "Jogando",
+                    "value": "{{Game}}",
+                    "inline": true
+                },
+                {
+                    "name": "Iniciado em (fuso horário do streamer)",
+                    "value": "{{CreatedAt}}",
+                    "inline": true
+                }
+            ]
+        }
     ]
-  }]
 }
 ```
 
@@ -84,13 +90,15 @@ Este trecho que produzimos, irá criar uma notificação personalizada como abai
 </p>
 
 ### Mensagem Personalizada
+
 Caso queira ter uma mensagem personalizada para alguma categoria, troque a variável pela mensagem que desejar.
 
-Um exemplo, é substituir o content para aquilo que quiser. 
+Um exemplo, é substituir o content para aquilo que quiser.
 
 Ao invés de `{{ChannelName}} foi ao vivo no Twitch`, mudaremos para `{{ChannelName}} está ao vivo no Twitch!`, por exemplo.
 
 ## Mostrar sua foto de perfil da Twitch no incorporado (avançado)
+
 Se você deseja mostrar sua foto de perfil do Twitch na caixa:
 
 1. Acesse o Twitch

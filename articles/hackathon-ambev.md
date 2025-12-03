@@ -1,9 +1,9 @@
 ---
-title: '3º Lugar no Hackathon pela AMBEV em parceria com a Shawee'
+title: "3º Lugar no Hackathon pela AMBEV em parceria com a Shawee"
 excerpt: '"Hopyeast", projeto vencedor, utiliza Engenharia Genética'
-image: 'https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
-tags: ['Hackathon', 'Ambev']
-date: '2022-12-06'
+image: "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+tags: ["Hackathon", "Ambev"]
+date: "2022-12-06"
 ---
 
 ![](https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "Gerrie van der Walt no Unsplash")

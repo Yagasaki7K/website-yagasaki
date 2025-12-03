@@ -34,14 +34,14 @@ Ele não apenas interpretou os gráficos corretamente, mas também fez uma **an�
 
 Para avaliar o impacto do **K1.5 Loong Thinking**, foi realizada uma comparação direta com os modelos **DeepSeek, OpenAI e Meta**.
 
-| Funcionalidade         | K1.5 Loong Thinking | DeepSeek | OpenAI | Meta |
-|------------------------|--------------------|----------|--------|------|
-| Raciocínio Multimodal  | Sim | Não | Sim | Sim |
-| Interpretação de Imagens | Sim | Não | Sim (limitado) | Sim |
-| Análise em Tempo Real  | Sim | Não | Não | Não |
-| Pesquisa na Web | Sim (1000+ páginas) | Limitado | Não | Não |
-| Processamento de Múltiplos Arquivos | Sim (50 arquivos) | 10 arquivos | 10 arquivos | 10 arquivos |
-| Janela de Contexto | 200 mil caracteres | 20 mil caracteres | 128 mil caracteres | 100 mil caracteres |
+| Funcionalidade                      | K1.5 Loong Thinking | DeepSeek          | OpenAI             | Meta               |
+| ----------------------------------- | ------------------- | ----------------- | ------------------ | ------------------ |
+| Raciocínio Multimodal               | Sim                 | Não               | Sim                | Sim                |
+| Interpretação de Imagens            | Sim                 | Não               | Sim (limitado)     | Sim                |
+| Análise em Tempo Real               | Sim                 | Não               | Não                | Não                |
+| Pesquisa na Web                     | Sim (1000+ páginas) | Limitado          | Não                | Não                |
+| Processamento de Múltiplos Arquivos | Sim (50 arquivos)   | 10 arquivos       | 10 arquivos        | 10 arquivos        |
+| Janela de Contexto                  | 200 mil caracteres  | 20 mil caracteres | 128 mil caracteres | 100 mil caracteres |
 
 A tabela mostra que o **K1.5 Loong Thinking** lidera em **quase todas as categorias**, especialmente em **raciocínio multimodal, análise em tempo real e pesquisa na web**.
 

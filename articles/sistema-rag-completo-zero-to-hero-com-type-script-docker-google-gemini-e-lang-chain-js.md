@@ -1,9 +1,9 @@
 ---
 title: Sistema RAG Completo - Zero to Hero com TypeScript, Docker, Google Gemini e LangChain.js
-excerpt: 'A implementação de sistemas de Retrieval-Augmented Generation (RAG) representa uma das abordagens mais promissoras para resolver as limitações fundamentais dos Large Language Models modernos. Este artigo apresenta uma jornada completa na construção de um sistema RAG robusto e escalável, utilizando TypeScript como base de desenvolvimento, Docker para orquestração de infraestrutura, Google Gemini para inteligência artificial e LangChain.js como framework de integração.'
+excerpt: "A implementação de sistemas de Retrieval-Augmented Generation (RAG) representa uma das abordagens mais promissoras para resolver as limitações fundamentais dos Large Language Models modernos. Este artigo apresenta uma jornada completa na construção de um sistema RAG robusto e escalável, utilizando TypeScript como base de desenvolvimento, Docker para orquestração de infraestrutura, Google Gemini para inteligência artificial e LangChain.js como framework de integração."
 image: https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['RAG', 'TypeScript', 'Docker']
-date: '2025-09-16'
+tags: ["RAG", "TypeScript", "Docker"]
+date: "2025-09-16"
 ---
 
 ![](https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -30,9 +30,9 @@ A impossibilidade de atualização pós-treinamento representa outro obstáculo 
 
 ## RAG como solução arquitetural elegante
 
-Retrieval-Augmented Generation emerge como uma arquitetura que resolve elegantemente essas limitações através da combinação de dois componentes fundamentais. 
+Retrieval-Augmented Generation emerge como uma arquitetura que resolve elegantemente essas limitações através da combinação de dois componentes fundamentais.
 
-- **O componente de Retrieval (Recuperação):** funciona como um sistema de busca inteligente que encontra informações relevantes em uma base de conhecimento externa. 
+- **O componente de Retrieval (Recuperação):** funciona como um sistema de busca inteligente que encontra informações relevantes em uma base de conhecimento externa.
 
 - **O componente de Generation (Geração):** utiliza um LLM para gerar respostas baseadas exclusivamente no contexto recuperado, garantindo que as respostas sejam fundamentadas em informações verificáveis.
 
@@ -48,7 +48,7 @@ A transparência é uma característica fundamental, pois permite rastrear as fo
 
 ### Arquitetura de alto nível detalhada
 
-A arquitetura do sistema RAG pode ser visualizada como um pipeline de processamento que transforma documentos PDF  em uma base de conhecimento pesquisável e utiliza essa base para responder perguntas em linguagem natural. O processo começa com um documento PDF que passa por extração de texto, seguida por segmentação inteligente usando LangChain.js. Os segmentos resultantes são convertidos em embeddings vetoriais através do modelo Gemini.
+A arquitetura do sistema RAG pode ser visualizada como um pipeline de processamento que transforma documentos PDF em uma base de conhecimento pesquisável e utiliza essa base para responder perguntas em linguagem natural. O processo começa com um documento PDF que passa por extração de texto, seguida por segmentação inteligente usando LangChain.js. Os segmentos resultantes são convertidos em embeddings vetoriais através do modelo Gemini.
 
 > observação: embora o artigo enfoque em arquivos PDF, numa aplicação RAG, poderíamos utilizar qualquer fonte de dados, como: bancos de dados relacionais, NoSQL, APIs, documentos Word, planilhas Excel, entre outros.
 
@@ -58,7 +58,7 @@ Estes embeddings são armazenados em PostgreSQL com a extensão **[pgVector](htt
 
 Embeddings são representações numéricas de dados, como texto ou imagens, em um espaço vetorial de alta dimensão. Eles capturam o significado semântico dos dados, permitindo que máquinas compreendam e processem informações de maneira mais eficaz. No contexto de RAG, embeddings são usados para transformar consultas e documentos em vetores que podem ser comparados para encontrar similaridades.
 
-- Exemplo: 
+- Exemplo:
 
 ```text
 "gato" -> [0.1, 0.3, 0.5, ...]
@@ -73,11 +73,11 @@ Para deixar a aplicação simples e fácil de executar, utilizei de interface qu
 
 Para processamento de documentos, usamos as seguintes bibliotecas:
 
-- **[LangChain.js](https://js.langchain.com/docs/introduction/):**  serve como framework principal para aplicações LLM, oferecendo abstrações de alto nível para tarefas comuns. 
+- **[LangChain.js](https://js.langchain.com/docs/introduction/):** serve como framework principal para aplicações LLM, oferecendo abstrações de alto nível para tarefas comuns.
 
-- **[RecursiveCharacterTextSplitter](https://js.langchain.com/docs/concepts/text_splitters/):** implementa algoritmo inteligente de chunking que preserva contexto semântico. 
+- **[RecursiveCharacterTextSplitter](https://js.langchain.com/docs/concepts/text_splitters/):** implementa algoritmo inteligente de chunking que preserva contexto semântico.
 
-- **[PDF-Parse](https://www.npmjs.com/package/pdf-parse):** realiza extração limpa de texto de documentos PDF. 
+- **[PDF-Parse](https://www.npmjs.com/package/pdf-parse):** realiza extração limpa de texto de documentos PDF.
 
 Os embeddings e IA são gerenciados através da Google Gemini API, utilizando o modelo embedding-001 para geração de embeddings de 768 dimensões e **[gemini-2.0-flash](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash?hl=pt-br)** para geração de respostas otimizadas.
 
@@ -124,9 +124,9 @@ O pipeline de ingestão segue a sequência:
 
 Cada etapa é otimizada para preservar máxima informação semântica enquanto prepara os dados para busca eficiente.
 
-O pipeline de consulta executa: 
+O pipeline de consulta executa:
 
-> User Query → Query Embedding → Similarity Search → Context Assembly → LLM Generation → Response. 
+> User Query → Query Embedding → Similarity Search → Context Assembly → LLM Generation → Response.
 
 Este processo garante que cada resposta seja fundamentada em evidências específicas dos documentos processados.
 
@@ -192,38 +192,31 @@ O arquivo `tsconfig.json` define configurações de compilação que otimizam pa
 
 ```json
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext", 
-    "moduleResolution": "node",
-    "outDir": "./dist",           
-    "rootDir": "./src",         
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "types": ["node"],
-    "lib": ["ES2022", "DOM"]
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.test.ts",
-    "**/*.spec.ts"
-  ],
-  "ts-node": {
-    "esm": true
-  }
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "types": ["node"],
+        "lib": ["ES2022", "DOM"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"],
+    "ts-node": {
+        "esm": true
+    }
 }
 ```
 
@@ -263,42 +256,42 @@ O arquivo `docker-compose.yml` define infraestrutura completa para o sistema RAG
 
 ```yaml
 services:
-  # Main service: PostgreSQL with pgVector extension
-  postgres:
-    image: pgvector/pgvector:pg17
-    container_name: postgres_rag_ts
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres  
-      POSTGRES_DB: rag
-    ports:
-      - "5432:5432"
-    volumes:
-      # Data persistence
-      - postgres_data:/var/lib/postgresql/data
-    healthcheck:
-      # Checks if the database is ready
-      test: ["CMD-SHELL", "pg_isready -U postgres -d rag"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    restart: unless-stopped
+    # Main service: PostgreSQL with pgVector extension
+    postgres:
+        image: pgvector/pgvector:pg17
+        container_name: postgres_rag_ts
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: rag
+        ports:
+            - "5432:5432"
+        volumes:
+            # Data persistence
+            - postgres_data:/var/lib/postgresql/data
+        healthcheck:
+            # Checks if the database is ready
+            test: ["CMD-SHELL", "pg_isready -U postgres -d rag"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+        restart: unless-stopped
 
-  # Auxiliary service: Initializes pgVector extension
-  bootstrap_vector_ext:
-    image: pgvector/pgvector:pg17
-    depends_on:
-      postgres:
-        condition: service_healthy
-    entrypoint: ["/bin/sh", "-c"]
-    command: >
-      PGPASSWORD=postgres
-      psql "postgresql://postgres@postgres:5432/rag" -v ON_ERROR_STOP=1
-      -c "CREATE EXTENSION IF NOT EXISTS vector;"
-    restart: "no"
+    # Auxiliary service: Initializes pgVector extension
+    bootstrap_vector_ext:
+        image: pgvector/pgvector:pg17
+        depends_on:
+            postgres:
+                condition: service_healthy
+        entrypoint: ["/bin/sh", "-c"]
+        command: >
+            PGPASSWORD=postgres
+            psql "postgresql://postgres@postgres:5432/rag" -v ON_ERROR_STOP=1
+            -c "CREATE EXTENSION IF NOT EXISTS vector;"
+        restart: "no"
 
 volumes:
-  postgres_data:
+    postgres_data:
 ```
 
 </details>
@@ -346,90 +339,90 @@ A implementação do cliente Google encapsula toda comunicação com APIs Gemini
 <br/>
 
 ```typescript
-import { config } from 'dotenv';
-import { GoogleGenerativeAI } from '@google/generative-ai';
-import { Embeddings } from '@langchain/core/embeddings';
+import { config } from "dotenv";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import { Embeddings } from "@langchain/core/embeddings";
 
 config();
 
 export interface ChatMessage {
-  role: 'system' | 'user' | 'assistant';
-  content: string;
+    role: "system" | "user" | "assistant";
+    content: string;
 }
 
 export class GoogleClient {
-  private googleApiKey: string;
-  private embeddingModel: string;
-  private chatModel: string;
-  private genAI: GoogleGenerativeAI;
+    private googleApiKey: string;
+    private embeddingModel: string;
+    private chatModel: string;
+    private genAI: GoogleGenerativeAI;
 
-  constructor() {
-    this.googleApiKey = process.env.GOOGLE_API_KEY || '';
-    this.embeddingModel = process.env.GOOGLE_EMBEDDING_MODEL || '';
-    this.chatModel = process.env.GOOGLE_CHAT_MODEL || '';
+    constructor() {
+        this.googleApiKey = process.env.GOOGLE_API_KEY || "";
+        this.embeddingModel = process.env.GOOGLE_EMBEDDING_MODEL || "";
+        this.chatModel = process.env.GOOGLE_CHAT_MODEL || "";
 
-    if (!this.googleApiKey) {
-      throw new Error('Google API key is not set in environment variables.');
+        if (!this.googleApiKey) {
+            throw new Error("Google API key is not set in environment variables.");
+        }
+
+        this.genAI = new GoogleGenerativeAI(this.googleApiKey);
     }
 
-    this.genAI = new GoogleGenerativeAI(this.googleApiKey);
-  }
+    async getEmbeddings(texts: string[]): Promise<number[][]> {
+        const embeddings: number[][] = [];
 
-  async getEmbeddings(texts: string[]): Promise<number[][]> {
-    const embeddings: number[][] = [];
+        for (const text of texts) {
+            try {
+                const model = this.genAI.getGenerativeModel({ model: "embedding-001" });
+                const result = await model.embedContent(text);
 
-    for(const text of texts) {
-      try {
-        const model = this.genAI.getGenerativeModel({ model: 'embedding-001' });
-        const result = await model.embedContent(text);
-        
-        if (result.embedding && result.embedding.values) {
-          embeddings.push(result.embedding.values);
-        } else {
-          console.log(`No embedding returned for text: ${text}`);
-          const dummySize = 768;
-          embeddings.push(new Array(dummySize).fill(0));
+                if (result.embedding && result.embedding.values) {
+                    embeddings.push(result.embedding.values);
+                } else {
+                    console.log(`No embedding returned for text: ${text}`);
+                    const dummySize = 768;
+                    embeddings.push(new Array(dummySize).fill(0));
+                }
+            } catch (error) {
+                console.log(`Error generating embedding: ${error}`);
+                const dummySize = 768;
+                embeddings.push(new Array(dummySize).fill(0));
+            }
         }
-      } catch (error) {
-        console.log(`Error generating embedding: ${error}`);
-        const dummySize = 768;
-        embeddings.push(new Array(dummySize).fill(0));
-      }
+
+        return embeddings;
     }
 
-    return embeddings;
-  }
+    async chatCompletions(messages: ChatMessage[], temperature: number = 0.1): Promise<string> {
+        try {
+            const model = this.genAI.getGenerativeModel({
+                model: this.chatModel,
+                generationConfig: {
+                    temperature,
+                    maxOutputTokens: 1000,
+                },
+            });
 
-  async chatCompletions(messages: ChatMessage[], temperature: number = 0.1): Promise<string> {
-    try {
-      const model = this.genAI.getGenerativeModel({
-        model: this.chatModel,
-        generationConfig: {
-          temperature,
-          maxOutputTokens: 1000,
+            let prompt = "";
+            for (const message of messages) {
+                const { role, content } = message;
+
+                if (role === "system") {
+                    prompt += `Instructions: ${content}\n\n`;
+                } else if (role === "user") {
+                    prompt += `${content}\n`;
+                } else if (role === "assistant") {
+                    prompt += `Assistant: ${content}\n`;
+                }
+            }
+
+            const result = await model.generateContent(prompt);
+            return result.response.text();
+        } catch (error) {
+            console.log(`Error generating chat completion: ${error}`);
+            return "Sorry, an error occurred while generating the response.";
         }
-      });
-
-      let prompt = '';
-      for (const message of messages) {
-        const { role, content } = message;
-        
-        if (role === 'system') {
-          prompt += `Instructions: ${content}\n\n`;
-        } else if (role === 'user') {
-          prompt += `${content}\n`;
-        } else if (role === 'assistant') {
-          prompt += `Assistant: ${content}\n`;
-        }
-      }
-
-      const result = await model.generateContent(prompt);
-      return result.response.text();
-    } catch (error) {
-      console.log(`Error generating chat completion: ${error}`);
-      return 'Sorry, an error occurred while generating the response.';
     }
-  }
 }
 ```
 
@@ -440,45 +433,44 @@ A classe `GoogleClient` gerencia configuração e comunicação com APIs Gemini.
 
 A classe `GoogleEmbeddings` estende abstrações LangChain.js para integração seamless com frameworks existentes.
 
-
 <details><summary><b>src/google-embeddings.ts</b></summary><br/>
 
 ```typescript
 export class GoogleEmbeddings extends Embeddings {
-  private client: GoogleClient;
+    private client: GoogleClient;
 
-  constructor() {
-    super({});
-    this.client = new GoogleClient();
-  }
-
-  async embedDocuments(texts: string[]): Promise<number[][]> {
-    console.log(`Generating embeddings for ${texts.length} documents...`);
-
-    const batchSize = 10; // Processing 10 texts at a time for a better optimization
-    const allEmbeddings: number[][] = [];
-
-    for(let i = 0; i < texts.length; i += batchSize) {
-      const batchTexts = texts.slice(i, i + batchSize);
-      const batchEmbeddings = await this.client.getEmbeddings(batchTexts);
-      allEmbeddings.push(...batchEmbeddings);
-
-      console.log(`Lot ${Math.floor(i / batchSize) + 1}: ${batchTexts.length} processed texts`);  
+    constructor() {
+        super({});
+        this.client = new GoogleClient();
     }
 
-    return allEmbeddings;
-  }
+    async embedDocuments(texts: string[]): Promise<number[][]> {
+        console.log(`Generating embeddings for ${texts.length} documents...`);
 
-  // Method for embedding a single query
-  async embedQuery(text: string): Promise<number[]> {
-    const embeddings = await this.client.getEmbeddings([text]);
-    return embeddings[0];
-  }
+        const batchSize = 10; // Processing 10 texts at a time for a better optimization
+        const allEmbeddings: number[][] = [];
+
+        for (let i = 0; i < texts.length; i += batchSize) {
+            const batchTexts = texts.slice(i, i + batchSize);
+            const batchEmbeddings = await this.client.getEmbeddings(batchTexts);
+            allEmbeddings.push(...batchEmbeddings);
+
+            console.log(`Lot ${Math.floor(i / batchSize) + 1}: ${batchTexts.length} processed texts`);
+        }
+
+        return allEmbeddings;
+    }
+
+    // Method for embedding a single query
+    async embedQuery(text: string): Promise<number[]> {
+        const embeddings = await this.client.getEmbeddings([text]);
+        return embeddings[0];
+    }
 }
 
 // Factory function to create a GoogleClient instances
 export function getGoogleClient(): GoogleClient {
-  return new GoogleClient();
+    return new GoogleClient();
 }
 ```
 
@@ -528,85 +520,84 @@ A implementação da ingestão combina extração de PDF, segmentação intelige
 <br/>
 
 ```typescript
-import { config } from 'dotenv';
-import { Document } from '@langchain/core/documents';
-import { PGVectorStore } from '@langchain/community/vectorstores/pgvector';
-import { GoogleEmbeddings } from './google-client';
-import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
-import { PDFLoader as LangChainPDFLoader } from '@langchain/community/document_loaders/fs/pdf';
+import { config } from "dotenv";
+import { Document } from "@langchain/core/documents";
+import { PGVectorStore } from "@langchain/community/vectorstores/pgvector";
+import { GoogleEmbeddings } from "./google-client";
+import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
+import { PDFLoader as LangChainPDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 
 config();
 
 class PDFLoader {
-  constructor(private filePath: string) {}
+    constructor(private filePath: string) {}
 
-  async load(): Promise<Document[]> {
-    try {
-      console.log(`Reading PDF file: ${this.filePath}`);
-      
-      const langChainLoader = new LangChainPDFLoader(this.filePath);
-      const documents = await langChainLoader.load();
-      
-      console.log(`PDF loaded successfully! Found ${documents.length} pages`);
-      return documents;
-    } catch (error) {
-      console.error('Error loading PDF:', error);
-      throw error;
+    async load(): Promise<Document[]> {
+        try {
+            console.log(`Reading PDF file: ${this.filePath}`);
+
+            const langChainLoader = new LangChainPDFLoader(this.filePath);
+            const documents = await langChainLoader.load();
+
+            console.log(`PDF loaded successfully! Found ${documents.length} pages`);
+            return documents;
+        } catch (error) {
+            console.error("Error loading PDF:", error);
+            throw error;
+        }
     }
-  }
 
-  async ingestToVectorStore(): Promise<void> {
-    try {
-      console.log('Starting PDF ingestion process...');
-      
-      const rawDocuments = await this.load();
-      console.log(`PDF loaded: ${rawDocuments.length} sections`);
+    async ingestToVectorStore(): Promise<void> {
+        try {
+            console.log("Starting PDF ingestion process...");
 
-      console.log('Splitting documents into chunks...');
-      const textSplitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 400,
-        chunkOverlap: 0,
-      });
+            const rawDocuments = await this.load();
+            console.log(`PDF loaded: ${rawDocuments.length} sections`);
 
-      const splitDocuments = await textSplitter.splitDocuments(rawDocuments);
-      console.log(`Documents split into ${splitDocuments.length} chunks`);
+            console.log("Splitting documents into chunks...");
+            const textSplitter = new RecursiveCharacterTextSplitter({
+                chunkSize: 400,
+                chunkOverlap: 0,
+            });
 
-      console.log('Initializing Google embeddings...');
-      const embeddings = new GoogleEmbeddings();
+            const splitDocuments = await textSplitter.splitDocuments(rawDocuments);
+            console.log(`Documents split into ${splitDocuments.length} chunks`);
 
-      console.log('Connecting to PostgreSQL vector store...');
-      const vectorStore = await PGVectorStore.initialize(embeddings, {
-        postgresConnectionOptions: {
-          connectionString: process.env.DATABASE_URL,
-        },
-        tableName: process.env.PG_VECTOR_COLLECTION_NAME || 'pdf_documents',
-        columns: {
-          idColumnName: 'id',
-          vectorColumnName: 'vector',
-          contentColumnName: 'content',
-          metadataColumnName: 'metadata',
-        },
-      });
+            console.log("Initializing Google embeddings...");
+            const embeddings = new GoogleEmbeddings();
 
-      console.log('Adding documents to vector store...');
-      await vectorStore.addDocuments(splitDocuments);
+            console.log("Connecting to PostgreSQL vector store...");
+            const vectorStore = await PGVectorStore.initialize(embeddings, {
+                postgresConnectionOptions: {
+                    connectionString: process.env.DATABASE_URL,
+                },
+                tableName: process.env.PG_VECTOR_COLLECTION_NAME || "pdf_documents",
+                columns: {
+                    idColumnName: "id",
+                    vectorColumnName: "vector",
+                    contentColumnName: "content",
+                    metadataColumnName: "metadata",
+                },
+            });
 
-      console.log('PDF ingestion completed successfully!');
-      console.log(`Total chunks processed: ${splitDocuments.length}`);
-      
-      await vectorStore.end();
-      
-    } catch (error) {
-      console.error('Error during PDF ingestion:', error);
-      process.exit(1);
+            console.log("Adding documents to vector store...");
+            await vectorStore.addDocuments(splitDocuments);
+
+            console.log("PDF ingestion completed successfully!");
+            console.log(`Total chunks processed: ${splitDocuments.length}`);
+
+            await vectorStore.end();
+        } catch (error) {
+            console.error("Error during PDF ingestion:", error);
+            process.exit(1);
+        }
     }
-  }
 }
 
 async function main() {
-  const pdfPath = './document.pdf';
-  const loader = new PDFLoader(pdfPath);
-  await loader.ingestToVectorStore();
+    const pdfPath = "./document.pdf";
+    const loader = new PDFLoader(pdfPath);
+    await loader.ingestToVectorStore();
 }
 
 // Run ingestion
@@ -615,7 +606,6 @@ main();
 
 </details>
 <br/>
-
 
 A classe `PDFLoader` encapsula todo processo de ingestão, desde carregamento do arquivo até armazenamento no banco vetorial. O método `load` utiliza LangChain.js PDFLoader para extração robusta de texto. `ingestToVectorStore` coordena pipeline completo de processamento.
 
@@ -686,234 +676,234 @@ import { searchPrompt, RAGSearch } from "./search";
 
 // Function to print initial banner with system informations
 function printBanner(): void {
-  console.log('='.repeat(60));
-  console.log('RAG CHAT - PDF Question and Answer System');
-  console.log('Powered by Google Gemini + LangChain + pgVector');
-  console.log('⚡ TypeScript + Node.js Implementation');
-  console.log('='.repeat(60));
-  console.log("Special commands:");
-  console.log("   • 'exit, quit, exit' - Closes the program");
-  console.log("   • 'help' - Shows available commands");
-  console.log("   • 'clear' - Clears the screen");
-  console.log("   • 'status' - Checks system status");
-  console.log('='.repeat(60));
+    console.log("=".repeat(60));
+    console.log("RAG CHAT - PDF Question and Answer System");
+    console.log("Powered by Google Gemini + LangChain + pgVector");
+    console.log("⚡ TypeScript + Node.js Implementation");
+    console.log("=".repeat(60));
+    console.log("Special commands:");
+    console.log("   • 'exit, quit, exit' - Closes the program");
+    console.log("   • 'help' - Shows available commands");
+    console.log("   • 'clear' - Clears the screen");
+    console.log("   • 'status' - Checks system status");
+    console.log("=".repeat(60));
 }
 
 // Function to print help instructions
 function printHelp(): void {
-  console.log('\n AVAILABLE COMMANDS:');
-  console.log('   exit, quit, exit    - Closes the program');
-  console.log('   help                 - Shows available commands');
-  console.log('   clear               - Clears the screen');
-  console.log('   status              - Checks system status');
-  console.log('   [any text]         - Asks a question about the PDF');
-  console.log('\n TIPS FOR USE:');
-  console.log('   • Ask specific questions about the PDF content');
-  console.log('   • The system responds only based on the document');
-  console.log('   • Out-of-context questions return "I don\'t have information"');
-  console.log();
+    console.log("\n AVAILABLE COMMANDS:");
+    console.log("   exit, quit, exit    - Closes the program");
+    console.log("   help                 - Shows available commands");
+    console.log("   clear               - Clears the screen");
+    console.log("   status              - Checks system status");
+    console.log("   [any text]         - Asks a question about the PDF");
+    console.log("\n TIPS FOR USE:");
+    console.log("   • Ask specific questions about the PDF content");
+    console.log("   • The system responds only based on the document");
+    console.log('   • Out-of-context questions return "I don\'t have information"');
+    console.log();
 }
 
 // Function to clear the console screen
 function clearScreen(): void {
-  console.clear();
+    console.clear();
 }
 
 async function checkStatus(searchSystem: RAGSearch | null): Promise<void> {
-  console.log('\n RAG SYSTEM STATUS:');
-  console.log('='.repeat(40));
-  
-  if (!searchSystem) {
-    console.log('System: NOT INITIALIZED');
-    console.log('\n TROUBLESHOOTING CHECKLIST:');
-    console.log('   1. Is PostgreSQL running?');
-    console.log('      → Command: docker compose up -d');
-    console.log('   2. Has ingestion been executed?'); 
-    console.log('      → Command: npm run ingest');
-    console.log('   3. Is the API Key configured?');
-    console.log('      → File: .env (GOOGLE_API_KEY)');
-    console.log('   4. Are dependencies installed?');
-    console.log('      → Command: npm install');
-    return;
-  }
+    console.log("\n RAG SYSTEM STATUS:");
+    console.log("=".repeat(40));
 
-  try {
-    const systemStatus = await searchSystem.getSystemStatus();
-
-    console.log('RAG System: OPERATIONAL');
-    console.log('PostgreSQL Connection: OK');
-    console.log('pgVector Extension: OK'); 
-    console.log('Google Gemini API: OK');
-    console.log(`Vector Database: ${systemStatus.isReady ? 'READY' : 'NOT READY'}`);
-
-    if (systemStatus.chunksCount > 0) {
-      console.log(`Available chunks: ${systemStatus.chunksCount}`);
+    if (!searchSystem) {
+        console.log("System: NOT INITIALIZED");
+        console.log("\n TROUBLESHOOTING CHECKLIST:");
+        console.log("   1. Is PostgreSQL running?");
+        console.log("      → Command: docker compose up -d");
+        console.log("   2. Has ingestion been executed?");
+        console.log("      → Command: npm run ingest");
+        console.log("   3. Is the API Key configured?");
+        console.log("      → File: .env (GOOGLE_API_KEY)");
+        console.log("   4. Are dependencies installed?");
+        console.log("      → Command: npm install");
+        return;
     }
 
-    console.log('\n System ready to answer questions!');
-  } catch (error) {
-    console.log('Status: PARTIALLY OPERATIONAL');
-    console.log(`Error checking system status: ${error}`);
-  }
+    try {
+        const systemStatus = await searchSystem.getSystemStatus();
 
-  console.log('='.repeat(40));
+        console.log("RAG System: OPERATIONAL");
+        console.log("PostgreSQL Connection: OK");
+        console.log("pgVector Extension: OK");
+        console.log("Google Gemini API: OK");
+        console.log(`Vector Database: ${systemStatus.isReady ? "READY" : "NOT READY"}`);
+
+        if (systemStatus.chunksCount > 0) {
+            console.log(`Available chunks: ${systemStatus.chunksCount}`);
+        }
+
+        console.log("\n System ready to answer questions!");
+    } catch (error) {
+        console.log("Status: PARTIALLY OPERATIONAL");
+        console.log(`Error checking system status: ${error}`);
+    }
+
+    console.log("=".repeat(40));
 }
 
 // Main function to initialize RAG system and handle user input
 async function main(): Promise<void> {
-  console.log('STEP 6: Initializing the RAG Chat CLI Interface');
+    console.log("STEP 6: Initializing the RAG Chat CLI Interface");
 
-  printBanner();
+    printBanner();
 
-  console.log('\n PHASE 1: INITIALIZING RAG SYSTEM');
-  const searchSystem = await searchPrompt();
+    console.log("\n PHASE 1: INITIALIZING RAG SYSTEM");
+    const searchSystem = await searchPrompt();
 
-  if (!searchSystem) {
-    console.log('\n CRITICAL ERROR: RAG system could not be initialized!');
-    console.log('\n POSSIBLE CAUSES AND SOLUTIONS:');
-    console.log('   1. PostgreSQL is not running');
-    console.log('      → Solution: docker compose up -d');
-    console.log('   2. Ingestion process has not been executed');
-    console.log('      → Solution: npm run ingest');
-    console.log('   3. GOOGLE_API_KEY is not configured or invalid');
-    console.log('      → Solution: Configure in the .env file');
-    console.log('   4. Node.js dependencies are not installed');
-    console.log('      → Solution: npm install');
-    console.log('   5. pgVector extension has not been created');
-    console.log('      → Solution: Check Docker logs');
+    if (!searchSystem) {
+        console.log("\n CRITICAL ERROR: RAG system could not be initialized!");
+        console.log("\n POSSIBLE CAUSES AND SOLUTIONS:");
+        console.log("   1. PostgreSQL is not running");
+        console.log("      → Solution: docker compose up -d");
+        console.log("   2. Ingestion process has not been executed");
+        console.log("      → Solution: npm run ingest");
+        console.log("   3. GOOGLE_API_KEY is not configured or invalid");
+        console.log("      → Solution: Configure in the .env file");
+        console.log("   4. Node.js dependencies are not installed");
+        console.log("      → Solution: npm install");
+        console.log("   5. pgVector extension has not been created");
+        console.log("      → Solution: Check Docker logs");
 
-    process.exit(1);
-  }
-
-  console.log('PHASE 1: RAG system initialized successfully!\n');
-
-  // PHASE 2: SETUP COMMAND LINE INTERFACE
-  const rl = createInterface({
-    input: process.stdin,
-    output: process.stdout,
-    prompt: '\n Make a question: '
-  });
-
-  // Helper function to capture user input asynchronously
-  const askQuestion = (prompt: string): Promise<string> => {
-    return new Promise((resolve) => {
-      rl.question(prompt, resolve);
-    });
-  };
-
-  console.log('System ready! Type your question or “help” to see commands.');
-
-  // PHASE 3: MAIN CHAT LOOP
-  while(true) {
-    try {
-      // Capture user input
-      const userInput = (await askQuestion('\n Make a question: ')).trim();
-
-      // PROCESSING COMMAND: Analyze whether it is a special command or a question
-      const command = userInput.toLowerCase();
-
-      // Output commands
-      if (['exit', 'quit', 'sair', 'q'].includes(command)) {
-        console.log('\n Thank you for using RAG Chat. Goodbye!\n');
-        console.log('System shutting down...');
-        break;
-      }
-
-      // Help command
-      if (['ajuda', 'help', 'h', '?'].includes(command)) {
-        printHelp();
-        continue;
-      }
-
-      // Clear screen command
-      if (['limpar', 'clear', 'cls'].includes(command)) {
-        clearScreen();
-        printBanner();
-        continue;
-      }
-
-      // Status command
-      if (['status', 'info', 's'].includes(command)) {
-        await checkStatus(searchSystem);
-        continue;
-      }
-
-      // Validate empty input
-      if (!userInput) {
-        console.log('Empty input. Type a question or “help” to see commands.');
-        continue;
-      }
-
-      // PROCESSING QUESTION: Forward the question to the RAG system
-      console.log('\n Processing your question...');
-      console.log('Searching PDF knowledge...');
-
-      const startTime = Date.now();
-
-      // Call the complete RAG pipeline
-      const answer = await searchSystem.generateAnswer(userInput);
-
-      const endTime = Date.now();
-      const responseTime = ((endTime - startTime) / 1000).toFixed(2);
-
-      // FORMATTED DISPLAY OF THE RESPONSE
-      console.log('\n' + '='.repeat(80));
-      console.log(`ASK: ${userInput}`);
-      console.log('='.repeat(80));
-      console.log(`🤖 RESPONSE:`);
-      console.log(answer);
-      console.log('='.repeat(80));
-      console.log(`⚡ Response time: ${responseTime}s`);
-    } catch (error) {
-      // TRATAMENTO DE ERROS
-      if (error instanceof Error && error.message.includes('SIGINT')) {
-        // Ctrl+C foi pressionado
-        console.log('\n\n Interruption detected (Ctrl+C)');
-        console.log('👋 Chat closed by user. See you next time!');
-        break;
-      } else {
-        // Outros erros
-        console.log(`\n Unexpected error during processing:`);
-        console.log(`   ${error}`);
-        console.log('\n You can:');
-        console.log('   • Try again with another question');
-        console.log('   • Type "status" to check the system');
-        console.log('   • Type "exit" to quit');
-      }
+        process.exit(1);
     }
-  }
 
-  rl.close();
+    console.log("PHASE 1: RAG system initialized successfully!\n");
+
+    // PHASE 2: SETUP COMMAND LINE INTERFACE
+    const rl = createInterface({
+        input: process.stdin,
+        output: process.stdout,
+        prompt: "\n Make a question: ",
+    });
+
+    // Helper function to capture user input asynchronously
+    const askQuestion = (prompt: string): Promise<string> => {
+        return new Promise((resolve) => {
+            rl.question(prompt, resolve);
+        });
+    };
+
+    console.log("System ready! Type your question or “help” to see commands.");
+
+    // PHASE 3: MAIN CHAT LOOP
+    while (true) {
+        try {
+            // Capture user input
+            const userInput = (await askQuestion("\n Make a question: ")).trim();
+
+            // PROCESSING COMMAND: Analyze whether it is a special command or a question
+            const command = userInput.toLowerCase();
+
+            // Output commands
+            if (["exit", "quit", "sair", "q"].includes(command)) {
+                console.log("\n Thank you for using RAG Chat. Goodbye!\n");
+                console.log("System shutting down...");
+                break;
+            }
+
+            // Help command
+            if (["ajuda", "help", "h", "?"].includes(command)) {
+                printHelp();
+                continue;
+            }
+
+            // Clear screen command
+            if (["limpar", "clear", "cls"].includes(command)) {
+                clearScreen();
+                printBanner();
+                continue;
+            }
+
+            // Status command
+            if (["status", "info", "s"].includes(command)) {
+                await checkStatus(searchSystem);
+                continue;
+            }
+
+            // Validate empty input
+            if (!userInput) {
+                console.log("Empty input. Type a question or “help” to see commands.");
+                continue;
+            }
+
+            // PROCESSING QUESTION: Forward the question to the RAG system
+            console.log("\n Processing your question...");
+            console.log("Searching PDF knowledge...");
+
+            const startTime = Date.now();
+
+            // Call the complete RAG pipeline
+            const answer = await searchSystem.generateAnswer(userInput);
+
+            const endTime = Date.now();
+            const responseTime = ((endTime - startTime) / 1000).toFixed(2);
+
+            // FORMATTED DISPLAY OF THE RESPONSE
+            console.log("\n" + "=".repeat(80));
+            console.log(`ASK: ${userInput}`);
+            console.log("=".repeat(80));
+            console.log(`🤖 RESPONSE:`);
+            console.log(answer);
+            console.log("=".repeat(80));
+            console.log(`⚡ Response time: ${responseTime}s`);
+        } catch (error) {
+            // TRATAMENTO DE ERROS
+            if (error instanceof Error && error.message.includes("SIGINT")) {
+                // Ctrl+C foi pressionado
+                console.log("\n\n Interruption detected (Ctrl+C)");
+                console.log("👋 Chat closed by user. See you next time!");
+                break;
+            } else {
+                // Outros erros
+                console.log(`\n Unexpected error during processing:`);
+                console.log(`   ${error}`);
+                console.log("\n You can:");
+                console.log("   • Try again with another question");
+                console.log('   • Type "status" to check the system');
+                console.log('   • Type "exit" to quit');
+            }
+        }
+    }
+
+    rl.close();
 }
 
 // EVENT HANDLERS: Operating system signal management
 
 // Handler for Ctrl+C (SIGINT)
-process.on('SIGINT', () => {
-  console.log('\n\n Interrupt signal received (Ctrl+C)');
-  console.log('Cleaning up resources...');
-  console.log('RAG Chat closed. See you later!');
-  process.exit(0);
+process.on("SIGINT", () => {
+    console.log("\n\n Interrupt signal received (Ctrl+C)");
+    console.log("Cleaning up resources...");
+    console.log("RAG Chat closed. See you later!");
+    process.exit(0);
 });
 
 // Handler for uncaught errors
-process.on('uncaughtException', (error) => {
-  console.error('\n Uncaught FATAL ERROR:', error);
-  console.error('Restart the application: npm run start');
-  process.exit(1);
+process.on("uncaughtException", (error) => {
+    console.error("\n Uncaught FATAL ERROR:", error);
+    console.error("Restart the application: npm run start");
+    process.exit(1);
 });
 
 // Handler for rejected promises
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('\n Unhandled rejected promise:', reason);
-  console.error('Promise:', promise);
+process.on("unhandledRejection", (reason, promise) => {
+    console.error("\n Unhandled rejected promise:", reason);
+    console.error("Promise:", promise);
 });
 
 // ENTRY POINT: Run the main function
 main().catch((error) => {
-  console.error('\n FATAL ERROR in main application:', error);
-  console.error('Try restarting: npm run start');
-  process.exit(1);
+    console.error("\n FATAL ERROR in main application:", error);
+    console.error("Try restarting: npm run start");
+    process.exit(1);
 });
 ```
 
@@ -1013,6 +1003,6 @@ A pesquisa "**[Constitutional AI: Harmlessness from AI Feedback](https://arxiv.o
 
 LangChain Cookbook em **[https://github.com/langchain-ai/langchain/tree/master/cookbook](https://github.com/langchain-ai/langchain/tree/master/cookbook)** contém exemplos práticos de implementação de diferentes padrões RAG. Pinecone Learning Center em **[https://www.pinecone.io/learn/](https://www.pinecone.io/learn/)** oferece tutoriais sobre bancos de dados vetoriais e aplicações de busca semântica. Weaviate Documentation em **[https://weaviate.io/developers/weaviate/](https://weaviate.io/developers/weaviate/)** apresenta alternativas para armazenamento vetorial e suas especificidades técnicas.
 
-## Autora  e Contribuições
+## Autora e Contribuições
 
 Este projeto foi desenvolvido por Glaucia Lemos, A.I Developer Specialist, que compartilha conhecimento através de múltiplas plataformas. Seus perfis nas redes sociais incluem Twitter em **[https://twitter.com/glaucia86](https://twitter.com/glaucia86)** para atualizações técnicas e insights sobre desenvolvimento, LinkedIn em **[https://www.linkedin.com/in/glaucialemos/](https://www.linkedin.com/in/glaucialemos/)** para networking profissional e artigos técnicos, e YouTube em **[https://www.youtube.com/@GlauciaLemos](https://www.youtube.com/@GlauciaLemos)** para tutoriais em vídeo e palestras técnicas sobre desenvolvimento moderno.

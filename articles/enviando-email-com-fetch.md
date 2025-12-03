@@ -2,8 +2,8 @@
 title: Enviando um E-mail Usando Next.js ou React.js com Fetch
 excerpt: Aprenda a enviar um e-mail usando Next.js ou React.js com Fetch e evite o erro "Failed to fetch".
 image: https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
-tags: ['Desafio', 'Fetch', 'Form']
-date: '2022-08-15'
+tags: ["Desafio", "Fetch", "Form"]
+date: "2022-08-15"
 ---
 
 ![](https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 "Brett Jordan")

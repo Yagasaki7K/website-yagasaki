@@ -1,9 +1,9 @@
 ---
 title: Você sabe o que são os hooks do React? Veja os principais e entenda-os de uma vez
-excerpt: 'Hoje existem diversos, então resolvi compartilhar aqui com vocês os conceitos, além dos 3 principais e mais básicos para começar! '
+excerpt: "Hoje existem diversos, então resolvi compartilhar aqui com vocês os conceitos, além dos 3 principais e mais básicos para começar! "
 image: https://images.unsplash.com/photo-1680315597398-0e1a4777a803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['React', 'Hooks', 'Iniciante']
-date: '2024-09-18'
+tags: ["React", "Hooks", "Iniciante"]
+date: "2024-09-18"
 ---
 
 ![](https://images.unsplash.com/photo-1680315597398-0e1a4777a803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -15,6 +15,7 @@ O que podemos fazer com eles? Bom, gerenciamento de estados, ações após a ren
 utilizar referências.
 
 ## useState
+
 Ele é quem nos permite **controlar os estados** de um componente. Ele retorna um par de valores: o valor atual do estado
 e uma função para atualizá-lo.
 
@@ -24,27 +25,27 @@ clicar em "Sim" ou "Não", o estado é atualizado e a resposta exibida será alt
 ```js
 function App() {
     // Iniciamos como falso, já que não aconteceu ainda
-    const [cadeiraJaFoiArremessada, setCadeiraJaFoiArremessada] = useState(false)
+    const [cadeiraJaFoiArremessada, setCadeiraJaFoiArremessada] = useState(false);
 
     // Função para atualizar o estado para verdadeiro
     const confirmarArremesso = () => {
-        setCadeiraJaFoiArremessada(true)
-    }
+        setCadeiraJaFoiArremessada(true);
+    };
 
     // Função para atualizar o estado para falso
     const negarArremesso = () => {
-        setCadeiraJaFoiArremessada(false)
-    }
+        setCadeiraJaFoiArremessada(false);
+    };
 
     return (
         <div>
             <h1>A cadeira já foi remessada?</h1>
-            <h2>Resposta: {cadeiraJaFoiArremessada ? 'Sim' : 'Não'}</h2>
+            <h2>Resposta: {cadeiraJaFoiArremessada ? "Sim" : "Não"}</h2>
 
             <button onClick={confirmarArremesso}>Sim</button>
             <button onClick={negarArremesso}>Não</button>
         </div>
-    )
+    );
 }
 ```
 
@@ -69,12 +70,13 @@ No exemplo abaixo, sempre que a variável **cadeiraJaFoiArremessada** for altera
 ```jsx
 useEffect(() => {
     if (cadeiraJaFoiArremessada) {
-        alert('Arremessaram a cadeira')
+        alert("Arremessaram a cadeira");
     }
-}, [cadeiraJaFoiArremessada])
+}, [cadeiraJaFoiArremessada]);
 ```
 
 ## useRef
+
 Ele nos possibilidade criarmos uma referência mutável, a qual podemos associar a elementos do DOM, como inputs,
 sem precisar causar uma nova renderização do componente.
 
@@ -83,9 +85,9 @@ aplicar o foco diretamente utilizando o Javascript.
 
 ```jsx
 function App() {
-    const inputRef = useRef(null)
+    const inputRef = useRef(null);
 
-    const focarNoInput = () => inputRef.current.focus()
+    const focarNoInput = () => inputRef.current.focus();
 
     return (
         <div>
@@ -93,7 +95,7 @@ function App() {
             <input ref={inputRef} type="text" />
             <button onClick={focarNoInput}>Focar no input</button>
         </div>
-    )
+    );
 }
 ```
 

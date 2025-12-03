@@ -1,9 +1,9 @@
 ---
 title: Como usar o Redis para contar acessos em páginas estáticas
-excerpt: 'Usando Redis para servir de contador de visitantes em blog/sites'
+excerpt: "Usando Redis para servir de contador de visitantes em blog/sites"
 image: https://safebooru.org//samples/4619/sample_50a876f6c9a277321d808b921c060b94862be53d.jpg?4921012
-tags: ['Redis', 'Iniciante']
-date: '2024-05-29'
+tags: ["Redis", "Iniciante"]
+date: "2024-05-29"
 ---
 
 ![](https://safebooru.org//samples/4619/sample_50a876f6c9a277321d808b921c060b94862be53d.jpg?4921012)
@@ -17,7 +17,7 @@ imprensa, fazendo cobertura sobre o evento e tudo mais. Só que evoluímos de l�
 
 E como a gente faz essa métrica?
 
-Existem diversas soluções para fazermos isso, como o **Onigiri Hardcore** utiliza de markdown - assim como esse blog - 
+Existem diversas soluções para fazermos isso, como o **Onigiri Hardcore** utiliza de markdown - assim como esse blog -
 para criar as notícias, não temos um banco de dados. Então não faria sentido criar um banco só para isso. Mas,
 caso tivesse, era só criar uma collection ou referenciar e fazer o mesmo esquema, mas ao invés de ser uma
 publicação, só adicionaria +1 no banco utilizando um campo de visualizações ou algo do tipo.
@@ -41,7 +41,7 @@ npx create-next-app@latest visit-counter
 cd visit-counter
 ```
 
-Por exemplo. 
+Por exemplo.
 
 Instale o Redis nele e instale também - de forma global - a CLI do Redis - no caso, estou usando Ubuntu,
 então verifique a [documentação oficial](https://redis.io/docs/latest/get-started/) para entender como funciona a instalação no seu dispositivo.
@@ -76,18 +76,18 @@ hgetall monthlyVisits
 Vamos criar a conexão com o Redis em `src/lib/redis.js`
 
 ```javascript
-import { createClient } from 'redis';
+import { createClient } from "redis";
 
 const client = createClient({
-  url: process.env.REDIS_URL || 'redis://localhost:6379'
+    url: process.env.REDIS_URL || "redis://localhost:6379",
 });
 
-client.on('error', (err) => {
-  console.error('Redis client not connected to the server:', err);
+client.on("error", (err) => {
+    console.error("Redis client not connected to the server:", err);
 });
 
-client.on('connect', () => {
-  console.log('Redis client connected to the server');
+client.on("connect", () => {
+    console.log("Redis client connected to the server");
 });
 
 client.connect();
@@ -98,10 +98,10 @@ export default client;
 Depois, vamos criar uma Rota de API para registrar as visitas em `pages/api/visit.js`
 
 ```javascript
-import client from '../../src/lib/redis';
+import client from "../../src/lib/redis";
 
 export default async function handler(req, res) {
-    if (req.method === 'POST') {
+    if (req.method === "POST") {
         try {
             // Garantir que o cliente está conectado
             if (!client.isOpen) {
@@ -111,55 +111,52 @@ export default async function handler(req, res) {
             const now = new Date();
             const yearMonth = `${now.getFullYear()}-${now.getMonth() + 1}`;
 
-            await client.incr('totalVisits');
-            await client.hIncrBy('monthlyVisits', yearMonth, 1);
+            await client.incr("totalVisits");
+            await client.hIncrBy("monthlyVisits", yearMonth, 1);
 
-            console.log('Visit recorded');
-            res.status(200).json({ message: 'Visit recorded' });
+            console.log("Visit recorded");
+            res.status(200).json({ message: "Visit recorded" });
         } catch (error) {
-            console.error('Error recording visit', error);
-            res.status(500).json({ message: 'Internal Server Error' });
+            console.error("Error recording visit", error);
+            res.status(500).json({ message: "Internal Server Error" });
         }
     } else {
-        res.setHeader('Allow', ['POST']);
+        res.setHeader("Allow", ["POST"]);
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
 }
-
 ```
 
 E em seguida, vamos criar a rota para obter as contagens de visitas em `pages/api/visits.js`
 
 ```javascript
-import redisClient from '../../src/lib/redis';
+import redisClient from "../../src/lib/redis";
 
 export default async function handler(req, res) {
-    if (req.method === 'GET') {
-        const totalVisits = await redisClient.get('totalVisits');
-        const monthlyVisits = await redisClient.hGetAll('monthlyVisits');
+    if (req.method === "GET") {
+        const totalVisits = await redisClient.get("totalVisits");
+        const monthlyVisits = await redisClient.hGetAll("monthlyVisits");
 
         res.status(200).json({ totalVisits, monthlyVisits });
     } else {
-        res.setHeader('Allow', ['GET']);
+        res.setHeader("Allow", ["GET"]);
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
 }
-
 ```
 
 E após isso, registrar as visitas em `pages/_app.js` para isso rodar independente da página
 que for acessada.
 
 ```javascript
-import React, { useEffect } from 'react';
-import '../styles/globals.css'
+import React, { useEffect } from "react";
+import "../styles/globals.css";
 
 // eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
-
     useEffect(() => {
-        fetch('/api/visit', {
-            method: 'POST',
+        fetch("/api/visit", {
+            method: "POST",
         });
     }, []);
 
@@ -167,10 +164,10 @@ function MyApp({ Component, pageProps }) {
         <>
             <Component {...pageProps} />
         </>
-    )
+    );
 }
 
-export default MyApp
+export default MyApp;
 ```
 
 Bacana, não é mesmo? Dessa maneira, conseguimos ter as seguintes informações, por enquanto.

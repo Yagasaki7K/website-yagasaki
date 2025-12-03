@@ -1,9 +1,9 @@
 ---
 title: Entenda Programação Orientada a Objetos de Maneira Simplificada (POO)
-excerpt: 'Se você ainda não sabe, provavelmente te ensinaram errado.'
+excerpt: "Se você ainda não sabe, provavelmente te ensinaram errado."
 image: https://safebooru.org//samples/3233/sample_dd8ac0057c4f68ecd35569215ec138566e3f6905.jpg?3360979
-tags: ['Intermediário', 'Programação', 'Objetos']
-date: '2024-08-13'
+tags: ["Intermediário", "Programação", "Objetos"]
+date: "2024-08-13"
 ---
 
 ![](https://safebooru.org//samples/3233/sample_dd8ac0057c4f68ecd35569215ec138566e3f6905.jpg?3360979)
@@ -73,6 +73,7 @@ Mas será que POO é só isso? E quanto a conceitos como herança, polimorfismo 
 conceitos para ver como eles nos ajudam a escrever um código mais limpo e eficiente.
 
 ## Herança
+
 Herança é um dos pilares da POO e nos permite estender funcionalidades de uma classe para outra. Por exemplo,
 `escovarOsDentes()` não é algo que fazemos apenas ao acordar; podemos fazer isso após o almoço, antes de dormir, etc.
 
@@ -83,18 +84,17 @@ os dentes e utilizá-la em várias outras classes.
 // common.ts
 export class EscovarOsDentes {
     public escovar() {
-        console.log('Escovando os dentes');
+        console.log("Escovando os dentes");
     }
 }
 ```
 
 No arquivo `acordar.ts`, podemos estender essa funcionalidade:
 
-
 ```typescript
 // acordar.ts
 
-import { EscovarOsDentes } from './common';
+import { EscovarOsDentes } from "./common";
 
 class Acordar extends EscovarOsDentes {
     public arrumarCama() {}
@@ -116,6 +116,7 @@ periodoDaNoite.escovar();
 ```
 
 ## Polimorfismo e Encapsulamento
+
 Polimorfismo e encapsulamento são conceitos que permitem maior flexibilidade e segurança no código.
 
 O polimorfismo nos permite tratar objetos de diferentes classes de forma unificada, nunca sabemos como um ato de
@@ -125,6 +126,7 @@ Enquanto o encapsulamento protege o estado interno dos objetos, expondo apenas o
 da `public` e ficando reservada apenas dentro da classe.
 
 ### Polimorfismo
+
 O polimorfismo é a capacidade de uma função ou método agir de forma diferente com base na classe do objeto que a invoca.
 Por exemplo, podemos ter diferentes classes derivadas de uma classe base, onde cada uma delas implementa um método de
 forma diferente, mas todas compartilham a mesma interface.
@@ -138,19 +140,19 @@ class Animal {
 
 class Cachorro extends Animal {
     public fazerSom() {
-        console.log('Latido');
+        console.log("Latido");
     }
 }
 
 class Gato extends Animal {
     public fazerSom() {
-        console.log('Miau');
+        console.log("Miau");
     }
 }
 
 const animais: Animal[] = [new Cachorro(), new Gato()];
 
-animais.forEach(animal => animal.fazerSom());
+animais.forEach((animal) => animal.fazerSom());
 ```
 
 No exemplo acima, `fazerSom()` é polimórfico, pois se comporta de maneira diferente dependendo do tipo do objeto.
@@ -158,6 +160,7 @@ No exemplo acima, `fazerSom()` é polimórfico, pois se comporta de maneira dife
 Dessa maneira, posso usuar a mesma classe, com resultados diferentes em situações diferentes.
 
 ### Encapsulamento
+
 O encapsulamento, por sua vez, envolve esconder a implementação interna de uma classe e expor apenas o necessário para o
 uso externo. Isso permite que o código seja mais modular e que mudanças internas na classe não afetem o restante do
 código.
@@ -178,7 +181,7 @@ class ContaBancaria {
         if (valor <= this.saldo) {
             this.saldo -= valor;
         } else {
-            console.log('Saldo insuficiente');
+            console.log("Saldo insuficiente");
         }
     }
 
@@ -192,6 +195,7 @@ Aqui, `saldo` é um atributo privado, acessível apenas dentro da classe `ContaB
 são controladas através de métodos públicos, garantindo que o saldo não seja manipulado diretamente de fora da classe.
 
 # Instância na Programação Orientada a Objetos
+
 Uma instância em Programação Orientada a Objetos (POO) refere-se a um objeto específico criado a partir de uma classe.
 Quando criamos uma classe, estamos definindo um molde ou um modelo para objetos, mas esse molde, por si só, não
 representa algo concreto até que uma instância seja criada.
@@ -223,6 +227,7 @@ Aqui, `PeriodoDaManha` é uma instância da classe `Acordar`. Isso significa que
 instância, como `PeriodoDaManha.arrumarCama`, e essa chamada irá executar o comportamento definido na classe `Acordar`.
 
 # Por que usar Instâncias?
+
 - **Isolamento de Estado**: Cada instância tem seu próprio estado. Isso significa que, se alterarmos o estado de uma
   instância, as outras não serão afetadas. Isso é particularmente útil em cenários onde precisamos de múltiplos objetos
   funcionando de maneira independente, mas baseados na mesma estrutura.
@@ -243,6 +248,7 @@ Vamos explorar o conceito de instância em Programação Orientada a Objetos usa
 entendimento mais claro.
 
 # A Classe como uma Receita, a Instância como o Bolo
+
 Imagine que uma classe é como uma receita de bolo. A receita descreve todos os passos necessários para fazer o bolo: os
 ingredientes, as quantidades, o modo de preparo, etc. No entanto, a receita em si não é um bolo; é apenas um guia de
 como fazer um.
@@ -269,6 +275,7 @@ Vamos usar a analogia do projeto da casa para entender o conceito de um **constr
 Objetos, seguido de um exemplo em TypeScript.
 
 ## A Classe como Projeto de Casa com Personalização
+
 Imagine que, além de um projeto básico de casa, você possa adicionar personalizações, como a cor das paredes e o tipo de
 piso. O constructor é como uma seção no projeto onde você define essas personalizações. Quando você decide construir uma
 casa (criar uma instância), você pode passar essas preferências, e a casa construída terá essas características
@@ -300,18 +307,19 @@ class Casa {
 }
 
 // Criando uma instância da classe Casa
-const minhaCasa = new Casa('azul', 'madeira');
+const minhaCasa = new Casa("azul", "madeira");
 
 // Usando o método para descrever a instância criada
 minhaCasa.descricao();
 ```
 
 ### Explicação do Exemplo
+
 - **Classe `Casa`**: Define um modelo de casa com duas propriedades: `cor` e `tipoDePiso`.
 
 - **Constructor**: Quando criamos uma nova instância de `Casa` usando `new Casa('azul', 'madeira')`, o constructor é
-chamado. Ele pega os valores passados ('azul' e 'madeira') e os atribui às propriedades `cor` e `tipoDePiso` da
-instância.
+  chamado. Ele pega os valores passados ('azul' e 'madeira') e os atribui às propriedades `cor` e `tipoDePiso` da
+  instância.
 
 - **Instância `minhaCasa`**: Esta é a casa específica construída a partir do projeto `Casa`, com paredes azuis e piso de
   madeira.

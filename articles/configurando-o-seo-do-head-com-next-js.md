@@ -1,9 +1,9 @@
 ---
 title: Configurando o SEO do Head com Next.js
-excerpt: 'Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ...'
+excerpt: "Em 2013, eu havia criado o Onigiri Hardcore, um blog de notícias sobre animes, jogos e tudo que envolve a cultura nerd como um todo. Ano passado, depois de nove anos, eu tinha decidido restaurar ele e desenvolvê-lo, mas com outras tecnologias ..."
 image: https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
-tags: ['Next.js', 'SEO', 'Frontend']
-date: '2025-05-12'
+tags: ["Next.js", "SEO", "Frontend"]
+date: "2025-05-12"
 ---
 
 ![](https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
@@ -33,7 +33,7 @@ E eis a solução.
 
 # Configurando o SEO do Head com Next.js
 
-Neste artigo, discutiremos a criação de um arquivo _document.js, a organização do componente principal
+Neste artigo, discutiremos a criação de um arquivo \_document.js, a organização do componente principal
 NextJs, a criação de um componente principal de SEO dinâmico e a otimização do SEO com o seguinte:
 
 - Título e descrição “regulares”
@@ -63,17 +63,17 @@ conflito em alguma palavra reservada.
 // src/seo.js
 
 const SEO = {
-    title: 'Onigiri Hardcore',
-    description: 'Um site nerd entregando conteúdos nerds desde 2013',
-    siteThumbnail: 'https://i.imgur.com/VoOogmx.jpg',
+    title: "Onigiri Hardcore",
+    description: "Um site nerd entregando conteúdos nerds desde 2013",
+    siteThumbnail: "https://i.imgur.com/VoOogmx.jpg",
     siteUrl: "https://onigirihardcore.vercel.app",
     email: "kalifyinc@gmail.com",
     twitter: "https://twitter.com/OnigiriHardcore",
     twitterHandle: "@OnigiriHardcore",
     ogType: "website",
-}
+};
 
-export default SEO
+export default SEO;
 ```
 
 Podemos facilmente importar este arquivo e usar a notação de ponto regular ao acessar nossas variáveis
@@ -82,7 +82,8 @@ site, você pode aplicá-lo em todos os lugares necessários com `<img src={SEO.
 por exemplo. Se for necessário alterar o logotipo ou o nome do logotipo, basta acessar `SEO.js` e
 alterá-lo aqui para refletir as alterações em todo o site.
 
-## Criando um arquivo _document
+## Criando um arquivo \_document
+
 A criação de um arquivo `_document.js` personalizado estenderá o documento padrão usado em cada página,
 que controlará a estrutura HTML. É aqui que você pode colocar links para arquivos externos, como o link
 de uma fonte do Google Fonts, e é um bom lugar para metatags que permanecerão constantes em todo o site.
@@ -96,24 +97,22 @@ nele temos informações simples que não iremos alterar e irá permanecer em to
 ```js
 // pages/_document.js
 
-import { ServerStyleSheet } from 'styled-components';
-import Document, { Html, Main, Head, NextScript } from 'next/document';
+import { ServerStyleSheet } from "styled-components";
+import Document, { Html, Main, Head, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
-
     // Fast refresh with NextJS doesn't broken the CSS
     static async getInitialProps(ctx) {
-        const sheet = new ServerStyleSheet()
-        const originalRenderPage = ctx.renderPage
+        const sheet = new ServerStyleSheet();
+        const originalRenderPage = ctx.renderPage;
 
         try {
             ctx.renderPage = () =>
                 originalRenderPage({
-                    enhanceApp: (App) => (props) =>
-                        sheet.collectStyles(<App {...props} />),
-                })
+                    enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+                });
 
-            const initialProps = await Document.getInitialProps(ctx)
+            const initialProps = await Document.getInitialProps(ctx);
             return {
                 ...initialProps,
                 styles: (
@@ -122,9 +121,9 @@ export default class MyDocument extends Document {
                         {sheet.getStyleElement()}
                     </>
                 ),
-            }
+            };
         } finally {
-            sheet.seal()
+            sheet.seal();
         }
     }
     // Finish Here
@@ -144,29 +143,26 @@ export default class MyDocument extends Document {
                     <NextScript />
                 </body>
             </Html>
-        )
+        );
     }
 }
 ```
 
 ## Criando um componente de Head dinâmico
+
 Em seguida, precisaremos criar um arquivo para nosso componente Head dinâmico. Chamei meu `OwnHead.jsx`;
 é aqui que residirá a maior parte de nossa marcação de metadados.
 
 ```js
 // components/OwnHead.jsx
 
-import Head from "next/head"
+import Head from "next/head";
 
 const OwnHead = () => {
-    return (
-        <Head>
+    return <Head></Head>;
+};
 
-        </Head>
-    )
-}
-
-export default OwnHead
+export default OwnHead;
 ```
 
 Em seguida, inicialize as metavariáveis a serem usadas em outros componentes. Itens como título,
@@ -178,25 +174,13 @@ mais variáveis aqui e usá-las em outros componentes.
 ```js
 // components/OwnHead.jsx
 
-import Head from "next/head"
+import Head from "next/head";
 
-const OwnHead = ({
-    title,
-    description,
-    canonicalUrl,
-    ogTwitterImage,
-    ogType,
-    children,
-}) => {
+const OwnHead = ({ title, description, canonicalUrl, ogTwitterImage, ogType, children }) => {
+    return <Head></Head>;
+};
 
-    return (
-        <Head>
-
-        </Head>
-    )
-}
-
-export default OwnHead
+export default OwnHead;
 ```
 
 Podemos começar retornando nossas meta tags junto com as variáveis globais que criamos anteriormente com
@@ -205,22 +189,14 @@ elas inicializadas.
 ```js
 // components/OwnHead.jsx
 
-import Head from "next/head"
-import SEO from "@data/siteMetadata"
+import Head from "next/head";
+import SEO from "@data/siteMetadata";
 
-const OwnHead = ({
-    title,
-    description,
-    canonicalUrl,
-    ogTwitterImage,
-    ogType,
-    children,
-}) => {
-
+const OwnHead = ({ title, description, canonicalUrl, ogTwitterImage, ogType, children }) => {
     return (
         <Head>
             <title>{title}</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="description" content={description} />
 
             <meta name="twitter:card" content="summary" />
@@ -239,10 +215,10 @@ const OwnHead = ({
             <meta property="og:image" content={ogImageUrl} />
             <meta property="og:url" content={canonicalUrl} />
         </Head>
-    )
-}
+    );
+};
 
-export default OwnHead
+export default OwnHead;
 ```
 
 Agora temos uma boa visão do que cada página irá ter em sua seção de cabeçalho. A seguir, vamos discutir
@@ -294,6 +270,7 @@ caracteres, então o que fazemos? Você pode dividir os dois se quiser, mas não
 gráficos abertos de 60 caracteres no máximo. Tenha em mente que ele será truncado.
 
 ## Twitter Card
+
 Como o Open Graph, temos a maioria das bases cobertas aqui, mas não todas. Temos o suficiente para exibir
 uma página ou postar corretamente. O comprimento máximo da descrição do Twitter é de 200 caracteres,
 então estamos seguros com o comprimento máximo de 160 caracteres que definimos para nossa variável.
@@ -305,8 +282,8 @@ de codificação. Novamente, isso funciona excepcionalmente bem para páginas es
 isso em uma seção de blog a seguir.
 
 ```js
-import SEO from "src/SEO"
-import OwnHead from "components/OwnHead"
+import SEO from "src/SEO";
+import OwnHead from "components/OwnHead";
 
 const Index = () => {
     return (
@@ -323,10 +300,10 @@ const Index = () => {
                 <h1>Página Inicial</h1>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Index
+export default Index;
 ```
 
 ## Head com conteúdos dinâmicos no Blog
@@ -339,44 +316,48 @@ todos os parâmetros em seu site.
 ```js
 // pages/blog/[slug].js
 
-import { getPosts } from "../../services"
-import SEO from "src/SEO"
-import OwnHead from "components/OwnHead"
+import { getPosts } from "../../services";
+import SEO from "src/SEO";
+import OwnHead from "components/OwnHead";
 
 export async function getStaticProps() {
-    const response = await fetch('API_FETCH')
-    const data = await response.json()
+    const response = await fetch("API_FETCH");
+    const data = await response.json();
     return {
         props: {
-            data
-        }
-    }
+            data,
+        },
+    };
 }
 
-const Post = ({post}) => {
+const Post = ({ post }) => {
     return (
         <>
             <Header />
             <SlugDetails>
-                {
-                    data && data.map((post, index) => (
+                {data &&
+                    data.map((post, index) =>
                         post.slug === slug ? (
                             <div key={index}>
-                                <OwnHead title={title + post.title} description={post.description}
-                                    canonicalUrl={SEO.website + slug} ogTwitterImage={post.image} ogType={SEO.ogType} />
+                                <OwnHead
+                                    title={title + post.title}
+                                    description={post.description}
+                                    canonicalUrl={SEO.website + slug}
+                                    ogTwitterImage={post.image}
+                                    ogType={SEO.ogType}
+                                />
                                 <h1>{post.title}</h1>
                                 <p>{post.description}</p>
                             </div>
-                        ) : null
-                    ))
-                }
+                        ) : null,
+                    )}
             </SlugDetails>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default Post
+export default Post;
 ```
 
 E é isso, espero que te ajude da mesma maneira que me ajudou, levei muito tempo para entender como fazer

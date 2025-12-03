@@ -1,9 +1,9 @@
 ---
 title: Twitter e Cloudflare - Entenda tudo que está acontecendo, aspectos técnicos e polêmicas
-excerpt: 'Entenda as discussões sobre os aspectos técnicos por trás do bloqueio que levantou questões importantes sobre liberdade de expressão e controle da internet'
+excerpt: "Entenda as discussões sobre os aspectos técnicos por trás do bloqueio que levantou questões importantes sobre liberdade de expressão e controle da internet"
 image: https://safebooru.org//images/4424/4cd5b8a914a6f6274bd96b7bd2f8c0de33ac2f10.jpg?4613994
-tags: ['Twitter', 'Cloudflare', 'DNS']
-date: '2024-09-19'
+tags: ["Twitter", "Cloudflare", "DNS"]
+date: "2024-09-19"
 ---
 
 ![](https://safebooru.org//images/4424/4cd5b8a914a6f6274bd96b7bd2f8c0de33ac2f10.jpg?4613994)
@@ -14,6 +14,7 @@ e levantou questões importantes sobre liberdade de expressão e controle da int
 antes de mergulharmos nas explicações mais técnicas.
 
 ## Como o Twitter voltou e por que foi bloqueado novamente?
+
 Graças à criatividade de vários desenvolvedores, discutiu-se a possibilidade de migrar o Twitter para a Cloudflare, uma
 das maiores redes de distribuição de conteúdo e proteção de sites do mundo. Para entender melhor o que aconteceu, é
 preciso conhecer alguns detalhes sobre como funcionam a internet e as redes no Brasil. Atualmente, os provedores de
@@ -31,6 +32,7 @@ simplesmente pararam de devolver o endereço IP do Twitter para quem tentava ace
 digite "twitter.com", o navegador não conseguirá encontrar o servidor.
 
 ## Cloudflare: Uma alternativa para contornar bloqueios
+
 A Cloudflare, conhecida por seu DNS público (como o famoso 1.1.1.1), permite que os usuários contornem esses bloqueios
 configurando um servidor de DNS alternativo. Em vez de usar o DNS padrão do provedor, que pode estar bloqueando o
 Twitter, você pode configurar manualmente o DNS da Cloudflare nas configurações do seu Wi-Fi ou do dispositivo. Isso, em
@@ -41,6 +43,7 @@ para contornar o problema. Neste caso, mesmo sabendo o IP de cor, você não con
 interrompido antes de chegar ao servidor.
 
 ## Mover o Twitter para a Cloudflare: vantagens e desafios
+
 Uma questão que surgiu foi se mover a infraestrutura do Twitter para a Cloudflare tornaria o bloqueio inviável. A
 Cloudflare oferece serviços como CDN (Content Delivery Network), cache e proteção contra ataques DDoS, sendo amplamente
 utilizada por empresas e governos ao redor do mundo.
@@ -55,6 +58,7 @@ brasileiros utilizam a Cloudflare. Bloquear o Twitter por meio dela poderia gera
 impactar muitos outros sites e serviços.
 
 ## O papel da Cloudflare na proteção da internet
+
 A Cloudflare, desde sua criação, se posicionou como uma defensora da liberdade de expressão. Em um artigo de 2013, o CEO
 da empresa, Matthew Prince, deixou claro que a missão da Cloudflare é manter a internet livre e aberta, sem monitorar ou
 censurar o conteúdo de seus clientes.
@@ -64,6 +68,7 @@ expressão, agora precisa lidar com pressões de governos e acionistas. Isso lev
 manterá sua postura neutra diante de ordens judiciais e pedidos de bloqueio de conteúdo, como aconteceu no Brasil?
 
 ## Como contornar o bloqueio
+
 Mesmo com bloqueios de IP e DNS, ainda existem maneiras de acessar o Twitter. Uma delas seria usar um proxy ou uma VPN
 (Rede Virtual Privada), que redireciona o tráfego para fora do Brasil, permitindo o acesso ao site. Esses métodos, no
 entanto, exigem um nível técnico mais elevado e não são uma solução prática para a maioria dos usuários.
@@ -74,6 +79,7 @@ métodos de segurança, a conexão de banda cai pela metade naturalmente, então
 em casos de navegação e desligar em casos de download ou até mesmo durante o uso de jogos, por exemplo.
 
 ## O impacto das decisões da Cloudflare no Brasil
+
 É importante ressaltar que a Cloudflare não é apenas uma empresa de proteção e distribuição de conteúdo. Ela representa
 um ponto-chave na estrutura da internet moderna, e suas decisões afetam bilhões de usuários globalmente. No Brasil,
 embora a Cloudflare tenha uma presença significativa, a operação local ainda é limitada, o que pode influenciar nas

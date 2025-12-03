@@ -1,9 +1,9 @@
 ---
 title: Liberando espaço no WSL2
-excerpt: 'Imagine que você é um desenvolvedor, usa WSL - ambiente de desenvolvimento Linux no Windows - usa Docker e por algum motivo ...'
+excerpt: "Imagine que você é um desenvolvedor, usa WSL - ambiente de desenvolvimento Linux no Windows - usa Docker e por algum motivo ..."
 image: https://safebooru.org//samples/4619/sample_d3e96e81f2591af055bb8f9c5312d2d0d1d5c991.jpg?4859150
-tags: ['WSL', 'Desenvolvimento', 'Dicas']
-date: '2025-04-29'
+tags: ["WSL", "Desenvolvimento", "Dicas"]
+date: "2025-04-29"
 ---
 
 ![](https://safebooru.org//samples/1547/sample_25408a7d329087f914e28db646bad7da7ae7a720.jpg?5678146)

@@ -2,8 +2,8 @@
 title: "Bun, o compilador JavaScript mais rápido do mundo é lançado oficialmente"
 excerpt: "Conhecendo o mais novo complicador JavaScript"
 image: https://images.unsplash.com/photo-1592811773343-9abf0b1a6920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
-tags: ['Javascript', 'Desenvolvimento', 'Bun']
-date: '2023-09-11'
+tags: ["Javascript", "Desenvolvimento", "Bun"]
+date: "2023-09-11"
 ---
 
 ![Cesar Carlevarino Aragon](https://images.unsplash.com/photo-1592811773343-9abf0b1a6920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
@@ -17,19 +17,24 @@ Você pode ver a notícia sobre o [lançamento do Bun lá no Onigiri Hardcore](h
 <!--truncate-->
 
 ## O que são os compiladores?
+
 Compiladores são programas de computador que convertem código-fonte escrito em uma linguagem de programação em código-objeto escrito em uma linguagem de máquina ou seja, um exemplo para quem está familiarizado com Javascript, o Node é um compilador Javascript. Então, ele irá pegar seu código escrito em Javascript e simplesmente ler tudo aquilo e compilar, claro que para cada linguagem temos um compilador diferente, mas a questão aqui é vermos sobre o Bun e sua incrível velocidade referente aos demais no mundo do Javascript. Além de tudo, os compiladores são usados para aumentar a velocidade e a eficiência de execução de programas. Eles também podem ajudar a detectar e corrigir erros de código.
 
 ## O que é o Nodejs?
+
 Node.js é um runtime (compilador) JavaScript de código aberto que pode ser usado para executar código JavaScript fora do navegador. Ele é baseado no motor JavaScript V8 do Google Chrome. O Node.js é frequentemente usado para construir aplicações web, mas também pode ser usado para construir aplicações de desktop, aplicações móveis e aplicações de servidor.
 
 ## O que é o Deno?
+
 Deno, concorrente direto do Node - aí que surge o trocadilho do nome - é um runtime JavaScript e TypeScript moderno que é seguro por design. Ele é baseado no motor JavaScript V8 do Google Chrome, mas usa um mecanismo de segurança baseado em sandbox para proteger os aplicativos executados nele. O Deno é frequentemente usado para construir aplicações web seguras, mas também pode ser usado para construir aplicações de desktop, aplicações móveis e aplicações de servidor.
 
 ## E afinal, o que é o Bun?
+
 Bun é um runtime JavaScript e TypeScript moderno que é rápido e eficiente. Ele é baseado no motor JavaScript V8 do Google Chrome, mas usa um mecanismo de compilação para melhorar o desempenho. O Bun é frequentemente usado para construir aplicações web rápidas e eficientes, mas também pode ser usado para construir aplicações de desktop, aplicações móveis e aplicações de servidor.
 
 ## O resultado dos testes
-Fiz um teste simples, usando o mesmo arquivo para os três compiladores e o resultado foi surreal. Nesse teste, usei uma matemática simples, usando dez casas decimais e segui essa fórmula para que ele pudesse trazer de resultado: ((a + b) * (c + d)) / (e + f) + g - h;
+
+Fiz um teste simples, usando o mesmo arquivo para os três compiladores e o resultado foi surreal. Nesse teste, usei uma matemática simples, usando dez casas decimais e segui essa fórmula para que ele pudesse trazer de resultado: ((a + b) \* (c + d)) / (e + f) + g - h;
 
 Claro que para as máquinas isso é mamão com açúcar, mas para nós, levaria mais do que um tempinho para solucionarmos isso, certo? Mas vamos lá.
 
@@ -44,6 +49,7 @@ E então que surge o irmão mais novo, o Flesha da família. O Bun, levou 10.888
 ![Test Results](https://user-images.githubusercontent.com/23272064/267136008-9c99d1eb-122e-4207-a16b-df7ed0328038.png)
 
 ## Avaliação
+
 Sim! Esse valor é muito, mas muito rápido do que os dois comparados. Em questão de velocidade, o Bun é o primeiro, seguido pelo Node e pelo Deno. O mais incrível de tudo isso é que o Bun está na versão 1.0.0, enquanto o Node está na versão 18.17.1 e o Deno na v.1.36.4.
 
 Eu fiquei alucinado quando vi isso. Claro que, em termos de velocidade, os três runtimes são muito rápidos. Mesmo o mais demorado, o Deno, gastou apenas 22 milissegundos para responder. Mas ver que o Bun é capaz de fazer isso em 10 milissegundos é simplesmente incrível.

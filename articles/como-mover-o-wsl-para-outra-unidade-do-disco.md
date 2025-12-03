@@ -1,9 +1,9 @@
 ---
 title: Como mover o WSL para outra unidade do disco
-excerpt: 'Uma maneira de transferir os arquivos do WSL sem perder nada de praticidade, os arquivos e os programas do seu WSL.'
+excerpt: "Uma maneira de transferir os arquivos do WSL sem perder nada de praticidade, os arquivos e os programas do seu WSL."
 image: https://safebooru.org//samples/3910/sample_57a2cf4f2a509b52a4ae16da4b454ed390ff9f32.jpg?4086516
-tags: ['WSL', 'Intermediário', 'Windows']
-date: '2024-12-24'
+tags: ["WSL", "Intermediário", "Windows"]
+date: "2024-12-24"
 ---
 
 ![](https://safebooru.org//samples/3910/sample_57a2cf4f2a509b52a4ae16da4b454ed390ff9f32.jpg?4086516)
@@ -19,6 +19,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 
 ## LxRunOffline
+
 Agora que já temos o Chocolatery instalado, vamos usá-lo para instalar o LxRunOffline, que é um utilitário completo para gerenciar o Windows Subsystem for Linux (WSL).
 
 ```bash
@@ -26,6 +27,7 @@ choco install lxrunoffline
 ```
 
 ## Verificando as distros instaladas
+
 Com o lxrunoffline já instalado vamos ver quais distros Linux estão instaladas no nosso Windows.
 
 ```bash

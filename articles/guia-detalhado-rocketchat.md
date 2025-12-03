@@ -2,8 +2,8 @@
 title: Guia Detalhado - Configuração do Rocketchat no Azure com Funcionalidades Avançadas
 excerpt: Configuração do Rocketchat no Azure para quem é mais experiente
 image: https://plus.unsplash.com/premium_photo-1674082012152-fb856017c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
-tags: ['RocketChat', 'API', 'Webhook', 'Azure', 'Omnichannel']
-date: '2023-08-30'
+tags: ["RocketChat", "API", "Webhook", "Azure", "Omnichannel"]
+date: "2023-08-30"
 ---
 
 ![](https://plus.unsplash.com/premium_photo-1674082012152-fb856017c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 "Unsplash+")
@@ -22,8 +22,8 @@ Este guia aborda o processo detalhado de instalação e configuração do Rocket
 ## Instalação e Configuração do Rocketchat
 
 1. Instale o Rocketchat através do seguinte comando:
-  
-``` bash
+
+```bash
 sudo snap install rocketchat-server --channel=5.x/stable
 ```
 
@@ -47,8 +47,10 @@ sudo snap restart rocketchat-server
 1. Acesse as configurações do Rocketchat no painel de administração.
 2. Em "Admin / Config / Omnichannel", habilite o "External Frame" e configure a URL do frame externo.
 3. Configure as opções de "Livechat":
-  - Título do Livechat: Defina um nome descritivo.
-  - Roteamento: Atribua novas conversas para um agente bot.
+
+- Título do Livechat: Defina um nome descritivo.
+- Roteamento: Atribua novas conversas para um agente bot.
+
 4. Em "Admin / Config / Accounts", desative a autenticação de dois fatores (TOTP).
 5. Em "Admin / Permissões", desabilite o fechamento de salas omnichannel para os respectivos cargos.
 6. Opcional: Em "Users", adicione um usuário bot com email verificado e defina o cargo dele.
@@ -78,6 +80,7 @@ sudo snap restart rocketchat-server
 ```
 
 ## Considerações Finais
+
 Este guia abordou passo a passo a instalação e configuração do Rocketchat no Azure, mas tem possibilidade de funcionar em outros
 ambientes como Google Cloud Plataform, Heroku e outros. Assim habilitando recursos avançados como integração com um frame externo
 e configurações de omnichannel. Certifique-se de verificar a documentação oficial do Rocketchat para obter informações

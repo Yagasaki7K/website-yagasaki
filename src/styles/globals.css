@@ -3,50 +3,50 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-	--background: #000;
-	--white: #fff;
-	--gray: #afafaf;
-	--gray-risked: #4f4f4f;
-	--gray-transparent: rgba(255, 255, 255, 0.1);
+    --background: #000;
+    --white: #fff;
+    --gray: #afafaf;
+    --gray-risked: #4f4f4f;
+    --gray-transparent: rgba(255, 255, 255, 0.1);
 }
 
 html,
 body {
-	max-width: 100vw;
-	overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
-	color: var(--gray);
-	background: var(--background);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    color: var(--gray);
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: "Inter", cursive;
-	scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", cursive;
+    scroll-behavior: smooth;
 }
 
 a {
-	color: var(--white);
-	text-decoration: underline;
-	transition: 1s all ease;
+    color: var(--white);
+    text-decoration: underline;
+    transition: 1s all ease;
 }
 
 a:hover {
-	color: var(--gray);
+    color: var(--gray);
 }
 
 hr {
-	margin: 2rem auto;
-	width: 3rem;
-	border: 1px solid var(--gray-transparent);
+    margin: 2rem auto;
+    width: 3rem;
+    border: 1px solid var(--gray-transparent);
 }
 
 code {
-	font-family: "DM Mono";
+    font-family: "DM Mono";
 }

@@ -1,14 +1,14 @@
 ---
 title: DeepSeek-R1 e o impacto que seu lançamento causou no mercado
-excerpt: 'O tema de hoje é o DeepSeek-R1 e o impacto que seu lançamento causou no mercado. Como em qualquer assunto técnico, há muita desinformação ...'
+excerpt: "O tema de hoje é o DeepSeek-R1 e o impacto que seu lançamento causou no mercado. Como em qualquer assunto técnico, há muita desinformação ..."
 image: https://safebooru.org//samples/4610/sample_e53772af1a04c1ca06891720f290d04f1fc0b719.jpg?5343222
-tags: ['Análise', 'IA', 'DeepSeek']
-date: '2025-01-28'
+tags: ["Análise", "IA", "DeepSeek"]
+date: "2025-01-28"
 ---
 
 ![](https://safebooru.org//samples/4610/sample_e53772af1a04c1ca06891720f290d04f1fc0b719.jpg?5343222)
 
-A análise a seguir foi feita com base nas informações do *el hombre pulpo* (@coproduto) no [Twitter](https://x.com/coproduto/status/1884002124402712642). No entanto foi adaptada e revisada para este blog. O objetivo aqui é preservar informações valiosas enquanto reconhecemos e creditamos o autor original.
+A análise a seguir foi feita com base nas informações do _el hombre pulpo_ (@coproduto) no [Twitter](https://x.com/coproduto/status/1884002124402712642). No entanto foi adaptada e revisada para este blog. O objetivo aqui é preservar informações valiosas enquanto reconhecemos e creditamos o autor original.
 
 O tema de hoje é o **DeepSeek-R1** e o impacto que seu lançamento causou no mercado. Como em qualquer assunto técnico, há muita desinformação circulando por aí. O propósito deste artigo não é ser altamente técnico, mas sim explicar de forma clara o que o modelo é (e o que não é).
 

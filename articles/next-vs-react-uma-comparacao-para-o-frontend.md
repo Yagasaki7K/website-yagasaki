@@ -1,9 +1,9 @@
 ---
 title: NextJS vs React – Uma comparação para o Frontend
-excerpt: 'No cenário em rápida evolução do desenvolvimento frontend, escolher a tecnologia certa é crucial para construir aplicações'
+excerpt: "No cenário em rápida evolução do desenvolvimento frontend, escolher a tecnologia certa é crucial para construir aplicações"
 image: https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/f31cb781-4722-4597-91e7-da8db6bf9f40
-tags: ['React', 'NextJS', 'Frontend']
-date: '2024-05-21'
+tags: ["React", "NextJS", "Frontend"]
+date: "2024-05-21"
 ---
 
 ![image](https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/f31cb781-4722-4597-91e7-da8db6bf9f40)
@@ -17,8 +17,7 @@ para renderização do lado do servidor, roteamento, e mais.
 ## Introdução: Revelando a Batalha dos Titãs
 
 Neste post do blog, mergulhamos profundamente nos reinos do Next.js e React, explorando suas forças, fraquezas e casos
-de uso para ajudá-lo a tomar uma decisão informada sobre qual escolher para seus projetos de desenvolvimento Frontend em
-2024. Vamos embarcar nesta jornada de descoberta e desvendar os mistérios por trás desses poderosos frameworks.
+de uso para ajudá-lo a tomar uma decisão informada sobre qual escolher para seus projetos de desenvolvimento Frontend em 2024. Vamos embarcar nesta jornada de descoberta e desvendar os mistérios por trás desses poderosos frameworks.
 
 ## Seção 1: A Ascensão do Next.js – Empoderando o Desenvolvimento Web Moderno
 
@@ -89,5 +88,6 @@ explorar novas possibilidades e abraçar as forças de cada framework, os desenv
 sucesso e excelência no cenário em constante evolução da tecnologia frontend.
 
 ## Referências:
+
 - [Documentação do Next.js](https://nextjs.org/docs)
 - [Documentação do React](https://reactjs.org/docs)

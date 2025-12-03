@@ -1,9 +1,9 @@
 ---
 title: Análise do Arc Browser, meu substituto do Chrome
-excerpt: 'Arc é um navegador que é mais que o Chrome, e conta com uma interface leve, minimalista e funcionalidades de brilhar os olhos.'
+excerpt: "Arc é um navegador que é mais que o Chrome, e conta com uma interface leve, minimalista e funcionalidades de brilhar os olhos."
 image: https://safebooru.org//samples/4619/sample_d3e96e81f2591af055bb8f9c5312d2d0d1d5c991.jpg?4859150
-tags: ['Análise', 'Browser', 'Navegador']
-date: '2024-05-09'
+tags: ["Análise", "Browser", "Navegador"]
+date: "2024-05-09"
 ---
 
 ![](https://safebooru.org//samples/4619/sample_d3e96e81f2591af055bb8f9c5312d2d0d1d5c991.jpg?4859150)
@@ -20,6 +20,7 @@ que está acostumado, enfim, gosto é gosto. Então deixo os meus pontos princip
 navegador, e experimentar o Arc. Vale lembrar que está apenas disponível para MacOS e Windows 11.
 
 ## Sem distrações
+
 Ele possui um design realmente interessante, além de ter uma barra vertical para utilizar da navegação de abas, assim
 como o Vivaldi possui, ele atrai um design bem simples e nada poluente, além de contar também com um sistema de hover,
 ao passar o mouse no canto - caso a Toggle Sidebar esteja ativa - ele simplesmente irá mostrar as abas abertas, sem você
@@ -29,6 +30,7 @@ navegação.
 ![image](https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/bfed0d22-cce6-4901-ad5a-5879dbc36d3d)
 
 ## Spaces
+
 Imagine que você tem uma configuração especifica para seu navegador da empresa, outro para jogos e outro para o pessoal,
 o Arc deixa você unificar as Spaces na mesma janela, diferente do Chrome que simula uma outra sessão, jogando você para
 uma janela separada, o Arc deixa você organizar de modo individual, como o Chrome faz, ou simplesmente, unificar todas
@@ -37,6 +39,7 @@ as abas por categorias na mesma janela, é simplesmente incrível.
 ![image](https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/6121879f-be22-4a49-9776-f06f79636c84)
 
 ## Aba Arquivada
+
 É possível configurar que a aba fique arquivada depois de um determinado período de tempo, assim, você não perde ela
 depois que se esquecer, e ela vai ficar guardadinha para você revisar depois. A vantagem disso, é que você não perde
 tempo tentando organizar trezentas abas em seu navegador, ainda mais que você não se recorda quando abriu, qual.
@@ -45,6 +48,7 @@ Claro, lembramos também que o Arc possui um sistema de hibernar a aba depois de
 só é restaurada após você tentar acessar ela novamente. O que gera uma grande econômia do uso de memória.
 
 ## Picture-in-Picture nativo
+
 Imagine que você está no Youtube, Twitter ou até mesmo assistindo sua série favorita e alguém te chama no Whatsapp ou
 até mesmo você se distraí por um momento e quer ver aquele produto na Shopee em outra aba que acabou de lembrar, o
 interessante do Arc é que ao estar vendo um vídeo, seja no Youtube, ou qualquer outra aba e ele estiver ATIVO. Ao trocar
@@ -66,6 +70,7 @@ optar por pausar ali mesmo e focar na sua tarefa, são alguns dos fatores que eu
 Posso estar errado? Pode ser, mas, vou de Arc.
 
 ## Split View
+
 Imagine que você é um desenvolvedor, assim como eu, você precisa ver o resultado da sua aplicação enquanto está codando
 e ao mesmo tempo tem que ver a documentação, é realmente complicado e como consciliar tudo tendo apenas um, dois
 monitores? O ideal seria como? Ter três nesse caso e acompanhar tudo rapidamente. Mas eis que surge o Split View.
@@ -87,13 +92,14 @@ frente.
 
 ![image](https://github.com/Yagasaki7K/website-yagasaki/assets/23272064/0bccc76b-f90d-4bf4-8e9c-fe7ce19c1434)
 
-Sem distrações, sem perda de tempo. 
+Sem distrações, sem perda de tempo.
 
 Putz, essa aba é importante para nós? Só deixar ela em tela cheia e ela se torna uma aba. Dá para acreditar? Preciso
 dela no Split View? É só clicar no terceiro botão - com o icone do Split View - e bom, ele se torna uma terceira janela
 para nós.
 
 ## Promessa de Privacidade
+
 Segundo o Arc: "Arc is built from the ground up to be private and secure. We don’t know what sites you visit or what you
 search for."
 

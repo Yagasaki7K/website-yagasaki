@@ -128,20 +128,20 @@ const FooterDetails = styled.div`
 `;
 
 const Footer = () => {
-	return (
-		<FooterDetails>
-			<div className="footer">
-				<div className="p">
-					<p>
-						<Link href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
-							CC BY-NC-SA 4.0
-						</Link>{" "}
-						- 2014-PRESENT © Anderson Marlon AKA Yagasaki
-					</p>
-				</div>
-			</div>
-		</FooterDetails>
-	);
+    return (
+        <FooterDetails>
+            <div className="footer">
+                <div className="p">
+                    <p>
+                        <Link href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                            CC BY-NC-SA 4.0
+                        </Link>{" "}
+                        - 2014-PRESENT © Anderson Marlon AKA Yagasaki
+                    </p>
+                </div>
+            </div>
+        </FooterDetails>
+    );
 };
 
 export default Footer;

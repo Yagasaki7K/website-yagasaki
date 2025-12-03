@@ -1,9 +1,9 @@
 ---
 title: Dominando REST de Verdade - O Guia Rápido que Todo Dev Precisa Salvar
-excerpt: 'Se você está construindo ou consumindo APIs REST, este guia direto ao ponto vai te mostrar tudo o que precisa saber para projetar serviços web com clareza'
+excerpt: "Se você está construindo ou consumindo APIs REST, este guia direto ao ponto vai te mostrar tudo o que precisa saber para projetar serviços web com clareza"
 image: https://safebooru.org//samples/3300/sample_5d158e79a419d7ecdcda9b8924fbe017cf1ca549.jpg?3430923
-tags: ['Desenvolvimento', 'REST', 'Backend']
-date: '2025-05-29'
+tags: ["Desenvolvimento", "REST", "Backend"]
+date: "2025-05-29"
 ---
 
 ![](https://safebooru.org//samples/3300/sample_5d158e79a419d7ecdcda9b8924fbe017cf1ca549.jpg?3430923)
@@ -40,10 +40,10 @@ Se você está construindo ou consumindo APIs REST, este guia direto ao ponto va
 
 - Use substantivos para endpoints (evite verbos): `/products` em vez de `/getProducts`.
 - Use códigos de status HTTP efetivamente:
-  - `200 OK`: Sucesso.
-  - `201 Created`: Recurso criado com sucesso.
-  - `404 Not Found`: Recurso não existe.
-  - `500 Internal Server Error`: Erro no servidor.
+    - `200 OK`: Sucesso.
+    - `201 Created`: Recurso criado com sucesso.
+    - `404 Not Found`: Recurso não existe.
+    - `500 Internal Server Error`: Erro no servidor.
 - **Tratamento de Versão**: Use URLs para versioning (e.g., `/api/v1/`).
 - **Paginação para Grandes Conjuntos de Dados**: Inclua parâmetros como `limit` e `offset`.
 
@@ -74,11 +74,11 @@ Ou, em caso de erro:
 
 ```json
 {
-  "data": null,
-  "error": {
-    "message": "Recurso não encontrado",
-    "code": 404
-  }
+    "data": null,
+    "error": {
+        "message": "Recurso não encontrado",
+        "code": 404
+    }
 }
 ```
 

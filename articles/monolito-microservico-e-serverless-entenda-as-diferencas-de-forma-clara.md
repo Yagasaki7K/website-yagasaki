@@ -1,9 +1,9 @@
 ---
 title: Monolito, Microserviço e Serverless - Entenda as Diferenças de Forma Clara
-excerpt: 'Neste artigo você vai entender, com clareza e sem enrolação, os conceitos de monolito, microserviços e serverless — além de saber quando escolher cada arquitetura.'
+excerpt: "Neste artigo você vai entender, com clareza e sem enrolação, os conceitos de monolito, microserviços e serverless — além de saber quando escolher cada arquitetura."
 image: https://images.unsplash.com/photo-1700165644892-3dd6b67b25bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-tags: ['Arquitetura', 'Software', 'Design']
-date: '2025-06-27'
+tags: ["Arquitetura", "Software", "Design"]
+date: "2025-06-27"
 ---
 
 ![](https://images.unsplash.com/photo-1700165644892-3dd6b67b25bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -20,15 +20,15 @@ Um **monolito** é uma aplicação única e centralizada. Todo o código (backen
 
 ### Características:
 
-* Um único deploy.
-* Fácil de começar, difícil de escalar.
-* Tudo está acoplado no mesmo código.
+- Um único deploy.
+- Fácil de começar, difícil de escalar.
+- Tudo está acoplado no mesmo código.
 
 ### Quando usar?
 
-* Projetos pequenos ou MVPs.
-* Quando a equipe é reduzida.
-* Quando há pouco domínio técnico distribuído.
+- Projetos pequenos ou MVPs.
+- Quando a equipe é reduzida.
+- Quando há pouco domínio técnico distribuído.
 
 ```javascript
 // Exemplo de estrutura monolito:
@@ -44,15 +44,15 @@ src/
 
 ### Vantagens:
 
-* Rápido para desenvolver.
-* Menor complexidade inicial.
-* Simples para fazer deploy.
+- Rápido para desenvolver.
+- Menor complexidade inicial.
+- Simples para fazer deploy.
 
 ### Desvantagens:
 
-* Dificulta a escalabilidade em times grandes.
-* Uma mudança pode quebrar tudo.
-* Deploys são pesados e arriscados.
+- Dificulta a escalabilidade em times grandes.
+- Uma mudança pode quebrar tudo.
+- Deploys são pesados e arriscados.
 
 ---
 
@@ -64,39 +64,35 @@ src/
 
 ### Características:
 
-* Cada serviço é deployado separadamente.
-* Comunicação via HTTP, gRPC, filas, etc.
-* Mais trabalho inicial, mas escalável a longo prazo.
+- Cada serviço é deployado separadamente.
+- Comunicação via HTTP, gRPC, filas, etc.
+- Mais trabalho inicial, mas escalável a longo prazo.
 
 ### Quando usar?
 
-* Equipes grandes e especializadas.
-* Projetos com múltiplos domínios e integrações.
-* Necessidade de escalar partes diferentes do sistema separadamente.
+- Equipes grandes e especializadas.
+- Projetos com múltiplos domínios e integrações.
+- Necessidade de escalar partes diferentes do sistema separadamente.
 
 ```javascript
 // Exemplo:
-services/
-  auth-service/
-    src/index.ts
-  user-service/
-    src/index.ts
-  payment-service/
-    src/index.ts
+services / auth - service / src / index.ts;
+user - service / src / index.ts;
+payment - service / src / index.ts;
 // Cada serviço com seu próprio Dockerfile, banco e CI/CD
 ```
 
 ### Vantagens:
 
-* Isolamento de responsabilidade.
-* Times independentes podem trabalhar sem bloqueio.
-* Escala técnica e organizacional.
+- Isolamento de responsabilidade.
+- Times independentes podem trabalhar sem bloqueio.
+- Escala técnica e organizacional.
 
 ### Desvantagens:
 
-* Complexidade de orquestração.
-* Necessita infraestrutura e monitoramento.
-* Mais difícil de testar integração.
+- Complexidade de orquestração.
+- Necessita infraestrutura e monitoramento.
+- Mais difícil de testar integração.
 
 ---
 
@@ -108,15 +104,15 @@ services/
 
 ### Características:
 
-* Custo baseado no uso (pay-per-request).
-* Escala automática.
-* Ideal para workloads intermitentes.
+- Custo baseado no uso (pay-per-request).
+- Escala automática.
+- Ideal para workloads intermitentes.
 
 ### Quando usar?
 
-* Aplicativos de baixa/média carga.
-* Integrações event-driven (pagamentos, e-mails, webhooks, blogs).
-* Quando o time quer focar só na lógica.
+- Aplicativos de baixa/média carga.
+- Integrações event-driven (pagamentos, e-mails, webhooks, blogs).
+- Quando o time quer focar só na lógica.
 
 ```javascript
 // Exemplo:
@@ -135,22 +131,22 @@ export const handler = async (event) => {
 
 ### Vantagens:
 
-* Não precisa gerenciar servidores.
-* Alto desempenho com baixo custo.
-* Escalabilidade automática.
+- Não precisa gerenciar servidores.
+- Alto desempenho com baixo custo.
+- Escalabilidade automática.
 
 ### Desvantagens:
 
-* Frio (cold start) pode ser problema.
-* Difícil manter controle de execução e logs.
-* Limitações de tempo e recursos por função.
+- Frio (cold start) pode ser problema.
+- Difícil manter controle de execução e logs.
+- Limitações de tempo e recursos por função.
 
 ---
 
 ## 🤔 Qual escolher?
 
-| Critério           | Monolito   | Microserviços   | Serverless           |
-| ------------------ | ---------- | --------------- | -------------------- |
+| Critério           | Monolito    | Microserviços    | Serverless            |
+| ------------------ | ----------- | ---------------- | --------------------- |
 | Facilidade inicial | ✅ Alta     | ❌ Mais complexa | ✅ Alta               |
 | Escalabilidade     | ❌ Limitada | ✅ Alta          | ✅ Automática         |
 | Custo de operação  | ✅ Baixo    | ❌ Alto          | ✅ Sob demanda        |
@@ -161,8 +157,8 @@ export const handler = async (event) => {
 
 ## 🌟 Conclusão
 
-* Use **monolito** para começar rápido.
-* Evolua para **microserviços** se o domínio crescer e o time precisar de escalabilidade.
-* Aposte em **serverless** para workloads específicos e com eventos.
+- Use **monolito** para começar rápido.
+- Evolua para **microserviços** se o domínio crescer e o time precisar de escalabilidade.
+- Aposte em **serverless** para workloads específicos e com eventos.
 
 > Não existe bala de prata. O importante é **escolher com consciência**. Se você entende os prós e contras, você está no controle.

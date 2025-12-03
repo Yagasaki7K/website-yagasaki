@@ -1,9 +1,9 @@
 ---
 title: Montando um perfil interessante e exemplar no GitHub
-excerpt: 'Aprenda como montar um perfil relevante no Github e ser destaque entre os desenvolvedores'
+excerpt: "Aprenda como montar um perfil relevante no Github e ser destaque entre os desenvolvedores"
 image: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80
-tags: ['Github', 'Profile']
-date: '2023-01-27'
+tags: ["Github", "Profile"]
+date: "2023-01-27"
 ---
 
 ![](https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80 "Roman Synkevych 🇺🇦")

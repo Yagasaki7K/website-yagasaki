@@ -2,8 +2,8 @@
 title: Primeiros passos com Jest, framework de teste
 excerpt: Um framework de teste JavaScript popular que é usado para escrever testes unitários, testes de integração e testes de ponta a ponta.
 image: https://jestjs.io/pt-BR/img/opengraph.png
-tags: ['Jest', 'Teste', 'JavaScript']
-date: '2023-10-06'
+tags: ["Jest", "Teste", "JavaScript"]
+date: "2023-10-06"
 ---
 
 ![https://jestjs.io/](https://jestjs.io/pt-BR/img/opengraph.png)
@@ -24,15 +24,15 @@ O arquivo `jest.config.js` pode conter uma variedade de configurações, mas as 
 
 ```js
 module.exports = {
-  // O caminho para o diretório que contém os arquivos de teste
-  rootDir: './',
-  // O caminho para o diretório que contém os arquivos de código fonte
-  moduleNameMapper: {
-    // Mapeia um caminho de módulo para outro caminho
-    "^@/(.*)$": "<rootDir>/src/$1"
-  },
-  // O ambiente de teste a ser usado
-  testEnvironment: 'node'
+    // O caminho para o diretório que contém os arquivos de teste
+    rootDir: "./",
+    // O caminho para o diretório que contém os arquivos de código fonte
+    moduleNameMapper: {
+        // Mapeia um caminho de módulo para outro caminho
+        "^@/(.*)$": "<rootDir>/src/$1",
+    },
+    // O ambiente de teste a ser usado
+    testEnvironment: "node",
 };
 ```
 
@@ -50,18 +50,18 @@ Aqui está um exemplo de um teste básico:
 
 ```js
 // Importa a função a ser testada
-import { add } from './index';
+import { add } from "./index";
 
 // Cria um caso de teste
-describe('add', () => {
-  // Define o cenário do caso de teste
-  it('deve retornar a soma de dois números', () => {
-    // Chama a função a ser testada
-    const result = add(1, 2);
+describe("add", () => {
+    // Define o cenário do caso de teste
+    it("deve retornar a soma de dois números", () => {
+        // Chama a função a ser testada
+        const result = add(1, 2);
 
-    // Verifica o resultado esperado
-    expect(result).toBe(3);
-  });
+        // Verifica o resultado esperado
+        expect(result).toBe(3);
+    });
 });
 ```
 

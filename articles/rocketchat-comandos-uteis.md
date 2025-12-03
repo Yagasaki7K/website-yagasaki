@@ -2,15 +2,15 @@
 title: Guia de Comandos Rocketchat para Iniciantes
 excerpt: Guia de comandos do Rocketchat de configuração para quem está começando
 image: https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
-tags: ['Rocketchat', 'API', 'Webhook', 'Iniciante']
-date: '2023-08-27'
+tags: ["Rocketchat", "API", "Webhook", "Iniciante"]
+date: "2023-08-27"
 ---
 
 ![](https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 "SpaceX")
 
 Ao contrário da publicação anterior, hehe, essa é uma publicação original e é de minha autorial.
 
-O Rocketchat é uma plataforma de comunicação poderosa que oferece uma variedade de recursos e funcionalidades para facilitar a comunicação e colaboração entre equipes. Se você está começando ou precisa de ajuda para se orientar nas funcionalidades, este guia detalhado irá ajudá-lo a dominar os comandos essenciais. 
+O Rocketchat é uma plataforma de comunicação poderosa que oferece uma variedade de recursos e funcionalidades para facilitar a comunicação e colaboração entre equipes. Se você está começando ou precisa de ajuda para se orientar nas funcionalidades, este guia detalhado irá ajudá-lo a dominar os comandos essenciais.
 
 Lembrando que todos eles são comandos via curl, que podem ser utilizados através do terminal, Postman ou Insomnia. Se você deseja usar através do Node.js, PHP ou qualquer outro tipo de maneira fora desse convencional, consulte a documentação oficial.
 
@@ -19,18 +19,20 @@ Vamos explorar além do básico e ver como tirar o máximo proveito do Rocketcha
 <!--truncate-->
 
 ## Fazendo Login via API
+
 Se você precisa fazer login no Rocketchat via API, o seguinte comando pode ser usado:
 
-``` bash
+```bash
 curl http://localhost:3000/api/v1/login \
 -d "user=SEU_USUÁRIO&password=SUA_SENHA"
 Substitua SEU_USUÁRIO pelo seu nome de usuário e SUA_SENHA pela sua senha.
 ```
 
 ## Criando um Visitante via API
+
 Crie um visitante usando a API para interagir com os usuários. Execute o seguinte comando curl:
 
-``` bash
+```bash
 curl -X POST \
 -H "Content-type:application/json" \
 http://localhost:3000/api/v1/livechat/visitor \
@@ -52,7 +54,7 @@ Certifique-se de substituir as informações corretas, como nome, email, departa
 
 Crie uma sala para o visitante usando o comando curl:
 
-``` bash
+```bash
 curl -H "X-Auth-Token: SEU_TOKEN" \
 -H "X-User-Id: SEU_ID_DO_USUÁRIO" \
 "http://localhost:3000/api/v1/livechat/room?token=TOKEN_DO_VISITANTE"
@@ -60,23 +62,26 @@ Substitua SEU_TOKEN, SEU_ID_DO_USUÁRIO e TOKEN_DO_VISITANTE pelas informações
 ```
 
 ## Enviando Mensagens
+
 ### Como Agente
+
 Se você é um agente e deseja enviar mensagens, use o seguinte comando curl:
 
-``` bash
+```bash
 curl -H "X-Auth-Token: SEU_TOKEN" \
      -H "X-User-Id: SEU_ID_DO_USUÁRIO" \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/chat.sendMessage \
      -d '{"message": { "rid": "ID_DA_SALA", "msg": "Esta é uma mensagem de teste!" }}'
-``` 
+```
 
 Substitua SEU_TOKEN, SEU_ID_DO_USUÁRIO e ID_DA_SALA pelas informações corretas.
 
 ### Como Usuário (Visitante)
+
 Para enviar mensagens como um usuário (visitante), use este comando curl:
 
-``` bash
+```bash
 curl -X POST \
 -H "Content-type:application/json" \
 http://localhost:3000/api/v1/livechat/message \
@@ -85,9 +90,10 @@ Substitua TOKEN_DO_VISITANTE e ID_DA_SALA pelas informações corretas.
 ```
 
 ## Transferindo a Conversa para um Agente
+
 Transfira a conversa para um agente específico usando o seguinte comando curl:
 
-``` bash
+```bash
 curl -X POST \
      -H "Content-type:application/json" \
      -H "Authorization: Bearer SEU_TOKEN" \
@@ -97,13 +103,13 @@ curl -X POST \
          "token": "TOKEN_DO_VISITANTE",
          "userId": "ID_DO_AGENTE"
      }'
-``` 
+```
 
 Substitua SEU_TOKEN, ID_DA_SALA, TOKEN_DO_VISITANTE e ID_DO_AGENTE pelas informações corretas.
 
 ## Explorando Mais Recursos
 
-Este guia abordou alguns comandos essenciais do Rocketchat via API, mas esta plataforma oferece uma ampla gama de recursos e possibilidades. Agora que você tem uma base sólida, sinta-se à vontade para explorar outras funcionalidades, como transferência entre departamentos, notificações e muito mais. Lembre-se de consultar a [documentação oficial do Rocketchat](https://developer.rocket.chat?ref=yagasaki.dev/blog) para obter detalhes completos sobre todas as funcionalidades disponíveis. 
+Este guia abordou alguns comandos essenciais do Rocketchat via API, mas esta plataforma oferece uma ampla gama de recursos e possibilidades. Agora que você tem uma base sólida, sinta-se à vontade para explorar outras funcionalidades, como transferência entre departamentos, notificações e muito mais. Lembre-se de consultar a [documentação oficial do Rocketchat](https://developer.rocket.chat?ref=yagasaki.dev/blog) para obter detalhes completos sobre todas as funcionalidades disponíveis.
 
 Vale lembrar que o Rocketchat é uma plataforma open source e a comunidade anda ajudando em peso!
 
