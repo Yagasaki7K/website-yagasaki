@@ -293,38 +293,37 @@ const ArticleDetails = styled.div`
 
         img {
             margin-left: -12rem;
-            width: 1200px;
+            max-width: 1200px;
             object-fit: cover;
             border-radius: 0.5rem;
 
             @media (max-width: 1440px) {
                 margin-left: -8rem;
-                width: 1050px;
+                max-width: 1050px;
             }
 
             @media (max-width: 1280px) {
                 margin-left: -6rem;
-                width: 980px;
+                max-width: 980px;
             }
 
             @media (max-width: 1180px) {
                 margin-left: -4rem;
-                width: 920px;
+                max-width: 920px;
             }
 
             @media (max-width: 1024px) {
                 margin-left: -3rem;
-                width: 900px;
+                max-width: 900px;
             }
 
             @media (max-width: 912px) {
                 margin-left: -2rem;
-                width: 720px;
+                max-width: 720px;
             }
 
             @media (max-width: 820px) {
                 margin-left: -1rem;
-                width: 100%;
             }
 
             @media (max-width: 768px) {
