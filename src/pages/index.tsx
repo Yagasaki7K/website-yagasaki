@@ -24,9 +24,9 @@ export default function Home() {
                         <div className="p">
                             Working at
                             <div className="link">
-                                <img src="https://sintoniasp.vercel.app/logotipo.png" />
-                                <Link href="https://github.com/byteonegroup" target="_blank">
-                                    @SintoniaSP
+                                <img src="https://github.com/yagasaki7k.png" />
+                                <Link href="https://github.com/yagasaki7k" target="_blank">
+                                    @Unknown
                                 </Link>
                             </div>
                             /
@@ -66,6 +66,12 @@ export default function Home() {
                         </div>
                         <div className="p">
                             Core team of
+                            <div className="link">
+                                <img src="https://github.com/kindredsoftware.png" />
+                                <Link href="https://github.com/kindredsoftware" target="_blank">
+                                    @KindredSoftware
+                                </Link>
+                            </div>
                             <div className="link">
                                 <img src="https://github.com/engide.png" />
                                 <Link href="https://github.com/engide" target="_blank">
