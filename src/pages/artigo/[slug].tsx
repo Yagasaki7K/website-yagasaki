@@ -132,9 +132,6 @@ export default function PostPage({ frontmatter, content = "", viewCount = 0 }: P
                         <div className="tags">
                             <p className="minRead">Leitura de {calculateReadingTime(content)} minutos</p>
                         </div>
-                        <div className="views">
-                            <p className="view-count">{formattedViews} visualizações</p>
-                        </div>
                     </div>
                     <div className="post-body">
                         <div dangerouslySetInnerHTML={{ __html: content ?? "" }} />

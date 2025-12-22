@@ -14,24 +14,24 @@
     },
     "dependencies": {
         "dayjs": "^1.11.19",
-        "eslint-config-next": "^16.0.8",
+        "eslint-config-next": "^16.1.0",
         "feed": "^5.1.0",
-        "framer-motion": "^12.23.25",
+        "framer-motion": "^12.23.26",
         "gray-matter": "^4.0.3",
         "jspdf": "^3.0.4",
         "jspdf-autotable": "^5.0.2",
         "marked": "^16.4.2",
-        "next": "^16.0.8",
+        "next": "^16.1.0",
         "next-seo": "^6.8.0",
-        "react": "^19.2.1",
-        "react-dom": "^19.2.1",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3",
         "sonner": "^2.0.7",
         "styled-components": "^6.1.19"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.3.8",
+        "@biomejs/biome": "^2.3.10",
         "typescript": "^5.9.3",
-        "@types/node": "^20.19.26",
+        "@types/node": "^20.19.27",
         "@types/react": "^19.2.7",
         "@types/react-dom": "^19.2.3"
     }

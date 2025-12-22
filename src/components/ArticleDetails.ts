@@ -292,8 +292,9 @@ const ArticleDetails = styled.div`
         }
 
         img {
-            margin-left: -12rem;
+            margin-left: 0rem;
             max-width: 1200px;
+            width: 100%;
             object-fit: cover;
             border-radius: 0.5rem;
 
