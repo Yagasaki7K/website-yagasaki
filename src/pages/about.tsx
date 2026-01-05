@@ -192,6 +192,7 @@ export default function AboutPage() {
                         Supabase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, Elysia.js, NestJS, Bun.js, Whatsapp
                         API, Rocketchat, Serverless, Microservices and more …
                     </p>
+                    <br />
                     <p>Technology Enthusiast, Specialized in Web and Self-taught.</p>
 
                     <div>
@@ -231,6 +232,12 @@ export default function AboutPage() {
                             </Link>
                             .
                         </p>
+
+                        <h3 className="titleJob">
+                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Actually
+                        </h3>
+                        <li>&nbsp;</li>
+                        <p className="description">Using Node.js, WhatsApp API, Next.js, Discord Webhook, Python, React.js, Supabase</p>
 
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025

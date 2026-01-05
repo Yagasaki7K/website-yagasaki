@@ -24,16 +24,9 @@ export default function Home() {
                         <div className="p">
                             Working at
                             <div className="link">
-                                <img src="https://github.com/yagasaki7k.png" />
-                                <Link href="https://github.com/yagasaki7k" target="_blank">
-                                    @Unknown
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <img src="https://zentrystore.vercel.app/logo.png" />
-                                <Link href="https://zentrystore.vercel.app/" target="_blank">
-                                    Zentry Store
+                                <img src="https://github.com/r2apecuaria.png" />
+                                <Link href="https://github.com/r2apecuaria" target="_blank">
+                                    R2A Cobrança Pecuária
                                 </Link>
                             </div>
                         </div>
@@ -45,18 +38,28 @@ export default function Home() {
                                     Steamfolio
                                 </Link>
                             </div>
+                            /
                             <div className="link">
                                 <img src="https://webessentials.vercel.app/favicon.png" />
                                 <Link href="https://webessentials.vercel.app/" target="_blank">
                                     Essentials
                                 </Link>
                             </div>
+                            /
+                            <div className="link">
+                                <img src="https://zentrystore.vercel.app/logo.png" />
+                                <Link href="https://zentrystore.vercel.app/" target="_blank">
+                                    Zentry Store
+                                </Link>
+                            </div>
+                            /
                             <div className="link">
                                 <img src="https://findyourpet.vercel.app/logo.png" />
                                 <Link href="https://findyourpet.vercel.app/" target="_blank">
                                     FindYourPet
                                 </Link>
                             </div>
+                            /
                             <div className="link">
                                 <img src="https://github.com/Yagasaki7K.png" />
                                 <Link href="https://github.com/Yagasaki7K/feature-liquidglass" target="_blank">
@@ -67,27 +70,30 @@ export default function Home() {
                         <div className="p">
                             Core team of
                             <div className="link">
-                                <img src="https://github.com/kindredsoftware.png" />
-                                <Link href="https://github.com/kindredsoftware" target="_blank">
-                                    @KindredSoftware
-                                </Link>
-                            </div>
-                            <div className="link">
                                 <img src="https://github.com/engide.png" />
                                 <Link href="https://github.com/engide" target="_blank">
-                                    @Engide
+                                    Engide
                                 </Link>
                             </div>
+                            /
                             <div className="link">
-                                <img src="https://github.com/byteonegroup.png" />
-                                <Link href="https://github.com/byteonegroup" target="_blank">
-                                    @ByteOneGroup
+                                <img src="https://github.com/r2apecuaria.png" />
+                                <Link href="https://github.com/r2apecuaria" target="_blank">
+                                    R2A
                                 </Link>
                             </div>
+                            /
+                            <div className="link">
+                                <img src="https://github.com/kindredsoftware.png" />
+                                <Link href="https://github.com/kindredsoftware" target="_blank">
+                                    Kindred Software
+                                </Link>
+                            </div>
+                            /
                             <div className="link">
                                 <img src="https://github.com/kalify-inc.png" />
                                 <Link href="https://github.com/kalify-inc" target="_blank">
-                                    @KalifyInc
+                                    Kalify Community
                                 </Link>
                             </div>
                         </div>
@@ -121,7 +127,7 @@ export default function Home() {
                             Twitter
                         </Link>
                         &nbsp;
-                        <Link href="https://twitter.com/yagasaki7k" target="_blank">
+                        <Link href=" https://discord.gg/jhSepmE7nN" target="_blank">
                             Discord Server
                         </Link>
                         &nbsp;
