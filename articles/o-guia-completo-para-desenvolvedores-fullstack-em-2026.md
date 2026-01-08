@@ -1688,7 +1688,7 @@ Não otimize ou refatore prematuramente. Mas refatore quando:
 
 Refatore incrementalmente, não em grandes reescritas. Pequenas melhorias se acumulam.
 
-# Ferramentas de IA e Automação no Desenvolvimento fullstack
+# Ferramentas de IA e Automação no Desenvolvimento Fullstack
 
 Vamos abordar o elefante na sala: a IA está mudando a forma como escrevemos código. Se você não estiver usando ferramentas de IA em 2026, estará trabalhando mais do que o necessário.
 
@@ -1759,7 +1759,8 @@ Para obter bons resultados com IA, é necessário um bom input:
 - Verificar o token usando a biblioteca jsonwebtoken
 - Adicionar o objeto de usuário decodificado a req.user
 - Retornar 401 se o token estiver ausente ou inválido
-- Lidar com tokens expirados com mensagens de erro específicas Usar TypeScript com tipos apropriados"
+- Lidar com tokens expirados com mensagens de erro específicas
+- Usar TypeScript com tipos apropriados
 
 Seja específico sobre:
 
@@ -1966,7 +1967,7 @@ Esta é a eterna tensão. A resposta é sempre "depende".
 **Aja rapidamente quando:**
 
 - Você estiver validando uma ideia
-- Você estiver construindo um MVP (Produto Viável Mínimo)
+- Você estiver construindo um MVP (Minimo Produto Viável do inglês - Minimal Viable Product)
 - O código for descartável
 - Os riscos forem baixos
 
@@ -2098,7 +2099,7 @@ A maioria das coisas não vale a pena brigar:
 
 Guarde seu capital político para coisas que realmente importam.
 
-# Crescimento na Carreira: Desenvolvedor fullstack Júnior a Sênior
+# Crescimento na Carreira: Desenvolvedor Fullstack Júnior a Sênior
 
 Vamos falar sobre progressão na carreira e o que é realmente necessário para avançar. Não se trata apenas de habilidades técnicas — trata-se de impacto e liderança.
 
@@ -2499,9 +2500,9 @@ Ter pessoas com quem tirar dúvidas e compartilhar dificuldades torna a jornada 
 **Encontrando um mentor:**
 
 - Alguém com 2 a 3 anos de experiência costuma ser a melhor opção (eles se lembram das suas dificuldades)
-- Faça perguntas específicas, não apenas "você pode me ser mentor?"
+- Faça perguntas específicas, não apenas "você pode ser meu mentor?"
 - Mostre que você valoriza o tempo dele
-- A mentoria pode ser informal (bate-papos informais, mensagens diretas no Slack)
+- A mentoria pode ser informal (bate-papos informais, mensagens diretas no Slack ou Discord)
 
 **Sendo um mentor:**
 Mesmo como iniciante, você pode ajudar pessoas que estão começando agora. Ensinar reforça o seu próprio conhecimento.
@@ -2639,7 +2640,10 @@ Você aprende fazendo, errando e corrigindo. Construa projetos. Cometa erros. De
 Qualquer pessoa pode seguir um tutorial. Entender por que as decisões são tomadas, por que os padrões existem, por que as arquiteturas funcionam — é isso que diferencia os bons desenvolvedores dos excelentes.
 
 **4. Código é comunicação:**
-Você está escrevendo código para humanos, não para computadores. Escreva código claro e de fácil manutenção que seus colegas de equipe (e você no futuro) possam entender. 5. Segurança e desempenho não são opcionais: Crie aplicações seguras e rápidas desde o início. Não são coisas que você adiciona depois.
+Você está escrevendo código para humanos, não para computadores. Escreva código claro e de fácil manutenção que seus colegas de equipe (e você no futuro) possam entender.
+
+**5. Segurança e desempenho não são opcionais:**
+Crie aplicações seguras e rápidas desde o início. Não são coisas que você adiciona depois.
 
 **6. Habilidades interpessoais são tão importantes quanto as habilidades técnicas:**
 Comunicação, colaboração, empatia, mentoria — são essas habilidades que permitem que você tenha impacto além do seu próprio código.
