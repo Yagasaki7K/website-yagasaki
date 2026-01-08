@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
         return (
             <Html lang="pt-br">
                 <NextSeo
-                    title="Anderson Marlon"
+                    title="Anderson Marlon | Software Engineer"
                     description="Hey! I’m Anderson Marlon, a software engineer and indie hacker - i'm netrunner btw."
                     canonical={`https://yagasaki.vercel.app/`}
                     openGraph={{
