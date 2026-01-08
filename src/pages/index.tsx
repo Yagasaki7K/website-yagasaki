@@ -127,7 +127,7 @@ export default function Home() {
                             Twitter
                         </Link>
                         &nbsp;
-                        <Link href=" https://discord.gg/jhSepmE7nN" target="_blank">
+                        <Link href="https://discord.gg/jhSepmE7nN" target="_blank">
                             Discord Server
                         </Link>
                         &nbsp;
