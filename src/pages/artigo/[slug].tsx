@@ -8,11 +8,21 @@ import calculateReadingTime from "@/utils/calculateReadingTime";
 import formatDate from "@/utils/formatDate";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
+import Script from "next/script";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Frontmatter } from "@/types/Frontmatter";
 import { PostProps } from "@/types/PostProps";
 import { incrementArticleView } from "@/utils/redisClient";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    hljs?: {
+      highlightAll: () => void;
+    };
+  }
+}
 
 export const getServerSideProps: GetServerSideProps<PostProps> = async ({
   params,
@@ -97,6 +107,12 @@ export default function PostPage({
 
   const formattedViews = new Intl.NumberFormat("pt-BR").format(viewCount ?? 0);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.hljs?.highlightAll();
+    }
+  }, [content]);
+
   return (
     <>
       <NextSeo
@@ -136,7 +152,16 @@ export default function PostPage({
           type="image/png"
           href="https://github.com/Yagasaki7K.png"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+        />
       </Head>
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        strategy="afterInteractive"
+        onLoad={() => window.hljs?.highlightAll()}
+      />
 
       <Navigation />
 

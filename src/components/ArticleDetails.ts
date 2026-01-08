@@ -452,10 +452,21 @@ const ArticleDetails = styled.div`
         }
 
         pre {
-            margin: 0;
+            margin: 1rem 0;
+            border-radius: 8px;
+            overflow: auto;
         }
 
-        code {
+        pre code {
+            display: block;
+            padding: 1rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            white-space: pre;
+        }
+
+        :not(pre) > code {
             position: relative;
             background-color: var(--code);
             color: var(--pink);
