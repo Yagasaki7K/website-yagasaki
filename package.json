@@ -16,7 +16,7 @@
         "dayjs": "^1.11.19",
         "eslint-config-next": "^16.1.1",
         "feed": "^5.1.0",
-        "framer-motion": "^12.24.10",
+        "framer-motion": "^12.25.0",
         "gray-matter": "^4.0.3",
         "jspdf": "^3.0.4",
         "jspdf-autotable": "^5.0.7",
@@ -33,7 +33,7 @@
         "@types/node": "^20.19.27",
         "@types/react": "^19.2.7",
         "@types/react-dom": "^19.2.3",
-        "baseline-browser-mapping": "^2.9.12",
+        "baseline-browser-mapping": "^2.9.14",
         "typescript": "^5.9.3"
     }
 }
