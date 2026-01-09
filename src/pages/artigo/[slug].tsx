@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import { GetServerSideProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import ArticleDetails from "@/components/ArticleDetails";
 import calculateReadingTime from "@/utils/calculateReadingTime";
 import formatDate from "@/utils/formatDate";
@@ -13,7 +13,6 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Frontmatter } from "@/types/Frontmatter";
 import { PostProps } from "@/types/PostProps";
-import { incrementArticleView } from "@/utils/redisClient";
 import { useEffect } from "react";
 
 declare global {
@@ -24,9 +23,22 @@ declare global {
   }
 }
 
-export const getServerSideProps: GetServerSideProps<PostProps> = async ({
-  params,
-}) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const articlesDirectory = path.join("articles");
+  const fileNames = fs.readdirSync(articlesDirectory);
+  const paths = fileNames
+    .filter((fileName) => fileName.endsWith(".md"))
+    .map((fileName) => ({
+      params: { slug: fileName.replace(/\.md$/, "") },
+    }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
   const slug = params?.slug as string;
   if (!slug) {
     return { notFound: true };
@@ -70,19 +82,12 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async ({
 
   const renderedContent = await marked(content);
 
-  let viewCount = 0;
-  try {
-    viewCount = await incrementArticleView(slug);
-  } catch (error) {
-    console.error("Failed to register article view", error);
-  }
-
   return {
     props: {
       frontmatter: validatedFrontmatter,
       slug,
       content: renderedContent || "",
-      viewCount,
+      viewCount: 0,
       date: validatedFrontmatter.date ?? "",
       readingTime: calculateReadingTime(renderedContent || ""),
     },
@@ -92,7 +97,6 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async ({
 export default function PostPage({
   frontmatter,
   content = "",
-  viewCount = 0,
 }: PostProps) {
   if (
     !frontmatter ||
@@ -104,8 +108,6 @@ export default function PostPage({
   ) {
     return <p>Conteúdo não disponível</p>;
   }
-
-  const formattedViews = new Intl.NumberFormat("pt-BR").format(viewCount ?? 0);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
