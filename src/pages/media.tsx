@@ -7,6 +7,7 @@ import { movie } from "../../content/movie";
 import { game } from "../../content/game";
 import { book } from "../../content/book";
 import { useState } from "react";
+import Head from "next/head";
 
 const MediaDetails = styled.div`
     display: flex;
@@ -200,6 +201,10 @@ export default function MediaPage() {
     const [tag, setTag] = useState("anime");
     return (
         <>
+            <Head>
+                <title>Media - Anderson Marlon</title>
+                <link rel="icon" type="image/png" href="/campinasfighters.png" />
+            </Head>
             <Navigation />
             <MediaDetails>
                 <article>

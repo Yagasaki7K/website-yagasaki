@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const countPhotos = 50;
 
@@ -123,6 +124,10 @@ export default function PhotoPage() {
 
     return (
         <>
+            <Head>
+                <title>Gallery - Anderson Marlon</title>
+                <link rel="icon" type="image/png" href="/campinasfighters.png" />
+            </Head>
             <Navigation />
             <Gallery>
                 {Array.from({ length: countPhotos }).map((_, i) => {

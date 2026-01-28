@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -137,6 +138,10 @@ const UseDetails = styled.div`
 export default function UsePage() {
     return (
         <>
+            <Head>
+                <title>Setup - Anderson Marlon</title>
+                <link rel="icon" type="image/png" href="/campinasfighters.png" />
+            </Head>
             <Navigation />
             <UseDetails>
                 <h1 className="title">Use</h1>

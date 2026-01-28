@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Anderson Marlon</title>
+                <title>SaaS - Anderson Marlon</title>
                 <link rel="icon" type="image/png" href="https://github.com/yagasaki7k.png" />
             </Head>
 

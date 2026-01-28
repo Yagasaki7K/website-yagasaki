@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -182,35 +183,37 @@ const AboutDetails = styled.div`
 export default function AboutPage() {
     return (
         <>
+            <Head>
+                <title>About Me - Anderson Marlon</title>
+                <link rel="icon" type="image/png" href="/campinasfighters.png" />
+            </Head>
             <Navigation />
             <AboutDetails>
                 <article>
                     <h1 className="title">About me</h1>
-                    <h1>Software Engineer, Fullstack Engineer and Black Belt Taekwondo (not relevant)</h1>
+                    <h1>Software Engineer at @R2A</h1>
                     <p>
-                        Experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, RegEx, UI/UX, Responsive Design, Firebase,
-                        Supabase, Hasura, SQL Lite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, Elysia.js, NestJS, Bun.js, Whatsapp
-                        API, Rocketchat, Serverless, Microservices and more …
+                        Experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, Responsive Design, Firebase, Supabase, Hasura,
+                        SQLite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, Elysia.js, NestJS, Bun.js, Whatsapp API, Rocketchat,
+                        Serverless and Microservices
                     </p>
-                    <br />
-                    <p>Technology Enthusiast, Specialized in Web and Self-taught.</p>
 
                     <div>
                         <h2 className="subTitle">Skills and expertise</h2>
                         <p>
-                            <strong>Languages:</strong> Javascript / Typescript, Python
+                            <strong>Languages:</strong> Javascript / Typescript & Python
                         </p>
                         <p>
-                            <strong>Frontend:</strong> React.js, Next.js & Vite
+                            <strong>Frontend:</strong> React.js (Vite) & Next.js
                         </p>
                         <p>
-                            <strong>Backend:</strong> Node.js, Bun, Express, Fastify, Elysia.js & Nest.js
+                            <strong>Backend:</strong> Node.js, Bun.js, Express, Fastify, Elysia.js & Nest.js
                         </p>
                         <p>
-                            <strong>Database:</strong> Prisma, Hasura, Firebase, Supabase, MySQL, PostgreSQL & SQL Lite
+                            <strong>Database:</strong> Prisma, Hasura, Firebase, Supabase, MySQL, PostgreSQL & SQLite
                         </p>
                         <p>
-                            <strong>Testing:</strong> Node.js, Bun.js, Storybook & Jest
+                            <strong>Testing:</strong> Node:test, Bun:test, Storybook & Jest
                         </p>
                         <p>
                             <strong>DevOps:</strong> Docker, Vercel, CI/CD & Github Actions
@@ -237,7 +240,7 @@ export default function AboutPage() {
                             <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Actually
                         </h3>
                         <li>&nbsp;</li>
-                        <p className="description">Using Node.js, WhatsApp API, Next.js, Discord Webhook, Python, React.js, Supabase</p>
+                        <p className="description">Using Bun.js, Next.js, Discord Webhook, Python, PWA, Supabase & Docusaurus</p>
 
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025
