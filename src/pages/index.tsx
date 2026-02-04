@@ -24,6 +24,13 @@ export default function Home() {
                         <div className="p">
                             Working at
                             <div className="link">
+                                <img src="https://meuboi.com.br/logo.png" />
+                                <Link href="https://meuboi.com.br" target="_blank">
+                                    MeuBoi
+                                </Link>
+                            </div>
+                            /
+                            <div className="link">
                                 <img src="https://github.com/r2apecuaria.png" />
                                 <Link href="https://github.com/r2apecuaria" target="_blank">
                                     R2A Cobrança Pecuária
@@ -34,7 +41,7 @@ export default function Home() {
                             Creator of
                             <div className="link">
                                 <img src={steam} />
-                                <Link href="https://steamfolio.vercel.app/logo.png" target="_blank">
+                                <Link href="https://steamfolio.vercel.app/" target="_blank">
                                     Steamfolio
                                 </Link>
                             </div>

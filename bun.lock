@@ -8,7 +8,7 @@
         "dayjs": "^1.11.19",
         "eslint-config-next": "^16.1.6",
         "feed": "^5.2.0",
-        "framer-motion": "^12.29.2",
+        "framer-motion": "^12.31.0",
         "gray-matter": "^4.0.3",
         "jspdf": "^3.0.4",
         "jspdf-autotable": "^5.0.7",
@@ -21,8 +21,8 @@
         "styled-components": "^6.3.8",
       },
       "devDependencies": {
-        "@biomejs/biome": "^2.3.13",
-        "@types/node": "^20.19.30",
+        "@biomejs/biome": "^2.3.14",
+        "@types/node": "^20.19.31",
         "@types/react": "^19.2.10",
         "@types/react-dom": "^19.2.3",
         "baseline-browser-mapping": "^2.9.19",
@@ -225,7 +225,7 @@
 
     "@types/raf": ["@types/raf@3.4.3", "", {}, "sha512-c4YAvMedbPZ5tEyxzQdMoOhhJ4RD3rngZIdwC2/qDN3d7JpEhB6fiBRKVY1lg5B7Wk+uPBjn5f39j1/2MY1oOw=="],
 
-    "@types/react": ["@types/react@19.2.10", "", { "dependencies": { "csstype": "^3.2.2" } }, "sha512-WPigyYuGhgZ/cTPRXB2EwUw+XvsRA3GqHlsP4qteqrnnjDrApbS7MxcGr/hke5iUoeB7E/gQtrs9I37zAJ0Vjw=="],
+    "@types/react": ["@types/react@19.2.11", "", { "dependencies": { "csstype": "^3.2.2" } }, "sha512-tORuanb01iEzWvMGVGv2ZDhYZVeRMrw453DCSAIn/5yvcSVnMoUMTyf33nQJLahYEnv9xqrTNbgz4qY5EfSh0g=="],
 
     "@types/react-dom": ["@types/react-dom@19.2.3", "", { "peerDependencies": { "@types/react": "^19.2.0" } }, "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ=="],
 
