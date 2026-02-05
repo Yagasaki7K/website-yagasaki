@@ -13,7 +13,7 @@ Isso é o Zettelkasten, isso é basicamente um _note-taking_ dos meus estudos. S
 Fique à vontade para usar como base de estudos, se necessário.
 
 Primeira atualização: 03 de Fevereiro de 2026
-Última atualização: 03 de Fevereiro de 2026
+Última atualização: 05 de Fevereiro de 2026
 
 ---
 
@@ -54,6 +54,8 @@ texto := "value" // 4. Tipado automaticamente e valor inicial sendo value / decl
 
 fmt.Println(texto)
 ```
+
+Utilizar o `:=` é basicamente uma criação curta, então por debaixo dos panos seria a mesma coisa de colocar uma variável, setar o tipo dela - já que podemos passar um valor - e atribuir um valor a ela tudo em uma curta chamada, conforme exemplo acima. Também conhecida como **declaração curta**
 
 ## Quais são os tipos simples:
 
@@ -144,3 +146,33 @@ func main() {
 ```
 
 ### Condicionais
+
+A expressão if, else e if else, possuem a mesma estrutura que o Javascript, a diferença é que não precisa de colchetes ().
+
+Uma maneira de fazer uma declaração curta, é criar a variável dentro da condicional.
+
+```go
+func main() {
+    if err := thisIsAnError(); err != nil {
+        fmt.Println(err.Error())
+    }
+}
+
+func thisIsAnError() error {
+    return errors.New("This is an error")
+}
+```
+
+Outro exemplo envolvendo `map` que pode ser útil em situações mais avançadas.
+
+```go
+func main() {
+    players := map[string]int {
+        "lais": 26
+    }
+
+    if value, ok := players["lais"]; ok {
+        fmt.Println("Pontos:", value, ok)
+    }
+}
+```
