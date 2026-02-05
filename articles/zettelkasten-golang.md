@@ -211,7 +211,7 @@ func main() {
 }
 ```
 
-E quanto a laços de repetição? No caso o `for`
+E quanto a laços de repetição? No caso o `for`:
 
 ```go
 package main
@@ -342,3 +342,35 @@ func main() {
 ```
 
 Também é possível colocar uma `struct`, conforme o exemplo em que usamos uma `struct Endereco` dentro da `struct Cliente`.
+
+## Funções
+
+```go
+package main
+
+func main() {
+    fmt.Println(soma(1, 2))
+}
+
+func soma(a, b int) string {
+    return a + b
+}
+```
+
+No caso precisamos criar a `function`, com o seu nome, no caso `soma` e nele, precisamos declarar o tipo do parametro `int` e o tipo de retorno sendo o segundo `int`, então, é uma linguagem tipada. Se caso não tenha o tipo de retorno, ela simplesmente será declarada como `void`, e não possui retorno algum - dará erro se existir algum `return` na função.
+
+Existe a possibilidade também de criar uma `function` vinculada a uma variável, como é o exemplo abaixo. E a vantagem desse cenário, é que ele pode pegar variáveis externas (fora do escopo) para serem lidas, diferente de uma `function` fora do `main()` que receberá apenas o valor através de parametros.
+
+```go
+package main
+
+function main() {
+    var valorFixo = 5
+    multiplica := func(valorParams int) int {
+        return valorParms * valorFixo
+    }
+
+    resultado := multiplica(5)
+    fmt.Println(resultado)
+}
+```
