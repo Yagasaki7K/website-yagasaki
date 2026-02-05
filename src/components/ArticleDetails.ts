@@ -455,25 +455,68 @@ const ArticleDetails = styled.div`
             margin: 1rem 0;
             border-radius: 8px;
             overflow: auto;
+            background: #282a36;
+            border: 1px solid #44475a;
         }
 
         pre code {
             display: block;
             padding: 1rem;
-            font-family: "JetBrains Mono", monospace;
+            font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
             font-size: 14px;
             line-height: 1.5;
             white-space: pre;
+            color: #f8f8f2;
+            background: #282a36;
+        }
+
+        pre code .hljs-comment,
+        pre code .hljs-quote {
+            color: #6272a4;
+        }
+
+        pre code .hljs-keyword,
+        pre code .hljs-selector-tag,
+        pre code .hljs-literal,
+        pre code .hljs-type {
+            color: #ff79c6;
+        }
+
+        pre code .hljs-title,
+        pre code .hljs-title.function_,
+        pre code .hljs-function .hljs-title,
+        pre code .hljs-variable,
+        pre code .hljs-attr,
+        pre code .hljs-property {
+            color: #50fa7b;
+        }
+
+        pre code .hljs-string,
+        pre code .hljs-subst,
+        pre code .hljs-meta .hljs-string {
+            color: #f1fa8c;
+        }
+
+        pre code .hljs-number,
+        pre code .hljs-symbol,
+        pre code .hljs-bullet {
+            color: #bd93f9;
+        }
+
+        pre code .hljs-built_in,
+        pre code .hljs-doctag {
+            color: #8be9fd;
         }
 
         :not(pre) > code {
             position: relative;
-            background-color: var(--code);
-            color: var(--pink);
+            background-color: #282a36;
+            color: #f1fa8c;
+            border: 1px solid #44475a;
             border-radius: 8px;
             margin: 1rem 0;
             padding: 0.25rem 0.5rem;
-            font-family: "JetBrains Mono", monospace;
+            font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
             font-size: 14px;
             line-height: 1.4;
             overflow: auto;
