@@ -1,5 +1,5 @@
 ---
-title: Zettelkasten - Go Lang
+title: Zettelkasten - Introdução ao Go Lang
 excerpt: "Isso é o Zettelkasten, isso é basicamente um _note-taking_ dos meus estudos. Será apenas consultado em revisões futuras. Fique à vontade para usar como base d estudos, se necessário."
 image: https://safebooru.org//samples/4619/sample_d3e96e81f2591af055bb8f9c5312d2d0d1d5c991.jpg?4859150
 tags: ["Zettelkasten", "Estudo", "Go"]
@@ -93,6 +93,8 @@ fmt.Println(array)
 
 O tamanho de array é imutável.
 
+---
+
 ### Slice
 
 ```go
@@ -103,6 +105,8 @@ fmt.Println(len(array)) // Verifica o tamanho do array, return is 1
 
 fmt.Println(array)
 ```
+
+---
 
 ### Divisão de slice
 
@@ -120,9 +124,12 @@ fmt.Println(array) // [first item, second item]
 
 O tamanho de slice é indefinido (no limit). O `append` manterá o valor original e adicionará um novo.
 
+---
+
 ### Uso de Map
 
 ```go
+package main
 func main() {
     var pessoas = map[string]int{}
 
@@ -145,13 +152,16 @@ func main() {
     fmt.Println(pessoas) // [leo:32]
 ```
 
+---
+
 ### Condicionais
 
-A expressão if, else e if else, possuem a mesma estrutura que o Javascript, a diferença é que não precisa de colchetes ().
+A expressão `if`, `else` e `if else`, possuem a mesma estrutura que o Javascript, a diferença é que não precisa de colchetes ().
 
 Uma maneira de fazer uma declaração curta, é criar a variável dentro da condicional.
 
 ```go
+package main
 func main() {
     if err := thisIsAnError(); err != nil {
         fmt.Println(err.Error())
@@ -166,6 +176,7 @@ func thisIsAnError() error {
 Outro exemplo envolvendo `map` que pode ser útil em situações mais avançadas.
 
 ```go
+package main
 func main() {
     players := map[string]int {
         "lais": 26
@@ -176,3 +187,158 @@ func main() {
     }
 }
 ```
+
+Imaginando o cenário de `switch case` para evitar 5-10x `if else` na sua aplicação.
+
+```go
+package main
+import "time"
+
+func main() {
+    fmt.Println("Quando que é sábado?")
+    today := time.Now().Weekday()
+
+    switch time.Saturday{
+        case today + 0:
+            fmt.Println("É hoje!")
+        case today + 1:
+            fmt.Println("É amanhã!")
+        case today + 2:
+            fmt.Printlm("É em dois dias")
+        default:
+            fmt.Println("Tá longe ainda ..")
+    }
+}
+```
+
+E quanto a laços de repetição? No caso o `for`
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    sum := 0
+
+    for i := 0; i < 10; i++ {
+        fmt.Println(i)
+        sum += i
+    }
+
+    fmt.Println(sum)
+}
+```
+
+No Go não existe `while` já que a proposta da linguagem é ser direta e limpa, por isso, o próprio `for` consegue colocar condicionais dentro de seu próprio looping.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    sum := 0
+
+    for sum < 20 {
+        fmt.Println("Looping", sum)
+        sum += 2
+    }
+
+    fmt.Println(sum)
+}
+```
+
+Existe também como fazer um looping com base no `slice` com mesmo tipos.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    nums := []int{1,2,3,4,5}
+
+    for i := 0; i < len(nums); i++ {
+        fmt.Println(nums[i])
+    }
+}
+```
+
+---
+
+Temos também o `range` que é a forma idiomática de iterar sobre coleções em Go. O retorno da função abaixo será `0 1`, `1 2`, `2 3`, `3 4`, `4 5` e assim por diante.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    nums := []int{1,2,3,4,5}
+
+    for key, value := range nums {
+        fmt.Println(key, value)
+    }
+}
+```
+
+O `range` permite acessar o valor do elemento com mais facilidade e identificar com mais precisão a posição dele na coleção.
+
+---
+
+Se caso for necessário não chamar em memória alguma função ou utilidade, como o caso do `for` que precisamos definir `key` e `value`, simplesmente, podemos
+pedir ao Go para não renderizar e ocultar essa funcionalidade através do `_`, ele simplesmente não irá renderizar.
+
+**O que acontece se eu chamar um `for` no Google, contendo `_` e `value`, e simplesmente pedir o `fmt.Println(_)`, ele irá renderizar ou dará erro?**
+
+Dará **erro de compilação**.
+
+O compilador retornará a mensagem: `cannot use _ as value`.
+
+**Motivo:** O `_` é o _blank identifier_ (identificador em branco). Ele serve exclusivamente para descartar valores. Você não pode lê-lo, usá-lo em expressões ou passá-lo como argumento para funções como o `fmt.Println`.
+
+## Tipagem no Go
+
+### Structs
+
+A tipagem é semelhate ao Typescript por si só e eu acredito que tenha a mesma visibilidade que o PrismaORM. Também familiariamente visto como as classes em orientação a objetos.
+
+```go
+package main
+
+type Cliente struct {
+    Nome string
+    Idade int
+    Endereco Endereco
+    Email string
+}
+
+type Endereco struct {
+    Rua string
+    Numero int
+    Complemento string
+}
+
+func main() {
+    cliente1 := Cliente{
+        Nome: "Anderson"
+        Idade: 29,
+        Endereco: Endereco {
+            Rua: "Rua dos Alfineiros",
+            Numero: 130,
+            Complemento: "Casa"
+        }
+    }
+
+    cliente1.Email = "alfineiros@gmail.com" // É possível adicionar informação posteriormente
+
+    fmt.Println(cliente1.Nome)
+    fmt.Println(client1.Endereco.Numero) // 130
+
+    cliente1.Endereco.Numero = 13
+    fmt.Println(client1.Endereco.Numero) // 13
+}
+```
+
+Também é possível colocar uma `struct`, conforme o exemplo em que usamos uma `struct Endereco` dentro da `struct Cliente`.
