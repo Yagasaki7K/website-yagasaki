@@ -1,5 +1,5 @@
 ---
-title: Zettelkasten - Introdução ao Go Lang
+title: Zettelkasten - Introdução ao Go Lang (WIP)
 excerpt: "Isso é o Zettelkasten, isso é basicamente um _note-taking_ dos meus estudos. Será apenas consultado em revisões futuras. Fique à vontade para usar como base d estudos, se necessário."
 image: https://dkrn4sk0rn31v.cloudfront.net/uploads/2022/10/o-que-e-e-como-comecar-com-golang.jpg
 tags: ["Zettelkasten", "Estudo", "Go"]
@@ -372,5 +372,222 @@ function main() {
 
     resultado := multiplica(5)
     fmt.Println(resultado)
+}
+```
+
+### Métodos
+
+São funções "amarradas" as `stricts`:
+
+```go
+package main
+
+type Pessoa struct {
+    Nome string
+    Idade int
+}
+
+func (person Pessoa) Apresentar() {
+    fmt.Printf("Olá, meu nome é %s, eu tenho %d anos\n", person.Nome, person.Idade)
+}
+
+func main() {
+    p1 := Pessoa{Nome: "Anderson", Idade: 29}
+    p1.Apresentar();
+}
+```
+
+## Ponteiros (explicação simples em Go)
+
+De forma simples, **ponteiros servem para permitir que uma função ou método modifique o valor original de uma variável**.
+
+Em Go, **todos os valores são passados por valor**, inclusive `structs`.  
+Isso significa que, quando uma `struct` é passada para um método **sem ponteiro**, o método recebe **uma cópia** dessa `struct`.
+
+### O que isso significa na prática?
+
+Suponha que temos um método `Apresentar()` - como no exemplo acima e, dentro dele, alteramos:
+
+```go
+person.Nome = "Garfield"
+```
+
+Se `Apresentar()` recebe a `struct` **por valor**, essa alteração acontece **apenas na cópia**.
+O valor original, definido na `main()` como `"Anderson"`, **permanece inalterado**.
+
+Por isso, fora do método, o nome continuará sendo **Anderson**.
+
+**Como permitir que o valor seja alterado?**
+
+Para que a função ou método consiga **modificar o valor original**, devemos usar **ponteiros**.
+
+Quando usamos um ponteiro, a função não recebe uma cópia do valor, e sim **o endereço de memória onde esse valor está armazenado**.
+Assim, qualquer alteração feita através do ponteiro afeta diretamente o valor original.
+
+Variável comum:
+
+```go
+var x int = 100
+```
+
+Ponteiro para a variável:
+
+```go
+var y *int = &x
+```
+
+- `y` guarda **o endereço de memória de `x`**
+- `*y` representa **o valor armazenado nesse endereço**, ou seja, `100`
+
+Relação entre ponteiro e valor:
+
+Se alterarmos o valor de `x`:
+
+```go
+x = 200
+```
+
+O valor acessado por `*y` também será `200`.
+
+Da mesma forma, se alterarmos usando o ponteiro:
+
+```go
+*y = 300
+```
+
+O valor de `x` passará a ser `300`.
+
+Isso acontece porque **`x` e `*y` apontam para o mesmo local na memória**.
+
+- Em Go, tudo é passado por **valor**
+- Funções que recebem `struct` por valor trabalham com **cópias**
+- **Ponteiros permitem mutação do valor original**
+- Use ponteiros quando:
+    - precisar alterar o valor
+    - quiser evitar cópias grandes
+
+- Use valores quando:
+    - quiser segurança e isolamento
+
+Ponteiros não tornam o código mais “preciso” — eles tornam o código **mutável**.
+
+Outro exemplo:
+
+```go
+func main() {
+	var p1 = Pessoa{Nome: "Lais"}
+	var p2 = Pessoa{Nome: "Roberta"}
+
+	fmt.Println(p1, p2) // {Lais}, {Roberta}
+
+	var p3 *Pessoa = &p2
+	p3.Nome = "Estevam"
+
+	fmt.Println(p1) // {Lais}
+	fmt.Println(p2) // {Estevam}
+	fmt.Println(p3.Nome) // Estevam
+}
+```
+
+E como seria sem ponteiro:
+
+```go
+func main() {
+	var p1 = Pessoa{Nome: "Lais"}
+
+	fmt.Println(p1) // {Lais}
+
+	var p3 Pessoa = p1
+	p3.Nome = "Roberta"
+
+	fmt.Println(p1) // {Lais}
+	fmt.Println(p3.Nome) // Roberta
+}
+```
+
+## Concorrência
+
+Lidar com concorrência é gerenciar várias tarefas em progresso ao mesmo tempo, mesmo quando o poder de processamento é limitado. Isso inclui criptografia, acessos simultâneos e múltiplas conexões HTTP sendo tratadas de forma intercalada.
+
+Go foi projetado exatamente para facilitar esse modelo de concorrência.
+
+Diferente das threads, que são gerenciadas pelo sistema operacional, Go utiliza goroutines, que são unidades de execução leves gerenciadas pelo runtime da própria linguagem. O runtime do Go distribui essas goroutines sobre threads do sistema operacional de forma eficiente.
+
+Dica: Se a função principal (main) for encerrada antes da goroutine rodar, o programa será encerrado independente do que precisa ser rodada.
+
+A sintaxe para rodar uma `goroutine` é bem simples, é só chamar a palavra reservada `go`
+
+```go
+package main
+
+func getMessage() {
+    fmt.Println("Hello Routine!")
+}
+
+func main() {
+    go getMessage()
+    fmt.Println("Hi Main Function")
+}
+```
+
+Vale lembrar que **goroutines não possuem ordem de execução garantida**. Elas podem ser executadas mais cedo ou mais tarde, dependendo das decisões do **scheduler do runtime do Go** e do tempo de execução de cada função.
+
+Por isso, se chamarmos duas funções — por exemplo, `go getHello()` e `go getWorld()` — para serem executadas concorrentemente dentro de um loop, o resultado pode variar a cada execução. Saídas como `Hello, Hello, World, Hello, World, World` são perfeitamente possíveis.
+
+Isso acontece porque **a ordem não é determinística**; o que define o resultado é o tempo de execução de cada goroutine e o escalonamento feito pelo runtime, desde que a função `main()` não seja encerrada antes da conclusão das goroutines.
+
+### Channels
+
+Channels são usados para comunicação e sincronização entre `goroutine`, permitindo o envio e recebimento de valores de forma segura.
+
+Embora possam ser utilizados para sinalizar quando uma `goroutine` terminou sua execução, `channel` não finalizam a função `main` por conta própria — eles apenas fornecem um mecanismo para que a `main` saiba quando pode encerrar com segurança.
+
+```go
+package main
+
+func main() {
+    ch := make(chan int, 3) // 3 = Size of buffer
+
+    go func() {
+        for i := 0; i < 5; i++ {
+            ch <- i
+        }
+        close(ch)
+        fmt.Println("Routine finished")
+    }()
+
+    time.Sleep(time.Second * 1)
+    for value := range ch {
+        fmt.Println("Reading", value)
+    }
+}
+```
+
+E qual seria os exemplos mais úteis para esse cenário, um deles seria pipeline, sistema de mensageria, enfim.
+
+```go
+func producer(c chan int) {
+    for i := 0; i < 5; i++ {
+        c <- 1
+    }
+
+    close(c)
+}
+
+func consumer(c chan int) {
+    for v := range c {
+        fmt.Println(v)
+    }
+
+    fmt.Println("Finished consumer")
+}
+
+func main() {
+    ch := make(chan int)
+
+    go producer(ch)
+    go consumer(ch)
+
+    time.Sleep(time.Second * 1)
 }
 ```
