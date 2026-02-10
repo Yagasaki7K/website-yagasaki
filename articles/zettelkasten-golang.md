@@ -588,6 +588,6 @@ func main() {
     go producer(ch)
     go consumer(ch)
 
-    time.Sleep(time.Second * 1)
+    time.Sleep(time.Second * 1  )
 }
 ```
