@@ -193,9 +193,8 @@ export default function AboutPage() {
                     <h1 className="title">About me</h1>
                     <h1>Software Engineer at @R2A</h1>
                     <p>
-                        Experience in Javascript, Typescript, React.js, Next.js, Vite, Sass, Redux, Responsive Design, Firebase, Supabase, Hasura,
-                        SQLite, MySQL, PostgreSQL, GraphQL, Jest, Node.js, Express, Fastify, Elysia.js, NestJS, Bun.js, Whatsapp API, Rocketchat,
-                        Serverless and Microservices
+                        Full Stack Software Engineer with solid experience in scalable architectures (Node.js/Go). Specialist in process optimization,
+                        reducing execution times by up to 35% and increasing conversions by 28% through AI and payment integrations (Stripe).
                     </p>
 
                     <div>
@@ -237,10 +236,17 @@ export default function AboutPage() {
                         </p>
 
                         <h3 className="titleJob">
-                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Actually
+                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Present
                         </h3>
-                        <li>&nbsp;</li>
-                        <p className="description">Using Bun.js, Next.js, Discord Webhook, Python, PWA, Supabase & Docusaurus</p>
+                        <li>
+                            I developed a complete livestock management platform (MeuBoi) from scratch using Go (formerly Bun.js) for a
+                            high-performance backend and Next.js for a responsive frontend, handling complex business logic and financial statements.
+                        </li>
+                        <li>
+                            I implemented real-time analytics dashboards and PWA capabilities, enabling offline access and improving data
+                            accessibility for users in areas with limited connectivity.
+                        </li>
+                        <p className="description">Using Bun.js, Next.js, Discord Webhook, Python, PWA, Go Lang, Supabase & Docusaurus</p>
 
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025
@@ -440,7 +446,7 @@ export default function AboutPage() {
                         </p>
 
                         <p className="certificate">
-                            <strong className="text-gray-50">4th Kombat Taekwondo Referee Siminar </strong>
+                            <strong className="text-gray-50">4th Kombat Taekwondo Referee Seminar </strong>
                             by Kombat Taekwondo - January 2024
                         </p>
 

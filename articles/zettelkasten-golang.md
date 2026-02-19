@@ -591,3 +591,59 @@ func main() {
     time.Sleep(time.Second * 1  )
 }
 ```
+
+# Informações adicionais
+
+Imagine que você precisa abrir um arquivo, como o caso de `.csv`, para isso, podemos utilizar a leitura do próprio sistema operacional.
+
+```go
+func ProcessCSV(){
+    file, err := os.Open("quiz-go.csv")
+
+    if err != nil {
+        panic("Erro ao ler arquivo ou arquivo não encontrado")
+    }
+
+    defer file.Close()
+}
+```
+
+Usando o `os.Open("", err)`, ele será responsável por abrir o arquivo e fazer edição ou apenas leitura, enfim. A questão é que o Go lang, consome muitos
+recursos para abrir um arquivo e ele não fecha automaticamente, já que ele acha que você poderá utilizar em outro momento, para isso, podemos utilizar o `defer f.Close()` e
+continuar o gerenciamento da função que seguirá normalmente.
+
+Um caso que estamos aprendendo e não é muito comum o uso é o `panic()`, ele não é recomendado utilizar, já que sempre que isso acontecer, ele irá simplesmente parar a aplicação por completo, forçando o usuário a reiniciar a aplicação.
+
+Alguns erros personalizados são `fmt.Errorf("Text", props, err)` ou como de costume em outras linguagens como Javascript e Python `fmt.Println("Algo aconteceu", err)`
+
+Existe outras maneiras como `Errors.Is` e `Errors.As`:
+
+```go
+var ErrNotFound = errors.New("recurso não encontrado")
+
+func BuscarPerfil(id int) error {
+    // ... lógica ...
+    return ErrNotFound
+}
+
+func main() {
+    err := BuscarPerfil(1)
+
+    // Verifica se o erro é exatamente ErrNotFound
+    if errors.Is(err, ErrNotFound) {
+        fmt.Println("Não achamos o perfil")
+    }
+}
+```
+
+Tudo depende de como quer tratar o erro e qual a necessidade de uso.
+
+---
+
+Uma curiosidade ou até mesmo uma funcionalidade. É que existe a possibilidade de adicionar cores no terminal e o nome disso é [Adding Color to Terminal Output in Go](https://www.dolthub.com/blog/2024-02-23-colors-in-golang/) da Stephanie You. Dentro do artigo (em inglês), terá uma lista de códigos para adicionar e o que você precisa fazer, nada mais é do que formatar a mensagem com as cores desejadas.
+
+Um exemplo, caso quisessemos dar um hello world com uma cor magenta, seria algo como: `"\033[35m" + "Hello World" + "\033[35m"`, mas claro, existem maneiras melhores de fazer isso, como criar uma variável chamada MagenColor que receberia esse valor `\033[35m` e passaríamos direto, como: `MagenColor + "Hello World" + MagenColor`. Use a criatividade como bem entender.
+
+Isso é útil para o caso de fazer tratativa de errors (red), warns (yellow), info (blue) e até mesmo status de success (green).
+
+---
