@@ -246,7 +246,15 @@ export default function AboutPage() {
                             I implemented real-time analytics dashboards and PWA capabilities, enabling offline access and improving data
                             accessibility for users in areas with limited connectivity.
                         </li>
-                        <p className="description">Using Bun.js, Next.js, Discord Webhook, Python, PWA, Go Lang, Supabase & Docusaurus</p>
+                        <li>
+                            Authored comprehensive technical documentation for system architecture and APIs, ensuring scalability and simplifying
+                            future maintenance for the development team using Swagger and Docusaurus.
+                        </li>
+                        <li>
+                            Managed the development lifecycle using Scrum methodologies and GitHub Projects, improving team collaboration and ensuring
+                            timely delivery of features.
+                        </li>
+                        <p className="description">Using Bun.js, Next.js, Discord Webhook, Python, PWA, Go Lang, Supabase, Swagger & Docusaurus</p>
 
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025
