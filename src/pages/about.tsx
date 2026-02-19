@@ -536,7 +536,7 @@ export default function AboutPage() {
                             by Digital Innovation One - February 2020
                         </p>
 
-                        <p>
+                        <p className="certificate">
                             <strong className="text-gray-50">Getting Started with Git and Your Commands </strong>
                             by Digital Innovation One - February 2020
                         </p>
