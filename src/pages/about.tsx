@@ -191,7 +191,7 @@ export default function AboutPage() {
             <AboutDetails>
                 <article>
                     <h1 className="title">About me</h1>
-                    <h1>Software Engineer at @R2A</h1>
+                    <h1>Software Engineer</h1>
                     <p>
                         Full Stack Software Engineer with solid experience in scalable architectures (Node.js/Go). Specialist in process optimization,
                         reducing execution times by up to 35% and increasing conversions by 28% through AI and payment integrations (Stripe).
@@ -236,7 +236,7 @@ export default function AboutPage() {
                         </p>
 
                         <h3 className="titleJob">
-                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Present
+                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2025
                         </h3>
                         <li>
                             I developed a complete livestock management platform (MeuBoi) from scratch using Go (formerly Bun.js) for a

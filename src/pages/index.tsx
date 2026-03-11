@@ -21,22 +21,7 @@ export default function Home() {
                     <div className="content">
                         <h1>Anderson Marlon</h1>
                         <p>Hey! I’m Anderson Marlon, a software engineer and indie hacker.</p>
-                        <div className="p">
-                            Working at
-                            <div className="link">
-                                <img src="https://meuboi.com.br/logo.png" />
-                                <Link href="https://meuboi.com.br" target="_blank">
-                                    MeuBoi
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <img src="https://github.com/r2apecuaria.png" />
-                                <Link href="https://github.com/r2apecuaria" target="_blank">
-                                    R2A Cobrança Pecuária
-                                </Link>
-                            </div>
-                        </div>
+                        <div className="p">Working at</div>
                         <div className="p">
                             Creator of
                             <div className="link">
@@ -80,13 +65,6 @@ export default function Home() {
                                 <img src="https://github.com/engide.png" />
                                 <Link href="https://github.com/engide" target="_blank">
                                     Engide
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <img src="https://github.com/r2apecuaria.png" />
-                                <Link href="https://github.com/r2apecuaria" target="_blank">
-                                    R2A
                                 </Link>
                             </div>
                             /
