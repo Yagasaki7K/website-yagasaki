@@ -206,7 +206,7 @@ export default function AboutPage() {
                             <strong>Frontend:</strong> React.js (Vite) & Next.js
                         </p>
                         <p>
-                            <strong>Backend:</strong> Node.js, Bun.js, Express, Fastify, Elysia.js & Nest.js
+                            <strong>Backend:</strong> Node.js, Bun.js, Express, Fastify, Elysia.js, Go Lang & Nest.js
                         </p>
                         <p>
                             <strong>Database:</strong> Prisma, Hasura, Firebase, Supabase, MySQL, PostgreSQL & SQLite
