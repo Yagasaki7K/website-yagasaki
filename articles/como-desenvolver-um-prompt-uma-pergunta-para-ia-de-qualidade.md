@@ -6,7 +6,7 @@ tags: ["Inteligência", "Artificial", "Prompt"]
 date: "2026-03-15"
 ---
 
-![](https://safebooru.org//samples/4619/sample_d3e96e81f2591af055bb8f9c5312d2d0d1d5c991.jpg?4859150)
+![](https://cdn.prod.website-files.com/606907b169dcd481e8fd42c4/626af17e37014a34e98e8b02_rob%C3%B4%20IA.png)
 
 Uma das coisas que eu vejo o pessoal mais sofrendo é. Como montar um prompt de qualidade para a IA. Envolve mais tokens? Sim, se você não sabe o que é isso. Vamos lá que eu te ensino!
 
