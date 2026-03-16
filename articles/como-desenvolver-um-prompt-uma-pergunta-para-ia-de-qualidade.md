@@ -23,9 +23,9 @@ A questão, para facilitar tudo isso é.
 
 Como desenvolver algo de qualidade? Claro que envolve mais tokens, ser mais preciso não quer dizer que você será econômico, ainda mais no aspecto de programação por exemplo, onde muitas das vezes você quer algo bem especifico daquele nicho ou segmento que você está desenvolvendo ou tentando ajustar.
 
-Para isso. Aja como se falasse como uma super criança.
+Para isso. Aja como se falasse com uma super criança.
 
-Isso mesmo, assim como explico para a minha familia, você tem uma criança super dotada a sua disposição, mas ela é leiga em vários aspectos, por isso, seja claro no que você está pedindo.
+Isso mesmo, assim como explico para a minha família, você tem uma criança super dotada a sua disposição, mas ela é leiga em vários aspectos, por isso, seja claro no que você está pedindo.
 
 Não adianta chegar e falar. "Quero um excel avançado com base nessas informações". Por mais que você esteja dando as informações para ela, fica o questionamento, o vazio da pergunta. Você quer gráficos? Você quer que faça uma métrica avançada em cima de categorias? Você gostaria de adicionar filtro por categorias? E quer o total em cima de alguma coisa?
 
