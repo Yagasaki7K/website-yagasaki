@@ -21,9 +21,24 @@ export default function Home() {
                     <div className="content">
                         <h1>Anderson Marlon</h1>
                         <p>Hey! I’m Anderson Marlon, a software engineer and indie hacker.</p>
-                        <div className="p">Working at</div>
+                        <div className="p">
+                            Working at{" "}
+                            <div className="link">
+                                <img src="https://theanitube.vercel.app/logo.png" />
+                                <Link href="https://theanitube.vercel.app/" target="_blank">
+                                    AniTube
+                                </Link>
+                            </div>
+                        </div>
                         <div className="p">
                             Creator of
+                            <div className="link">
+                                <img src="https://theanitube.vercel.app/logo.png" />
+                                <Link href="https://theanitube.vercel.app/" target="_blank">
+                                    AniTube
+                                </Link>
+                            </div>
+                            /
                             <div className="link">
                                 <img src={steam} />
                                 <Link href="https://steamfolio.vercel.app/" target="_blank">
@@ -35,13 +50,6 @@ export default function Home() {
                                 <img src="https://webessentials.vercel.app/favicon.png" />
                                 <Link href="https://webessentials.vercel.app/" target="_blank">
                                     Essentials
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <img src="https://zentrystore.vercel.app/logo.png" />
-                                <Link href="https://zentrystore.vercel.app/" target="_blank">
-                                    Zentry Store
                                 </Link>
                             </div>
                             /
