@@ -33,9 +33,9 @@ export default function Home() {
                         <div className="p">
                             Creator of
                             <div className="link">
-                                <img src="https://theanitube.vercel.app/logo.png" />
-                                <Link href="https://theanitube.vercel.app/" target="_blank">
-                                    AniTube
+                                <img src="https://kotame.com.br/logo.png" />
+                                <Link href="https://kotame.com.br/" target="_blank">
+                                    Kota App
                                 </Link>
                             </div>
                             /
