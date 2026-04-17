@@ -13,26 +13,28 @@
         "clean": "rm -rf node_modules && bun install"
     },
     "dependencies": {
+        "@wterm/dom": "^0.1.8",
+        "@wterm/react": "^0.1.8",
         "dayjs": "^1.11.20",
-        "eslint-config-next": "^16.2.2",
+        "eslint-config-next": "^16.2.4",
         "feed": "^5.2.0",
         "framer-motion": "^12.38.0",
         "gray-matter": "^4.0.3",
         "jspdf": "^3.0.4",
         "jspdf-autotable": "^5.0.7",
         "marked": "^16.4.2",
-        "next": "^16.2.2",
+        "next": "^16.2.4",
         "next-seo": "^6.8.0",
-        "react": "^19.2.4",
-        "react-dom": "^19.2.4",
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5",
         "sonner": "^2.0.7",
-        "styled-components": "^6.3.12"
+        "styled-components": "^6.4.0"
     },
     "devDependencies": {
         "@types/node": "^20.19.39",
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
-        "baseline-browser-mapping": "^2.10.16",
+        "baseline-browser-mapping": "^2.10.19",
         "typescript": "^5.9.3"
     }
 }

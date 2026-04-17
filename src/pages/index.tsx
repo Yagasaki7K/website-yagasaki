@@ -5,8 +5,11 @@ import Navigation from "@/components/Navigation";
 import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
 import { steam } from "@/icons/steam";
+import { useState } from "react";
 
 export default function Home() {
+    const [isTerminal, setIsTerminal] = useState(false);
+
     return (
         <>
             <Head>
@@ -20,7 +23,9 @@ export default function Home() {
                 <div className="hero">
                     <div className="content">
                         <h1>Anderson Marlon</h1>
-                        <p>Hey! I’m Anderson Marlon, a software engineer and indie hacker.</p>
+                        <p>
+                            Hey! I’m Anderson Marlon, a software engineer and indie <Link href="/terminal">hacker</Link>.
+                        </p>
                         <div className="p">
                             Working at{" "}
                             <div className="link">
