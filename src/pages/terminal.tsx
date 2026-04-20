@@ -176,14 +176,26 @@ const TerminalPage = () => {
     }, []);
 
     const printPrompt = useCallback(() => {
-        write(`\\r\\n${currentPrompt()} `);
+        write(`${currentPrompt()} `);
     }, [currentPrompt, write]);
 
-    const writeLine = useCallback(
-        (line = "") => {
-            write(`\\r\\n${line}`);
+    const sanitizeInput = useCallback((raw: string) => raw.replace(/\s+/g, " ").trim(), []);
+
+    const renderCommandResult = useCallback(
+        (lines: string[]) => {
+            write("\r\n");
+            write("\r\n");
+
+            if (lines.length > 0) {
+                for (const line of lines) {
+                    write(`${line}\r\n`);
+                }
+                write("\r\n");
+            }
+
+            printPrompt();
         },
-        [write],
+        [printPrompt, write],
     );
 
     const printBanner = useCallback(() => {
@@ -197,9 +209,15 @@ const TerminalPage = () => {
 
     const handleCommand = useCallback(
         (rawInput: string) => {
-            const args = parseArgs(rawInput.trim());
+            const output: string[] = [];
+            const writeLine = (line = "") => {
+                output.push(line);
+            };
+
+            const sanitizedInput = sanitizeInput(rawInput);
+            const args = parseArgs(sanitizedInput);
             if (args.length === 0) {
-                return;
+                return output;
             }
 
             const [command, ...rest] = args;
@@ -227,7 +245,7 @@ const TerminalPage = () => {
                 }
                 case "clear": {
                     printBanner();
-                    break;
+                    return output;
                 }
                 case "pwd": {
                     writeLine(pathToString(cwd));
@@ -462,8 +480,10 @@ const TerminalPage = () => {
                 default:
                     writeLine(`Unknown command: ${command}. Type 'help'.`);
             }
+
+            return output;
         },
-        [printBanner, writeLine],
+        [printBanner, sanitizeInput],
     );
 
     const handleInput = useCallback(
@@ -472,7 +492,7 @@ const TerminalPage = () => {
                 if (char === "\u0003") {
                     inputRef.current = "";
                     editRef.current = null;
-                    write("^C");
+                    write("^C\r\n");
                     printPrompt();
                     continue;
                 }
@@ -482,8 +502,13 @@ const TerminalPage = () => {
                     inputRef.current = "";
 
                     if (editRef.current) {
+                        const output: string[] = [];
+                        const writeLine = (text = "") => {
+                            output.push(text);
+                        };
                         const editSession = editRef.current;
-                        if (line === ".save") {
+                        const sanitizedLine = sanitizeInput(line);
+                        if (sanitizedLine === ".save") {
                             const parentData = getParentAndName(fsRef.current, editSession.path);
                             if (!parentData) {
                                 writeLine("edit: failed to save (invalid path)");
@@ -496,17 +521,17 @@ const TerminalPage = () => {
                                 writeLine(`edit: saved ${pathToString(editSession.path)}`);
                             }
                             editRef.current = null;
-                        } else if (line === ".cancel") {
+                        } else if (sanitizedLine === ".cancel") {
                             editRef.current = null;
                             writeLine("edit: canceled");
                         } else {
                             editSession.buffer.push(line);
                         }
+                        renderCommandResult(output);
                     } else {
-                        handleCommand(line);
+                        const output = handleCommand(line);
+                        renderCommandResult(output);
                     }
-
-                    printPrompt();
                     continue;
                 }
 
@@ -524,7 +549,7 @@ const TerminalPage = () => {
                 }
             }
         },
-        [handleCommand, printPrompt, write, writeLine],
+        [handleCommand, printPrompt, renderCommandResult, sanitizeInput, write],
     );
 
     useEffect(() => {
