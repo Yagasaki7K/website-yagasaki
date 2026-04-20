@@ -547,14 +547,6 @@ const TerminalPage = () => {
                     rows={28}
                     autoResize
                     cursorBlink
-                    theme={{
-                        background: "#000000",
-                        foreground: "#f5f5f5",
-                        cursor: "#f5f5f5",
-                        selectionBackground: "#4d4d4d",
-                        black: "#000000",
-                        white: "#ffffff",
-                    }}
                     onData={handleInput}
                     onReady={focus}
                     onError={(error) => {
