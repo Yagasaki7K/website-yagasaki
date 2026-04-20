@@ -20,6 +20,9 @@ type EditSession = {
     buffer: string[];
 };
 
+const HOME_PATH = ["home", "kali@dev"];
+const USER_HOST = "yagasaki@term";
+
 const TerminalDetails = styled.main`
     min-height: 100vh;
     background: radial-gradient(circle at center, #111 0%, #050505 55%, #000 100%);
@@ -78,13 +81,158 @@ const createInitialFs = (): DirectoryNode => ({
         home: {
             type: "dir",
             children: {
-                guest: {
+                "kali@dev": {
                     type: "dir",
                     children: {
+                        src: {
+                            type: "dir",
+                            children: {
+                                pages: {
+                                    type: "dir",
+                                    children: {
+                                        "terminal.tsx": {
+                                            type: "file",
+                                            content: `import { Terminal } from "@wterm/react";
+
+export default function TerminalPage() {
+  return <Terminal autoResize cursorBlink />;
+}
+`,
+                                        },
+                                        "index.tsx": {
+                                            type: "file",
+                                            content: `export default function Home() {
+  return <main>Yagasaki website</main>;
+}
+`,
+                                        },
+                                    },
+                                },
+                                components: {
+                                    type: "dir",
+                                    children: {
+                                        "Navigation.tsx": {
+                                            type: "file",
+                                            content: `export const Navigation = () => <nav>Navigation</nav>;`,
+                                        },
+                                        "Footer.tsx": {
+                                            type: "file",
+                                            content: `export const Footer = () => <footer>© yagasaki</footer>;`,
+                                        },
+                                    },
+                                },
+                                styles: {
+                                    type: "dir",
+                                    children: {
+                                        "globals.css": {
+                                            type: "file",
+                                            content: "body { margin: 0; background: #000; color: #f7f7f7; }",
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                        public: {
+                            type: "dir",
+                            children: {
+                                projects: {
+                                    type: "dir",
+                                    children: {
+                                        "steamfolio.png": { type: "file", content: "<binary image>" },
+                                    },
+                                },
+                                photos: {
+                                    type: "dir",
+                                    children: {
+                                        "1.jpg": { type: "file", content: "<binary image>" },
+                                    },
+                                },
+                                "logo.png": { type: "file", content: "<binary image>" },
+                            },
+                        },
+                        components: {
+                            type: "dir",
+                            children: {
+                                "TerminalFrame.tsx": {
+                                    type: "file",
+                                    content: `export const TerminalFrame = ({ children }) => <section>{children}</section>;`,
+                                },
+                            },
+                        },
+                        app: {
+                            type: "dir",
+                            children: {
+                                terminal: {
+                                    type: "dir",
+                                    children: {
+                                        "page.tsx": {
+                                            type: "file",
+                                            content: `export default function Page() {
+  return <main>Terminal simulation page</main>;
+}
+`,
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                        "package.json": {
+                            type: "file",
+                            content: `{
+  "name": "website-yagasaki",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@wterm/react": "^0.6.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "styled-components": "^6.1.0"
+  }
+}`,
+                        },
+                        "README.md": {
+                            type: "file",
+                            content: `# website-yagasaki
+
+Personal site with a terminal page powered by @wterm/react.
+
+## Terminal sandbox
+- Identity: yagasaki@term
+- Workspace: /home/kali@dev
+- File operations are virtual and in-memory only.`,
+                        },
+                        "tsconfig.json": {
+                            type: "file",
+                            content: `{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "jsx": "preserve"
+  }
+}`,
+                        },
+                        "next.config.ts": {
+                            type: "file",
+                            content: `import type { NextConfig } from "next";
+const nextConfig: NextConfig = {};
+export default nextConfig;`,
+                        },
+                        ".gitignore": {
+                            type: "file",
+                            content: "node_modules\n.next\n.env\n",
+                        },
+                        "bun.lock": {
+                            type: "file",
+                            content: "# lockfile snapshot (virtual)",
+                        },
                         "readme.txt": {
                             type: "file",
                             content:
-                                "Welcome to RETRO-OS.\\nEverything here is virtual and exists only in memory.\\nType 'help' to see available commands.",
+                                "Welcome, yagasaki.\\nWorkspace /home/kali@dev is a virtual project clone.\\nEverything here is in-memory only.",
                         },
                     },
                 },
@@ -95,7 +243,7 @@ const createInitialFs = (): DirectoryNode => ({
             children: {
                 motd: {
                     type: "file",
-                    content: "A monochrome world, a blinking cursor, and your imagination.",
+                    content: "yagasaki@term session active. Virtual workspace mounted at /home/kali@dev.",
                 },
             },
         },
@@ -163,7 +311,7 @@ const pathToString = (segments: string[]) => (segments.length === 0 ? "/" : `/${
 const TerminalPage = () => {
     const { ref, write, focus } = useTerminal();
     const fsRef = useRef<DirectoryNode>(createInitialFs());
-    const cwdRef = useRef<string[]>(["home", "guest"]);
+    const cwdRef = useRef<string[]>(HOME_PATH);
     const inputRef = useRef("");
     const editRef = useRef<EditSession | null>(null);
     const bootedRef = useRef(false);
@@ -172,7 +320,7 @@ const TerminalPage = () => {
         if (editRef.current) {
             return "edit>";
         }
-        return `guest@retro:${pathToString(cwdRef.current)}$`;
+        return `${USER_HOST}:${pathToString(cwdRef.current)}$`;
     }, []);
 
     const printPrompt = useCallback(() => {
@@ -200,10 +348,11 @@ const TerminalPage = () => {
 
     const printBanner = useCallback(() => {
         write("\\x1bc");
-        write("RETRO-OS TERMINAL v1986\\r\\n");
+        write("WTERM DEV TERMINAL\\r\\n");
         write("========================================\\r\\n");
-        write("Monochrome recreational shell loaded.\\r\\n");
-        write("Filesystem root: / (in-memory only).\\r\\n");
+        write("User loaded: yagasaki@term\\r\\n");
+        write("Workspace mounted at /home/kali@dev\\r\\n");
+        write("Project clone is fully in-memory (simulation).\\r\\n");
         write("Type 'help' to begin.\\r\\n");
     }, [write]);
 
@@ -278,7 +427,7 @@ const TerminalPage = () => {
                 }
                 case "cd": {
                     if (!rest[0]) {
-                        cwdRef.current = [];
+                        cwdRef.current = [...HOME_PATH];
                         break;
                     }
 
