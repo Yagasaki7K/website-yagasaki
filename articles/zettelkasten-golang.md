@@ -1,6 +1,6 @@
 ---
 title: Zettelkasten - Introdução ao Go Lang (WIP)
-excerpt: "Isso é o Zettelkasten, isso é basicamente um _note-taking_ dos meus estudos. Será apenas consultado em revisões futuras. Fique à vontade para usar como base d estudos, se necessário."
+excerpt: "Isso é o Zettelkasten, isso é basicamente um _note-taking_ dos meus estudos. Será apenas consultado em revisões futuras. Fique à vontade para usar como base de estudos, se necessário."
 image: https://dkrn4sk0rn31v.cloudfront.net/uploads/2022/10/o-que-e-e-como-comecar-com-golang.jpg
 tags: ["Zettelkasten", "Estudo", "Go"]
 date: "2026-02-03"
