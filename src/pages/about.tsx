@@ -364,6 +364,18 @@ export default function AboutPage() {
                         <h2 className="subTitle">Certificates</h2>
 
                         <p className="certificate">
+                            <strong className="text-gray-50">Introduction to automation with n8n</strong> by Rocketseat - May 2026
+                        </p>
+
+                        <p className="certificate">
+                            <strong className="text-gray-50">Introduction to AWS</strong> by Rocketseat - May 2026
+                        </p>
+
+                        <p className="certificate">
+                            <strong className="text-gray-50">Introduction to Go Lang</strong> by Rocketseat - May 2026
+                        </p>
+
+                        <p className="certificate">
                             <strong className="text-gray-50">React</strong> by Gustavo Sales in Rocketseat - November 2025
                         </p>
 
