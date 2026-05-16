@@ -28,21 +28,14 @@ export default function Home() {
                         <div className="p">
                             Working at{" "}
                             <div className="link">
-                                <Image src="https://theanitube.vercel.app/logo.png" alt="AniTube" width={25} height={20} sizes="20px" loader={imageLoader} priority />
-                                <Link href="https://theanitube.vercel.app/" target="_blank">
-                                    AniTube
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="p">
-                            Creator of
-                            <div className="link">
                                 <Image src="https://kotame.com.br/logo.png" alt="Kota App" width={20} height={20} sizes="20px" loader={imageLoader} priority />
                                 <Link href="https://kotame.com.br/" target="_blank">
                                     Kota App
                                 </Link>
                             </div>
-                            /
+                        </div>
+                        <div className="p">
+                            Creator of
                             <div className="link">
                                 <Image src={steam} alt="Steamfolio" width={20} height={20} sizes="20px" />
                                 <Link href="https://steamfolio.vercel.app/" target="_blank">
