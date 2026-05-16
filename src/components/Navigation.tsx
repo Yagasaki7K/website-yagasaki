@@ -17,6 +17,31 @@ const NavigationDetails = styled.div`
         align-items: center;
         gap: 10px;
 
+        .avatar {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+
+            @media (max-width: 768px) {
+                width: 45px;
+                height: 45px;
+                margin-right: 10px;
+            }
+
+            @media (max-width: 480px) {
+                width: 38px;
+                height: 38px;
+                margin-right: 8px;
+            }
+
+            img {
+                border-radius: 50px;
+                filter: grayscale(1);
+                object-fit: cover;
+            }
+        }
+
         img {
             width: 60px;
             margin-right: 15px;
