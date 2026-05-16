@@ -19,7 +19,7 @@
         "eslint-config-next": "^16.2.6",
         "feed": "^5.2.1",
         "framer-motion": "^12.38.0",
-        "jspdf": "^3.0.4",
+        "jspdf": "^4.2.1",
         "jspdf-autotable": "^5.0.7",
         "marked": "^16.4.2",
         "next": "^16.2.6",
