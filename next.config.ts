@@ -6,8 +6,7 @@ const nextConfig: NextConfig = {
     compiler: {
         styledComponents: true,
     },
-    /* Exports Settings  */
-    output: "export",
+    transpilePackages: ["styled-components"],
     images: {
         unoptimized: true,
     },
