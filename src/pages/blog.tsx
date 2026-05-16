@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
 import calculateReadingTime from "@/utils/calculateReadingTime";
 import { useState, useMemo } from "react";
 import Link from "next/link";
@@ -10,6 +9,42 @@ import HomeDetails from "@/components/HomeDetails";
 import formatDate from "@/utils/formatDate";
 import Navigation from "@/components/Navigation";
 import { PostProps } from "@/types/PostProps";
+
+function parseFrontmatter(markdown: string) {
+    if (!markdown.startsWith("---")) {
+        return { data: {}, content: markdown };
+    }
+
+    const end = markdown.indexOf("\n---", 3);
+    if (end === -1) {
+        return { data: {}, content: markdown };
+    }
+
+    const frontmatterBlock = markdown.slice(3, end).trim();
+    const content = markdown.slice(end + 4).trimStart();
+    const data: Record<string, any> = {};
+
+    for (const line of frontmatterBlock.split("\n")) {
+        const [rawKey, ...rawValueParts] = line.split(":");
+        if (!rawKey || rawValueParts.length === 0) continue;
+
+        const key = rawKey.trim();
+        const rawValue = rawValueParts.join(":").trim();
+
+        if (rawValue.startsWith("[") && rawValue.endsWith("]")) {
+            data[key] = rawValue
+                .slice(1, -1)
+                .split(",")
+                .map((value) => value.trim().replace(/^\"|\"$/g, "").replace(/^'|'$/g, ""))
+                .filter(Boolean);
+            continue;
+        }
+
+        data[key] = rawValue.replace(/^\"|\"$/g, "").replace(/^'|'$/g, "");
+    }
+
+    return { data, content };
+}
 
 export async function getStaticProps() {
     // Get files from the posts dir
@@ -22,7 +57,7 @@ export async function getStaticProps() {
 
         const markdownWithMeta = fs.readFileSync(path.join("articles", filename), "utf-8");
 
-        const { data: frontmatter, content: markdownContent } = matter(markdownWithMeta);
+        const { data: frontmatter, content: markdownContent } = parseFrontmatter(markdownWithMeta);
         const readingTime = calculateReadingTime(markdownContent);
 
         return {
