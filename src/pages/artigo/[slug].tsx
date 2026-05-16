@@ -83,6 +83,7 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
   const renderedContent = await marked(content);
 
   return {
+    revalidate: 1800,
     props: {
       frontmatter: validatedFrontmatter,
       slug,

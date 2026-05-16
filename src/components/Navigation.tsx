@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import imageLoader from "@/utils/imageLoader";
 
 const NavigationDetails = styled.div`
     display: flex;
@@ -108,7 +110,7 @@ const Navigation = () => {
         <NavigationDetails>
             <div className="leftContent">
                 <Link href="/">
-                    <img src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" />
+                    <Image src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" width={60} height={60} priority sizes="(max-width: 768px) 45px, (max-width: 480px) 38px, 60px" loader={imageLoader} />
                 </Link>
             </div>
 

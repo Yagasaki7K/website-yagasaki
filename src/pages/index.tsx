@@ -1,15 +1,14 @@
 import "dayjs/locale/pt-br";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
 import { steam } from "@/icons/steam";
-import { useState } from "react";
+import imageLoader from "@/utils/imageLoader";
 
 export default function Home() {
-    const [isTerminal, setIsTerminal] = useState(false);
-
     return (
         <>
             <Head>
@@ -29,7 +28,7 @@ export default function Home() {
                         <div className="p">
                             Working at{" "}
                             <div className="link">
-                                <img src="https://theanitube.vercel.app/logo.png" />
+                                <Image src="https://theanitube.vercel.app/logo.png" alt="AniTube" width={20} height={20} sizes="20px" loader={imageLoader} priority />
                                 <Link href="https://theanitube.vercel.app/" target="_blank">
                                     AniTube
                                 </Link>
@@ -38,35 +37,35 @@ export default function Home() {
                         <div className="p">
                             Creator of
                             <div className="link">
-                                <img src="https://kotame.com.br/logo.png" />
+                                <Image src="https://kotame.com.br/logo.png" alt="Kota App" width={20} height={20} sizes="20px" loader={imageLoader} priority />
                                 <Link href="https://kotame.com.br/" target="_blank">
                                     Kota App
                                 </Link>
                             </div>
                             /
                             <div className="link">
-                                <img src={steam} />
+                                <Image src={steam} alt="Steamfolio" width={20} height={20} sizes="20px" />
                                 <Link href="https://steamfolio.vercel.app/" target="_blank">
                                     Steamfolio
                                 </Link>
                             </div>
                             /
                             <div className="link">
-                                <img src="https://webessentials.vercel.app/favicon.png" />
+                                <Image src="https://webessentials.vercel.app/favicon.png" alt="Essentials" width={20} height={20} sizes="20px" loader={imageLoader} priority />
                                 <Link href="https://webessentials.vercel.app/" target="_blank">
                                     Essentials
                                 </Link>
                             </div>
                             /
                             <div className="link">
-                                <img src="https://findyourpet.vercel.app/logo.png" />
+                                <Image src="https://findyourpet.vercel.app/logo.png" alt="FindYourPet" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 <Link href="https://findyourpet.vercel.app/" target="_blank">
                                     FindYourPet
                                 </Link>
                             </div>
                             /
                             <div className="link">
-                                <img src="https://github.com/Yagasaki7K.png" />
+                                <Image src="https://github.com/Yagasaki7K.png" alt="Liquid Glass" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 <Link href="https://github.com/Yagasaki7K/feature-liquidglass" target="_blank">
                                     Liquid Glass
                                 </Link>
@@ -75,21 +74,21 @@ export default function Home() {
                         <div className="p">
                             Core team of
                             <div className="link">
-                                <img src="https://github.com/engide.png" />
+                                <Image src="https://github.com/engide.png" alt="Engide" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 <Link href="https://github.com/engide" target="_blank">
                                     Engide
                                 </Link>
                             </div>
                             /
                             <div className="link">
-                                <img src="https://github.com/kindredsoftware.png" />
+                                <Image src="https://github.com/kindredsoftware.png" alt="Kindred Software" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 <Link href="https://github.com/kindredsoftware" target="_blank">
                                     Kindred Software
                                 </Link>
                             </div>
                             /
                             <div className="link">
-                                <img src="https://github.com/kalify-inc.png" />
+                                <Image src="https://github.com/kalify-inc.png" alt="Kalify Community" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 <Link href="https://github.com/kalify-inc" target="_blank">
                                     Kalify Community
                                 </Link>

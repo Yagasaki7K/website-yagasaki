@@ -1,10 +1,11 @@
 import "dayjs/locale/pt-br";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
-import { steam } from "@/icons/steam";
+import imageLoader from "@/utils/imageLoader";
 
 export default function Home() {
     return (
@@ -25,7 +26,7 @@ export default function Home() {
                         <div className="p">
                             <strong>Zentry Store</strong>&nbsp;by
                             <div className="link">
-                                <img src="https://github.com/leafso.png" />
+                                <Image src="https://github.com/leafso.png" alt="LeafSoftware" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 @LeafSoftware
                             </div>
                             - A alternative Steam game store
@@ -34,7 +35,7 @@ export default function Home() {
                         <div className="p">
                             <strong>Sintonia São Paulo</strong>&nbsp;by
                             <div className="link">
-                                <img src="https://github.com/byteonegroup.png" />
+                                <Image src="https://github.com/byteonegroup.png" alt="ByteOne Group" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 @ByteOne Group
                             </div>
                             - A FiveM (GTA RP) server
@@ -43,7 +44,7 @@ export default function Home() {
                         <div className="p">
                             <strong>AfterFive (Outdated)</strong>&nbsp;by
                             <div className="link">
-                                <img src="https://github.com/leafso.png" />
+                                <Image src="https://github.com/leafso.png" alt="LeafSoftware" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 @LeafSoftware
                             </div>
                             - The Luxury escort website
@@ -52,7 +53,7 @@ export default function Home() {
                         <div className="p">
                             <strong>ConvideSe (Outdated)</strong>&nbsp;by
                             <div className="link">
-                                <img src="https://github.com/engide.png" />
+                                <Image src="https://github.com/engide.png" alt="Engide" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 @Engide
                             </div>
                             - A saas to generate invites for party/birthday/relationship
@@ -61,7 +62,7 @@ export default function Home() {
                         <div className="p">
                             <strong>MeConta (Outdated)</strong>&nbsp;by
                             <div className="link">
-                                <img src="https://github.com/yagasaki7k.png" />
+                                <Image src="https://github.com/yagasaki7k.png" alt="Yagasaki7K" width={20} height={20} sizes="20px" loader={imageLoader} />
                                 @Yagasaki7K
                             </div>
                             - A page to manager your expenses
