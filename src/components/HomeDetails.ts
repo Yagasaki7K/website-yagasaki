@@ -50,6 +50,7 @@ const HomeDetails = styled.div`
 
                 img {
                     width: 15px;
+                    height: auto;
                     margin-right: 5px;
                 }
             }
@@ -105,6 +106,7 @@ const HomeDetails = styled.div`
 
                 img {
                     width: 15px;
+                    height: auto;
                     margin-right: 5px;
                 }
             }
