@@ -135,9 +135,7 @@ const Navigation = () => {
         <NavigationDetails>
             <div className="leftContent">
                 <Link href="/">
-                    <div className="avatar">
-                        <Image src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" fill priority sizes="(max-width: 480px) 38px, (max-width: 768px) 45px, 60px" loader={imageLoader} />
-                    </div>
+                    <Image src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" width={60} height={60} priority sizes="(max-width: 768px) 45px, (max-width: 480px) 38px, 60px" loader={imageLoader} />
                 </Link>
             </div>
 
