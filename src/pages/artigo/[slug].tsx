@@ -98,6 +98,11 @@ export default function PostPage({
   frontmatter,
   content = "",
 }: PostProps) {
+  const articlePath = `/artigo/${frontmatter?.slug ?? ""}`;
+  const canonicalUrl = `https://yagasaki.vercel.app${articlePath}`;
+  const normalizedImage = frontmatter?.image?.startsWith("http")
+    ? frontmatter.image
+    : `https://yagasaki.vercel.app${frontmatter?.image?.startsWith("/") ? "" : "/"}${frontmatter?.image ?? ""}`;
   if (
     !frontmatter ||
     !frontmatter.title ||
@@ -120,15 +125,15 @@ export default function PostPage({
       <NextSeo
         title={frontmatter.title || "Post"}
         description={frontmatter.excerpt || "Descrição indisponível"}
-        canonical="https://yagasaki.vercel.app"
+        canonical={canonicalUrl}
         openGraph={{
-          url: `https://yagasaki.vercel.app`,
+          url: canonicalUrl,
           title: frontmatter.title || "Post",
           description: frontmatter.excerpt || "Descrição indisponível",
-          images: frontmatter.image
+          images: normalizedImage
             ? [
                 {
-                  url: frontmatter.image,
+                  url: normalizedImage,
                   width: 460,
                   height: 460,
                   alt: frontmatter.title || "Imagem",
@@ -139,12 +144,17 @@ export default function PostPage({
               ]
             : [],
           siteName: "Anderson Marlon",
+          type: "article",
         }}
         twitter={{
-          handle: "@",
+          handle: "@yagasaki7k",
           site: "@yagasaki7k",
           cardType: "summary_large_image",
         }}
+        additionalMetaTags={[
+          { property: "twitter:image", content: normalizedImage },
+          { property: "twitter:url", content: canonicalUrl },
+        ]}
       />
 
       <Head>
