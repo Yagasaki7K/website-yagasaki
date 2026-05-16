@@ -102,6 +102,24 @@ export function middleware(request: NextRequest) {
 }
 ```
 
+
+## Aviso de Depreciação do Middleware
+
+No Next.js 16, você pode ver este aviso no console:
+
+```
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead.
+```
+
+### Correção
+
+Apenas renomeie `middleware.ts` (ou `middleware.js`) para `proxy.ts` (ou `proxy.js`). Nenhuma alteração no código interno é necessária.
+
+```bash
+# No terminal
+mv middleware.ts proxy.ts
+```
+
 **Explicação dos termos:**
 - `public`: qualquer intermediário (CDN, proxy) pode armazenar em cache.
 - `max-age=31536000`: o arquivo é considerado "fresco" por 1 ano.
