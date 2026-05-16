@@ -31,10 +31,10 @@
         "styled-components": "^6.4.1"
     },
     "devDependencies": {
-        "@types/node": "^20.19.40",
+        "@types/node": "^20.19.41",
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
-        "baseline-browser-mapping": "^2.10.28",
+        "baseline-browser-mapping": "^2.10.30",
         "typescript": "^5.9.3"
     }
 }
