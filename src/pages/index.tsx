@@ -28,7 +28,7 @@ export default function Home() {
                         <div className="p">
                             Working at{" "}
                             <div className="link">
-                                <Image src="https://theanitube.vercel.app/logo.png" alt="AniTube" width={20} height={20} sizes="20px" loader={imageLoader} priority />
+                                <Image src="https://theanitube.vercel.app/logo.png" alt="AniTube" width={25} height={20} sizes="20px" loader={imageLoader} priority />
                                 <Link href="https://theanitube.vercel.app/" target="_blank">
                                     AniTube
                                 </Link>
