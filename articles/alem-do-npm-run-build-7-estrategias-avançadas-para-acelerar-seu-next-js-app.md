@@ -1,7 +1,7 @@
 ---
 title: Além do npm run build - 7 Estratégias Avançadas para Acelerar seu Next.js App
-excerpt: "Se você chegou até aqui, provavelmente já conhece o básico: o next/image é incrível, o next build já otimiza bastante coisa e o lazy loading ajuda a não travar a página. Mas, sejamos honestos, o que separa um site "ok" de um site que realmente performa são os detalhes."
-image: https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+excerpt: 'Se você chegou até aqui, provavelmente já conhece o básico: o next/image é incrível, o next build já otimiza bastante coisa e o lazy loading ajuda a não travar a página. Mas, sejamos honestos, o que separa um site "ok" de um site que realmente performa são os detalhes.'
+image: "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 tags: ["Performance", "Frontend", "Next.js"]
 date: "2026-05-16"
 ---

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import imageLoader from "@/utils/imageLoader";
 
 const NavigationDetails = styled.div`
     display: flex;
@@ -14,6 +16,31 @@ const NavigationDetails = styled.div`
         display: flex;
         align-items: center;
         gap: 10px;
+
+        .avatar {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+
+            @media (max-width: 768px) {
+                width: 45px;
+                height: 45px;
+                margin-right: 10px;
+            }
+
+            @media (max-width: 480px) {
+                width: 38px;
+                height: 38px;
+                margin-right: 8px;
+            }
+
+            img {
+                border-radius: 50px;
+                filter: grayscale(1);
+                object-fit: cover;
+            }
+        }
 
         img {
             width: 60px;
@@ -108,7 +135,9 @@ const Navigation = () => {
         <NavigationDetails>
             <div className="leftContent">
                 <Link href="/">
-                    <img src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" />
+                    <div className="avatar">
+                        <Image src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" fill priority sizes="(max-width: 480px) 38px, (max-width: 768px) 45px, 60px" loader={imageLoader} />
+                    </div>
                 </Link>
             </div>
 

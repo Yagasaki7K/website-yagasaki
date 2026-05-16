@@ -135,7 +135,7 @@ export default function PhotoPage() {
                     const src = `/photos/${idx}.jpg`;
                     return (
                         <div key={idx} onClick={() => setSelectedImage(src)}>
-                            <Image src={src} width={400} height={400} alt={`Photo ${idx}`} loading="lazy" />
+                            <Image src={src} width={400} height={400} alt={`Photo ${idx}`} sizes="(max-width: 480px) 45vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px" priority={i < 6} />
                         </div>
                     );
                 })}
