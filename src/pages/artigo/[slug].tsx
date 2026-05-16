@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 import { marked } from "marked";
 import { GetStaticPaths, GetStaticProps } from "next";
 import ArticleDetails from "@/components/ArticleDetails";
@@ -13,48 +14,6 @@ import Navigation from "@/components/Navigation";
 import { Frontmatter } from "@/types/Frontmatter";
 import { PostProps } from "@/types/PostProps";
 import { useEffect } from "react";
-
-function parseFrontmatter(markdown: string): { data: Record<string, unknown>; content: string } {
-  if (!markdown.startsWith("---")) {
-    return { data: {}, content: markdown };
-  }
-
-  const end = markdown.indexOf("\n---", 3);
-  if (end === -1) {
-    return { data: {}, content: markdown };
-  }
-
-  const frontmatterRaw = markdown.slice(3, end).trim();
-  const content = markdown.slice(end + 4).trim();
-  const data: Record<string, unknown> = {};
-
-  for (const line of frontmatterRaw.split("\n")) {
-    const separatorIndex = line.indexOf(":");
-    if (separatorIndex === -1) {
-      continue;
-    }
-
-    const key = line.slice(0, separatorIndex).trim();
-    const rawValue = line.slice(separatorIndex + 1).trim();
-
-    if (!key) {
-      continue;
-    }
-
-    if (rawValue.startsWith("[") && rawValue.endsWith("]")) {
-      data[key] = rawValue
-        .slice(1, -1)
-        .split(",")
-        .map((item) => item.trim().replace(/^['"]|['"]$/g, ""))
-        .filter(Boolean);
-      continue;
-    }
-
-    data[key] = rawValue.replace(/^['"]|['"]$/g, "");
-  }
-
-  return { data, content };
-}
 
 declare global {
   interface Window {
@@ -91,7 +50,7 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
   }
 
   const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
-  const { data: frontmatterData, content } = parseFrontmatter(markdownWithMeta);
+  const { data: frontmatterData, content } = matter(markdownWithMeta);
 
   if (!content) {
     console.error(`Content not found for slug: ${slug}`);
