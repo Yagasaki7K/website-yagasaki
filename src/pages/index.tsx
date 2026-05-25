@@ -5,10 +5,20 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
-import { steam } from "@/icons/steam";
-import imageLoader from "@/utils/imageLoader";
+import { Globe, Mail, MapPin } from "lucide-react";
 
 export default function Home() {
+    const subTitle = ['Software Engineer', 'Curious Builder', 'Fullstack Developer', 'Net Runner', 'Software Tinkerer']
+    const statusSpotify = ['Now Playing', 'Last Played']
+
+    const svgSpotify = (
+        <svg viewBox="0 0 168 168"><path fill="#1DB954" d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z"></path></svg>
+    );
+
+    const svgTwitter = (<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>)
+
+    const svgGithub = (<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>)
+
     return (
         <>
             <Head>
@@ -19,117 +29,146 @@ export default function Home() {
             <Navigation />
 
             <HomeDetails>
-                <div className="hero">
+                <div className="header">
+                    <div className="img">
+                        <img src="https://github.com/Yagasaki7K.png" alt="Anderson Marlon" />
+                    </div>
                     <div className="content">
                         <h1>Anderson Marlon</h1>
-                        <p>
-                            Hey! I’m Anderson Marlon, a software engineer and indie <Link href="/terminal">hacker</Link>.
+                        <p>{subTitle[0]}</p>
+                    </div>
+                </div>
+
+                <div className="container">
+                    <div className="info">
+                        <p className="title">
+                            Location
                         </p>
-                        <div className="p">
-                            Working at{" "}
-                            <div className="link">
-                                <Image src="https://kotame.com.br/logo.png" alt="Kota App" width={20} height={20} sizes="20px" loader={imageLoader} priority />
-                                <Link href="https://kotame.com.br/" target="_blank">
-                                    Kota App
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="p">
-                            Creator of
-                            <div className="link">
-                                <Image src={steam} alt="Steamfolio" width={20} height={20} sizes="20px" />
-                                <Link href="https://steamfolio.vercel.app/" target="_blank">
-                                    Steamfolio
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <Image src="https://webessentials.vercel.app/favicon.png" alt="Essentials" width={20} height={20} sizes="20px" loader={imageLoader} priority />
-                                <Link href="https://webessentials.vercel.app/" target="_blank">
-                                    Essentials
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <Image src="https://findyourpet.vercel.app/logo.png" alt="FindYourPet" width={20} height={20} sizes="20px" loader={imageLoader} />
-                                <Link href="https://findyourpet.vercel.app/" target="_blank">
-                                    FindYourPet
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <Image src="https://github.com/Yagasaki7K.png" alt="Liquid Glass" width={20} height={20} sizes="20px" loader={imageLoader} />
-                                <Link href="https://github.com/Yagasaki7K/feature-liquidglass" target="_blank">
-                                    Liquid Glass
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="p">
-                            Core team of
-                            <div className="link">
-                                <Image src="https://github.com/engide.png" alt="Engide" width={20} height={20} sizes="20px" loader={imageLoader} />
-                                <Link href="https://github.com/engide" target="_blank">
-                                    Engide
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <Image src="https://github.com/kindredsoftware.png" alt="Kindred Software" width={20} height={20} sizes="20px" loader={imageLoader} />
-                                <Link href="https://github.com/kindredsoftware" target="_blank">
-                                    Kindred Software
-                                </Link>
-                            </div>
-                            /
-                            <div className="link">
-                                <Image src="https://github.com/kalify-inc.png" alt="Kalify Community" width={20} height={20} sizes="20px" loader={imageLoader} />
-                                <Link href="https://github.com/kalify-inc" target="_blank">
-                                    Kalify Community
-                                </Link>
-                            </div>
-                        </div>
-                        <p>
-                            My passion lies in envisioning incredible projects and bringing them to life. I'm passionate about creating solutions that
-                            help me and others be more productive and enjoy the creative process. You can find a{" "}
-                            <Link href="https://github.com/Yagasaki7K" target="_blank">
-                                full list of my projects here
-                            </Link>
-                            .
+                        <p className="content">
+                            <MapPin />
+                            São Paulo, Brazil
                         </p>
-                        <p>
-                            I write <Link href="/blog">blog posts</Link> about open source, programming, etc.
+                    </div>
+                    <div className="info">
+                        <p className="title">
+                            Email
                         </p>
-                        <p>
-                            Outside of programming, I enjoy games and reading. I post <Link href="/photos">photos on this page</Link>. I also love
-                            anime, movies, and series, and I'm trying to list my <Link href="/media">media consumption</Link>. Additionally, if you're
-                            interested, here's a list of the <Link href="/use">hardware/software I use</Link>.
-                        </p>
-                        <p>
-                            I've lived in Campinas, in the interior of São Paulo state, Brazil, for some time now. If you're nearby, get in touch so
-                            we can grab a coffee or work together.
-                        </p>
-                        <hr />
-                        <p>Find me on</p>
-                        <Link href="https://github.com/yagasaki7k" target="_blank">
-                            GitHub
-                        </Link>
-                        &nbsp;
-                        <Link href="https://twitter.com/yagasaki7k" target="_blank">
-                            Twitter
-                        </Link>
-                        &nbsp;
-                        <Link href="https://discord.gg/jhSepmE7nN" target="_blank">
-                            Discord Server
-                        </Link>
-                        &nbsp;
-                        <Link href="https://instagram.com/cdnmv" target="_blank">
-                            Instagram
-                        </Link>
-                        <p>
-                            Or mail me at <code>yagasakiwanderlust@proton.me</code>
+                        <p className="content">
+                            <Mail />
+                            yagasakiwanderlust@proton.me
                         </p>
                     </div>
                 </div>
+
+                <div className="about">
+                    <p className="text">I build full-stack web products end-to-end, obsessing over small details that make software feel right to use. Currently working with <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</Link>, <Link href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</Link>, <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</Link>, and <Link href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">Styled Components</Link>.</p>
+
+                    <p className="spotify">
+                        {svgSpotify}
+
+                        {statusSpotify[0]} — <Link href="https://open.spotify.com/track/0VbZ6l5l5l5l5l5l5l5l5" target="_blank" rel="noopener noreferrer">WAY BIGGER  ·  King</Link>
+                    </p>
+
+                    <div className="social">
+                        <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noopener noreferrer">
+                            {svgTwitter}
+                        </Link>
+
+                        <Link href="https://github.com/Yagasaki7K" target="_blank" rel="noopener noreferrer">
+                            {svgGithub}
+                        </Link>
+
+                        <Link href="https://yagasaki.vercel.app" rel="noopener noreferrer">
+                            <Globe />
+                        </Link>
+
+                        <Link href="mailto:yagasakiwanderlust@proton.me" target="_blank" rel="noopener noreferrer">
+                            <Mail />
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="tech">
+                    <h4>Tech Stack</h4>
+
+                    <div className="stacks">
+                        <img src="/stack/react.svg" alt="React" />
+                        <img src="/stack/next-light.svg" alt="Next.js" />
+                        <img src="/stack/vite.png" alt="Vite" />
+                        <img src="/stack/typescript.svg" alt="TypeScript" />
+                        <img src="/stack/js.svg" alt="JavaScript" />
+                        <img src="/stack/python.svg" alt="Python" />
+                        <img src="/stack/go.png" alt="Go" />
+                        <img src="/stack/nodejs.svg" alt="Node.js" />
+                        <img src="/stack/bun.svg" alt="Bun" />
+                        <img src="/stack/firebase.png" alt="Firebase" />
+                        <img src="/stack/express.png" alt="Express" />
+                        <img src="/stack/git.svg" alt="Git" />
+                        <img src="/stack/github.png" alt="Git" />
+                        <img src="/stack/mongodb.svg" alt="MongoDB" />
+                    </div>
+
+                    <div className="stacks">
+                        <img src="/stack/mysql.svg" alt="MySQL" />
+                        <img src="/stack/postman.webp" alt="Postman" />
+                        <img src="/stack/socket_io.svg" alt="Socket.IO" />
+                        <img src="/stack/cursor-ai.png" alt="Socket.IO" />
+                        <img src="/stack/chatgpt.png" alt="Socket.IO" />
+                    </div>
+                </div>
+
+                <div className="featured">
+                    <h4>Featured Projects</h4>
+
+                    <div className="cards">
+                        <div className="card">
+                            <img src="/steamfolio.png" alt="Steamfolio" />
+
+                            <div className="title">
+                                <h1>Engide</h1>
+
+                                <div className="share">
+                                    <Globe />
+                                </div>
+                            </div>
+
+                            <div className="description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, perferendis. Labore vitae, magni praesentium voluptatem</p>
+                            </div>
+
+                            <div className="stacks">
+                                <img src="/stack/typescript.svg" alt="TypeScript" />
+                                <img src="/stack/next-light.svg" alt="Next.js" />
+                                <img src="/stack/firebase.png" alt="Firebase" />
+                                <img src="/stack/bun.svg" alt="Bun" />
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src="/steamfolio.png" alt="" />
+
+                            <div className="title">
+                                <h1>Steamfolio</h1>
+
+                                <div className="share">
+                                    {svgGithub}
+                                    <Globe />
+                                </div>
+                            </div>
+
+                            <div className="description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, perferendis. Labore vitae, magni praesentium voluptatem</p>
+                            </div>
+
+                            <div className="stacks">
+                                <img src="/stack/typescript.svg" alt="TypeScript" />
+                                <img src="/stack/vite.png" alt="Vite" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </HomeDetails>
+
             <Footer />
         </>
     );

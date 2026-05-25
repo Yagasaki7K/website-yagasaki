@@ -1,19 +1,12 @@
-
-@font-face {
-    font-family: "JetBrainsMono Nerd Font";
-    src: url("https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@v3.2.1/patched-fonts/JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf")
-        format("truetype");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-    --background: #000;
+    --black: #0D0D0D;
     --white: #fff;
-    --gray: #afafaf;
-    --gray-risked: #4f4f4f;
-    --gray-transparent: rgba(255, 255, 255, 0.1);
+    --gray: #636363;
+    --gray-title: #505050;
+    --gray-info: #383838;
+    --title: #6B6B6B;
 }
 
 html,
@@ -24,35 +17,38 @@ body {
 
 body {
     color: var(--gray);
-    background: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Geist', sans-serif;
+}
+
+.dark {
+    background: var(--black);
+    color: var(--white);
+}
+
+.light {
+    background: var(--white);
+    color: var(--black);
+}
+
+.dark a {
+    color: var(--white);
+}
+
+.light a {
+    color: var(--black);
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: var(--font-inter), cursive;
     scroll-behavior: smooth;
-}
-
-a {
-    color: var(--white);
-    text-decoration: underline;
-    transition: 1s all ease;
-}
-
-a:hover {
-    color: var(--gray);
-}
-
-hr {
-    margin: 2rem auto;
-    width: 3rem;
-    border: 1px solid var(--gray-transparent);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: var(--font-dm-mono);
+    font-family: 'JetBrains Mono', monospace;
 }

@@ -1,79 +1,24 @@
-import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import imageLoader from "@/utils/imageLoader";
+import { Moon, Sun } from "lucide-react";
+import { useState } from "react";
 
 const NavigationDetails = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: var(--black);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 35px 0 115px 0;
     max-height: 6rem;
+    max-width: 48rem;
+    margin: 0 auto;
 
     .leftContent {
         display: flex;
-        align-items: center;
-        gap: 10px;
-
-        .avatar {
-            position: relative;
-            width: 60px;
-            height: 60px;
-            margin-right: 15px;
-
-            @media (max-width: 768px) {
-                width: 45px;
-                height: 45px;
-                margin-right: 10px;
-            }
-
-            @media (max-width: 480px) {
-                width: 38px;
-                height: 38px;
-                margin-right: 8px;
-            }
-
-            img {
-                border-radius: 50px;
-                filter: grayscale(1);
-                object-fit: cover;
-            }
-        }
-
-        img {
-            width: 60px;
-            margin-right: 15px;
-            border-radius: 50px;
-            filter: grayscale(1);
-
-            @media (max-width: 768px) {
-                width: 45px;
-                margin-right: 10px;
-            }
-
-            @media (max-width: 480px) {
-                width: 38px;
-                margin-right: 8px;
-            }
-        }
-
-        a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-
-            &:hover {
-                border: none;
-            }
-        }
-    }
-
-    .rightContent {
-        display: flex;
-        gap: 20px;
+        gap: 25px;
         list-style: none;
+        font-family: 'Geist', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
 
         @media (max-width: 1024px) {
             gap: 15px;
@@ -88,13 +33,40 @@ const NavigationDetails = styled.div`
         }
     }
 
+    .rightContent {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        svg {
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .sun {
+            &:hover {
+                color: var(--gray);
+                transform: rotate(-20deg);
+            }
+        }
+
+        .moon {
+                &:hover {
+                color: var(--gray);
+                transform: rotate(20deg);
+            }
+        }
+    }
+
     a {
-        color: var(--gray);
         text-decoration: none;
         transition: all 0.3s ease-in-out;
+        font-weight: 500;
 
         &:hover {
-            color: var(--white);
+            color: var(--gray);
         }
 
         @media (max-width: 1024px) {
@@ -109,58 +81,43 @@ const NavigationDetails = styled.div`
             font-size: 0.85rem;
         }
     }
-
-    @media (max-width: 1024px) {
-        padding: 12px 24px;
-    }
-
-    @media (max-width: 768px) {
-        padding: 10px 20px;
-    }
-
-    @media (max-width: 640px) {
-        justify-content: space-between;
-        padding: 10px 15px;
-    }
-
-    @media (max-width: 480px) {
-        flex-direction: row;
-        align-items: center;
-        padding: 8px 12px;
-    }
 `;
 
 const Navigation = () => {
+    const [isMoon, setIsMoon] = useState(false);
+
+    const toggleTheme = () => {
+        const body = document.body;
+        if (body.classList.contains("light")) {
+            body.classList.remove("light");
+            body.classList.add("dark");
+        } else {
+            body.classList.remove("dark");
+            body.classList.add("light");
+        }
+    }
+
     return (
         <NavigationDetails>
             <div className="leftContent">
                 <Link href="/">
-                    <Image src="https://github.com/yagasaki7k.png" alt="Anderson Marlon" width={60} height={60} priority sizes="(max-width: 768px) 45px, (max-width: 480px) 38px, 60px" loader={imageLoader} />
+                    <li>Home</li>
                 </Link>
-            </div>
-
-            <div className="rightContent">
                 <Link href="/about">
                     <li>About</li>
                 </Link>
                 <Link href="/blog">
                     <li>Blog</li>
                 </Link>
-                <Link href="https://github.com/Yagasaki7K" target="_blank">
-                    <li>Projects</li>
-                </Link>
                 <Link href="/photos">
                     <li>Photos</li>
                 </Link>
-                <Link href="https://x.com/yagasaki7k" target="_blank">
-                    <li>Twitter</li>
-                </Link>
-                <Link href="https://github.com/yagasaki7k" target="_blank">
-                    <li>GitHub</li>
-                </Link>
-                {/*<Link href="/#contato">
-                                        <li><i className="uil uil-rss"/></li>
-                                </Link>*/}
+            </div>
+
+            <div className="rightContent">
+                {
+                    isMoon ? <Sun className="sun" onClick={() => { toggleTheme(); setIsMoon(false) }} /> : <Moon className="moon" onClick={() => { toggleTheme(); setIsMoon(true) }} />
+                }
             </div>
         </NavigationDetails>
     );

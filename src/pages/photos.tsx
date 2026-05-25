@@ -15,7 +15,6 @@ const Gallery = styled.div`
     gap: 0px;
     padding: 0 25rem;
     margin: 0;
-    background: #000;
 
     img {
         width: 100%;

@@ -133,10 +133,7 @@ const Footer = () => {
             <div className="footer">
                 <div className="p">
                     <p>
-                        <Link href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
-                            CC BY-NC-SA 4.0
-                        </Link>{" "}
-                        - 2014-PRESENT © Anderson Marlon AKA Yagasaki
+                        2014-{new Date().getFullYear()} © Anderson Marlon AKA Yagasaki - v5
                     </p>
                 </div>
             </div>
