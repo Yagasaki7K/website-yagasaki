@@ -246,8 +246,10 @@ export default function Home() {
                                 <p>
                                     Founded and scaled a web development studio, leading end-to-end delivery of production websites and applications for clients across multiple industries.
                                 </p>
-                                <li>Worked with 30+ clients end to end, from discovery and design to launch and ongoing iteration</li>
-                                <li>Drove up to 2x increase in conversions and volume by optimizing performance, SEO, and UX</li>
+                                <ul>
+                                    <li>Worked with 30+ clients end to end, from discovery and design to launch and ongoing iteration</li>
+                                    <li>Drove up to 2x increase in conversions and volume by optimizing performance, SEO, and UX</li>
+                                </ul>
                             </div>
 
                             <div className="stacks">
