@@ -25,9 +25,8 @@ const HomeDetails = styled.div`
 
         .content {
             h1 {
-                font-family: 'Geist', sans-serif;
+                font-family: var(--font-geist-sans);
                 font-weight: 600;
-                margin-bottom: 0.5rem;
                 color: var(--black);
             }
 
@@ -35,6 +34,7 @@ const HomeDetails = styled.div`
                 font-weight: 600;
                 color: var(--gray);
                 font-size: 0.9rem;
+                font-family: var(--font-geist-sans);
             }
         }
     }
@@ -42,7 +42,7 @@ const HomeDetails = styled.div`
     .container {
         display: flex;
         gap: 35px;
-        font-family: 'Geist', sans-serif;
+        font-family: var(--font-geist-sans);
 
         .info {
             .title {
@@ -57,7 +57,7 @@ const HomeDetails = styled.div`
             .content {
                 display: flex;
                 gap: 7px;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 color: var(--gray-info);
                 font-weight: 500;
 
@@ -74,8 +74,9 @@ const HomeDetails = styled.div`
         margin-top: 30px;
         
         .text {
-            line-height: 1.85;
+            line-height: 1.5;
             color: var(--gray);
+            font-family: var(--font-geist-sans);
 
             a {
                 text-decoration: none;
@@ -91,11 +92,12 @@ const HomeDetails = styled.div`
 
         .spotify {
             margin-top: 20px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             display: flex;
             text-align: center;
             font-weight: 500;
             color: var(--gray);
+            font-family: var(--font-geist-sans);
             gap: 5px;
 
             svg {
@@ -133,9 +135,8 @@ const HomeDetails = styled.div`
         }
     }
 
-    .tech {
-        margin-top: 30px;
-        max-width: 48rem;
+    .tech, .featured, .experience {
+        margin-top: 50px;
 
         h4 {
             color: var(--title);
@@ -144,7 +145,12 @@ const HomeDetails = styled.div`
             font-weight: 600;
             letter-spacing: 1px;
             margin-bottom: 20px;
+            font-family: var(--font-geist-sans);
         }
+    }
+
+    .tech {
+        max-width: 48rem;
 
         .stacks {
             display: flex;
@@ -159,25 +165,15 @@ const HomeDetails = styled.div`
     }
 
     .featured {
-        margin-top: 30px;
-
-        h4 {
-            color: var(--title);
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-
         .cards {
             display: flex;
             gap: 30px;
-            
+            font-family: var(--font-geist-sans);
+
             .card {
                 border-radius: 10px;
                 width: 30rem;
-                border: 1px solid var(--gray-light);
+                border: 1px solid var(--border);
 
                 a {
                     text-decoration: none;
@@ -221,6 +217,7 @@ const HomeDetails = styled.div`
                     padding: 0rem 2rem 1rem 2rem;
                     color: var(--gray);
                     line-height: 1.5;
+                    font-size: 0.9rem;
                 }
 
                 .stacks {
@@ -239,7 +236,77 @@ const HomeDetails = styled.div`
     }
 
     .experience {
+        font-family: var(--font-geist-sans);
         
+        .job {
+            border-left: 1px solid var(--border);
+            padding-left: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            
+            .title {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: 0.8rem;
+                }
+                
+                .role {
+                    display: grid;
+                    grid-template-columns: 0 1fr 0.2fr;
+                    align-items: center;
+                    gap: 10px;
+                    
+                    h1 {
+                        font-size: 1rem;
+                        margin-left: -10px;
+                    }
+
+                    .circle {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: var(--green);
+                        margin-left: -25px;
+                        box-shadow: 0 0 5px 2px var(--green-shadow);
+                    }
+                }
+            }
+
+            .description {
+                margin-top: 10px;
+                color: var(--gray);
+
+                p, li {
+                    margin-top: 0.5rem;
+                    font-size: 0.9rem;
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+
+                li {
+                    margin-left: 1rem;
+                }
+            }
+
+            .stacks {
+                padding: 1rem 0 0 0rem;
+                display: flex;
+                gap: 10px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 0;
+                }
+            }
+        }
     }
 `;
 

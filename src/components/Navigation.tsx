@@ -19,6 +19,15 @@ const NavigationDetails = styled.div`
         font-family: 'Geist', sans-serif;
         font-weight: 600;
         font-size: 0.9rem;
+        
+        a {
+            color: var(--gray);
+
+            &:hover {
+                color: var(--black);
+                text-decoration: underline;
+            }
+        }
 
         @media (max-width: 1024px) {
             gap: 15px;

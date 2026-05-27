@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@font-face {
+    font-family: GeistSans;
+    src: url(../media/Geist_Variable-s.p.92592eb2.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 100 900
+}
+
+@font-face {
+    font-family: GeistSans Fallback;
+    src: local(Arial);
+    ascent-override:94.56%;descent-override:27.76%;line-gap-override:0.0%;size-adjust:106.28%}
+
+.geistsans_d5a4f12f-module__Ur3q_a__className {
+    font-family: GeistSans,GeistSans Fallback
+}
+
+.geistsans_d5a4f12f-module__Ur3q_a__variable {
+    --font-geist-sans: "GeistSans","GeistSans Fallback"
+}
+
+@font-face {
+    font-family: GeistMono;
+    src: url(../media/GeistMono_Variable.p.2f937313.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 100 900
+}
+
+.geistmono_157ca88a-module__iaM1Ya__className {
+    font-family: GeistMono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}
+
+.geistmono_157ca88a-module__iaM1Ya__variable {
+    --font-geist-mono: "GeistMono",ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}
+
+@font-face {
+    font-family: GeistPixelSquare;
+    src: url(../media/GeistPixel_Square.p.31e87829.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 500
+}
+
+.geistpixelsquare_cf225766-module__Yt-Tla__className {
+    font-family: GeistPixelSquare,Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace;
+    font-weight: 500
+}
+
+.geistpixelsquare_cf225766-module__Yt-Tla__variable {
+    --font-geist-pixel-square: "GeistPixelSquare",Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}
+
+@font-face {
+    font-family: GeistPixelGrid;
+    src: url(../media/GeistPixel_Grid.p.2192fce6.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 500
+}
+
+.geistpixelgrid_6ebff038-module__NUBdrG__className {
+    font-family: GeistPixelGrid,Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace;
+    font-weight: 500
+}
+
+.geistpixelgrid_6ebff038-module__NUBdrG__variable {
+    --font-geist-pixel-grid: "GeistPixelGrid",Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}
+
+@font-face {
+    font-family: GeistPixelCircle;
+    src: url(../media/GeistPixel_Circle.p.e967dc6b.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 500
+}
+
+.geistpixelcircle_7ee616e3-module__hUl13q__className {
+    font-family: GeistPixelCircle,Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace;
+    font-weight: 500
+}
+
+.geistpixelcircle_7ee616e3-module__hUl13q__variable {
+    --font-geist-pixel-circle: "GeistPixelCircle",Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}
+
+@font-face {
+    font-family: GeistPixelTriangle;
+    src: url(../media/GeistPixel_Triangle.p.41e14d68.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 500
+}
+
+.geistpixeltriangle_d08a9537-module__YhmSWq__className {
+    font-family: GeistPixelTriangle,Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace;
+    font-weight: 500
+}
+
+.geistpixeltriangle_d08a9537-module__YhmSWq__variable {
+    --font-geist-pixel-triangle: "GeistPixelTriangle",Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}
+
+@font-face {
+    font-family: GeistPixelLine;
+    src: url(../media/GeistPixel_Line.p.e7444037.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 500
+}
+
+.geistpixelline_d71857ef-module__Cx3YZq__className {
+    font-family: GeistPixelLine,Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace;
+    font-weight: 500
+}
+
+.geistpixelline_d71857ef-module__Cx3YZq__variable {
+    --font-geist-pixel-line: "GeistPixelLine",Geist Mono,ui-monospace,SFMono-Regular,Roboto Mono,Menlo,Monaco,Liberation Mono,DejaVu Sans Mono,Courier New,monospace
+}

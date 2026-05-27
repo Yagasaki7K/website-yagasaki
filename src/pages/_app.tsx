@@ -1,5 +1,6 @@
 import SnowOverlay from "@/components/SnowOverlay";
 import "@/styles/globals.css";
+import "@/styles/fonts.css";
 import { Toaster } from "sonner";
 
 type MyAppProps = {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 
 :root {
     --black: #0D0D0D;
@@ -6,8 +6,14 @@
     --gray: #636363;
     --gray-title: #505050;
     --gray-info: #383838;
+    --gray-light: #525252;
     --title: #6B6B6B;
-    --gray-light: #d1d1d1;
+    --border: #c1c1c1;
+    --green: #00d492;
+    --green-shadow: #d9f9ef;
+    --font-geist-mono: "GeistMono", ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+    --font-geist-sans: "GeistSans", "GeistSans Fallback";
+    --font-geist-pixel-square: "GeistPixelSquare", Geist Mono, ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
 }
 
 html,
@@ -20,7 +26,7 @@ body {
     color: var(--gray);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Geist', sans-serif;
+    font-family: var(--font-geist-sans);
 }
 
 .dark {
@@ -51,5 +57,5 @@ body {
 }
 
 code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-geist-mono);
 }
