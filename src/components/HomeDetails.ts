@@ -177,7 +177,17 @@ const HomeDetails = styled.div`
             .card {
                 border-radius: 10px;
                 width: 30rem;
-                border: 1px solid var(--gray);
+                border: 1px solid var(--gray-light);
+
+                a {
+                    text-decoration: none;
+                    color: var(--gray);
+                    transition: all 0.3s ease-in-out;
+                    
+                    &:hover {
+                        color: var(--black);
+                    }
+                }
                 
                 img {
                     width: 100%;
@@ -226,6 +236,10 @@ const HomeDetails = styled.div`
                 }
             }
         }
+    }
+
+    .experience {
+        
     }
 `;
 

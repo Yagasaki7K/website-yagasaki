@@ -105,65 +105,105 @@ export default function Home() {
                         <img src="/stack/express.png" alt="Express" />
                         <img src="/stack/git.svg" alt="Git" />
                         <img src="/stack/github.png" alt="Git" />
-                        <img src="/stack/mongodb.svg" alt="MongoDB" />
+                        <img src="/stack/postman.webp" alt="Postman" />
                     </div>
 
                     <div className="stacks">
+                        <img src="/stack/mongodb.svg" alt="MongoDB" />
+                        <img src="/stack/supabase.webp" alt="Supabase" />
                         <img src="/stack/mysql.svg" alt="MySQL" />
-                        <img src="/stack/postman.webp" alt="Postman" />
                         <img src="/stack/socket_io.svg" alt="Socket.IO" />
-                        <img src="/stack/cursor-ai.png" alt="Socket.IO" />
-                        <img src="/stack/chatgpt.png" alt="Socket.IO" />
+                        <img src="/stack/cursor-ai.png" alt="Cursor AI" />
+                        <img src="/stack/chatgpt.png" alt="ChatGPT" />
                     </div>
                 </div>
+
+                <div className="github"></div>
 
                 <div className="featured">
                     <h4>Featured Projects</h4>
 
                     <div className="cards">
                         <div className="card">
-                            <img src="/steamfolio.png" alt="Steamfolio" />
+                            <img src="/projects/meuboi.png" alt="Steamfolio" />
 
                             <div className="title">
-                                <h1>Engide</h1>
+                                <h1>MeuBoi</h1>
 
                                 <div className="share">
-                                    <Globe />
+                                    <Link href="https://meuboi.com.br" target="_blank" rel="noopener noreferrer">
+                                        <Globe />
+                                    </Link>
                                 </div>
                             </div>
 
                             <div className="description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, perferendis. Labore vitae, magni praesentium voluptatem</p>
+                                <p>A cattle management platform that helps farmers track livestock, financial performance, sales, and herd profitability.</p>
                             </div>
 
                             <div className="stacks">
                                 <img src="/stack/typescript.svg" alt="TypeScript" />
-                                <img src="/stack/next-light.svg" alt="Next.js" />
-                                <img src="/stack/firebase.png" alt="Firebase" />
                                 <img src="/stack/bun.svg" alt="Bun" />
+                                <img src="/stack/go.png" alt="Go Lang" />
+                                <img src="/stack/next-light.svg" alt="Next.js" />
+                                <img src="/stack/supabase.webp" alt="Supabase" />
                             </div>
                         </div>
 
                         <div className="card">
-                            <img src="/steamfolio.png" alt="" />
+                            <img src="/projects/steamfolio.png" alt="Steamfolio" />
 
                             <div className="title">
                                 <h1>Steamfolio</h1>
 
                                 <div className="share">
-                                    {svgGithub}
-                                    <Globe />
+                                    <Link href="https://github.com/yagasaki7k/website-steamfolio" target="_blank" rel="noopener noreferrer">
+                                        {svgGithub}
+                                    </Link>
+                                    <Link href="https://steamfolio.vercel.app" target="_blank" rel="noopener noreferrer">
+                                        <Globe />
+                                    </Link>
                                 </div>
                             </div>
 
                             <div className="description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, perferendis. Labore vitae, magni praesentium voluptatem</p>
+                                <p>Building a customizable developer portfolio interface in the style of Steam.</p>
                             </div>
 
                             <div className="stacks">
                                 <img src="/stack/typescript.svg" alt="TypeScript" />
                                 <img src="/stack/vite.png" alt="Vite" />
+                                <img src="/stack/github.png" alt="GitHub" />
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="experience">
+                    <h4>Experience</h4>
+
+                    <div className="content">
+                        <div className="title">
+                            <div className="role">
+                                <h1>Founder & Developer</h1>
+                                <p>Remote, Full-Time</p>
+                            </div>
+                            <p>May 2026 - Present</p>
+                        </div>
+                        <div className="description">
+                            <p>
+                                Founded and scaled a web development studio, leading end-to-end delivery of production websites and applications for clients across multiple industries.
+                            </p>
+                            <li>Worked with 30+ clients end to end, from discovery and design to launch and ongoing iteration</li>
+                            <li>Drove up to 2x increase in conversions and volume by optimizing performance, SEO, and UX</li>
+                        </div>
+
+                        <div className="stacks">
+                            <img src="/stack/react.svg" alt="React" />
+                            <img src="/stack/next-light.svg" alt="Next.js" />
+                            <img src="/stack/vite.png" alt="Vite" />
+                            <img src="/stack/typescript.svg" alt="TypeScript" />
+                            <img src="/stack/js.svg" alt="JavaScript" />
                         </div>
                     </div>
                 </div>

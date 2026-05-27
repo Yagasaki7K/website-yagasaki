@@ -115,9 +115,9 @@ const Navigation = () => {
             </div>
 
             <div className="rightContent">
-                {/* {
+                {
                     isMoon ? <Sun className="sun" onClick={() => { toggleTheme(); setIsMoon(false) }} /> : <Moon className="moon" onClick={() => { toggleTheme(); setIsMoon(true) }} />
-                } */}
+                }
             </div>
         </NavigationDetails>
     );
