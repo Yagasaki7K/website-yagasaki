@@ -135,7 +135,7 @@ const HomeDetails = styled.div`
         }
     }
 
-    .tech, .featured, .experience {
+    .tech, .featured, .experience, .getTouch {
         margin-top: 50px;
 
         h4 {
@@ -250,6 +250,7 @@ const HomeDetails = styled.div`
             .title {
                 display: flex;
                 flex-direction: column;
+                margin-top: 1rem;
 
                 p {
                     font-size: 0.8rem;
@@ -257,7 +258,7 @@ const HomeDetails = styled.div`
                 
                 .role {
                     display: grid;
-                    grid-template-columns: 0 1fr 0.2fr;
+                    grid-template-columns: 0 1fr 0.25fr;
                     align-items: center;
                     gap: 10px;
                     
@@ -266,12 +267,21 @@ const HomeDetails = styled.div`
                         margin-left: -10px;
                     }
 
+                    p {
+                        font-weight: bold;
+                    }
+
                     .circle {
                         width: 10px;
                         height: 10px;
                         border-radius: 50%;
-                        background: var(--green);
+                        background: var(--gray-light);
                         margin-left: -25px;
+                        box-shadow: 0 0 5px 2px var(--gray);
+                    }
+
+                    .green {
+                        background: var(--green);
                         box-shadow: 0 0 5px 2px var(--green-shadow);
                     }
                 }
@@ -296,7 +306,7 @@ const HomeDetails = styled.div`
             }
 
             .stacks {
-                padding: 1rem 0 0 0rem;
+                padding: 1rem 0 2rem 0;
                 display: flex;
                 gap: 10px;
 
@@ -304,6 +314,126 @@ const HomeDetails = styled.div`
                     width: 30px;
                     height: 30px;
                     border-radius: 0;
+                }
+            }
+        }
+    }
+
+    .getTouch {
+        display: flex;
+        flex-direction: column;
+
+        .cards {
+            display: flex;
+            gap: 30px;
+
+            .card {
+                border-radius: 15px;
+                border: 1px solid var(--border-light);
+                padding: 20px;
+                width: 30rem;
+
+                h1 {
+                    font-size: 1.1rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .subtitle {
+                    font-size: 0.9rem;
+                }
+
+                .option {
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0.2rem 0.5rem;
+                    cursor: pointer;
+                    border-bottom: 1px solid var(--border-light);
+                    margin-bottom: 0.2rem;
+
+                    svg, img {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    b, p {
+                        font-size: 0.9rem;
+                    }
+
+                    &:hover {
+                        background: var(--hover);
+                    }
+                }
+
+                .tip {
+                    margin-top: 2rem;
+
+                    .tips {
+                        font-size: 0.8rem;
+                        color: var(--gray);
+
+                        svg {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+
+                form {
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    input, textarea {
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid var(--border);
+                        font-family: var(--font-geist-sans);
+                        font-size: 0.9rem;
+
+                        &:focus {
+                            outline: none;
+                            border-color: var(--gray);
+                        }
+                    }
+
+                    textarea {
+                        height: 5rem;
+                        resize: none;
+                    }
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        background: var(--background);
+                        padding: 10px 15px;
+                        color: var(--font);
+                        border: 1px solid var(--border);
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        font-weight: bold;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        &:hover {
+                            background: var(--hover);
+
+                            svg {
+                                transform: translateX(3px);
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -236,7 +236,7 @@ export default function AboutPage() {
                         </p>
 
                         <h3 className="titleJob">
-                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2025
+                            <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2026
                         </h3>
                         <li>
                             I developed a complete livestock management platform (MeuBoi) from scratch using Go (formerly Bun.js) for a

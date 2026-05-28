@@ -9,8 +9,10 @@
     --gray-light: #525252;
     --title: #6B6B6B;
     --border: #c1c1c1;
+    --border-light: #fefefe;
     --green: #00d492;
     --green-shadow: #d9f9ef;
+    --hover: #f9f9f9;
     --font-geist-mono: "GeistMono", ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
     --font-geist-sans: "GeistSans", "GeistSans Fallback";
     --font-geist-pixel-square: "GeistPixelSquare", Geist Mono, ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
