@@ -31,22 +31,9 @@ body {
     font-family: var(--font-geist-sans);
 }
 
-.dark {
-    background: var(--black);
-    color: var(--white);
-}
-
-.light {
-    background: var(--white);
+a {
     color: var(--black);
-}
-
-.dark a {
-    color: var(--white);
-}
-
-.light a {
-    color: var(--black);
+    text-underline-offset: 4px;
 }
 
 * {

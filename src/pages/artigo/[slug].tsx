@@ -16,193 +16,193 @@ import { PostProps } from "@/types/PostProps";
 import { useEffect } from "react";
 
 declare global {
-  interface Window {
-    hljs?: {
-      highlightAll: () => void;
-    };
-  }
+    interface Window {
+        hljs?: {
+            highlightAll: () => void;
+        };
+    }
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const articlesDirectory = path.join("articles");
-  const fileNames = fs.readdirSync(articlesDirectory);
-  const paths = fileNames
-    .filter((fileName) => fileName.endsWith(".md"))
-    .map((fileName) => ({
-      params: { slug: fileName.replace(/\.md$/, "") },
-    }));
+    const articlesDirectory = path.join("articles");
+    const fileNames = fs.readdirSync(articlesDirectory);
+    const paths = fileNames
+        .filter((fileName) => fileName.endsWith(".md"))
+        .map((fileName) => ({
+            params: { slug: fileName.replace(/\.md$/, "") },
+        }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+    return {
+        paths,
+        fallback: false,
+    };
 };
 
 export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
-  const slug = params?.slug as string;
-  if (!slug) {
-    return { notFound: true };
-  }
+    const slug = params?.slug as string;
+    if (!slug) {
+        return { notFound: true };
+    }
 
-  const filePath = path.join("articles", `${slug}.md`);
-  if (!fs.existsSync(filePath)) {
-    return { notFound: true };
-  }
+    const filePath = path.join("articles", `${slug}.md`);
+    if (!fs.existsSync(filePath)) {
+        return { notFound: true };
+    }
 
-  const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
-  const { data: frontmatterData, content } = matter(markdownWithMeta);
+    const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
+    const { data: frontmatterData, content } = matter(markdownWithMeta);
 
-  if (!content) {
-    console.error(`Content not found for slug: ${slug}`);
-    return { notFound: true };
-  }
+    if (!content) {
+        console.error(`Content not found for slug: ${slug}`);
+        return { notFound: true };
+    }
 
-  const frontmatter = frontmatterData as Partial<Frontmatter>;
-  const hasRequiredFrontmatterFields =
-    !!frontmatter.title &&
-    !!frontmatter.image &&
-    Array.isArray(frontmatter.tags) &&
-    !!frontmatter.date &&
-    !!frontmatter.excerpt;
+    const frontmatter = frontmatterData as Partial<Frontmatter>;
+    const hasRequiredFrontmatterFields =
+        !!frontmatter.title &&
+        !!frontmatter.image &&
+        Array.isArray(frontmatter.tags) &&
+        !!frontmatter.date &&
+        !!frontmatter.excerpt;
 
-  if (!hasRequiredFrontmatterFields) {
-    console.error(`Invalid frontmatter for slug: ${slug}`);
-    return { notFound: true };
-  }
+    if (!hasRequiredFrontmatterFields) {
+        console.error(`Invalid frontmatter for slug: ${slug}`);
+        return { notFound: true };
+    }
 
-  const validatedFrontmatter: Frontmatter = {
-    slug: frontmatter.slug ?? slug,
-    title: frontmatter.title!,
-    image: frontmatter.image!,
-    authors: frontmatter.authors ?? [],
-    tags: frontmatter.tags!,
-    date: frontmatter.date!,
-    excerpt: frontmatter.excerpt!,
-  };
+    const validatedFrontmatter: Frontmatter = {
+        slug: frontmatter.slug ?? slug,
+        title: frontmatter.title!,
+        image: frontmatter.image!,
+        authors: frontmatter.authors ?? [],
+        tags: frontmatter.tags!,
+        date: frontmatter.date!,
+        excerpt: frontmatter.excerpt!,
+    };
 
-  const renderedContent = await marked(content);
+    const renderedContent = await marked(content);
 
-  return {
-    props: {
-      frontmatter: validatedFrontmatter,
-      slug,
-      content: renderedContent || "",
-      viewCount: 0,
-      date: validatedFrontmatter.date ?? "",
-      readingTime: calculateReadingTime(renderedContent || ""),
-    },
-  };
+    return {
+        props: {
+            frontmatter: validatedFrontmatter,
+            slug,
+            content: renderedContent || "",
+            viewCount: 0,
+            date: validatedFrontmatter.date ?? "",
+            readingTime: calculateReadingTime(renderedContent || ""),
+        },
+    };
 };
 
 export default function PostPage({
-  frontmatter,
-  content = "",
+    frontmatter,
+    content = "",
 }: PostProps) {
-  const articlePath = `/artigo/${frontmatter?.slug ?? ""}`;
-  const canonicalUrl = `https://yagasaki.vercel.app${articlePath}`;
-  const normalizedImage = frontmatter?.image?.startsWith("http")
-    ? frontmatter.image
-    : `https://yagasaki.vercel.app${frontmatter?.image?.startsWith("/") ? "" : "/"}${frontmatter?.image ?? ""}`;
-  if (
-    !frontmatter ||
-    !frontmatter.title ||
-    !frontmatter.excerpt ||
-    !frontmatter.date ||
-    !frontmatter.image ||
-    !content
-  ) {
-    return <p>Conteúdo não disponível</p>;
-  }
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.hljs?.highlightAll();
+    const articlePath = `/artigo/${frontmatter?.slug ?? ""}`;
+    const canonicalUrl = `https://yagasaki.vercel.app${articlePath}`;
+    const normalizedImage = frontmatter?.image?.startsWith("http")
+        ? frontmatter.image
+        : `https://yagasaki.vercel.app${frontmatter?.image?.startsWith("/") ? "" : "/"}${frontmatter?.image ?? ""}`;
+    if (
+        !frontmatter ||
+        !frontmatter.title ||
+        !frontmatter.excerpt ||
+        !frontmatter.date ||
+        !frontmatter.image ||
+        !content
+    ) {
+        return <p>Conteúdo não disponível</p>;
     }
-  }, [content]);
 
-  return (
-    <>
-      <NextSeo
-        title={frontmatter.title || "Post"}
-        description={frontmatter.excerpt || "Descrição indisponível"}
-        canonical={canonicalUrl}
-        openGraph={{
-          url: canonicalUrl,
-          title: frontmatter.title || "Post",
-          description: frontmatter.excerpt || "Descrição indisponível",
-          images: normalizedImage
-            ? [
-                {
-                  url: normalizedImage,
-                  width: 460,
-                  height: 460,
-                  alt: frontmatter.title || "Imagem",
-                  type: frontmatter.image.includes(".png")
-                    ? "image/png"
-                    : "image/jpeg",
-                },
-              ]
-            : [],
-          siteName: "Anderson Marlon",
-          type: "article",
-        }}
-        twitter={{
-          handle: "@yagasaki7k",
-          site: "@yagasaki7k",
-          cardType: "summary_large_image",
-        }}
-        additionalMetaTags={[
-          { property: "twitter:image", content: normalizedImage },
-          { property: "twitter:url", content: canonicalUrl },
-        ]}
-      />
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.hljs?.highlightAll();
+        }
+    }, [content]);
 
-      <Head>
-        <title>{frontmatter.title || "Anderson Marlon"}</title>
-        <link
-          rel="icon"
-          type="image/png"
-          href="https://github.com/Yagasaki7K.png"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dracula.min.css"
-        />
-      </Head>
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-        strategy="afterInteractive"
-        onLoad={() => window.hljs?.highlightAll()}
-      />
+    return (
+        <>
+            <NextSeo
+                title={frontmatter.title || "Post"}
+                description={frontmatter.excerpt || "Descrição indisponível"}
+                canonical={canonicalUrl}
+                openGraph={{
+                    url: canonicalUrl,
+                    title: frontmatter.title || "Post",
+                    description: frontmatter.excerpt || "Descrição indisponível",
+                    images: normalizedImage
+                        ? [
+                            {
+                                url: normalizedImage,
+                                width: 460,
+                                height: 460,
+                                alt: frontmatter.title || "Imagem",
+                                type: frontmatter.image.includes(".png")
+                                    ? "image/png"
+                                    : "image/jpeg",
+                            },
+                        ]
+                        : [],
+                    siteName: "Anderson Marlon",
+                    type: "article",
+                }}
+                twitter={{
+                    handle: "@yagasaki7k",
+                    site: "@yagasaki7k",
+                    cardType: "summary_large_image",
+                }}
+                additionalMetaTags={[
+                    { property: "twitter:image", content: normalizedImage },
+                    { property: "twitter:url", content: canonicalUrl },
+                ]}
+            />
 
-      <Navigation />
+            <Head>
+                <title>{frontmatter.title || "Anderson Marlon"}</title>
+                <link
+                    rel="icon"
+                    type="image/png"
+                    href="https://github.com/Yagasaki7K.png"
+                />
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dracula.min.css"
+                />
+            </Head>
+            <Script
+                src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+                strategy="afterInteractive"
+                onLoad={() => window.hljs?.highlightAll()}
+            />
 
-      <ArticleDetails>
-        <div className="card card-page text">
-          <div className="title">
-            <h1 className="post-title">
-              {frontmatter.title || "Título indisponível"}
-            </h1>
-          </div>
+            <Navigation />
 
-          <div className="details">
-            <div className="date">
-              <p>
-                Publicado em <span>{formatDate(frontmatter.date)}</span>
-              </p>
-            </div>
-            <div className="tags">
-              <p className="minRead">
-                Leitura de {calculateReadingTime(content)} minutos
-              </p>
-            </div>
-          </div>
-          <div className="post-body">
-            <div dangerouslySetInnerHTML={{ __html: content ?? "" }} />
-          </div>
-        </div>
-      </ArticleDetails>
-      <Footer />
-    </>
-  );
+            <ArticleDetails>
+                <div className="card card-page text">
+                    <div className="title">
+                        <h1 className="post-title">
+                            {frontmatter.title || "Título indisponível"}
+                        </h1>
+                    </div>
+
+                    <div className="details">
+                        <div className="date">
+                            <p>
+                                Publicado em <span>{formatDate(frontmatter.date)}</span>
+                            </p>
+                        </div>
+                        <div className="tags">
+                            <p className="minRead">
+                                Leitura de {calculateReadingTime(content)} minutos
+                            </p>
+                        </div>
+                    </div>
+                    <div className="post-body">
+                        <div dangerouslySetInnerHTML={{ __html: content ?? "" }} />
+                    </div>
+                </div>
+            </ArticleDetails>
+            <Footer />
+        </>
+    );
 }

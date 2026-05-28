@@ -7,11 +7,11 @@ const ArticleDetails = styled.div`
     margin-top: 2rem;
 
     .text {
-        font-family: "Inter", sans-serif;
+        font-family: var(--font-geist-sans);
     }
 
     .card {
-        width: 50rem;
+        width: 48rem;
         margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
@@ -160,53 +160,22 @@ const ArticleDetails = styled.div`
         h1 {
             margin-top: 1rem;
             font-weight: 800;
-            color: var(--header);
-            font-size: 2.5rem;
+            color: var(--gray);
+            font-size: 1.1rem;
             line-height: 1.35;
-
-            @media (max-width: 1280px) {
-                font-size: 2.25rem;
-            }
-
-            @media (max-width: 1024px) {
-                font-size: 2.1rem;
-            }
-
-            @media (max-width: 820px) {
-                font-size: 2rem;
-            }
-
-            @media (max-width: 768px) {
-                font-size: 2.5rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 2rem;
-            }
+            font-family: var(--font-geist-sans);
         }
 
         .post-title {
             font-size: 2.5rem;
             position: relative;
             z-index: 1;
-            text-align: center;
             line-height: 1.35;
-            color: var(--white);
+            color: var(--gray);
             margin-bottom: 1rem;
             margin-top: 2rem;
             font-weight: normal;
-
-            @media (max-width: 1280px) {
-                font-size: 2.25rem;
-            }
-
-            @media (max-width: 1024px) {
-                font-size: 2rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 1.75rem;
-            }
+            font-family: var(--font-geist-sans);
         }
 
         .title {
@@ -245,50 +214,26 @@ const ArticleDetails = styled.div`
         }
 
         h2 {
-            font-size: 1.875em;
+            font-size: 1.3rem;
             line-height: 1.35;
             color: var(--header);
             margin-top: 2rem;
-
-            @media (max-width: 1024px) {
-                font-size: 1.7rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 1.5rem;
-            }
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             line-height: 1.35;
             color: var(--header);
             margin-top: 2rem;
             margin-bottom: 0.5rem;
-
-            @media (max-width: 1024px) {
-                font-size: 1.35rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 1.25rem;
-            }
         }
 
         h4 {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             line-height: 1.35;
             color: var(--red);
             margin-top: 2rem;
             margin-bottom: 0.5rem;
-
-            @media (max-width: 1024px) {
-                font-size: 1.35rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 1.25rem;
-            }
         }
 
         img {
@@ -387,58 +332,24 @@ const ArticleDetails = styled.div`
         }
 
         p {
-            font-size: 18px;
+            font-size: 1rem;
             line-height: 1.5;
-            color: var(--font);
+            color: var(--gray);
             margin-top: 2rem;
-
-            @media (max-width: 1180px) {
-                font-size: 1.05rem;
-            }
-
-            @media (max-width: 1024px) {
-                font-size: 1rem;
-            }
-
-            @media (max-width: 820px) {
-                font-size: 1rem;
-            }
-
-            @media (max-width: 768px) {
-                font-size: 1.1rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 1rem;
-            }
         }
 
         aside {
-            color: var(--font);
-            background: var(--background-alt);
+            color: var(--gray);
+            background: var(--black);
             padding: 1rem;
             border-radius: 15px;
             font-size: 18px;
             margin: 1rem 0;
             line-height: 1.8;
 
-            @media (max-width: 1024px) {
-                font-size: 1rem;
-                padding: 0.875rem;
-            }
-
-            @media (max-width: 480px) {
-                font-size: 0.95rem;
-                padding: 0.75rem;
-            }
-
             em,
             li {
-                font-size: 16px;
-
-                @media (max-width: 480px) {
-                    font-size: 0.95rem;
-                }
+                font-size: 1rem;
             }
         }
 
@@ -447,7 +358,7 @@ const ArticleDetails = styled.div`
         }
 
         a {
-            color: var(--red);
+            color: var(--gray);
             text-decoration: underline;
         }
 
@@ -462,7 +373,7 @@ const ArticleDetails = styled.div`
         pre code {
             display: block;
             padding: 1rem;
-            font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+            font-family: var(--jetbrains-mono);
             font-size: 14px;
             line-height: 1.5;
             white-space: pre;
@@ -494,13 +405,13 @@ const ArticleDetails = styled.div`
         pre code .hljs-string,
         pre code .hljs-subst,
         pre code .hljs-meta .hljs-string {
-            color: #f1fa8c;
+            color: #bd93f9;
         }
 
         pre code .hljs-number,
         pre code .hljs-symbol,
         pre code .hljs-bullet {
-            color: #bd93f9;
+            color: #f1fa8c;
         }
 
         pre code .hljs-built_in,
@@ -510,13 +421,13 @@ const ArticleDetails = styled.div`
 
         :not(pre) > code {
             position: relative;
-            background-color: #282a36;
-            color: #f1fa8c;
+            background: #282a36;
+            color: var(--white);
             border: 1px solid #44475a;
             border-radius: 8px;
             margin: 1rem 0;
             padding: 0.25rem 0.5rem;
-            font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+            font-family: var(--jetbrains-mono);
             font-size: 14px;
             line-height: 1.4;
             overflow: auto;
@@ -695,14 +606,14 @@ const ArticleDetails = styled.div`
                 }
 
                 a {
-                    color: var(--white);
+                    color: var(--black);
                     text-decoration: none;
                 }
 
                 span {
                     font-size: 1.3rem;
                     background: var(--background);
-                    color: var(--white);
+                    color: var(--gray);
                     border-radius: 25px;
                     padding: 1rem 2rem;
                     border: none;

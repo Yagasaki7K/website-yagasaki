@@ -9,13 +9,14 @@ const AboutDetails = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 45rem;
+    max-width: 48rem;
     margin: 0 auto;
+    font-family: var(--font-geist-sans);
 
     .title {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 600;
-        color: var(--white);
+        color: var(--gray);
         margin-bottom: 2rem;
 
         @media (max-width: 1024px) {
@@ -34,11 +35,15 @@ const AboutDetails = styled.div`
         }
     }
 
+    h1 {
+        font-size: 1.2rem;
+    }
+
     li {
         margin-left: 1.25rem;
         margin-top: 0.25rem;
         margin-bottom: 1rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 1.6;
 
         @media (max-width: 1024px) {
@@ -57,10 +62,10 @@ const AboutDetails = styled.div`
     }
 
     .subTitle {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         line-height: 1.75rem;
         margin: 1rem 0;
-        color: var(--white);
+        color: var(--gray);
 
         @media (max-width: 1024px) {
             font-size: 1.15rem;
@@ -79,11 +84,23 @@ const AboutDetails = styled.div`
     }
 
     s {
-        color: var(--gray-risked);
+        color: var(--gray-light);
+    }
+
+    a {
+        color: var(--black);
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--gray);
+            text-decoration: underline;
+        }
     }
 
     .titleJob {
         margin: 1.5rem 0 1rem 0;
+        font-size: 1.1rem;
 
         @media (max-width: 768px) {
             margin: 1.25rem 0 0.75rem 0;
@@ -116,10 +133,11 @@ const AboutDetails = styled.div`
     }
 
     .certificate {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
 
         strong {
-            color: var(--white);
+            color: var(--gray);
         }
 
         @media (max-width: 768px) {
@@ -231,7 +249,7 @@ export default function AboutPage() {
                             Personal projects or those involving self-development will be listed on{" "}
                             <Link href="https://linkedin.com/in/andersonmarlon" target="_blank">
                                 Linkedin
-                            </Link>
+                            </Link> or <Link href="https://github.com/yagasaki7k" target="_blank">GitHub</Link>
                             .
                         </p>
 
@@ -461,13 +479,18 @@ export default function AboutPage() {
                         </p>
 
                         <p className="certificate">
-                            <strong className="text-gray-50">1st Kyorugui Arbitration Seminar </strong>
+                            <strong className="text-gray-50">[OFF] 1st Kyorugui Arbitration Seminar </strong>
                             by Nova FETESP - February 2024
                         </p>
 
                         <p className="certificate">
-                            <strong className="text-gray-50">4th Kombat Taekwondo Referee Seminar </strong>
+                            <strong className="text-gray-50">[OFF] 4th Kombat Taekwondo Referee Seminar </strong>
                             by Kombat Taekwondo - January 2024
+                        </p>
+
+                        <p className="certificate">
+                            <strong className="text-gray-50">[OFF] Black Belt Club </strong>
+                            by Campinas Fighters - December 2023
                         </p>
 
                         <p className="certificate">

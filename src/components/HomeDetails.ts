@@ -4,6 +4,53 @@ const HomeDetails = styled.div`
     max-width: 48rem;
     margin: 0 auto;
 
+    //Blog Page
+    .search {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 5px;
+        border: 1px solid var(--border);
+        font-size: 0.9rem;
+
+        &:focus {
+            outline: none;
+            border-color: var(--gray);
+        }
+    }
+
+    .article {
+        a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--black);
+            }
+        }
+
+        .content {
+            margin: 1rem 0;
+            border: 1px solid var(--border-light);
+            padding: 15px;
+            border-radius: 5px;
+            font-family: var(--font-geist-sans);
+
+            &:hover {
+                background: var(--border-light);
+            }
+
+            .small {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    // Home Page
     .header {
         display: flex;
         align-items: center;
