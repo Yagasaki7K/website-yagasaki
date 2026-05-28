@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
         unoptimized: true,
     },
     allowedDevOrigins: ["local-origin.dev", "*.local-origin.dev"],
+    experimental: {
+        largePageDataBytes: 160 * 1000,
+    },
 };
 
 export default nextConfig;

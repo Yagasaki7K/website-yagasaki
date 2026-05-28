@@ -103,6 +103,13 @@ export default function PostPage({
     const normalizedImage = frontmatter?.image?.startsWith("http")
         ? frontmatter.image
         : `https://yagasaki.vercel.app${frontmatter?.image?.startsWith("/") ? "" : "/"}${frontmatter?.image ?? ""}`;
+
+    useEffect(() => {
+        if (typeof window !== "undefined" && content) {
+            window.hljs?.highlightAll();
+        }
+    }, [content]);
+
     if (
         !frontmatter ||
         !frontmatter.title ||
@@ -113,12 +120,6 @@ export default function PostPage({
     ) {
         return <p>Conteúdo não disponível</p>;
     }
-
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.hljs?.highlightAll();
-        }
-    }, [content]);
 
     return (
         <>
@@ -163,10 +164,6 @@ export default function PostPage({
                     rel="icon"
                     type="image/png"
                     href="https://github.com/Yagasaki7K.png"
-                />
-                <link
-                    rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dracula.min.css"
                 />
             </Head>
             <Script

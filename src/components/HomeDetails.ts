@@ -201,6 +201,7 @@ const HomeDetails = styled.div`
 
         .stacks {
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             padding: 10px 0 0 0;
 
@@ -270,6 +271,7 @@ const HomeDetails = styled.div`
                 .stacks {
                     padding: 0 2rem 1rem 2rem;
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 10px;
 
                     img {
@@ -355,6 +357,7 @@ const HomeDetails = styled.div`
             .stacks {
                 padding: 1rem 0 2rem 0;
                 display: flex;
+                flex-wrap: wrap;
                 gap: 10px;
 
                 img {
@@ -485,6 +488,128 @@ const HomeDetails = styled.div`
             }
         }
     }
+
+    @media (max-width: 820px) {
+        max-width: 100%;
+        padding: 0 1rem;
+
+        .header {
+            margin-bottom: 42px;
+        }
+
+        .container {
+            flex-wrap: wrap;
+            gap: 18px 28px;
+        }
+
+        .featured .cards,
+        .getTouch .cards {
+            gap: 20px;
+        }
+
+        .featured .cards .card,
+        .getTouch .cards .card {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .featured .cards,
+        .getTouch .cards {
+            flex-direction: column;
+        }
+
+        .experience .content .title .role {
+            grid-template-columns: 0 1fr;
+            row-gap: 4px;
+
+            p {
+                grid-column: 2;
+                font-weight: 600;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 1rem;
+
+        .header {
+            gap: 15px;
+            margin-bottom: 36px;
+
+            .img {
+                width: 52px;
+                height: 52px;
+                flex: 0 0 auto;
+            }
+
+            .content h1 {
+                font-size: 1.45rem;
+            }
+        }
+
+        .container {
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .about .spotify {
+            align-items: flex-start;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .tech, .featured, .experience, .getTouch {
+            margin-top: 42px;
+        }
+
+        .tech .stacks {
+            gap: 12px;
+
+            img {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        .featured .cards .card .title,
+        .featured .cards .card .description,
+        .featured .cards .card .stacks {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+
+        .experience .job {
+            padding-left: 16px;
+        }
+
+        .experience .content .description li {
+            margin-left: 0.85rem;
+        }
+
+        .getTouch .cards .card {
+            padding: 18px;
+
+            .option {
+                gap: 12px;
+                text-align: left;
+
+                .description {
+                    flex: 1;
+                    min-width: 0;
+                }
+
+                b, p {
+                    overflow-wrap: anywhere;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 390px) {
+        padding: 0 0.75rem;
+    }
+
 `;
 
 export default HomeDetails;

@@ -50,10 +50,33 @@ const FooterDetails = styled.div`
                 }
             }
         }
+
+        @media (max-width: 820px) {
+            margin: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+            gap: 1.25rem;
+            align-items: flex-start;
+
+            .copyright {
+                flex-wrap: wrap;
+                row-gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 390px) {
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 `;
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
 
     const svgTwitter = (<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>)
 
@@ -64,7 +87,7 @@ const Footer = () => {
             <div className="footer">
                 <div className="copyright">
                     <p>
-                        © 2014-{new Date().getFullYear()} Anderson Marlon.
+                        © 2014-<span suppressHydrationWarning>{currentYear}</span> Anderson Marlon.
                     </p>
 
                     <Link href="/about">About</Link>
