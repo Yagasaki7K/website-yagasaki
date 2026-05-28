@@ -9,8 +9,9 @@ import HomeDetails from "@/components/HomeDetails";
 import formatDate from "@/utils/formatDate";
 import Navigation from "@/components/Navigation";
 import { PostProps } from "@/types/PostProps";
+import { Frontmatter } from "@/types/Frontmatter";
 
-function parseFrontmatter(markdown: string) {
+function parseFrontmatter(markdown: string): { data: Partial<Frontmatter>; content: string } {
     if (!markdown.startsWith("---")) {
         return { data: {}, content: markdown };
     }
@@ -22,7 +23,7 @@ function parseFrontmatter(markdown: string) {
 
     const frontmatterBlock = markdown.slice(3, end).trim();
     const content = markdown.slice(end + 4).trimStart();
-    const data: Record<string, any> = {};
+    const data: Record<string, string | string[]> = {};
 
     for (const line of frontmatterBlock.split("\n")) {
         const [rawKey, ...rawValueParts] = line.split(":");
@@ -43,7 +44,7 @@ function parseFrontmatter(markdown: string) {
         data[key] = rawValue.replace(/^\"|\"$/g, "").replace(/^'|'$/g, "");
     }
 
-    return { data, content };
+    return { data: data as Partial<Frontmatter>, content };
 }
 
 export async function getStaticProps() {

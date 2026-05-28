@@ -1,5 +1,4 @@
 
-
 :root {
     --black: #0D0D0D;
     --white: #fff;
@@ -13,10 +12,43 @@
     --green: #00d492;
     --green-shadow: #d9f9ef;
     --hover: #f9f9f9;
+    --background: #fff;
+    --background-alt: #f9f9f9;
+    --font: #383838;
+    --header: #505050;
+    --red: #8a3b3b;
+    --tooltip-bg: rgba(13, 13, 13, 0.96);
+    --tooltip-font: #fff;
+    --tooltip-border: rgba(255, 255, 255, 0.12);
+    --tooltip-shadow: rgba(13, 13, 13, 0.16);
     --font-geist-mono: "GeistMono", ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
     --font-geist-sans: "GeistSans", "GeistSans Fallback";
     --font-geist-pixel-square: "GeistPixelSquare", Geist Mono, ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
 }
+
+:root[data-theme="dark"] {
+    --black: #f4f4f5;
+    --white: #0D0D0D;
+    --gray: #a3a3a3;
+    --gray-title: #d4d4d4;
+    --gray-info: #c6c6c6;
+    --gray-light: #b7b7b7;
+    --title: #e5e5e5;
+    --border: #303030;
+    --border-light: #1b1b1b;
+    --green-shadow: rgba(0, 212, 146, 0.22);
+    --hover: #181818;
+    --background: #0D0D0D;
+    --background-alt: #151515;
+    --font: #d6d6d6;
+    --header: #ededed;
+    --red: #f4a3a3;
+    --tooltip-bg: rgba(244, 244, 245, 0.96);
+    --tooltip-font: #0D0D0D;
+    --tooltip-border: rgba(13, 13, 13, 0.12);
+    --tooltip-shadow: rgba(0, 0, 0, 0.35);
+}
+
 
 html,
 body {
@@ -24,8 +56,19 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
 body {
     color: var(--gray);
+    background: var(--background);
+    transition: background 0.25s ease, color 0.25s ease;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: var(--font-geist-sans);
@@ -40,7 +83,6 @@ a {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

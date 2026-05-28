@@ -4,8 +4,8 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
+import StackIcon from "@/components/StackIcon";
 import { ArrowRight, ArrowUpRight, Calendar, CircleCheckBig, Clock, Globe, Mail, MapPin } from "lucide-react";
-import { useEffect } from "react";
 
 export default function Home() {
     const subTitle = ['Software Engineer', 'Curious Builder', 'Fullstack Developer', 'Net Runner', 'Software Tinkerer']
@@ -127,29 +127,29 @@ export default function Home() {
                     <h4>Tech Stack</h4>
 
                     <div className="stacks">
-                        <img src="/stack/react.svg" alt="React" />
-                        <img src="/stack/next-light.png" alt="Next.js" />
-                        <img src="/stack/vite.png" alt="Vite" />
-                        <img src="/stack/typescript.svg" alt="TypeScript" />
-                        <img src="/stack/js.svg" alt="JavaScript" />
-                        <img src="/stack/python.svg" alt="Python" />
-                        <img src="/stack/go.png" alt="Go" />
-                        <img src="/stack/nodejs.svg" alt="Node.js" />
-                        <img src="/stack/bun.svg" alt="Bun" />
-                        <img src="/stack/firebase.png" alt="Firebase" />
-                        <img src="/stack/express.png" alt="Express" />
-                        <img src="/stack/git.svg" alt="Git" />
-                        <img src="/stack/github.png" alt="Git" />
-                        <img src="/stack/postman.webp" alt="Postman" />
+                        <StackIcon src="/stack/react.svg" alt="React" />
+                        <StackIcon src="/stack/next-light.png" alt="Next.js" />
+                        <StackIcon src="/stack/vite.png" alt="Vite" />
+                        <StackIcon src="/stack/typescript.svg" alt="TypeScript" />
+                        <StackIcon src="/stack/js.svg" alt="JavaScript" />
+                        <StackIcon src="/stack/python.svg" alt="Python" />
+                        <StackIcon src="/stack/go.png" alt="Go" />
+                        <StackIcon src="/stack/nodejs.svg" alt="Node.js" />
+                        <StackIcon src="/stack/bun.svg" alt="Bun" />
+                        <StackIcon src="/stack/firebase.png" alt="Firebase" />
+                        <StackIcon src="/stack/express.png" alt="Express" />
+                        <StackIcon src="/stack/git.svg" alt="Git" />
+                        <StackIcon src="/stack/github.png" alt="Git" />
+                        <StackIcon src="/stack/postman.webp" alt="Postman" />
                     </div>
 
                     <div className="stacks">
-                        <img src="/stack/mongodb.svg" alt="MongoDB" />
-                        <img src="/stack/supabase.webp" alt="Supabase" />
-                        <img src="/stack/mysql.svg" alt="MySQL" />
-                        <img src="/stack/socket_io.svg" alt="Socket.IO" />
-                        <img src="/stack/cursor-ai.png" alt="Cursor AI" />
-                        <img src="/stack/chatgpt.png" alt="ChatGPT" />
+                        <StackIcon src="/stack/mongodb.svg" alt="MongoDB" />
+                        <StackIcon src="/stack/supabase.webp" alt="Supabase" />
+                        <StackIcon src="/stack/mysql.svg" alt="MySQL" />
+                        <StackIcon src="/stack/socket_io.svg" alt="Socket.IO" />
+                        <StackIcon src="/stack/cursor-ai.png" alt="Cursor AI" />
+                        <StackIcon src="/stack/chatgpt.png" alt="ChatGPT" />
                     </div>
                 </div>
 
@@ -177,11 +177,11 @@ export default function Home() {
                             </div>
 
                             <div className="stacks">
-                                <img src="/stack/typescript.svg" alt="TypeScript" />
-                                <img src="/stack/bun.svg" alt="Bun" />
-                                <img src="/stack/go.png" alt="Go Lang" />
-                                <img src="/stack/next-light.png" alt="Next.js" />
-                                <img src="/stack/supabase.webp" alt="Supabase" />
+                                <StackIcon src="/stack/typescript.svg" alt="TypeScript" />
+                                <StackIcon src="/stack/bun.svg" alt="Bun" />
+                                <StackIcon src="/stack/go.png" alt="Go Lang" />
+                                <StackIcon src="/stack/next-light.png" alt="Next.js" />
+                                <StackIcon src="/stack/supabase.webp" alt="Supabase" />
                             </div>
                         </div>
 
@@ -206,9 +206,9 @@ export default function Home() {
                             </div>
 
                             <div className="stacks">
-                                <img src="/stack/typescript.svg" alt="TypeScript" />
-                                <img src="/stack/vite.png" alt="Vite" />
-                                <img src="/stack/github.png" alt="GitHub" />
+                                <StackIcon src="/stack/typescript.svg" alt="TypeScript" />
+                                <StackIcon src="/stack/vite.png" alt="Vite" />
+                                <StackIcon src="/stack/github.png" alt="GitHub" />
                             </div>
                         </div>
                     </div>
@@ -252,13 +252,13 @@ export default function Home() {
                             </div>
 
                             <div className="stacks">
-                                <img src="/stack/typescript.svg" alt="TypeScript" />
-                                <img src="/stack/react.svg" alt="React" />
-                                <img src="/stack/next-light.png" alt="Next.js" />
-                                <img src="/stack/vite.png" alt="Vite" />
-                                <img src="/stack/python.svg" alt="Python" />
-                                <img src="/stack/swagger.png" alt="Swagger" />
-                                <img src="/stack/discord.jpg" alt="Discord Webhook" />
+                                <StackIcon src="/stack/typescript.svg" alt="TypeScript" />
+                                <StackIcon src="/stack/react.svg" alt="React" />
+                                <StackIcon src="/stack/next-light.png" alt="Next.js" />
+                                <StackIcon src="/stack/vite.png" alt="Vite" />
+                                <StackIcon src="/stack/python.svg" alt="Python" />
+                                <StackIcon src="/stack/swagger.png" alt="Swagger" />
+                                <StackIcon src="/stack/discord.jpg" alt="Discord Webhook" />
                             </div>
                         </div>
 
@@ -292,26 +292,26 @@ export default function Home() {
                             </div>
 
                             <div className="stacks">
-                                <img src="/stack/express.png" alt="Express.js" />
-                                <img src="/stack/nodejs.svg" alt="Node.js" />
-                                <img src="/stack/chatgpt.png" alt="OpenAI API" />
-                                <img src="/stack/whatsapp.webp" alt="WhatsApp API" />
-                                <img src="/stack/next-light.png" alt="Next.js" />
-                                <img src="/stack/discord.jpg" alt="Discord Webhook" />
-                                <img src="/stack/stripe.webp" alt="Stripe" />
-                                <img src="/stack/python.svg" alt="Python" />
+                                <StackIcon src="/stack/express.png" alt="Express.js" />
+                                <StackIcon src="/stack/nodejs.svg" alt="Node.js" />
+                                <StackIcon src="/stack/chatgpt.png" alt="OpenAI API" />
+                                <StackIcon src="/stack/whatsapp.webp" alt="WhatsApp API" />
+                                <StackIcon src="/stack/next-light.png" alt="Next.js" />
+                                <StackIcon src="/stack/discord.jpg" alt="Discord Webhook" />
+                                <StackIcon src="/stack/stripe.webp" alt="Stripe" />
+                                <StackIcon src="/stack/python.svg" alt="Python" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="getTouch">
-                    <h4>Let's Work Together</h4>
+                    <h4>Let&apos;s Work Together</h4>
 
                     <div className="cards">
                         <div className="card">
                             <h1>Get in Touch</h1>
-                            <p className="subtitle">Choose your preferred method to connect and let's discuss your project.</p>
+                            <p className="subtitle">Choose your preferred method to connect and let&apos;s discuss your project.</p>
 
                             <div className="option">
                                 <Calendar />
@@ -354,7 +354,7 @@ export default function Home() {
 
                         <div className="card">
                             <h1>Send a Message</h1>
-                            <p className="subtitle">Prefer to write? Fill out the form and I'll get back to you within 24 hours.</p>
+                            <p className="subtitle">Prefer to write? Fill out the form and I&apos;ll get back to you within 24 hours.</p>
 
                             <form>
                                 <input type="text" name="" id="" placeholder="Full Name" />

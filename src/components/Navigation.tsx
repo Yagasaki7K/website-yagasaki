@@ -1,9 +1,9 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { Moon, Sun } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const NavigationDetails = styled.div`
+const NavigationDetails = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,9 +16,11 @@ const NavigationDetails = styled.div`
         display: flex;
         gap: 25px;
         list-style: none;
-        font-family: 'Geist', sans-serif;
+        font-family: var(--font-geist-sans);
         font-weight: 600;
         font-size: 0.9rem;
+        padding: 0;
+        margin: 0;
         
         a {
             color: var(--gray);
@@ -36,36 +38,47 @@ const NavigationDetails = styled.div`
         @media (max-width: 768px) {
             gap: 10px;
         }
-
-        @media (max-width: 640px) {
-            display: none;
-        }
     }
 
     .rightContent {
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+
+    .themeToggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        color: var(--gray);
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background 0.3s ease-in-out;
 
         svg {
             width: 17px;
             height: 17px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .sun {
-            &:hover {
-                color: var(--gray);
-                transform: rotate(-20deg);
-            }
+        &:hover,
+        &:focus-visible {
+            color: var(--black);
+            background: var(--hover);
+            border-color: var(--border-light);
+            outline: none;
         }
 
-        .moon {
-                &:hover {
-                color: var(--gray);
-                transform: rotate(20deg);
-            }
+        &:hover .sun {
+            transform: rotate(-20deg);
+        }
+
+        &:hover .moon {
+            transform: rotate(20deg);
         }
     }
 
@@ -90,43 +103,73 @@ const NavigationDetails = styled.div`
             font-size: 0.85rem;
         }
     }
-`;
 
-const Navigation = () => {
-    const [isMoon, setIsMoon] = useState(false);
-
-    const toggleTheme = () => {
-        const body = document.body;
-        if (body.classList.contains("light")) {
-            body.classList.remove("light");
-            body.classList.add("dark");
-        } else {
-            body.classList.remove("dark");
-            body.classList.add("light");
-        }
+    @media (max-width: 820px) {
+        padding: 28px 1rem 80px 1rem;
     }
 
+    @media (max-width: 640px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 390px) {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+`;
+
+type Theme = "light" | "dark";
+
+const getDocumentTheme = (): Theme => {
+    if (typeof document === "undefined") return "light";
+    return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+};
+
+const Navigation = () => {
+    const [theme, setTheme] = useState<Theme>("light");
+
+    useEffect(() => {
+        const timeout = window.setTimeout(() => {
+            setTheme(getDocumentTheme());
+        }, 0);
+
+        return () => window.clearTimeout(timeout);
+    }, []);
+
+    const toggleTheme = () => {
+        const nextTheme: Theme = getDocumentTheme() === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = nextTheme;
+        window.localStorage.setItem("theme", nextTheme);
+        setTheme(nextTheme);
+    };
+
     return (
-        <NavigationDetails>
-            <div className="leftContent">
-                <Link href="/">
-                    <li>Home</li>
-                </Link>
-                <Link href="/about">
-                    <li>About</li>
-                </Link>
-                <Link href="/blog">
-                    <li>Blog</li>
-                </Link>
-                <Link href="/photos">
-                    <li>Photos</li>
-                </Link>
-            </div>
+        <NavigationDetails aria-label="Primary navigation">
+            <ul className="leftContent">
+                <li>
+                    <Link href="/">Home</Link>
+                </li>
+                <li>
+                    <Link href="/about">About</Link>
+                </li>
+                <li>
+                    <Link href="/blog">Blog</Link>
+                </li>
+                <li>
+                    <Link href="/photos">Photos</Link>
+                </li>
+            </ul>
 
             <div className="rightContent">
-                {
-                    isMoon ? <Sun className="sun" onClick={() => { toggleTheme(); setIsMoon(false) }} /> : <Moon className="moon" onClick={() => { toggleTheme(); setIsMoon(true) }} />
-                }
+                <button
+                    type="button"
+                    className="themeToggle"
+                    onClick={toggleTheme}
+                    aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+                    title={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+                >
+                    {theme === "dark" ? <Sun className="sun" aria-hidden="true" /> : <Moon className="moon" aria-hidden="true" />}
+                </button>
             </div>
         </NavigationDetails>
     );

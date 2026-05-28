@@ -2,13 +2,9 @@ import SnowOverlay from "@/components/SnowOverlay";
 import "@/styles/globals.css";
 import "@/styles/fonts.css";
 import { Toaster } from "sonner";
+import type { AppProps } from "next/app";
 
-type MyAppProps = {
-    Component: any;
-    pageProps: any;
-};
-
-export default function App({ Component, pageProps }: MyAppProps) {
+export default function App({ Component, pageProps }: AppProps) {
     return (
         <div>
             <Component {...pageProps} />
