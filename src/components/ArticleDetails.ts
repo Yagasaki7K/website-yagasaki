@@ -368,12 +368,13 @@ const ArticleDetails = styled.div`
             overflow: auto;
             background: #282a36;
             border: 1px solid #44475a;
+            color: #f8f8f2;
         }
 
         pre code {
             display: block;
             padding: 1rem;
-            font-family: var(--jetbrains-mono);
+            font-family: var(--font-geist-mono);
             font-size: 14px;
             line-height: 1.5;
             white-space: pre;
@@ -422,12 +423,12 @@ const ArticleDetails = styled.div`
         :not(pre) > code {
             position: relative;
             background: #282a36;
-            color: var(--white);
+            color: #f8f8f2;
             border: 1px solid #44475a;
             border-radius: 8px;
             margin: 1rem 0;
             padding: 0.25rem 0.5rem;
-            font-family: var(--jetbrains-mono);
+            font-family: var(--font-geist-mono);
             font-size: 14px;
             line-height: 1.4;
             overflow: auto;

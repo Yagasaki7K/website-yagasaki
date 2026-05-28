@@ -5,12 +5,54 @@ type StackIconProps = {
     alt: string;
 };
 
+const themeAwareLogos = new Set([
+    "chatgpt",
+    "express",
+    "express.js",
+    "github",
+    "next.js",
+    "openai api",
+    "socket.io",
+]);
+
+const getDarkSrc = (src: string) => {
+    if (src.endsWith("/stack/next-light.png")) return "/stack/next-dark.svg";
+    return undefined;
+};
+
+const isThemeAwareLogo = (alt: string, src: string) => {
+    const normalizedAlt = alt.toLowerCase();
+    return themeAwareLogos.has(normalizedAlt) || Boolean(getDarkSrc(src));
+};
+
 const TooltipIcon = styled.span`
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 0;
+
+    .stackIconImage {
+        transition: filter 0.2s ease, opacity 0.2s ease;
+    }
+
+    .stackIconImageDark {
+        display: none;
+    }
+
+    :root[data-theme="dark"] &.themeAware:not(.hasDarkAsset) .stackIconImage {
+        filter: invert(1) grayscale(1) brightness(1.18);
+    }
+
+    :root[data-theme="dark"] &.hasDarkAsset {
+        .stackIconImageLight {
+            display: none;
+        }
+
+        .stackIconImageDark {
+            display: block;
+        }
+    }
 
     &::after {
         content: attr(data-tooltip);
@@ -74,9 +116,13 @@ const TooltipIcon = styled.span`
 `;
 
 export default function StackIcon({ src, alt }: StackIconProps) {
+    const darkSrc = getDarkSrc(src);
+    const className = [isThemeAwareLogo(alt, src) ? "themeAware" : "", darkSrc ? "hasDarkAsset" : ""].filter(Boolean).join(" ");
+
     return (
-        <TooltipIcon data-tooltip={alt} tabIndex={0} aria-label={alt} title={alt}>
-            <img src={src} alt={alt} />
+        <TooltipIcon className={className} data-tooltip={alt} tabIndex={0} aria-label={alt} title={alt}>
+            <img className="stackIconImage stackIconImageLight" src={src} alt={alt} />
+            {darkSrc ? <img className="stackIconImage stackIconImageDark" src={darkSrc} alt="" aria-hidden="true" /> : null}
         </TooltipIcon>
     );
 }
