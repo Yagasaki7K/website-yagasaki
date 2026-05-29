@@ -61,8 +61,7 @@ export default function Home() {
 
     useEffect(() => {
     const clientId = spotify1 + spotify2;
-    const clientSecret =
-        spotifysec1 + spotifysec2;
+        const clientSecret = spotifysec1 + spotifysec2;
 
     const fetchSpotify = async () => {
         try {
