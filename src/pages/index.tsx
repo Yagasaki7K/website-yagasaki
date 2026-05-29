@@ -391,7 +391,7 @@ export default function Home() {
                         <StackIcon src="/stack/firebase.png" alt="Firebase" />
                         <StackIcon src="/stack/express.png" alt="Express" />
                         <StackIcon src="/stack/git.svg" alt="Git" />
-                        <StackIcon src="/stack/github.png" alt="Git" />
+                        <StackIcon src="/stack/github.png" alt="GitHub" />
                         <StackIcon src="/stack/postman.webp" alt="Postman" />
                     </div>
 
