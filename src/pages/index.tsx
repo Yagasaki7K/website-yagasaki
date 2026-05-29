@@ -356,19 +356,6 @@ export default function Home() {
                         {spotify.isPlaying ? statusSpotify[0] : statusSpotify[1]} — <Link href={spotify.url} target="_blank" rel="noopener noreferrer">{spotify.artist}  ·  {spotify.name}</Link>
                     </p>
 
-                    {
-                        spotify.artist &&
-                        spotify.name && (
-                            <Link
-                                href={spotify.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {spotify.artist} · {spotify.name}
-                            </Link>
-                        )
-                    }
-
                     <div className="social">
                         <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noopener noreferrer">
                             {svgTwitter}
