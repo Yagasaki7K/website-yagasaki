@@ -37,116 +37,171 @@ export default function Home() {
     const clientId = spotify1 + spotify2;
     const clientSecret = spotifysec1 + spotifysec2;
 
-    const refreshToken =
-        typeof window !== "undefined"
-            ? localStorage.getItem("spotify_refresh_token")
-            : null;
+        const fetchSpotify = async () => {
+            try {
+                let accessToken =
+                    localStorage.getItem(
+                        "spotify_access_token"
+                    );
 
-    if (!clientId || !clientSecret || !refreshToken) return;
-
-    const fetchSpotify = async () => {
-        try {
-            const tokenResponse = await fetch(
-                "https://accounts.spotify.com/api/token",
-                {
-                    method: "POST",
-                    headers: {
-                        Authorization: `Basic ${btoa(
-                            `${clientId}:${clientSecret}`
-                        )}`,
-                        "Content-Type":
-                            "application/x-www-form-urlencoded",
-                    },
-                    body: new URLSearchParams({
-                        grant_type: "refresh_token",
-                        refresh_token: refreshToken,
-                    }),
-                }
-            );
-
-            const tokenData = await tokenResponse.json();
+            const refreshToken =
+                localStorage.getItem(
+                    "spotify_refresh_token"
+                );
 
             if (
-                !tokenResponse.ok ||
-                !tokenData?.access_token
+                !accessToken &&
+                !refreshToken
             ) {
                 return;
             }
 
-            const accessToken = tokenData.access_token;
+            if (refreshToken) {
+                const refreshResponse =
+                    await fetch(
+                        "https://accounts.spotify.com/api/token",
+                        {
+                            method: "POST",
+                            headers: {
+                                Authorization: `Basic ${btoa(
+                                    `${clientId}:${clientSecret}`
+                                )}`,
+                                "Content-Type":
+                                    "application/x-www-form-urlencoded",
+                            },
+                            body: new URLSearchParams(
+                                {
+                                    grant_type:
+                                        "refresh_token",
+                                    refresh_token:
+                                        refreshToken,
+                                }
+                            ),
+                        }
+                    );
 
-            const currentResponse = await fetch(
-                "https://api.spotify.com/v1/me/player/currently-playing",
-                {
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                    },
+                const refreshData =
+                    await refreshResponse.json();
+
+                if (
+                    refreshData.access_token
+                ) {
+                    accessToken =
+                        refreshData.access_token;
+
+                    localStorage.setItem(
+                        "spotify_access_token",
+                        accessToken
+                    );
+
+                    if (
+                        refreshData.refresh_token
+                    ) {
+                        localStorage.setItem(
+                            "spotify_refresh_token",
+                            refreshData.refresh_token
+                        );
+                    }
                 }
-            );
+            }
 
-            if (currentResponse.ok) {
+            if (!accessToken) return;
+
+            const currentResponse =
+                await fetch(
+                    "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode",
+                    {
+                        headers: {
+                            Authorization: `Bearer ${accessToken}`,
+                        },
+                    }
+                );
+
+            if (
+                currentResponse.ok &&
+                currentResponse.status !==
+                204
+            ) {
                 const current =
                     await currentResponse.json();
 
-                if (current?.item) {
+                const item =
+                    current?.item;
+
+                if (item) {
+                    const isEpisode =
+                        current.currently_playing_type ===
+                        "episode";
+
                     setSpotify({
                         isPlaying:
-                            current.is_playing,
+                            Boolean(
+                                current.is_playing
+                            ),
                         name:
-                            current.item.name ??
-                            "",
+                            item.name ?? "",
                         artist:
-                            current.item.artists
-                                ?.map(
-                                    (
-                                        artist: {
-                                            name: string;
-                                        }
-                                    ) =>
-                                        artist.name
-                                )
-                                .join(", ") ??
-                            "",
+                            isEpisode
+                                ? item.show
+                                    ?.publisher ??
+                                "Podcast"
+                                : item.artists
+                                    ?.map(
+                                        (
+                                            artist: {
+                                                name: string;
+                                            }
+                                        ) =>
+                                            artist.name
+                                    )
+                                    .join(
+                                        ", "
+                                    ) ??
+                                "",
                         image:
-                            current.item.album
+                            item.album
                                 ?.images?.[0]
-                                ?.url ?? "",
+                                ?.url ||
+                            item.images?.[0]
+                                ?.url ||
+                            "",
                         url:
-                            current.item
+                            item
                                 .external_urls
-                                ?.spotify ?? "",
+                                ?.spotify ??
+                            "",
                     });
 
                     return;
                 }
             }
 
-            const recentResponse = await fetch(
-                "https://api.spotify.com/v1/me/player/recently-played?limit=1",
-                {
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                    },
-                }
-            );
+            const recentResponse =
+                await fetch(
+                    "https://api.spotify.com/v1/me/player/recently-played?limit=1",
+                    {
+                        headers: {
+                            Authorization: `Bearer ${accessToken}`,
+                        },
+                    }
+                );
 
-            if (!recentResponse.ok) {
+            if (!recentResponse.ok)
                 return;
-            }
 
             const recent =
                 await recentResponse.json();
 
             const track =
-                recent?.items?.[0]?.track;
+                recent?.items?.[0]
+                    ?.track;
 
-            if (!track) {
-                return;
-            }
+            if (!track) return;
 
             setSpotify({
                 isPlaying: false,
-                name: track.name ?? "",
+                name:
+                    track.name ?? "",
                 artist:
                     track.artists
                         ?.map(
@@ -154,14 +209,18 @@ export default function Home() {
                                 artist: {
                                     name: string;
                                 }
-                            ) => artist.name
+                            ) =>
+                                artist.name
                         )
-                        .join(", ") ?? "",
+                        .join(", ") ??
+                    "",
                 image:
-                    track.album?.images?.[0]
+                    track.album
+                        ?.images?.[0]
                         ?.url ?? "",
                 url:
-                    track.external_urls
+                    track
+                        .external_urls
                         ?.spotify ?? "",
             });
         } catch {}
@@ -169,13 +228,15 @@ export default function Home() {
 
     fetchSpotify();
 
-    const interval = setInterval(
-        fetchSpotify,
-        30000
-    );
+        const interval =
+            setInterval(
+                fetchSpotify,
+                30000
+            );
 
-    return () => clearInterval(interval);
-}, []);
+        return () =>
+            clearInterval(interval);
+    }, []);
 
     const [contactName, setContactName] = useState("");
     const [contactMail, setContactMail] = useState("");

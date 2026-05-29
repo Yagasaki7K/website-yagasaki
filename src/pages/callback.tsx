@@ -18,45 +18,50 @@ export default function Callback() {
         if (typeof code !== "string") return;
 
         const clientId = spotify1 + spotify2;
-        const clientSecret =
-            spotifysec1 + spotifysec2;
+        const clientSecret = spotifysec1 + spotifysec2;
 
-        const getRefreshToken = async () => {
+        const exchangeCode = async () => {
             const response = await fetch(
                 "https://accounts.spotify.com/api/token",
                 {
                     method: "POST",
                     headers: {
+                        "Content-Type":
+                            "application/x-www-form-urlencoded",
                         Authorization: `Basic ${btoa(
                             `${clientId}:${clientSecret}`
                         )}`,
-                        "Content-Type":
-                            "application/x-www-form-urlencoded",
                     },
                     body: new URLSearchParams({
-                        grant_type:
-                            "authorization_code",
                         code,
                         redirect_uri:
                             "https://yagasaki.vercel.app/callback",
+                        grant_type:
+                            "authorization_code",
                     }),
                 }
             );
 
-            const data =
-                await response.json();
+            const data = await response.json();
+
+            if (data.access_token) {
+                localStorage.setItem(
+                    "spotify_access_token",
+                    data.access_token
+                );
+            }
 
             if (data.refresh_token) {
                 localStorage.setItem(
                     "spotify_refresh_token",
                     data.refresh_token
                 );
-
-                router.replace("/");
             }
+
+            router.replace("/");
         };
 
-        getRefreshToken();
+        exchangeCode();
     }, [router]);
 
     return null;
