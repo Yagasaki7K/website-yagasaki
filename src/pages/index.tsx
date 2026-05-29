@@ -20,7 +20,38 @@ export default function Home() {
         <svg viewBox="0 0 168 168"><path fill="#1DB954" d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z"></path></svg>
     );
 
-    const [spotify, setSpotify] = useState({
+    const spotify1 = "a19deafb087d482"
+    const spotify2 = "5a06abaa9e268f30c"
+    const spotifysec1 = "e39514042122434"
+    const spotifysec2 = "e81c34057ea313d10"
+
+    type SpotifyState = {
+        isPlaying: boolean;
+        name: string;
+        artist: string;
+        image: string;
+        url: string;
+    };
+
+    type SpotifyArtist = {
+        name: string;
+    };
+
+    type SpotifyTrack = {
+        name: string;
+        artists?: SpotifyArtist[];
+        album?: {
+            images?: {
+                url: string;
+            }[];
+        };
+        external_urls?: {
+            spotify?: string;
+        };
+    };
+
+    const [spotify, setSpotify] =
+        useState<SpotifyState>({
         isPlaying: false,
         name: "",
         artist: "",
@@ -28,88 +59,71 @@ export default function Home() {
         url: "",
     });
 
-    const spotify1 = "a19deafb087d482"
-    const spotify2 = "5a06abaa9e268f30c"
-    const spotifysec1 = "e39514042122434"
-    const spotifysec2 = "e81c34057ea313d10"
-
     useEffect(() => {
     const clientId = spotify1 + spotify2;
-    const clientSecret = spotifysec1 + spotifysec2;
+    const clientSecret =
+        spotifysec1 + spotifysec2;
 
-        const fetchSpotify = async () => {
-            try {
-                let accessToken =
-                    localStorage.getItem(
-                        "spotify_access_token"
-                    );
-
+    const fetchSpotify = async () => {
+        try {
             const refreshToken =
                 localStorage.getItem(
                     "spotify_refresh_token"
                 );
 
+            if (!refreshToken) return;
+
+            const tokenResponse =
+                await fetch(
+                    "https://accounts.spotify.com/api/token",
+                    {
+                        method: "POST",
+                        headers: {
+                            Authorization: `Basic ${btoa(
+                                `${clientId}:${clientSecret}`
+                            )}`,
+                            "Content-Type":
+                                "application/x-www-form-urlencoded",
+                        },
+                        body: new URLSearchParams(
+                            {
+                                grant_type:
+                                    "refresh_token",
+                                refresh_token:
+                                    refreshToken,
+                            }
+                        ),
+                    }
+                );
+
+            const tokenData: {
+                access_token?: string;
+                refresh_token?: string;
+            } =
+                await tokenResponse.json();
+
             if (
-                !accessToken &&
-                !refreshToken
+                !tokenResponse.ok ||
+                !tokenData.access_token
             ) {
                 return;
             }
 
-            if (refreshToken) {
-                const refreshResponse =
-                    await fetch(
-                        "https://accounts.spotify.com/api/token",
-                        {
-                            method: "POST",
-                            headers: {
-                                Authorization: `Basic ${btoa(
-                                    `${clientId}:${clientSecret}`
-                                )}`,
-                                "Content-Type":
-                                    "application/x-www-form-urlencoded",
-                            },
-                            body: new URLSearchParams(
-                                {
-                                    grant_type:
-                                        "refresh_token",
-                                    refresh_token:
-                                        refreshToken,
-                                }
-                            ),
-                        }
-                    );
-
-                const refreshData =
-                    await refreshResponse.json();
-
-                if (
-                    refreshData.access_token
-                ) {
-                    accessToken =
-                        refreshData.access_token;
-
-                    localStorage.setItem(
-                        "spotify_access_token",
-                        accessToken
-                    );
-
-                    if (
-                        refreshData.refresh_token
-                    ) {
-                        localStorage.setItem(
-                            "spotify_refresh_token",
-                            refreshData.refresh_token
-                        );
-                    }
-                }
+            if (
+                tokenData.refresh_token
+            ) {
+                localStorage.setItem(
+                    "spotify_refresh_token",
+                    tokenData.refresh_token
+                );
             }
 
-            if (!accessToken) return;
+            const accessToken =
+                tokenData.access_token;
 
             const currentResponse =
                 await fetch(
-                    "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode",
+                    "https://api.spotify.com/v1/me/player/currently-playing",
                     {
                         headers: {
                             Authorization: `Bearer ${accessToken}`,
@@ -122,16 +136,12 @@ export default function Home() {
                 currentResponse.status !==
                 204
             ) {
-                const current =
+                const current: any =
                     await currentResponse.json();
 
-                const item =
-                    current?.item;
-
-                if (item) {
-                    const isEpisode =
-                        current.currently_playing_type ===
-                        "episode";
+                if (current?.item) {
+                    const item =
+                        current.item;
 
                     setSpotify({
                         isPlaying:
@@ -139,31 +149,22 @@ export default function Home() {
                                 current.is_playing
                             ),
                         name:
-                            item.name ?? "",
+                            item.name ??
+                            "",
                         artist:
-                            isEpisode
-                                ? item.show
-                                    ?.publisher ??
-                                "Podcast"
-                                : item.artists
-                                    ?.map(
-                                        (
-                                            artist: {
-                                                name: string;
-                                            }
-                                        ) =>
-                                            artist.name
-                                    )
-                                    .join(
-                                        ", "
-                                    ) ??
-                                "",
+                            item.artists
+                                ?.map(
+                                    (
+                                        artist: SpotifyArtist
+                                    ) =>
+                                        artist.name
+                                )
+                                .join(", ") ??
+                            "",
                         image:
                             item.album
                                 ?.images?.[0]
-                                ?.url ||
-                            item.images?.[0]
-                                ?.url ||
+                                ?.url ??
                             "",
                         url:
                             item
@@ -189,11 +190,15 @@ export default function Home() {
             if (!recentResponse.ok)
                 return;
 
-            const recent =
+            const recent: {
+                items?: {
+                    track?: SpotifyTrack;
+                }[];
+            } =
                 await recentResponse.json();
 
             const track =
-                recent?.items?.[0]
+                recent.items?.[0]
                     ?.track;
 
             if (!track) return;
@@ -206,9 +211,7 @@ export default function Home() {
                     track.artists
                         ?.map(
                             (
-                                artist: {
-                                    name: string;
-                                }
+                                artist: SpotifyArtist
                             ) =>
                                 artist.name
                         )
@@ -228,15 +231,15 @@ export default function Home() {
 
     fetchSpotify();
 
-        const interval =
-            setInterval(
-                fetchSpotify,
-                30000
-            );
+    const interval =
+        setInterval(
+            fetchSpotify,
+            30000
+        );
 
-        return () =>
-            clearInterval(interval);
-    }, []);
+    return () =>
+        clearInterval(interval);
+}, []);
 
     const [contactName, setContactName] = useState("");
     const [contactMail, setContactMail] = useState("");
