@@ -10,11 +10,11 @@ import Head from "next/head";
 const countPhotos = 50;
 
 const Gallery = styled.div`
+    margin-top: 7.18rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 0px;
     padding: 0 25rem;
-    margin: 0;
 
     img {
         width: 100%;

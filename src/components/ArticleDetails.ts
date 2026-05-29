@@ -5,6 +5,7 @@ const ArticleDetails = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin: 5.18rem auto 0 auto;
 
     .text {
         font-family: var(--font-geist-sans);

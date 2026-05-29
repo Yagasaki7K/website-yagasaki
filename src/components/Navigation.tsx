@@ -4,13 +4,18 @@ import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const NavigationDetails = styled.nav`
+    background: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 0 115px 0;
-    max-height: 6rem;
+    padding: 17.5px 0 17.5px 0;
     max-width: 48rem;
     margin: 0 auto;
+    z-index: 1000;
 
     .leftContent {
         display: flex;
@@ -63,14 +68,6 @@ const NavigationDetails = styled.nav`
             width: 17px;
             height: 17px;
             transition: transform 0.3s ease-in-out;
-        }
-
-        &:hover,
-        &:focus-visible {
-            color: var(--black);
-            background: var(--hover);
-            border-color: var(--border-light);
-            outline: none;
         }
 
         &:hover .sun {

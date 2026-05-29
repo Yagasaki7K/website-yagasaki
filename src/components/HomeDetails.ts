@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HomeDetails = styled.div`
     max-width: 48rem;
-    margin: 0 auto;
+    margin: 7.18rem auto 0 auto;
 
     //Blog Page
     .search {
@@ -92,6 +92,10 @@ const HomeDetails = styled.div`
         font-family: var(--font-geist-sans);
 
         .info {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
             .title {
                 text-transform: uppercase;
                 font-size: 0.7rem;
@@ -99,6 +103,7 @@ const HomeDetails = styled.div`
                 color: var(--gray-title);
                 letter-spacing: 1px;
                 margin-bottom: 0.5rem;
+                text-align: left;
             }
 
             .content {
@@ -107,12 +112,17 @@ const HomeDetails = styled.div`
                 font-size: 0.9rem;
                 color: var(--gray-info);
                 font-weight: 500;
+                text-align: left;
 
                 svg {
-                    width: 14px;
-                    height: 14px;
+                    width: 15px;
+                    height: 15px;
                     color: var(--gray);
                 }
+            }
+
+            .mail {
+                cursor: pointer;
             }
         }
     }
@@ -141,6 +151,7 @@ const HomeDetails = styled.div`
             margin-top: 20px;
             font-size: 0.9rem;
             display: flex;
+            align-items: center;
             text-align: center;
             font-weight: 500;
             color: var(--gray);

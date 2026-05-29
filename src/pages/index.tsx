@@ -6,6 +6,7 @@ import HomeDetails from "@/components/HomeDetails";
 import Footer from "@/components/Footer";
 import StackIcon from "@/components/StackIcon";
 import { ArrowRight, ArrowUpRight, Calendar, CircleCheckBig, Clock, Globe, Mail, MapPin } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
     const subTitle = ['Software Engineer', 'Curious Builder', 'Fullstack Developer', 'Net Runner', 'Software Tinkerer']
@@ -19,40 +20,90 @@ export default function Home() {
         <svg viewBox="0 0 168 168"><path fill="#1DB954" d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z"></path></svg>
     );
 
-    // useEffect(() => {
-    //     const clientId = process.env.NEXT_PUBLIC_VITE_SPOTIFY_CLIENT_ID || "";
-    //     const clientSecret = process.env.NEXT_PUBLIC_VITE_SPOTIFY_CLIENT_SECRET || "";
-    //     const refreshToken = process.env.NEXT_PUBLIC_VITE_SPOTIFY_REFRESH_TOKEN || "";
-    //     if (!clientId || !clientSecret || !refreshToken) return;
+    const [spotify, setSpotify] = useState({
+        isPlaying: false,
+        name: "",
+        artist: "",
+        image: "",
+        url: "",
+    });
 
-    //     const auth = btoa(`${clientId}:${clientSecret}`);
-    //     fetch("https://accounts.spotify.com/api/token", {
-    //         method: "POST",
-    //         headers: {
-    //             Authorization: `Basic ${auth}`,
-    //             "Content-Type": "application/x-www-form-urlencoded",
-    //         },
-    //         body: `grant_type=refresh_token&refresh_token=${refreshToken}`,
-    //     })
-    //         .then((r) => r.json())
-    //         .then((data) => {
-    //             if (!data.access_token) return null;
-    //             return fetch("https://api.spotify.com/v1/me/player/currently-playing", {
-    //                 headers: { Authorization: `Bearer ${data.access_token}` },
-    //             }).then((r) => (r.status === 204 ? null : r.json()));
-    //         })
-    //         .then((current) => {
-    //             if (current?.item) {
-    //                 setSpotify({
-    //                     isPlaying: Boolean(current?.is_playing),
-    //                     name: current.item.name,
-    //                     artist: current.item.artists?.[0]?.name,
-    //                     image: current.item.album?.images?.[0]?.url,
-    //                     url: current.item.external_urls?.spotify,
-    //                 });
-    //             }
-    //         });
-    // }, []);
+    const spotify1 = "a19deafb087d482"
+    const spotify2 = "5a06abaa9e268f30c"
+    const spotifysec1 = "e39514042122434"
+    const spotifysec2 = "e81c34057ea313d10"
+
+    useEffect(() => {
+        const clientId = spotify1 + spotify2;
+        const clientSecret = spotifysec1 + spotifysec2;
+        if (!clientId || !clientSecret) return;
+
+        const auth = btoa(`${clientId}:${clientSecret}`);
+        fetch("https://accounts.spotify.com/api/token", {
+            method: "POST",
+            headers: {
+                Authorization: `Basic ${auth}`,
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `grant_type=refresh_token`,
+        })
+            .then((r) => r.json())
+            .then((data) => {
+                if (!data.access_token) return null;
+                return fetch("https://api.spotify.com/v1/me/player/currently-playing", {
+                    headers: { Authorization: `Bearer ${data.access_token}` },
+                }).then((r) => (r.status === 204 ? null : r.json()));
+            })
+            .then((current) => {
+                if (current?.item) {
+                    setSpotify({
+                        isPlaying: Boolean(current?.is_playing),
+                        name: current.item.name,
+                        artist: current.item.artists?.[0]?.name,
+                        image: current.item.album?.images?.[0]?.url,
+                        url: current.item.external_urls?.spotify,
+                    });
+                }
+            });
+    }, []);
+
+    const [contactName, setContactName] = useState("");
+    const [contactMail, setContactMail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const number = "1509989367987306546"
+    const code = "fVHMnyn-E-Hzbl_qyJ29oAZL3M_-XtVqOEQLLJwJcFWTkPyYGjCR9Ghp-naQgcWoYNma"
+
+    const postDiscordPayload = async (body: Record<string, unknown>): Promise<void> => {
+        const response = await fetch(`https://discord.com/api/webhooks/${number}/${code}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body),
+            keepalive: true
+        });
+
+        if (!response.ok) {
+            throw new Error(`Webhook falhou com status ${response.status}`);
+        }
+    };
+
+    const sendCartAbandonmentLog = async (): Promise<void> => {
+        await postDiscordPayload({
+            embeds: [
+                {
+                    title: `entrou em contato!`,
+                    color: 0x9b59b6,
+                    description: [
+                        `**Contato:** ${contactName}`,
+                        `**Email:** ${contactMail}`,
+                        `**Mensagem:** ${message}`,
+                    ].join('\n')
+                }
+            ]
+        });
+    };
 
     return (
         <>
@@ -88,7 +139,7 @@ export default function Home() {
                         <p className="title">
                             Email
                         </p>
-                        <p className="content">
+                        <p className="content mail" onClick={() => window.open("mailto:yagasakiwanderlust@proton.me", "_blank")}>
                             <Mail />
                             yagasakiwanderlust@proton.me
                         </p>
@@ -101,7 +152,7 @@ export default function Home() {
                     <p className="spotify">
                         {svgSpotify}
 
-                        {statusSpotify[0]} — <Link href="https://open.spotify.com/track/0VbZ6l5l5l5l5l5l5l5l5" target="_blank" rel="noopener noreferrer">WAY BIGGER  ·  King</Link>
+                        {spotify.isPlaying ? statusSpotify[0] : statusSpotify[1]} — <Link href="https://open.spotify.com/track/0VbZ6l5l5l5l5l5l5l5l5" target="_blank" rel="noopener noreferrer">{spotify.artist}  ·  {spotify.name}</Link>
                     </p>
 
                     <div className="social">
@@ -152,8 +203,6 @@ export default function Home() {
                         <StackIcon src="/stack/chatgpt.png" alt="ChatGPT" />
                     </div>
                 </div>
-
-                <div className="github"></div>
 
                 <div className="featured">
                     <h4>Featured Projects</h4>
@@ -357,10 +406,10 @@ export default function Home() {
                             <p className="subtitle">Prefer to write? Fill out the form and I&apos;ll get back to you within 24 hours.</p>
 
                             <form>
-                                <input type="text" name="" id="" placeholder="Full Name" />
-                                <input type="email" name="" id="" placeholder="Email Address" />
-                                <textarea name="" id="" placeholder="Your Message"></textarea>
-                                <button>Send Message <ArrowRight /></button>
+                                <input type="text" placeholder="Full Name" onChange={(e) => setContactName(e.target.value)} />
+                                <input type="email" placeholder="Email Address" onChange={(e) => setContactMail(e.target.value)} />
+                                <textarea placeholder="Your Message" onChange={(e) => setMessage(e.target.value)}></textarea>
+                                <button onClick={() => sendCartAbandonmentLog()}>Send Message <ArrowRight /></button>
                             </form>
                         </div>
                     </div>

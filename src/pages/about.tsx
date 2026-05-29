@@ -12,9 +12,10 @@ const AboutDetails = styled.div`
     max-width: 48rem;
     margin: 0 auto;
     font-family: var(--font-geist-sans);
+    margin: 7.18rem auto 0 auto;
 
     .title {
-        font-size: 24px;
+        font-size: 2rem;
         font-weight: 600;
         color: var(--gray);
         margin-bottom: 2rem;
