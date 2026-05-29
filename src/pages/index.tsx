@@ -36,35 +36,67 @@ export default function Home() {
     useEffect(() => {
         const clientId = spotify1 + spotify2;
         const clientSecret = spotifysec1 + spotifysec2;
-        if (!clientId || !clientSecret) return;
+        const refreshToken = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
+
+        if (!clientId || !clientSecret || !refreshToken) return;
 
         const auth = btoa(`${clientId}:${clientSecret}`);
-        fetch("https://accounts.spotify.com/api/token", {
-            method: "POST",
-            headers: {
-                Authorization: `Basic ${auth}`,
-                "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: `grant_type=refresh_token`,
-        })
-            .then((r) => r.json())
-            .then((data) => {
-                if (!data.access_token) return null;
-                return fetch("https://api.spotify.com/v1/me/player/currently-playing", {
-                    headers: { Authorization: `Bearer ${data.access_token}` },
-                }).then((r) => (r.status === 204 ? null : r.json()));
-            })
-            .then((current) => {
-                if (current?.item) {
-                    setSpotify({
-                        isPlaying: Boolean(current?.is_playing),
-                        name: current.item.name,
-                        artist: current.item.artists?.[0]?.name,
-                        image: current.item.album?.images?.[0]?.url,
-                        url: current.item.external_urls?.spotify,
-                    });
-                }
-            });
+
+        const fetchSpotify = async () => {
+            try {
+                const tokenResponse = await fetch(
+                    "https://accounts.spotify.com/api/token",
+                    {
+                        method: "POST",
+                        headers: {
+                            Authorization: `Basic ${auth}`,
+                            "Content-Type":
+                                "application/x-www-form-urlencoded",
+                        },
+                        body: new URLSearchParams({
+                            grant_type: "refresh_token",
+                            refresh_token: refreshToken,
+                        }),
+                    }
+                );
+
+                const tokenData = await tokenResponse.json();
+
+                if (!tokenData.access_token) return;
+
+                const currentResponse = await fetch(
+                    "https://api.spotify.com/v1/me/player/currently-playing",
+                    {
+                        headers: {
+                            Authorization: `Bearer ${tokenData.access_token}`,
+                        },
+                    }
+                );
+
+                if (currentResponse.status === 204) return;
+
+                const current = await currentResponse.json();
+
+                if (!current?.item) return;
+
+                setSpotify({
+                    isPlaying: current.is_playing,
+                    name: current.item.name,
+                    artist:
+                        current.item.artists
+                            ?.map((artist: { name: string }) => artist.name)
+                            .join(", ") || "",
+                    image:
+                        current.item.album?.images?.[0]?.url || "",
+                    url:
+                        current.item.external_urls?.spotify || "",
+                });
+            } catch (error) {
+                console.error("Spotify error:", error);
+            }
+        };
+
+        fetchSpotify();
     }, []);
 
     const [contactName, setContactName] = useState("");
@@ -152,7 +184,7 @@ export default function Home() {
                     <p className="spotify">
                         {svgSpotify}
 
-                        {spotify.isPlaying ? statusSpotify[0] : statusSpotify[1]} — <Link href="https://open.spotify.com/track/0VbZ6l5l5l5l5l5l5l5l5" target="_blank" rel="noopener noreferrer">{spotify.artist}  ·  {spotify.name}</Link>
+                        {spotify.isPlaying ? statusSpotify[0] : statusSpotify[1]} — <Link href={spotify.url} target="_blank" rel="noopener noreferrer">{spotify.artist}  ·  {spotify.name}</Link>
                     </p>
 
                     <div className="social">
@@ -413,7 +445,7 @@ export default function Home() {
                             </form>
                         </div>
                     </div>
-                </div> 
+                </div>
             </HomeDetails>
 
             <Footer />
