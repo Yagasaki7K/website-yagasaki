@@ -33,8 +33,8 @@ export default function Home() {
     const spotifysec1 = "e39514042122434"
     const spotifysec2 = "e81c34057ea313d10"
 
-    const spotifyRefresh1 = "AQDKGWT8oqzfKszAooufqs9-e-Lbwo-4bPujjZYH8DrO9UmRb4KQeTQ2Re-KGZbAO6zFwTyjcQQrpnRiaXyi2pKn5xDj7nMzNRbTQrGcaJMpibSGL_4DosiJLRHxcvGQU8cJL1TwKh"
-    const spotifyRefresh2 = "-e1xgm_Nw4jlbwXU61GXYQdAq1ix63CSs8xqUr39Pve9h-drai7nI0aE8z_twxK0v1Rg06QF4aKeKxJOw6tjQx7wu9Vjrth7QB2BzC_VdkLvuIuw0C-gPd"
+    const spotifyRefresh1 = "AQDKGWT8oqzfKszAooufqs9-e-Lbwo-4bPujjZYH8DrO9UmRb4KQeTQ2Re-KGZbAO6zFwTyjcQQrpnRiaXyi2pKn5xDj7nMzNRbTQrGcaJMpibSGL_4DosiJLRHxcvGQU8cJL1TwKh-e1xgm_"
+    const spotifyRefresh2 = "Nw4jlbwXU61GXYQdAq1ix63CSs8xqUr39Pve9h-drai7nI0aE8z_twxK0v1Rg06QF4aKeKxJOw6tjQx7wu9Vjrth7QB2BzC_VdkLvuIuw0C-gPd"
 
     useEffect(() => {
         const clientId = spotify1 + spotify2;
