@@ -62,41 +62,154 @@ export default function Home() {
 
                 const tokenData = await tokenResponse.json();
 
-                if (!tokenData.access_token) return;
+                if (!tokenResponse.ok) {
+                    console.error("Spotify token error", tokenData);
+                    return;
+                }
+
+                const accessToken = tokenData?.access_token;
+
+                if (!accessToken) {
+                    console.error("No access token", tokenData);
+                    return;
+                }
 
                 const currentResponse = await fetch(
-                    "https://api.spotify.com/v1/me/player/currently-playing",
-                    {
-                        headers: {
-                            Authorization: `Bearer ${tokenData.access_token}`,
+                "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode",
+                {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                }
+            );
+
+                if (currentResponse.status === 204) {
+                    const recentResponse = await fetch(
+                        "https://api.spotify.com/v1/me/player/recently-played?limit=1",
+                        {
+                            headers: {
+                                Authorization: `Bearer ${accessToken}`,
                         },
                     }
                 );
 
-                if (currentResponse.status === 204) return;
+                    if (!recentResponse.ok) {
+                        console.error(
+                            "Failed to fetch recently played",
+                            await recentResponse.text()
+                        );
+
+                        setSpotify({
+                            isPlaying: false,
+                            name: "",
+                            artist: "",
+                            image: "",
+                            url: "",
+                        });
+
+                        return;
+                    }
+
+                    const recent = await recentResponse.json();
+
+                    const track = recent?.items?.[0]?.track;
+
+                    if (!track) {
+                        setSpotify({
+                            isPlaying: false,
+                            name: "",
+                            artist: "",
+                            image: "",
+                            url: "",
+                        });
+
+                        return;
+                    }
+
+                    setSpotify({
+                        isPlaying: false,
+                        name: track.name ?? "",
+                        artist:
+                            track.artists
+                                ?.map(
+                                    (artist: { name: string }) =>
+                                        artist.name
+                                )
+                                .join(", ") ?? "",
+                        image:
+                            track.album?.images?.[0]?.url ??
+                            "",
+                        url:
+                            track.external_urls?.spotify ??
+                            "",
+                    });
+
+                    return;
+                }
+
+                if (!currentResponse.ok) {
+                    console.error(
+                        "Current playing error",
+                        currentResponse.status
+                    );
+                    return;
+                }
 
                 const current = await currentResponse.json();
 
-                if (!current?.item) return;
+                console.log(
+                    "[Spotify Current Playing]",
+                    current
+                );
+
+                const item = current?.item;
+
+                if (!item) {
+                    return;
+                }
+
+                const isEpisode =
+                    current.currently_playing_type === "episode";
 
                 setSpotify({
-                    isPlaying: current.is_playing,
-                    name: current.item.name,
-                    artist:
-                        current.item.artists
-                            ?.map((artist: { name: string }) => artist.name)
-                            .join(", ") || "",
-                    image:
-                        current.item.album?.images?.[0]?.url || "",
-                    url:
-                        current.item.external_urls?.spotify || "",
-                });
+                isPlaying: Boolean(current.is_playing),
+
+                name: item.name ?? "",
+
+                artist: isEpisode
+                    ? item.show?.publisher ?? "Podcast"
+                    : item.artists
+                        ?.map(
+                            (artist: { name: string }) =>
+                                artist.name
+                        )
+                        .join(", ") ?? "",
+
+                image:
+                    item.album?.images?.[0]?.url ||
+                    item.images?.[0]?.url ||
+                    "",
+
+                url:
+                    item.external_urls?.spotify ??
+                    "",
+            });
             } catch (error) {
-                console.error("Spotify error:", error);
+                console.error(
+                    "[Spotify Fetch Error]",
+                    error
+                );
             }
         };
 
         fetchSpotify();
+
+        const interval = setInterval(
+            fetchSpotify,
+            30000
+        );
+
+        return () => clearInterval(interval);
     }, []);
 
     const [contactName, setContactName] = useState("");
