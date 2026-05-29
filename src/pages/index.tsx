@@ -55,6 +55,26 @@ export default function Home() {
                     refreshTokenEnd: refreshToken.slice(-20),
                 });
 
+                const response = await fetch(
+                    "https://accounts.spotify.com/api/token",
+                    {
+                        method: "POST",
+                        headers: {
+                            Authorization: `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        body: new URLSearchParams({
+                            grant_type: "authorization_code",
+                            code,
+                            redirect_uri: "https://yagasaki.vercel.app/callback",
+                        }),
+                    }
+                );
+
+                const data = await response.json();
+
+                console.log(data);
+
                 const tokenResponse = await fetch(
                     "https://accounts.spotify.com/api/token",
                     {
