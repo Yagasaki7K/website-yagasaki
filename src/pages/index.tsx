@@ -47,6 +47,14 @@ export default function Home() {
 
         const fetchSpotify = async () => {
             try {
+                console.log("Spotify Debug", {
+                    clientId,
+                    clientSecretLength: clientSecret.length,
+                    refreshTokenLength: refreshToken.length,
+                    refreshTokenStart: refreshToken.slice(0, 20),
+                    refreshTokenEnd: refreshToken.slice(-20),
+                });
+
                 const tokenResponse = await fetch(
                     "https://accounts.spotify.com/api/token",
                     {
@@ -63,28 +71,60 @@ export default function Home() {
                     }
                 );
 
-                const tokenData = await tokenResponse.json();
+                const rawText = await tokenResponse.text();
+
+                console.log(
+                    "Spotify Token Status:",
+                    tokenResponse.status
+                );
+
+                console.log(
+                    "Spotify Token Response:",
+                    rawText
+                );
+
+                let tokenData: any = {};
+
+                try {
+                    tokenData = JSON.parse(rawText);
+                } catch {
+                    console.error(
+                        "Spotify returned invalid JSON"
+                    );
+                    return;
+                }
 
                 if (!tokenResponse.ok) {
-                    console.error("Spotify token error", tokenData);
+                    console.error(
+                        "Spotify token error",
+                        tokenData
+                    );
                     return;
                 }
 
-                const accessToken = tokenData?.access_token;
+                const accessToken =
+                    tokenData?.access_token;
 
                 if (!accessToken) {
-                    console.error("No access token", tokenData);
+                    console.error(
+                        "No access token",
+                        tokenData
+                    );
                     return;
                 }
 
+                console.log(
+                    "Spotify Access Token OK"
+                );
+
                 const currentResponse = await fetch(
-                "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode",
-                {
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                    },
-                }
-            );
+                    "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode",
+                    {
+                        headers: {
+                            Authorization: `Bearer ${accessToken}`,
+                        },
+                    }
+                );
 
                 if (currentResponse.status === 204) {
                     const recentResponse = await fetch(
@@ -92,9 +132,9 @@ export default function Home() {
                         {
                             headers: {
                                 Authorization: `Bearer ${accessToken}`,
-                        },
-                    }
-                );
+                            },
+                        }
+                    );
 
                     if (!recentResponse.ok) {
                         console.error(
@@ -175,28 +215,28 @@ export default function Home() {
                     current.currently_playing_type === "episode";
 
                 setSpotify({
-                isPlaying: Boolean(current.is_playing),
+                    isPlaying: Boolean(current.is_playing),
 
-                name: item.name ?? "",
+                    name: item.name ?? "",
 
-                artist: isEpisode
-                    ? item.show?.publisher ?? "Podcast"
-                    : item.artists
-                        ?.map(
-                            (artist: { name: string }) =>
-                                artist.name
-                        )
-                        .join(", ") ?? "",
+                    artist: isEpisode
+                        ? item.show?.publisher ?? "Podcast"
+                        : item.artists
+                            ?.map(
+                                (artist: { name: string }) =>
+                                    artist.name
+                            )
+                            .join(", ") ?? "",
 
-                image:
-                    item.album?.images?.[0]?.url ||
-                    item.images?.[0]?.url ||
-                    "",
+                    image:
+                        item.album?.images?.[0]?.url ||
+                        item.images?.[0]?.url ||
+                        "",
 
-                url:
-                    item.external_urls?.spotify ??
-                    "",
-            });
+                    url:
+                        item.external_urls?.spotify ??
+                        "",
+                });
             } catch (error) {
                 console.error(
                     "[Spotify Fetch Error]",
