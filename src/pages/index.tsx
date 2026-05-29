@@ -60,65 +60,74 @@ export default function Home() {
     });
 
     useEffect(() => {
+        console.log("[Spotify] useEffect iniciou");
+
     const clientId = spotify1 + spotify2;
         const clientSecret = spotifysec1 + spotifysec2;
 
     const fetchSpotify = async () => {
         try {
+            console.log("[Spotify] fetchSpotify iniciou");
+
             const refreshToken =
                 localStorage.getItem(
                     "spotify_refresh_token"
                 );
 
-            if (!refreshToken) return;
+            console.log(
+                "[Spotify] refreshToken:",
+                refreshToken
+            );
 
-            const tokenResponse =
-                await fetch(
-                    "https://accounts.spotify.com/api/token",
-                    {
-                        method: "POST",
-                        headers: {
-                            Authorization: `Basic ${btoa(
-                                `${clientId}:${clientSecret}`
-                            )}`,
-                            "Content-Type":
-                                "application/x-www-form-urlencoded",
-                        },
-                        body: new URLSearchParams(
-                            {
-                                grant_type:
-                                    "refresh_token",
-                                refresh_token:
-                                    refreshToken,
-                            }
-                        ),
-                    }
-                );
+            if (!refreshToken) {
+                setSpotify({
+                    isPlaying: false,
+                    name: "",
+                    artist: "",
+                    image: "",
+                    url: "",
+                });
 
-            const tokenData: {
-                access_token?: string;
-                refresh_token?: string;
-            } =
-                await tokenResponse.json();
-
-            if (
-                !tokenResponse.ok ||
-                !tokenData.access_token
-            ) {
                 return;
             }
 
-            if (
-                tokenData.refresh_token
-            ) {
-                localStorage.setItem(
-                    "spotify_refresh_token",
-                    tokenData.refresh_token
-                );
-            }
+            const tokenResponse = await fetch(
+                "https://accounts.spotify.com/api/token",
+                {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Basic ${btoa(
+                            `${clientId}:${clientSecret}`
+                        )}`,
+                        "Content-Type":
+                            "application/x-www-form-urlencoded",
+                    },
+                    body: new URLSearchParams({
+                        grant_type: "refresh_token",
+                        refresh_token: refreshToken,
+                    }),
+                }
+            );
+
+            console.log(
+                "[Spotify] token status:",
+                tokenResponse.status
+            );
+
+            const tokenData =
+                await tokenResponse.json();
+
+            console.log(
+                "[Spotify] token data:",
+                tokenData
+            );
 
             const accessToken =
-                tokenData.access_token;
+                tokenData?.access_token;
+
+            if (!accessToken) {
+                return;
+            }
 
             const currentResponse =
                 await fetch(
@@ -130,43 +139,51 @@ export default function Home() {
                     }
                 );
 
+            console.log(
+                "[Spotify] current status:",
+                currentResponse.status
+            );
+
             if (
                 currentResponse.ok &&
                 currentResponse.status !==
                 204
             ) {
-                const current: any =
+                const current =
                     await currentResponse.json();
 
-                if (current?.item) {
-                    const item =
-                        current.item;
+                console.log(
+                    "[Spotify] current:",
+                    current
+                );
 
+                if (current?.item) {
                     setSpotify({
                         isPlaying:
-                            Boolean(
-                                current.is_playing
-                            ),
+                            current.is_playing,
                         name:
-                            item.name ??
+                            current.item.name ??
                             "",
                         artist:
-                            item.artists
+                            current.item.artists
                                 ?.map(
                                     (
-                                        artist: SpotifyArtist
+                                        artist: {
+                                            name: string;
+                                        }
                                     ) =>
                                         artist.name
                                 )
                                 .join(", ") ??
                             "",
                         image:
-                            item.album
+                            current.item
+                                .album
                                 ?.images?.[0]
                                 ?.url ??
                             "",
                         url:
-                            item
+                            current.item
                                 .external_urls
                                 ?.spotify ??
                             "",
@@ -186,21 +203,25 @@ export default function Home() {
                     }
                 );
 
-            if (!recentResponse.ok)
-                return;
+            console.log(
+                "[Spotify] recent status:",
+                recentResponse.status
+            );
 
-            const recent: {
-                items?: {
-                    track?: SpotifyTrack;
-                }[];
-            } =
+            const recent =
                 await recentResponse.json();
 
-            const track =
-                recent.items?.[0]
-                    ?.track;
+            console.log(
+                "[Spotify] recent:",
+                recent
+            );
 
-            if (!track) return;
+            const track =
+                recent?.items?.[0]?.track;
+
+            if (!track) {
+                return;
+            }
 
             setSpotify({
                 isPlaying: false,
@@ -210,7 +231,9 @@ export default function Home() {
                     track.artists
                         ?.map(
                             (
-                                artist: SpotifyArtist
+                                artist: {
+                                    name: string;
+                                }
                             ) =>
                                 artist.name
                         )
@@ -225,7 +248,12 @@ export default function Home() {
                         .external_urls
                         ?.spotify ?? "",
             });
-        } catch {}
+        } catch (error) {
+            console.error(
+                "[Spotify ERROR]",
+                error
+            );
+        }
     };
 
     fetchSpotify();
@@ -327,6 +355,19 @@ export default function Home() {
 
                         {spotify.isPlaying ? statusSpotify[0] : statusSpotify[1]} — <Link href={spotify.url} target="_blank" rel="noopener noreferrer">{spotify.artist}  ·  {spotify.name}</Link>
                     </p>
+
+                    {
+                        spotify.artist &&
+                        spotify.name && (
+                            <Link
+                                href={spotify.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {spotify.artist} · {spotify.name}
+                            </Link>
+                        )
+                    }
 
                     <div className="social">
                         <Link href="https://twitter.com/Yagasaki7K" target="_blank" rel="noopener noreferrer">
