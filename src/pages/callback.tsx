@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 export default function Callback() {
     const router = useRouter();
-
     const [message, setMessage] = useState(
         "Aguardando retorno do Spotify..."
     );
@@ -13,7 +12,10 @@ export default function Callback() {
 
         const code = router.query.code;
 
-        if (typeof code !== "string") return;
+        if (typeof code !== "string") {
+            setMessage("Code não encontrado.");
+            return;
+        }
 
         const clientId =
             "a19deafb087d482" +
@@ -67,12 +69,17 @@ export default function Callback() {
                     data.refresh_token
                 );
 
+                localStorage.setItem(
+                    "spotify_access_token",
+                    data.access_token
+                );
+
                 setMessage(
                     "Refresh token salvo com sucesso."
                 );
             } catch (error) {
                 console.error(error);
-                setMessage("Erro ao obter token.");
+                setMessage("Erro ao trocar code.");
             }
         };
 

@@ -37,28 +37,24 @@ export default function Home() {
             "e39514042122434" +
             "e81c34057ea313d10";
 
-        const refreshToken =
-            localStorage.getItem(
-                "spotify_refresh_token"
-            );
-
-        if (
-            !clientId ||
-            !clientSecret ||
-            !refreshToken
-        ) {
-            console.warn(
-                "Spotify refresh token não encontrado."
-            );
-            return;
-        }
-
         const auth = btoa(
             `${clientId}:${clientSecret}`
         );
 
         const fetchSpotify = async () => {
             try {
+            const refreshToken =
+                localStorage.getItem(
+                    "spotify_refresh_token"
+                );
+
+            if (!refreshToken) {
+                console.error(
+                    "Spotify refresh token não encontrado."
+                );
+                return;
+            }
+
             const tokenResponse = await fetch(
                 "https://accounts.spotify.com/api/token",
                 {
