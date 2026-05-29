@@ -18,38 +18,46 @@ export default function Callback() {
         if (typeof code !== "string") return;
 
         const clientId = spotify1 + spotify2;
-        const clientSecret = spotifysec1 + spotifysec2;
+        const clientSecret =
+            spotifysec1 + spotifysec2;
 
-        fetch("https://accounts.spotify.com/api/token", {
-            method: "POST",
-            headers: {
-                Authorization: `Basic ${btoa(
-                    `${clientId}:${clientSecret}`
-                )}`,
-                "Content-Type":
-                    "application/x-www-form-urlencoded",
-            },
-            body: new URLSearchParams({
-                grant_type: "authorization_code",
-                code,
-                redirect_uri:
-                    "https://yagasaki.vercel.app/callback",
-            }),
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-
-                if (data.refresh_token) {
-                    localStorage.setItem(
-                        "spotify_refresh_token",
-                        data.refresh_token
-                    );
-
-                    router.push("/");
+        const getRefreshToken = async () => {
+            const response = await fetch(
+                "https://accounts.spotify.com/api/token",
+                {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Basic ${btoa(
+                            `${clientId}:${clientSecret}`
+                        )}`,
+                        "Content-Type":
+                            "application/x-www-form-urlencoded",
+                    },
+                    body: new URLSearchParams({
+                        grant_type:
+                            "authorization_code",
+                        code,
+                        redirect_uri:
+                            "https://yagasaki.vercel.app/callback",
+                    }),
                 }
-            });
+            );
+
+            const data =
+                await response.json();
+
+            if (data.refresh_token) {
+                localStorage.setItem(
+                    "spotify_refresh_token",
+                    data.refresh_token
+                );
+
+                router.replace("/");
+            }
+        };
+
+        getRefreshToken();
     }, [router]);
 
-    return <div>Spotify Callback...</div>;
+    return null;
 }

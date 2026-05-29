@@ -34,185 +34,148 @@ export default function Home() {
     const spotifysec2 = "e81c34057ea313d10"
 
     useEffect(() => {
-        const clientId = spotify1 + spotify2;
-        const clientSecret = spotifysec1 + spotifysec2;
+    const clientId = spotify1 + spotify2;
+    const clientSecret = spotifysec1 + spotifysec2;
 
-        const refreshToken =
-            localStorage.getItem(
-                "spotify_refresh_token"
-            );
+    const refreshToken =
+        typeof window !== "undefined"
+            ? localStorage.getItem("spotify_refresh_token")
+            : null;
 
-        if (
-            !clientId ||
-            !clientSecret ||
-            !refreshToken
-        )
-            return;
+    if (!clientId || !clientSecret || !refreshToken) return;
 
-        const auth = btoa(
-            `${clientId}:${clientSecret}`
-        );
-
-        const fetchSpotify = async () => {
-            try {
+    const fetchSpotify = async () => {
+        try {
             const tokenResponse = await fetch(
                 "https://accounts.spotify.com/api/token",
                 {
                     method: "POST",
                     headers: {
-                        Authorization: `Basic ${auth}`,
+                        Authorization: `Basic ${btoa(
+                            `${clientId}:${clientSecret}`
+                        )}`,
                         "Content-Type":
                             "application/x-www-form-urlencoded",
                     },
                     body: new URLSearchParams({
                         grant_type: "refresh_token",
-                        refresh_token:
-                            refreshToken,
+                        refresh_token: refreshToken,
                     }),
                 }
             );
 
-            const tokenData =
-                await tokenResponse.json();
+            const tokenData = await tokenResponse.json();
 
-                if (
-                    !tokenResponse.ok ||
-                    !tokenData.access_token
-                ) {
-                    console.error(tokenData);
-                    return;
-                }
-
-            const accessToken =
-                tokenData.access_token;
-
-                const currentResponse =
-                    await fetch(
-                        "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${accessToken}`,
-                            },
-                        }
-                    );
-
-                if (
-                    currentResponse.status === 204
-                ) {
-                const recentResponse =
-                    await fetch(
-                        "https://api.spotify.com/v1/me/player/recently-played?limit=1",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${accessToken}`,
-                            },
-                        }
-                    );
-
-                const recent =
-                    await recentResponse.json();
-
-                const track =
-                    recent?.items?.[0]?.track;
-
-                if (!track) return;
-
-                setSpotify({
-                    isPlaying: false,
-                    name:
-                        track.name ?? "",
-                    artist:
-                        track.artists
-                            ?.map(
-                                (
-                                    artist: {
-                                        name: string;
-                                    }
-                                ) =>
-                                    artist.name
-                            )
-                            .join(", ") ??
-                        "",
-                    image:
-                        track.album
-                            ?.images?.[0]
-                            ?.url ?? "",
-                    url:
-                        track
-                            .external_urls
-                            ?.spotify ??
-                        "",
-                });
-
+            if (
+                !tokenResponse.ok ||
+                !tokenData?.access_token
+            ) {
                 return;
             }
 
-            const current =
-                await currentResponse.json();
+            const accessToken = tokenData.access_token;
 
-                const item =
-                    current?.item;
+            const currentResponse = await fetch(
+                "https://api.spotify.com/v1/me/player/currently-playing",
+                {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                }
+            );
 
-            if (!item) return;
+            if (currentResponse.ok) {
+                const current =
+                    await currentResponse.json();
 
-            const isEpisode =
-                current.currently_playing_type ===
-                "episode";
+                if (current?.item) {
+                    setSpotify({
+                        isPlaying:
+                            current.is_playing,
+                        name:
+                            current.item.name ??
+                            "",
+                        artist:
+                            current.item.artists
+                                ?.map(
+                                    (
+                                        artist: {
+                                            name: string;
+                                        }
+                                    ) =>
+                                        artist.name
+                                )
+                                .join(", ") ??
+                            "",
+                        image:
+                            current.item.album
+                                ?.images?.[0]
+                                ?.url ?? "",
+                        url:
+                            current.item
+                                .external_urls
+                                ?.spotify ?? "",
+                    });
+
+                    return;
+                }
+            }
+
+            const recentResponse = await fetch(
+                "https://api.spotify.com/v1/me/player/recently-played?limit=1",
+                {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                }
+            );
+
+            if (!recentResponse.ok) {
+                return;
+            }
+
+            const recent =
+                await recentResponse.json();
+
+            const track =
+                recent?.items?.[0]?.track;
+
+            if (!track) {
+                return;
+            }
 
             setSpotify({
-                isPlaying: Boolean(
-                    current.is_playing
-                ),
-
-                name:
-                    item.name ?? "",
-
-                artist: isEpisode
-                    ? item.show
-                        ?.publisher ??
-                    "Podcast"
-                    : item.artists
+                isPlaying: false,
+                name: track.name ?? "",
+                artist:
+                    track.artists
                         ?.map(
-                              (
-                                  artist: {
-                                      name: string;
-                                  }
-                            ) =>
-                                artist.name
-                          )
-                        .join(", ") ??
-                    "",
-
+                            (
+                                artist: {
+                                    name: string;
+                                }
+                            ) => artist.name
+                        )
+                        .join(", ") ?? "",
                 image:
-                    item.album
-                        ?.images?.[0]
-                        ?.url ||
-                    item.images?.[0]
-                        ?.url ||
-                    "",
-
+                    track.album?.images?.[0]
+                        ?.url ?? "",
                 url:
-                    item
-                        .external_urls
-                        ?.spotify ??
-                    "",
+                    track.external_urls
+                        ?.spotify ?? "",
             });
-        } catch (error) {
-                console.error(error);
-        }
+        } catch {}
     };
 
-        fetchSpotify();
+    fetchSpotify();
 
-        const interval =
-            setInterval(
-            fetchSpotify,
-            30000
-        );
+    const interval = setInterval(
+        fetchSpotify,
+        30000
+    );
 
-        return () =>
-            clearInterval(interval);
-    }, []);
+    return () => clearInterval(interval);
+}, []);
 
     const [contactName, setContactName] = useState("");
     const [contactMail, setContactMail] = useState("");
