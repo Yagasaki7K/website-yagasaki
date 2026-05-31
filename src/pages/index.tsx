@@ -348,7 +348,7 @@ export default function Home() {
                 </div>
 
                 <div className="about">
-                    <p className="text">I build full-stack web products end-to-end, obsessing over small details that make software feel right to use. Currently working with <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</Link>, <Link href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</Link>, <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</Link>, and <Link href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">Styled Components</Link>.</p>
+                    <p className="text">Building business platforms, operational systems and AI-powered products. 5+ years designing and delivering full-stack software, from customer-facing applications to backend systems, automation workflows and operational platforms.</p>
 
                     <p className="spotify">
                         {svgSpotify}
@@ -436,29 +436,25 @@ export default function Home() {
                         </div>
 
                         <div className="card">
-                            <img src="/projects/steamfolio.png" alt="Steamfolio" />
+                            <img src="/projects/astriia.jpg" alt="Astriia" />
 
                             <div className="title">
-                                <h1>Steamfolio</h1>
+                                <h1>Astriia</h1>
 
                                 <div className="share">
-                                    <Link href="https://github.com/yagasaki7k/website-steamfolio" target="_blank" rel="noopener noreferrer">
-                                        {svgGithub}
-                                    </Link>
-                                    <Link href="https://steamfolio.vercel.app" target="_blank" rel="noopener noreferrer">
-                                        <Globe />
-                                    </Link>
+
                                 </div>
                             </div>
 
                             <div className="description">
-                                <p>Building a customizable developer portfolio interface in the style of Steam.</p>
+                                <p>Astriia is an AI-powered platform that combines personalized insights, automation and conversational through WhatsApp.</p>
                             </div>
 
                             <div className="stacks">
+                                <StackIcon src="/stack/python.svg" alt="Python" />
                                 <StackIcon src="/stack/typescript.svg" alt="TypeScript" />
                                 <StackIcon src="/stack/vite.png" alt="Vite" />
-                                <StackIcon src="/stack/github.png" alt="GitHub" />
+                                <StackIcon src="/stack/chatgpt.png" alt="ChatGPT" />
                             </div>
                         </div>
                     </div>

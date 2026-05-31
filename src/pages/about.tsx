@@ -36,6 +36,10 @@ const AboutDetails = styled.div`
         }
     }
 
+    .text {
+        margin: 1rem 0;
+    }
+
     h1 {
         font-size: 1.2rem;
     }
@@ -211,9 +215,17 @@ export default function AboutPage() {
                 <article>
                     <h1 className="title">About me</h1>
                     <h1>Software Engineer</h1>
-                    <p>
-                        Full Stack Software Engineer with solid experience in scalable architectures (Node.js/Go). Specialist in process optimization,
-                        reducing execution times by up to 35% and increasing conversions by 28% through AI and payment integrations (Stripe).
+                    <p className="text">Software Engineer with experience building business platforms, operational systems and AI-powered products.</p>
+
+                    <p className="text">Throughout my career I have worked across frontend, backend and product engineering, helping companies design and
+                        deliver software that supports real business operations.</p>
+
+                    <p className="text">My experience includes financial systems, WhatsApp automation, AI integrations, livestock management platforms and SaaS products.</p>
+
+                    <p className="text">Beyond implementation, I frequently work on system architecture, API design, technical documentation and platform maintainability.</p>
+
+                    <p className="text">
+                        <strong>Engineering Highlights:</strong> Built a complete livestock management platform, Designed API contracts and technical documentation, Developed AI-powered WhatsApp automation systems, Implemented payment integrations with Stripe, Created ETL processes and data migration pipelines, Delivered Progressive Web Apps for offline-first usage & Worked across frontend, backend and platform engineering.
                     </p>
 
                     <div>
@@ -222,7 +234,7 @@ export default function AboutPage() {
                             <strong>Languages:</strong> Javascript / Typescript & Python
                         </p>
                         <p>
-                            <strong>Frontend:</strong> React.js (Vite) & Next.js
+                            <strong>Frontend:</strong> Next.js, Vite & React.js
                         </p>
                         <p>
                             <strong>Backend:</strong> Node.js, Bun.js, Express, Fastify, Elysia.js, Go Lang & Nest.js
@@ -230,6 +242,8 @@ export default function AboutPage() {
                         <p>
                             <strong>Database:</strong> Prisma, Hasura, Firebase, Supabase, MySQL, PostgreSQL & SQLite
                         </p>
+                        <p>
+                            <strong>Architecture & Engineering:</strong> REST APIs, System Design, Clean Architecture, DDD, Technical Documentation & ETL Pipelines</p>
                         <p>
                             <strong>Testing:</strong> Node:test, Bun:test, Storybook & Jest
                         </p>
@@ -257,42 +271,53 @@ export default function AboutPage() {
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2026
                         </h3>
+
                         <li>
-                            I developed a complete livestock management platform (MeuBoi) from scratch using Go (formerly Bun.js) for a
-                            high-performance backend and Next.js for a responsive frontend, handling complex business logic and financial statements.
+                            Led the end-to-end development of MeuBoi, a livestock management platform centralizing cattle registration, genealogy tracking, financial operations, and herd management workflows.
                         </li>
+
                         <li>
-                            I implemented real-time analytics dashboards and PWA capabilities, enabling offline access and improving data
-                            accessibility for users in areas with limited connectivity.
+                            Architected and implemented backend and frontend services using Go, TypeScript, Next.js, and Supabase, supporting large-scale operational workloads across animal records, transactions, ownership structures, and financial data.
                         </li>
+
                         <li>
-                            Authored comprehensive technical documentation for system architecture and APIs, ensuring scalability and simplifying
-                            future maintenance for the development team using Swagger and Docusaurus.
+                            Designed Progressive Web App (PWA) capabilities and real-time analytics dashboards, enabling offline-first access and reliable field operations in regions with limited connectivity.
                         </li>
+
                         <li>
-                            Managed the development lifecycle using Scrum methodologies and GitHub Projects, improving team collaboration and ensuring
-                            timely delivery of features.
+                            Developed API contracts, technical documentation, ETL processes, and system architecture standards using Swagger and Docusaurus, improving maintainability, onboarding efficiency, and long-term scalability.
                         </li>
-                        <p className="description">Using Bun.js, Next.js, Discord Webhook, Python, PWA, Go Lang, Supabase, Swagger & Docusaurus</p>
+
+                        <li>
+                            Coordinated feature delivery, technical planning, and development workflows using Scrum methodologies and GitHub Projects, ensuring predictable execution of business-critical features.
+                        </li>
+
+                        <p className="description">
+                            Go • TypeScript • Next.js • Supabase • PostgreSQL • Python • PWA • Swagger • Docusaurus • Discord Webhooks
+                        </p>
 
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025
                         </h3>
+
                         <li>
-                            Led the development of internal platforms using Node.js and React, successfully reducing the execution time of core
-                            internal processes by 35%.
+                            Designed and developed AI-powered customer interaction workflows integrating OpenAI and WhatsApp Business APIs, delivering personalized experiences at scale.
                         </li>
+
                         <li>
-                            Engineered AI-powered solutions integrated with the WhatsApp Business API and OpenAI, doubling the accuracy of
-                            personalized customer responses.
+                            Built backend services and automation pipelines responsible for conversational AI, customer engagement, subscription management, and operational process automation.
                         </li>
+
                         <li>
-                            Implemented a Stripe payment system that boosted annual plan conversion by 28% and developed a feedback system that
-                            increased customer satisfaction by 40%.
+                            Implemented Stripe-based payment flows that increased annual subscription conversions by 28% and contributed to a 35% reduction in execution time of core internal processes.
                         </li>
+
+                        <li>
+                            Developed customer feedback and analytics systems that improved user satisfaction by 40% while providing actionable business insights.
+                        </li>
+
                         <p className="description">
-                            Using Express, Node.js, OpenAI API, WhatsApp API, Facebook Business API, Next.js, Discord Webhook, AstrologyAPI, Stripe
-                            and Python
+                            Node.js • Express • Next.js • OpenAI API • WhatsApp Business API • Stripe • Python • Discord Webhooks • Facebook Business API
                         </p>
 
                         <h3 className="titleJob">
