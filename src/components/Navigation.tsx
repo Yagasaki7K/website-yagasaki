@@ -12,10 +12,11 @@ const NavigationDetails = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17.5px 0 17.5px 0;
+    padding: 17.5px 2rem;
     max-width: 48rem;
     margin: 0 auto;
     z-index: 1000;
+    border-radius: 0 0 10px 10px;
 
     .leftContent {
         display: flex;
