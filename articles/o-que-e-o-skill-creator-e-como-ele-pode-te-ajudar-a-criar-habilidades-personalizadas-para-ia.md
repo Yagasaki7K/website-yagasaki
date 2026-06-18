@@ -125,8 +125,6 @@ Após sua aprovação, o Skill Creator empacota a skill e você a instala. A par
 - **Teste com variações**: Tente prompts diferentes para ver se a skill se adapta. Se falhar, peça ajustes.
 - **Não se preocupe com código**: O Skill Creator lida com a parte técnica. Você só precisa descrever.
 
-## Conclusão
-
 O Skill Creator democratiza a criação de habilidades personalizadas para IA. Em vez de depender de programação ou configurações complexas, você usa uma conversa guiada para ensinar ao assistente como executar tarefas do seu jeito.
 
 Se você é iniciante, comece com o exemplo do resumidor de reuniões. Em poucos minutos, você terá sua primeira skill funcionando. Depois, explore outras ideias: gerador de e-mails padronizados, extrator de dados de NF-e, formatador de relatórios de vendas... As possibilidades são enormes.
