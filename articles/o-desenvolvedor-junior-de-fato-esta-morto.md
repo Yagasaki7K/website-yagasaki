@@ -49,7 +49,7 @@ Ela é apenas uma ferramenta que irá te auxiliar e aumentar a sua produtividade
 ## O impacto do mercado global
 É inegável que o número de vagas no exterior (especialmente nos EUA) é gigantesco.
 
-[Imagem obtida através do DevScout](https://yagasaki.vercel.app/gallery/devscout-graph.png)
+![Imagem obtida através do DevScout](https://yagasaki.vercel.app/gallery/devscout-graph.png)
 
 _(As imagem foi retirada da plataforma DevScout em 25 de Junho de 2026 - cupom de desconto para assinantes - KALIFY10)_
 
