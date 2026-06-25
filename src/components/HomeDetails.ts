@@ -47,6 +47,19 @@ const HomeDetails = styled.div`
             .small {
                 font-size: 0.8rem;
             }
+
+            .description {
+                font-weight: 600;
+                color: #696969;
+                font-size: 0.9rem;
+                font-family: var(--font-geist-sans);
+                margin-bottom: 1rem;
+                line-height: 1.2rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+            }
         }
     }
 

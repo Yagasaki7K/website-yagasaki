@@ -115,6 +115,7 @@ export default function Search({ posts }: { posts: PostProps[] }) {
                                     <Link href={`/artigo/${post.slug}`} key={index}>
                                         <div className="content">
                                             <p className="title">{post.frontmatter?.title}</p>
+                                            <p className="description">{post.frontmatter?.excerpt}</p>
                                             <p className="small">
                                                 {formatDate(post.frontmatter?.date)} • {post.frontmatter.tags[0]} • {post.readingTime} min de leitura
                                             </p>

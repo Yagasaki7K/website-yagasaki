@@ -1,5 +1,5 @@
 ---
-title: O desenvolvedor júnior de fato está morto
+title: O desenvolvedor de software júnior de fato está morto!
 excerpt: "Por muito tempo, acreditou-se que a carreira em desenvolvimento de software seguia uma escada rígida: estágio, júnior, pleno e sênior. O tempo e a quantidade de XP eram os senhores absolutos dessa progressão. No entanto, o mercado mudou, e o velho conceito de júnior – aquele profissional que a empresa contratava para aprender enquanto recebia um salário – deixou de fazer sentido."
 image: https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 tags: ["Desenvolvimento", "Carreira", "Junior"]
