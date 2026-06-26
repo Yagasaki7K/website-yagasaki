@@ -7,7 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 
-const countPhotos = 61;
+const countPhotos = 62;
 
 const Gallery = styled.div`
     margin-top: 7.18rem;
