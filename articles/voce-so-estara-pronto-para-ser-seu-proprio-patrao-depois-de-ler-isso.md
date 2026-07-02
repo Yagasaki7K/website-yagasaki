@@ -1,5 +1,5 @@
 ---
-title: Só estará pronto para ser o próprio patrão depois de ler isso
+title: Você só estará pronto para ser seu próprio patrão depois de ler isso
 excerpt: 'Tem gente que acha que o sucesso é uma linha reta, mas olha o caso do Colonel Sanders. O cara tentou vender a receita de frango dele por anos, foi rejeitado centenas de vezes e tava falido com 65 anos. História de resiliência de Colonel Sanders. Não tinha glamour nenhum ali, só insistência.'
 image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 tags: ["Business", "Empreendedorismo", "Resiliência"]
