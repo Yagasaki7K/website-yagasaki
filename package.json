@@ -22,7 +22,7 @@
         "gray-matter": "^4.0.3",
         "jspdf": "^4.2.1",
         "jspdf-autotable": "^5.0.8",
-        "lucide-react": "^1.23.0",
+        "lucide-react": "^1.24.0",
         "marked": "^16.4.2",
         "next": "^16.2.10",
         "next-seo": "^6.8.0",
