@@ -65,6 +65,7 @@ export default class MyDocument extends Document {
                     <meta name="robots" content="index, follow" />
                     <link rel="shortcut icon" href="https://github.com/Yagasaki7K.png" type="image/png" />
                     <meta property="og:locale" content="pt_BR" />
+                    <script type="module" src="https://yagasaki7k.github.io/webai-yagasaki/sdk/src/index.js" defer></script>
                 </Head>
 
                 <body>
