@@ -106,6 +106,8 @@ All blog posts are written in Portuguese.
 
 | Article | Date | Category | Read Time |
 |---------|------|----------|-----------|
+| [Como Montar um Prompt Matador para Criar Projetos SaaS com IA)](https://yagasaki.vercel.app/artigo/como-montar-um-prompt-matador-para-criar-projetos-saas-com-ia) | 28 Jul | IA | 3 min |
+| [Pitch de Projeto de Engenharia de IA Aplicada - O Futuro da Inteligência (Web 4.0 / Web AI)](https://yagasaki.vercel.app/artigo/pitch-de-projeto-de-engenharia-de-ia-aplicada-o-futuro-da-inteligencia-web-4-0-web-ai) | 28 Jul | IA | 5 min |
 | [Info Stealers e a ilusão do 2FA](https://yagasaki.vercel.app/artigo/info-stealers-e-a-ilusao-do-2fa-como-invasores-contornam-sua-autenticacao-de-dois-fatores) | 28 Jul | Segurança | 5 min |
 | [O Debate sobre o Diploma de Ciência da Computação](https://yagasaki.vercel.app/artigo/o-debate-sobre-o-diploma-de-ciencia-da-computacao-o-sonho-realmente-morreu) | 20 Jul | Faculdade | 9 min |
 | [Trabalhando com IA no modo free-tier](https://yagasaki.vercel.app/artigo/trabalhando-com-ia-no-modo-free-tier-e-como-extrair-o-melhor-de-modelos-limitados) | 17 Jul | IA | 11 min |

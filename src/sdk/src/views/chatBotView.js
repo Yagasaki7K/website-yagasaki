@@ -108,7 +108,7 @@ export class ChatbotView {
         this.#removeElement(this.#welcomeBubble);
         const bubble = document.createElement('div');
         bubble.className = 'yagasaki-welcome-bubble';
-        bubble.textContent = this.#config.welcomeBubble;
+        bubble.textContent = this.#config.welcomeBubble || "Hello! How can I help with your project?";
         bubble.onclick = () => {
             this.openChat();
         };
