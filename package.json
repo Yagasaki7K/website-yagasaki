@@ -18,7 +18,7 @@
         "dayjs": "^1.11.21",
         "eslint-config-next": "^16.2.12",
         "feed": "^5.2.1",
-        "framer-motion": "^12.42.2",
+        "framer-motion": "^12.43.0",
         "gray-matter": "^4.0.3",
         "jspdf": "^4.2.1",
         "jspdf-autotable": "^5.0.8",
