@@ -1,0 +1,16 @@
+{
+    "primaryColor": "#897de1",
+    "chatbotName": "H3L3N4",
+    "buttonColor": "#7158c1",
+    "backgroundColor": "#0d0d0d",
+    "headerColor": "#1E293B",
+    "userBubble": "#334155",
+    "botBubble": "#1E293B",
+    "userText": "#F1F5F9",
+    "botText": "#F1F5F9",
+    "iconUrl": "/src/botData/avatar.png",
+    "botAvatar": "/src/botData/avatar.png",
+    "welcomeBubble": "Hello! How can I help with your project?",
+    "firstBotMessage": "I'm a virtual assistant. I can talk about software development, AI automation, or help with your idea. What would you like to know?",
+    "typingDelay": 0.5
+}

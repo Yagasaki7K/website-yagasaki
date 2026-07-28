@@ -1,0 +1,305 @@
+# Anderson Marlon (Yagasaki) · LLMs.txt
+
+> Hey! I'm Anderson Marlon, a software engineer and indie hacker — netrunner, warrior of darkness, and hikikomori.
+
+---
+
+## About Me
+
+**Software Engineer** with 5+ years of experience building business platforms, operational systems and AI-powered products. I work across frontend, backend and product engineering, helping companies design and deliver software that supports real business operations.
+
+### Engineering Highlights
+- Built a complete livestock management platform (MeuBoi) from scratch
+- Designed API contracts and technical documentation
+- Developed AI-powered WhatsApp automation systems
+- Implemented payment integrations with Stripe
+- Created ETL processes and data migration pipelines
+- Delivered Progressive Web Apps for offline-first usage
+
+### Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Languages** | JavaScript, TypeScript, Python, Go |
+| **Frontend** | Next.js, Vite, React.js |
+| **Backend** | Node.js, Bun.js, Express, Fastify, Elysia.js, Go, Nest.js |
+| **Database** | Prisma, Hasura, Firebase, Supabase, MySQL, PostgreSQL, SQLite |
+| **Architecture** | REST APIs, System Design, Clean Architecture, DDD, Technical Documentation, ETL Pipelines |
+| **Testing** | Node:test, Bun:test, Storybook, Jest |
+| **DevOps** | Docker, Vercel, CI/CD, GitHub Actions |
+| **Design** | Figma, Adobe XD, Photoshop, UX/UI |
+| **Other** | Git, Serverless, Google Cloud, Docusaurus |
+
+---
+
+## Professional Experience
+
+### Software Engineer II @ R2A Cobrança Pecuária (MeuBoi) | Dec 2025 – Mar 2026
+Led end-to-end development of MeuBoi, a livestock management platform centralizing cattle registration, genealogy tracking, financial operations, and herd management workflows. Architected backend and frontend using Go, TypeScript, Next.js, and Supabase. Designed PWA capabilities and real-time analytics dashboards for offline-first access. Developed API contracts, technical documentation, and ETL processes using Swagger and Docusaurus.
+
+**Tech:** Go · TypeScript · Next.js · Supabase · PostgreSQL · Python · PWA · Swagger · Docusaurus · Discord Webhooks
+
+### Software Engineer II @ Astriia | Sep 2024 – May 2025
+Designed AI-powered customer interaction workflows integrating OpenAI and WhatsApp Business APIs. Built backend services for conversational AI, customer engagement, and subscription management. Implemented Stripe payment flows increasing annual conversions by 28% and reduced internal process execution time by 35%.
+
+**Tech:** Node.js · Express · Next.js · OpenAI API · WhatsApp Business API · Stripe · Python · Discord Webhooks · Facebook Business API
+
+### Software Engineer II @ WhatsUpper | Aug 2023 – Dec 2023
+Developed intelligent automation solutions for WhatsApp Business API. Built scalable backend services using Node.js for high-volume message processing and interactive chatbot experiences.
+
+**Tech:** Rocket.chat · Firebase · Next.js · WhatsApp API · Facebook Business API · Twilio
+
+### Software Engineer II @ Stone | Oct 2022 – Jul 2023
+Optimized DialogFlow routines integrated with Rocket.Chat, improving chatbot response speed by over 50%. Developed interactive SPA with jQuery for customer routing and WhatsApp-based checkouts, cutting queue times by up to 20%.
+
+**Tech:** Rocket.chat · Hasura · Next.js · WhatsApp API · Facebook Business API · Twilio · Firebase · DialogFlow · Google Cloud Platform
+
+### Systems Development Analyst I/II @ Cenário Capital | Oct 2020 – Sep 2021
+Developed and maintained critical financial systems for data analysis and process automation. Collaborated with analysts to translate requirements into functional software solutions. Progressed from Junior to Mid-level role.
+
+**Tech:** jQuery · HTML · CSS · JavaScript · React · HTML for Email Marketing · Next.js
+
+### Front-end Developer I / Jr. Marketing @ Marry Perry | Feb 2020 – Sep 2020
+Developed and enhanced e-commerce platform UI for responsive and intuitive shopping experience. Implemented front-end features improving user engagement and conversion rates. Assisted marketing team with landing pages, email templates, and affiliate systems.
+
+**Tech:** HTML · CSS · JavaScript · Node.js · Express · MySQL · Python
+
+### Soldier @ Brazilian Army | Mar 2016 – Apr 2017
+Developed discipline, resilience, and high-pressure performance skills. Mastered teamwork and communication through collaborative daily operations and mission-critical exercises.
+
+---
+
+## Taekwondo Journey
+
+I'm a Taekwondo athlete from Campinas Fighters Team. My story started in 2014 at age 17, when I discovered Taekwondo and never wanted to practice anything else.
+
+### Belt Progression (Current & Historical)
+
+- **2023:** Black Belt (1st Dan) - **Current Belt**
+- **2023:** Red w/ Black Belt (1st Kup)
+- **2023:** Red Belt (2nd Kup)
+- **2022:** Blue w/ Red Belt (3rd Kup)
+- **2016:** Blue Belt (4th Kup) – Teacher Anderson Neneco
+- **2015:** Green Belt (6th Kup) – Master Márcio Eugênio
+- **2014:** Yellow Belt (8th Kup) · White Belt (10th Kup) – Master Márcio Eugênio
+
+### Achievements
+
+| Competition | Placement | Year |
+|-------------|-----------|------|
+| Campeonato Paulista - Third Stage | 🥈 Second Place | 2024 |
+| Arnold Sports - Double Match | 🥉 Third Place | 2024 |
+| São Roque International | 🥇 First Place | 2023 |
+| Copa América de Taekwondo | 🥈 Second Place | 2023 |
+| Festival Liga Vale | 🥇 First Place | 2022 |
+| Copa América de Taekwondo | 🥇 First Place | 2022 |
+
+**Certificates:** 1st Kyorugui Arbitration Seminar (Nova FETESP) · Referee Certificate (Kombat Taekwondo) · Coach Certificate (Paulista Taekwondo Federation) -
+
+---
+
+## Blog (PT-BR)
+
+All blog posts are written in Portuguese.
+
+### Recent Articles
+
+| Article | Date | Category | Read Time |
+|---------|------|----------|-----------|
+| [Info Stealers e a ilusão do 2FA](https://yagasaki.vercel.app/artigo/info-stealers-e-a-ilusao-do-2fa-como-invasores-contornam-sua-autenticacao-de-dois-fatores) | 28 Jul | Segurança | 5 min |
+| [O Debate sobre o Diploma de Ciência da Computação](https://yagasaki.vercel.app/artigo/o-debate-sobre-o-diploma-de-ciencia-da-computacao-o-sonho-realmente-morreu) | 20 Jul | Faculdade | 9 min |
+| [Trabalhando com IA no modo free-tier](https://yagasaki.vercel.app/artigo/trabalhando-com-ia-no-modo-free-tier-e-como-extrair-o-melhor-de-modelos-limitados) | 17 Jul | IA | 11 min |
+| [Você só estará pronto para ser seu próprio patrão depois de ler isso](https://yagasaki.vercel.app/artigo/voce-so-estara-pronto-para-ser-seu-proprio-patrao-depois-de-ler-isso) | 02 Jul | Business | 3 min |
+| [O desenvolvedor de software júnior de fato está morto!](https://yagasaki.vercel.app/artigo/o-desenvolvedor-junior-de-fato-está-morto) | 25 Jun | Desenvolvimento | 7 min |
+| [RAG do Zero ao Avançado](https://yagasaki.vercel.app/artigo/rag-do-zero-ao-avancado-o-segredo-para-ias-que-realmente-sabem-o-que-dizem) | 19 Jun | IA | 8 min |
+| [O que é o Skill Creator](https://yagasaki.vercel.app/artigo/o-que-e-o-skill-creator-e-como-ele-pode-te-ajudar-a-criar-habilidades-personalizadas-para-ia) | 18 Jun | IA | 6 min |
+| [Além do npm run build](https://yagasaki.vercel.app/artigo/alem-do-npm-run-build-7-estrategias-avancadas-para-acelerar-seu-next-js-app) | 16 May | Performance | 10 min |
+| [Zettelkasten - Jest e React Testing](https://yagasaki.vercel.app/artigo/zettelkasten-react-jest-test) | 27 Apr | Zettelkasten | 3 min |
+| [De Pikachu a Robôs](https://yagasaki.vercel.app/artigo/de-pikachu-a-robos-como-jogadores-de-pokemon-go-ajudaram-a-treinar-maquinas-no-mundo-real) | 16 Mar | Pokémon | 4 min |
+| [Como desenvolver um prompt de qualidade?](https://yagasaki.vercel.app/artigo/como-desenvolver-um-prompt-uma-pergunta-para-ia-de-qualidade) | 15 Mar | Inteligência | 3 min |
+| [Golang - Entendendo Goroutines e Canais Sem Buffer](https://yagasaki.vercel.app/artigo/golang-entendendo-goroutines-e-canais-sem-buffer) | 06 Feb | Go | 3 min |
+| [Zettelkasten - Introdução ao Go Lang (WIP)](https://yagasaki.vercel.app/artigo/zettelkasten-golang) | 03 Feb | Zettelkasten | 14 min |
+| [O Guia Completo para Desenvolvedores Fullstack em 2026](https://yagasaki.vercel.app/artigo/o-guia-completo-para-desenvolvedores-fullstack-em-2026) | 07 Jan | Desenvolvedor | 88 min |
+
+[View all blog posts →](https://yagasaki.vercel.app/blog)
+
+---
+
+## Certificates
+
+### 2026
+- Introduction to automation with n8n – Rocketseat (May)
+- Introduction to AWS – Rocketseat (May)
+- Introduction to Go Lang – Rocketseat (May)
+
+### 2025
+- React – Rocketseat (Nov)
+- React Fundamentals – Rocketseat (Nov)
+- Introduction to automation with n8n – Rocketseat (Sep)
+- NestJS – Jornada do Dev (Apr)
+- Technical Leadership (Tech Lead) – Rocketseat (Feb)
+- How to build a Micro SaaS – Rocketseat (Jan)
+
+### 2024
+- Build a web API with Node.js and Express – Microsoft Ignite (Nov)
+- NLW Journey (GO, NodeJS, Java, Python, React) – Rocketseat (Jul)
+- Web Development with Python – IBM SkillsBuild (Jun)
+- Firebase – Gabriel Barreto (May)
+- NLW Unite (Node, React) – Rocketseat (Apr)
+- NLW Expert (Node, React) – Rocketseat (Feb)
+
+### 2023
+- TDD – Guided Software Development Tests – ITA/Coursera (Dec)
+- Complete Dialogflow – Universidade Global (Nov)
+- Modern Web with Projects – COD3R (Aug)
+
+### 2022
+- Workshop Figma – Design Culture (Apr)
+- Introduction and Complete Course in Computer Science – Harvard (Mar)
+
+---
+
+### How do I get a job?
+Read about [How to get experience as a Junior/Starter](https://yagasaki.vercel.app/artigo/conseguir-experiencia-sendo-junior) and [Building an interesting and exemplary GitHub profile](https://yagasaki.vercel.app/artigo/perfil-github). If none of these ideas have helped, ask for help in the [Kalify Inc Developers Community](https://www.kalify.com.br/community).
+
+### Can you help me with XYZ?
+No, I receive many requests and simply don't have the time to help everyone. The [Kalify Inc Developers Community](https://www.kalify.com.br/community) can help you.
+
+### Why don't you use another language besides JavaScript?
+JavaScript is my safe space. I'm very comfortable with it and I can write almost anything without having to check complicated documentation.
+
+### What do you work with?
+I'm a Software Developer and Front-end specialist. Outside of technology, I'm a columnist at Onigiri Hardcore and a Taekwondo athlete.
+
+### How can I help with open source?
+Check out [Kalify Inc](https://www.kalify.com.br/community) projects and the [Kalify Inc Career Plan](https://www.kalify.com.br/plan).
+
+### What's the origin of the name Yagasaki?
+I'm not Asian, but I like Japanese culture. Read more in [First, let me introduce myself, I'm Anderson](https://yagasaki.vercel.app/artigo/conheca-yagasaki).
+
+### Why is your blog only in Portuguese?
+I write only in Portuguese because of my community and the people who follow me for the content.
+
+---
+
+## Steam Profile
+
+**Main Profile:** [Yagasaki, 葛城](https://steamcommunity.com/id/yagasaki/)
+**Location:** Japan
+**Bio:** warrior of darkness, net runner, hikikomori and software engineer.
+
+**Alt Accounts:**
+- [V](https://steamcommunity.com/id/cdnmv) (Level 17)
+- [Shaman King](https://steamcommunity.com/profiles/76561198013751472) (Level 10)
+
+### Gaming Preferences
+- **Primary Game:** Counter-Strike (CS:GO and CS2)
+- **Play Style:** Competitive shooter, focus on aim and skill
+- **Secondary Interests:** Indie and story-driven games
+
+### Counter-Strike 2
+- **Total Playtime:** 2,469 hours (across accounts)
+- **Recent Activity:** 10 hours in the last 2 weeks
+- **Status:** Actively played
+
+### Alt Account: V (Level 17)
+- **Level:** 17
+- **Badges:** 12
+- **Games:** 93
+- **Inventory Items:** 93
+- **Groups:** 9 (Reddit, NTC, Archi's SC Farm)
+
+### Alt Account: Shaman King (Level 10)
+- **Level:** 10
+- **Badges:** 4
+- **Inventory Items:** 4
+- **Groups:** 2 (Archi's SC Farm, I'm not cheating you're just bad)
+
+---
+
+## League of Legends
+
+**Summoner Name:** Yagasaki#JINX
+**Server:** Brazil (BR)
+**Tagline:** JINX
+
+### Champion Identity: Jinx
+- **Introduced:** October 2013
+- **Origin:** Zaun
+- **Character:** Manic, impulsive criminal, archenemy of Vi
+- **Theme:** "Get Jinxed" music video (130+ million views)
+
+### Summary
+Silver-tier player with consistent ranked performance across multiple seasons. The **JINX** tagline suggests a strong identification with the chaotic, iconic champion.
+
+---
+
+## GitHub Projects
+
+**GitHub:** [yagasaki7k](https://github.com/yagasaki7k)
+
+### Featured Projects
+
+| Project | Description | Tech Stack | Stars/Forks |
+|---------|-------------|------------|-------------|
+| [MeuBoi](https://github.com/yagasaki7k/meuboi) | Livestock management platform with real-time dashboards and PWA | Go, Next.js, TypeScript, Supabase, PWA, Swagger, Docusaurus | — |
+| [Steamfolio](https://github.com/yagasaki7k/website-steamfolio) | Gamified portfolio with Steam-inspired interface | Bun, React, TypeScript, Styled Components | ⭐55 / 🍴7 |
+| [Essentials](https://github.com/yagasaki7k/website-essentials) | Utilities, extensions, and app tools for your computer | JavaScript | ⭐10 / 🍴8 |
+| [Engide](https://github.com/yagasaki7k/engide) | Innovative solutions for scalability and performance | Full-stack web development | — |
+| [Feature Liquid Glass](https://github.com/yagasaki7k/feature-liquidglass) | Apple Liquid Glass in the browser | HTML, CSS, Next.js, Styled Components | ⭐32 / 🍴3 |
+| [FindYourPet](https://github.com/yagasaki7k/website-findyourpet) | Free website to help rescue, inform, and donate pets | JavaScript | ⭐14 / 🍴7 |
+
+### Config & Tooling
+- [VS Code Config](https://github.com/yagasaki7k/vscode-config) – Personal VSCode settings (Fira Code, format on save)
+- [Windows Terminal](https://github.com/yagasaki7k/windows-terminal) – Personal Windows Terminal configuration
+
+### Key Achievements
+- **Process Optimization:** Reduced execution times by up to 35% using Next.js/Go at MeuBoi
+- **Conversion Improvement:** Increased conversions by 28% through AI and payment integrations (Stripe/LiraPay) at Astriia/Zentry
+
+---
+
+## What is a Netrunner?
+
+A netrunner is a **cyberpunk hacker** who navigates and manipulates the digital world using advanced cybernetic implants. The term originated in William Gibson's 1982 short story "Burning Chrome" and was expanded in his 1984 novel ***Neuromancer***.
+
+The term was popularized by the **Cyberpunk 2020 role-playing game** (1988), where netrunners could directly interface with cyberspace.
+
+### Why I Use This Identity
+1. **Digital Fluency:** Navigating complex codebases and distributed systems
+2. **Strategic Thinking:** Analyzing systems, finding weaknesses, executing precise solutions
+3. **Full-Stack Hacking:** Operating across the entire digital ecosystem
+4. **Cultural Connection:** Interests in technology, gaming, Japanese culture
+5. **Underdog Spirit:** David vs. Goliath narrative of indie hackers and builders
+
+---
+
+## Warrior of Darkness and Hikikomori
+
+### Warrior of Darkness
+- **Final Fantasy XIV:** Neutral force balancing light and darkness
+- **Dungeons & Dragons:** Dark Knight prestige class – black magic, formidable combatant
+- **Appeal:** Power through darkness, solitude, intellectual sophistication, neutrality
+
+### Hikikomori (引きこもり)
+- **Definition:** Japanese term for "pulling inward, being confined"
+- **Characteristics:** Avoids social contact, confines to home for 6+ months
+- **First Described in Japan, Now Global:** Cases reported in Oman, India, US, Brazil
+
+### Why I Use This Identity
+1. **Warrior of Darkness side:** Navigating complex systems, building things with intelligence and sophistication
+2. **Hikikomori side:** Spending significant time in solitude, focused on work, study, and creative projects
+3. **Identity:** *"warrior of darkness, net runner, hikikomori and software engineer"* – navigating digital worlds, working in isolation, wielding technical power, and building things
+
+---
+
+## Contact
+
+- **Email:** yagasakiwanderlust@proton.me
+- **GitHub:** [Yagasaki7K](https://github.com/Yagasaki7K)
+- **X:** [@Yagasaki](https://x.com/Yagasaki)
+- **Location:** São Paulo, Brazil
+
+---
+
+*Last updated: July 2026*

@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.yagasaki-welcome-bubble {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+#yagasaki-widget {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.yagasaki-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9999;
+    background: #0d0d0d;
+    border: 2px solid #897de1;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 2px 18px 0 rgba(137, 125, 225, 0.30);
+    transition: background 0.2s, transform 0.18s, box-shadow 0.2s;
+}
+
+.yagasaki-btn img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #0d0d0d;
+    display: block;
+}
+
+.yagasaki-btn:focus {
+    outline: 2px solid #897de1;
+    outline-offset: 2px;
+}
+
+.yagasaki-btn:hover {
+    background: #0d0d0d;
+    box-shadow: 0 4px 28px 0 rgba(137, 125, 225, 0.40);
+    transform: scale(1.05);
+}
+
+.yagasaki-welcome-bubble {
+    position: fixed;
+    bottom: 68px;
+    right: 110px;
+    background: #0a0a0a;
+    color: #ffffff;
+    padding: 13px 18px;
+    font-size: 1em;
+    border-radius: 18px 18px 18px 6px;
+    box-shadow: 0 2px 18px 0 rgba(137, 125, 225, 0.20);
+    max-width: 260px;
+    z-index: 9999;
+    white-space: pre-line;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    animation: yagasaki-toast-in 0.44s cubic-bezier(.5, 1.7, .7, 1) both;
+    transition: opacity .14s, box-shadow .2s;
+    border: 1px solid #897de1;
+}
+
+.yagasaki-welcome-bubble:hover {
+    box-shadow: 0 4px 24px 0 rgba(137, 125, 225, 0.30);
+    opacity: 0.85;
+}
+
+@media (max-width: 500px) {
+    .yagasaki-welcome-bubble {
+        right: 78px;
+        font-size: 0.95em;
+        max-width: 150px;
+    }
+}
+
+@keyframes yagasaki-toast-in {
+    from {
+        opacity: 0;
+        transform: translateX(60px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.yagasaki-btn-avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.yagasaki-btn-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 19px;
+    height: 19px;
+    background: #897de1;
+    color: #0d0d0d;
+    font-size: 0.98em;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(137, 125, 225, 0.5);
+    z-index: 1;
+    letter-spacing: 0.01em;
+    pointer-events: none;
+    transition: transform 0.15s;
+}
+
+.yagasaki-btn-badge.yagasaki-badge-animate {
+    transform: scale(1.15);
+    animation: yagasaki-badge-pop 0.3s;
+}
+
+@keyframes yagasaki-badge-pop {
+    0% { transform: scale(0.7); }
+    70% { transform: scale(1.18); }
+    100% { transform: scale(1); }
+}
+
+.yagasaki-chat-window {
+    position: fixed;
+    bottom: 108px;
+    right: 32px;
+    z-index: 99999;
+    background: #0d0d0d;
+    color: #897de1;
+    width: 370px;
+    max-width: 98vw;
+    height: 520px;
+    max-height: 80vh;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: yagasaki-fadein 0.23s cubic-bezier(.5, 1.7, .7, 1) both;
+    border: 1px solid #897de1;
+}
+
+@keyframes yagasaki-fadein {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.yagasaki-chat-header {
+    background: #0a0a0a;
+    color: #ffffff;
+    padding: 14px 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 600;
+    border-bottom: 1px solid #897de1;
+}
+
+.yagasaki-chat-header-logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.yagasaki-chatbot-name {
+    font-size: 1.1em;
+}
+
+.yagasaki-close-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #897de1;
+    font-size: 1.6em;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.8;
+    padding: 0 2px;
+    transition: opacity 0.2s;
+}
+
+.yagasaki-close-btn:focus {
+    outline: 2px solid #897de1;
+    outline-offset: 2px;
+}
+
+.yagasaki-close-btn:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.yagasaki-chat-body {
+    flex: 1 1 auto;
+    padding: 16px 16px 6px 16px;
+    overflow-y: auto;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.yagasaki-message {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 1px;
+}
+
+.yagasaki-message-bot {
+    align-items: flex-start;
+}
+
+.yagasaki-message-bot .yagasaki-avatar {
+    order: 0;
+}
+
+.yagasaki-message-user {
+    flex-direction: row-reverse;
+}
+
+.yagasaki-message-content {
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-size: 1em;
+    max-width: 84%;
+    word-break: break-word;
+    line-height: 1.5;
+    background: #0d0d0d;
+    color: #ffffff;
+    transition: background .18s, color .18s;
+}
+
+.yagasaki-message-bot .yagasaki-message-content {
+    background: #0a0a0a;
+    color: #ffffff;
+    border-bottom-left-radius: 6px;
+    border: 1px solid #897de1;
+}
+
+.yagasaki-message-user .yagasaki-message-content {
+    background: #0d0d0d;
+    color: #ffffff;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #333333;
+}
+
+.yagasaki-message-content a {
+    color: #897de1;
+    text-decoration: underline;
+}
+
+.yagasaki-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0d0d0d;
+    object-fit: cover;
+}
+
+.yagasaki-chat-footer {
+    display: flex;
+    gap: 9px;
+    padding: 12px 14px;
+    background: #0a0a0a;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top: 1px solid #897de1;
+}
+
+.yagasaki-btn-main {
+    background: #897de1;
+    border: none;
+    color: #0d0d0d;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.15s, opacity 0.13s;
+    box-shadow: 0 2px 8px rgba(137, 125, 225, 0.30);
+}
+
+.yagasaki-btn-main:focus {
+    outline: 2px solid #897de1;
+    outline-offset: 2px;
+}
+
+.yagasaki-btn-main:hover {
+    background: #7158c1;
+}
+
+#yagasaki-input {
+    flex: 1 1 auto;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    padding: 10px 12px;
+    font-size: 1em;
+    background: #0d0d0d;
+    color: #ffffff;
+    outline: none;
+    transition: border .16s;
+}
+
+#yagasaki-input:focus {
+    border: 1.5px solid #897de1;
+}
+
+.yagasaki-chat-footer button:disabled,
+#yagasaki-input:disabled {
+    opacity: 0.4;
+}
+
+.yagasaki-chat-footer button[type="submit"] {
+    background: #897de1;
+    border: none;
+    color: #0d0d0d;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.15s, opacity 0.13s;
+}
+
+.yagasaki-chat-footer button[type="submit"]:focus {
+    outline: 2px solid #897de1;
+    outline-offset: 2px;
+}
+
+.yagasaki-chat-footer button[type="submit"]:hover {
+    background: #7158c1;
+}
+
+#yagasaki-stop {
+    background: transparent;
+    border: none;
+    color: #897de1;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    box-shadow: none;
+}
+
+#yagasaki-stop:focus {
+    outline: 2px solid rgba(137, 125, 225, 0.30);
+    outline-offset: 2px;
+}
+
+#yagasaki-stop:hover {
+    background: rgba(137, 125, 225, 0.10);
+    color: #7158c1;
+}
+
+@media (max-width: 500px) {
+    #yagasaki-stop {
+        padding: 10px 14px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    .yagasaki-chat-window {
+        right: 0;
+        left: 0;
+        width: 98vw;
+        max-width: none;
+        border-radius: 0 0 18px 18px;
+    }
+}
+
+.yagasaki-typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 6px 0 2px 38px;
+    height: 26px;
+}
+
+.yagasaki-typing-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #897de1;
+    opacity: 0.65;
+    animation: yagasaki-typing-blink var(--typingDotDuration, 0.5s) infinite;
+}
+
+.yagasaki-typing-dot:nth-child(2) {
+    animation-delay: calc(var(--typingDotDuration, 1.2s) / 8);
+}
+
+.yagasaki-typing-dot:nth-child(3) {
+    animation-delay: calc(var(--typingDotDuration, 1.2s) / 4);
+}
+
+.yagasaki-model-progress {
+    margin: 16px 0 6px 0;
+    padding: 5px 0 2px 0;
+}
+
+.yagasaki-progress-label {
+    font-size: 0.98em;
+    color: #888888;
+    margin-bottom: 7px;
+    margin-left: 2px;
+}
+
+.yagasaki-progress-bar-bg {
+    width: 100%;
+    height: 19px;
+    background: #0d0d0d;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3px;
+}
+
+.yagasaki-progress-bar-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #897de1 60%, #7158c1 100%);
+    border-radius: 12px;
+    color: #0d0d0d;
+    font-weight: 500;
+    font-size: 0.96em;
+    line-height: 19px;
+    text-align: right;
+    padding-right: 10px;
+    transition: width 0.2s cubic-bezier(.4, 1.4, .7, 1);
+    letter-spacing: 0.03em;
+}
+
+@keyframes yagasaki-typing-blink {
+    0%, 100% {
+        opacity: 0.35;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.yagasaki-chat-body,
+#yagasaki-messages {
+    scrollbar-width: thin;
+    scrollbar-color: #897de1 #0d0d0d;
+}
+
+.yagasaki-chat-body::-webkit-scrollbar,
+#yagasaki-messages::-webkit-scrollbar {
+    width: 8px;
+    background: #0d0d0d;
+}
+
+.yagasaki-chat-body::-webkit-scrollbar-thumb,
+#yagasaki-messages::-webkit-scrollbar-thumb {
+    background: #897de1;
+    border-radius: 10px;
+    border: 2px solid #0d0d0d;
+}
+
+.yagasaki-chat-body::-webkit-scrollbar-thumb:hover,
+#yagasaki-messages::-webkit-scrollbar-thumb:hover {
+    background: #7158c1;
+}
