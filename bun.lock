@@ -10,7 +10,7 @@
         "dayjs": "^1.11.21",
         "eslint-config-next": "^16.2.12",
         "feed": "^5.2.1",
-        "framer-motion": "^12.42.2",
+        "framer-motion": "^12.43.0",
         "gray-matter": "^4.0.3",
         "jspdf": "^4.2.1",
         "jspdf-autotable": "^5.0.8",
@@ -321,7 +321,7 @@
 
     "base64-arraybuffer": ["base64-arraybuffer@1.0.2", "", {}, "sha512-I3yl4r9QB5ZRY3XuJVEPfc2XhZO6YweFPI+UovAzn+8/hb3oJ6lnysaFcjVpkCPfVWFUDvoZ8kmVDP7WyRtYtQ=="],
 
-    "baseline-browser-mapping": ["baseline-browser-mapping@2.11.5", "", { "bin": { "baseline-browser-mapping": "dist/cli.cjs" } }, "sha512-xJo6a6YZnwZfnyGmQKWMbVOcii7XRibjOskRh+WJ9UHQoX16xrQrcIgAMQOzfvs8XiLMx6ih/fsLPF73iY2D1A=="],
+    "baseline-browser-mapping": ["baseline-browser-mapping@2.11.6", "", { "bin": { "baseline-browser-mapping": "dist/cli.cjs" } }, "sha512-69D/imtToCsIcAl8WBS2YaRwA4jO/j0HhU+hELqMEu9f54MoUtI6+XH5mrKU8rEFNEk/Ui1I2MK4/JkWacclGw=="],
 
     "brace-expansion": ["brace-expansion@1.1.14", "", { "dependencies": { "balanced-match": "^1.0.0", "concat-map": "0.0.1" } }, "sha512-MWPGfDxnyzKU7rNOW9SP/c50vi3xrmrua/+6hfPbCS2ABNWfx24vPidzvC7krjU/RTo235sV776ymlsMtGKj8g=="],
 
