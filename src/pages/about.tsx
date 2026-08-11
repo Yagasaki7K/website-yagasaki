@@ -269,6 +269,31 @@ export default function AboutPage() {
                         </p>
 
                         <h3 className="titleJob">
+                            <strong>Software Engineer, Coach, Teacher & Administrative Coordinator</strong> @ Campinas Fighters | Jan 2024 - Actually
+                        </h3>
+                        <li>
+                            Software Engineer – responsible for the team's projects and applications, including athlete registration systems, social campaign dashboards, prize draw systems, and student management systems; also responsible for website development in compliance with the Municipal Government's standards for transparency portals. Since February 2024.
+                        </li>
+                        <li>
+                            Affiliated with FETESP (São Paulo State Taekwondo Federation); re-certified as a black belt and official coach for Campinas Fighters as of July 2026 (https://www.instagram.com/p/DavBGwplVFE).
+                        </li>
+                        <li>
+                            Coach - teaching Taekwondo classes and assisting with social initiatives such as the "Projeto Escola" (School Project). Since July 2026 (FETESP).
+                        </li>
+                        <li>
+                            Designer – Responsible for creating flyers, leaflets, and competition team uniforms (https://be.net/yagasaki). Since February 2024.
+                        </li>
+                        <li>
+                            Administrative Coordinator - by Campinas Fighters under the "Projeto Escola" initiative, responsible for financial reporting and other administrative functions for the team. Since August 2026.
+                        </li>
+                        <li>
+                            The entire team and its projects operate in partnership with the Campinas Municipal Government, the Department of Education, and the Department of Sports.
+                        </li>
+                        <li>
+                            Using Next.js, Javascript, Typescript, Firebase, Tailwind and Discord Webhook.
+                        </li>
+
+                        <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2026
                         </h3>
 
@@ -295,6 +320,16 @@ export default function AboutPage() {
                         <p className="description">
                             Go • TypeScript • Next.js • Supabase • PostgreSQL • Python • PWA • Swagger • Docusaurus • Discord Webhooks
                         </p>
+
+                        <h3 className="titleJob">
+                            <strong>High-Performance Coach</strong> @ Campinas Fighters | Jan 2024 - Actually
+                        </h3>
+                        <li>
+                            As a coach for Campinas Fighters, I was responsible for managing the athletes and personnel, as well as providing guidance to parents and guardians regarding the sport.
+                        </li>
+                        <li>
+                            As a black belt, in addition to ensuring a high technical standard, I was responsible for the athletes' physical and psychological well-being before, during, and after national events and championships.
+                        </li>
 
                         <h3 className="titleJob">
                             <strong>Software Engineer II</strong> @ Astriia | Sep 2024 - May 2025
@@ -356,6 +391,16 @@ export default function AboutPage() {
                             Using Rocket.chat, Hasura, Next.js, WhatsApp API, Facebook Business API, Twilio, Firebase, DialogFlow and Google Cloud
                             Plataform
                         </p>
+
+                        <h3 className="titleJob">
+                            <strong>High-Performance Athlete</strong> @ Cenário Capital | Feb 2021 - Feb 2024
+                        </h3>
+                        <li>
+                            The Campinas Fighters Sports Training Association (Associação Campineira de Formação ao Esporte) is a Civil Society Organization (CSO) founded on October 15, 2021, and based in the city of Campinas, in the interior of São Paulo state. Its objective is to promote the practice of Taekwondo as a tool for transforming lives—particularly those of socially vulnerable youth—in accordance with its bylaws. (See more in https://campinasfighters.org.br/)
+                        </li>
+                        <li>
+                            As an athlete with Campinas Fighters, I secured several titles during my career—albeit a late-starting one—including Taekwondo Copa América Champion (2022), two-time São Paulo State Champion (2023), and São Roque International Champion (2023). I officially became a black belt with the team in December 2023 and a coach in January 2024.
+                        </li>
 
                         <h3 className="titleJob">
                             <strong>Systems Development Analyst I/II</strong> @ Cenário Capital | Oct 2020 - Sep 2021

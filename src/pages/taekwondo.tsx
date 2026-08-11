@@ -15,7 +15,7 @@ const TaekwondoDetails = styled.div`
     .title {
         font-size: 36px;
         font-weight: 600;
-        color: var(--white);
+        margin-top: 5rem;
         margin-bottom: 1.5rem;
 
         @media (max-width: 1024px) {
@@ -42,7 +42,6 @@ const TaekwondoDetails = styled.div`
         font-size: 1.25rem;
         line-height: 1.75rem;
         margin: 1.25rem 0 0.75rem;
-        color: var(--white);
 
         @media (max-width: 1024px) {
             font-size: 1.15rem;
@@ -69,7 +68,6 @@ const TaekwondoDetails = styled.div`
         margin-bottom: 1.25rem;
 
         h3 {
-            color: var(--white);
             margin-bottom: 0.4rem;
             font-size: 1rem;
             line-height: 1.5;
@@ -152,6 +150,27 @@ export default function TaekwondoPage() {
 
                     <section>
                         <h2 className="subTitle">Achievements &amp; Goals</h2>
+
+                        <div className="achievementGroup">
+                            <h3>Campinas Fighters</h3>
+                            <ul>
+                                <li>Administrative Coordinator | 2026</li>
+                            </ul>
+                        </div>
+
+                        <div className="achievementGroup">
+                            <h3>Campinas Fighters</h3>
+                            <ul>
+                                <li>Coach Certificate by FETESP | 2026</li>
+                            </ul>
+                        </div>
+
+                        <div className="achievementGroup">
+                            <h3>Campinas Fighters</h3>
+                            <ul>
+                                <li>Black Belt Certificate by FETESP | 2026</li>
+                            </ul>
+                        </div>
 
                         <div className="achievementGroup">
                             <h3>Campeonato Paulista de Taekwondo - Third Stage</h3>
