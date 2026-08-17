@@ -15,7 +15,7 @@
     "dependencies": {
         "@wterm/dom": "^0.1.9",
         "@wterm/react": "^0.1.9",
-        "dayjs": "^1.11.21",
+        "dayjs": "^1.11.23",
         "eslint-config-next": "^16.3.1",
         "feed": "^5.2.1",
         "framer-motion": "^12.43.0",
@@ -29,7 +29,7 @@
         "react": "^19.2.8",
         "react-dom": "^19.2.8",
         "sonner": "^2.0.8",
-        "styled-components": "^6.5.2"
+        "styled-components": "^6.5.3"
     },
     "devDependencies": {
         "@types/node": "^20.19.43",
