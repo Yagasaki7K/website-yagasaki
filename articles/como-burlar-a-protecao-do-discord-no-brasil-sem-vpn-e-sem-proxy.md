@@ -36,4 +36,4 @@ Em seguida, tudo liberado. Webcam, Compartilhamento de Tela.
 
 Sem proxy, e sem VPN - principalmente para evitar atrapalhar nossa jogatina.
 
-Seja feliz! Curtiu? Não esquece de me seguir no [Twitter](https://x.com/yagasaki7k), se tiver dúvidas ou quiser falar coisas aleatórias.
+Seja feliz! Compartilha para ajudar seu amigo. Curtiu? Não esquece de me seguir no [Twitter](https://x.com/yagasaki7k), se tiver dúvidas ou quiser falar coisas aleatórias.
