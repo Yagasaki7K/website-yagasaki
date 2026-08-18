@@ -14,6 +14,14 @@ Na minha opinião, a forma como a decisão foi aplicada foi precipitada, já que
 
 Dito isso, a intenção declarada da agência foi proteger menores de idade contra a onda de violência e aliciamento que tem ocorrido na plataforma, mas, na prática, a suspensão — que atinge todos os usuários indistintamente — me parece uma forma desproporcional e pouco inteligente de resolver o problema. A restrição é temporária e vale até que a empresa implemente medidas efetivas de proteção para crianças e adolescentes.
 
+---
+
+**Atualização**: Me informaram que esse método até funciona para algumas pessoas, porém, outras ficam travadas no método INFINITO de carregamento. Caso esteja enfrentando esse problema, a alternativa para isso, seria de fato, usar uma VPN, mas não o tempo inteiro - devido ao ping alto. 
+
+O método é simples, baixar o [ProtonVPN](https://protonvpn.com/download-windows) - que tem plano gratuito - ativar ele, reiniciar o Discord - possivelmente seu ping estará bem alto - assim que as funcionalidades estiverem ativas, você poderá desligar a VPN e utilizar normalmente com ping local. Esse método será necessário realizá-lo toda vez que você reiniciar o computador e/ou o Discord.
+
+---
+
 Claro que não temos nada a ver com isso, por isso seguiremos ao nosso processo normal e crime aos criminosos.
 
 Vamos ao que de fato importa.
