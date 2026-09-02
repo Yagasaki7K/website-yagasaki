@@ -9,7 +9,7 @@ import { ArrowRight, ArrowUpRight, Calendar, CircleCheckBig, Clock, Globe, Mail,
 import { useEffect, useState } from "react";
 
 export default function Home() {
-    const subTitle = ['Software Engineer', 'Curious Builder', 'Fullstack Developer', 'Net Runner', 'Software Tinkerer']
+    const subTitle = ['Software Developer', 'Curious Builder', 'Fullstack Developer', 'Net Runner', 'Software Tinkerer']
     const statusSpotify = ['Now Playing', 'Last Played']
 
     const svgTwitter = (<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>)
@@ -468,7 +468,7 @@ export default function Home() {
                             <div className="title">
                                 <div className="role">
                                     <div className="circle">&nbsp;</div>
-                                    <h1>MeuBoi @ Software Engineer II</h1>
+                                    <h1>MeuBoi @ Software Developer II</h1>
                                     <p>Dec 2025 - Mar 2026</p>
                                 </div>
                                 <p>Campinas - SP, Full-Time</p>
@@ -512,7 +512,7 @@ export default function Home() {
                             <div className="title">
                                 <div className="role">
                                     <div className="circle">&nbsp;</div>
-                                    <h1>Astriia @ Software Engineer II</h1>
+                                    <h1>Astriia @ Software Developer II</h1>
                                     <p>Sep 2024 - May 2025</p>
                                 </div>
                                 <p>Remote, Full-Time</p>
