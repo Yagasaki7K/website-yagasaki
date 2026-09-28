@@ -1,13 +1,13 @@
-"use client";
+import fs from "node:fs/promises";
+import path from "node:path";
 import { useState } from "react";
 import Image from "next/image";
+import Head from "next/head";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
+import type { GetStaticProps } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Head from "next/head";
-
-const countPhotos = 62;
 
 const Gallery = styled.div`
     margin-top: 7.18rem;
@@ -118,7 +118,60 @@ const Modal = styled(motion.div)`
     }
 `;
 
-export default function PhotoPage() {
+interface Photo {
+    src: string;
+    order: number;
+}
+
+interface PhotoPageProps {
+    photos: Photo[];
+}
+
+export const getStaticProps: GetStaticProps<PhotoPageProps> = async () => {
+    const photosDir = path.join(process.cwd(), "public", "photos");
+
+    let files: string[] = [];
+
+    try {
+        files = await fs.readdir(photosDir);
+    } catch {
+        return { props: { photos: [] } };
+    }
+
+    const validExtensions = [".jpg", ".jpeg", ".png"];
+
+    const photos: Photo[] = [];
+
+    for (const file of files) {
+        const ext = path.extname(file).toLowerCase();
+
+        if (!validExtensions.includes(ext)) {
+            continue;
+        }
+
+        const base = path.basename(file, ext);
+        const order = Number.parseInt(base, 10);
+
+        if (Number.isNaN(order)) {
+            continue;
+        }
+
+        photos.push({
+            src: `/photos/${file}`,
+            order,
+        });
+    }
+
+    photos.sort((a, b) => a.order - b.order);
+
+    return {
+        props: {
+            photos,
+        },
+    };
+};
+
+export default function PhotoPage({ photos }: PhotoPageProps) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
@@ -127,28 +180,53 @@ export default function PhotoPage() {
                 <title>Gallery - Anderson Marlon</title>
                 <link rel="icon" type="image/png" href="/campinasfighters.png" />
             </Head>
+
             <Navigation />
+
             <Gallery>
-                {Array.from({ length: countPhotos }).map((_, i) => {
-                    const idx = countPhotos - i; // 41, 40, 39, ..., 1
-                    const src = `/photos/${idx}.jpg`;
-                    return (
-                        <div key={idx} onClick={() => setSelectedImage(src)}>
-                            <Image src={src} width={400} height={400} alt={`Photo ${idx}`} sizes="(max-width: 480px) 45vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px" priority={i < 6} />
-                        </div>
-                    );
-                })}
+                {photos.map((photo, i) => (
+                    <div
+                        key={photo.src}
+                        onClick={() => setSelectedImage(photo.src)}
+                    >
+                        <Image
+                            src={photo.src}
+                            width={400}
+                            height={400}
+                            alt={`Photo ${photo.order}`}
+                            sizes="(max-width: 480px) 45vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px"
+                            priority={i < 6}
+                        />
+                    </div>
+                ))}
             </Gallery>
 
             <AnimatePresence>
                 {selectedImage && (
-                    <Modal initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedImage(null)}>
-                        <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} exit={{ scale: 0.9 }} transition={{ duration: 0.2 }}>
-                            <Image src={selectedImage} width={1000} height={1000} alt="Zoomed" priority />
+                    <Modal
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9 }}
+                            animate={{ scale: 1 }}
+                            exit={{ scale: 0.9 }}
+                            transition={{ duration: 0.2 }}
+                        >
+                            <Image
+                                src={selectedImage}
+                                width={1000}
+                                height={1000}
+                                alt="Zoomed"
+                                priority
+                            />
                         </motion.div>
                     </Modal>
                 )}
             </AnimatePresence>
+
             <Footer />
         </>
     );
