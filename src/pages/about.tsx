@@ -214,8 +214,8 @@ export default function AboutPage() {
             <AboutDetails>
                 <article>
                     <h1 className="title">About me</h1>
-                    <h1>Software Developer</h1>
-                    <p className="text">Software Developer with experience building business platforms, operational systems and AI-powered products.</p>
+                    <h1>Software Engineer</h1>
+                    <p className="text">Software Engineer with experience building business platforms, operational systems and AI-powered products.</p>
 
                     <p className="text">Throughout my career I have worked across frontend, backend and product engineering, helping companies design and
                         deliver software that supports real business operations.</p>
@@ -248,6 +248,9 @@ export default function AboutPage() {
                             <strong>Testing:</strong> Node:test, Bun:test, Storybook & Jest
                         </p>
                         <p>
+                            <strong>Cyber Security (WIP):</strong> bettercap, hashcat, nmap, research (web/api).
+                        </p>
+                        <p>
                             <strong>DevOps:</strong> Docker, Vercel, CI/CD & Github Actions
                         </p>
                         <p>
@@ -269,10 +272,10 @@ export default function AboutPage() {
                         </p>
 
                         <h3 className="titleJob">
-                            <strong>Software Developer, Coach, Teacher & Administrative Coordinator</strong> @ Campinas Fighters | Jan 2024 - Actually
+                            <strong>Software Engineer, Coach, Teacher & Administrative Coordinator</strong> @ Campinas Fighters | Jan 2024 - Actually
                         </h3>
                         <li>
-                            Software Developer – responsible for the team's projects and applications, including athlete registration systems, social campaign dashboards, prize draw systems, and student management systems; also responsible for website development in compliance with the Municipal Government's standards for transparency portals. Since February 2024.
+                            Software Engineer – responsible for the team's projects and applications, including athlete registration systems, social campaign dashboards, prize draw systems, and student management systems; also responsible for website development in compliance with the Municipal Government's standards for transparency portals. Since February 2024.
                         </li>
                         <li>
                             Affiliated with FETESP (São Paulo State Taekwondo Federation); re-certified as a black belt and official coach for Campinas Fighters as of July 2026 (https://www.instagram.com/p/DavBGwplVFE).
@@ -294,7 +297,7 @@ export default function AboutPage() {
                         </li>
 
                         <h3 className="titleJob">
-                            <strong>Software Developer II</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2026
+                            <strong>Software Engineer</strong> @ R2A Cobrança Pecuária | Dec 2025 - Mar 2026
                         </h3>
 
                         <li>
@@ -332,7 +335,7 @@ export default function AboutPage() {
                         </li>
 
                         <h3 className="titleJob">
-                            <strong>Software Developer II</strong> @ Astriia | Sep 2024 - May 2025
+                            <strong>Software Engineer</strong> @ Astriia | Sep 2024 - May 2025
                         </h3>
 
                         <li>
@@ -356,7 +359,7 @@ export default function AboutPage() {
                         </p>
 
                         <h3 className="titleJob">
-                            <strong>Software Developer II</strong> @ WhatsUpper | Aug 2023 - Dec 2023
+                            <strong>Software Engineer</strong> @ WhatsUpper | Aug 2023 - Dec 2023
                         </h3>
                         <li>
                             Specialized in developing and integrating intelligent automation solutions for the WhatsApp Business API, enhancing
@@ -373,7 +376,7 @@ export default function AboutPage() {
                         <p className="description">Using Rocket.chat, Firebase, Next.js, WhatsApp API, Facebook Business API, Twilio and Firebase</p>
 
                         <h3 className="titleJob">
-                            <strong>Software Developer II</strong> @ Stone | Oct 2022 - Jul 2023
+                            <strong>Software Engineer</strong> @ Stone | Oct 2022 - Jul 2023
                         </h3>
                         <li>
                             Optimized DialogFlow routines and integrated them with Rocket.Chat, improving chatbot response speed by over 50% and
@@ -403,7 +406,7 @@ export default function AboutPage() {
                         </li>
 
                         <h3 className="titleJob">
-                            <strong>Systems Development Analyst I/II</strong> @ Cenário Capital | Oct 2020 - Sep 2021
+                            <strong>Systems Development Analyst Mid</strong> @ Cenário Capital | Oct 2020 - Sep 2021
                         </h3>
                         <li>
                             Developed and maintained critical financial systems, contributing to data analysis and process automation to support
@@ -420,7 +423,7 @@ export default function AboutPage() {
                         <p className="description">Using jQuery, HTML, CSS, Javascript, React, HTML for Email Marketing and Next.js</p>
 
                         <h3 className="titleJob">
-                            <strong>Front-end Developer I / Jr. Marketing</strong> @ Marry Perry | Feb 2020 - Sep 2020
+                            <strong>Front-end Engineer / Jr. Marketing</strong> @ Marry Perry | Feb 2020 - Sep 2020
                         </h3>
                         <li>
                             Developed and enhanced the user interface (UI) of the e-commerce platform, focusing on creating a responsive and intuitive

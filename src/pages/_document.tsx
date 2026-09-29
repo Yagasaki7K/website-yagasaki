@@ -58,7 +58,7 @@ export default class MyDocument extends Document {
                     <meta
                         name="keywords"
                         content="anderson, marlon, himura, yagasaki, 7k, programador, programação, code, código aberto, github, linkedin, twitter, x, tomaz, alves, desenvolvedor, engide,
-                        git, javascript, typescript, css, html, supabase, firebase, hasura, graphql, elysia, bun, node, whatsapp, api, openai, mysql, sqlite, mongodb, software, engineer, developer"
+                        git, javascript, typescript, css, html, supabase, firebase, hasura, graphql, elysia, bun, node, whatsapp, api, openai, mysql, sqlite, mongodb, software, engineer, developer, web, research, security, cyber, cybersecurity, 0xygsk, 0xdk"
                     />
 
                     <meta name="author" content="Anderson 'Yagasaki' Marlon" />
