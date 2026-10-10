@@ -190,39 +190,16 @@ export default function PhotoPage({ photos }: PhotoPageProps) {
             <Gallery>
                 {photos.map((photo, i) => (
                     <div key={photo.src} onClick={() => setSelectedImage(photo.src)}>
-                        <Image
-                            src={photo.src}
-                            width={400}
-                            height={400}
-                            alt={`Photo ${photo.order}`}
-                            sizes="(max-width: 480px) 45vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px"
-                            priority={i < 6}
-                        />
+                        <Image src={photo.src} width={400} height={400} alt={`Photo ${photo.order}`} sizes="(max-width: 480px) 45vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px" priority={i < 6} />
                     </div>
                 ))}
             </Gallery>
 
             <AnimatePresence>
                 {selectedImage && (
-                    <Modal
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onClick={() => setSelectedImage(null)}
-                    >
-                        <motion.div
-                            initial={{ scale: 0.9 }}
-                            animate={{ scale: 1 }}
-                            exit={{ scale: 0.9 }}
-                            transition={{ duration: 0.2 }}
-                        >
-                            <Image
-                                src={selectedImage}
-                                width={1000}
-                                height={1000}
-                                alt="Zoomed"
-                                priority
-                            />
+                    <Modal initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedImage(null)}>
+                        <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} exit={{ scale: 0.9 }} transition={{ duration: 0.2 }}>
+                            <Image src={selectedImage} width={1000} height={1000} alt="Zoomed" priority />
                         </motion.div>
                     </Modal>
                 )}
