@@ -135,7 +135,10 @@ export const getStaticProps: GetStaticProps<PhotoPageProps> = async () => {
     try {
         files = await fs.readdir(photosDir);
     } catch {
-        return { props: { photos: [] } };
+        return {
+            props: { photos: [] },
+            revalidate: 60,
+        };
     }
 
     const validExtensions = [".jpg", ".jpeg", ".png"];
@@ -168,6 +171,7 @@ export const getStaticProps: GetStaticProps<PhotoPageProps> = async () => {
         props: {
             photos,
         },
+        revalidate: 60,
     };
 };
 
@@ -185,10 +189,7 @@ export default function PhotoPage({ photos }: PhotoPageProps) {
 
             <Gallery>
                 {photos.map((photo, i) => (
-                    <div
-                        key={photo.src}
-                        onClick={() => setSelectedImage(photo.src)}
-                    >
+                    <div key={photo.src} onClick={() => setSelectedImage(photo.src)}>
                         <Image
                             src={photo.src}
                             width={400}
