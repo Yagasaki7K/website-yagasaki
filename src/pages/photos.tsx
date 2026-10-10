@@ -165,7 +165,7 @@ export const getStaticProps: GetStaticProps<PhotoPageProps> = async () => {
         });
     }
 
-    photos.sort((a, b) => a.order - b.order);
+    photos.sort((a, b) => b.order - a.order);
 
     return {
         props: {
@@ -188,7 +188,7 @@ export default function PhotoPage({ photos }: PhotoPageProps) {
             <Navigation />
 
             <Gallery>
-                {photos.reverse().map((photo, i) => (
+                {photos.map((photo, i) => (
                     <div key={photo.src} onClick={() => setSelectedImage(photo.src)}>
                         <Image src={photo.src} width={400} height={400} alt={`Photo ${photo.order}`} sizes="(max-width: 480px) 45vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px" priority={i < 6} />
                     </div>
