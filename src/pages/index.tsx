@@ -9,7 +9,7 @@ import { ArrowRight, ArrowUpRight, Calendar, CircleCheckBig, Clock, Globe, Mail,
 import { useState } from "react";
 
 export default function Home() {
-    const subTitle = ["Software Engineer / Cybersec Research (WIP)"];
+    const subTitle = ["software engineer / netrunner / cybersec research (WIP)"];
 
     const svgTwitter = (
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
