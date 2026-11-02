@@ -1,6 +1,6 @@
 ---
 title: O mínimo que você precisa saber para não ser um vibecoder idiota
-excerpt: "Existe uma diferença abissal entre quem não sabe o que faz e quem não sabe que não sabe. O vibecoder idiota não é quem usa IA — é quem confunde 'funcionou na minha tela' com 'está pronto'. Este texto reúne o mínimo de arquitetura e segurança que nunca muda: onde o código roda, como separar camadas, por que segredos ficam fora do código, como validar entradas no servidor, como não vazar dados entre usuários e como conversar com a IA sem se humilhar."
+excerpt: "Existe uma diferença abissal entre quem não sabe o que faz e quem não sabe que não sabe. O vibecoder idiota não é quem usa IA - é quem confunde 'funcionou na minha tela' com 'está pronto'. Este texto reúne o mínimo de arquitetura e segurança que nunca muda: onde o código roda, como separar camadas, por que segredos ficam fora do código, como validar entradas no servidor, como não vazar dados entre usuários e como conversar com a IA sem se humilhar."
 image: "https://pbs.twimg.com/media/HR-EMpDW8AE6j0S?format=jpg&name=large"
 tags: ["Segurança", "Arquitetura de Software", "IA"]
 date: "2026-11-02"
