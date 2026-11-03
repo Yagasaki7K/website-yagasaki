@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     compiler: {
         styledComponents: true,
     },
-    transpilePackages: ["styled-components", "next-seo"],
+    transpilePackages: ["next-seo"],
     turbopack: {
         resolveAlias: {
             "next-seo": "next-seo/lib/next-seo.js",
