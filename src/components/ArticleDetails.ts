@@ -494,7 +494,7 @@ const ArticleDetails = styled.div`
         li {
             margin-bottom: 1rem;
             margin-top: 1rem;
-            font-size: 18px;
+            font-size: 1rem;
             line-height: 1.5;
             color: var(--font);
             margin-left: 1rem;
@@ -647,6 +647,11 @@ const ArticleDetails = styled.div`
 
     @media (max-width: 480px) {
         padding: 0 0.75rem;
+    }
+
+    blockquote {
+        padding-left: 1rem;
+        border-left: 1px solid var(--gray);
     }
 `;
 

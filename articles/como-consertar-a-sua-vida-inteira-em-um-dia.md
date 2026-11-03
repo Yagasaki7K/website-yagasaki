@@ -15,7 +15,7 @@ Porque a maioria das pessoas tenta mudar a vida do jeito completamente errado. E
 Se você é uma dessas pessoas, não estou aqui para te menosprezar (tendo a ser um pouco duro na minha escrita). Já abandonei 10 vezes mais metas do que alcancei. Acho que deveria ser assim para a maioria das pessoas. Mas o fato de que as pessoas tentam mudar de vida e falham completamente quase toda vez continua verdadeiro.
 
 No entanto, por mais que eu ache resoluções de ano novo uma bobagem, é sempre sensato refletir sobre a vida que você odeia para poder se lançar em direção a algo muito melhor, como vamos discutir.
-Então, seja você querendo abrir o negócio, transformar o corpo ou correr o risco em direção a uma vida mais significativa sem desistir depois de 2 semanas, quero compartilhar **7 ideias que você provavelmente nunca ouviu** sobre mudança de comportamento, psicologia e produtividade para que você faça exatamente isso em 2026.
+Então, seja você querendo abrir o negócio, transformar o corpo ou correr o risco em direção a uma vida mais significativa sem desistir depois de 2 semanas, quero compartilhar **7 ideias que você provavelmente nunca ouviu** sobre mudança de comportamento, psicologia e produtividade para que você faça exatamente isso na sua vida.
 
 Isso vai ser abrangente.
 
@@ -56,7 +56,7 @@ Você diz que quer mudar. Você diz que quer "conquistar a liberdade financeira"
 
 > _Confie apenas no movimento. A vida acontece no nível dos eventos, não das palavras. Confie no movimento._
 >
-> - Alfred Adler
+> -- Alfred Adler
 
 Se você quer mudar quem você é, precisa entender como a mente funciona para começar a reprogramá-la.
 
@@ -79,15 +79,11 @@ Não estou falando de definir alguma meta superficial porque o ato de fazer isso
 
 Agora vamos cavar um pouco mais fundo, porque se você não entender isso, só fica mais difícil sair.
 
-Envio cartas como esta 1 a 2 vezes por semana. Se você não quer perdê-las, entre aqui.
-
-Você também pode ler o meu livro de graça, outras cartas etc.
-
 ## III - Você não está onde quer estar porque tem medo de estar lá
 
 > _A coisa importante para você lembrar é que não importa nem um pouco como você teve a ideia ou de onde ela veio. Você pode nunca ter conhecido um hipnotizador profissional. Pode nunca ter sido formalmente hipnotizado. Mas se você aceitou uma ideia - de você mesmo, dos seus professores, dos seus pais, dos seus amigos, de anúncios, de qualquer outra fonte - e, além disso, se está firmemente convencido de que essa ideia é verdadeira, ela tem o mesmo poder sobre você que as palavras do hipnotizador têm sobre o sujeito hipnotizado._
 >
-> - Maxwell Maltz
+> -- Maxwell Maltz
 
 Aqui está como você se tornou quem é hoje, e como vai se tornar quem será amanhã. Esta é a anatomia da identidade:
 
@@ -126,7 +122,7 @@ Quando você nasce, é como uma pequena esponja de sobrevivência que absorve qu
 
 Isso já foi documentado o suficiente em modelos como a Hierarquia de Maslow, os estágios de desenvolvimento do ego de Greuter, a Dinâmica Espiral e a Teoria Integral, cada um construindo sobre o anterior, mas também não é difícil observar na sociedade.
 
-Já falei sobre isso muitas vezes e sintetizei num modelo meu, o **Human 3.0**, com vários prompts de IA para descobrir o seu nível de desenvolvimento e um caminho adiante (abre numa aba para ler depois, se quiser), mas aqui está o 80/20 dos 9 estágios de desenvolvimento do ego como recapitulação (porque a repetição ajuda a revelar coisas que você não tinha notado antes, e há gente nova lendo estas cartas):
+Eis o 80/20 dos 9 estágios de desenvolvimento do ego como recapitulação (porque a repetição ajuda a revelar coisas que você não tinha notado antes, e há gente nova lendo estas cartas):
 
 ![](https://pbs.twimg.com/media/G-ebHTubsAEsAee?format=jpg&name=large)
 
@@ -161,7 +157,7 @@ Se você tem alta agência mas baixa oportunidade, não importa o quão propenso
 
 Se você tem oportunidade e agência mas baixa inteligência, então nunca vai conseguir se beneficiar plenamente dessa oportunidade.
 
-Primeiro, já falamos sobre agência aqui antes. Em termos de oportunidade, não posso te dizer para mudar a sua localização física, mas se você não vê a abundância de oportunidade digital bem na sua frente, não sei o que te dizer.
+Em termos de oportunidade, não posso te dizer para mudar a sua localização física, mas se você não vê a abundância de oportunidade digital bem na sua frente, não sei o que te dizer.
 
 Dito isso, quero focar no que é inteligência no contexto desses outros dois ingredientes e desta carta. Para isso, olhamos para a cibernética.
 
