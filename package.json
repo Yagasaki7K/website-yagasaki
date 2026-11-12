@@ -13,9 +13,9 @@
         "clean": "rm -rf node_modules && bun install"
     },
     "dependencies": {
-        "@babel/helper-string-parser": "^8.0.8",
-        "@babel/parser": "^8.1.0",
-        "@babel/types": "^8.1.0",
+        "@babel/helper-string-parser": "^8.1.2",
+        "@babel/parser": "^8.1.2",
+        "@babel/types": "^8.1.2",
         "@wterm/dom": "^0.1.9",
         "@wterm/react": "^0.1.9",
         "dayjs": "^1.11.23",
@@ -38,7 +38,7 @@
         "@types/node": "^20.19.43",
         "@types/react": "^19.3.0",
         "@types/react-dom": "^19.3.0",
-        "baseline-browser-mapping": "^2.11.35",
+        "baseline-browser-mapping": "^2.11.36",
         "typescript": "^5.9.3"
     }
 }
